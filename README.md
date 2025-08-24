@@ -9,6 +9,8 @@ A multitool that just works, with a comfortable, practical and simple graphical 
 
 ![LinuxToysUI](elements/screenshot.png)
 
+### [Get it here!](https://github.com/psygreg/linuxtoys/releases)
+
 ## For professionals
 
 With the CLI mode, taking a long time to set up computers for your customers will be a thing of the past. Just list all features you need installed in the manifest file, and let LinuxToys do the job for you. You can save your custom manifest file to use it to standardize your customers' systems. And don't worry: it won't apply resources that are not meant for the target!
