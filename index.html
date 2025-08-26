@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinuxToys</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="A collection of tools for Linux in a user-friendly way to make your life on Linux easier than ever. Useful scripts for gamers, developers and enthusiasts.">
+    <meta name="keywords" content="Linux, tools, scripts, gaming, development, linux toys, psygreg">
+    <meta name="author" content="psygreg">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://psygreg.github.io/linuxtoys-site/">
+    <meta property="og:title" content="LinuxToys">
+    <meta property="og:description" content="A collection of tools for Linux in a user-friendly way to make your life on Linux easier than ever.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/psygreg/linuxtoys-site/main/elements/screenshot.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://psygreg.github.io/linuxtoys-site/">
+    <meta property="twitter:title" content="LinuxToys">
+    <meta property="twitter:description" content="A collection of tools for Linux in a user-friendly way to make your life on Linux easier than ever.">
+    <meta property="twitter:image" content="https://raw.githubusercontent.com/psygreg/linuxtoys-site/main/elements/screenshot.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .tool-list {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-in-out;
+        }
+        .tool-list.expanded {
+            max-height: 1000px;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+
+    <header class="bg-gray-800 shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://raw.githubusercontent.com/psygreg/linuxtoys-site/main/elements/linuxtoys.png" alt="LinuxToys Logo" class="h-8 w-8 mr-3">
+                <h1 class="text-2xl font-bold text-white">LinuxToys</h1>
+            </div>
+            <div class="flex items-center">
+                <button id="lang-en" class="mx-2 px-3 py-1 rounded-md text-sm font-medium bg-blue-600">EN</button>
+                <button id="lang-pt" class="mx-2 px-3 py-1 rounded-md text-sm font-medium">PT</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+        <section class="text-center">
+            <h2 class="text-4xl lg:text-5xl font-bold mb-4" data-key="title">A collection of tools for Linux in a user-friendly way to make your life on Linux easier than ever.</h2>
+             <a href="https://github.com/psygreg/linuxtoys" target="_blank" class="mt-8 inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300" data-key="github-button">
+                View on GitHub
+            </a>
+        </section>
+
+        <section class="py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-3xl font-bold mb-4" data-key="for-you-title">For you</h3>
+                    <p class="text-lg text-gray-400 mb-6" data-key="for-you-text">A multitool that just works, with a comfortable, practical and simple graphical interface that looks good and gets the job done. It also follows the theme of your system!</p>
+                    <a href="https://github.com/psygreg/linuxtoys/releases" target="_blank" class="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-lg transition duration-300" data-key="get-it-here">Get it here!</a>
+                </div>
+                 <img src="https://raw.githubusercontent.com/psygreg/linuxtoys-site/main/elements/screenshot.png" alt="LinuxToys Screenshot 1" class="rounded-lg shadow-lg w-full">
+             </div>
+        </section>
+        
+        <section class="py-16 bg-gray-800 -mx-6 px-6">
+            <div class="container mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                     <img src="https://raw.githubusercontent.com/psygreg/linuxtoys-site/main/elements/screenshot-2.png" alt="LinuxToys Screenshot 2" class="rounded-lg shadow-lg w-full md:order-last">
+                    <div>
+                        <h3 class="text-3xl font-bold mb-4" data-key="for-professionals-title">For professionals</h3>
+                        <p class="text-lg text-gray-400" data-key="for-professionals-text">With the CLI mode, taking a long time to set up computers for your customers will be a thing of the past. Just list all features you need installed in the manifest file, and let LinuxToys do the job for you. You can save your custom manifest file to use it to standardize your customers' systems. And don't worry: it won't apply resources that are not meant for the target!</p>
+                    </div>
+                 </div>
+            </div>
+        </section>
+
+        <section class="py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-3xl font-bold mb-4" data-key="for-developers-title">For developers</h3>
+                    <p class="text-lg text-gray-400" data-key="for-developers-text">The ultimate platform for bash script development allowing for quick deployment of fixes for common issues on Linux, and much more, powered by our libraries. Don't believe it? Take a look at our <a href="https://github.com/psygreg/linuxtoys/wiki/Developer-Handbook" target="_blank" class="text-blue-400 hover:underline">Developer Handbook</a> and see it for yourself!</p>
+                </div>
+                 <div class="text-center">
+                     <a href="https://github.com/psygreg/linuxtoys/wiki" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-10 rounded-lg transition duration-300 text-xl" data-key="learn-more-wiki">Learn more at the Wiki!</a>
+                 </div>
+             </div>
+        </section>
+
+        <section id="tools" class="mt-8">
+            <h3 class="text-3xl font-bold text-center mb-10" data-key="tools-title">Tools by Category</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="bg-gray-800 rounded-lg p-6 flex flex-col">
+                    <h4 class="text-xl font-semibold mb-4" data-key="devs">Development</h4>
+                    <button class="mt-auto bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 toggle-button" data-key="toggle-button">Show Tools</button>
+                    <ul class="tool-list mt-4 space-y-2 text-gray-300">
+                        <li>Android Studio</li> <li>VSCode</li> <li>VSCodium</li> <li>Docker</li> <li>.NET SDK</li> <li>Godot Engine</li> <li>HTTPie</li> <li>Insomnia</li> <li>Java</li> <li>Maven</li> <li>Mise</li> <li>Neovim</li> <li>NVM</li> <li>Postman</li> <li>Pyenv</li> <li>Sublime Text</li> <li>Tailscale</li> <li>Unity Hub</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg p-6 flex flex-col">
+                    <h4 class="text-xl font-semibold mb-4" data-key="drivers">Drivers</h4>
+                    <button class="mt-auto bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 toggle-button" data-key="toggle-button">Show Tools</button>
+                    <ul class="tool-list mt-4 space-y-2 text-gray-300">
+                        <li>Broadcom</li> <li>Intel Compute Runtime</li> <li>Nvidia</li> <li>ROCm</li> <li>Realtek</li> <li>Rusticl</li> <li>Xpadneo</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg p-6 flex flex-col">
+                    <h4 class="text-xl font-semibold mb-4" data-key="extra">Extra</h4>
+                    <button class="mt-auto bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 toggle-button" data-key="toggle-button">Show Tools</button>
+                    <ul class="tool-list mt-4 space-y-2 text-gray-300">
+                         <li>Bluetooth Assistant</li> <li>Config Network File Helper</li> <li>Codec Fix</li> <li>Distro Splitter Mover</li> <li>EarlyOOM</li> <li>Grub BTRFS</li> <li>IWD</li> <li>Linux SWAP Helper</li> <li>LucidGlyph</li> <li>Preload</li> <li>PsychoSaver</li> <li>PsychoCachy</li> <li>System Boost</li> <li>OpenSUSE Fix</li> <li>Swapfile</li> <li>Thumbnails</li> <li>Touchegg</li> <li>UFW</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg p-6 flex flex-col">
+                    <h4 class="text-xl font-semibold mb-4" data-key="game">Gaming</h4>
+                    <button class="mt-auto bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 toggle-button" data-key="toggle-button">Show Tools</button>
+                    <ul class="tool-list mt-4 space-y-2 text-gray-300">
+                        <li>Discord</li> <li>GameMode</li> <li>GeForce NOW</li> <li>GOverlay</li> <li>Gamescope</li> <li>Game Save Router</li> <li>Heroic Games Launcher</li> <li>Lossless Scaling for GNU</li> <li>Lutris</li> <li>Minecraft Bedrock Edition</li> <li>MangoJuice</li> <li>osu!</li> <li>ProtonPlus</li> <li>ProtonTricks</li> <li>ProtonUp-Qt</li> <li>Sober</li> <li>Steam</li> <li>Steer</li> <li>Vinegar</li> <li>WIVRN</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg p-6 flex flex-col">
+                    <h4 class="text-xl font-semibold mb-4" data-key="office">Office & Productivity</h4>
+                    <button class="mt-auto bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 toggle-button" data-key="toggle-button">Show Tools</button>
+                    <ul class="tool-list mt-4 space-y-2 text-gray-300">
+                        <li>AnyDesk</li> <li>Audacity</li> <li>Blender</li> <li>Google Chrome</li> <li>Cohesion</li> <li>Darktable</li> <li>DaVinci Resolve</li> <li>Figma</li> <li>Foliate</li> <li>FreeCAD</li> <li>GIMP</li> <li>Inkscape</li> <li>Kdenlive</li> <li>KiCad</li> <li>Krita</li> <li>LibreOffice</li> <li>Microsoft Teams</li> <li>Obsidian</li> <li>OnlyOffice</li> <li>Pinta</li> <li>PJe Office</li> <li>Slack</li> <li>Zen</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg p-6 flex flex-col">
+                    <h4 class="text-xl font-semibold mb-4" data-key="repos">Repositories</h4>
+                    <button class="mt-auto bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 toggle-button" data-key="toggle-button">Show Tools</button>
+                    <ul class="tool-list mt-4 space-y-2 text-gray-300">
+                        <li>Brew</li> <li>Cargo</li> <li>Chaotic-AUR</li> <li>Flathub</li> <li>Pip</li> <li>RPM Fusion</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-gray-800 rounded-lg p-6 flex flex-col">
+                    <h4 class="text-xl font-semibold mb-4" data-key="utils">Utilities</h4>
+                    <button class="mt-auto bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 toggle-button" data-key="toggle-button">Show Tools</button>
+                    <ul class="tool-list mt-4 space-y-2 text-gray-300">
+                       <li>Bottles</li> <li>Boxedwine Advanced</li> <li>DistroShelf</li> <li>EasyEffects</li> <li>F3</li> <li>Flatseal</li> <li>HandBrake</li> <li>LACT</li> <li>Mission Center</li> <li>OBS Studio</li> <li>OpenRGB</li> <li>OpenRazer</li> <li>QPwGraph</li> <li>StreamController</li> <li>Solaar</li> <li>Warehouse</li> <li>Waydroid</li>
+                    </ul>
+                </div>
+                
+                 <div class="bg-gray-800 rounded-lg p-6 flex flex-col">
+                    <h4 class="text-xl font-semibold mb-4" data-key="privacy">Privacy</h4>
+                    <button class="mt-auto bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 toggle-button" data-key="toggle-button">Show Tools</button>
+                    <ul class="tool-list mt-4 space-y-2 text-gray-300">
+                        <li>ExpressVPN</li> <li>IVPN</li> <li>Librewolf</li> <li>Mullvad Browser</li> <li>Mullvad VPN</li> <li>NordVPN</li> <li>Proton VPN</li> <li>Surfshark</li> <li>Ungoogled Chromium</li> <li>WireGuard</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 mt-12 py-6">
+        <div class="container mx-auto px-6 text-center text-gray-400">
+            <p>Copyright © <span id="year"></span> psygreg. <span data-key="license-text"></span> <a href="https://github.com/psygreg/linuxtoys/blob/master/LICENSE" target="_blank" class="underline hover:text-blue-400">GPL-3.0</a>.</p>
+        </div>
+    </footer>
+
+    <script>
+        const translations = {
+            en: {
+                title: "A collection of tools for Linux in a user-friendly way to make your life on Linux easier than ever.",
+                "github-button": "View on GitHub",
+                "for-you-title": "For you",
+                "for-you-text": "A multitool that just works, with a comfortable, practical and simple graphical interface that looks good and gets the job done. It also follows the theme of your system!",
+                "get-it-here": "Get it here!",
+                "for-professionals-title": "For professionals",
+                "for-professionals-text": "With the CLI mode, taking a long time to set up computers for your customers will be a thing of the past. Just list all features you need installed in the manifest file, and let LinuxToys do the job for you. You can save your custom manifest file to use it to standardize your customers' systems. And don't worry: it won't apply resources that are not meant for the target!",
+                "for-developers-title": "For developers",
+                "for-developers-text": "The ultimate platform for bash script development allowing for quick deployment of fixes for common issues on Linux, and much more, powered by our libraries. Don't believe it? Take a look at our <a href='https://github.com/psygreg/linuxtoys/wiki/Developer-Handbook' target='_blank' class='text-blue-400 hover:underline'>Developer Handbook</a> and see it for yourself!",
+                "learn-more-wiki": "Learn more at the Wiki!",
+                "tools-title": "Tools by Category",
+                devs: "Development",
+                drivers: "Drivers",
+                extra: "Extra",
+                game: "Gaming",
+                office: "Office & Productivity",
+                repos: "Repositories",
+                utils: "Utilities",
+                privacy: "Privacy",
+                "license-text": "Released under the",
+                "toggle-button": "Show Tools",
+                "toggle-button-less": "Show Less"
+            },
+            pt: {
+                title: "Uma coleção de ferramentas para Linux de uma forma amigável para tornar sua vida no Linux mais fácil do que nunca.",
+                "github-button": "Ver no GitHub",
+                "for-you-title": "Para você",
+                "for-you-text": "Uma multiferramenta que simplesmente funciona, com uma interface gráfica confortável, prática e simples que é bonita e faz o trabalho. E ainda segue o tema do seu sistema!",
+                "get-it-here": "Obtenha aqui!",
+                "for-professionals-title": "Para profissionais",
+                "for-professionals-text": "Com o modo CLI, demorar muito para configurar computadores para seus clientes será coisa do passado. Basta listar todos os recursos que você precisa instalar no arquivo de manifesto e deixar o LinuxToys fazer o trabalho por você. Você pode salvar seu arquivo de manifesto personalizado para usá-lo para padronizar os sistemas de seus clientes. E não se preocupe: ele não aplicará recursos que não são destinados ao alvo!",
+                "for-developers-title": "Para desenvolvedores",
+                "for-developers-text": "A plataforma definitiva para o desenvolvimento de scripts bash, permitindo a implantação rápida de correções para problemas comuns no Linux e muito mais, com o poder de nossas bibliotecas. Não acredita? Dê uma olhada no nosso <a href='https://github.com/psygreg/linuxtoys/wiki/Developer-Handbook' target='_blank' class='text-blue-400 hover:underline'>Manual do Desenvolvedor</a> e veja por si mesmo!",
+                "learn-more-wiki": "Saiba mais na Wiki!",
+                "tools-title": "Ferramentas por Categoria",
+                devs: "Desenvolvimento",
+                drivers: "Drivers",
+                extra: "Extras",
+                game: "Jogos",
+                office: "Escritório & Produtividade",
+                repos: "Repositórios",
+                utils: "Utilitários",
+                privacy: "Privacidade",
+                "license-text": "Lançado sob a licença",
+                "toggle-button": "Ver Ferramentas",
+                "toggle-button-less": "Ver Menos"
+            }
+        };
+
+        let currentLang = 'en';
+
+        const langEnBtn = document.getElementById('lang-en');
+        const langPtBtn = document.getElementById('lang-pt');
+        const toggleButtons = document.querySelectorAll('.toggle-button');
+
+        function setLanguage(lang) {
+            currentLang = lang;
+            document.documentElement.lang = lang;
+            const elements = document.querySelectorAll('[data-key]');
+            elements.forEach(element => {
+                const key = element.getAttribute('data-key');
+                
+                if (key === 'toggle-button') {
+                    const list = element.nextElementSibling;
+                    if (list.classList.contains('expanded')) {
+                        element.textContent = translations[lang]['toggle-button-less'];
+                    } else {
+                        element.textContent = translations[lang][key];
+                    }
+                } else {
+                    const translation = translations[lang][key];
+                    if (translation && translation.includes('<a href')) {
+                        element.innerHTML = translation;
+                    } else if (translation) {
+                        element.textContent = translation;
+                    }
+                }
+            });
+            
+            if(lang === 'en') {
+                langEnBtn.classList.add('bg-blue-600');
+                langPtBtn.classList.remove('bg-blue-600');
+            } else {
+                langPtBtn.classList.add('bg-blue-600');
+                langEnBtn.classList.remove('bg-blue-600');
+            }
+        }
+
+        toggleButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const list = button.nextElementSibling;
+                list.classList.toggle('expanded');
+                if (list.classList.contains('expanded')) {
+                    button.textContent = translations[currentLang]['toggle-button-less'];
+                } else {
+                    button.textContent = translations[currentLang]['toggle-button'];
+                }
+            });
+        });
+
+        document.getElementById('year').textContent = new Date().getFullYear();
+        langEnBtn.addEventListener('click', () => setLanguage('en'));
+        langPtBtn.addEventListener('click', () => setLanguage('pt'));
+
+        setLanguage('en');
+    </script>
+
+</body>
+</html>
