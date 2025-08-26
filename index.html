@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LinuxToys</title>
+    
+    <!-- ICON -->
+    <link rel="icon" href="elements/linuxtoys.png" type="image/png">
 
     <!-- SEO Meta Tags -->
     <meta name="description" content="A collection of tools for Linux in a user-friendly way to make your life on Linux easier than ever. Useful scripts for gamers, developers and enthusiasts.">
@@ -38,6 +41,27 @@
         .tool-list.expanded {
             max-height: 1000px;
         }
+        .tool-grid-container {
+            column-count: 1;
+            column-gap: 2rem; 
+            }
+
+        .tool-grid-container > div {
+            break-inside: avoid;
+            margin-bottom: 2rem;
+        }
+
+         @media (min-width: 768px) {
+            .tool-grid-container {
+                column-count: 2;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .tool-grid-container {
+                column-count: 3;
+            }
+        }
     </style>
 </head>
 <body class="bg-gray-900 text-white">
@@ -57,7 +81,7 @@
 
     <main class="container mx-auto px-6 py-12">
         <section class="text-center">
-            <h2 class="text-4xl lg:text-5xl font-bold mb-4" data-key="title">A collection of tools for Linux in a user-friendly way to make your life on Linux easier than ever.</h2>
+            <h2 class="text-4xl lg:text-4xl font-bold mb-4" data-key="title">A collection of tools for Linux in a user-friendly way to make your life on Linux easier than ever</h2>
              <a href="https://github.com/psygreg/linuxtoys" target="_blank" class="mt-8 inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300" data-key="github-button">
                 View on GitHub
             </a>
@@ -67,7 +91,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div>
                     <h3 class="text-3xl font-bold mb-4" data-key="for-you-title">For you</h3>
-                    <p class="text-lg text-gray-400 mb-6" data-key="for-you-text">A multitool that just works, with a comfortable, practical and simple graphical interface that looks good and gets the job done. It also follows the theme of your system!</p>
+                    <p class="text-lg text-gray-400 mb-6 text-justify" data-key="for-you-text">A multitool that just works, with a comfortable, practical and simple graphical interface that looks good and gets the job done. It also follows the theme of your system!</p>
                     <a href="https://github.com/psygreg/linuxtoys/releases" target="_blank" class="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-lg transition duration-300" data-key="get-it-here">Get it here!</a>
                 </div>
                  <img src="https://raw.githubusercontent.com/psygreg/linuxtoys-site/main/elements/screenshot.png" alt="LinuxToys Screenshot 1" class="rounded-lg shadow-lg w-full">
@@ -77,10 +101,10 @@
         <section class="py-16 bg-gray-800 -mx-6 px-6">
             <div class="container mx-auto">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                     <img src="https://raw.githubusercontent.com/psygreg/linuxtoys-site/main/elements/screenshot-2.png" alt="LinuxToys Screenshot 2" class="rounded-lg shadow-lg w-full md:order-last">
+                     <img src="https://raw.githubusercontent.com/psygreg/linuxtoys-site/main/elements/screenshot-2.png" alt="LinuxToys Screenshot 2" class="rounded-lg shadow-lg w-full">
                     <div>
                         <h3 class="text-3xl font-bold mb-4" data-key="for-professionals-title">For professionals</h3>
-                        <p class="text-lg text-gray-400" data-key="for-professionals-text">With the CLI mode, taking a long time to set up computers for your customers will be a thing of the past. Just list all features you need installed in the manifest file, and let LinuxToys do the job for you. You can save your custom manifest file to use it to standardize your customers' systems. And don't worry: it won't apply resources that are not meant for the target!</p>
+                        <p class="text-lg text-gray-400 text-justify" data-key="for-professionals-text">With the CLI mode, taking a long time to set up computers for your customers will be a thing of the past. Just list all features you need installed in the manifest file, and let LinuxToys do the job for you. You can save your custom manifest file to use it to standardize your customers' systems. And don't worry: it won't apply resources that are not meant for the target!</p>
                     </div>
                  </div>
             </div>
@@ -90,7 +114,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div>
                     <h3 class="text-3xl font-bold mb-4" data-key="for-developers-title">For developers</h3>
-                    <p class="text-lg text-gray-400" data-key="for-developers-text">The ultimate platform for bash script development allowing for quick deployment of fixes for common issues on Linux, and much more, powered by our libraries. Don't believe it? Take a look at our <a href="https://github.com/psygreg/linuxtoys/wiki/Developer-Handbook" target="_blank" class="text-blue-400 hover:underline">Developer Handbook</a> and see it for yourself!</p>
+                    <p class="text-lg text-gray-400 text-justify" data-key="for-developers-text">The ultimate platform for bash script development allowing for quick deployment of fixes for common issues on Linux, and much more, powered by our libraries. Don't believe it? Take a look at our <a href="https://github.com/psygreg/linuxtoys/wiki/Developer-Handbook" target="_blank" class="text-blue-400 hover:underline">Developer Handbook</a> and see it for yourself!</p>
                 </div>
                  <div class="text-center">
                      <a href="https://github.com/psygreg/linuxtoys/wiki" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-10 rounded-lg transition duration-300 text-xl" data-key="learn-more-wiki">Learn more at the Wiki!</a>
@@ -101,7 +125,7 @@
         <section id="tools" class="mt-8">
             <h3 class="text-3xl font-bold text-center mb-10" data-key="tools-title">Tools by Category</h3>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="tool-grid-container">
                 
                 <div class="bg-gray-800 rounded-lg p-6 flex flex-col">
                     <h4 class="text-xl font-semibold mb-4" data-key="devs">Development</h4>
@@ -179,7 +203,7 @@
     <script>
         const translations = {
             en: {
-                title: "A collection of tools for Linux in a user-friendly way to make your life on Linux easier than ever.",
+                title: "A collection of tools for Linux in a user-friendly way to make your life on Linux easier than ever",
                 "github-button": "View on GitHub",
                 "for-you-title": "For you",
                 "for-you-text": "A multitool that just works, with a comfortable, practical and simple graphical interface that looks good and gets the job done. It also follows the theme of your system!",
@@ -203,7 +227,7 @@
                 "toggle-button-less": "Show Less"
             },
             pt: {
-                title: "Uma coleção de ferramentas para Linux de uma forma amigável para tornar sua vida no Linux mais fácil do que nunca.",
+                title: "Uma coleção de ferramentas para Linux de uma forma amigável para tornar sua vida no Linux mais fácil do que nunca",
                 "github-button": "Ver no GitHub",
                 "for-you-title": "Para você",
                 "for-you-text": "Uma multiferramenta que simplesmente funciona, com uma interface gráfica confortável, prática e simples que é bonita e faz o trabalho. E ainda segue o tema do seu sistema!",
