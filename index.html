@@ -7,8 +7,6 @@
 
     <link rel="icon" href="elements/linuxtoys.png" type="image/png" />
 
-    <!-- SEO -->
-
     <meta
       name="description"
       content="A collection of tools for Linux in a user-friendly way to make your life on Linux easier than ever. Useful scripts for gamers, developers and enthusiasts."
@@ -48,8 +46,6 @@
       property="twitter:image"
       content="https://raw.githubusercontent.com/psygreg/linuxtoys-site/main/elements/screenshot.png"
     />
-
-    <!-- CSS -->
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link
@@ -121,8 +117,6 @@
       </nav>
     </header>
 
-    <!-- main-->
-
     <main class="container mx-auto px-6 py-12">
       <section class="text-center">
         <h2 class="text-4xl lg:text-4xl font-bold mb-4" data-key="title">
@@ -139,16 +133,13 @@
         </a>
       </section>
 
-      <!-- Sections -->
-      
-   <!-- Script -->   
-<section class="text-center mt-8 px-4">
+      <section class="text-center mt-8 px-4">
   <h3 class="text-2xl font-bold mb-4" data-key="install-title">Quick-Install</h3>
-  <div class="relative max-w-2xl mx-auto flex items-center justify-between">
-    <code id="install-code" class="text-green-400 font-mono text-sm break-all px-3 py-2 border-2 border-gray-700 bg-gray-800 rounded-full flex-1">
+  <div class="relative w-full md:max-w-3xl lg:max-w-4xl mx-auto flex items-center justify-between">
+    <code id="install-code" class="text-green-400 font-mono text-sm break-all px-4 py-3 border-2 border-gray-700 bg-gray-800 rounded-lg flex-1 text-center">
       echo y | bash <(curl -sSL https://raw.githubusercontent.com/psygreg/linuxtoys/master/install.sh)
     </code>
-    <button id="copy-button" class="ml-2 p-2 bg-gray-700 hover:bg-gray-600 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 flex items-center justify-center">
+    <button id="copy-button" class="ml-3 p-3 bg-gray-700 hover:bg-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 flex items-center justify-center">
       <svg id="copy-icon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
         <path stroke-linecap="round" stroke-linejoin="round" d="M8 3h8a2 2 0 012 2v12a2 2 0 01-2 2H8a2 2 0 01-2-2V5a2 2 0 012-2z"/>
         <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h8"/>
@@ -177,9 +168,7 @@ copyButton.addEventListener('click', () => {
 });
 </script>      
  
-    <!-- For You -->
-      
-      <section class="py-16">
+    <section class="py-16">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>              
             <h3 class="text-3xl font-bold mb-4" data-key="for-you-title">
@@ -218,7 +207,6 @@ copyButton.addEventListener('click', () => {
               class="rounded-lg shadow-lg w-full"
             />
             <div>                
-              <!--Professionals -->
               <h3
                 class="text-3xl font-bold mb-4"
                 data-key="for-professionals-title"
@@ -241,8 +229,6 @@ copyButton.addEventListener('click', () => {
           </div>
         </div>
       </section>
-
-      <!-- Developers -->
 
       <section class="py-16">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -278,8 +264,6 @@ copyButton.addEventListener('click', () => {
           </div>
         </div>
       </section>
-
-      <!-- Tools -->
 
       <section id="tools" class="mt-8">
         <h3 class="text-3xl font-bold text-center mb-10" data-key="tools-title">
@@ -516,7 +500,6 @@ copyButton.addEventListener('click', () => {
         </div>
       </section>
 
-      <!-- Partners -->
       <section id="partners" class="py-12 bg-gray-900">
         <div class="container mx-auto px-6">
           <h3
@@ -527,7 +510,6 @@ copyButton.addEventListener('click', () => {
           </h3>
 
           <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            <!-- PsyGreg Card -->
             <div
               class="bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center text-center hover:scale-105 transition"
             >
@@ -545,12 +527,12 @@ copyButton.addEventListener('click', () => {
                 href="https://beacons.ai/psygreg"
                 target="_blank"
                 class="mt-4 inline-block bg-[#e6534b] hover:bg-[#E63229] text-white font-bold py-2 px-5 rounded-full shadow-md"
+                data-key="credit-psygreg-btn"
               >
                 Lead Developer
               </a>
             </div>
 
-            <!-- NeonHost Card -->
             <div
               class="bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center text-center hover:scale-105 transition"
             >
@@ -568,12 +550,12 @@ copyButton.addEventListener('click', () => {
                 href="https://host.neoncore.xyz/"
                 target="_blank"
                 class="mt-4 inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-5 rounded-full shadow-md"
+                data-key="credit-neonhost-btn"
               >
                 Site & Subdomain
               </a>
             </div>
 
-            <!-- Jeiel0rbit Card -->
             <div
               class="bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center text-center hover:scale-105 transition"
             >
@@ -587,6 +569,7 @@ copyButton.addEventListener('click', () => {
                 href="https://github.com/Jeiel0rbit"
                 target="_blank"
                 class="mt-4 inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-5 rounded-full shadow-md"
+                data-key="credit-jeiel-btn"
               >
                 Site
               </a>
@@ -611,14 +594,13 @@ copyButton.addEventListener('click', () => {
       </div>
     </footer>
 
-    <!-- Translate -->
-
     <script>
       const translations = {
         en: {
           title:
             "A collection of tools for Linux in a user-friendly way to make your life on Linux easier than ever",
           "github-button": "View on GitHub",
+          "install-title": "Quick-Install",
           "for-you-title": "For you",
           "for-you-text":
             "A multitool that just works, with a comfortable, practical and simple graphical interface that looks good and gets the job done. It also follows the theme of your system!",
@@ -643,11 +625,15 @@ copyButton.addEventListener('click', () => {
           "toggle-button": "Show Tools",
           "toggle-button-less": "Show Less",
           "partners-title": "Credits",
+          "credit-psygreg-btn": "Lead Developer",
+          "credit-neonhost-btn": "Site & Subdomain",
+          "credit-jeiel-btn": "Site",
         },
         pt: {
           title:
             "Uma coleção de ferramentas para Linux de uma forma amigável para tornar sua vida no Linux mais fácil do que nunca",
           "github-button": "Ver no GitHub",
+          "install-title": "Instalação Rápida",
           "for-you-title": "Para você",
           "for-you-text":
             "Uma multiferramenta que simplesmente funciona, com uma interface gráfica confortável, prática e simples que é bonita e faz o trabalho. E ainda segue o tema do seu sistema!",
@@ -672,6 +658,9 @@ copyButton.addEventListener('click', () => {
           "toggle-button": "Ver Ferramentas",
           "toggle-button-less": "Ver Menos",
           "partners-title": "Créditos",
+          "credit-psygreg-btn": "Desenvolvedor Principal",
+          "credit-neonhost-btn": "Site & Subdomínio",
+          "credit-jeiel-btn": "Site",
         },
       };
 
