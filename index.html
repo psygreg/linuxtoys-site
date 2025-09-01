@@ -137,7 +137,7 @@
   <h3 class="text-2xl font-bold mb-4" data-key="install-title">Quick-Install</h3>
   <div class="relative w-full md:max-w-3xl lg:max-w-4xl mx-auto flex items-center justify-between">
     <code id="install-code" class="text-green-400 font-mono text-sm break-all px-4 py-3 border-2 border-gray-700 bg-gray-800 rounded-lg flex-1 text-center">
-      echo y | bash <(curl -sSL https://raw.githubusercontent.com/psygreg/linuxtoys/master/install.sh)
+      curl -sSL https://raw.githubusercontent.com/psygreg/linuxtoys/master/install.sh | echo y | sh
     </code>
     <button id="copy-button" class="ml-3 p-3 bg-gray-700 hover:bg-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 flex items-center justify-center">
       <svg id="copy-icon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
