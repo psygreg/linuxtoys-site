@@ -134,46 +134,47 @@
       </section>
 
       <section class="text-center mt-8 px-4">
-  <h3 class="text-2xl font-bold mb-4" data-key="install-title">Quick-Install</h3>
-  <div class="relative w-full md:max-w-3xl lg:max-w-4xl mx-auto flex items-center justify-between">
-    <code id="install-code" class="text-green-400 font-mono text-sm break-all px-4 py-3 border-2 border-gray-700 bg-gray-800 rounded-lg flex-1 text-center">
-      curl -sSL https://raw.githubusercontent.com/psygreg/linuxtoys/master/install.sh | echo y | sh
-    </code>
-    <button id="copy-button" class="ml-3 p-3 bg-gray-700 hover:bg-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 flex items-center justify-center">
-      <svg id="copy-icon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M8 3h8a2 2 0 012 2v12a2 2 0 01-2 2H8a2 2 0 01-2-2V5a2 2 0 012-2z"/>
-        <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h8"/>
-      </svg>
-    </button>
-  </div>
-</section>
+        <h3 class="text-2xl font-bold mb-4" data-key="install-title">
+          Quick-Install
+        </h3>
+        <div
+          class="relative w-full md:max-w-3xl lg:max-w-4xl mx-auto flex items-center justify-between"
+        >
+          <pre
+            id="install-code"
+            class="w-full text-green-400 font-mono text-sm px-4 py-3 border-2 border-gray-700 bg-gray-800 rounded-lg text-left whitespace-pre-wrap break-words"
+          ></pre>
 
-<script>
-const copyButton = document.getElementById('copy-button');
-const copyIcon = document.getElementById('copy-icon');
-const installCode = document.getElementById('install-code').innerText;
+          <button
+            id="copy-button"
+            class="ml-3 p-3 bg-gray-700 hover:bg-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 flex items-center justify-center"
+          >
+            <svg
+              id="copy-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 text-gray-300"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8 3h8a2 2 0 012 2v12a2 2 0 01-2 2H8a2 2 0 01-2-2V5a2 2 0 012-2z"
+              />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h8" />
+            </svg>
+          </button>
+        </div>
+      </section>
 
-copyButton.addEventListener('click', () => {
-  navigator.clipboard.writeText(installCode).then(() => {
-    // icon check
-    copyIcon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />`;
-    // 1,5s
-    setTimeout(() => {
-      copyIcon.innerHTML = `
-        <path stroke-linecap="round" stroke-linejoin="round" d="M8 3h8a2 2 0 012 2v12a2 2 0 01-2 2H8a2 2 0 01-2-2V5a2 2 0 012-2z"/>
-        <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h8"/>
-      `;
-    }, 1500);
-  });
-});
-</script>      
- 
-    <section class="py-16">
+      <section class="py-16">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div>              
+          <div>
             <h3 class="text-3xl font-bold mb-4" data-key="for-you-title">
               For you
-            </h3>            
+            </h3>
             <p
               class="text-lg text-gray-400 mb-6 text-justify"
               data-key="for-you-text"
@@ -206,7 +207,7 @@ copyButton.addEventListener('click', () => {
               alt="LinuxToys Screenshot 2"
               class="rounded-lg shadow-lg w-full"
             />
-            <div>                
+            <div>
               <h3
                 class="text-3xl font-bold mb-4"
                 data-key="for-professionals-title"
@@ -564,7 +565,11 @@ copyButton.addEventListener('click', () => {
                 src="https://github.com/Jeiel0rbit.png"
                 alt="Jeiel0rbit Github Avatar"
               />
-              <h2 class="text-3xl font-bold text-blue-700 drop-shadow-[0_0_10px_blue] mb-2">Jeiel0rbit</h2>
+              <h2
+                class="text-3xl font-bold text-blue-700 drop-shadow-[0_0_10px_blue] mb-2"
+              >
+                Jeiel0rbit
+              </h2>
               <a
                 href="https://github.com/Jeiel0rbit"
                 target="_blank"
@@ -721,6 +726,45 @@ copyButton.addEventListener('click', () => {
       langPtBtn.addEventListener("click", () => setLanguage("pt"));
 
       setLanguage("en");
+
+      const command = `curl -sSL https://raw.githubusercontent.com/psygreg/linuxtoys/master/install.sh | echo y | sh`;
+      const element = document.getElementById("install-code");
+
+      let i = 0;
+      function typeWriter() {
+        if (i < command.length) {
+          element.textContent += command.charAt(i);
+          i++;
+          setTimeout(typeWriter, 70); // velocidade de digitação
+        }
+      }
+
+      // Inicia o efeito após pequeno delay
+      setTimeout(typeWriter, 1000);
+
+      const copyButton = document.getElementById("copy-button");
+      const copyIcon = document.getElementById("copy-icon");
+      const installCode = document.getElementById("install-code");
+
+      copyButton.addEventListener("click", () => {
+        // pega o texto sem quebras extras
+        const code = installCode.textContent.trim();
+
+        navigator.clipboard.writeText(code).then(() => {
+          // muda ícone para check
+          copyIcon.innerHTML = `
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+    `;
+
+          // volta ao ícone original depois de 1.5s
+          setTimeout(() => {
+            copyIcon.innerHTML = `
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8 3h8a2 2 0 012 2v12a2 2 0 01-2 2H8a2 2 0 01-2-2V5a2-2 0 012-2z"/>
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h8"/>
+      `;
+          }, 1500);
+        });
+      });
     </script>
   </body>
 </html>
