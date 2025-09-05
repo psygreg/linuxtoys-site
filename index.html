@@ -727,7 +727,7 @@
 
       setLanguage("en");
 
-      const command = `curl -sSL https://raw.githubusercontent.com/psygreg/linuxtoys/master/install.sh | echo y | sh`;
+      const command = `yes | sh -c "$(curl -fsSL https://raw.githubusercontent.com/psygreg/linuxtoys/master/install.sh)"`;
       const element = document.getElementById("install-code");
 
       let i = 0;
