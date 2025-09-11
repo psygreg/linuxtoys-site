@@ -102,18 +102,34 @@
           <h1 class="text-2xl font-bold text-white">LinuxToys</h1>
         </div>
         <div class="flex items-center">
-          <button
-            id="lang-en"
-            class="block w-full px-3 py-2 text-sm text-left hover:bg-gray-700 transition duration-300 rounded-t-md"
-          >
-            🇺🇸 EN
-          </button>
-          <button
-            id="lang-pt"
-            class="block w-full px-3 py-2 text-sm text-left hover:bg-gray-700 transition duration-300 rounded-b-md"
-          >
-            🇧🇷 PT
-          </button>
+          <div class="relative">
+            <button
+              id="language-dropdown-btn"
+              class="mx-2 px-3 py-1 rounded-md text-sm font-medium bg-blue-600 hover:bg-blue-700 transition duration-300 flex items-center"
+            >
+              <span id="current-lang">🇺🇸 EN</span>
+              <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div
+              id="language-dropdown"
+              class="absolute right-0 mt-2 w-24 bg-gray-800 border border-gray-700 rounded-md shadow-lg z-50 hidden"
+            >
+              <button
+                id="lang-en"
+                class="block w-full px-3 py-2 text-sm text-left hover:bg-gray-700 transition duration-300 rounded-t-md"
+              >
+                🇺🇸 EN
+              </button>
+              <button
+                id="lang-pt"
+                class="block w-full px-3 py-2 text-sm text-left hover:bg-gray-700 transition duration-300 rounded-b-md"
+              >
+                🇧🇷 PT
+              </button>
+            </div>
+          </div>
         </div>
       </nav>
     </header>
@@ -608,11 +624,11 @@
         translationManager = new TranslationManager();
         await translationManager.init();
         
+        // Set up dropdown functionality AFTER translation manager is ready
+        setupLanguageDropdown();
+        
         // Set up toggle buttons for tool lists
         setupToggleButtons();
-        
-        // Set up dropdown functionality
-        setupLanguageDropdown();
         
         // Set up other functionality
         setupInstallCommand();
@@ -626,6 +642,17 @@
         const currentLang = document.getElementById('current-lang');
         const langButtons = dropdown.querySelectorAll('button');
 
+        // Function to update the displayed language
+        function updateDisplayedLanguage(lang) {
+          const displayText = lang === 'en' ? '🇺🇸 EN' : '🇧🇷 PT';
+          currentLang.textContent = displayText;
+        }
+
+        // Set initial language to match translation manager
+        if (translationManager && translationManager.currentLanguage) {
+          updateDisplayedLanguage(translationManager.currentLanguage);
+        }
+
         // Toggle dropdown visibility
         dropdownBtn.addEventListener('click', (e) => {
           e.stopPropagation();
@@ -636,12 +663,11 @@
         langButtons.forEach(button => {
           button.addEventListener('click', (e) => {
             e.stopPropagation();
-            const selectedLang = button.id === 'lang-en' ? '🇺🇸 EN' : '🇧🇷 PT';
-            currentLang.textContent = selectedLang;
+            const lang = button.id.split('-')[1];
+            updateDisplayedLanguage(lang);
             dropdown.classList.add('hidden');
             
             // Trigger the existing translation logic
-            const lang = button.id.split('-')[1];
             if (translationManager) {
               translationManager.switchLanguage(lang);
             }
@@ -690,6 +716,7 @@
           }
         }
 
+        // Start the typewriter effect after a short delay
         setTimeout(typeWriter, 1000);
       }
 
