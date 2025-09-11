@@ -48,6 +48,7 @@
     />
 
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/translations.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
@@ -600,171 +601,80 @@
     </footer>
 
     <script>
-      const translations = {
-        en: {
-          title:
-            "A collection of tools for Linux in a user-friendly way to make your life on Linux easier than ever",
-          "github-button": "View on GitHub",
-          "install-title": "Quick-Install",
-          "for-you-title": "For you",
-          "for-you-text":
-            "A multitool that just works, with a comfortable, practical and simple graphical interface that looks good and gets the job done. It also follows the theme of your system!",
-          "get-it-here": "Get it here!",
-          "for-professionals-title": "For professionals",
-          "for-professionals-text":
-            "With the CLI mode, taking a long time to set up computers for your customers will be a thing of the past. Just list all features you need installed in the manifest file, and let LinuxToys do the job for you. You can save your custom manifest file to use it to standardize your customers' systems. And don't worry: it won't apply resources that are not meant for the target!",
-          "for-developers-title": "For developers",
-          "for-developers-text":
-            "The ultimate platform for bash script development allowing for quick deployment of fixes for common issues on Linux, and much more, powered by our libraries. Don't believe it? Take a look at our <a href='https://github.com/psygreg/linuxtoys/wiki/Developer-Handbook' target='_blank' class='text-blue-400 hover:underline'>Developer Handbook</a> and see it for yourself!",
-          "learn-more-wiki": "Learn more at the Wiki!",
-          "tools-title": "Tools by Category",
-          devs: "Development",
-          drivers: "Drivers",
-          extra: "Extra",
-          game: "Gaming",
-          office: "Office & Productivity",
-          repos: "Repositories",
-          utils: "Utilities",
-          privacy: "Privacy",
-          "license-text": "Released under the",
-          "toggle-button": "Show Tools",
-          "toggle-button-less": "Show Less",
-          "partners-title": "Credits",
-          "credit-psygreg-btn": "Lead Developer",
-          "credit-neonhost-btn": "Site & Subdomain",
-          "credit-jeiel-btn": "Site",
-        },
-        pt: {
-          title:
-            "Uma coleção de ferramentas para Linux de uma forma amigável para tornar sua vida no Linux mais fácil do que nunca",
-          "github-button": "Ver no GitHub",
-          "install-title": "Instalação Rápida",
-          "for-you-title": "Para você",
-          "for-you-text":
-            "Uma multiferramenta que simplesmente funciona, com uma interface gráfica confortável, prática e simples que é bonita e faz o trabalho. E ainda segue o tema do seu sistema!",
-          "get-it-here": "Obtenha aqui!",
-          "for-professionals-title": "Para profissionais",
-          "for-professionals-text":
-            "Com o modo CLI, demorar muito para configurar computadores para seus clientes será coisa do passado. Basta listar todos os recursos que você precisa instalar no arquivo de manifesto e deixar o LinuxToys fazer o trabalho por você. Você pode salvar seu arquivo de manifesto personalizado para usá-lo para padronizar os sistemas de seus clientes. E não se preocupe: ele não aplicará recursos que não são destinados ao alvo!",
-          "for-developers-title": "Para desenvolvedores",
-          "for-developers-text":
-            "A plataforma definitiva para o desenvolvimento de scripts bash, permitindo a implantação rápida de correções para problemas comuns no Linux e muito mais, com o poder de nossas bibliotecas. Não acredita? Dê uma olhada no nosso <a href='https://github.com/psygreg/linuxtoys/wiki/Developer-Handbook' target='_blank' class='text-blue-400 hover:underline'>Manual do Desenvolvedor</a> e veja por si mesmo!",
-          "learn-more-wiki": "Saiba mais na Wiki!",
-          "tools-title": "Ferramentas por Categoria",
-          devs: "Desenvolvimento",
-          drivers: "Drivers",
-          extra: "Extras",
-          game: "Jogos",
-          office: "Escritório & Produtividade",
-          repos: "Repositórios",
-          utils: "Utilitários",
-          privacy: "Privacidade",
-          "license-text": "Lançado sob a licença",
-          "toggle-button": "Ver Ferramentas",
-          "toggle-button-less": "Ver Menos",
-          "partners-title": "Créditos",
-          "credit-psygreg-btn": "Líder do Projeto",
-          "credit-neonhost-btn": "Site & Subdomínio",
-          "credit-jeiel-btn": "Site",
-        },
-      };
+      // Initialize translation manager
+      let translationManager;
 
-      let currentLang = "en";
+      document.addEventListener('DOMContentLoaded', async () => {
+        translationManager = new TranslationManager();
+        await translationManager.init();
+        
+        // Set up toggle buttons for tool lists
+        setupToggleButtons();
+        
+        // Set up other functionality
+        setupInstallCommand();
+        setupCopyButton();
+        setCurrentYear();
+      });
 
-      const langEnBtn = document.getElementById("lang-en");
-      const langPtBtn = document.getElementById("lang-pt");
-      const toggleButtons = document.querySelectorAll(".toggle-button");
-
-      function setLanguage(lang) {
-        currentLang = lang;
-        document.documentElement.lang = lang;
-        const elements = document.querySelectorAll("[data-key]");
-        elements.forEach((element) => {
-          const key = element.getAttribute("data-key");
-
-          if (key === "toggle-button") {
-            const list = element.nextElementSibling;
-            if (list.classList.contains("expanded")) {
-              element.textContent = translations[lang]["toggle-button-less"];
+      function setupToggleButtons() {
+        const toggleButtons = document.querySelectorAll('.toggle-button');
+        
+        toggleButtons.forEach(button => {
+          button.addEventListener('click', () => {
+            const list = button.nextElementSibling;
+            list.classList.toggle('expanded');
+            
+            // Update button text based on current state
+            if (list.classList.contains('expanded')) {
+              button.textContent = translationManager.getTranslation('toggle-button-less');
             } else {
-              element.textContent = translations[lang][key];
+              button.textContent = translationManager.getTranslation('toggle-button');
             }
-          } else {
-            const translation = translations[lang][key];
-            if (translation && translation.includes("<a href")) {
-              element.innerHTML = translation;
-            } else if (translation) {
-              element.textContent = translation;
-            }
-          }
+          });
         });
-
-        if (lang === "en") {
-          langEnBtn.classList.add("bg-blue-600");
-          langPtBtn.classList.remove("bg-blue-600");
-        } else {
-          langPtBtn.classList.add("bg-blue-600");
-          langEnBtn.classList.remove("bg-blue-600");
-        }
       }
 
-      toggleButtons.forEach((button) => {
-        button.addEventListener("click", () => {
-          const list = button.nextElementSibling;
-          list.classList.toggle("expanded");
-          if (list.classList.contains("expanded")) {
-            button.textContent =
-              translations[currentLang]["toggle-button-less"];
-          } else {
-            button.textContent = translations[currentLang]["toggle-button"];
+      function setupInstallCommand() {
+        const command = `yes | sh -c "$(curl -fsSL https://raw.githubusercontent.com/psygreg/linuxtoys/master/install.sh)"`;
+        const element = document.getElementById('install-code');
+
+        let i = 0;
+        function typeWriter() {
+          if (i < command.length) {
+            element.textContent += command.charAt(i);
+            i++;
+            setTimeout(typeWriter, 70);
           }
-        });
-      });
-
-      document.getElementById("year").textContent = new Date().getFullYear();
-      langEnBtn.addEventListener("click", () => setLanguage("en"));
-      langPtBtn.addEventListener("click", () => setLanguage("pt"));
-
-      setLanguage("en");
-
-      const command = `yes | sh -c "$(curl -fsSL https://raw.githubusercontent.com/psygreg/linuxtoys/master/install.sh)"`;
-      const element = document.getElementById("install-code");
-
-      let i = 0;
-      function typeWriter() {
-        if (i < command.length) {
-          element.textContent += command.charAt(i);
-          i++;
-          setTimeout(typeWriter, 70); // velocidade de digitação
         }
+
+        setTimeout(typeWriter, 1000);
       }
 
-      // Inicia o efeito após pequeno delay
-      setTimeout(typeWriter, 1000);
+      function setupCopyButton() {
+        const copyButton = document.getElementById('copy-button');
+        const copyIcon = document.getElementById('copy-icon');
+        const installCode = document.getElementById('install-code');
 
-      const copyButton = document.getElementById("copy-button");
-      const copyIcon = document.getElementById("copy-icon");
-      const installCode = document.getElementById("install-code");
+        copyButton.addEventListener('click', () => {
+          const code = installCode.textContent.trim();
 
-      copyButton.addEventListener("click", () => {
-        // pega o texto sem quebras extras
-        const code = installCode.textContent.trim();
+          navigator.clipboard.writeText(code).then(() => {
+            copyIcon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />`;
 
-        navigator.clipboard.writeText(code).then(() => {
-          // muda ícone para check
-          copyIcon.innerHTML = `
-      <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-    `;
-
-          // volta ao ícone original depois de 1.5s
-          setTimeout(() => {
-            copyIcon.innerHTML = `
-        <path stroke-linecap="round" stroke-linejoin="round" d="M8 3h8a2 2 0 012 2v12a2 2 0 01-2 2H8a2 2 0 01-2-2V5a2-2 0 012-2z"/>
-        <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h8"/>
-      `;
-          }, 1500);
+            setTimeout(() => {
+              copyIcon.innerHTML = `
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8 3h8a2 2 0 012 2v12a2 2 0 01-2 2H8a2 2 0 01-2-2V5a2-2 0 012-2z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h8"/>
+              `;
+            }, 1500);
+          });
         });
-      });
+      }
+
+      function setCurrentYear() {
+        document.getElementById('year').textContent = new Date().getFullYear();
+      }
     </script>
   </body>
 </html>
