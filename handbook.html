@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="page-title">Developer Handbook - LinuxToys</title>
+
+    <link rel="icon" href="elements/linuxtoys.png" type="image/png" />
+
+    <meta id="page-description" name="description" content="Complete guide for developing LinuxToys tools and scripts" />
+    <meta name="keywords" content="Linux, tools, scripts, development, handbook, developer guide, psygreg" />
+    <meta name="author" content="psygreg" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://psygreg.github.io/linuxtoys-site/handbook.html" />
+    <meta id="og-title" property="og:title" content="Developer Handbook - LinuxToys" />
+    <meta id="og-description" property="og:description" content="Complete guide for developing LinuxToys tools and scripts" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/psygreg/linuxtoys-site/main/elements/screenshot.png" />
+
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://psygreg.github.io/linuxtoys-site/handbook.html" />
+    <meta id="twitter-title" property="twitter:title" content="Developer Handbook - LinuxToys" />
+    <meta id="twitter-description" property="twitter:description" content="Complete guide for developing LinuxToys tools and scripts" />
+    <meta property="twitter:image" content="https://raw.githubusercontent.com/psygreg/linuxtoys-site/main/elements/screenshot.png" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="js/translations.js"></script>
+    <script src="js/content-loader.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      
+      /* Markdown content styling */
+      .markdown-content {
+        line-height: 1.7;
+      }
+      
+      .markdown-content h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        color: #ffffff;
+        border-bottom: 2px solid #3b82f6;
+        padding-bottom: 0.5rem;
+      }
+      
+      .markdown-content h2 {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        color: #e5e7eb;
+      }
+      
+      .markdown-content h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-top: 1.5rem;
+        margin-bottom: 0.75rem;
+        color: #d1d5db;
+      }
+      
+      .markdown-content h4 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+        color: #d1d5db;
+      }
+      
+      .markdown-content p {
+        margin-bottom: 1rem;
+        color: #d1d5db;
+      }
+      
+      .markdown-content ul, .markdown-content ol {
+        margin-bottom: 1rem;
+        padding-left: 1.5rem;
+        color: #d1d5db;
+      }
+      
+      .markdown-content li {
+        margin-bottom: 0.5rem;
+      }
+      
+      .markdown-content a {
+        color: #60a5fa;
+        text-decoration: underline;
+        transition: color 0.2s;
+      }
+      
+      .markdown-content a:hover {
+        color: #93c5fd;
+      }
+      
+      .markdown-content code {
+        background-color: #374151;
+        color: #f9fafb;
+        padding: 0.25rem 0.5rem;
+        border-radius: 0.25rem;
+        font-family: 'Courier New', monospace;
+        font-size: 0.875rem;
+      }
+      
+      .markdown-content pre {
+        background-color: #1f2937;
+        border: 1px solid #374151;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        margin: 1rem 0;
+        overflow-x: auto;
+      }
+      
+      .markdown-content pre code {
+        background-color: transparent;
+        color: #f9fafb;
+        padding: 0;
+        border-radius: 0;
+        font-size: 0.875rem;
+      }
+      
+      .markdown-content blockquote {
+        border-left: 4px solid #3b82f6;
+        background-color: #1f2937;
+        padding: 1rem;
+        margin: 1rem 0;
+        border-radius: 0.25rem;
+      }
+      
+      .markdown-content table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 1rem 0;
+      }
+      
+      .markdown-content th, .markdown-content td {
+        border: 1px solid #374151;
+        padding: 0.75rem;
+        text-align: left;
+      }
+      
+      .markdown-content th {
+        background-color: #374151;
+        font-weight: 600;
+        color: #f9fafb;
+      }
+      
+      .markdown-content td {
+        color: #d1d5db;
+      }
+      
+      .markdown-content hr {
+        border: none;
+        border-top: 1px solid #374151;
+        margin: 2rem 0;
+      }
+      
+      /* Loading spinner */
+      .loading-spinner {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border: 3px solid #374151;
+        border-radius: 50%;
+        border-top-color: #3b82f6;
+        animation: spin 1s ease-in-out infinite;
+      }
+      
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+      
+      /* Error message */
+      .error-message {
+        background-color: #7f1d1d;
+        border: 1px solid #dc2626;
+        color: #fca5a5;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        margin: 1rem 0;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-900 text-white">
+    <!-- Header -->
+    <header class="bg-gray-800 shadow-md sticky top-0 z-50">
+      <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="flex items-center">
+          <a href="index.html" class="flex items-center">
+            <img
+              src="https://raw.githubusercontent.com/psygreg/linuxtoys-site/main/elements/linuxtoys.png"
+              alt="LinuxToys Logo"
+              class="h-8 w-8 mr-3"
+            />
+            <h1 class="text-2xl font-bold text-white">LinuxToys</h1>
+          </a>
+        </div>
+        <div class="flex items-center space-x-4">
+          <a
+            href="https://github.com/psygreg/linuxtoys"
+            target="_blank"
+            class="p-2 text-gray-300 hover:text-white hover:bg-gray-700 rounded-lg transition duration-300"
+            data-key="github-button"
+            title="View on GitHub"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-6 h-6"
+            >
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+          </a>
+          <div class="relative">
+            <button
+              id="language-dropdown-btn"
+              class="mx-2 px-3 py-1 rounded-md text-sm font-medium bg-blue-600 hover:bg-blue-700 transition duration-300 flex items-center"
+            >
+              <span id="current-lang">🇺🇸 EN</span>
+              <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div
+              id="language-dropdown"
+              class="absolute right-0 mt-2 w-28 bg-gray-800 border border-gray-700 rounded-md shadow-lg z-50 hidden max-h-60 overflow-y-auto"
+            >
+              <button id="lang-en" class="block w-full px-3 py-2 text-sm text-left hover:bg-gray-700 transition duration-300 rounded-t-md">🇺🇸 EN</button>
+              <button id="lang-pt" class="block w-full px-3 py-2 text-sm text-left hover:bg-gray-700 transition duration-300">🇧🇷 PT</button>
+              <button id="lang-es" class="block w-full px-3 py-2 text-sm text-left hover:bg-gray-700 transition duration-300">🇪🇸 ES</button>
+              <button id="lang-fr" class="block w-full px-3 py-2 text-sm text-left hover:bg-gray-700 transition duration-300">🇫🇷 FR</button>
+              <button id="lang-de" class="block w-full px-3 py-2 text-sm text-left hover:bg-gray-700 transition duration-300">🇩🇪 DE</button>
+              <button id="lang-zh" class="block w-full px-3 py-2 text-sm text-left hover:bg-gray-700 transition duration-300">🇨🇳 ZH</button>
+              <button id="lang-ja" class="block w-full px-3 py-2 text-sm text-left hover:bg-gray-700 transition duration-300">🇯🇵 JA</button>
+              <button id="lang-ru" class="block w-full px-3 py-2 text-sm text-left hover:bg-gray-700 transition duration-300 rounded-b-md">🇷🇺 RU</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+      <div class="max-w-4xl mx-auto">
+        <!-- Navigation breadcrumb -->
+        <nav class="mb-8">
+          <a href="index.html" class="text-blue-400 hover:text-blue-300 transition duration-300">
+            ← <span data-key="back-to-home">Back to Home</span>
+          </a>
+        </nav>
+        
+        <!-- Content Loading -->
+        <div id="content-loading" class="text-center py-12">
+          <div class="loading-spinner mx-auto mb-4"></div>
+          <p class="text-gray-400" data-key="loading-content">Loading content...</p>
+        </div>
+        
+        <!-- Content Container -->
+        <div id="markdown-content" class="markdown-content hidden"></div>
+        
+        <!-- Error Message -->
+        <div id="content-error" class="error-message hidden">
+          <h3 class="font-semibold mb-2" data-key="error-title">Content not available</h3>
+          <p data-key="error-message">Sorry, the content for this page is not available in the selected language yet.</p>
+          <p class="mt-2">
+            <a href="index.html" class="text-blue-400 hover:text-blue-300 underline" data-key="return-home">Return to home page</a>
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-8 mt-16">
+      <div class="container mx-auto px-6 text-center">
+        <div class="mb-4">
+          <img
+            src="https://raw.githubusercontent.com/psygreg/linuxtoys-site/main/elements/linuxtoys.png"
+            alt="LinuxToys Logo"
+            class="h-12 w-12 mx-auto mb-4"
+          />
+          <h3 class="text-xl font-semibold text-white mb-2">LinuxToys</h3>
+          <p class="text-gray-400" data-key="footer-description">
+            Making Linux easier, one tool at a time.
+          </p>
+        </div>
+        <div class="flex justify-center space-x-6 mb-4">
+          <a
+            href="https://github.com/psygreg/linuxtoys"
+            target="_blank"
+            class="text-gray-400 hover:text-white transition duration-300"
+          >
+            GitHub
+          </a>
+          <a
+            href="https://github.com/psygreg/linuxtoys/wiki"
+            target="_blank"
+            class="text-gray-400 hover:text-white transition duration-300"
+          >
+            Wiki
+          </a>
+          <a
+            href="https://github.com/psygreg/linuxtoys/issues"
+            target="_blank"
+            class="text-gray-400 hover:text-white transition duration-300"
+          >
+            <span data-key="footer-support">Support</span>
+          </a>
+        </div>
+        <div class="text-gray-500 text-sm">
+          <p>&copy; <span id="year">2024</span> psygreg. <span data-key="footer-rights">All rights reserved.</span></p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Initialize the page
+      document.addEventListener('DOMContentLoaded', async function() {
+        // Set current year
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        // Initialize translation system with additional translations
+        const translationManager = new TranslationManager();
+        
+        // Merge additional translations
+        translationManager.mergeTranslations = function(additionalTranslations) {
+          Object.keys(additionalTranslations).forEach(lang => {
+            if (!this.translations[lang]) {
+              this.translations[lang] = {};
+            }
+            Object.assign(this.translations[lang], additionalTranslations[lang]);
+          });
+        };
+        
+        await translationManager.init();
+        translationManager.mergeTranslations(window.additionalTranslations);
+        
+        // Initialize content loader with handbook content
+        const contentLoader = new ContentLoader(translationManager);
+        contentLoader.contentType = 'handbook';
+        await contentLoader.loadContent();
+        
+        // Set up language dropdown
+        setupLanguageDropdown(translationManager, contentLoader);
+        
+        // Store reference for global access
+        window.contentLoader = contentLoader;
+      });
+      
+      function setupLanguageDropdown(translationManager, contentLoader) {
+        const dropdownBtn = document.getElementById('language-dropdown-btn');
+        const dropdown = document.getElementById('language-dropdown');
+        const currentLangSpan = document.getElementById('current-lang');
+        
+        // Language flags mapping
+        const langFlags = {
+          'en': '🇺🇸 EN',
+          'pt': '🇧🇷 PT', 
+          'es': '🇪🇸 ES',
+          'fr': '🇫🇷 FR',
+          'de': '🇩🇪 DE',
+          'zh': '🇨🇳 ZH',
+          'ja': '🇯🇵 JA',
+          'ru': '🇷🇺 RU'
+        };
+        
+        // Update current language display
+        function updateCurrentLang() {
+          currentLangSpan.textContent = langFlags[translationManager.currentLang] || '🇺🇸 EN';
+        }
+        
+        // Toggle dropdown
+        dropdownBtn.addEventListener('click', () => {
+          dropdown.classList.toggle('hidden');
+        });
+        
+        // Close dropdown when clicking outside
+        document.addEventListener('click', (e) => {
+          if (!dropdownBtn.contains(e.target) && !dropdown.contains(e.target)) {
+            dropdown.classList.add('hidden');
+          }
+        });
+        
+        // Set up language buttons
+        translationManager.supportedLanguages.forEach(lang => {
+          const button = document.getElementById(`lang-${lang}`);
+          if (button) {
+            button.addEventListener('click', async () => {
+              await translationManager.setLanguage(lang);
+              updateCurrentLang();
+              dropdown.classList.add('hidden');
+              
+              // Reload content in new language
+              await contentLoader.loadContent();
+            });
+          }
+        });
+        
+        updateCurrentLang();
+      }
+    </script>
+  </body>
+</html>

@@ -108,13 +108,14 @@ class TranslationManager {
   }
 
   updateLanguageButtons() {
-    const langEnBtn = document.getElementById('lang-en');
-    const langPtBtn = document.getElementById('lang-pt');
-    
-    if (langEnBtn && langPtBtn) {
-      langEnBtn.classList.toggle('bg-blue-600', this.currentLang === 'en');
-      langPtBtn.classList.toggle('bg-blue-600', this.currentLang === 'pt');
-    }
+    // Update active state for all language buttons
+    this.supportedLanguages.forEach(lang => {
+      const button = document.getElementById(`lang-${lang}`);
+      if (button) {
+        button.classList.toggle('bg-blue-600', this.currentLang === lang);
+        button.classList.toggle('bg-gray-800', this.currentLang !== lang);
+      }
+    });
   }
 
   getTranslation(key) {
@@ -159,16 +160,13 @@ class TranslationManager {
   }
 
   setupLanguageSwitchers() {
-    const langEnBtn = document.getElementById('lang-en');
-    const langPtBtn = document.getElementById('lang-pt');
-    
-    if (langEnBtn) {
-      langEnBtn.addEventListener('click', () => this.setLanguage('en'));
-    }
-    
-    if (langPtBtn) {
-      langPtBtn.addEventListener('click', () => this.setLanguage('pt'));
-    }
+    // Set up all supported language buttons
+    this.supportedLanguages.forEach(lang => {
+      const button = document.getElementById(`lang-${lang}`);
+      if (button) {
+        button.addEventListener('click', () => this.setLanguage(lang));
+      }
+    });
   }
 
   // Method to add support for new languages dynamically
