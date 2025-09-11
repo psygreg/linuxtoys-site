@@ -54,54 +54,24 @@ class I18n {
    * @param {string} lang - Language code (e.g., 'en', 'pt')
    */
   async loadLanguage(lang) {
-    // Validate language
     if (!this.supportedLanguages.includes(lang)) {
-      console.warn(`Unsupported language: ${lang}, falling back to ${this.fallbackLang}`);
       lang = this.fallbackLang;
     }
 
-    // Check if already loaded
-    if (this.translations[lang]) {
-      this.currentLang = lang;
-      return true;
-    }
-
-    console.log(`Loading language: ${lang}`);
-
     try {
-      // Load the website language file with explicit timeout
-      const controller = new AbortController();
-      const timeoutId = setTimeout(() => controller.abort(), 5000); // 5 second timeout
-      
-      const response = await fetch(`./lang/${lang}.json`, {
-        signal: controller.signal,
-        cache: 'no-cache' // Ensure we're not getting stale cached versions
-      });
-      
-      clearTimeout(timeoutId);
-      
+      // Check if already loaded
+      if (this.translations[lang]) {
+        this.currentLang = lang;
+        return;
+      }
+
+      // Load the website language file
+      const response = await fetch(`./lang/${lang}.json`);
       if (!response.ok) {
-        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+        throw new Error(`HTTP ${response.status}`);
       }
 
-      const text = await response.text();
-      if (!text.trim()) {
-        throw new Error('Empty response');
-      }
-
-      let translations;
-      try {
-        translations = JSON.parse(text);
-      } catch (jsonError) {
-        throw new Error(`Invalid JSON: ${jsonError.message}`);
-      }
-
-      if (!translations || typeof translations !== 'object') {
-        throw new Error('Invalid translations object');
-      }
-
-      console.log(`Successfully loaded ${lang} with ${Object.keys(translations).length} keys`);
-      
+      const translations = await response.json();
       this.translations[lang] = translations;
       this.currentLang = lang;
       
@@ -110,22 +80,37 @@ class I18n {
       
       // Store language preference
       localStorage.setItem('linuxtoys-language', lang);
-      return true;
       
     } catch (error) {
-      console.error(`Failed to load language ${lang}:`, error.message);
-      
       // If it's not the fallback language, try to load fallback
       if (lang !== this.fallbackLang) {
-        console.log(`Attempting fallback to ${this.fallbackLang}`);
-        return await this.loadLanguage(this.fallbackLang);
+        try {
+          if (!this.translations[this.fallbackLang]) {
+            const fallbackResponse = await fetch(`./lang/${this.fallbackLang}.json`);
+            if (!fallbackResponse.ok) {
+              throw new Error(`HTTP ${fallbackResponse.status}`);
+            }
+            const fallbackTranslations = await fallbackResponse.json();
+            this.translations[this.fallbackLang] = fallbackTranslations;
+          }
+          this.currentLang = this.fallbackLang;
+          
+          // Also try LinuxToys translations for fallback
+          await this.loadLinuxToysTranslations(this.fallbackLang);
+          
+          // Store fallback language preference
+          localStorage.setItem('linuxtoys-language', this.fallbackLang);
+        } catch (fallbackError) {
+          // Use inline fallback if all else fails
+          this.translations[this.fallbackLang] = this.getInlineFallback();
+          this.currentLang = this.fallbackLang;
+          localStorage.setItem('linuxtoys-language', this.fallbackLang);
+        }
       } else {
         // If we failed to load the fallback language, use inline fallback
-        console.warn(`Fallback language ${this.fallbackLang} failed, using inline fallback`);
         this.translations[this.fallbackLang] = this.getInlineFallback();
         this.currentLang = this.fallbackLang;
         localStorage.setItem('linuxtoys-language', this.fallbackLang);
-        return false;
       }
     }
   }
@@ -163,13 +148,6 @@ class I18n {
       return linuxToysFallbackTranslations[key];
     }
     
-    // If no translation found, log it for debugging (but not too verbose)
-    if (!this._missingTranslations) this._missingTranslations = new Set();
-    if (!this._missingTranslations.has(key)) {
-      console.warn(`Missing translation for "${key}" in language "${targetLang}"`);
-      this._missingTranslations.add(key);
-    }
-    
     return key;
   }
 
@@ -179,20 +157,12 @@ class I18n {
    */
   async switchLanguage(lang) {
     if (lang === this.currentLang) {
-      console.log(`Language ${lang} is already current`);
       return;
     }
 
-    console.log(`Switching language from ${this.currentLang} to ${lang}`);
-    
-    const success = await this.loadLanguage(lang);
-    if (success !== false) { // success is true or undefined (older behavior)
-      this.updateLanguageDisplay();
-      this.updateUI();
-      console.log(`Successfully switched to ${lang}`);
-    } else {
-      console.warn(`Failed to switch to ${lang}, staying on ${this.currentLang}`);
-    }
+    await this.loadLanguage(lang);
+    this.updateLanguageDisplay();
+    this.updateUI();
     
     // Notify tools-sync system that language changed
     if (window.linuxToysSync) {
@@ -260,13 +230,11 @@ class I18n {
     // Check if user has a saved language preference first
     const savedLanguage = localStorage.getItem('linuxtoys-language');
     if (savedLanguage && this.supportedLanguages.includes(savedLanguage)) {
-      console.log('Using saved language preference:', savedLanguage);
       return savedLanguage;
     }
 
     // Get browser languages in order of preference
     const browserLanguages = navigator.languages || [navigator.language || navigator.userLanguage || 'en'];
-    console.log('Browser languages:', browserLanguages);
     
     // Check each language preference
     for (const language of browserLanguages) {
@@ -274,48 +242,39 @@ class I18n {
       
       // Check for Spanish variants (es, es-ES, es-MX, etc.)
       if (langCode.startsWith('es')) {
-        console.log(`Detected Spanish variant: ${langCode} -> es`);
         return 'es';
       }
       // Check for Portuguese variants (pt, pt-BR, pt-PT, etc.)
       if (langCode.startsWith('pt')) {
-        console.log(`Detected Portuguese variant: ${langCode} -> pt`);
         return 'pt';
       }
       // Check for Russian variants (ru, ru-RU, etc.)
       if (langCode.startsWith('ru')) {
-        console.log(`Detected Russian variant: ${langCode} -> ru`);
         return 'ru';
       }
       // Check for Chinese variants (zh, zh-CN, zh-Hans, zh-TW, zh-Hant, etc.)
       if (langCode.startsWith('zh')) {
-        console.log(`Detected Chinese variant: ${langCode} -> zh`);
         return 'zh';
       }
       // Check for Japanese variants (ja, ja-JP, etc.)
       if (langCode.startsWith('ja')) {
-        console.log(`Detected Japanese variant: ${langCode} -> ja`);
         return 'ja';
       }
       // Check for French variants (fr, fr-FR, fr-CA, etc.)
       if (langCode.startsWith('fr')) {
-        console.log(`Detected French variant: ${langCode} -> fr`);
         return 'fr';
       }
       // Check for German variants (de, de-DE, de-AT, de-CH, etc.)
       if (langCode.startsWith('de')) {
-        console.log(`Detected German variant: ${langCode} -> de`);
         return 'de';
       }
       // Check for English variants
       if (langCode.startsWith('en')) {
-        console.log(`Detected English variant: ${langCode} -> en`);
         return 'en';
       }
     }
     
     // Default fallback to English
-    console.log('No matching language found, defaulting to English');
     return 'en';
   }
 
