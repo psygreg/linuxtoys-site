@@ -627,6 +627,11 @@
         // Set up dropdown functionality AFTER translation manager is ready
         setupLanguageDropdown();
         
+        // Additional sync after everything is loaded
+        setTimeout(() => {
+          syncDropdownWithCurrentLanguage();
+        }, 200);
+        
         // Set up toggle buttons for tool lists
         setupToggleButtons();
         
@@ -635,6 +640,29 @@
         setupCopyButton();
         setCurrentYear();
       });
+
+      function syncDropdownWithCurrentLanguage() {
+        const currentLang = document.getElementById('current-lang');
+        if (translationManager) {
+          let detectedLang = 'en'; // default fallback
+          
+          // Try different ways to get the current language
+          if (translationManager.currentLanguage) {
+            detectedLang = translationManager.currentLanguage;
+          } else if (translationManager.language) {
+            detectedLang = translationManager.language;
+          } else {
+            // Fallback: check browser language
+            const browserLang = navigator.language || navigator.userLanguage;
+            if (browserLang.startsWith('pt')) {
+              detectedLang = 'pt';
+            }
+          }
+          
+          const displayText = detectedLang === 'en' ? '🇺🇸 EN' : '🇧🇷 PT';
+          currentLang.textContent = displayText;
+        }
+      }
 
       function setupLanguageDropdown() {
         const dropdownBtn = document.getElementById('language-dropdown-btn');
@@ -649,9 +677,16 @@
         }
 
         // Set initial language to match translation manager
-        if (translationManager && translationManager.currentLanguage) {
-          updateDisplayedLanguage(translationManager.currentLanguage);
-        }
+        // We need to wait a bit for the translation manager to fully initialize
+        setTimeout(() => {
+          if (translationManager && translationManager.currentLanguage) {
+            updateDisplayedLanguage(translationManager.currentLanguage);
+          } else if (translationManager && translationManager.detectLanguage) {
+            // Fallback: try to detect the language if currentLanguage isn't set yet
+            const detectedLang = translationManager.detectLanguage();
+            updateDisplayedLanguage(detectedLang);
+          }
+        }, 100);
 
         // Toggle dropdown visibility
         dropdownBtn.addEventListener('click', (e) => {
