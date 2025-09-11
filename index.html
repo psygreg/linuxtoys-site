@@ -153,13 +153,13 @@
                 class="language-option w-full px-4 py-2 text-left text-white hover:bg-gray-700 transition duration-200 flex items-center"
                 data-lang="ja"
               >
-                �🇵 JA
+                🇯🇵 JA
               </button>
               <button
                 class="language-option w-full px-4 py-2 text-left text-white hover:bg-gray-700 transition duration-200 flex items-center"
                 data-lang="fr"
               >
-                ��🇷 FR
+                🇫🇷 FR
               </button>
               <button
                 class="language-option w-full px-4 py-2 text-left text-white hover:bg-gray-700 rounded-b-lg transition duration-200 flex items-center"
@@ -327,12 +327,12 @@
           Tools by Category
         </h3>
         <div id="tools-status" class="text-center mb-4">
-          <p class="text-blue-400" id="status-message">Loading latest tools from LinuxToys repository...</p>
+          <p class="text-blue-400" id="status-message">Loading tools data...</p>
         </div>
 
         <div class="tool-grid-container" id="tools-container">
-          <!-- Tools will be loaded dynamically from GitHub -->
-          <!-- Fallback content in case GitHub API fails -->
+          <!-- Tools will be loaded dynamically from local data -->
+          <!-- Fallback content in case local data is unavailable -->
           <div class="bg-gray-800 rounded-lg p-6 flex flex-col">
             <h4 class="text-xl font-semibold mb-4" data-key="devs">
               Development
@@ -357,7 +357,7 @@
             class="text-3xl font-bold text-center mb-12 text-white"
             data-key="partners-title"
           >
-            Créditos
+            Credits
           </h3>
 
           <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -380,7 +380,6 @@
                 class="mt-4 inline-block bg-[#e6534b] hover:bg-[#E63229] text-white font-bold py-2 px-5 rounded-full shadow-md"
                 data-key="credit-psygreg-btn"
               >
-                Lead Developer
               </a>
             </div>
 
@@ -403,7 +402,6 @@
                 class="mt-4 inline-block bg-[#00ffff] hover:bg-[#00d1d1] text-black font-bold py-2 px-5 rounded-full shadow-md"
                 data-key="credit-neonhost-btn"
               >
-                Site & Subdomain
               </a>
             </div>
 
@@ -426,7 +424,6 @@
                 class="mt-4 inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-5 rounded-full shadow-md"
                 data-key="credit-jeiel-btn"
               >
-                Site
               </a>
             </div>
           </div>
