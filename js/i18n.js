@@ -8,7 +8,7 @@ class I18n {
     this.currentLang = 'en';
     this.translations = {};
     this.fallbackLang = 'en';
-    this.supportedLanguages = ['en', 'es', 'pt'];
+    this.supportedLanguages = ['en', 'pt'];
   }
 
   /**
@@ -19,7 +19,6 @@ class I18n {
     const detectedLanguage = this.detectBrowserLanguage();
     await this.loadLanguage(detectedLanguage);
     this.setupEventListeners();
-    this.updateLanguageDisplay();
     this.updateUI();
   }
 
@@ -135,12 +134,7 @@ class I18n {
   updateLanguageDisplay() {
     const currentLanguageSpan = document.getElementById("current-language");
     if (currentLanguageSpan) {
-      const languageMap = {
-        'en': 'EN',
-        'es': 'ES',
-        'pt': 'PT'
-      };
-      currentLanguageSpan.textContent = languageMap[this.currentLang] || this.currentLang.toUpperCase();
+      currentLanguageSpan.textContent = this.currentLang.toUpperCase();
     }
   }
 
@@ -162,10 +156,6 @@ class I18n {
     for (const language of browserLanguages) {
       const langCode = language.toLowerCase();
       
-      // Check for Spanish variants (es, es-ES, es-MX, etc.)
-      if (langCode.startsWith('es')) {
-        return 'es';
-      }
       // Check for Portuguese variants (pt, pt-BR, pt-PT, etc.)
       if (langCode.startsWith('pt')) {
         return 'pt';
