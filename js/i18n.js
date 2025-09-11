@@ -16,16 +16,12 @@ class I18n {
    * Initialize the i18n system
    */
   async init() {
-    console.log('Initializing i18n system...');
     // Detect and set initial language
     const detectedLanguage = this.detectBrowserLanguage();
-    console.log(`Detected browser language: ${detectedLanguage}`);
     await this.loadLanguage(detectedLanguage);
-    console.log(`Initial language set to: ${this.currentLang}`);
     this.setupEventListeners();
     this.updateLanguageDisplay();
     this.updateUI();
-    console.log('i18n system initialized successfully');
   }
 
   /**
@@ -57,23 +53,18 @@ class I18n {
       // Check if already loaded
       if (this.translations[lang]) {
         this.currentLang = lang;
-        console.log(`Language ${lang} already loaded, switching to it`);
         return;
       }
 
-      console.log(`Loading language file for: ${lang}`);
-      
       // Load the website language file
       const response = await fetch(`lang/${lang}.json`);
       if (!response.ok) {
-        throw new Error(`Failed to load language file: ${lang}.json (status: ${response.status})`);
+        throw new Error(`Failed to load language file: ${lang}.json`);
       }
 
       const translations = await response.json();
       this.translations[lang] = translations;
       this.currentLang = lang;
-      
-      console.log(`Successfully loaded ${lang} language file with ${Object.keys(translations).length} translations`);
       
       // Also try to load LinuxToys translations for this language
       await this.loadLinuxToysTranslations(lang);
@@ -87,13 +78,10 @@ class I18n {
       // If it's not the fallback language, try to load fallback
       if (lang !== this.fallbackLang && !this.translations[this.fallbackLang]) {
         try {
-          console.log(`Loading fallback language: ${this.fallbackLang}`);
           const fallbackResponse = await fetch(`lang/${this.fallbackLang}.json`);
           const fallbackTranslations = await fallbackResponse.json();
           this.translations[this.fallbackLang] = fallbackTranslations;
           this.currentLang = this.fallbackLang;
-          
-          console.log(`Successfully loaded fallback language ${this.fallbackLang}`);
           
           // Also try LinuxToys translations for fallback
           await this.loadLinuxToysTranslations(this.fallbackLang);
@@ -130,11 +118,6 @@ class I18n {
       return linuxToysLangTranslations[key];
     }
     
-    // If no translation found, log it for debugging
-    if (key !== 'toggle-button' && key !== 'toggle-button-less') { // Don't spam console with these common ones
-      console.warn(`Translation not found for key: "${key}" in language: "${targetLang}"`);
-    }
-    
     return key;
   }
 
@@ -143,14 +126,9 @@ class I18n {
    * @param {string} lang - Language code
    */
   async switchLanguage(lang) {
-    if (lang === this.currentLang) {
-      console.log(`Already using language: ${lang}`);
-      return;
-    }
+    if (lang === this.currentLang) return;
 
-    console.log(`Switching from ${this.currentLang} to ${lang}`);
     await this.loadLanguage(lang);
-    console.log(`Language switched to: ${this.currentLang}`);
     this.updateUI();
     this.updateLanguageDisplay();
     

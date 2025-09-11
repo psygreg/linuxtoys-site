@@ -1,6 +1,6 @@
 /**
  * LinuxToys Tools Auto-Sync
- * Displays tools from locally cached data files that are updated by GitHub workflows
+ * Automatically fetches and displays the latest tools from the LinuxToys repository
  */
 
 class LinuxToysSync {
@@ -63,16 +63,8 @@ class LinuxToysSync {
         }
     }
 
-    
-    // =================================================================
-    // LEGACY GITHUB API METHODS - NO LONGER USED
-    // These methods are kept for reference but are not used in the 
-    // current implementation which relies only on local data files
-    // =================================================================
-
     /**
      * Fetch file content from GitHub API
-     * @deprecated - No longer used, kept for reference
      */
     async fetchGitHubFile(path) {
         const cacheKey = `file:${path}`;
@@ -107,7 +99,6 @@ class LinuxToysSync {
 
     /**
      * Fetch directory listing from GitHub API
-     * @deprecated - No longer used, kept for reference
      */
     async fetchGitHubDirectory(path) {
         const cacheKey = `dir:${path}`;
@@ -141,7 +132,6 @@ class LinuxToysSync {
 
     /**
      * Load translation files from LinuxToys repository
-     * @deprecated - No longer used, kept for reference
      */
     async loadTranslations() {
         try {
@@ -183,7 +173,7 @@ class LinuxToysSync {
             return cachedLangTranslations[key];
         }
 
-        // Fall back to live LinuxToys translations if loaded (legacy, no longer used)
+        // Fall back to live LinuxToys translations if loaded (from GitHub API)
         const currentLangTranslations = this.translations.get(lang);
         if (currentLangTranslations && currentLangTranslations[key]) {
             return currentLangTranslations[key];
@@ -244,7 +234,6 @@ class LinuxToysSync {
 
     /**
      * Get all tools for a category
-     * @deprecated - No longer used, kept for reference
      */
     async getCategoryTools(categoryName) {
         const categoryPath = `${this.scriptsPath}/${categoryName}`;
@@ -297,7 +286,6 @@ class LinuxToysSync {
 
     /**
      * Get category information
-     * @deprecated - No longer used, kept for reference
      */
     async getCategoryInfo(categoryName) {
         const infoPath = `${this.scriptsPath}/${categoryName}/category-info.txt`;
@@ -330,7 +318,6 @@ class LinuxToysSync {
 
     /**
      * Get all categories
-     * @deprecated - No longer used, kept for reference
      */
     async getCategories() {
         const files = await this.fetchGitHubDirectory(this.scriptsPath);
@@ -408,16 +395,32 @@ class LinuxToysSync {
             // Load cached LinuxToys translations first
             await this.loadCachedLinuxToysTranslations();
             
-            // Load local data only (pre-generated and stored in repo)
+            // First, try to load local data (pre-generated and stored in repo)
             let categories = await this.loadLocalData();
             let dataSource = 'local';
+            
+            // If local data is not available, fall back to GitHub API
+            if (!categories || categories.length === 0) {
+                console.log('Local data not available, falling back to GitHub API...');
+                this.setStatusMessage('Loading from LinuxToys repository (GitHub API)...', 'loading');
+                
+                try {
+                    // Try to load translations from LinuxToys API, but don't fail if this doesn't work
+                    await this.loadTranslations();
+                } catch (error) {
+                    console.warn('Could not load LinuxToys translations from API:', error);
+                }
+                
+                categories = await this.getCategories();
+                dataSource = 'github-api';
+            }
             
             // Clear existing content
             container.innerHTML = '';
             
             if (!categories || categories.length === 0) {
-                console.log('No local data available, using hardcoded fallback');
-                this.setStatusMessage('⚠ Using fallback data - unable to load local data', 'warning');
+                console.log('No data available from any source, using hardcoded fallback');
+                this.setStatusMessage('⚠ Using fallback data - unable to sync with LinuxToys', 'warning');
                 this.loadFallbackData(container);
                 return;
             }
@@ -432,10 +435,15 @@ class LinuxToysSync {
             this.initializeToggles();
             
             const totalTools = categories.reduce((sum, cat) => sum + cat.tools.length, 0);
-            const translationsCount = this.cachedLinuxToysTranslations.size;
             
-            this.setStatusMessage(`✓ Loaded ${categories.length} categories with ${totalTools} tools (from local data, ${translationsCount} translations)`, 'success');
-            console.log(`Successfully loaded ${categories.length} categories with ${totalTools} tools from local data`);
+            if (dataSource === 'local') {
+                const translationsCount = this.cachedLinuxToysTranslations.size;
+                this.setStatusMessage(`✓ Loaded ${categories.length} categories with ${totalTools} tools (from local data, ${translationsCount} translations)`, 'success');
+                console.log(`Successfully loaded ${categories.length} categories with ${totalTools} tools from local data`);
+            } else {
+                this.setStatusMessage(`✓ Loaded ${categories.length} categories with ${totalTools} tools (synced with LinuxToys repository)`, 'success');
+                console.log(`Successfully loaded ${categories.length} categories with ${totalTools} tools from GitHub API`);
+            }
             
             // Hide status after 5 seconds
             setTimeout(() => {
@@ -458,7 +466,7 @@ class LinuxToysSync {
     }
 
     /**
-     * Load fallback data when local data is unavailable
+     * Load fallback data when GitHub API is unavailable
      */
     loadFallbackData(container) {
         const fallbackCategories = [
