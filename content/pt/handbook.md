@@ -1,123 +1,195 @@
 # Manual do Desenvolvedor
 
-## Bem-vindo ao Desenvolvimento do LinuxToys
+## I. Diretrizes de Contribuição
 
-Este manual irá guiá-lo através do processo de desenvolvimento de ferramentas e scripts do LinuxToys.
+Obrigado pelo seu interesse em contribuir para o LinuxToys! Este projeto visa fornecer uma coleção de ferramentas para Linux de forma amigável ao usuário, tornando funcionalidades poderosas acessíveis a todos os usuários.
 
-## Primeiros Passos
+### Documentação
 
-### Pré-requisitos
+Antes de começar, por favor revise o [Manual do Desenvolvedor](https://github.com/psygreg/linuxtoys/wiki/Developer-Handbook) para documentação completa sobre as bibliotecas e práticas de desenvolvimento do LinuxToys.
 
-Antes de começar a desenvolver para o LinuxToys, certifique-se de ter:
+#### Prioridades de Desenvolvimento
 
-- Um ambiente de desenvolvimento Linux
-- Conhecimento básico de scripting em Bash
-- Entendimento de gerenciamento de pacotes do Linux
-- Git para controle de versão
+Ao contribuir para o LinuxToys, por favor mantenha essas prioridades centrais em mente, listadas em ordem de importância:
 
-### Configuração do Ambiente de Desenvolvimento
+#### 1. Segurança e Privacidade em Primeiro Lugar
+- **A segurança e privacidade do usuário devem sempre ser a prioridade máxima**
+- Todos os scripts e ferramentas devem ser cuidadosamente testados e revisados
+- Nunca implemente recursos que possam comprometer dados do usuário ou segurança do sistema
+- Documente claramente quaisquer riscos potenciais ou mudanças no sistema
+- Siga práticas de codificação segura e valide todas as entradas do usuário
 
-1. Clone o repositório do LinuxToys:
-   ```bash
-   git clone https://github.com/psygreg/linuxtoys.git
-   cd linuxtoys
-   ```
+#### 2. Facilidade de Uso e Acessibilidade
+- Projete pensando no usuário médio de computador
+- Forneça interfaces claras e intuitivas
+- Inclua descrições úteis e orientação para todos os recursos, mantendo-o direto ao ponto
+- Garanta acessibilidade para usuários com diferentes níveis de habilidade técnica
+- Use linguagem simples em textos voltados ao usuário e mensagens de erro
 
-2. Instale as dependências de desenvolvimento:
-   ```bash
-   sudo apt install build-essential git curl
-   ```
+#### 3. Confiabilidade e Autossuficiência
+- **Todos os recursos devem funcionar como pretendido sem exigir soluções adicionais do usuário**
+- Ferramentas devem lidar graciosamente com casos extremos
+- Forneça mensagens de erro claras quando algo der errado
+- Teste através de distribuições e versões suportadas
+- Garanta que dependências sejam adequadamente gerenciadas e documentadas
 
-## Visão Geral da Arquitetura
+#### 4. Restrições de Ferramentas CLI
+- **Interfaces de linha de comando devem ser restritas a casos de uso de desenvolvedores e administradores de sistema**
+- O usuário médio de computador não sabe ou não quer lidar com emuladores de terminal
+- Recursos exclusivos de CLI devem ser restritos aos menus de Desenvolvimento e Administração do Sistema
 
-O LinuxToys é construído com uma arquitetura modular que permite fácil extensão e manutenção.
+### Por último...
 
-### Componentes Principais
+- Todos os Pull Requests serão revisados manualmente antes da aprovação
+- Certifique-se de que suas contribuições se alinhem com as prioridades de desenvolvimento listadas acima
+- Teste suas mudanças através de diferentes distribuições Linux quando possível
+- Siga o estilo de código existente e a estrutura
+- Documente quaisquer novos recursos ou mudanças significativas
 
-- **Motor de Scripts**: Gerencia a execução de ferramentas individuais
-- **Sistema de Bibliotecas**: Funções e utilitários compartilhados
-- **Framework GUI**: Componentes da interface do usuário
-- **Modo CLI**: Interface de linha de comando para automação
+### Primeiros Passos
 
-### Estrutura de Diretórios
+1. Revise o [Manual do Desenvolvedor](https://github.com/psygreg/linuxtoys/wiki/Developer-Handbook)
+2. Faça fork do repositório e crie uma branch de recurso
+3. Faça suas mudanças seguindo as prioridades de desenvolvimento
+4. Teste minuciosamente através de sistemas suportados
+5. Envie um Pull Request com uma descrição clara de suas mudanças
 
-```
-linuxtoys/
-├── src/           # Código fonte
-├── lib/           # Bibliotecas compartilhadas
-├── tools/         # Scripts de ferramentas individuais
-├── gui/           # Componentes GUI
-└── tests/         # Suíte de testes
-```
+Apreciamos suas contribuições para tornar o Linux mais acessível e amigável para todos!
 
-## Criando Novas Ferramentas
+## II. Recursos e Uso do LinuxToys
 
-### Template de Ferramenta
+### Estrutura de Script e Metadados
 
-Toda ferramenta do LinuxToys segue um template padrão:
+#### Template Básico de Script
+
+Todos os scripts LinuxToys seguem uma estrutura padronizada com cabeçalhos de metadados:
 
 ```bash
 #!/bin/bash
-# Nome da Ferramenta: Nome da Sua Ferramenta
-# Descrição: Breve descrição do que sua ferramenta faz
-# Categoria: [devs|drivers|extra|game|office|repos|utils]
-# Dependências: lista,de,dependências
+# name: Human Readable Name (ou placeholder para tradução)
+# version: 1.0
+# description: description_key_or_text
+# icon: icon-name
+# compat: ubuntu, debian, fedora, arch, cachy, suse, ostree, ublue
+# reboot: no|yes|ostree
+# noconfirm: yes
+# localize: en, pt...
+# nocontainer
 
-source "$(dirname "$0")/../lib/common.sh"
+# --- Início do código do script ---
+. /etc/os-release
+SCRIPT_DIR="$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")"
+source "$SCRIPT_DIR/../../libs/linuxtoys.lib"
+_lang_
+source "$SCRIPT_DIR/../../libs/lang/${langfile}.lib"
+source "$SCRIPT_DIR/../../libs/helpers.lib"
 
-function main() {
-    # Lógica da sua ferramenta aqui
-    log_info "Iniciando execução da ferramenta"
-    
-    # Implementação da ferramenta
-    
-    log_success "Ferramenta concluída com sucesso"
-}
+# Sua lógica de script aqui
+```
 
-# Executar a ferramenta
-main "$@"
+#### Cabeçalhos de Metadados
+
+**Cabeçalhos Obrigatórios**
+
+- **`# name:`** - Nome de exibição mostrado na UI
+- **`# version:`** - Versão do script (tipicamente "1.0")
+- **`# description:`** - Chave de descrição para traduções ou texto direto
+- **`# icon:`** - Identificador de ícone para a UI - *não obrigatório em menus de checklist*
+
+**Cabeçalhos Opcionais**
+
+- **`# compat:`** - Lista separada por vírgulas de distribuições compatíveis
+- **`# reboot:`** - Requisito de reinicialização: `no` (padrão), `yes`, ou `ostree`
+- **`# noconfirm:`** - Pular diálogo de confirmação se definido como `yes`
+- **`# localize:`** - Lista separada por vírgulas de locales suportados
+- **`# nocontainer:`** - Ocultar script em ambientes containerizados
+
+#### Sistema de Compatibilidade
+
+LinuxToys suporta múltiplas distribuições Linux através de um sistema de chaves de compatibilidade:
+
+**Distribuições Suportadas**
+
+- **`ubuntu`** - Ubuntu e derivados
+- **`debian`** - Debian e derivados
+- **`fedora`** - Fedora e sistemas baseados em RHEL
+- **`arch`** - Arch Linux (excluindo CachyOS)
+- **`cachy`** - CachyOS especificamente
+- **`suse`** - openSUSE e sistemas SUSE
+- **`ostree`** - sistemas baseados em rpm-ostree
+- **`ublue`** - imagens Universal Blue (Bazzite, Bluefin, Aurora)
+
+#### Requisitos de Reinicialização
+- **`no`** - Nenhuma reinicialização necessária (padrão)
+- **`yes`** - Sempre requer reinicialização
+- **`ostree`** - Requer reinicialização apenas em sistemas ostree/ublue
+
+### Bibliotecas Principais
+
+#### linuxtoys.lib
+
+A biblioteca principal fornece funções essenciais para operações de script:
+
+**Gerenciamento de Pacotes**
+
+```bash
+# Declarar pacotes para instalar
+_packages=(package1 package2 package3)
+_install_
+```
+
+A função `_install_` automaticamente:
+- Detecta o gerenciador de pacotes (apt, pacman, dnf, zypper, rpm-ostree)
+- Verifica se os pacotes já estão instalados
+- Instala pacotes faltantes usando o método apropriado
+- Lida com sistemas rpm-ostree com pacotes em camadas
+- Remove a variável `_packages` na conclusão, permitindo usá-la várias vezes no mesmo script se necessário
+
+**Gerenciamento Flatpak**
+
+```bash
+# Declarar pacotes para instalar
+_flatpaks=(package1 package2 package3)
+_flatpak_
+```
+
+A função `_flatpak_` instala automaticamente cada flatpak dentro do array com parâmetros padrão (nível de usuário, repositório Flathub). Também removerá `_flatpaks` na conclusão, permitindo usá-la várias vezes no mesmo script se necessário.
+
+### Idioma e Localização
+
+#### Sistema de Tradução
+
+LinuxToys suporta múltiplos idiomas através de arquivos de tradução JSON:
+
+**Estrutura de Arquivos de Idioma**
+
+```
+p3/libs/lang/
+├── en.json    # Inglês (fallback)
+├── pt.json    # Português
+└── ...
+```
+
+#### Uso de Tradução
+```bash
+# Carregar detecção de idioma
+_lang_
+source "$SCRIPT_DIR/../../libs/lang/${langfile}.lib"
+
+# Usar traduções em diálogos zenity
+zenity --question --text "$translation_key" --width 360 --height 300
 ```
 
 ### Melhores Práticas
 
-1. **Tratamento de Erros**: Sempre inclua tratamento adequado de erros
-2. **Logging**: Use as funções de logging do common.sh
-3. **Feedback do Usuário**: Forneça feedback claro aos usuários
-4. **Testes**: Escreva testes para suas ferramentas
-5. **Documentação**: Inclua documentação clara
+#### Desenvolvimento de Scripts
+1. **Sempre use cabeçalhos de metadados** para categorização e filtragem adequadas
+2. **Teste compatibilidade** através de diferentes distribuições quando possível
+3. **Trate erros graciosamente** com feedback apropriado ao usuário
+4. **Use bibliotecas existentes** em vez de reimplementar funcionalidade comum
+5. **Siga a estrutura de script padrão** para consistência
 
-## Diretrizes de Teste
-
-### Testes Unitários
-
-Execute testes de ferramentas individuais:
-```bash
-./tests/run_tool_test.sh nome_da_sua_ferramenta
-```
-
-### Testes de Integração
-
-Teste o fluxo completo:
-```bash
-./tests/run_integration_tests.sh
-```
-
-## Contribuindo
-
-### Processo de Submissão
-
-1. Faça um fork do repositório
-2. Crie uma branch de feature
-3. Implemente suas mudanças
-4. Escreva testes
-5. Submeta um pull request
-
-### Revisão de Código
-
-Todas as contribuições passam por um processo de revisão de código para garantir:
-- Qualidade e padrões do código
-- Considerações de segurança
-- Impacto na performance
+Este guia fornece a base para criar scripts robustos, compatíveis e amigáveis ao usuário dentro do ecossistema LinuxToys. Ao aproveitar as bibliotecas fornecidas e seguir essas convenções, desenvolvedores podem criar scripts que funcionam perfeitamente através de múltiplas distribuições Linux enquanto fornecem uma experiência de usuário consistente.
 - Completude da documentação
 
 ---
