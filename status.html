@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinuxToys Sync Status</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 20px;
+            background: #1a1a1a;
+            color: #fff;
+        }
+        .status-card { 
+            background: #2a2a2a; 
+            padding: 20px; 
+            margin: 10px 0; 
+            border-radius: 8px; 
+            border-left: 4px solid #4CAF50;
+        }
+        .status-card.error { border-left-color: #f44336; }
+        .status-card.warning { border-left-color: #ff9800; }
+        .status-card.loading { border-left-color: #2196F3; }
+        pre { 
+            background: #1a1a1a; 
+            padding: 10px; 
+            border-radius: 4px; 
+            overflow-x: auto;
+            font-size: 12px;
+        }
+        button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover { background: #45a049; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
+        .stat { text-align: center; background: #333; padding: 15px; border-radius: 6px; }
+        .stat-value { font-size: 2em; font-weight: bold; color: #4CAF50; }
+        .last-update { color: #888; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <h1>🔧 LinuxToys Auto-Sync Status</h1>
+    
+    <div class="grid">
+        <div class="stat">
+            <div class="stat-value" id="categories-count">-</div>
+            <div>Categories</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value" id="tools-count">-</div>
+            <div>Total Tools</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value" id="cache-size">-</div>
+            <div>Cached Items</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value" id="api-calls">-</div>
+            <div>API Calls</div>
+        </div>
+    </div>
+    
+    <div class="status-card" id="status-card">
+        <h3>🔄 System Status</h3>
+        <div id="status-info">Checking system status...</div>
+        <div class="last-update" id="last-update">Last updated: Never</div>
+    </div>
+    
+    <div class="status-card">
+        <h3>🎮 Quick Actions</h3>
+        <button onclick="testSync()">Test Sync Now</button>
+        <button onclick="clearCache()">Clear Cache</button>
+        <button onclick="viewCacheDetails()">View Cache Details</button>
+        <button onclick="testCategory()">Test Category Load</button>
+    </div>
+    
+    <div class="status-card">
+        <h3>📊 Recent Activity Log</h3>
+        <pre id="activity-log">Starting system check...</pre>
+    </div>
+    
+    <div class="status-card">
+        <h3>🔍 Cache Details</h3>
+        <pre id="cache-details">Loading cache information...</pre>
+    </div>
+
+    <script src="js/tools-sync.js"></script>
+    <script>
+        let sync;
+        let log = [];
+        
+        function addLog(message) {
+            const timestamp = new Date().toLocaleTimeString();
+            log.unshift(`[${timestamp}] ${message}`);
+            if (log.length > 20) log.pop();
+            document.getElementById('activity-log').textContent = log.join('\n');
+        }
+        
+        async function initializeStatus() {
+            addLog('Initializing LinuxToys sync system...');
+            
+            // Wait for sync to be available
+            const maxWait = 10000; // 10 seconds
+            const startTime = Date.now();
+            
+            while (!window.linuxToysSync && (Date.now() - startTime) < maxWait) {
+                await new Promise(resolve => setTimeout(resolve, 100));
+            }
+            
+            if (!window.linuxToysSync) {
+                setStatus('error', 'Failed to initialize sync system');
+                return;
+            }
+            
+            sync = window.linuxToysSync;
+            addLog('Sync system initialized successfully');
+            
+            // Test basic functionality
+            await testStatus();
+            
+            // Set up auto-refresh every 30 seconds
+            setInterval(updateStats, 30000);
+        }
+        
+        async function testStatus() {
+            try {
+                setStatus('loading', 'Testing GitHub API connection...');
+                
+                // Test fetching a simple directory
+                const testResult = await sync.fetchGitHubDirectory('p3/scripts');
+                
+                if (testResult && testResult.length > 0) {
+                    setStatus('success', `✅ GitHub API working - Found ${testResult.length} categories`);
+                    addLog(`GitHub API test successful - ${testResult.length} categories detected`);
+                    
+                    // Get detailed stats
+                    await updateStats();
+                } else {
+                    setStatus('warning', '⚠ GitHub API responded but no data found');
+                    addLog('GitHub API test returned no data');
+                }
+                
+            } catch (error) {
+                setStatus('error', `❌ GitHub API test failed: ${error.message}`);
+                addLog(`GitHub API test failed: ${error.message}`);
+            }
+        }
+        
+        async function updateStats() {
+            if (!sync) return;
+            
+            try {
+                addLog('Updating statistics...');
+                
+                // Get categories count
+                const categories = await sync.getCategories();
+                const totalTools = categories.reduce((sum, cat) => sum + cat.tools.length, 0);
+                
+                document.getElementById('categories-count').textContent = categories.length;
+                document.getElementById('tools-count').textContent = totalTools;
+                document.getElementById('cache-size').textContent = sync.cache.size;
+                
+                // Update cache details
+                const cacheEntries = [];
+                sync.cache.forEach((value, key) => {
+                    const age = Math.round((Date.now() - value.timestamp) / 1000);
+                    cacheEntries.push(`${key}: ${age}s old`);
+                });
+                
+                document.getElementById('cache-details').textContent = 
+                    cacheEntries.length > 0 ? cacheEntries.join('\n') : 'No cached data';
+                
+                document.getElementById('last-update').textContent = 
+                    `Last updated: ${new Date().toLocaleTimeString()}`;
+                
+                addLog(`Stats updated: ${categories.length} categories, ${totalTools} tools`);
+                
+            } catch (error) {
+                addLog(`Stats update failed: ${error.message}`);
+            }
+        }
+        
+        function setStatus(type, message) {
+            const card = document.getElementById('status-card');
+            const info = document.getElementById('status-info');
+            
+            card.className = `status-card ${type}`;
+            info.textContent = message;
+        }
+        
+        async function testSync() {
+            addLog('Manual sync test initiated...');
+            try {
+                await sync.updateWebsite();
+                addLog('Manual sync test completed successfully');
+            } catch (error) {
+                addLog(`Manual sync test failed: ${error.message}`);
+            }
+            await updateStats();
+        }
+        
+        function clearCache() {
+            if (sync) {
+                sync.cache.clear();
+                addLog('Cache cleared successfully');
+                updateStats();
+            }
+        }
+        
+        function viewCacheDetails() {
+            if (sync) {
+                console.log('LinuxToys Sync Cache:', sync.cache);
+                addLog('Cache details logged to browser console');
+            }
+        }
+        
+        async function testCategory() {
+            if (sync) {
+                addLog('Testing category load...');
+                try {
+                    const tools = await sync.getCategoryTools('devs');
+                    addLog(`Category test successful - loaded ${tools.length} development tools`);
+                    console.log('Development tools:', tools);
+                } catch (error) {
+                    addLog(`Category test failed: ${error.message}`);
+                }
+            }
+        }
+        
+        // Initialize when page loads
+        document.addEventListener('DOMContentLoaded', initializeStatus);
+    </script>
+</body>
+</html>
