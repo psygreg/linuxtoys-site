@@ -28,5 +28,13 @@
   "partners-title": "Credits",
   "credit-psygreg-btn": "Lead Developer",
   "credit-neonhost-btn": "Site & Subdomain",
-  "credit-jeiel-btn": "Site"
+  "credit-jeiel-btn": "Site",
+  "back-to-home": "Back to Home",
+  "loading-content": "Loading content...",
+  "error-title": "Content not available",
+  "error-message": "Sorry, the content for this page is not available in the selected language yet.",
+  "return-home": "Return to home page",
+  "footer-description": "Making Linux easier, one tool at a time.",
+  "footer-support": "Support",
+  "footer-rights": "All rights reserved."
 }

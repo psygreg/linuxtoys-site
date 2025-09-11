@@ -28,5 +28,13 @@
   "credit-psygreg-btn": "Hauptentwickler",
   "credit-neonhost-btn": "Website & Subdomain",
   "credit-jeiel-btn": "Website",
-  "license-text": "Lizenziert unter"
+  "license-text": "Lizenziert unter",
+  "back-to-home": "Zurück zur Startseite",
+  "loading-content": "Inhalt wird geladen...",
+  "error-title": "Inhalt nicht verfügbar",
+  "error-message": "Entschuldigung, der Inhalt dieser Seite ist in der ausgewählten Sprache noch nicht verfügbar.",
+  "return-home": "Zur Startseite zurückkehren",
+  "footer-description": "Linux einfacher machen, ein Tool nach dem anderen.",
+  "footer-support": "Support",
+  "footer-rights": "Alle Rechte vorbehalten."
 }

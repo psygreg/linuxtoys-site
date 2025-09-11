@@ -28,5 +28,13 @@
   "credit-psygreg-btn": "リード開発者",
   "credit-neonhost-btn": "サイト＆サブドメイン",
   "credit-jeiel-btn": "サイト",
-  "license-text": "ライセンス"
+  "license-text": "ライセンス",
+  "back-to-home": "ホームに戻る",
+  "loading-content": "コンテンツを読み込み中...",
+  "error-title": "コンテンツが利用できません",
+  "error-message": "申し訳ございませんが、このページのコンテンツは選択した言語ではまだ利用できません。",
+  "return-home": "ホームページに戻る",
+  "footer-description": "Linuxをより簡単に、一度に一つのツールで。",
+  "footer-support": "サポート",
+  "footer-rights": "全著作権所有。"
 }

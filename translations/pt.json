@@ -28,5 +28,13 @@
   "partners-title": "Créditos",
   "credit-psygreg-btn": "Líder do Projeto",
   "credit-neonhost-btn": "Site & Subdomínio",
-  "credit-jeiel-btn": "Site"
+  "credit-jeiel-btn": "Site",
+  "back-to-home": "Voltar ao Início",
+  "loading-content": "Carregando conteúdo...",
+  "error-title": "Conteúdo não disponível",
+  "error-message": "Desculpe, o conteúdo desta página ainda não está disponível no idioma selecionado.",
+  "return-home": "Voltar à página inicial",
+  "footer-description": "Tornando o Linux mais fácil, uma ferramenta de cada vez.",
+  "footer-support": "Suporte",
+  "footer-rights": "Todos os direitos reservados."
 }

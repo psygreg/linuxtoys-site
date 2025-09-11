@@ -28,5 +28,13 @@
   "credit-psygreg-btn": "首席开发者",
   "credit-neonhost-btn": "网站和子域名",
   "credit-jeiel-btn": "网站",
-  "license-text": "授权协议"
+  "license-text": "授权协议",
+  "back-to-home": "返回首页",
+  "loading-content": "正在加载内容...",
+  "error-title": "内容不可用",
+  "error-message": "抱歉，此页面的内容在所选语言中尚不可用。",
+  "return-home": "返回首页",
+  "footer-description": "让Linux更简单，一次一个工具。",
+  "footer-support": "支持",
+  "footer-rights": "版权所有。"
 }

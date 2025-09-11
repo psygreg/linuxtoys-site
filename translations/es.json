@@ -28,5 +28,13 @@
   "credit-psygreg-btn": "Desarrollador Principal",
   "credit-neonhost-btn": "Sitio y Subdominio",
   "credit-jeiel-btn": "Sitio",
-  "license-text": "Licenciado bajo"
+  "license-text": "Licenciado bajo",
+  "back-to-home": "Volver al Inicio",
+  "loading-content": "Cargando contenido...",
+  "error-title": "Contenido no disponible",
+  "error-message": "Lo sentimos, el contenido de esta página aún no está disponible en el idioma seleccionado.",
+  "return-home": "Volver a la página de inicio",
+  "footer-description": "Haciendo Linux más fácil, una herramienta a la vez.",
+  "footer-support": "Soporte",
+  "footer-rights": "Todos los derechos reservados."
 }

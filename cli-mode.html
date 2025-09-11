@@ -326,11 +326,12 @@
         // Set current year
         document.getElementById('year').textContent = new Date().getFullYear();
         
-        // Initialize translation system with additional translations
+        // Initialize translation system
         const translationManager = new TranslationManager();
         
-        // Merge additional translations
+        // Define merge function before init
         translationManager.mergeTranslations = function(additionalTranslations) {
+          if (!additionalTranslations) return;
           Object.keys(additionalTranslations).forEach(lang => {
             if (!this.translations[lang]) {
               this.translations[lang] = {};
@@ -339,8 +340,15 @@
           });
         };
         
+        // Initialize translation manager
         await translationManager.init();
-        translationManager.mergeTranslations(window.additionalTranslations);
+        
+        // Merge additional translations if available
+        if (window.additionalTranslations) {
+          translationManager.mergeTranslations(window.additionalTranslations);
+          // Re-apply translations after merge
+          translationManager.updatePageTranslations();
+        }
         
         // Initialize content loader with CLI mode content
         const contentLoader = new ContentLoader(translationManager);
@@ -352,6 +360,7 @@
         
         // Store reference for global access
         window.contentLoader = contentLoader;
+        window.translationManager = translationManager;
       });
       
       function setupLanguageDropdown(translationManager, contentLoader) {
@@ -393,7 +402,15 @@
           const button = document.getElementById(`lang-${lang}`);
           if (button) {
             button.addEventListener('click', async () => {
+              console.log(`Switching to language: ${lang}`);
               await translationManager.setLanguage(lang);
+              
+              // Merge additional translations after language change
+              if (window.additionalTranslations) {
+                translationManager.mergeTranslations(window.additionalTranslations);
+                translationManager.updatePageTranslations();
+              }
+              
               updateCurrentLang();
               dropdown.classList.add('hidden');
               

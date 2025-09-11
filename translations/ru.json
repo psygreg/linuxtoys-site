@@ -28,5 +28,13 @@
   "credit-psygreg-btn": "Ведущий разработчик",
   "credit-neonhost-btn": "Сайт и поддомен",
   "credit-jeiel-btn": "Сайт",
-  "license-text": "Лицензировано под"
+  "license-text": "Лицензировано под",
+  "back-to-home": "Вернуться на главную",
+  "loading-content": "Загрузка контента...",
+  "error-title": "Контент недоступен",
+  "error-message": "Извините, контент этой страницы пока недоступен на выбранном языке.",
+  "return-home": "Вернуться на главную страницу",
+  "footer-description": "Делаем Linux проще, по одному инструменту за раз.",
+  "footer-support": "Поддержка",
+  "footer-rights": "Все права защищены."
 }
