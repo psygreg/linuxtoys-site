@@ -16,22 +16,16 @@ class I18n {
    * Initialize the i18n system
    */
   async init() {
+    console.log('Initializing i18n system...');
     // Detect and set initial language
     const detectedLanguage = this.detectBrowserLanguage();
+    console.log(`Detected browser language: ${detectedLanguage}`);
     await this.loadLanguage(detectedLanguage);
-    
-    // Wait for DOM to be ready before updating UI
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', () => {
-        this.setupEventListeners();
-        this.updateLanguageDisplay();
-        this.updateUI();
-      });
-    } else {
-      this.setupEventListeners();
-      this.updateLanguageDisplay();
-      this.updateUI();
-    }
+    console.log(`Initial language set to: ${this.currentLang}`);
+    this.setupEventListeners();
+    this.updateLanguageDisplay();
+    this.updateUI();
+    console.log('i18n system initialized successfully');
   }
 
   /**
@@ -43,9 +37,10 @@ class I18n {
       if (response.ok) {
         const linuxToysTranslations = await response.json();
         this.linuxToysTranslations[lang] = linuxToysTranslations;
+        console.log(`Loaded LinuxToys translations for ${lang}: ${Object.keys(linuxToysTranslations).length} entries`);
       }
     } catch (error) {
-      // Silently fail - LinuxToys translations are optional
+      console.warn(`Could not load LinuxToys translations for ${lang}:`, error);
     }
   }
 
@@ -62,18 +57,23 @@ class I18n {
       // Check if already loaded
       if (this.translations[lang]) {
         this.currentLang = lang;
+        console.log(`Language ${lang} already loaded, switching to it`);
         return;
       }
 
+      console.log(`Loading language file for: ${lang}`);
+      
       // Load the website language file
-      const response = await fetch(`./lang/${lang}.json`);
+      const response = await fetch(`lang/${lang}.json`);
       if (!response.ok) {
-        throw new Error(`HTTP ${response.status}`);
+        throw new Error(`Failed to load language file: ${lang}.json (status: ${response.status})`);
       }
 
       const translations = await response.json();
       this.translations[lang] = translations;
       this.currentLang = lang;
+      
+      console.log(`Successfully loaded ${lang} language file with ${Object.keys(translations).length} translations`);
       
       // Also try to load LinuxToys translations for this language
       await this.loadLinuxToysTranslations(lang);
@@ -82,35 +82,29 @@ class I18n {
       localStorage.setItem('linuxtoys-language', lang);
       
     } catch (error) {
+      console.warn(`Failed to load language ${lang}, falling back to ${this.fallbackLang}:`, error);
+      
       // If it's not the fallback language, try to load fallback
-      if (lang !== this.fallbackLang) {
+      if (lang !== this.fallbackLang && !this.translations[this.fallbackLang]) {
         try {
-          if (!this.translations[this.fallbackLang]) {
-            const fallbackResponse = await fetch(`./lang/${this.fallbackLang}.json`);
-            if (!fallbackResponse.ok) {
-              throw new Error(`HTTP ${fallbackResponse.status}`);
-            }
-            const fallbackTranslations = await fallbackResponse.json();
-            this.translations[this.fallbackLang] = fallbackTranslations;
-          }
+          console.log(`Loading fallback language: ${this.fallbackLang}`);
+          const fallbackResponse = await fetch(`lang/${this.fallbackLang}.json`);
+          const fallbackTranslations = await fallbackResponse.json();
+          this.translations[this.fallbackLang] = fallbackTranslations;
           this.currentLang = this.fallbackLang;
+          
+          console.log(`Successfully loaded fallback language ${this.fallbackLang}`);
           
           // Also try LinuxToys translations for fallback
           await this.loadLinuxToysTranslations(this.fallbackLang);
-          
-          // Store fallback language preference
-          localStorage.setItem('linuxtoys-language', this.fallbackLang);
         } catch (fallbackError) {
+          console.error('Failed to load fallback language:', fallbackError);
           // Use inline fallback if all else fails
           this.translations[this.fallbackLang] = this.getInlineFallback();
           this.currentLang = this.fallbackLang;
-          localStorage.setItem('linuxtoys-language', this.fallbackLang);
         }
-      } else {
-        // If we failed to load the fallback language, use inline fallback
-        this.translations[this.fallbackLang] = this.getInlineFallback();
+      } else if (this.translations[this.fallbackLang]) {
         this.currentLang = this.fallbackLang;
-        localStorage.setItem('linuxtoys-language', this.fallbackLang);
       }
     }
   }
@@ -125,27 +119,20 @@ class I18n {
     const targetLang = lang || this.currentLang;
     
     // First try website translations
-    const langTranslations = this.translations[targetLang] || {};
+    const langTranslations = this.translations[targetLang] || this.translations[this.fallbackLang] || {};
     if (langTranslations[key]) {
       return langTranslations[key];
     }
     
-    // Try fallback language for website translations
-    const fallbackTranslations = this.translations[this.fallbackLang] || {};
-    if (fallbackTranslations[key] && targetLang !== this.fallbackLang) {
-      return fallbackTranslations[key];
-    }
-    
     // Then try LinuxToys translations
-    const linuxToysLangTranslations = this.linuxToysTranslations[targetLang] || {};
+    const linuxToysLangTranslations = this.linuxToysTranslations[targetLang] || this.linuxToysTranslations[this.fallbackLang] || {};
     if (linuxToysLangTranslations[key]) {
       return linuxToysLangTranslations[key];
     }
     
-    // Try LinuxToys fallback translations
-    const linuxToysFallbackTranslations = this.linuxToysTranslations[this.fallbackLang] || {};
-    if (linuxToysFallbackTranslations[key] && targetLang !== this.fallbackLang) {
-      return linuxToysFallbackTranslations[key];
+    // If no translation found, log it for debugging
+    if (key !== 'toggle-button' && key !== 'toggle-button-less') { // Don't spam console with these common ones
+      console.warn(`Translation not found for key: "${key}" in language: "${targetLang}"`);
     }
     
     return key;
@@ -157,15 +144,19 @@ class I18n {
    */
   async switchLanguage(lang) {
     if (lang === this.currentLang) {
+      console.log(`Already using language: ${lang}`);
       return;
     }
 
+    console.log(`Switching from ${this.currentLang} to ${lang}`);
     await this.loadLanguage(lang);
-    this.updateLanguageDisplay();
+    console.log(`Language switched to: ${this.currentLang}`);
     this.updateUI();
+    this.updateLanguageDisplay();
     
-    // Notify tools-sync system that language changed
+    // Notify tools-sync system that language changed so it can update category names
     if (window.linuxToysSync) {
+      console.log('Notifying LinuxToys sync system of language change');
       // We could trigger a re-render here if needed
     }
   }
@@ -175,7 +166,6 @@ class I18n {
    */
   updateUI() {
     const elements = document.querySelectorAll("[data-key]");
-    
     elements.forEach((element) => {
       const key = element.getAttribute("data-key");
       const translation = this.t(key);
@@ -217,8 +207,7 @@ class I18n {
         'fr': 'FR',
         'de': 'DE'
       };
-      const displayLang = languageMap[this.currentLang] || this.currentLang.toUpperCase();
-      currentLanguageSpan.textContent = displayLang;
+      currentLanguageSpan.textContent = languageMap[this.currentLang] || this.currentLang.toUpperCase();
     }
   }
 
@@ -347,5 +336,9 @@ class I18n {
 // Create global i18n instance
 window.i18n = new I18n();
 
-// Initialize immediately
-window.i18n.init();
+// Initialize when DOM is loaded
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', () => window.i18n.init());
+} else {
+  window.i18n.init();
+}
