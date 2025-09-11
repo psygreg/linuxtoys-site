@@ -190,8 +190,3 @@ zenity --question --text "$translation_key" --width 360 --height 300
 5. **Siga a estrutura de script padrão** para consistência
 
 Este guia fornece a base para criar scripts robustos, compatíveis e amigáveis ao usuário dentro do ecossistema LinuxToys. Ao aproveitar as bibliotecas fornecidas e seguir essas convenções, desenvolvedores podem criar scripts que funcionam perfeitamente através de múltiplas distribuições Linux enquanto fornecem uma experiência de usuário consistente.
-- Completude da documentação
-
----
-
-*Última atualização: $(date)*
