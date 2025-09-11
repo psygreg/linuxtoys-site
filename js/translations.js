@@ -82,6 +82,12 @@ class TranslationManager {
       } else {
         const translation = currentTranslations[key];
         if (translation) {
+          // Update title attribute if it exists
+          if (element.hasAttribute('title')) {
+            element.setAttribute('title', translation);
+          }
+          
+          // Update content
           if (translation.includes('<a href')) {
             element.innerHTML = translation;
           } else {
