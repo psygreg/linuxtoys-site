@@ -48,8 +48,6 @@
     />
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="js/i18n.js"></script>
-    <script src="js/tools-sync.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
@@ -103,36 +101,18 @@
           <h1 class="text-2xl font-bold text-white">LinuxToys</h1>
         </div>
         <div class="flex items-center">
-          <div class="relative">
-            <button
-              id="language-dropdown-btn"
-              class="flex items-center px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded-lg transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              <span id="current-language">EN</span>
-              <svg class="ml-2 h-4 w-4 transition-transform duration-200" id="dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </button>
-            <div
-              id="language-dropdown"
-              class="absolute right-0 mt-2 w-24 bg-gray-800 border border-gray-700 rounded-lg shadow-lg opacity-0 invisible transform scale-95 transition-all duration-200 z-50"
-            >
-              <button
-                class="language-option w-full px-4 py-2 text-left text-white hover:bg-gray-700 rounded-t-lg transition duration-200 flex items-center"
-                data-lang="en"
-              >
-                🇺🇸 EN
-              </button>
-              <button
-                class="language-option w-full px-4 py-2 text-left text-white hover:bg-gray-700 rounded-b-lg transition duration-200 flex items-center"
-                data-lang="pt"
-              >
-                🇧🇷 PT
-              </button>
-            </div>
-          </div>
+          <button
+            id="lang-en"
+            class="mx-2 px-3 py-1 rounded-md text-sm font-medium bg-blue-600"
+          >
+            EN
+          </button>
+          <button
+            id="lang-pt"
+            class="mx-2 px-3 py-1 rounded-md text-sm font-medium"
+          >
+            PT
+          </button>
         </div>
       </nav>
     </header>
@@ -287,16 +267,11 @@
       </section>
 
       <section id="tools" class="mt-8">
-        <h3 class="text-3xl font-bold text-center mb-6" data-key="tools-title">
+        <h3 class="text-3xl font-bold text-center mb-10" data-key="tools-title">
           Tools by Category
         </h3>
-        <div id="tools-status" class="text-center mb-4">
-          <p class="text-blue-400" id="status-message">Loading latest tools from LinuxToys repository...</p>
-        </div>
 
-        <div class="tool-grid-container" id="tools-container">
-          <!-- Tools will be loaded dynamically from GitHub -->
-          <!-- Fallback content in case GitHub API fails -->
+        <div class="tool-grid-container">
           <div class="bg-gray-800 rounded-lg p-6 flex flex-col">
             <h4 class="text-xl font-semibold mb-4" data-key="devs">
               Development
@@ -308,10 +283,221 @@
               Show Tools
             </button>
             <ul class="tool-list mt-4 space-y-2 text-gray-300">
-              <li>Loading tools from repository...</li>
+              <li>Android Studio</li>
+              <li>VSCode</li>
+              <li>VSCodium</li>
+              <li>Docker</li>
+              <li>.NET SDK</li>
+              <li>Godot Engine</li>
+              <li>HTTPie</li>
+              <li>Insomnia</li>
+              <li>Java</li>
+              <li>Maven</li>
+              <li>Mise</li>
+              <li>Neovim</li>
+              <li>NVM</li>
+              <li>Postman</li>
+              <li>Pyenv</li>
+              <li>Sublime Text</li>
+              <li>Tailscale</li>
+              <li>Unity Hub</li>
             </ul>
           </div>
-          <!-- All other category cards will be removed and generated dynamically -->
+
+          <div class="bg-gray-800 rounded-lg p-6 flex flex-col">
+            <h4 class="text-xl font-semibold mb-4" data-key="drivers">
+              Drivers
+            </h4>
+            <button
+              class="mt-auto bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 toggle-button"
+              data-key="toggle-button"
+            >
+              Show Tools
+            </button>
+            <ul class="tool-list mt-4 space-y-2 text-gray-300">
+              <li>Broadcom</li>
+              <li>Intel Compute Runtime</li>
+              <li>Nvidia</li>
+              <li>ROCm</li>
+              <li>Realtek</li>
+              <li>Rusticl</li>
+              <li>Xpadneo</li>
+            </ul>
+          </div>
+
+          <div class="bg-gray-800 rounded-lg p-6 flex flex-col">
+            <h4 class="text-xl font-semibold mb-4" data-key="extra">Extra</h4>
+            <button
+              class="mt-auto bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 toggle-button"
+              data-key="toggle-button"
+            >
+              Show Tools
+            </button>
+            <ul class="tool-list mt-4 space-y-2 text-gray-300">
+              <li>Bluetooth Assistant</li>
+              <li>Config Network File Helper</li>
+              <li>Codec Fix</li>
+              <li>Distro Splitter Mover</li>
+              <li>EarlyOOM</li>
+              <li>Grub BTRFS</li>
+              <li>IWD</li>
+              <li>Linux SWAP Helper</li>
+              <li>LucidGlyph</li>
+              <li>Preload</li>
+              <li>PsychoSaver</li>
+              <li>PsychoCachy</li>
+              <li>System Boost</li>
+              <li>OpenSUSE Fix</li>
+              <li>Swapfile</li>
+              <li>Thumbnails</li>
+              <li>Touchegg</li>
+              <li>UFW</li>
+            </ul>
+          </div>
+
+          <div class="bg-gray-800 rounded-lg p-6 flex flex-col">
+            <h4 class="text-xl font-semibold mb-4" data-key="game">Gaming</h4>
+            <button
+              class="mt-auto bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 toggle-button"
+              data-key="toggle-button"
+            >
+              Show Tools
+            </button>
+            <ul class="tool-list mt-4 space-y-2 text-gray-300">
+              <li>Discord</li>
+              <li>GameMode</li>
+              <li>GeForce NOW</li>
+              <li>GOverlay</li>
+              <li>Gamescope</li>
+              <li>Game Save Router</li>
+              <li>Heroic Games Launcher</li>
+              <li>Lossless Scaling for GNU</li>
+              <li>Lutris</li>
+              <li>Minecraft Bedrock Edition</li>
+              <li>MangoJuice</li>
+              <li>osu!</li>
+              <li>ProtonPlus</li>
+              <li>ProtonTricks</li>
+              <li>ProtonUp-Qt</li>
+              <li>Sober</li>
+              <li>Steam</li>
+              <li>Steer</li>
+              <li>Vinegar</li>
+              <li>WIVRN</li>
+            </ul>
+          </div>
+
+          <div class="bg-gray-800 rounded-lg p-6 flex flex-col">
+            <h4 class="text-xl font-semibold mb-4" data-key="office">
+              Office & Productivity
+            </h4>
+            <button
+              class="mt-auto bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 toggle-button"
+              data-key="toggle-button"
+            >
+              Show Tools
+            </button>
+            <ul class="tool-list mt-4 space-y-2 text-gray-300">
+              <li>AnyDesk</li>
+              <li>Audacity</li>
+              <li>Blender</li>
+              <li>Google Chrome</li>
+              <li>Cohesion</li>
+              <li>Darktable</li>
+              <li>DaVinci Resolve</li>
+              <li>Figma</li>
+              <li>Foliate</li>
+              <li>FreeCAD</li>
+              <li>GIMP</li>
+              <li>Inkscape</li>
+              <li>Kdenlive</li>
+              <li>KiCad</li>
+              <li>Krita</li>
+              <li>LibreOffice</li>
+              <li>Microsoft Teams</li>
+              <li>Obsidian</li>
+              <li>OnlyOffice</li>
+              <li>Pinta</li>
+              <li>PJe Office</li>
+              <li>Slack</li>
+              <li>Zen</li>
+            </ul>
+          </div>
+
+          <div class="bg-gray-800 rounded-lg p-6 flex flex-col">
+            <h4 class="text-xl font-semibold mb-4" data-key="repos">
+              Repositories
+            </h4>
+            <button
+              class="mt-auto bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 toggle-button"
+              data-key="toggle-button"
+            >
+              Show Tools
+            </button>
+            <ul class="tool-list mt-4 space-y-2 text-gray-300">
+              <li>Brew</li>
+              <li>Cargo</li>
+              <li>Chaotic-AUR</li>
+              <li>Flathub</li>
+              <li>Pip</li>
+              <li>RPM Fusion</li>
+            </ul>
+          </div>
+
+          <div class="bg-gray-800 rounded-lg p-6 flex flex-col">
+            <h4 class="text-xl font-semibold mb-4" data-key="utils">
+              Utilities
+            </h4>
+            <button
+              class="mt-auto bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 toggle-button"
+              data-key="toggle-button"
+            >
+              Show Tools
+            </button>
+            <ul class="tool-list mt-4 space-y-2 text-gray-300">
+              <li>Bottles</li>
+              <li>Boxedwine Advanced</li>
+              <li>DistroShelf</li>
+              <li>EasyEffects</li>
+              <li>F3</li>
+              <li>Flatseal</li>
+              <li>HandBrake</li>
+              <li>LACT</li>
+              <li>Mission Center</li>
+              <li>OBS Studio</li>
+              <li>OpenRGB</li>
+              <li>OpenRazer</li>
+              <li>QPwGraph</li>
+              <li>StreamController</li>
+              <li>Solaar</li>
+              <li>Warehouse</li>
+              <li>Waydroid</li>
+            </ul>
+          </div>
+
+          <div class="bg-gray-800 rounded-lg p-6 flex flex-col">
+            <h4 class="text-xl font-semibold mb-4" data-key="privacy">
+              Privacy
+            </h4>
+            <button
+              class="mt-auto bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 toggle-button"
+              data-key="toggle-button"
+            >
+              Show Tools
+            </button>
+            <ul class="tool-list mt-4 space-y-2 text-gray-300">
+              <li>ExpressVPN</li>
+              <li>IVPN</li>
+              <li>Librewolf</li>
+              <li>Mullvad Browser</li>
+              <li>Mullvad VPN</li>
+              <li>NordVPN</li>
+              <li>Proton VPN</li>
+              <li>Surfshark</li>
+              <li>Ungoogled Chromium</li>
+              <li>WireGuard</li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -414,137 +600,170 @@
     </footer>
 
     <script>
-      // Language dropdown functionality
-      function toggleDropdown() {
-        const languageDropdown = document.getElementById("language-dropdown");
-        const dropdownArrow = document.getElementById("dropdown-arrow");
-        const languageDropdownBtn = document.getElementById("language-dropdown-btn");
-        
-        const isOpen = !languageDropdown.classList.contains('invisible');
-        
-        if (isOpen) {
-          languageDropdown.classList.add('invisible', 'opacity-0', 'scale-95');
-          languageDropdown.classList.remove('opacity-100', 'scale-100');
-          dropdownArrow.style.transform = 'rotate(0deg)';
-          languageDropdownBtn.setAttribute('aria-expanded', 'false');
+      const translations = {
+        en: {
+          title:
+            "A collection of tools for Linux in a user-friendly way to make your life on Linux easier than ever",
+          "github-button": "View on GitHub",
+          "install-title": "Quick-Install",
+          "for-you-title": "For you",
+          "for-you-text":
+            "A multitool that just works, with a comfortable, practical and simple graphical interface that looks good and gets the job done. It also follows the theme of your system!",
+          "get-it-here": "Get it here!",
+          "for-professionals-title": "For professionals",
+          "for-professionals-text":
+            "With the CLI mode, taking a long time to set up computers for your customers will be a thing of the past. Just list all features you need installed in the manifest file, and let LinuxToys do the job for you. You can save your custom manifest file to use it to standardize your customers' systems. And don't worry: it won't apply resources that are not meant for the target!",
+          "for-developers-title": "For developers",
+          "for-developers-text":
+            "The ultimate platform for bash script development allowing for quick deployment of fixes for common issues on Linux, and much more, powered by our libraries. Don't believe it? Take a look at our <a href='https://github.com/psygreg/linuxtoys/wiki/Developer-Handbook' target='_blank' class='text-blue-400 hover:underline'>Developer Handbook</a> and see it for yourself!",
+          "learn-more-wiki": "Learn more at the Wiki!",
+          "tools-title": "Tools by Category",
+          devs: "Development",
+          drivers: "Drivers",
+          extra: "Extra",
+          game: "Gaming",
+          office: "Office & Productivity",
+          repos: "Repositories",
+          utils: "Utilities",
+          privacy: "Privacy",
+          "license-text": "Released under the",
+          "toggle-button": "Show Tools",
+          "toggle-button-less": "Show Less",
+          "partners-title": "Credits",
+          "credit-psygreg-btn": "Lead Developer",
+          "credit-neonhost-btn": "Site & Subdomain",
+          "credit-jeiel-btn": "Site",
+        },
+        pt: {
+          title:
+            "Uma coleção de ferramentas para Linux de uma forma amigável para tornar sua vida no Linux mais fácil do que nunca",
+          "github-button": "Ver no GitHub",
+          "install-title": "Instalação Rápida",
+          "for-you-title": "Para você",
+          "for-you-text":
+            "Uma multiferramenta que simplesmente funciona, com uma interface gráfica confortável, prática e simples que é bonita e faz o trabalho. E ainda segue o tema do seu sistema!",
+          "get-it-here": "Obtenha aqui!",
+          "for-professionals-title": "Para profissionais",
+          "for-professionals-text":
+            "Com o modo CLI, demorar muito para configurar computadores para seus clientes será coisa do passado. Basta listar todos os recursos que você precisa instalar no arquivo de manifesto e deixar o LinuxToys fazer o trabalho por você. Você pode salvar seu arquivo de manifesto personalizado para usá-lo para padronizar os sistemas de seus clientes. E não se preocupe: ele não aplicará recursos que não são destinados ao alvo!",
+          "for-developers-title": "Para desenvolvedores",
+          "for-developers-text":
+            "A plataforma definitiva para o desenvolvimento de scripts bash, permitindo a implantação rápida de correções para problemas comuns no Linux e muito mais, com o poder de nossas bibliotecas. Não acredita? Dê uma olhada no nosso <a href='https://github.com/psygreg/linuxtoys/wiki/Developer-Handbook' target='_blank' class='text-blue-400 hover:underline'>Manual do Desenvolvedor</a> e veja por si mesmo!",
+          "learn-more-wiki": "Saiba mais na Wiki!",
+          "tools-title": "Ferramentas por Categoria",
+          devs: "Desenvolvimento",
+          drivers: "Drivers",
+          extra: "Extras",
+          game: "Jogos",
+          office: "Escritório & Produtividade",
+          repos: "Repositórios",
+          utils: "Utilitários",
+          privacy: "Privacidade",
+          "license-text": "Lançado sob a licença",
+          "toggle-button": "Ver Ferramentas",
+          "toggle-button-less": "Ver Menos",
+          "partners-title": "Créditos",
+          "credit-psygreg-btn": "Líder do Projeto",
+          "credit-neonhost-btn": "Site & Subdomínio",
+          "credit-jeiel-btn": "Site",
+        },
+      };
+
+      let currentLang = "en";
+
+      const langEnBtn = document.getElementById("lang-en");
+      const langPtBtn = document.getElementById("lang-pt");
+      const toggleButtons = document.querySelectorAll(".toggle-button");
+
+      function setLanguage(lang) {
+        currentLang = lang;
+        document.documentElement.lang = lang;
+        const elements = document.querySelectorAll("[data-key]");
+        elements.forEach((element) => {
+          const key = element.getAttribute("data-key");
+
+          if (key === "toggle-button") {
+            const list = element.nextElementSibling;
+            if (list.classList.contains("expanded")) {
+              element.textContent = translations[lang]["toggle-button-less"];
+            } else {
+              element.textContent = translations[lang][key];
+            }
+          } else {
+            const translation = translations[lang][key];
+            if (translation && translation.includes("<a href")) {
+              element.innerHTML = translation;
+            } else if (translation) {
+              element.textContent = translation;
+            }
+          }
+        });
+
+        if (lang === "en") {
+          langEnBtn.classList.add("bg-blue-600");
+          langPtBtn.classList.remove("bg-blue-600");
         } else {
-          languageDropdown.classList.remove('invisible', 'opacity-0', 'scale-95');
-          languageDropdown.classList.add('opacity-100', 'scale-100');
-          dropdownArrow.style.transform = 'rotate(180deg)';
-          languageDropdownBtn.setAttribute('aria-expanded', 'true');
+          langPtBtn.classList.add("bg-blue-600");
+          langEnBtn.classList.remove("bg-blue-600");
         }
       }
 
-      // Setup dropdown event listeners when DOM is loaded
-      document.addEventListener('DOMContentLoaded', () => {
-        const languageDropdownBtn = document.getElementById("language-dropdown-btn");
-        const languageDropdown = document.getElementById("language-dropdown");
-
-        // Language dropdown button click
-        if (languageDropdownBtn) {
-          languageDropdownBtn.addEventListener("click", (e) => {
-            e.stopPropagation();
-            toggleDropdown();
-          });
-        }
-
-        // Close dropdown when clicking outside
-        document.addEventListener('click', (event) => {
-          if (languageDropdownBtn && languageDropdown && 
-              !languageDropdownBtn.contains(event.target) && 
-              !languageDropdown.contains(event.target)) {
-            const dropdownArrow = document.getElementById("dropdown-arrow");
-            languageDropdown.classList.add('invisible', 'opacity-0', 'scale-95');
-            languageDropdown.classList.remove('opacity-100', 'scale-100');
-            if (dropdownArrow) dropdownArrow.style.transform = 'rotate(0deg)';
-            languageDropdownBtn.setAttribute('aria-expanded', 'false');
+      toggleButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const list = button.nextElementSibling;
+          list.classList.toggle("expanded");
+          if (list.classList.contains("expanded")) {
+            button.textContent =
+              translations[currentLang]["toggle-button-less"];
+          } else {
+            button.textContent = translations[currentLang]["toggle-button"];
           }
         });
+      });
 
-        // Close dropdown on escape key
-        document.addEventListener('keydown', (event) => {
-          if (event.key === 'Escape') {
-            const dropdownArrow = document.getElementById("dropdown-arrow");
-            if (languageDropdown) {
-              languageDropdown.classList.add('invisible', 'opacity-0', 'scale-95');
-              languageDropdown.classList.remove('opacity-100', 'scale-100');
-            }
-            if (dropdownArrow) dropdownArrow.style.transform = 'rotate(0deg)';
-            if (languageDropdownBtn) languageDropdownBtn.setAttribute('aria-expanded', 'false');
-          }
+      document.getElementById("year").textContent = new Date().getFullYear();
+      langEnBtn.addEventListener("click", () => setLanguage("en"));
+      langPtBtn.addEventListener("click", () => setLanguage("pt"));
+
+      setLanguage("en");
+
+      const command = `yes | sh -c "$(curl -fsSL https://raw.githubusercontent.com/psygreg/linuxtoys/master/install.sh)"`;
+      const element = document.getElementById("install-code");
+
+      let i = 0;
+      function typeWriter() {
+        if (i < command.length) {
+          element.textContent += command.charAt(i);
+          i++;
+          setTimeout(typeWriter, 70); // velocidade de digitação
+        }
+      }
+
+      // Inicia o efeito após pequeno delay
+      setTimeout(typeWriter, 1000);
+
+      const copyButton = document.getElementById("copy-button");
+      const copyIcon = document.getElementById("copy-icon");
+      const installCode = document.getElementById("install-code");
+
+      copyButton.addEventListener("click", () => {
+        // pega o texto sem quebras extras
+        const code = installCode.textContent.trim();
+
+        navigator.clipboard.writeText(code).then(() => {
+          // muda ícone para check
+          copyIcon.innerHTML = `
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+    `;
+
+          // volta ao ícone original depois de 1.5s
+          setTimeout(() => {
+            copyIcon.innerHTML = `
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8 3h8a2 2 0 012 2v12a2 2 0 01-2 2H8a2 2 0 01-2-2V5a2-2 0 012-2z"/>
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h8"/>
+      `;
+          }, 1500);
         });
-
-        // Setup toggle buttons for tools
-        const toggleButtons = document.querySelectorAll(".toggle-button");
-        toggleButtons.forEach((button) => {
-          // Skip buttons that are already handled by the sync system
-          if (button.hasAttribute('data-sync-handled')) {
-            return;
-          }
-          
-          button.addEventListener("click", () => {
-            const list = button.nextElementSibling;
-            list.classList.toggle("expanded");
-            
-            if (window.i18n) {
-              if (list.classList.contains("expanded")) {
-                button.textContent = window.i18n.t("toggle-button-less");
-              } else {
-                button.textContent = window.i18n.t("toggle-button");
-              }
-            }
-          });
-        });
-
-        // Set current year
-        const yearElement = document.getElementById("year");
-        if (yearElement) {
-          yearElement.textContent = new Date().getFullYear();
-        }
-
-        // Install command typewriter effect
-        const command = `yes | sh -c "$(curl -fsSL https://raw.githubusercontent.com/psygreg/linuxtoys/master/install.sh)"`;
-        const element = document.getElementById("install-code");
-
-        if (element) {
-          let i = 0;
-          function typeWriter() {
-            if (i < command.length) {
-              element.textContent += command.charAt(i);
-              i++;
-              setTimeout(typeWriter, 70);
-            }
-          }
-
-          // Start typewriter effect after small delay
-          setTimeout(typeWriter, 1000);
-        }
-
-        // Copy button functionality
-        const copyButton = document.getElementById("copy-button");
-        const copyIcon = document.getElementById("copy-icon");
-        const installCode = document.getElementById("install-code");
-
-        if (copyButton && copyIcon && installCode) {
-          copyButton.addEventListener("click", () => {
-            const code = installCode.textContent.trim();
-
-            navigator.clipboard.writeText(code).then(() => {
-              // Change icon to checkmark
-              copyIcon.innerHTML = `
-                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-              `;
-
-              // Revert to original icon after 1.5s
-              setTimeout(() => {
-                copyIcon.innerHTML = `
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M8 3h8a2 2 0 012 2v12a2 2 0 01-2 2H8a2 2 0 01-2-2V5a2-2 0 012-2z"/>
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h8"/>
-                `;
-              }, 1500);
-            });
-          });
-        }
       });
     </script>
   </body>
