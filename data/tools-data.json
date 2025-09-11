@@ -1,0 +1,98 @@
+{
+  "lastUpdated": "2025-09-11T04:32:13.044Z",
+  "linuxToysVersion": "unknown",
+  "categories": [
+    {
+      "name": "devs",
+      "displayName": "Developers",
+      "icon": "devs.svg",
+      "description": "Tools and resources for software developers.",
+      "tools": [
+        {
+          "name": ".NET SDK",
+          "description": "A collection of tools and libraries to create applications based on the .NET platform.",
+          "icon": "dotnet.svg",
+          "version": "1.0"
+        },
+        {
+          "name": "Android Studio",
+          "description": "IDE and toolkit for Android development.",
+          "icon": "android-studio.svg",
+          "version": "1.0"
+        },
+        {
+          "name": "Docker",
+          "description": "The open source container service provider and basic tools for it, like docker-compose. Includes a container with Portainer CE for managing Docker from a web UI.",
+          "icon": "docker.svg",
+          "version": "1.0"
+        },
+        {
+          "name": "Docker",
+          "description": "The open source container service provider and basic tools for it, like docker-compose. Includes a container with Portainer CE for managing Docker from a web UI.",
+          "icon": "docker.svg",
+          "version": "1.0"
+        },
+        {
+          "name": "Godot Engine 4",
+          "description": "A popular open-source game engine for 2D and 3D game development. This version does not support Microsoft .NET (C#).",
+          "icon": "godot.svg",
+          "version": "1.0"
+        },
+        {
+          "name": "Godot Engine 4 Sharp",
+          "description": "A popular open-source game engine for 2D and 3D game development with C# support. Includes .NET SDK.",
+          "icon": "godotsh.svg",
+          "version": "1.0"
+        },
+        {
+          "name": "HTTPie",
+          "description": "A user-friendly command-line HTTP client.",
+          "icon": "httpie.svg",
+          "version": "1.0"
+        },
+        {
+          "name": "Insomnia",
+          "description": "A powerful REST API client with a sleek interface.",
+          "icon": "insomnia.svg",
+          "version": "1.0"
+        },
+        {
+          "name": "Java OpenJDK",
+          "description": "Java JDK installation menu. Not needed if using Mise.",
+          "icon": "java.svg",
+          "version": "1.0"
+        },
+        {
+          "name": "JetBrains Toolbox",
+          "description": "A tool for managing JetBrains IDE installations.",
+          "icon": "jetbrains-toolbox.svg",
+          "version": "1.0"
+        },
+        {
+          "name": "Maven",
+          "description": "A build automation tool used primarily for Java projects. Not needed if using Mise.",
+          "icon": "maven.svg",
+          "version": "1.0"
+        },
+        {
+          "name": "Mise",
+          "description": "Like asdf (or nvm or pyenv but for any language) it manages dev tools like node, python, cmake, terraform, and hundreds more. Replaces PyEnv, NVM, and the Java JDK and Maven installers from this section.",
+          "icon": "mise.svg",
+          "version": "1.0"
+        },
+        {
+          "name": "Visual Studio Code",
+          "description": "A powerful and feature-rich code editor by Microsoft.",
+          "icon": "code.svg",
+          "version": "1.0"
+        },
+        {
+          "name": "VSCodium",
+          "description": "An open-source version of Visual Studio Code, based on VSCode-OSS.",
+          "icon": "vscodium.svg",
+          "version": "1.0"
+        }
+      ]
+    }
+  ]
+}

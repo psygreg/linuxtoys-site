@@ -1,0 +1,20 @@
+{
+  "devs": "Development",
+  "devs_desc": "Tools and resources for software developers.",
+  "game": "Gaming",
+  "game_desc": "Gaming tools and platforms",
+  "office": "Office & Productivity", 
+  "office_desc": "Office suites and productivity tools",
+  "utils": "Utilities",
+  "utils_desc": "System utilities and tools",
+  "drivers": "Drivers",
+  "drivers_desc": "Hardware drivers and system components",
+  "extra": "Extra",
+  "extra_desc": "Additional tools and packages",
+  "repos": "Repositories",
+  "repos_desc": "Package repositories and sources",
+  "sysadm": "System Administration",
+  "sysadm_desc": "System administration and management tools",
+  "privacy": "Privacy",
+  "privacy_desc": "Privacy and security tools"
+}

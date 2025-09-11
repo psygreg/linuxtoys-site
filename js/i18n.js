@@ -8,7 +8,8 @@ class I18n {
     this.currentLang = 'en';
     this.translations = {};
     this.fallbackLang = 'en';
-    this.supportedLanguages = ['en', 'es', 'pt'];
+    this.supportedLanguages = ['en', 'es', 'pt', 'ru', 'zh', 'ja', 'fr', 'de'];
+    this.linuxToysTranslations = {};
   }
 
   /**
@@ -21,6 +22,22 @@ class I18n {
     this.setupEventListeners();
     this.updateLanguageDisplay();
     this.updateUI();
+  }
+
+  /**
+   * Load LinuxToys translations to supplement website translations
+   */
+  async loadLinuxToysTranslations(lang) {
+    try {
+      const response = await fetch(`./data/translations/${lang}.json`);
+      if (response.ok) {
+        const linuxToysTranslations = await response.json();
+        this.linuxToysTranslations[lang] = linuxToysTranslations;
+        console.log(`Loaded LinuxToys translations for ${lang}: ${Object.keys(linuxToysTranslations).length} entries`);
+      }
+    } catch (error) {
+      console.warn(`Could not load LinuxToys translations for ${lang}:`, error);
+    }
   }
 
   /**
@@ -39,7 +56,7 @@ class I18n {
         return;
       }
 
-      // Load the language file
+      // Load the website language file
       const response = await fetch(`lang/${lang}.json`);
       if (!response.ok) {
         throw new Error(`Failed to load language file: ${lang}.json`);
@@ -48,6 +65,9 @@ class I18n {
       const translations = await response.json();
       this.translations[lang] = translations;
       this.currentLang = lang;
+      
+      // Also try to load LinuxToys translations for this language
+      await this.loadLinuxToysTranslations(lang);
       
       // Store language preference
       localStorage.setItem('linuxtoys-language', lang);
@@ -62,6 +82,9 @@ class I18n {
           const fallbackTranslations = await fallbackResponse.json();
           this.translations[this.fallbackLang] = fallbackTranslations;
           this.currentLang = this.fallbackLang;
+          
+          // Also try LinuxToys translations for fallback
+          await this.loadLinuxToysTranslations(this.fallbackLang);
         } catch (fallbackError) {
           console.error('Failed to load fallback language:', fallbackError);
           // Use inline fallback if all else fails
@@ -82,9 +105,20 @@ class I18n {
    */
   t(key, lang = null) {
     const targetLang = lang || this.currentLang;
-    const langTranslations = this.translations[targetLang] || this.translations[this.fallbackLang] || {};
     
-    return langTranslations[key] || key;
+    // First try website translations
+    const langTranslations = this.translations[targetLang] || this.translations[this.fallbackLang] || {};
+    if (langTranslations[key]) {
+      return langTranslations[key];
+    }
+    
+    // Then try LinuxToys translations
+    const linuxToysLangTranslations = this.linuxToysTranslations[targetLang] || this.linuxToysTranslations[this.fallbackLang] || {};
+    if (linuxToysLangTranslations[key]) {
+      return linuxToysLangTranslations[key];
+    }
+    
+    return key;
   }
 
   /**
@@ -97,6 +131,12 @@ class I18n {
     await this.loadLanguage(lang);
     this.updateUI();
     this.updateLanguageDisplay();
+    
+    // Notify tools-sync system that language changed so it can update category names
+    if (window.linuxToysSync) {
+      console.log('Notifying LinuxToys sync system of language change');
+      // We could trigger a re-render here if needed
+    }
   }
 
   /**
@@ -138,7 +178,12 @@ class I18n {
       const languageMap = {
         'en': 'EN',
         'es': 'ES',
-        'pt': 'PT'
+        'pt': 'PT',
+        'ru': 'RU',
+        'zh': 'ZH',
+        'ja': 'JA',
+        'fr': 'FR',
+        'de': 'DE'
       };
       currentLanguageSpan.textContent = languageMap[this.currentLang] || this.currentLang.toUpperCase();
     }
@@ -169,6 +214,26 @@ class I18n {
       // Check for Portuguese variants (pt, pt-BR, pt-PT, etc.)
       if (langCode.startsWith('pt')) {
         return 'pt';
+      }
+      // Check for Russian variants (ru, ru-RU, etc.)
+      if (langCode.startsWith('ru')) {
+        return 'ru';
+      }
+      // Check for Chinese variants (zh, zh-CN, zh-Hans, zh-TW, zh-Hant, etc.)
+      if (langCode.startsWith('zh')) {
+        return 'zh';
+      }
+      // Check for Japanese variants (ja, ja-JP, etc.)
+      if (langCode.startsWith('ja')) {
+        return 'ja';
+      }
+      // Check for French variants (fr, fr-FR, fr-CA, etc.)
+      if (langCode.startsWith('fr')) {
+        return 'fr';
+      }
+      // Check for German variants (de, de-DE, de-AT, de-CH, etc.)
+      if (langCode.startsWith('de')) {
+        return 'de';
       }
       // Check for English variants
       if (langCode.startsWith('en')) {
