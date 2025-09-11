@@ -104,15 +104,15 @@
         <div class="flex items-center">
           <button
             id="lang-en"
-            class="mx-2 px-3 py-1 rounded-md text-sm font-medium bg-blue-600"
+            class="block w-full px-3 py-2 text-sm text-left hover:bg-gray-700 transition duration-300 rounded-t-md"
           >
-            EN
+            🇺🇸 EN
           </button>
           <button
             id="lang-pt"
-            class="mx-2 px-3 py-1 rounded-md text-sm font-medium"
+            class="block w-full px-3 py-2 text-sm text-left hover:bg-gray-700 transition duration-300 rounded-b-md"
           >
-            PT
+            🇧🇷 PT
           </button>
         </div>
       </nav>
@@ -139,16 +139,16 @@
           Quick-Install
         </h3>
         <div
-          class="relative w-full md:max-w-3xl lg:max-w-4xl mx-auto flex items-center justify-between"
+          class="relative w-full max-w-5xl mx-auto flex items-center justify-between"
         >
           <pre
             id="install-code"
-            class="w-full text-green-400 font-mono text-sm px-4 py-3 border-2 border-gray-700 bg-gray-800 rounded-lg text-left whitespace-pre-wrap break-words"
+            class="flex-1 text-green-400 font-mono text-sm px-4 py-3 border-2 border-gray-700 bg-gray-800 rounded-lg text-left whitespace-pre-wrap break-words min-w-0"
           ></pre>
 
           <button
             id="copy-button"
-            class="ml-3 p-3 bg-gray-700 hover:bg-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 flex items-center justify-center"
+            class="ml-3 p-3 bg-gray-700 hover:bg-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 flex items-center justify-center flex-shrink-0"
           >
             <svg
               id="copy-icon"
@@ -611,11 +611,53 @@
         // Set up toggle buttons for tool lists
         setupToggleButtons();
         
+        // Set up dropdown functionality
+        setupLanguageDropdown();
+        
         // Set up other functionality
         setupInstallCommand();
         setupCopyButton();
         setCurrentYear();
       });
+
+      function setupLanguageDropdown() {
+        const dropdownBtn = document.getElementById('language-dropdown-btn');
+        const dropdown = document.getElementById('language-dropdown');
+        const currentLang = document.getElementById('current-lang');
+        const langButtons = dropdown.querySelectorAll('button');
+
+        // Toggle dropdown visibility
+        dropdownBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          dropdown.classList.toggle('hidden');
+        });
+
+        // Handle language selection
+        langButtons.forEach(button => {
+          button.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const selectedLang = button.id === 'lang-en' ? '🇺🇸 EN' : '🇧🇷 PT';
+            currentLang.textContent = selectedLang;
+            dropdown.classList.add('hidden');
+            
+            // Trigger the existing translation logic
+            const lang = button.id.split('-')[1];
+            if (translationManager) {
+              translationManager.switchLanguage(lang);
+            }
+          });
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', () => {
+          dropdown.classList.add('hidden');
+        });
+
+        // Prevent dropdown from closing when clicking inside it
+        dropdown.addEventListener('click', (e) => {
+          e.stopPropagation();
+        });
+      }
 
       function setupToggleButtons() {
         const toggleButtons = document.querySelectorAll('.toggle-button');
