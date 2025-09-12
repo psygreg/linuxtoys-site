@@ -113,27 +113,36 @@ class ToolsCacheLoader {
     const toolsList = document.createElement('ul');
     toolsList.className = 'tool-list mt-4 space-y-2 text-gray-300';
 
+    // Collect all tools and track unique names to avoid duplicates
+    const uniqueToolNames = new Set();
+    const toolsToDisplay = [];
+
     // Add tools from main category
     for (const tool of categoryData.tools || []) {
-      const li = document.createElement('li');
-      li.textContent = tool.name;
-      toolsList.appendChild(li);
+      if (!uniqueToolNames.has(tool.name)) {
+        uniqueToolNames.add(tool.name);
+        toolsToDisplay.push(tool.name);
+      }
     }
 
     // Add tools from subcategories (flattened)
     for (const subcategory of Object.values(categoryData.subcategories || {})) {
       for (const tool of subcategory.tools || []) {
-        const li = document.createElement('li');
-        li.textContent = tool.name;
-        toolsList.appendChild(li);
+        if (!uniqueToolNames.has(tool.name)) {
+          uniqueToolNames.add(tool.name);
+          toolsToDisplay.push(tool.name);
+        }
       }
     }
 
-    // Sort tools alphabetically
-    const toolItems = Array.from(toolsList.children);
-    toolItems.sort((a, b) => a.textContent.localeCompare(b.textContent));
-    toolsList.innerHTML = '';
-    toolItems.forEach(item => toolsList.appendChild(item));
+    // Sort tools alphabetically and add to list
+    toolsToDisplay.sort((a, b) => a.localeCompare(b));
+    
+    for (const toolName of toolsToDisplay) {
+      const li = document.createElement('li');
+      li.textContent = toolName;
+      toolsList.appendChild(li);
+    }
 
     div.appendChild(title);
     div.appendChild(button);

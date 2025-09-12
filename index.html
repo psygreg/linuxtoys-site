@@ -870,6 +870,9 @@
       function setupInstallCommand() {
         const command = `yes | sh -c "$(curl -fsSL https://raw.githubusercontent.com/psygreg/linuxtoys/master/install.sh)"`;
         const element = document.getElementById('install-code');
+        
+        // Store the complete command for copying
+        element.dataset.fullCommand = command;
 
         let i = 0;
         function typeWriter() {
@@ -890,7 +893,8 @@
         const installCode = document.getElementById('install-code');
 
         copyButton.addEventListener('click', () => {
-          const code = installCode.textContent.trim();
+          // Always copy the full command, regardless of animation state
+          const code = installCode.dataset.fullCommand || installCode.textContent.trim();
 
           navigator.clipboard.writeText(code).then(() => {
             copyIcon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />`;
