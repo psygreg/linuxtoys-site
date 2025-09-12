@@ -66,6 +66,11 @@ class TranslationManager {
     this.updatePageTranslations();
     this.updateLanguageButtons();
     
+    // Update tools loader if it exists
+    if (window.toolsLoader && typeof window.toolsLoader.onLanguageChange === 'function') {
+      window.toolsLoader.onLanguageChange(language);
+    }
+    
     // Store language preference
     localStorage.setItem('preferredLanguage', language);
   }

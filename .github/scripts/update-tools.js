@@ -260,6 +260,7 @@ class LinuxToysDataProcessor {
           description: this.resolveTranslation(categoryData.description, lang),
           tools: categoryData.tools.map(tool => ({
             ...tool,
+            name: this.resolveTranslation(tool.name, lang),
             description: this.resolveTranslation(tool.description, lang)
           })),
           subcategories: {}
@@ -273,6 +274,7 @@ class LinuxToysDataProcessor {
             description: this.resolveTranslation(subData.description, lang),
             tools: subData.tools.map(tool => ({
               ...tool,
+              name: this.resolveTranslation(tool.name, lang),
               description: this.resolveTranslation(tool.description, lang)
             }))
           };

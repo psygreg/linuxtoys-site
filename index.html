@@ -682,9 +682,11 @@
         translationManager = new TranslationManager();
         await translationManager.init();
         
-        // Initialize tools loader
-        toolsLoader = new ToolsCacheLoader();
-        const toolsUpdated = await toolsLoader.init();
+        // Initialize tools loader and make it globally available
+        window.toolsLoader = new ToolsCacheLoader();
+        // Set the language on the tools loader to match the translation manager
+        window.toolsLoader.setLanguage(translationManager.currentLang);
+        const toolsUpdated = await window.toolsLoader.init();
         
         // Set up dropdown functionality AFTER translation manager is ready
         setupLanguageDropdown();
