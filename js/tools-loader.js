@@ -143,9 +143,13 @@ class ToolsCacheLoader {
   }
 
   async updateToolsSection() {
+    // Show loading indicator
+    this.showLoadingState();
+    
     const cacheLoaded = await this.loadCache();
     if (!cacheLoaded) {
       console.log('Using static tools data');
+      this.hideLoadingState();
       return false;
     }
 
@@ -157,13 +161,13 @@ class ToolsCacheLoader {
       console.log('Tools section updated from cache');
       
       // Re-setup toggle buttons for the new content
-      if (typeof setupToggleButtons === 'function') {
-        setupToggleButtons();
-      }
+      this.setupToggleButtons();
       
+      this.hideLoadingState();
       return true;
     }
 
+    this.hideLoadingState();
     return false;
   }
 
@@ -187,13 +191,75 @@ class ToolsCacheLoader {
   onLanguageChange(newLanguage) {
     this.setLanguage(newLanguage);
     if (this.cachedData) {
+      // Show loading indicator during language change
+      this.showLoadingState();
+      
       this.buildToolsHTML();
       
       // Re-setup toggle buttons
-      if (typeof setupToggleButtons === 'function') {
-        setupToggleButtons();
-      }
+      this.setupToggleButtons();
+      
+      this.hideLoadingState();
     }
+  }
+
+  showLoadingState() {
+    const loadingIndicator = document.getElementById('tools-loading');
+    const toolsContainer = document.querySelector('.tool-grid-container');
+    
+    if (loadingIndicator) {
+      loadingIndicator.style.display = 'block';
+    }
+    if (toolsContainer) {
+      toolsContainer.style.display = 'none';
+    }
+  }
+
+  hideLoadingState() {
+    const loadingIndicator = document.getElementById('tools-loading');
+    const toolsContainer = document.querySelector('.tool-grid-container');
+    
+    if (loadingIndicator) {
+      loadingIndicator.style.display = 'none';
+    }
+    if (toolsContainer) {
+      toolsContainer.style.display = 'block';
+    }
+  }
+
+  setupToggleButtons() {
+    const toggleButtons = document.querySelectorAll('.toggle-button');
+    
+    // Remove existing event listeners to prevent duplicates
+    toggleButtons.forEach(button => {
+      // Clone the button to remove all event listeners
+      const newButton = button.cloneNode(true);
+      button.parentNode.replaceChild(newButton, button);
+    });
+    
+    // Re-add event listeners to the new buttons
+    const newToggleButtons = document.querySelectorAll('.toggle-button');
+    newToggleButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const list = button.nextElementSibling;
+        list.classList.toggle('expanded');
+        
+        // Update button text based on current state
+        if (list.classList.contains('expanded')) {
+          if (window.translationManager && typeof window.translationManager.getTranslation === 'function') {
+            button.textContent = window.translationManager.getTranslation('toggle-button-less');
+          } else {
+            button.textContent = 'Show Less';
+          }
+        } else {
+          if (window.translationManager && typeof window.translationManager.getTranslation === 'function') {
+            button.textContent = window.translationManager.getTranslation('toggle-button');
+          } else {
+            button.textContent = 'Show Tools';
+          }
+        }
+      });
+    });
   }
 }
 

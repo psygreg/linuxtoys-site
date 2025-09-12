@@ -320,6 +320,17 @@
           Tools by Category
         </h3>
 
+        <!-- Loading indicator -->
+        <div id="tools-loading" class="text-center py-12">
+          <div class="inline-flex items-center px-4 py-2 font-semibold leading-6 text-sm shadow rounded-md text-white bg-gray-800 transition ease-in-out duration-150">
+            <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+              <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+              <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+            </svg>
+            <span data-key="loading-content">Loading content...</span>
+          </div>
+        </div>
+
         <div class="tool-grid-container">
           <div class="bg-gray-800 rounded-lg p-6 flex flex-col">
             <h4 class="text-xl font-semibold mb-4" data-key="devs">
@@ -679,13 +690,13 @@
       let toolsLoader;
 
       document.addEventListener('DOMContentLoaded', async () => {
-        translationManager = new TranslationManager();
-        await translationManager.init();
+        window.translationManager = new TranslationManager();
+        await window.translationManager.init();
         
         // Initialize tools loader and make it globally available
         window.toolsLoader = new ToolsCacheLoader();
         // Set the language on the tools loader to match the translation manager
-        window.toolsLoader.setLanguage(translationManager.currentLang);
+        window.toolsLoader.setLanguage(window.translationManager.currentLang);
         const toolsUpdated = await window.toolsLoader.init();
         
         // Set up dropdown functionality AFTER translation manager is ready
@@ -696,8 +707,10 @@
           syncDropdownWithCurrentLanguage();
         }, 200);
         
-        // Set up toggle buttons for tool lists (this will work for both static and dynamic content)
-        setupToggleButtons();
+        // Only set up toggle buttons if tools weren't updated from cache
+        if (!toolsUpdated) {
+          setupToggleButtons();
+        }
         
         // Set up other functionality
         setupInstallCommand();
@@ -707,16 +720,16 @@
 
       function syncDropdownWithCurrentLanguage() {
         const currentLang = document.getElementById('current-lang');
-        if (translationManager) {
+        if (window.translationManager) {
           let detectedLang = 'en'; // default fallback
           
           // Try different ways to get the current language
-          if (translationManager.currentLang) {
-            detectedLang = translationManager.currentLang;
-          } else if (translationManager.currentLanguage) {
-            detectedLang = translationManager.currentLanguage;
-          } else if (translationManager.language) {
-            detectedLang = translationManager.language;
+          if (window.translationManager.currentLang) {
+            detectedLang = window.translationManager.currentLang;
+          } else if (window.translationManager.currentLanguage) {
+            detectedLang = window.translationManager.currentLanguage;
+          } else if (window.translationManager.language) {
+            detectedLang = window.translationManager.language;
           } else {
             // Fallback: check browser language
             const browserLang = navigator.language || navigator.userLanguage;
@@ -778,11 +791,11 @@
         // Set initial language to match translation manager
         // We need to wait a bit for the translation manager to fully initialize
         setTimeout(() => {
-          if (translationManager && translationManager.currentLanguage) {
-            updateDisplayedLanguage(translationManager.currentLanguage);
-          } else if (translationManager && translationManager.detectLanguage) {
+          if (window.translationManager && window.translationManager.currentLanguage) {
+            updateDisplayedLanguage(window.translationManager.currentLanguage);
+          } else if (window.translationManager && window.translationManager.detectLanguage) {
             // Fallback: try to detect the language if currentLanguage isn't set yet
-            const detectedLang = translationManager.detectLanguage();
+            const detectedLang = window.translationManager.detectLanguage();
             updateDisplayedLanguage(detectedLang);
           }
         }, 100);
@@ -802,13 +815,13 @@
             dropdown.classList.add('hidden');
             
             // Trigger the existing translation logic
-            if (translationManager) {
-              translationManager.setLanguage(lang);
+            if (window.translationManager) {
+              window.translationManager.setLanguage(lang);
             }
             
             // Update tools content if tools loader is available
-            if (toolsLoader) {
-              toolsLoader.onLanguageChange(lang);
+            if (window.toolsLoader) {
+              window.toolsLoader.onLanguageChange(lang);
             }
           });
         });
@@ -834,9 +847,9 @@
             
             // Update button text based on current state
             if (list.classList.contains('expanded')) {
-              button.textContent = translationManager.getTranslation('toggle-button-less');
+              button.textContent = window.translationManager.getTranslation('toggle-button-less');
             } else {
-              button.textContent = translationManager.getTranslation('toggle-button');
+              button.textContent = window.translationManager.getTranslation('toggle-button');
             }
           });
         });
