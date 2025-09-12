@@ -1,0 +1,594 @@
+{
+  "en": {
+    "devs": {
+      "name": "devs",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "Developers"
+    },
+    "drivers": {
+      "name": "drivers",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "Drivers"
+    },
+    "extra": {
+      "name": "extra",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "Extras"
+    },
+    "game": {
+      "name": "game",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "Gaming"
+    },
+    "office": {
+      "name": "office",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "Office & Work"
+    },
+    "repos": {
+      "name": "repos",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "Additional Repositories"
+    },
+    "sysadm": {
+      "name": "sysadm",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "System Administration"
+    },
+    "utils": {
+      "name": "utils",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "Utilities"
+    }
+  },
+  "pt": {
+    "devs": {
+      "name": "devs",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "Desenvolvedores"
+    },
+    "drivers": {
+      "name": "drivers",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "Drivers"
+    },
+    "extra": {
+      "name": "extra",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "Extras"
+    },
+    "game": {
+      "name": "game",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "Jogos"
+    },
+    "office": {
+      "name": "office",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "Escritório e Trabalho"
+    },
+    "repos": {
+      "name": "repos",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "Repositórios Adicionais"
+    },
+    "sysadm": {
+      "name": "sysadm",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "Administração de Sistemas"
+    },
+    "utils": {
+      "name": "utils",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "Utilidades"
+    }
+  },
+  "es": {
+    "devs": {
+      "name": "devs",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "Desarrolladores"
+    },
+    "drivers": {
+      "name": "drivers",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "Controladores"
+    },
+    "extra": {
+      "name": "extra",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "Extras"
+    },
+    "game": {
+      "name": "game",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "Juegos"
+    },
+    "office": {
+      "name": "office",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "Oficina y Trabajo"
+    },
+    "repos": {
+      "name": "repos",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "Repositorios Adicionales"
+    },
+    "sysadm": {
+      "name": "sysadm",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "Administración de Sistemas"
+    },
+    "utils": {
+      "name": "utils",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "Utilidades"
+    }
+  },
+  "fr": {
+    "devs": {
+      "name": "devs",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "Développeurs"
+    },
+    "drivers": {
+      "name": "drivers",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "Pilotes"
+    },
+    "extra": {
+      "name": "extra",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "Extras"
+    },
+    "game": {
+      "name": "game",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "Gaming"
+    },
+    "office": {
+      "name": "office",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "Bureau & Travail"
+    },
+    "repos": {
+      "name": "repos",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "Dépôts supplémentaires"
+    },
+    "sysadm": {
+      "name": "sysadm",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "Administration système"
+    },
+    "utils": {
+      "name": "utils",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "Utilitaires"
+    }
+  },
+  "de": {
+    "devs": {
+      "name": "devs",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "Entwickler"
+    },
+    "drivers": {
+      "name": "drivers",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "Treiber"
+    },
+    "extra": {
+      "name": "extra",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "Extras"
+    },
+    "game": {
+      "name": "game",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "Gaming"
+    },
+    "office": {
+      "name": "office",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "Büro & Arbeit"
+    },
+    "repos": {
+      "name": "repos",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "Zusätzliche Repositories"
+    },
+    "sysadm": {
+      "name": "sysadm",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "Systemverwaltung"
+    },
+    "utils": {
+      "name": "utils",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "Utilities"
+    }
+  },
+  "zh": {
+    "devs": {
+      "name": "devs",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "开发者"
+    },
+    "drivers": {
+      "name": "drivers",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "驱动程序"
+    },
+    "extra": {
+      "name": "extra",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "额外功能"
+    },
+    "game": {
+      "name": "game",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "游戏"
+    },
+    "office": {
+      "name": "office",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "办公和工作"
+    },
+    "repos": {
+      "name": "repos",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "额外的软件源"
+    },
+    "sysadm": {
+      "name": "sysadm",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "系统管理"
+    },
+    "utils": {
+      "name": "utils",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "实用工具"
+    }
+  },
+  "ja": {
+    "devs": {
+      "name": "devs",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "開発者"
+    },
+    "drivers": {
+      "name": "drivers",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "ドライバー"
+    },
+    "extra": {
+      "name": "extra",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "エクストラ"
+    },
+    "game": {
+      "name": "game",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "ゲーム"
+    },
+    "office": {
+      "name": "office",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "オフィス＆作業"
+    },
+    "repos": {
+      "name": "repos",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "追加リポジトリ"
+    },
+    "sysadm": {
+      "name": "sysadm",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "システム管理"
+    },
+    "utils": {
+      "name": "utils",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "ユーティリティ"
+    }
+  },
+  "ru": {
+    "devs": {
+      "name": "devs",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "Разработчики"
+    },
+    "drivers": {
+      "name": "drivers",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "Драйверы"
+    },
+    "extra": {
+      "name": "extra",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "Дополнительно"
+    },
+    "game": {
+      "name": "game",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "Игры"
+    },
+    "office": {
+      "name": "office",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "Офис и работа"
+    },
+    "repos": {
+      "name": "repos",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "Дополнительные репозитории"
+    },
+    "sysadm": {
+      "name": "sysadm",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "Системное администрирование"
+    },
+    "utils": {
+      "name": "utils",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {},
+      "displayName": "Утилиты"
+    }
+  }
+}

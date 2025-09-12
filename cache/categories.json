@@ -1,0 +1,66 @@
+{
+  "devs": {
+    "name": "devs",
+    "icon": "folder-open",
+    "description": "A category of scripts.",
+    "mode": "menu",
+    "tools": [],
+    "subcategories": {}
+  },
+  "drivers": {
+    "name": "drivers",
+    "icon": "folder-open",
+    "description": "A category of scripts.",
+    "mode": "menu",
+    "tools": [],
+    "subcategories": {}
+  },
+  "extra": {
+    "name": "extra",
+    "icon": "folder-open",
+    "description": "A category of scripts.",
+    "mode": "menu",
+    "tools": [],
+    "subcategories": {}
+  },
+  "game": {
+    "name": "game",
+    "icon": "folder-open",
+    "description": "A category of scripts.",
+    "mode": "menu",
+    "tools": [],
+    "subcategories": {}
+  },
+  "office": {
+    "name": "office",
+    "icon": "folder-open",
+    "description": "A category of scripts.",
+    "mode": "menu",
+    "tools": [],
+    "subcategories": {}
+  },
+  "repos": {
+    "name": "repos",
+    "icon": "folder-open",
+    "description": "A category of scripts.",
+    "mode": "menu",
+    "tools": [],
+    "subcategories": {}
+  },
+  "sysadm": {
+    "name": "sysadm",
+    "icon": "folder-open",
+    "description": "A category of scripts.",
+    "mode": "menu",
+    "tools": [],
+    "subcategories": {}
+  },
+  "utils": {
+    "name": "utils",
+    "icon": "folder-open",
+    "description": "A category of scripts.",
+    "mode": "menu",
+    "tools": [],
+    "subcategories": {}
+  }
+}

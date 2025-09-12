@@ -1,0 +1,25 @@
+{
+  "lastUpdated": "2025-09-12T17:45:34.993Z",
+  "categoryCount": 8,
+  "totalTools": 0,
+  "supportedLanguages": [
+    "en",
+    "pt",
+    "es",
+    "fr",
+    "de",
+    "zh",
+    "ja",
+    "ru"
+  ],
+  "categories": [
+    "devs",
+    "drivers",
+    "extra",
+    "game",
+    "office",
+    "repos",
+    "sysadm",
+    "utils"
+  ]
+}

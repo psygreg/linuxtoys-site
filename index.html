@@ -49,6 +49,7 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="js/translations.js"></script>
+    <script src="js/tools-loader.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
@@ -673,12 +674,17 @@
     </footer>
 
     <script>
-      // Initialize translation manager
+      // Initialize translation manager and tools loader
       let translationManager;
+      let toolsLoader;
 
       document.addEventListener('DOMContentLoaded', async () => {
         translationManager = new TranslationManager();
         await translationManager.init();
+        
+        // Initialize tools loader
+        toolsLoader = new ToolsCacheLoader();
+        const toolsUpdated = await toolsLoader.init();
         
         // Set up dropdown functionality AFTER translation manager is ready
         setupLanguageDropdown();
@@ -688,7 +694,7 @@
           syncDropdownWithCurrentLanguage();
         }, 200);
         
-        // Set up toggle buttons for tool lists
+        // Set up toggle buttons for tool lists (this will work for both static and dynamic content)
         setupToggleButtons();
         
         // Set up other functionality
@@ -796,6 +802,11 @@
             // Trigger the existing translation logic
             if (translationManager) {
               translationManager.setLanguage(lang);
+            }
+            
+            // Update tools content if tools loader is available
+            if (toolsLoader) {
+              toolsLoader.onLanguageChange(lang);
             }
           });
         });

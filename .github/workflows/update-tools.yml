@@ -1,0 +1,51 @@
+name: Update Tools Categories
+
+on:
+  # Trigger on manual dispatch
+  workflow_dispatch:
+  
+  # Trigger on releases from LinuxToys repository
+  repository_dispatch:
+    types: [update-tools]
+  
+  # Schedule to run daily to check for new releases
+  schedule:
+    - cron: '0 6 * * *'  # Run daily at 6 AM UTC
+
+jobs:
+  update-tools:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+    
+    - name: Install dependencies
+      run: |
+        npm install axios cheerio
+    
+    - name: Fetch and process LinuxToys data
+      run: |
+        node .github/scripts/update-tools.js
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        
+        if [ -n "$(git status --porcelain)" ]; then
+          git add cache/
+          git commit -m "Update tools categories from LinuxToys repository"
+          git push
+        else
+          echo "No changes to commit"
+        fi
