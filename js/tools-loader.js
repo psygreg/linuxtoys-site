@@ -114,24 +114,45 @@ class ToolsCacheLoader {
     toolsList.className = 'tool-list mt-4 space-y-2 text-gray-300';
 
     // Collect all tools and track unique names to avoid duplicates
-    const uniqueToolNames = new Set();
+    // Collect all tools and track unique names to avoid duplicates.
+    // Normalize names (trim, Unicode NFKC, lowercase) because the cached
+    // data may contain duplicates that only differ by spacing, case or
+    // Unicode composition. Preserve the first-seen original display name.
+    const uniqueNormalized = new Set();
     const toolsToDisplay = [];
+
+    const normalize = (s) => {
+      if (typeof s !== 'string') return '';
+      // NFKC normalization handles common Unicode composition differences
+      // then trim and lowercase to avoid case-only duplicates.
+      try {
+        return s.normalize('NFKC').trim().toLowerCase();
+      } catch (e) {
+        // If normalize isn't supported, fall back to trim+lower
+        return s.trim().toLowerCase();
+      }
+    };
+
+    const addToolIfUnique = (tool) => {
+      const name = tool && (tool.name || '');
+      const key = normalize(name);
+      if (!key) return;
+      if (!uniqueNormalized.has(key)) {
+        uniqueNormalized.add(key);
+        // Preserve the original tool.name for display (first seen)
+        toolsToDisplay.push(name);
+      }
+    };
 
     // Add tools from main category
     for (const tool of categoryData.tools || []) {
-      if (!uniqueToolNames.has(tool.name)) {
-        uniqueToolNames.add(tool.name);
-        toolsToDisplay.push(tool.name);
-      }
+      addToolIfUnique(tool);
     }
 
     // Add tools from subcategories (flattened)
     for (const subcategory of Object.values(categoryData.subcategories || {})) {
       for (const tool of subcategory.tools || []) {
-        if (!uniqueToolNames.has(tool.name)) {
-          uniqueToolNames.add(tool.name);
-          toolsToDisplay.push(tool.name);
-        }
+        addToolIfUnique(tool);
       }
     }
 
