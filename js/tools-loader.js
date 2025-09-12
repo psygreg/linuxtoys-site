@@ -182,6 +182,10 @@ class ToolsCacheLoader {
         console.log(`Tools data last updated: ${new Date(summary.lastUpdated).toLocaleDateString()}`);
         console.log(`Total categories: ${summary.categoryCount}, Total tools: ${summary.totalTools}`);
       }
+    } else {
+      // Ensure loading indicator is hidden even if cache loading failed
+      // This handles the case where static HTML is used
+      this.hideLoadingState();
     }
 
     return updated;

@@ -712,6 +712,18 @@
           setupToggleButtons();
         }
         
+        // Failsafe: Ensure loading indicator is always hidden after initialization
+        setTimeout(() => {
+          const loadingIndicator = document.getElementById('tools-loading');
+          if (loadingIndicator) {
+            loadingIndicator.style.display = 'none';
+          }
+          const toolsContainer = document.querySelector('.tool-grid-container');
+          if (toolsContainer) {
+            toolsContainer.style.display = 'block';
+          }
+        }, 100);
+        
         // Set up other functionality
         setupInstallCommand();
         setupCopyButton();
