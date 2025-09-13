@@ -877,6 +877,14 @@
         const toggleButtons = document.querySelectorAll('.toggle-button');
         
         toggleButtons.forEach(button => {
+          // Apply initial translation immediately
+          const list = button.nextElementSibling;
+          if (list && list.classList.contains('expanded')) {
+            button.textContent = window.translationManager.getTranslation('toggle-button-less');
+          } else {
+            button.textContent = window.translationManager.getTranslation('toggle-button');
+          }
+          
           button.addEventListener('click', () => {
             const list = button.nextElementSibling;
             list.classList.toggle('expanded');

@@ -274,6 +274,22 @@ class ToolsCacheLoader {
     // Re-add event listeners to the new buttons
     const newToggleButtons = document.querySelectorAll('.toggle-button');
     newToggleButtons.forEach(button => {
+      // Apply initial translation immediately
+      const list = button.nextElementSibling;
+      if (list && list.classList.contains('expanded')) {
+        if (window.translationManager && typeof window.translationManager.getTranslation === 'function') {
+          button.textContent = window.translationManager.getTranslation('toggle-button-less');
+        } else {
+          button.textContent = 'Show Less';
+        }
+      } else {
+        if (window.translationManager && typeof window.translationManager.getTranslation === 'function') {
+          button.textContent = window.translationManager.getTranslation('toggle-button');
+        } else {
+          button.textContent = 'Show Tools';
+        }
+      }
+      
       button.addEventListener('click', () => {
         const list = button.nextElementSibling;
         list.classList.toggle('expanded');
