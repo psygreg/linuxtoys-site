@@ -7,7 +7,7 @@ class TOCGenerator {
   constructor() {
     this.toc = [];
     this.tocContainer = null;
-    this.isVisible = true;
+    this.isVisible = false; // Start with TOC hidden
   }
 
   /**
@@ -24,7 +24,7 @@ class TOCGenerator {
   createTOCContainer() {
     // Create TOC container
     const tocHTML = `
-      <div id="toc-container" class="fixed right-4 top-1/2 transform -translate-y-1/2 z-40 transition-all duration-300 ease-in-out">
+      <div id="toc-container" class="fixed right-4 top-20 z-40 transition-all duration-300 ease-in-out">
         <!-- Toggle Button -->
         <button id="toc-toggle" class="bg-gray-800 hover:bg-gray-700 text-white p-3 rounded-l-lg border border-gray-600 border-r-0 shadow-lg transition-all duration-300 ease-in-out">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -35,7 +35,7 @@ class TOCGenerator {
         <!-- TOC Panel -->
         <div id="toc-panel" class="bg-gray-800 border border-gray-600 rounded-l-lg shadow-lg max-w-xs max-h-96 overflow-y-auto transition-all duration-300 ease-in-out transform translate-x-full">
           <div class="p-4">
-            <h3 class="text-white font-semibold mb-3 text-sm uppercase tracking-wide">Contents</h3>
+            <h3 id="toc-title" class="text-white font-semibold mb-3 text-sm uppercase tracking-wide" data-key="toc-contents">Contents</h3>
             <nav id="toc-nav" class="space-y-1">
               <!-- TOC items will be inserted here -->
             </nav>
@@ -57,7 +57,9 @@ class TOCGenerator {
     const panel = document.getElementById('toc-panel');
 
     // Toggle TOC visibility
-    toggleBtn.addEventListener('click', () => {
+    toggleBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
       this.toggleTOC();
     });
 
@@ -71,6 +73,11 @@ class TOCGenerator {
     // Handle scroll for active section highlighting
     window.addEventListener('scroll', () => {
       this.updateActiveSection();
+    });
+
+    // Listen for language changes
+    window.addEventListener('languageChanged', () => {
+      this.updateTranslations();
     });
   }
 
@@ -232,6 +239,21 @@ class TOCGenerator {
   }
 
   /**
+   * Update TOC translations when language changes
+   */
+  updateTranslations() {
+    const tocTitle = document.getElementById('toc-title');
+    if (tocTitle && window.translationManager) {
+      const currentTranslations = window.translationManager.translations[window.translationManager.currentLang] || 
+                                   window.translationManager.translations[window.translationManager.fallbackLang] || {};
+      const translation = currentTranslations['toc-contents'];
+      if (translation) {
+        tocTitle.textContent = translation;
+      }
+    }
+  }
+
+  /**
    * Escape HTML characters
    */
   escapeHtml(text) {
@@ -247,6 +269,7 @@ class TOCGenerator {
     const content = document.getElementById('markdown-content');
     if (content && !content.classList.contains('hidden') && content.innerHTML.trim()) {
       this.generateTOC();
+      this.updateTranslations();
       return true;
     }
     return false;

@@ -545,6 +545,7 @@ firewall-cmd --reload
 - Bazaar
 - Discord
 - Flatseal
+- Gear Lever
 - GPU Screen Recorder
 - Heroic Games Launcher
 - Lutris

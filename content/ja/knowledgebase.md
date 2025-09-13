@@ -545,6 +545,7 @@ Linuxでのゲーミングライフをこれまで以上に簡単にするアプ
 - Bazaar
 - Discord
 - Flatseal
+- Gear Lever
 - GPU Screen Recorder
 - Heroic Games Launcher
 - Lutris

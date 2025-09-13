@@ -546,6 +546,7 @@ A curated selection of apps to make your gaming life on Linux easier than ever, 
 - Bazaar
 - Discord
 - Flatseal
+- Gear Lever
 - GPU Screen Recorder
 - Heroic Games Launcher
 - Lutris
