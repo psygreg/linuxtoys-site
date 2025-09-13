@@ -25,6 +25,7 @@ class ContentLoader {
     if (path.includes('handbook')) return 'handbook';
     if (path.includes('cli-mode')) return 'cli-mode';
     if (path.includes('knowledgebase')) return 'knowledgebase';
+    if (path.includes('credits')) return 'credits';
     return null;
   }
 
@@ -122,6 +123,16 @@ class ContentLoader {
         'zh': '知识库 - LinuxToys',
         'ja': 'ナレッジベース - LinuxToys',
         'ru': 'База знаний - LinuxToys'
+      },
+      'credits': {
+        'en': 'Credits & Acknowledgments - LinuxToys',
+        'pt': 'Créditos & Reconhecimentos - LinuxToys',
+        'es': 'Créditos & Reconocimientos - LinuxToys',
+        'fr': 'Crédits & Remerciements - LinuxToys',
+        'de': 'Credits & Danksagungen - LinuxToys',
+        'zh': '致谢 & 鸣谢 - LinuxToys',
+        'ja': 'クレジット & 謝辞 - LinuxToys',
+        'ru': 'Авторские права и благодарности - LinuxToys'
       }
     };
 
@@ -155,6 +166,16 @@ class ContentLoader {
         'zh': 'LinuxToys 功能和安装程序的综合指南',
         'ja': 'LinuxToysの機能とインストール手順の包括的ガイド',
         'ru': 'Полное руководство по функциям и процедурам установки LinuxToys'
+      },
+      'credits': {
+        'en': 'Credits and acknowledgments for all the amazing developers who made LinuxToys features possible',
+        'pt': 'Créditos e reconhecimentos para todos os incríveis desenvolvedores que tornaram possíveis os recursos do LinuxToys',
+        'es': 'Créditos y reconocimientos para todos los increíbles desarrolladores que hicieron posibles las características de LinuxToys',
+        'fr': 'Crédits et remerciements pour tous les incroyables développeurs qui ont rendu possibles les fonctionnalités de LinuxToys',
+        'de': 'Credits und Danksagungen an alle erstaunlichen Entwickler, die die LinuxToys-Features möglich gemacht haben',
+        'zh': '向所有使LinuxToys功能成为可能的优秀开发者致谢和鸣谢',
+        'ja': 'LinuxToysの機能を可能にしてくれた全ての素晴らしい開発者への謝辞と感謝',
+        'ru': 'Благодарности и признание всем удивительным разработчикам, которые сделали возможными функции LinuxToys'
       }
     };
 
