@@ -27,6 +27,7 @@
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="js/translations.js"></script>
     <script src="js/content-loader.js"></script>
+    <script src="js/toc-generator.js"></script>
     
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
     
@@ -195,7 +196,7 @@
     <header class="bg-gray-800 shadow-md sticky top-0 z-50">
       <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
         <div class="flex items-center">
-          <a href="/" class="flex items-center">
+          <a href="index.html" class="flex items-center">
             <img
               src="https://raw.githubusercontent.com/psygreg/linuxtoys-site/main/elements/linuxtoys.png"
               alt="LinuxToys Logo"
@@ -238,7 +239,7 @@
       <div class="max-w-4xl mx-auto">
         <!-- Navigation breadcrumb -->
         <nav class="mb-8">
-          <a href="/" class="text-blue-400 hover:text-blue-300 transition duration-300">
+          <a href="index.html" class="text-blue-400 hover:text-blue-300 transition duration-300">
             ← <span data-key="back-to-home">Back to Home</span>
           </a>
         </nav>
@@ -257,7 +258,7 @@
           <h3 class="font-semibold mb-2" data-key="error-title">Content not available</h3>
           <p data-key="error-message">Sorry, the content for this page is not available in the selected language yet.</p>
           <p class="mt-2">
-            <a href="/" class="text-blue-400 hover:text-blue-300 underline" data-key="return-home">Return to home page</a>
+            <a href="index.html" class="text-blue-400 hover:text-blue-300 underline" data-key="return-home">Return to home page</a>
           </p>
         </div>
       </div>
@@ -310,6 +311,10 @@
         // Set current year
         document.getElementById('year').textContent = new Date().getFullYear();
         
+        // Initialize TOC system
+        const tocGenerator = new TOCGenerator();
+        tocGenerator.init();
+        
         // Initialize translation system
         const translationManager = new TranslationManager();
         await translationManager.init();
@@ -319,14 +324,18 @@
         contentLoader.contentType = 'knowledgebase';
         await contentLoader.init();
         
+        // Generate TOC after content is loaded
+        tocGenerator.waitForContent();
+        
         // Store content loader globally for language switching
         window.contentLoader = contentLoader;
+        window.tocGenerator = tocGenerator;
         
         // Set up language dropdown
-        setupLanguageDropdown(translationManager);
+        setupLanguageDropdown(translationManager, tocGenerator);
       });
       
-      function setupLanguageDropdown(translationManager) {
+      function setupLanguageDropdown(translationManager, tocGenerator) {
         const dropdownBtn = document.getElementById('language-dropdown-btn');
         const dropdown = document.getElementById('language-dropdown');
         const currentLangSpan = document.getElementById('current-lang');
@@ -373,6 +382,8 @@
               const contentLoader = window.contentLoader;
               if (contentLoader) {
                 await contentLoader.loadContent();
+                // Regenerate TOC for new content
+                tocGenerator.waitForContent();
               }
             });
           }

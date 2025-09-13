@@ -27,6 +27,7 @@
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="js/translations.js"></script>
     <script src="js/content-loader.js"></script>
+    <script src="js/toc-generator.js"></script>
     
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
     
@@ -306,6 +307,10 @@
         // Set current year
         document.getElementById('year').textContent = new Date().getFullYear();
         
+        // Initialize TOC system
+        const tocGenerator = new TOCGenerator();
+        tocGenerator.init();
+        
         // Initialize translation system
         const translationManager = new TranslationManager();
         
@@ -335,15 +340,19 @@
         contentLoader.contentType = 'handbook';
         await contentLoader.loadContent();
         
+        // Generate TOC after content is loaded
+        tocGenerator.waitForContent();
+        
         // Set up language dropdown
-        setupLanguageDropdown(translationManager, contentLoader);
+        setupLanguageDropdown(translationManager, contentLoader, tocGenerator);
         
         // Store reference for global access
         window.contentLoader = contentLoader;
         window.translationManager = translationManager;
+        window.tocGenerator = tocGenerator;
       });
       
-      function setupLanguageDropdown(translationManager, contentLoader) {
+      function setupLanguageDropdown(translationManager, contentLoader, tocGenerator) {
         const dropdownBtn = document.getElementById('language-dropdown-btn');
         const dropdown = document.getElementById('language-dropdown');
         const currentLangSpan = document.getElementById('current-lang');
@@ -396,6 +405,9 @@
               
               // Reload content in new language
               await contentLoader.loadContent();
+              
+              // Regenerate TOC for new content
+              tocGenerator.waitForContent();
             });
           }
         });
