@@ -22,31 +22,32 @@ class TOCGenerator {
    * Create the TOC container and toggle button
    */
   createTOCContainer() {
-    // Create TOC container
+    // Create TOC elements separately for independent positioning
     const tocHTML = `
-      <div id="toc-container" class="fixed right-4 top-20 z-40 transition-all duration-300 ease-in-out">
-        <!-- Toggle Button -->
-        <button id="toc-toggle" class="bg-gray-800 hover:bg-gray-700 text-white p-3 rounded-l-lg border border-gray-600 border-r-0 shadow-lg transition-all duration-300 ease-in-out">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </button>
-        
-        <!-- TOC Panel -->
-        <div id="toc-panel" class="bg-gray-800 border border-gray-600 rounded-l-lg shadow-lg max-w-xs max-h-96 overflow-y-auto transition-all duration-300 ease-in-out transform translate-x-full">
-          <div class="p-4">
-            <h3 id="toc-title" class="text-white font-semibold mb-3 text-sm uppercase tracking-wide" data-key="toc-contents">Contents</h3>
-            <nav id="toc-nav" class="space-y-1">
-              <!-- TOC items will be inserted here -->
-            </nav>
-          </div>
+      <!-- TOC Toggle Button - positioned independently -->
+      <button id="toc-toggle" class="fixed right-4 top-20 z-50 bg-gray-800 hover:bg-gray-700 text-white p-3 rounded-lg border border-gray-600 shadow-lg transition-all duration-300 ease-in-out">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+      
+      <!-- TOC Panel - positioned below button -->
+      <div id="toc-panel" class="fixed right-4 top-32 z-40 bg-gray-800 border border-gray-600 rounded-lg shadow-lg max-w-xs max-h-96 overflow-y-auto transition-all duration-300 ease-in-out transform translate-x-full">
+        <div class="p-4">
+          <h3 id="toc-title" class="text-white font-semibold mb-3 text-sm uppercase tracking-wide" data-key="toc-contents">Contents</h3>
+          <nav id="toc-nav" class="space-y-1">
+            <!-- TOC items will be inserted here -->
+          </nav>
         </div>
       </div>
     `;
 
     // Insert TOC into page
     document.body.insertAdjacentHTML('beforeend', tocHTML);
-    this.tocContainer = document.getElementById('toc-container');
+    
+    // Store references
+    this.tocContainer = document.getElementById('toc-panel');
+    this.toggleButton = document.getElementById('toc-toggle');
   }
 
   /**
@@ -63,9 +64,9 @@ class TOCGenerator {
       this.toggleTOC();
     });
 
-    // Close TOC when clicking outside
+    // Close TOC when clicking outside (but not on the toggle button)
     document.addEventListener('click', (e) => {
-      if (!this.tocContainer.contains(e.target) && this.isVisible) {
+      if (!panel.contains(e.target) && !toggleBtn.contains(e.target) && this.isVisible) {
         this.hideTOC();
       }
     });
