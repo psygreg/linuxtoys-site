@@ -24,6 +24,7 @@ class ContentLoader {
     const path = window.location.pathname;
     if (path.includes('handbook')) return 'handbook';
     if (path.includes('cli-mode')) return 'cli-mode';
+    if (path.includes('knowledgebase')) return 'knowledgebase';
     return null;
   }
 
@@ -111,6 +112,16 @@ class ContentLoader {
         'zh': 'CLI 模式说明 - LinuxToys',
         'ja': 'CLIモードの説明 - LinuxToys',
         'ru': 'Инструкции CLI режима - LinuxToys'
+      },
+      'knowledgebase': {
+        'en': 'Knowledge Base - LinuxToys',
+        'pt': 'Base de Conhecimento - LinuxToys',
+        'es': 'Base de Conocimientos - LinuxToys',
+        'fr': 'Base de Connaissances - LinuxToys',
+        'de': 'Wissensdatenbank - LinuxToys',
+        'zh': '知识库 - LinuxToys',
+        'ja': 'ナレッジベース - LinuxToys',
+        'ru': 'База знаний - LinuxToys'
       }
     };
 
@@ -134,6 +145,16 @@ class ContentLoader {
         'zh': '学习如何使用 LinuxToys CLI 模式进行自动化安装',
         'ja': '自動インストール用のLinuxToys CLIモードの使用方法を学ぶ',
         'ru': 'Изучите, как использовать режим CLI LinuxToys для автоматических установок'
+      },
+      'knowledgebase': {
+        'en': 'Comprehensive guide to LinuxToys features and installation procedures',
+        'pt': 'Guia abrangente dos recursos e procedimentos de instalação do LinuxToys',
+        'es': 'Guía completa de características y procedimientos de instalación de LinuxToys',
+        'fr': 'Guide complet des fonctionnalités et procédures d\'installation de LinuxToys',
+        'de': 'Umfassender Leitfaden zu LinuxToys-Funktionen und Installationsverfahren',
+        'zh': 'LinuxToys 功能和安装程序的综合指南',
+        'ja': 'LinuxToysの機能とインストール手順の包括的ガイド',
+        'ru': 'Полное руководство по функциям и процедурам установки LinuxToys'
       }
     };
 
