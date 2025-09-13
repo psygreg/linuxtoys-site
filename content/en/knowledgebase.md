@@ -1,3 +1,5 @@
+# Knowledge Base
+
 ## Basic LinuxToys Feature Guidelines
 
 - Features will only be made available in systems that they are compatible with *and* relevant on.

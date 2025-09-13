@@ -1,3 +1,5 @@
+# Base de Conhecimento
+
 ## Diretrizes Básicas das Funcionalidades do LinuxToys
 
 - As funcionalidades só estarão disponíveis em sistemas onde são compatíveis *e* relevantes.

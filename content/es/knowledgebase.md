@@ -1,3 +1,5 @@
+# Base de Conocimiento
+
 ## Directrices Básicas de Características de LinuxToys
 
 - Las características solo estarán disponibles en sistemas que sean compatibles *y* relevantes.
