@@ -108,6 +108,7 @@ flathubから、またはLinuxToysによって追加されたリポジトリが�
 - Proton VPN
 - Surfshark
 - Ungoogled Chromium
+- Gear Lever
 
 #### 追加されたリポジトリ
 

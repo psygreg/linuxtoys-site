@@ -108,6 +108,7 @@ From flathub, or having repositories added by LinuxToys, and no other changes ar
 - Proton VPN
 - Surfshark
 - Ungoogled Chromium
+- Gear Lever
 
 #### Added repositories
 

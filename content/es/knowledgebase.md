@@ -108,6 +108,7 @@ Desde flathub, o teniendo repositorios añadidos por LinuxToys, y no se hacen ot
 - Proton VPN
 - Surfshark
 - Ungoogled Chromium
+- Gear Lever
 
 #### Repositorios añadidos
 

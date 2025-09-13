@@ -108,6 +108,7 @@
 - Proton VPN
 - Surfshark
 - Ungoogled Chromium
+- Gear Lever
 
 #### 添加的存储库
 

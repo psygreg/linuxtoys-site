@@ -65,6 +65,7 @@
 - **[NVM-sh](https://github.com/nvm-sh)** - Node.js-Versionsverwaltung
 - **[Homebrew](https://brew.sh/)** - Paketmanager
 - **[Chaotic AUR](https://aur.chaotic.cx/)** - Arch Linux Repository
+- **[Gear Lever](https://github.com/mijorus/gearlever)** von *Mijorus*
 
 ## 📦 System-Updates & Wartung
 

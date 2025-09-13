@@ -108,6 +108,7 @@ Von Flathub oder mit von LinuxToys hinzugefügten Repositories, und es werden ke
 - Proton VPN
 - Surfshark
 - Ungoogled Chromium
+- Gear Lever
 
 #### Hinzugefügte Repositories
 

@@ -108,6 +108,7 @@ Depuis flathub, ou avec des dépôts ajoutés par LinuxToys, et aucun autre chan
 - Proton VPN
 - Surfshark
 - Ungoogled Chromium
+- Gear Lever
 
 #### Dépôts ajoutés
 

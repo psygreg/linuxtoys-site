@@ -65,6 +65,7 @@
 - **[NVM-sh](https://github.com/nvm-sh)** - Node.js版本管理
 - **[Homebrew](https://brew.sh/)** - 包管理器
 - **[Chaotic AUR](https://aur.chaotic.cx/)** - Arch Linux仓库
+- **[Gear Lever](https://github.com/mijorus/gearlever)** 由 *Mijorus* 开发
 
 ## 📦 系统更新 & 维护
 
