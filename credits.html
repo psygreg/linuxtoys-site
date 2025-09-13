@@ -312,13 +312,19 @@
         
         // Initialize content loader
         const contentLoader = new ContentLoader(translationManager);
-        await contentLoader.init();
+        // Explicitly set the content type to credits
+        contentLoader.contentType = 'credits';
+        await contentLoader.loadContent();
         
         // Set up language dropdown
-        setupLanguageDropdown(translationManager);
+        setupLanguageDropdown(translationManager, contentLoader);
+        
+        // Store reference for global access
+        window.contentLoader = contentLoader;
+        window.translationManager = translationManager;
       });
       
-      function setupLanguageDropdown(translationManager) {
+      function setupLanguageDropdown(translationManager, contentLoader) {
         const dropdownBtn = document.getElementById('language-dropdown-btn');
         const dropdown = document.getElementById('language-dropdown');
         const currentLangSpan = document.getElementById('current-lang');
@@ -362,7 +368,6 @@
               dropdown.classList.add('hidden');
               
               // Reload content in new language
-              const contentLoader = window.contentLoader;
               if (contentLoader) {
                 await contentLoader.loadContent();
               }
