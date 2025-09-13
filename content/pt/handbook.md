@@ -322,6 +322,12 @@ DEV_MODE=1 CONTAINER=1 ./run.py
 DEV_MODE=1 OPTIMIZER=1 ./run.py
 ```
 
+#### Verificações de Desenvolvimento
+- Sintaxe básica de bash
+- Método apropriado de elevação `sudo` via `sudo_rq`
+- Carregamento adequado de bibliotecas
+- Verificações de elementos de cabeçalho (apenas avisos, já que alguns não são obrigatórios)
+
 ### Gerenciamento de Reinicialização
 
 LinuxToys fornece tratamento abrangente de reinicialização:

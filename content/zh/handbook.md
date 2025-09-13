@@ -155,6 +155,65 @@ _flatpak_
 
 `_flatpak_`函数使用标准参数（用户级别、Flathub仓库）自动安装数组中的每个flatpak。完成时也会取消设置`_flatpaks`，允许在同一脚本中多次使用。
 
+**用户界面功能**
+
+```bash
+# 使用GUI请求sudo密码
+sudo_rq
+
+# 显示信息对话框
+zeninf "信息消息"
+
+# 显示警告对话框
+zenwrn "警告消息"
+
+# 显示错误并退出
+fatal "致命错误消息"
+
+# 显示错误但继续
+nonfatal "非致命错误消息"
+```
+
+**语言检测**
+
+```bash
+# 检测系统语言并设置翻译文件
+_lang_
+# 这会设置$langfile变量（例如"en"、"pt"）
+```
+
+#### helpers.lib
+
+为常见任务提供专门的辅助函数：
+
+**Flatpak管理**
+
+```bash
+# 设置Flatpak和Flathub仓库
+flatpak_in_lib
+# 然后安装Flatpak应用程序：
+flatpak install --or-update --user --noninteractive app.id
+```
+
+`flatpak_in_lib`函数：
+- 如果不存在则安装Flatpak
+- 为用户和系统添加Flathub远程
+- 自动处理不同包管理器
+- 提供错误处理和验证
+
+**仓库管理**
+
+```bash
+# 在Arch系统上启用multilib仓库
+multilib_chk
+
+# 在Arch系统上添加Chaotic-AUR仓库
+chaotic_aur_lib
+
+# 在Fedora系统上安装RPMFusion仓库
+rpmfusion_chk
+```
+
 ### 语言和本地化
 
 #### 翻译系统
@@ -180,6 +239,149 @@ source "$SCRIPT_DIR/../../libs/lang/${langfile}.lib"
 zenity --question --text "$translation_key" --width 360 --height 300
 ```
 
+有一些标准消息键可用于简单对话框。
+- `$finishmsg`："_操作已完成。_"
+- `$rebootmsg`："_安装完成。重启以使更改生效。_"
+- `$cancelmsg`："_取消_"
+- `$incompatmsg`："_您的操作系统不兼容。_"
+- `$abortmsg`："_用户取消了操作。_"
+- `$notdomsg`："_无需执行任何操作。_"
+
+**标准删除对话框**
+- `$rmmsg`："_您已经安装了`$LT_PROGRAM`。您希望删除它吗？_"
+
+需要事先设置`LT_PROGRAM`变量。
+
+**添加翻译**
+
+1. 向所有语言JSON文件添加翻译键
+2. 在脚本描述中使用翻译键：`# description: app_desc`
+3. 在对话框和消息中引用键
+
+#### 本地化控制
+```bash
+# 限制脚本到特定区域设置
+# localize: pt
+# 此脚本仅对葡萄牙语用户显示
+```
+
+### 容器兼容性
+
+#### 容器检测
+
+LinuxToys自动检测容器化环境并可相应过滤脚本。
+
+#### 容器限制
+```bash
+# 在所有容器中隐藏脚本
+# nocontainer
+
+# 仅在特定发行版容器中隐藏脚本
+# nocontainer: debian, ubuntu
+```
+
+**自动过滤**
+
+使用`flatpak_in_lib`的脚本在容器中自动隐藏，除非使用指定兼容系统的`nocontainer`头明确允许。
+
+### 高级功能
+
+#### 开发模式
+
+LinuxToys包含用于测试和调试的开发模式：
+
+#### 环境变量
+- **`DEV_MODE=1`** - 启用开发者模式
+- **`COMPAT=distro`** - 覆盖兼容性检测
+- **`CONTAINER=1`** - 模拟容器环境
+- **`OPTIMIZER=1/0`** - 模拟优化状态
+
+#### 开发者覆盖
+```bash
+# 显示所有脚本而不考虑兼容性
+DEV_MODE=1 ./run.py
+
+# 在特定发行版上测试脚本
+DEV_MODE=1 COMPAT=arch ./run.py
+
+# 测试容器行为
+DEV_MODE=1 CONTAINER=1 ./run.py
+
+# 测试默认优化切换
+DEV_MODE=1 OPTIMIZER=1 ./run.py
+```
+
+#### 执行的检查
+- 基本bash语法
+- 通过`sudo_rq`进行适当的`sudo`提升方法
+- 适当的库引用
+- 头元素检查（仅警告，因为有些不是强制性的）
+
+### 重启管理
+
+LinuxToys提供全面的重启处理：
+
+#### 重启检测
+```bash
+# 检查脚本是否需要重启
+script_requires_reboot(script_path, system_compat_keys)
+
+# 检查待定的ostree部署
+check_ostree_pending_deployments()
+```
+
+**重启对话框**
+
+- 自动重启警告对话框
+- 用户在"立即重启"和"稍后重启"之间选择
+- 在需要重启时优雅关闭应用程序
+- 对ostree待定部署的特殊处理
+
+### 错误处理
+
+#### 最佳实践
+```bash
+# 检查命令成功
+if ! command_that_might_fail; then
+    nonfatal "命令失败，继续..."
+    return 1
+fi
+
+# 关键失败
+if ! critical_command; then
+    fatal "关键操作失败"
+fi
+
+# 静默错误处理
+command_with_output 2>/dev/null || true
+```
+
+### 脚本类别
+
+#### 组织结构
+```
+p3/scripts/
+├── office/          # 办公和工作应用程序
+├── game/           # 游戏工具和启动器
+├── devs/           # 开发者工具
+├── utils/          # 系统实用程序
+├── drivers/        # 硬件驱动程序
+├── repos/          # 仓库管理
+├── extra/          # 实验性/附加工具
+├── pdefaults.sh    # 系统优化
+└── psypicks.sh     # 精选软件选择
+```
+
+#### 类别信息
+
+每个类别可以有一个`category-info.txt`文件：
+```
+name: 类别显示名称
+description: 类别描述键
+icon: folder-icon-name
+mode: menu
+```
+
 ### 最佳实践
 
 #### 脚本开发
@@ -188,5 +390,24 @@ zenity --question --text "$translation_key" --width 360 --height 300
 3. **优雅地处理错误**并提供适当的用户反馈
 4. **使用现有库**而不是重新实现常见功能
 5. **遵循标准脚本结构**以保持一致性
+
+#### 包管理
+1. **在调用`_install_`之前在数组中声明包**
+2. **检查不同发行版的包可用性**
+3. **适当处理rpm-ostree系统**（避免非必要包）
+4. **尽可能为GUI应用程序使用Flatpak**
+
+#### 用户体验
+1. **用提供的语言提供清晰描述**
+2. **使用适当的图标**进行视觉识别
+3. **正确处理重启要求**
+4. **在长时间操作期间显示进度和反馈**
+5. **在确认对话框中尊重用户选择**
+
+#### 本地化
+1. **使用翻译键**而不是硬编码文本
+2. **为所有支持的语言提供翻译**
+3. **使用不同区域设置进行测试**以确保正确功能
+4. **当脚本特定于区域时使用区域限制**
 
 本指南为在LinuxToys生态系统中创建健壮、兼容和用户友好的脚本提供了基础。通过利用提供的库并遵循这些约定，开发者可以创建在多个Linux发行版上无缝工作并提供一致用户体验的脚本。

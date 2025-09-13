@@ -322,6 +322,12 @@ DEV_MODE=1 CONTAINER=1 ./run.py
 DEV_MODE=1 OPTIMIZER=1 ./run.py
 ```
 
+#### Durchgeführte Prüfungen
+- Grundlegende Bash-Syntax
+- Richtige `sudo`-Erhebungsmethode durch `sudo_rq`
+- Richtige Bibliotheksquellen
+- Header-Element-Prüfungen (nur Warnungen, da einige nicht obligatorisch sind)
+
 ### Neustart-Verwaltung
 
 LinuxToys bietet umfassende Neustart-Behandlung:

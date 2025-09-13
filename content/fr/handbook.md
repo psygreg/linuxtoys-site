@@ -322,6 +322,12 @@ DEV_MODE=1 CONTAINER=1 ./run.py
 DEV_MODE=1 OPTIMIZER=1 ./run.py
 ```
 
+#### Vérifications de Développement
+- Vérification de la syntaxe de base de bash
+- Méthode d'élévation `sudo` appropriée via `sudo_rq`
+- Chargement correct des bibliothèques
+- Vérifications des éléments d'en-tête (avertissements uniquement, certains ne sont pas obligatoires)
+
 ### Gestion des Redémarrages
 
 LinuxToys fournit une gestion complète des redémarrages :

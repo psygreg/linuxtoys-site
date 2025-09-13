@@ -322,6 +322,12 @@ DEV_MODE=1 CONTAINER=1 ./run.py
 DEV_MODE=1 OPTIMIZER=1 ./run.py
 ```
 
+#### Checks performed
+- Basic bash syntax
+- Proper `sudo` elevation method through `sudo_rq`
+- Proper library sourcing
+- Header element checks (warnings only, since some are not mandatory)
+
 ### Reboot Management
 
 LinuxToys provides comprehensive reboot handling:
