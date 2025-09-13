@@ -556,3 +556,19 @@ Uma seleção curada de aplicações para tornar sua vida gaming no Linux mais f
 - VLC
 - Extension Manager (apenas para desktops *Gnome*)
 - Gnome Tweaks (apenas para desktops *Gnome*)
+
+## Recursos Exclusivos da versão em Português
+
+### Distrobox-Adv
+
+Um container distrobox com os recursos necessários para instalar e utilizar os certificados digitais mais usados por advogados e trabalhadores do judiciário no Brasil. Requer algumas dependências instaladas no hospedeiro pra funcionar corretamente, declaradas abaixo e instaladas pelo LinuxToys a partir do repositório padrão do seu sistema. Detalhes sobre o container podem ser encontrados no [repositório oficial do GitHub](https://github.com/pedrohqb/distrobox-adv-br).
+
+**Pacotes Instalados ou Atualizados no hospedeiro**
+- Arch: `distrobox podman pcsclite ccid`
+- Fedora: `distrobox podman pcsc-lite pcsc-lite-ccid`
+- OpenSUSE: `distrobox podman pcsc-ccid`
+- Debian/Ubuntu: `distrobox podman pcsc-lite ccid`
+
+### PJEOffice Pro Installer
+
+Um instalador do PJEOffice Pro empacotado em .deb e mantido por Psygreg, escrito em bash. O instalador é empacotado em vez do programa em si porque o PJEOffice Pro possui bibliotecas proprietárias que não podem ser redistribuídas. O instalador obtém o programa através do [site oficial](https://pje-office.pje.jus.br).
