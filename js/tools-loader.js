@@ -107,7 +107,13 @@ class ToolsCacheLoader {
     const button = document.createElement('button');
     button.className = 'mt-auto bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 toggle-button';
     button.setAttribute('data-key', 'toggle-button');
-    button.textContent = 'Show Tools'; // Will be updated by translation system
+    
+    // Apply correct translation immediately
+    if (window.translationManager && typeof window.translationManager.getTranslation === 'function') {
+      button.textContent = window.translationManager.getTranslation('toggle-button');
+    } else {
+      button.textContent = 'Show Tools'; // Fallback
+    }
 
     // Create tools list
     const toolsList = document.createElement('ul');
