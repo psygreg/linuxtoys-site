@@ -71,6 +71,9 @@ class TranslationManager {
       window.toolsLoader.onLanguageChange(language);
     }
     
+    // Dispatch language change event for other components
+    window.dispatchEvent(new CustomEvent('languageChanged', { detail: { language } }));
+    
     // Store language preference
     localStorage.setItem('preferredLanguage', language);
   }
