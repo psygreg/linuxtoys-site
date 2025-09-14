@@ -491,6 +491,18 @@ Installs it using the `openrazer-meta` metapackage from its [official repositori
 - Fedora Atomic: `openrazer-kmod openrazer-kmod-common openrazer-daemon`
 - Others: `openrazer-meta`
 
+### Automatic Updates for RPM-OSTree
+
+Enables `rpm-ostree`'s automatic updates in stage mode, so your work is never disrupted. They will be silently downloaded and made into a new deployment to be applied when you decide to reboot your system. Can be reverted by disabling the `rpm-ostree-automatic.timer` systemd service.
+
+**Custom settings applied**
+- added to `/etc/rpm-ostreed.conf`
+```
+[Daemon]
+AutomaticUpdatePolicy=stage
+```
+- enables `rpm-ostree-automatic.timer` systemd service
+
 ## Repository Installers
 
 ### Brew

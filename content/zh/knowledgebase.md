@@ -490,6 +490,18 @@ firewall-cmd --reload
 - Fedora Atomic：`openrazer-kmod openrazer-kmod-common openrazer-daemon`
 - 其他：`openrazer-meta`
 
+### RPM-OSTree 自动更新
+
+启用 `rpm-ostree` 的分阶段模式自动更新，这样您的工作永远不会被中断。它们将静默下载并成为新的部署，当您决定重启系统时应用。可以通过禁用 `rpm-ostree-automatic.timer` systemd 服务来撤销。
+
+**应用的自定义设置**
+- 添加到 `/etc/rpm-ostreed.conf`
+```
+[Daemon]
+AutomaticUpdatePolicy=stage
+```
+- 启用 `rpm-ostree-automatic.timer` systemd 服务
+
 ## 存储库安装程序
 
 ### Brew

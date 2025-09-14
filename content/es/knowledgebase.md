@@ -490,6 +490,18 @@ Lo instala usando el metapaquete `openrazer-meta` desde sus [repositorios oficia
 - Fedora Atomic: `openrazer-kmod openrazer-kmod-common openrazer-daemon`
 - Otros: `openrazer-meta`
 
+### Actualizaciones Automáticas para RPM-OSTree
+
+Habilita las actualizaciones automáticas de `rpm-ostree` en modo de preparación, para que tu trabajo nunca sea interrumpido. Se descargarán silenciosamente y se convertirán en un nuevo deployment que se aplicará cuando decidas reiniciar tu sistema. Puede revertirse deshabilitando el servicio systemd `rpm-ostree-automatic.timer`.
+
+**Configuraciones personalizadas aplicadas**
+- agregado a `/etc/rpm-ostreed.conf`
+```
+[Daemon]
+AutomaticUpdatePolicy=stage
+```
+- habilita el servicio systemd `rpm-ostree-automatic.timer`
+
 ## Instaladores de Repositorio
 
 ### Brew

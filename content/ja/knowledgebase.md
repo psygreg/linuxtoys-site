@@ -490,6 +490,18 @@ Flathubからメインアプリケーションをインストールし、その[
 - Fedora Atomic：`openrazer-kmod openrazer-kmod-common openrazer-daemon`
 - その他：`openrazer-meta`
 
+### RPM-OSTreeの自動更新
+
+`rpm-ostree`の自動更新をステージモードで有効にすることで、作業が中断されることがありません。アップデートは静かにダウンロードされ、システムの再起動を決定したときに適用される新しいデプロイメントになります。`rpm-ostree-automatic.timer` systemdサービスを無効にすることで元に戻すことができます。
+
+**適用されたカスタム設定**
+- `/etc/rpm-ostreed.conf`に追加
+```
+[Daemon]
+AutomaticUpdatePolicy=stage
+```
+- `rpm-ostree-automatic.timer` systemdサービスを有効化
+
 ## リポジトリインストーラー
 
 ### Brew
