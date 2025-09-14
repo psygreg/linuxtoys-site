@@ -353,6 +353,13 @@
         "scriptPath": "p3/scripts/extra/grubtrfs.sh"
       },
       {
+        "name": "hwaccel-flatpak",
+        "description": "hwaccel-flatpak_desc",
+        "icon": "flathub.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/hwaccel-flatpak.sh"
+      },
+      {
         "name": "iNet Wireless Daemon",
         "description": "iwd_desc",
         "icon": "iwd.svg",
@@ -942,6 +949,13 @@
         "icon": "flatseal.svg",
         "version": "1.0",
         "scriptPath": "p3/scripts/utils/flatseal.sh"
+      },
+      {
+        "name": "Gear Lever",
+        "description": "glever_desc",
+        "icon": "gearlever.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/gearlever.sh"
       },
       {
         "name": "HandBrake",

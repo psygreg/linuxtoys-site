@@ -356,6 +356,13 @@
           "scriptPath": "p3/scripts/extra/grubtrfs.sh"
         },
         {
+          "name": "Hardware Acceleration for Flatpak",
+          "description": "Installs ffmpeg-full into the currently supported flatpak platforms, allowing applications to use hardware-accelerated media playback.",
+          "icon": "flathub.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/hwaccel-flatpak.sh"
+        },
+        {
           "name": "iNet Wireless Daemon",
           "description": "A modern wireless daemon for Linux made by Intel, that offers better latency and speed than the standard wpa-supplicant. May not work with enterprise networks.",
           "icon": "iwd.svg",
@@ -952,6 +959,13 @@
           "scriptPath": "p3/scripts/utils/flatseal.sh"
         },
         {
+          "name": "Gear Lever",
+          "description": "An utility to manage AppImages, generating desktop entries and app metadata, updating apps in-place or keeping multiple versions side-by-side.",
+          "icon": "gearlever.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/gearlever.sh"
+        },
+        {
           "name": "HandBrake",
           "description": "An open-source video converter with support for many formats and codecs.",
           "icon": "handbrake.svg",
@@ -1498,6 +1512,13 @@
           "icon": "grubtrfs.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/grubtrfs.sh"
+        },
+        {
+          "name": "Aceleração por Hardware para Flatpak",
+          "description": "Instala o ffmpeg-full nas plataformas flatpak atualmente suportadas, permitindo que aplicações usem reprodução de mídia acelerada por hardware.",
+          "icon": "flathub.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/hwaccel-flatpak.sh"
         },
         {
           "name": "iNet Wireless Daemon",
@@ -2096,6 +2117,13 @@
           "scriptPath": "p3/scripts/utils/flatseal.sh"
         },
         {
+          "name": "Gear Lever",
+          "description": "Uma utilidade para gerenciar AppImages, gerando entradas de desktop e metadados de aplicativos, atualizando aplicativos no local ou mantendo várias versões lado a lado.",
+          "icon": "gearlever.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/gearlever.sh"
+        },
+        {
           "name": "HandBrake",
           "description": "Conversor de vídeo open source com suporte a muitos formatos e codecs.",
           "icon": "handbrake.svg",
@@ -2642,6 +2670,13 @@
           "icon": "grubtrfs.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/grubtrfs.sh"
+        },
+        {
+          "name": "Aceleración por Hardware para Flatpak",
+          "description": "Instala ffmpeg-full en las plataformas flatpak actualmente soportadas, permitiendo que las aplicaciones usen reproducción de medios acelerada por hardware.",
+          "icon": "flathub.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/hwaccel-flatpak.sh"
         },
         {
           "name": "iNet Wireless Daemon",
@@ -3240,6 +3275,13 @@
           "scriptPath": "p3/scripts/utils/flatseal.sh"
         },
         {
+          "name": "Gear Lever",
+          "description": "Una utilidad para gestionar AppImages, generando entradas de escritorio y metadatos de aplicaciones, actualizando aplicaciones in situ o manteniendo múltiples versiones lado a lado.",
+          "icon": "gearlever.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/gearlever.sh"
+        },
+        {
           "name": "HandBrake",
           "description": "Un convertidor de video de código abierto con soporte para muchos formatos y códecs.",
           "icon": "handbrake.svg",
@@ -3786,6 +3828,13 @@
           "icon": "grubtrfs.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/grubtrfs.sh"
+        },
+        {
+          "name": "Accélération Matérielle pour Flatpak",
+          "description": "Installe ffmpeg-full dans les plateformes flatpak actuellement supportées, permettant aux applications d'utiliser la lecture de médias accélérée par le matériel.",
+          "icon": "flathub.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/hwaccel-flatpak.sh"
         },
         {
           "name": "iNet Wireless Daemon",
@@ -4384,6 +4433,13 @@
           "scriptPath": "p3/scripts/utils/flatseal.sh"
         },
         {
+          "name": "Gear Lever",
+          "description": "Un utilitaire pour gérer les AppImages, générant des entrées de bureau et des métadonnées d'applications, mettant à jour les applications sur place ou gardant plusieurs versions côte à côte.",
+          "icon": "gearlever.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/gearlever.sh"
+        },
+        {
           "name": "HandBrake",
           "description": "Un convertisseur vidéo open source avec support pour de nombreux formats et codecs.",
           "icon": "handbrake.svg",
@@ -4930,6 +4986,13 @@
           "icon": "grubtrfs.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/grubtrfs.sh"
+        },
+        {
+          "name": "Hardware-Beschleunigung für Flatpak",
+          "description": "Installiert ffmpeg-full in die derzeit unterstützten Flatpak-Plattformen und ermöglicht Anwendungen die Verwendung hardwarebeschleunigter Medienwiedergabe.",
+          "icon": "flathub.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/hwaccel-flatpak.sh"
         },
         {
           "name": "iNet Wireless Daemon",
@@ -5528,6 +5591,13 @@
           "scriptPath": "p3/scripts/utils/flatseal.sh"
         },
         {
+          "name": "Gear Lever",
+          "description": "Ein Tool zur Verwaltung von AppImage, das Desktop-Einträge und Anwendungs-Metadaten generiert, Anwendungen vor Ort aktualisiert oder mehrere Versionen nebeneinander speichert.",
+          "icon": "gearlever.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/gearlever.sh"
+        },
+        {
           "name": "HandBrake",
           "description": "Ein quelloffener Video-Konverter mit Unterstützung für viele Formate und Codecs.",
           "icon": "handbrake.svg",
@@ -6074,6 +6144,13 @@
           "icon": "grubtrfs.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/grubtrfs.sh"
+        },
+        {
+          "name": "Flatpak硬件加速",
+          "description": "将ffmpeg-full安装到当前支持的flatpak平台中，允许应用程序使用硬件加速的媒体播放。",
+          "icon": "flathub.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/hwaccel-flatpak.sh"
         },
         {
           "name": "iNet Wireless Daemon",
@@ -6672,6 +6749,13 @@
           "scriptPath": "p3/scripts/utils/flatseal.sh"
         },
         {
+          "name": "Gear Lever",
+          "description": "用于管理AppImage的实用程序，生成桌面条目和应用程序元数据，在原地更新应用程序或并排维护多个版本。",
+          "icon": "gearlever.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/gearlever.sh"
+        },
+        {
           "name": "HandBrake",
           "description": "支持许多格式和编解码器的开源视频转换器。",
           "icon": "handbrake.svg",
@@ -7218,6 +7302,13 @@
           "icon": "grubtrfs.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/grubtrfs.sh"
+        },
+        {
+          "name": "Flatpakハードウェアアクセラレーション",
+          "description": "現在サポートされているflatpakプラットフォームにffmpeg-fullをインストールし、アプリケーションがハードウェア加速メディア再生を使用できるようにします。",
+          "icon": "flathub.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/hwaccel-flatpak.sh"
         },
         {
           "name": "iNet Wireless Daemon",
@@ -7816,6 +7907,13 @@
           "scriptPath": "p3/scripts/utils/flatseal.sh"
         },
         {
+          "name": "Gear Lever",
+          "description": "AppImageを管理するためのユーティリティで、デスクトップエントリやアプリメタデータを生成し、アプリをインプレースで更新したり、複数のバージョンを並行して保持したりします。",
+          "icon": "gearlever.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/gearlever.sh"
+        },
+        {
           "name": "HandBrake",
           "description": "多くのフォーマットとコーデックをサポートするオープンソースビデオコンバーター。",
           "icon": "handbrake.svg",
@@ -8362,6 +8460,13 @@
           "icon": "grubtrfs.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/grubtrfs.sh"
+        },
+        {
+          "name": "Аппаратное ускорение для Flatpak",
+          "description": "Устанавливает ffmpeg-full в текущие поддерживаемые платформы flatpak, позволяя приложениям использовать аппаратно-ускоренное воспроизведение медиа.",
+          "icon": "flathub.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/hwaccel-flatpak.sh"
         },
         {
           "name": "iNet Wireless Daemon",
@@ -8958,6 +9063,13 @@
           "icon": "flatseal.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/flatseal.sh"
+        },
+        {
+          "name": "Gear Lever",
+          "description": "Утилита для управления AppImage, которая генерирует записи в меню и метаданные приложений, обновляет приложения на месте или позволяет хранить несколько версий рядом.",
+          "icon": "gearlever.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/gearlever.sh"
         },
         {
           "name": "HandBrake",
