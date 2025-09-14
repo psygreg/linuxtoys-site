@@ -14,8 +14,16 @@ class TOCGenerator {
    * Initialize the TOC system
    */
   init() {
-    this.createTOCContainer();
-    this.setupEventListeners();
+    // Ensure DOM is ready before creating elements
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', () => {
+        this.createTOCContainer();
+        this.setupEventListeners();
+      });
+    } else {
+      this.createTOCContainer();
+      this.setupEventListeners();
+    }
   }
 
   /**
@@ -31,8 +39,8 @@ class TOCGenerator {
         </svg>
       </button>
       
-      <!-- TOC Panel - positioned with more spacing from button -->
-      <div id="toc-panel" class="fixed right-4 top-36 z-40 bg-gray-800 border border-gray-600 rounded-lg shadow-lg max-w-xs max-h-96 overflow-y-auto transition-all duration-300 ease-in-out transform translate-x-full">
+      <!-- TOC Panel - positioned with adequate spacing from button -->
+      <div id="toc-panel" class="fixed right-4 top-40 z-40 bg-gray-800 border border-gray-600 rounded-lg shadow-lg max-w-xs max-h-96 overflow-y-auto transition-all duration-300 ease-in-out transform translate-x-full">
         <div class="p-4">
           <h3 id="toc-title" class="text-white font-semibold mb-3 text-sm uppercase tracking-wide" data-key="toc-contents">Contents</h3>
           <nav id="toc-nav" class="space-y-1">
@@ -54,22 +62,32 @@ class TOCGenerator {
    * Set up event listeners for TOC functionality
    */
   setupEventListeners() {
-    // Use a small delay to ensure elements are properly inserted in DOM
-    setTimeout(() => {
+    // Use requestAnimationFrame to ensure elements are properly rendered
+    requestAnimationFrame(() => {
       const toggleBtn = document.getElementById('toc-toggle');
       const panel = document.getElementById('toc-panel');
 
       if (!toggleBtn || !panel) {
-        console.error('TOC elements not found in DOM');
+        // Retry after a short delay if elements aren't ready
+        setTimeout(() => this.setupEventListeners(), 100);
         return;
       }
 
-      // Toggle TOC visibility
-      toggleBtn.addEventListener('click', (e) => {
+      // Remove any existing listeners first
+      const existingToggleBtn = document.getElementById('toc-toggle');
+      if (existingToggleBtn && existingToggleBtn._tocListener) {
+        existingToggleBtn.removeEventListener('click', existingToggleBtn._tocListener);
+      }
+
+      // Create and store the listener
+      const toggleListener = (e) => {
         e.preventDefault();
         e.stopPropagation();
         this.toggleTOC();
-      });
+      };
+
+      toggleBtn._tocListener = toggleListener;
+      toggleBtn.addEventListener('click', toggleListener);
 
       // Close TOC when clicking outside (but not on the toggle button)
       document.addEventListener('click', (e) => {
@@ -87,7 +105,7 @@ class TOCGenerator {
       window.addEventListener('languageChanged', () => {
         this.updateTranslations();
       });
-    }, 10);
+    });
   }
 
   /**
@@ -222,6 +240,9 @@ class TOCGenerator {
    * Toggle TOC visibility
    */
   toggleTOC() {
+    const panel = document.getElementById('toc-panel');
+    if (!panel) return;
+    
     if (this.isVisible) {
       this.hideTOC();
     } else {
@@ -234,8 +255,10 @@ class TOCGenerator {
    */
   showTOC() {
     const panel = document.getElementById('toc-panel');
-    panel.classList.remove('translate-x-full');
-    this.isVisible = true;
+    if (panel) {
+      panel.classList.remove('translate-x-full');
+      this.isVisible = true;
+    }
   }
 
   /**
@@ -243,8 +266,10 @@ class TOCGenerator {
    */
   hideTOC() {
     const panel = document.getElementById('toc-panel');
-    panel.classList.add('translate-x-full');
-    this.isVisible = false;
+    if (panel) {
+      panel.classList.add('translate-x-full');
+      this.isVisible = false;
+    }
   }
 
   /**
@@ -255,19 +280,26 @@ class TOCGenerator {
     if (!tocTitle) return;
 
     if (window.translationManager && window.translationManager.translations) {
-      const currentTranslations = window.translationManager.translations[window.translationManager.currentLang] || 
+      const currentLang = window.translationManager.currentLang || 'en';
+      const currentTranslations = window.translationManager.translations[currentLang] || 
                                    window.translationManager.translations[window.translationManager.fallbackLang] || {};
       const translation = currentTranslations['toc-contents'];
+      
       if (translation) {
         tocTitle.textContent = translation;
-        console.log('TOC translation applied:', translation);
       } else {
-        console.warn('TOC translation not found for key: toc-contents');
+        tocTitle.textContent = 'Contents'; // Fallback
       }
     } else {
       // Fallback to default text if translation system not ready
       tocTitle.textContent = 'Contents';
-      console.log('Translation system not ready, using fallback');
+      
+      // Retry translation after a delay
+      setTimeout(() => {
+        if (window.translationManager && window.translationManager.translations) {
+          this.updateTranslations();
+        }
+      }, 500);
     }
   }
 
@@ -287,10 +319,17 @@ class TOCGenerator {
     const content = document.getElementById('markdown-content');
     if (content && !content.classList.contains('hidden') && content.innerHTML.trim()) {
       this.generateTOC();
-      // Ensure translations are applied, with a small delay to ensure DOM is updated
+      
+      // Ensure translations are applied with multiple attempts
       setTimeout(() => {
         this.updateTranslations();
       }, 50);
+      
+      // Try again after a longer delay to ensure translation system is ready
+      setTimeout(() => {
+        this.updateTranslations();
+      }, 1000);
+      
       return true;
     }
     return false;
@@ -307,10 +346,8 @@ class TOCGenerator {
       
       if (this.checkAndGenerate()) {
         clearInterval(checkInterval);
-        console.log('TOC generated successfully');
       } else if (attempts >= maxAttempts) {
         clearInterval(checkInterval);
-        console.log('TOC generation timed out - content not found');
       }
     }, 100);
   }
