@@ -87,6 +87,18 @@
           column-count: 3;
         }
       }
+      
+      /* Clickable tools styling */
+      .tool-clickable {
+        transition: all 0.2s ease-in-out;
+        padding: 2px 4px;
+        border-radius: 4px;
+      }
+      
+      .tool-clickable:hover {
+        background-color: rgba(96, 165, 250, 0.1);
+        transform: translateX(4px);
+      }
     </style>
   </head>
   <body class="bg-gray-900 text-white">
@@ -738,6 +750,9 @@
           setupToggleButtons();
         }
         
+        // Make all tools clickable to open knowledge base
+        makeToolsClickable();
+        
         // Failsafe: Ensure loading indicator is always hidden after initialization
         setTimeout(() => {
           const loadingIndicator = document.getElementById('tools-loading');
@@ -814,6 +829,32 @@
             }
           }
         }
+      }
+
+      function makeToolsClickable() {
+        const toolLists = document.querySelectorAll('.tool-list li');
+        
+        toolLists.forEach(toolItem => {
+          // Make all tools clickable
+          toolItem.style.cursor = 'pointer';
+          toolItem.classList.add('tool-clickable');
+          
+          // Add click event to open knowledge base
+          toolItem.addEventListener('click', () => {
+            window.open('knowledgebase.html', '_blank');
+          });
+          
+          // Add hover effects
+          toolItem.addEventListener('mouseenter', () => {
+            toolItem.style.textDecoration = 'underline';
+            toolItem.style.color = '#60a5fa'; // blue-400
+          });
+          
+          toolItem.addEventListener('mouseleave', () => {
+            toolItem.style.textDecoration = 'none';
+            toolItem.style.color = '#d1d5db'; // gray-300 (original color)
+          });
+        });
       }
 
       function setupLanguageDropdown() {
