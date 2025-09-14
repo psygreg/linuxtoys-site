@@ -31,8 +31,8 @@ class TOCGenerator {
         </svg>
       </button>
       
-      <!-- TOC Panel - positioned below button -->
-      <div id="toc-panel" class="fixed right-4 top-32 z-40 bg-gray-800 border border-gray-600 rounded-lg shadow-lg max-w-xs max-h-96 overflow-y-auto transition-all duration-300 ease-in-out transform translate-x-full">
+      <!-- TOC Panel - positioned with more spacing from button -->
+      <div id="toc-panel" class="fixed right-4 top-36 z-40 bg-gray-800 border border-gray-600 rounded-lg shadow-lg max-w-xs max-h-96 overflow-y-auto transition-all duration-300 ease-in-out transform translate-x-full">
         <div class="p-4">
           <h3 id="toc-title" class="text-white font-semibold mb-3 text-sm uppercase tracking-wide" data-key="toc-contents">Contents</h3>
           <nav id="toc-nav" class="space-y-1">
@@ -54,32 +54,40 @@ class TOCGenerator {
    * Set up event listeners for TOC functionality
    */
   setupEventListeners() {
-    const toggleBtn = document.getElementById('toc-toggle');
-    const panel = document.getElementById('toc-panel');
+    // Use a small delay to ensure elements are properly inserted in DOM
+    setTimeout(() => {
+      const toggleBtn = document.getElementById('toc-toggle');
+      const panel = document.getElementById('toc-panel');
 
-    // Toggle TOC visibility
-    toggleBtn.addEventListener('click', (e) => {
-      e.preventDefault();
-      e.stopPropagation();
-      this.toggleTOC();
-    });
-
-    // Close TOC when clicking outside (but not on the toggle button)
-    document.addEventListener('click', (e) => {
-      if (!panel.contains(e.target) && !toggleBtn.contains(e.target) && this.isVisible) {
-        this.hideTOC();
+      if (!toggleBtn || !panel) {
+        console.error('TOC elements not found in DOM');
+        return;
       }
-    });
 
-    // Handle scroll for active section highlighting
-    window.addEventListener('scroll', () => {
-      this.updateActiveSection();
-    });
+      // Toggle TOC visibility
+      toggleBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        this.toggleTOC();
+      });
 
-    // Listen for language changes
-    window.addEventListener('languageChanged', () => {
-      this.updateTranslations();
-    });
+      // Close TOC when clicking outside (but not on the toggle button)
+      document.addEventListener('click', (e) => {
+        if (!panel.contains(e.target) && !toggleBtn.contains(e.target) && this.isVisible) {
+          this.hideTOC();
+        }
+      });
+
+      // Handle scroll for active section highlighting
+      window.addEventListener('scroll', () => {
+        this.updateActiveSection();
+      });
+
+      // Listen for language changes
+      window.addEventListener('languageChanged', () => {
+        this.updateTranslations();
+      });
+    }, 10);
   }
 
   /**
@@ -244,13 +252,22 @@ class TOCGenerator {
    */
   updateTranslations() {
     const tocTitle = document.getElementById('toc-title');
-    if (tocTitle && window.translationManager) {
+    if (!tocTitle) return;
+
+    if (window.translationManager && window.translationManager.translations) {
       const currentTranslations = window.translationManager.translations[window.translationManager.currentLang] || 
                                    window.translationManager.translations[window.translationManager.fallbackLang] || {};
       const translation = currentTranslations['toc-contents'];
       if (translation) {
         tocTitle.textContent = translation;
+        console.log('TOC translation applied:', translation);
+      } else {
+        console.warn('TOC translation not found for key: toc-contents');
       }
+    } else {
+      // Fallback to default text if translation system not ready
+      tocTitle.textContent = 'Contents';
+      console.log('Translation system not ready, using fallback');
     }
   }
 
@@ -270,7 +287,10 @@ class TOCGenerator {
     const content = document.getElementById('markdown-content');
     if (content && !content.classList.contains('hidden') && content.innerHTML.trim()) {
       this.generateTOC();
-      this.updateTranslations();
+      // Ensure translations are applied, with a small delay to ensure DOM is updated
+      setTimeout(() => {
+        this.updateTranslations();
+      }, 50);
       return true;
     }
     return false;
