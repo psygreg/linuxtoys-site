@@ -9,7 +9,7 @@
 
     <meta
       name="description"
-      content="A collection of tools for Linux in a user-friendly way to make your life on Linux easier than ever. Useful scripts for gamers, developers and enthusiasts."
+      content="A collection of tools in a user-friendly way to make your life on Linux easier than ever. Useful scripts for gamers, developers and enthusiasts."
     />
     <meta
       name="keywords"
@@ -729,6 +729,8 @@
         // Additional sync after everything is loaded
         setTimeout(() => {
           syncDropdownWithCurrentLanguage();
+          // Update meta description with initial language
+          updateMetaDescription();
         }, 200);
         
         // Only set up toggle buttons if tools weren't updated from cache
@@ -802,6 +804,18 @@
         }
       }
 
+      function updateMetaDescription() {
+        if (window.translationManager) {
+          const metaDescription = document.querySelector('meta[name="description"]');
+          if (metaDescription) {
+            const translatedDescription = window.translationManager.getTranslation('title');
+            if (translatedDescription) {
+              metaDescription.setAttribute('content', translatedDescription);
+            }
+          }
+        }
+      }
+
       function setupLanguageDropdown() {
         const dropdownBtn = document.getElementById('language-dropdown-btn');
         const dropdown = document.getElementById('language-dropdown');
@@ -853,6 +867,8 @@
             // Trigger the existing translation logic
             if (window.translationManager) {
               window.translationManager.setLanguage(lang);
+              // Update meta description with new language
+              updateMetaDescription();
             }
             
             // Update tools content if tools loader is available
