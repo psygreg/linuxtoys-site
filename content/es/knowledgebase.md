@@ -121,6 +121,7 @@ Desde flathub, o teniendo repositorios añadidos por LinuxToys, y no se hacen ot
 - EasyEffects
 - LACT
 - Piper (incluye `ratbagd` para Debian/Ubuntu o `libratbag` para otros, paquetes instalados nativamente)
+- Aceleración de Hardware para Flatpaks (ffmpeg-full para los runtimes flatpak actualmente soportados)
 
 ## Procedimientos Personalizados
 
@@ -248,10 +249,10 @@ Instala archivos requeridos para redirigir comandos desde distroboxes al host si
 
 ### Códecs de Streaming para Fedora/OpenSUSE
 
-Instala los códecs requeridos para medios de streaming en esos sistemas operativos.
+Instala los códecs requeridos para medios de streaming con aceleración de hardware en esos sistemas operativos. También instalará RPMFusion en Fedora si no está ya instalado, ya que los paquetes requeridos no se proporcionan en repositorios por defecto.
 
 **Paquetes Instalados o Actualizados**
-- Fedora: `libavcodec-freeworld`
+- Fedora: `libavcodec-freeworld gstreamer1-plugins-ugly`
 - OpenSUSE:`opi` y, desde opi, `codecs`
 
 ### Microsoft CoreFonts
@@ -531,6 +532,7 @@ Una configuración de un clic que instala una selección curada y estable de opt
 - Corrección de timeout de Gnome - aumenta la tolerancia de timeout para detener excesivas solicitudes de 'el programa no responde'
 - Firma de Módulos de Kernel para RPM-OSTree
 - habilitación de actualizaciones automáticas para `rpm-ostree` - en modo de etapa para que tu trabajo nunca sea interrumpido
+- (opcional) Aceleración de Hardware para Flatpaks
 
 **Perfiles de Energía**
 - *Laptop*: Power Optimizer

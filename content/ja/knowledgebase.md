@@ -121,6 +121,7 @@ flathubから、またはLinuxToysによって追加されたリポジトリが�
 - EasyEffects
 - LACT
 - Piper（Debian/Ubuntuでは`ratbagd`、他では`libratbag`、ネイティブインストールパッケージを含む）
+- Flatpak用ハードウェアアクセラレーション（現在サポートされているflatpakランタイム用のffmpeg-full）
 
 ## カスタム手順
 
@@ -248,10 +249,10 @@ OCL_ICD_VENDORS=/etc/OpenCL/vendors/rusticl.icd
 
 ### Fedora/OpenSUSE用ストリーミングコーデック
 
-これらのオペレーティングシステムでストリーミングメディアに必要なコーデックをインストールします。
+これらのオペレーティングシステムでハードウェアアクセラレーション付きストリーミングメディアに必要なコーデックをインストールします。必要なパッケージがデフォルトリポジトリで提供されていないため、Fedoraにまだインストールされていない場合はRPMFusionもインストールします。
 
 **インストールまたは更新されたパッケージ**
-- Fedora：`libavcodec-freeworld`
+- Fedora: `libavcodec-freeworld gstreamer1-plugins-ugly`
 - OpenSUSE：`opi`と、opiから`codecs`
 
 ### Microsoft CoreFonts
@@ -531,6 +532,7 @@ RustUpによる公式インストールスクリプトを通じてインスト�
 - Gnomeタイムアウト修正 - 過度な'プログラムが応答していません'プロンプトを停止するためタイムアウト許容度を増加
 - RPM-OSTree用カーネルモジュール署名
 - `rpm-ostree`用自動更新有効化 - ステージモードで作業が中断されることはありません
+- （オプション）Flatpak用ハードウェアアクセラレーション
 
 **電源プロファイル**
 - *ラップトップ*：Power Optimizer

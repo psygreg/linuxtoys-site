@@ -121,6 +121,7 @@
 - EasyEffects
 - LACT
 - Piper（包含Debian/Ubuntu的`ratbagd`或其他系统的`libratbag`本地安装包）
+- Flatpaks硬件加速（当前支持的flatpak运行时的ffmpeg-full）
 
 ## 自定义程序
 
@@ -248,10 +249,10 @@ OCL_ICD_VENDORS=/etc/OpenCL/vendors/rusticl.icd
 
 ### Fedora/OpenSUSE的流媒体编解码器
 
-安装这些操作系统中流媒体所需的编解码器。
+安装这些操作系统中使用硬件加速的流媒体所需的编解码器。如果尚未安装RPMFusion，它还将在Fedora上安装RPMFusion，因为所需的包不在默认存储库中提供。
 
 **安装或更新的包**
-- Fedora：`libavcodec-freeworld`
+- Fedora: `libavcodec-freeworld gstreamer1-plugins-ugly`
 - OpenSUSE：`opi` 和，来自opi，`codecs`
 
 ### Microsoft CoreFonts
@@ -531,6 +532,7 @@ firewall-cmd --reload
 - Gnome超时修复 - 增加超时容忍度以停止过度的'程序未响应'提示
 - RPM-OSTree的内核模块签名
 - 为`rpm-ostree`启用自动更新 - 在分阶段模式下，这样您的工作永远不会被中断
+- （可选）Flatpaks硬件加速
 
 **电源配置文件**
 - *笔记本电脑*：Power Optimizer

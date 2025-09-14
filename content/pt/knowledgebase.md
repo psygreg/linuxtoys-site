@@ -3,7 +3,9 @@
 ## Diretrizes Básicas das Funcionalidades do LinuxToys
 
 - As funcionalidades só estarão disponíveis em sistemas onde são compatíveis *e* relevantes.
-- Todas as funcionalidades e recursos dentro da aplicação devem sempre seguir o princípio **KISS** (*Keep It Simple, Stupid*) - devem ser fáceis de entender e utilizar através de suas etiquetas e descrições rápidas.
+- Todas as funcionalidades e recursos dentro da aplicação devem sempre segui### Códecs de Streaming para Fedora/OpenSUSE
+
+Instala os códecs necessários para mídia de streaming com aceleração de hardware nesses sistemas operacionais. Também instalará o RPMFusion no Fedora se ainda não estiver instalado, já que os pacotes necessários não são fornecidos nos repositórios padrão. princípio **KISS** (*Keep It Simple, Stupid*) - devem ser fáceis de entender e utilizar através de suas etiquetas e descrições rápidas.
 - As funcionalidades devem ser feitas de forma que funcionem **otimamente** para o usuário.
 - A interação do usuário é limitada a prompts `zenity` para evitar imprevisibilidades e garantir confiabilidade.
 - Flatpaks devem ser usados sempre que possível pela sua **consistência** através dos runtimes flatpak e **segurança** através do controle granular de permissões.
@@ -121,6 +123,7 @@ Do flathub, ou tendo repositórios adicionados pelo LinuxToys, e nenhuma outra m
 - EasyEffects
 - LACT
 - Piper (inclui `ratbagd` para Debian/Ubuntu ou `libratbag` para outros, pacotes instalados nativamente)
+- Aceleração de Hardware para Flatpaks (ffmpeg-full para os runtimes flatpak atualmente suportados)
 
 ## Procedimentos Personalizados
 
@@ -251,7 +254,7 @@ Instala arquivos necessários para redirecionar comandos de distroboxes para o h
 Instala os codecs necessários para mídia de streaming nesses sistemas operacionais.
 
 **Pacotes Instalados ou Atualizados**
-- Fedora: `libavcodec-freeworld`
+- Fedora: `libavcodec-freeworld gstreamer1-plugins-ugly`
 - OpenSUSE:`opi` e, do opi, `codecs`
 
 ### Microsoft CoreFonts
@@ -531,6 +534,7 @@ Uma configuração de um clique que instala uma seleção curada e estável de o
 - Correção de timeout do Gnome - aumenta a tolerância de timeout para parar prompts excessivos de 'programa não está respondendo'
 - Assinatura de Módulo do Kernel para RPM-OSTree
 - habilitação de atualizações automáticas para `rpm-ostree` - em modo de estágio para que seu trabalho nunca seja interrompido
+- (opcional) Aceleração de Hardware para Flatpaks
 
 **Perfis de Energia**
 - *Laptop*: Power Optimizer

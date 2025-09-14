@@ -121,6 +121,7 @@ From flathub, or having repositories added by LinuxToys, and no other changes ar
 - EasyEffects
 - LACT
 - Piper (includes `ratbagd` for Debian/Ubuntu or `libratbag` for others, natively installed packages)
+- Hardware Acceleration for Flatpaks (ffmpeg-full for the currently supported flatpak runtimes)
 
 ## Custom Procedures
 
@@ -249,10 +250,10 @@ Installs files required to redirect commands from distroboxes to the host if the
 
 ### Streaming Codecs for Fedora/OpenSUSE
 
-Install the codecs required for streaming media on those operating systems.
+Install the codecs required for streaming media with hardware acceleration on those operating systems. It will also install RPMFusion on Fedora if not already installed, since the packages required are not provided in default repositories.
 
 **Packages Installed or Updated**
-- Fedora: `libavcodec-freeworld`
+- Fedora: `libavcodec-freeworld gstreamer1-plugins-ugly`
 - OpenSUSE:`opi` and, from opi, `codecs`
 
 ### Microsoft CoreFonts
@@ -532,6 +533,7 @@ A one-click setup that installs a curated, stable selection of optimizations for
 - Gnome timeout fix - increases timeout tolerance to stop excessive 'program is not responding' prompts
 - Kernel Module Signing for RPM-OSTree
 - automatic updates enabling for `rpm-ostree` - in stage mode so your work is never disrupted
+- (optional) Hardware Acceleration for Flatpaks
 
 **Power Profiles**
 - *Laptop*: Power Optimizer
