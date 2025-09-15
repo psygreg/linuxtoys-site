@@ -193,7 +193,7 @@
 
       <section class="text-center mt-8 px-4">
         <div
-          class="relative w-full max-w-5xl mx-auto flex items-center justify-between"
+          class="relative w-full max-w-3xl mx-auto flex items-center justify-between"
         >
           <pre
             id="install-code"
@@ -957,7 +957,7 @@
       }
 
       function setupInstallCommand() {
-        const command = `yes | sh -c "$(curl -fsSL https://raw.githubusercontent.com/psygreg/linuxtoys/master/install.sh)"`;
+        const command = `yes | sh -c "$(curl -fsSL https://linuxtoys.luminhost.xyz/install.sh)"`;
         const element = document.getElementById('install-code');
         
         // Store the complete command for copying
@@ -968,12 +968,12 @@
           if (i < command.length) {
             element.textContent += command.charAt(i);
             i++;
-            setTimeout(typeWriter, 20);
+            setTimeout(typeWriter, 30);
           }
         }
 
         // Start the typewriter effect after a short delay
-        setTimeout(typeWriter, 200);
+        setTimeout(typeWriter, 50);
       }
 
       function setupCopyButton() {
