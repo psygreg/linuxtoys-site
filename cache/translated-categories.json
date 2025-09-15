@@ -398,6 +398,13 @@
           "scriptPath": "p3/scripts/extra/ondemand.sh"
         },
         {
+          "name": "Automatic Updates for RPM-OSTree",
+          "description": "Enables rpm-ostree's automatic updating feature in stage mode (silent). Updates will only be applied on reboot, and you will not be prompted to reboot.",
+          "icon": "grubtrfs.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/ostree-autoupd.sh"
+        },
+        {
           "name": "Preload",
           "description": "A daemon that preloads frequently used libraries and binaries into memory to speed up application startup times.",
           "icon": "preload.svg",
@@ -1554,6 +1561,13 @@
           "icon": "optimizer.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/ondemand.sh"
+        },
+        {
+          "name": "Atualizações Automáticas para RPM-OSTree",
+          "description": "Habilita o recurso de atualização automática do rpm-ostree no modo stage (silencioso). As atualizações só serão aplicadas na reinicialização, e você não será solicitado a reiniciar.",
+          "icon": "grubtrfs.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/ostree-autoupd.sh"
         },
         {
           "name": "Preload",
@@ -2714,6 +2728,13 @@
           "scriptPath": "p3/scripts/extra/ondemand.sh"
         },
         {
+          "name": "Actualizaciones Automáticas para RPM-OSTree",
+          "description": "Habilita la función de actualización automática de rpm-ostree en modo stage (silencioso). Las actualizaciones solo se aplicarán al reiniciar, y no se le solicitará reiniciar.",
+          "icon": "grubtrfs.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/ostree-autoupd.sh"
+        },
+        {
           "name": "Preload",
           "description": "Un demonio que precarga bibliotecas y binarios frecuentemente usados en memoria para acelerar los tiempos de inicio de aplicaciones.",
           "icon": "preload.svg",
@@ -3870,6 +3891,13 @@
           "icon": "optimizer.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/ondemand.sh"
+        },
+        {
+          "name": "Mises à Jour Automatiques pour RPM-OSTree",
+          "description": "Active la fonction de mise à jour automatique de rpm-ostree en mode stage (silencieux). Les mises à jour ne seront appliquées qu'au redémarrage, et vous ne serez pas invité à redémarrer.",
+          "icon": "grubtrfs.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/ostree-autoupd.sh"
         },
         {
           "name": "Preload",
@@ -5030,6 +5058,13 @@
           "scriptPath": "p3/scripts/extra/ondemand.sh"
         },
         {
+          "name": "Automatische Updates für RPM-OSTree",
+          "description": "Aktiviert rpm-ostree's automatische Update-Funktion im Stage-Modus (stumm). Updates werden nur beim Neustart angewendet, und Sie werden nicht zum Neustart aufgefordert.",
+          "icon": "grubtrfs.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/ostree-autoupd.sh"
+        },
+        {
           "name": "Preload",
           "description": "Ein Daemon, der häufig verwendete Bibliotheken und Binärdateien in den Speicher lädt, um die Anwendungsstartzeiten zu beschleunigen.",
           "icon": "preload.svg",
@@ -6186,6 +6221,13 @@
           "icon": "optimizer.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/ondemand.sh"
+        },
+        {
+          "name": "RPM-OSTree自动更新",
+          "description": "启用rpm-ostree在暂存模式（静默）下的自动更新功能。更新只会在重启时应用，您不会被提示重启。",
+          "icon": "grubtrfs.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/ostree-autoupd.sh"
         },
         {
           "name": "Preload",
@@ -7346,6 +7388,13 @@
           "scriptPath": "p3/scripts/extra/ondemand.sh"
         },
         {
+          "name": "RPM-OSTree自動更新",
+          "description": "rpm-ostreeのステージモード（サイレント）での自動更新機能を有効にします。更新は再起動時にのみ適用され、再起動を求められることはありません。",
+          "icon": "grubtrfs.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/ostree-autoupd.sh"
+        },
+        {
           "name": "Preload",
           "description": "よく使用されるライブラリとバイナリをメモリに事前読み込みしてアプリケーション起動時間を短縮するデーモン。",
           "icon": "preload.svg",
@@ -8502,6 +8551,13 @@
           "icon": "optimizer.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/ondemand.sh"
+        },
+        {
+          "name": "Автоматические обновления для RPM-OSTree",
+          "description": "Включает функцию автоматического обновления rpm-ostree в режиме stage (тихий). Обновления будут применены только при перезагрузке, и вас не будут просить перезагрузиться.",
+          "icon": "grubtrfs.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/ostree-autoupd.sh"
         },
         {
           "name": "Preload",
