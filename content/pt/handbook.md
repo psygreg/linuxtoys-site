@@ -422,3 +422,28 @@ mode: menu
 4. **Use restrições de locale** quando scripts são específicos de região
 
 Este guia fornece a base para criar scripts robustos, compatíveis e user-friendly dentro do ecossistema LinuxToys. Ao aproveitar as bibliotecas fornecidas e seguir essas convenções, desenvolvedores podem criar scripts que funcionam perfeitamente em múltiplas distribuições Linux enquanto fornecem uma experiência de usuário consistente.
+
+## III. Agentes de Codificação IA
+
+Com o uso de ferramentas de IA se tornando mais prevalente a cada dia, é importante estabelecer algumas diretrizes para seu uso no desenvolvimento do LinuxToys. Acreditamos que eles podem ser ferramentas muito úteis e ajudar desenvolvedores a serem mais eficientes, se empregados de forma moderada e responsável.
+
+### Modelos Permitidos
+
+Baseado em testes, permitiremos *apenas* os seguintes modelos para assistência de código:
+- **Grok Code Fast** - um modelo rápido e econômico, ideal para uso como 'autocompletar com esteroides'
+- **Claude Sonnet 4** - modelo avançado, adequado para análise e trabalho de código complexo, mas também mais caro
+- **Qwen Coder 3** - modelo bem equilibrado, fornecendo bom desempenho para uma variedade de tarefas de codificação enquanto mantém boa precisão e eficiência de custo
+
+Todos os outros modelos testados falharam em fornecer resultados satisfatórios a longo prazo, muitas vezes produzindo código incorreto ou até perigoso em alucinações fora de controle.
+
+### Diretrizes de Uso
+
+1. **Complementar, Não Substituir**: Ferramentas de IA devem ser usadas para assistir e aprimorar esforços de codificação humana, nunca para substituí-los inteiramente.
+2. **Revisão de Código**: Todo código gerado por IA em qualquer capacidade deve ser minuciosamente revisado e testado para garantir que atende nossos altos padrões de qualidade, segurança e funcionalidade, como qualquer código.
+3. **Consciência de Segurança**: Seja vigilante sobre vulnerabilidades de segurança potenciais em código gerado por IA. A IA pode nem sempre seguir as melhores práticas de segurança.
+
+### Uso de IA em Traduções
+
+Entendemos que ter o LinuxToys disponível nos idiomas nativos das pessoas é altamente importante, pois isso torna o software mais acessível, o que é um fator chave para nosso sucesso. No entanto, também é uma tarefa muito demorada, e projetos muito maiores que nós têm dificuldade em encontrar voluntários para ajudar com isso, então usamos ferramentas de IA para gerar traduções. Qualquer imprecisão ou erro na tradução deve ser reportado em nossa [página de issues do GitHub](https://github.com/psygreg/linuxtoys/issues).
+
+O modelo atualmente usado para nossas traduções é **Claude Sonnet 4**, pois mostrou os melhores resultados em nossos testes, sem desvios do significado original.

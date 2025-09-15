@@ -422,3 +422,28 @@ mode: menu
 4. **Verwenden Sie Locale-Beschränkungen** wenn Skripte regionsspezifisch sind
 
 Dieser Leitfaden bietet die Grundlage für die Erstellung robuster, kompatibler und benutzerfreundlicher Skripte innerhalb des LinuxToys-Ökosystems. Durch die Nutzung der bereitgestellten Bibliotheken und das Befolgen dieser Konventionen können Entwickler Skripte erstellen, die nahtlos über mehrere Linux-Distributionen funktionieren und dabei eine konsistente Benutzererfahrung bieten.
+
+## III. KI-Coding-Agenten
+
+Da die Nutzung von KI-Tools jeden Tag immer verbreiteter wird, ist es wichtig, Richtlinien für ihre Verwendung in der Entwicklung von LinuxToys zu etablieren. Wir glauben, dass sie sehr hilfreiche Werkzeuge sein können und Entwicklern helfen können, effizienter zu sein, wenn sie auf moderate, verantwortungsvolle Weise eingesetzt werden.
+
+### Erlaubte Modelle
+
+Basierend auf Tests werden wir *nur* die folgenden Modelle für Codehilfe zulassen:
+- **Grok Code Fast** - ein schnelles, kosteneffektives Modell, ideal für die Nutzung als 'Autovervollständigung auf Steroiden'
+- **Claude Sonnet 4** - fortgeschrittenes Modell, geeignet für komplexe Codeanalyse und -arbeit, aber auch teurer
+- **Qwen Coder 3** - ausgewogenes Modell, das gute Leistung für eine Vielzahl von Codierungsaufgaben bietet und dabei gute Genauigkeit und Kosteneffizienz beibehält
+
+Alle anderen getesteten Modelle konnten langfristig keine zufriedenstellenden Ergebnisse liefern und produzierten oft falschen oder sogar gefährlichen Code in unkontrollierten Halluzinationen.
+
+### Nutzungsrichtlinien
+
+1. **Ergänzen, nicht Ersetzen**: KI-Tools sollten verwendet werden, um menschliche Codierungsbemühungen zu unterstützen und zu verbessern, niemals um sie vollständig zu ersetzen.
+2. **Code-Review**: Jeder von KI in jeder Kapazität generierte Code muss gründlich überprüft und getestet werden, um sicherzustellen, dass er unsere hohen Qualitäts-, Sicherheits- und Funktionalitätsstandards erfüllt, wie jeder Code.
+3. **Sicherheitsbewusstsein**: Seien Sie wachsam gegenüber potenziellen Sicherheitslücken in KI-generiertem Code. KI folgt möglicherweise nicht immer den besten Sicherheitspraktiken.
+
+### KI-Nutzung bei Übersetzungen
+
+Wir verstehen, dass LinuxToys in den Muttersprachen der Menschen verfügbar zu haben sehr wichtig ist, da dies die Software zugänglicher macht, was ein Schlüsselfaktor für unseren Erfolg ist. Es ist jedoch auch eine sehr zeitaufwändige Aufgabe, und weitaus größere Projekte als wir haben Schwierigkeiten, Freiwillige zu finden, die dabei helfen, also verwenden wir KI-Tools zur Generierung von Übersetzungen. Ungenauigkeiten oder Fehler in der Übersetzung sollten auf unserer [GitHub Issues-Seite](https://github.com/psygreg/linuxtoys/issues) gemeldet werden.
+
+Das Modell, das derzeit für unsere Übersetzungen verwendet wird, ist **Claude Sonnet 4**, da es in unseren Tests die besten Ergebnisse gezeigt hat, ohne Abweichungen von der ursprünglichen Bedeutung.
