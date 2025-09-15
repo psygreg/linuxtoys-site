@@ -395,6 +395,13 @@
         "scriptPath": "p3/scripts/extra/ondemand.sh"
       },
       {
+        "name": "ostree-autoupd",
+        "description": "ostree-autoupd_desc",
+        "icon": "grubtrfs.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/ostree-autoupd.sh"
+      },
+      {
         "name": "Preload",
         "description": "preload_desc",
         "icon": "preload.svg",
