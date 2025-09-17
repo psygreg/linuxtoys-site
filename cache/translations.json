@@ -232,7 +232,10 @@
     "export_error_title": "Export Error",
     "export_error_message": "Failed to export script: {error}",
     "export": "Export",
-    "select_export_directory": "Select Export Directory"
+    "select_export_directory": "Select Export Directory",
+    "delete_scripts_message": "Are you sure you want to delete {count} scripts?",
+    "export_success": "Export Successful",
+    "export_success_message": "{count} scripts exported successfully."
   },
   "pt": {
     "subtitle": "Uma coleção amigável de ferramentas para Linux.",
@@ -467,7 +470,10 @@
     "export_error_title": "Erro de Exportação",
     "export_error_message": "Falha ao exportar script: {error}",
     "export": "Exportar",
-    "select_export_directory": "Selecionar Diretório de Exportação"
+    "select_export_directory": "Selecionar Diretório de Exportação",
+    "delete_scripts_message": "Tem certeza de que deseja excluir {count} scripts?",
+    "export_success": "Exportação Bem-sucedida",
+    "export_success_message": "{count} scripts exportados com sucesso."
   },
   "es": {
     "subtitle": "Una colección amigable de herramientas para Linux.",
@@ -702,7 +708,10 @@
     "export_error_title": "Error de Exportación",
     "export_error_message": "Error al exportar el script: {error}",
     "export": "Exportar",
-    "select_export_directory": "Seleccionar Directorio de Exportación"
+    "select_export_directory": "Seleccionar Directorio de Exportación",
+    "delete_scripts_message": "¿Está seguro de que quiere eliminar {count} scripts?",
+    "export_success": "Exportación Exitosa",
+    "export_success_message": "{count} scripts exportados exitosamente."
   },
   "fr": {
     "subtitle": "Une collection d'outils pour Linux de manière conviviale.",
@@ -937,7 +946,10 @@
     "export_error_title": "Erreur d'exportation",
     "export_error_message": "Échec de l'exportation du script : {error}",
     "export": "Exporter",
-    "select_export_directory": "Sélectionner le répertoire d'exportation"
+    "select_export_directory": "Sélectionner le répertoire d'exportation",
+    "delete_scripts_message": "Êtes-vous sûr de vouloir supprimer {count} scripts ?",
+    "export_success": "Exportation réussie",
+    "export_success_message": "{count} scripts exportés avec succès."
   },
   "de": {
     "subtitle": "Eine freundliche Sammlung von Tools für Linux.",
@@ -1172,7 +1184,10 @@
     "export_error_title": "Export-Fehler",
     "export_error_message": "Fehler beim Exportieren des Skripts: {error}",
     "export": "Exportieren",
-    "select_export_directory": "Export-Verzeichnis auswählen"
+    "select_export_directory": "Export-Verzeichnis auswählen",
+    "delete_scripts_message": "Sind Sie sicher, dass Sie {count} Skripte löschen möchten?",
+    "export_success": "Export erfolgreich",
+    "export_success_message": "{count} Skripte erfolgreich exportiert."
   },
   "zh": {
     "subtitle": "适用于Linux的用户友好工具集合。",
@@ -1409,7 +1424,10 @@
     "export_error_title": "导出错误",
     "export_error_message": "导出脚本失败: {error}",
     "export": "导出",
-    "select_export_directory": "选择导出目录"
+    "select_export_directory": "选择导出目录",
+    "delete_scripts_message": "您确定要删除 {count} 个脚本吗？",
+    "export_success": "导出成功",
+    "export_success_message": "已成功导出 {count} 个脚本。"
   },
   "ja": {
     "subtitle": "Linuxのためのユーザーフレンドリーなツール集。",
@@ -1644,7 +1662,10 @@
     "export_error_title": "エクスポートエラー",
     "export_error_message": "スクリプトのエクスポートに失敗しました: {error}",
     "export": "エクスポート",
-    "select_export_directory": "エクスポートディレクトリを選択"
+    "select_export_directory": "エクスポートディレクトリを選択",
+    "delete_scripts_message": "{count}個のスクリプトを削除してもよろしいですか？",
+    "export_success": "エクスポート成功",
+    "export_success_message": "{count}個のスクリプトが正常にエクスポートされました。"
   },
   "ru": {
     "subtitle": "Коллекция инструментов для Linux в удобном формате.",
@@ -1879,6 +1900,9 @@
     "export_error_title": "Ошибка экспорта",
     "export_error_message": "Не удалось экспортировать скрипт: {error}",
     "export": "Экспорт",
-    "select_export_directory": "Выберите каталог экспорта"
+    "select_export_directory": "Выберите каталог экспорта",
+    "delete_scripts_message": "Вы уверены, что хотите удалить {count} скриптов?",
+    "export_success": "Экспорт успешен",
+    "export_success_message": "{count} скриптов успешно экспортировано."
   }
 }
