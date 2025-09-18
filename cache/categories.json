@@ -31,13 +31,6 @@
         "description": "docker_desc",
         "icon": "docker.svg",
         "version": "1.0",
-        "scriptPath": "p3/scripts/devs/docker-ostree.sh"
-      },
-      {
-        "name": "Docker",
-        "description": "docker_desc",
-        "icon": "docker.svg",
-        "version": "1.0",
         "scriptPath": "p3/scripts/devs/docker.sh"
       },
       {
@@ -118,6 +111,20 @@
         "scriptPath": "p3/scripts/devs/nvm.sh"
       },
       {
+        "name": "Oh My Zsh",
+        "description": "omz_desc",
+        "icon": "zsh.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/devs/ohmyz.sh"
+      },
+      {
+        "name": "pNPm",
+        "description": "pnpm_desc",
+        "icon": "pnpm.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/devs/pnpm.sh"
+      },
+      {
         "name": "Postman",
         "description": "postman_desc",
         "icon": "postman.svg",
@@ -130,6 +137,13 @@
         "icon": "python.svg",
         "version": "1.0",
         "scriptPath": "p3/scripts/devs/pyenv.sh"
+      },
+      {
+        "name": "Starship",
+        "description": "starship_desc",
+        "icon": "starship.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/devs/starship.sh"
       },
       {
         "name": "Sublime Text",
@@ -318,6 +332,13 @@
         "scriptPath": "p3/scripts/extra/cnfh.sh"
       },
       {
+        "name": "codecfix-hw",
+        "description": "codecfix-hw_desc",
+        "icon": "codec.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/codecfix-hw.sh"
+      },
+      {
         "name": "codecfix",
         "description": "codecfix_desc",
         "icon": "codec.svg",
@@ -367,14 +388,7 @@
         "scriptPath": "p3/scripts/extra/iwd.sh"
       },
       {
-        "name": "lsw",
-        "description": "lsw_desc",
-        "icon": "lsw.svg",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/extra/lsw-ostree.sh"
-      },
-      {
-        "name": "lsw",
+        "name": "LSW-WinBoat",
         "description": "lsw_desc",
         "icon": "lsw.svg",
         "version": "1.0",
@@ -828,6 +842,13 @@
         "scriptPath": "p3/scripts/repos/flathub.sh"
       },
       {
+        "name": "Nix Packages",
+        "description": "nixpkgs_desc",
+        "icon": "nix.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/repos/nix.sh"
+      },
+      {
         "name": "Pip",
         "description": "pip_desc",
         "icon": "pip.svg",
@@ -986,6 +1007,13 @@
         "scriptPath": "p3/scripts/utils/mctl.sh"
       },
       {
+        "name": "Nerd Fonts",
+        "description": "nerdfonts_desc",
+        "icon": "nerdfonts.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/nerdfonts.sh"
+      },
+      {
         "name": "OBS Studio",
         "description": "obs_desc",
         "icon": "obs.svg",
@@ -1072,6 +1100,13 @@
         "mode": "menu",
         "tools": [
           {
+            "name": "Cryptomator",
+            "description": "cryptomator_desc",
+            "icon": "cryptomator.png",
+            "version": "1.0",
+            "scriptPath": "p3/scripts/utils/privacy/cryptomator.sh"
+          },
+          {
             "name": "Express VPN",
             "description": "Express VPN",
             "icon": "expressvpn.svg",
@@ -1119,6 +1154,13 @@
             "icon": "protonvpn.svg",
             "version": "1.0",
             "scriptPath": "p3/scripts/utils/privacy/proton-vpn.sh"
+          },
+          {
+            "name": "SiriKali",
+            "description": "sirikali_desc",
+            "icon": "sirikali.png",
+            "version": "1.0",
+            "scriptPath": "p3/scripts/utils/privacy/sirikali.sh"
           },
           {
             "name": "Surfshark VPN",
