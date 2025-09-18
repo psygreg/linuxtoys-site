@@ -77,12 +77,10 @@ Todos os scripts do LinuxToys seguem uma estrutura padronizada com cabeçalhos d
 # nocontainer
 
 # --- Início do código do script ---
-. /etc/os-release
-SCRIPT_DIR="$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")"
-source "$SCRIPT_DIR/../../libs/linuxtoys.lib"
+source "$SCRIPT_DIR/libs/linuxtoys.lib"
 _lang_
-source "$SCRIPT_DIR/../../libs/lang/${langfile}.lib"
-source "$SCRIPT_DIR/../../libs/helpers.lib"
+source "$SCRIPT_DIR/libs/lang/${langfile}.lib"
+source "$SCRIPT_DIR/libs/helpers.lib"
 
 # Sua lógica de script aqui
 ```
