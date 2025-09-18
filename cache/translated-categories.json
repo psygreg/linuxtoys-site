@@ -32,13 +32,6 @@
           "description": "The open source container service provider and basic tools for it, like docker-compose. Includes a container with Portainer CE for managing Docker from a web UI.",
           "icon": "docker.svg",
           "version": "1.0",
-          "scriptPath": "p3/scripts/devs/docker-ostree.sh"
-        },
-        {
-          "name": "Docker",
-          "description": "The open source container service provider and basic tools for it, like docker-compose. Includes a container with Portainer CE for managing Docker from a web UI.",
-          "icon": "docker.svg",
-          "version": "1.0",
           "scriptPath": "p3/scripts/devs/docker.sh"
         },
         {
@@ -119,6 +112,20 @@
           "scriptPath": "p3/scripts/devs/nvm.sh"
         },
         {
+          "name": "Oh My Zsh",
+          "description": "A framework for managing your zsh configuration.",
+          "icon": "zsh.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/ohmyz.sh"
+        },
+        {
+          "name": "pNPm",
+          "description": "Fast, disk space efficient package manager.",
+          "icon": "pnpm.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/pnpm.sh"
+        },
+        {
           "name": "Postman",
           "description": "A powerful API testing tool.",
           "icon": "postman.svg",
@@ -131,6 +138,13 @@
           "icon": "python.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/pyenv.sh"
+        },
+        {
+          "name": "Starship",
+          "description": "The minimal, blazing-fast, and infinitely customizable prompt for any shell.",
+          "icon": "starship.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/starship.sh"
         },
         {
           "name": "Sublime Text",
@@ -321,6 +335,13 @@
           "scriptPath": "p3/scripts/extra/cnfh.sh"
         },
         {
+          "name": "Hardware-Accelerated Codecs",
+          "description": "The necessary codecs and libraries for hardware-accelerated video playback for H264/265 on Fedora through VA-API and VDPAU.",
+          "icon": "codec.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/codecfix-hw.sh"
+        },
+        {
           "name": "Streaming Codecs",
           "description": "Install missing codecs for streaming media.",
           "icon": "codec.svg",
@@ -370,15 +391,8 @@
           "scriptPath": "p3/scripts/extra/iwd.sh"
         },
         {
-          "name": "Linux Subsystem for Windows",
-          "description": "Installs Windows on Linux through a Docker container (or Podman for Atomic Fedora distros). Compatible with WinApps. Does NOT have GPU acceleration.",
-          "icon": "lsw.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/extra/lsw-ostree.sh"
-        },
-        {
-          "name": "Linux Subsystem for Windows",
-          "description": "Installs Windows on Linux through a Docker container (or Podman for Atomic Fedora distros). Compatible with WinApps. Does NOT have GPU acceleration.",
+          "name": "LSW-WinBoat",
+          "description": "Installs Windows on Linux through a Docker container. Does NOT have GPU acceleration.",
           "icon": "lsw.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/lsw.sh"
@@ -834,6 +848,13 @@
           "scriptPath": "p3/scripts/repos/flathub.sh"
         },
         {
+          "name": "Nix Packages",
+          "description": "Adds support for Nix packages and the NixPKGs repository on your system.",
+          "icon": "nix.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/nix.sh"
+        },
+        {
           "name": "Pip",
           "description": "Python package manager. Typically useful for Python developers.",
           "icon": "pip.svg",
@@ -994,6 +1015,13 @@
           "scriptPath": "p3/scripts/utils/mctl.sh"
         },
         {
+          "name": "Nerd Fonts",
+          "description": "Iconic font aggregator, collection, and patcher.",
+          "icon": "nerdfonts.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/nerdfonts.sh"
+        },
+        {
           "name": "OBS Studio",
           "description": "A popular open-source streaming and recording software.",
           "icon": "obs.svg",
@@ -1081,6 +1109,13 @@
           "mode": "menu",
           "tools": [
             {
+              "name": "Cryptomator",
+              "description": "Encryption for your cloud made easy.",
+              "icon": "cryptomator.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/privacy/cryptomator.sh"
+            },
+            {
               "name": "Express VPN",
               "description": "Express VPN",
               "icon": "expressvpn.svg",
@@ -1128,6 +1163,13 @@
               "icon": "protonvpn.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/utils/privacy/proton-vpn.sh"
+            },
+            {
+              "name": "SiriKali",
+              "description": "A GUI to Gocryptfs, Securefs and Cryfs.",
+              "icon": "sirikali.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/privacy/sirikali.sh"
             },
             {
               "name": "Surfshark VPN",
@@ -1191,13 +1233,6 @@
           "icon": "vscodium.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/codium.sh"
-        },
-        {
-          "name": "Docker",
-          "description": "O provedor de serviços de container de código aberto e ferramentas básicas para ele, como docker-compose. Inclui um container com o Portainer CE para gerenciar o Docker a partir de uma interface da web.",
-          "icon": "docker.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/devs/docker-ostree.sh"
         },
         {
           "name": "Docker",
@@ -1284,6 +1319,20 @@
           "scriptPath": "p3/scripts/devs/nvm.sh"
         },
         {
+          "name": "Oh My Zsh",
+          "description": "Um framework para gerenciar sua configuração do zsh.",
+          "icon": "zsh.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/ohmyz.sh"
+        },
+        {
+          "name": "pNPm",
+          "description": "Gerenciador de pacotes rápido e eficiente em espaço em disco.",
+          "icon": "pnpm.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/pnpm.sh"
+        },
+        {
           "name": "Postman",
           "description": "Uma poderosa ferramenta de teste de APIs.",
           "icon": "postman.svg",
@@ -1296,6 +1345,13 @@
           "icon": "python.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/pyenv.sh"
+        },
+        {
+          "name": "Starship",
+          "description": "O prompt minimalista, ultra-rápido e infinitamente personalizável para qualquer shell.",
+          "icon": "starship.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/starship.sh"
         },
         {
           "name": "Sublime Text",
@@ -1486,6 +1542,13 @@
           "scriptPath": "p3/scripts/extra/cnfh.sh"
         },
         {
+          "name": "Codecs com Aceleração de Hardware",
+          "description": "Os codecs e bibliotecas necessários para reprodução de vídeo com aceleração de hardware para H264/265 no Fedora através de VA-API e VDPAU.",
+          "icon": "codec.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/codecfix-hw.sh"
+        },
+        {
           "name": "Codecs de Streaming",
           "description": "Instalar codecs ausentes para streaming de mídia.",
           "icon": "codec.svg",
@@ -1535,15 +1598,8 @@
           "scriptPath": "p3/scripts/extra/iwd.sh"
         },
         {
-          "name": "Subsistema Linux para Windows",
-          "description": "Instala o Windows no Linux por um container do Docker (ou Podman para distros Fedora atômicas). Compatível com WinApps. NÃO possui aceleração de GPU.",
-          "icon": "lsw.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/extra/lsw-ostree.sh"
-        },
-        {
-          "name": "Subsistema Linux para Windows",
-          "description": "Instala o Windows no Linux por um container do Docker (ou Podman para distros Fedora atômicas). Compatível com WinApps. NÃO possui aceleração de GPU.",
+          "name": "LSW-WinBoat",
+          "description": "Instala o Windows no Linux por um container do Docker. NÃO possui aceleração de GPU.",
           "icon": "lsw.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/lsw.sh"
@@ -1999,6 +2055,13 @@
           "scriptPath": "p3/scripts/repos/flathub.sh"
         },
         {
+          "name": "Nix Packages",
+          "description": "Adiciona suporte para pacotes Nix e o repositório NixPKGs no seu sistema.",
+          "icon": "nix.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/nix.sh"
+        },
+        {
           "name": "Pip",
           "description": "Gerenciador de pacotes Python. Tipicamente útil para desenvolvedores Python.",
           "icon": "pip.svg",
@@ -2159,6 +2222,13 @@
           "scriptPath": "p3/scripts/utils/mctl.sh"
         },
         {
+          "name": "Nerd Fonts",
+          "description": "Agregador, coleção e patcher de fontes icônicas.",
+          "icon": "nerdfonts.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/nerdfonts.sh"
+        },
+        {
           "name": "OBS Studio",
           "description": "Um popular software de streaming e gravação de código aberto.",
           "icon": "obs.svg",
@@ -2246,6 +2316,13 @@
           "mode": "menu",
           "tools": [
             {
+              "name": "Cryptomator",
+              "description": "Criptografia para sua nuvem facilitada.",
+              "icon": "cryptomator.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/privacy/cryptomator.sh"
+            },
+            {
               "name": "Express VPN",
               "description": "Express VPN",
               "icon": "expressvpn.svg",
@@ -2293,6 +2370,13 @@
               "icon": "protonvpn.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/utils/privacy/proton-vpn.sh"
+            },
+            {
+              "name": "SiriKali",
+              "description": "Uma interface gráfica para Gocryptfs, Securefs e Cryfs.",
+              "icon": "sirikali.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/privacy/sirikali.sh"
             },
             {
               "name": "Surfshark VPN",
@@ -2356,13 +2440,6 @@
           "icon": "vscodium.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/codium.sh"
-        },
-        {
-          "name": "Docker",
-          "description": "El proveedor de servicios de contenedores de código abierto y herramientas básicas para él, como docker-compose. Incluye un contenedor con Portainer CE para gestionar Docker desde una UI web.",
-          "icon": "docker.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/devs/docker-ostree.sh"
         },
         {
           "name": "Docker",
@@ -2449,6 +2526,20 @@
           "scriptPath": "p3/scripts/devs/nvm.sh"
         },
         {
+          "name": "Oh My Zsh",
+          "description": "Un framework para gestionar tu configuración de zsh.",
+          "icon": "zsh.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/ohmyz.sh"
+        },
+        {
+          "name": "pNPm",
+          "description": "Gestor de paquets rápido y eficiente en espacio en disco.",
+          "icon": "pnpm.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/pnpm.sh"
+        },
+        {
           "name": "Postman",
           "description": "Una herramienta poderosa de testing de APIs.",
           "icon": "postman.svg",
@@ -2461,6 +2552,13 @@
           "icon": "python.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/pyenv.sh"
+        },
+        {
+          "name": "Starship",
+          "description": "El prompt minimal, ultrarrápido e infinitamente personalizable para cualquier shell.",
+          "icon": "starship.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/starship.sh"
         },
         {
           "name": "Sublime Text",
@@ -2651,6 +2749,13 @@
           "scriptPath": "p3/scripts/extra/cnfh.sh"
         },
         {
+          "name": "Codecs Acelerados por Hardware",
+          "description": "Los codecs y bibliotecas necesarios para la reproducción de video acelerada por hardware para H264/265 en Fedora a través de VA-API y VDPAU.",
+          "icon": "codec.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/codecfix-hw.sh"
+        },
+        {
           "name": "Códecs de Streaming",
           "description": "Instalar códecs faltantes para medios de streaming.",
           "icon": "codec.svg",
@@ -2700,15 +2805,8 @@
           "scriptPath": "p3/scripts/extra/iwd.sh"
         },
         {
-          "name": "Subsistema de Linux para Windows",
-          "description": "Instala Windows en Linux a través de un contenedor Docker (o Podman para distribuciones Atomic Fedora). Compatible con WinApps. NO tiene aceleración de GPU.",
-          "icon": "lsw.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/extra/lsw-ostree.sh"
-        },
-        {
-          "name": "Subsistema de Linux para Windows",
-          "description": "Instala Windows en Linux a través de un contenedor Docker (o Podman para distribuciones Atomic Fedora). Compatible con WinApps. NO tiene aceleración de GPU.",
+          "name": "LSW-WinBoat",
+          "description": "Instala Windows en Linux a través de un contenedor Docker. NO tiene aceleración de GPU.",
           "icon": "lsw.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/lsw.sh"
@@ -3164,6 +3262,13 @@
           "scriptPath": "p3/scripts/repos/flathub.sh"
         },
         {
+          "name": "Nix Packages",
+          "description": "Agrega soporte para paquets Nix y el repositorio NixPKGs en su sistema.",
+          "icon": "nix.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/nix.sh"
+        },
+        {
           "name": "Pip",
           "description": "Gestor de paquetes de Python. Típicamente útil para desarrolladores de Python.",
           "icon": "pip.svg",
@@ -3324,6 +3429,13 @@
           "scriptPath": "p3/scripts/utils/mctl.sh"
         },
         {
+          "name": "Nerd Fonts",
+          "description": "Agregador, colección y parcheador de fuentes icónicas.",
+          "icon": "nerdfonts.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/nerdfonts.sh"
+        },
+        {
           "name": "OBS Studio",
           "description": "Un popular software de streaming y grabación de código abierto.",
           "icon": "obs.svg",
@@ -3411,6 +3523,13 @@
           "mode": "menu",
           "tools": [
             {
+              "name": "Cryptomator",
+              "description": "Cifrado para tu nube hecho fácil.",
+              "icon": "cryptomator.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/privacy/cryptomator.sh"
+            },
+            {
               "name": "Express VPN",
               "description": "Express VPN",
               "icon": "expressvpn.svg",
@@ -3458,6 +3577,13 @@
               "icon": "protonvpn.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/utils/privacy/proton-vpn.sh"
+            },
+            {
+              "name": "SiriKali",
+              "description": "Una GUI para Gocryptfs, Securefs y Cryfs.",
+              "icon": "sirikali.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/privacy/sirikali.sh"
             },
             {
               "name": "Surfshark VPN",
@@ -3521,13 +3647,6 @@
           "icon": "vscodium.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/codium.sh"
-        },
-        {
-          "name": "Docker",
-          "description": "Le fournisseur de services de conteneurs open source et outils de base pour cela, comme docker-compose. Inclut un conteneur avec Portainer CE pour gérer Docker depuis une interface web.",
-          "icon": "docker.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/devs/docker-ostree.sh"
         },
         {
           "name": "Docker",
@@ -3614,6 +3733,20 @@
           "scriptPath": "p3/scripts/devs/nvm.sh"
         },
         {
+          "name": "Oh My Zsh",
+          "description": "Un framework pour gérer votre configuration zsh.",
+          "icon": "zsh.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/ohmyz.sh"
+        },
+        {
+          "name": "pNPm",
+          "description": "Gestionnaire de paquets rapide et efficace en espace disque.",
+          "icon": "pnpm.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/pnpm.sh"
+        },
+        {
           "name": "Postman",
           "description": "Un puissant outil de test d'API.",
           "icon": "postman.svg",
@@ -3626,6 +3759,13 @@
           "icon": "python.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/pyenv.sh"
+        },
+        {
+          "name": "Starship",
+          "description": "L'invite minimal, ultra-rapide et infiniment personnalisable pour n'importe quel shell.",
+          "icon": "starship.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/starship.sh"
         },
         {
           "name": "Sublime Text",
@@ -3816,6 +3956,13 @@
           "scriptPath": "p3/scripts/extra/cnfh.sh"
         },
         {
+          "name": "Codecs Accélérés par Matériel",
+          "description": "Les codecs et bibliothèques nécessaires pour la lecture vidéo accélérée par matériel pour H264/265 sur Fedora via VA-API et VDPAU.",
+          "icon": "codec.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/codecfix-hw.sh"
+        },
+        {
           "name": "Codecs de streaming",
           "description": "Installer les codecs manquants pour les médias de streaming.",
           "icon": "codec.svg",
@@ -3865,15 +4012,8 @@
           "scriptPath": "p3/scripts/extra/iwd.sh"
         },
         {
-          "name": "Sous-système Linux pour Windows",
-          "description": "Installe Windows sur Linux via un conteneur Docker (ou Podman pour les distros Atomic Fedora). Compatible avec WinApps. N'a PAS d'accélération GPU.",
-          "icon": "lsw.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/extra/lsw-ostree.sh"
-        },
-        {
-          "name": "Sous-système Linux pour Windows",
-          "description": "Installe Windows sur Linux via un conteneur Docker (ou Podman pour les distros Atomic Fedora). Compatible avec WinApps. N'a PAS d'accélération GPU.",
+          "name": "LSW-WinBoat",
+          "description": "Installe Windows sur Linux via un conteneur Docker. N'a PAS d'accélération GPU.",
           "icon": "lsw.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/lsw.sh"
@@ -4329,6 +4469,13 @@
           "scriptPath": "p3/scripts/repos/flathub.sh"
         },
         {
+          "name": "Nix Packages",
+          "description": "Ajoute la prise en charge des paquets Nix et du dépôt NixPKGs sur votre système.",
+          "icon": "nix.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/nix.sh"
+        },
+        {
           "name": "Pip",
           "description": "Gestionnaire de paquets Python. Généralement utile pour les développeurs Python.",
           "icon": "pip.svg",
@@ -4489,6 +4636,13 @@
           "scriptPath": "p3/scripts/utils/mctl.sh"
         },
         {
+          "name": "Nerd Fonts",
+          "description": "Agrégateur, collection et patcher de polices iconiques.",
+          "icon": "nerdfonts.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/nerdfonts.sh"
+        },
+        {
           "name": "OBS Studio",
           "description": "Un logiciel de streaming et d'enregistrement open source populaire.",
           "icon": "obs.svg",
@@ -4576,6 +4730,13 @@
           "mode": "menu",
           "tools": [
             {
+              "name": "Cryptomator",
+              "description": "Chiffrement pour votre cloud rendu facile.",
+              "icon": "cryptomator.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/privacy/cryptomator.sh"
+            },
+            {
               "name": "Express VPN",
               "description": "Express VPN",
               "icon": "expressvpn.svg",
@@ -4623,6 +4784,13 @@
               "icon": "protonvpn.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/utils/privacy/proton-vpn.sh"
+            },
+            {
+              "name": "SiriKali",
+              "description": "Une interface graphique pour Gocryptfs, Securefs et Cryfs.",
+              "icon": "sirikali.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/privacy/sirikali.sh"
             },
             {
               "name": "Surfshark VPN",
@@ -4686,13 +4854,6 @@
           "icon": "vscodium.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/codium.sh"
-        },
-        {
-          "name": "Docker",
-          "description": "Der quelloffene Container-Service-Provider und grundlegende Tools dafür, wie docker-compose. Beinhaltet einen Container mit Portainer CE zur Verwaltung von Docker über eine Web-UI.",
-          "icon": "docker.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/devs/docker-ostree.sh"
         },
         {
           "name": "Docker",
@@ -4779,6 +4940,20 @@
           "scriptPath": "p3/scripts/devs/nvm.sh"
         },
         {
+          "name": "Oh My Zsh",
+          "description": "Ein Framework zur Verwaltung Ihrer zsh-Konfiguration.",
+          "icon": "zsh.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/ohmyz.sh"
+        },
+        {
+          "name": "pNPm",
+          "description": "Schneller, platzsparender Paketmanager.",
+          "icon": "pnpm.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/pnpm.sh"
+        },
+        {
           "name": "Postman",
           "description": "Ein mächtiges API-Testing-Tool.",
           "icon": "postman.svg",
@@ -4791,6 +4966,13 @@
           "icon": "python.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/pyenv.sh"
+        },
+        {
+          "name": "Starship",
+          "description": "Die minimale, blitzschnelle und unendlich anpassbare Eingabeaufforderung für jede Shell.",
+          "icon": "starship.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/starship.sh"
         },
         {
           "name": "Sublime Text",
@@ -4981,6 +5163,13 @@
           "scriptPath": "p3/scripts/extra/cnfh.sh"
         },
         {
+          "name": "Hardware-beschleunigte Codecs",
+          "description": "Die notwendigen Codecs und Bibliotheken für hardwarebeschleunigte Videowiedergabe für H264/265 auf Fedora über VA-API und VDPAU.",
+          "icon": "codec.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/codecfix-hw.sh"
+        },
+        {
           "name": "Streaming-Codecs",
           "description": "Fehlende Codecs für Streaming-Medien installieren.",
           "icon": "codec.svg",
@@ -5030,15 +5219,8 @@
           "scriptPath": "p3/scripts/extra/iwd.sh"
         },
         {
-          "name": "Linux Subsystem für Windows",
-          "description": "Installiert Windows auf Linux durch einen Docker-Container (oder Podman für Atomic Fedora-Distros). Kompatibel mit WinApps. Hat KEINE GPU-Beschleunigung.",
-          "icon": "lsw.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/extra/lsw-ostree.sh"
-        },
-        {
-          "name": "Linux Subsystem für Windows",
-          "description": "Installiert Windows auf Linux durch einen Docker-Container (oder Podman für Atomic Fedora-Distros). Kompatibel mit WinApps. Hat KEINE GPU-Beschleunigung.",
+          "name": "LSW-WinBoat",
+          "description": "Installiert Windows auf Linux durch einen Docker-Container. Hat KEINE GPU-Beschleunigung.",
           "icon": "lsw.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/lsw.sh"
@@ -5494,6 +5676,13 @@
           "scriptPath": "p3/scripts/repos/flathub.sh"
         },
         {
+          "name": "Nix Packages",
+          "description": "Fügt Unterstützung für Nix-Pakete und das NixPKGs-Repository auf Ihrem System hinzu.",
+          "icon": "nix.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/nix.sh"
+        },
+        {
           "name": "Pip",
           "description": "Python-Paketmanager. Typischerweise nützlich für Python-Entwickler.",
           "icon": "pip.svg",
@@ -5654,6 +5843,13 @@
           "scriptPath": "p3/scripts/utils/mctl.sh"
         },
         {
+          "name": "Nerd Fonts",
+          "description": "Ikonschrift Aggregator, Sammlung und Patcher.",
+          "icon": "nerdfonts.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/nerdfonts.sh"
+        },
+        {
           "name": "OBS Studio",
           "description": "Eine beliebte quelloffene Streaming- und Aufnahme-Software.",
           "icon": "obs.svg",
@@ -5741,6 +5937,13 @@
           "mode": "menu",
           "tools": [
             {
+              "name": "Cryptomator",
+              "description": "Verschlüsselung für Ihre Cloud ganz einfach.",
+              "icon": "cryptomator.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/privacy/cryptomator.sh"
+            },
+            {
               "name": "Express VPN",
               "description": "Express VPN",
               "icon": "expressvpn.svg",
@@ -5788,6 +5991,13 @@
               "icon": "protonvpn.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/utils/privacy/proton-vpn.sh"
+            },
+            {
+              "name": "SiriKali",
+              "description": "Eine GUI für Gocryptfs, Securefs und Cryfs.",
+              "icon": "sirikali.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/privacy/sirikali.sh"
             },
             {
               "name": "Surfshark VPN",
@@ -5851,13 +6061,6 @@
           "icon": "vscodium.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/codium.sh"
-        },
-        {
-          "name": "Docker",
-          "description": "开源容器服务提供商和基本工具，如docker-compose。包括带有Portainer CE的容器，用于从Web UI管理Docker。",
-          "icon": "docker.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/devs/docker-ostree.sh"
         },
         {
           "name": "Docker",
@@ -5944,6 +6147,20 @@
           "scriptPath": "p3/scripts/devs/nvm.sh"
         },
         {
+          "name": "Oh My Zsh",
+          "description": "用于管理您的 zsh 配置的框架。",
+          "icon": "zsh.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/ohmyz.sh"
+        },
+        {
+          "name": "pNPm",
+          "description": "快速、磁盘空间高效的包管理器。",
+          "icon": "pnpm.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/pnpm.sh"
+        },
+        {
           "name": "Postman",
           "description": "强大的API测试工具。",
           "icon": "postman.svg",
@@ -5956,6 +6173,13 @@
           "icon": "python.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/pyenv.sh"
+        },
+        {
+          "name": "Starship",
+          "description": "适用于任何 shell 的最小、闪电般快速且无限可定制的提示符。",
+          "icon": "starship.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/starship.sh"
         },
         {
           "name": "Sublime Text",
@@ -6146,6 +6370,13 @@
           "scriptPath": "p3/scripts/extra/cnfh.sh"
         },
         {
+          "name": "硬件加速编解码器",
+          "description": "通过VA-API和VDPAU在Fedora上为H264/265提供硬件加速视频播放所需的编解码器和库。",
+          "icon": "codec.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/codecfix-hw.sh"
+        },
+        {
           "name": "流媒体编解码器",
           "description": "安装流媒体的缺失编解码器。",
           "icon": "codec.svg",
@@ -6195,15 +6426,8 @@
           "scriptPath": "p3/scripts/extra/iwd.sh"
         },
         {
-          "name": "Linux Windows子系统",
-          "description": "通过Docker容器在Linux上安装Windows（对于Atomic Fedora发行版使用Podman）。与WinApps兼容。没有GPU加速。",
-          "icon": "lsw.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/extra/lsw-ostree.sh"
-        },
-        {
-          "name": "Linux Windows子系统",
-          "description": "通过Docker容器在Linux上安装Windows（对于Atomic Fedora发行版使用Podman）。与WinApps兼容。没有GPU加速。",
+          "name": "LSW-WinBoat",
+          "description": "通过Docker容器在Linux上安装Windows。没有GPU加速。",
           "icon": "lsw.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/lsw.sh"
@@ -6659,6 +6883,13 @@
           "scriptPath": "p3/scripts/repos/flathub.sh"
         },
         {
+          "name": "Nix Packages",
+          "description": "在您的系统上添加对 Nix 包和 NixPKGs 仓库的支持。",
+          "icon": "nix.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/nix.sh"
+        },
+        {
           "name": "Pip",
           "description": "Python包管理器。通常对Python开发者有用。",
           "icon": "pip.svg",
@@ -6819,6 +7050,13 @@
           "scriptPath": "p3/scripts/utils/mctl.sh"
         },
         {
+          "name": "Nerd Fonts",
+          "description": "图标字体聚合器、集合和补丁程序。",
+          "icon": "nerdfonts.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/nerdfonts.sh"
+        },
+        {
           "name": "OBS Studio",
           "description": "流行的开源流媒体和录制软件。",
           "icon": "obs.svg",
@@ -6906,6 +7144,13 @@
           "mode": "menu",
           "tools": [
             {
+              "name": "Cryptomator",
+              "description": "让您的云加密变得简单。",
+              "icon": "cryptomator.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/privacy/cryptomator.sh"
+            },
+            {
               "name": "Express VPN",
               "description": "Express VPN",
               "icon": "expressvpn.svg",
@@ -6953,6 +7198,13 @@
               "icon": "protonvpn.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/utils/privacy/proton-vpn.sh"
+            },
+            {
+              "name": "SiriKali",
+              "description": "Gocryptfs、Securefs 和 Cryfs 的 GUI。",
+              "icon": "sirikali.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/privacy/sirikali.sh"
             },
             {
               "name": "Surfshark VPN",
@@ -7016,13 +7268,6 @@
           "icon": "vscodium.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/codium.sh"
-        },
-        {
-          "name": "Docker",
-          "description": "オープンソースコンテナサービスプロバイダーとdocker-composeなどの基本ツール。Web UIからDockerを管理するためのPortainer CEとのコンテナを含みます。",
-          "icon": "docker.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/devs/docker-ostree.sh"
         },
         {
           "name": "Docker",
@@ -7109,6 +7354,20 @@
           "scriptPath": "p3/scripts/devs/nvm.sh"
         },
         {
+          "name": "Oh My Zsh",
+          "description": "zsh設定を管理するためのフレームワーク。",
+          "icon": "zsh.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/ohmyz.sh"
+        },
+        {
+          "name": "pNPm",
+          "description": "高速でディスク容量を効率的に使用するパッケージマネージャー。",
+          "icon": "pnpm.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/pnpm.sh"
+        },
+        {
           "name": "Postman",
           "description": "強力なAPIテストツール。",
           "icon": "postman.svg",
@@ -7121,6 +7380,13 @@
           "icon": "python.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/pyenv.sh"
+        },
+        {
+          "name": "Starship",
+          "description": "あらゆるシェル向けの最小限、超高速、無限にカスタマイズ可能なプロンプト。",
+          "icon": "starship.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/starship.sh"
         },
         {
           "name": "Sublime Text",
@@ -7311,6 +7577,13 @@
           "scriptPath": "p3/scripts/extra/cnfh.sh"
         },
         {
+          "name": "ハードウェアアクセラレーションコーデック",
+          "description": "Fedora上でVA-APIとVDPAUを通じてH264/265のハードウェアアクセラレーションビデオ再生に必要なコーデックとライブラリ。",
+          "icon": "codec.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/codecfix-hw.sh"
+        },
+        {
           "name": "ストリーミングコーデック",
           "description": "ストリーミングメディアの不足しているコーデックをインストール。",
           "icon": "codec.svg",
@@ -7360,15 +7633,8 @@
           "scriptPath": "p3/scripts/extra/iwd.sh"
         },
         {
-          "name": "Linux Subsystem for Windows",
-          "description": "Dockerコンテナ（Atomic FedoraディストリビューションではPodman）を通してLinux上にWindowsをインストール。WinAppsと互換。GPU加速はありません。",
-          "icon": "lsw.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/extra/lsw-ostree.sh"
-        },
-        {
-          "name": "Linux Subsystem for Windows",
-          "description": "Dockerコンテナ（Atomic FedoraディストリビューションではPodman）を通してLinux上にWindowsをインストール。WinAppsと互換。GPU加速はありません。",
+          "name": "LSW-WinBoat",
+          "description": "Dockerコンテナを通してLinux上にWindowsをインストール。GPU加速はありません。",
           "icon": "lsw.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/lsw.sh"
@@ -7824,6 +8090,13 @@
           "scriptPath": "p3/scripts/repos/flathub.sh"
         },
         {
+          "name": "Nix Packages",
+          "description": "システムに Nix パッケージと NixPKGs リポジトリのサポートを追加します。",
+          "icon": "nix.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/nix.sh"
+        },
+        {
           "name": "Pip",
           "description": "Pythonパッケージマネージャー。通常Python開発者に有用。",
           "icon": "pip.svg",
@@ -7984,6 +8257,13 @@
           "scriptPath": "p3/scripts/utils/mctl.sh"
         },
         {
+          "name": "Nerd Fonts",
+          "description": "アイコニックフォントのアグリゲーター、コレクション、およびパッチャー。",
+          "icon": "nerdfonts.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/nerdfonts.sh"
+        },
+        {
           "name": "OBS Studio",
           "description": "人気のオープンソースストリーミング・録画ソフトウェア。",
           "icon": "obs.svg",
@@ -8071,6 +8351,13 @@
           "mode": "menu",
           "tools": [
             {
+              "name": "Cryptomator",
+              "description": "クラウドの暗号化を簡単に。",
+              "icon": "cryptomator.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/privacy/cryptomator.sh"
+            },
+            {
               "name": "Express VPN",
               "description": "Express VPN",
               "icon": "expressvpn.svg",
@@ -8118,6 +8405,13 @@
               "icon": "protonvpn.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/utils/privacy/proton-vpn.sh"
+            },
+            {
+              "name": "SiriKali",
+              "description": "Gocryptfs、Securefs、CryfsのGUI。",
+              "icon": "sirikali.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/privacy/sirikali.sh"
             },
             {
               "name": "Surfshark VPN",
@@ -8181,13 +8475,6 @@
           "icon": "vscodium.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/codium.sh"
-        },
-        {
-          "name": "Docker",
-          "description": "Поставщик контейнерных услуг с открытым исходным кодом и основные инструменты для него, такие как docker-compose. Включает контейнер с Portainer CE для управления Docker из веб-интерфейса.",
-          "icon": "docker.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/devs/docker-ostree.sh"
         },
         {
           "name": "Docker",
@@ -8274,6 +8561,20 @@
           "scriptPath": "p3/scripts/devs/nvm.sh"
         },
         {
+          "name": "Oh My Zsh",
+          "description": "Фреймворк для управления вашей конфигурацией zsh.",
+          "icon": "zsh.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/ohmyz.sh"
+        },
+        {
+          "name": "pNPm",
+          "description": "Быстрый менеджер пакетов, эффективный по использованию дискового пространства.",
+          "icon": "pnpm.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/pnpm.sh"
+        },
+        {
           "name": "Postman",
           "description": "Мощный инструмент для тестирования API.",
           "icon": "postman.svg",
@@ -8286,6 +8587,13 @@
           "icon": "python.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/pyenv.sh"
+        },
+        {
+          "name": "Starship",
+          "description": "Минимальный, молниеносный и бесконечно настраиваемый промпт для любой оболочки.",
+          "icon": "starship.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/starship.sh"
         },
         {
           "name": "Sublime Text",
@@ -8476,6 +8784,13 @@
           "scriptPath": "p3/scripts/extra/cnfh.sh"
         },
         {
+          "name": "Аппаратно-ускоренные кодеки",
+          "description": "Необходимые кодеки и библиотеки для аппаратно-ускоренного воспроизведения видео для H264/265 на Fedora через VA-API и VDPAU.",
+          "icon": "codec.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/codecfix-hw.sh"
+        },
+        {
           "name": "Кодеки для потокового вещания",
           "description": "Установка недостающих кодеков для потоковых медиа.",
           "icon": "codec.svg",
@@ -8525,15 +8840,8 @@
           "scriptPath": "p3/scripts/extra/iwd.sh"
         },
         {
-          "name": "Подсистема Linux для Windows",
-          "description": "Устанавливает Windows в Linux через Docker-контейнер (или Podman для Atomic Fedora дистрибутивов). Совместимо с WinApps. НЕ имеет ускорения GPU.",
-          "icon": "lsw.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/extra/lsw-ostree.sh"
-        },
-        {
-          "name": "Подсистема Linux для Windows",
-          "description": "Устанавливает Windows в Linux через Docker-контейнер (или Podman для Atomic Fedora дистрибутивов). Совместимо с WinApps. НЕ имеет ускорения GPU.",
+          "name": "LSW-WinBoat",
+          "description": "Устанавливает Windows в Linux через Docker-контейнер. НЕ имеет ускорения GPU.",
           "icon": "lsw.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/lsw.sh"
@@ -8989,6 +9297,13 @@
           "scriptPath": "p3/scripts/repos/flathub.sh"
         },
         {
+          "name": "Nix Packages",
+          "description": "Добавляет поддержку пакетов Nix и репозитория NixPKGs в вашей системе.",
+          "icon": "nix.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/nix.sh"
+        },
+        {
           "name": "Pip",
           "description": "Менеджер пакетов Python. Обычно полезен для разработчиков Python.",
           "icon": "pip.svg",
@@ -9149,6 +9464,13 @@
           "scriptPath": "p3/scripts/utils/mctl.sh"
         },
         {
+          "name": "Nerd Fonts",
+          "description": "Агрегатор, коллекция и патчер иконических шрифтов.",
+          "icon": "nerdfonts.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/nerdfonts.sh"
+        },
+        {
           "name": "OBS Studio",
           "description": "Популярное программное обеспечение для стриминга и записи с открытым исходным кодом.",
           "icon": "obs.svg",
@@ -9236,6 +9558,13 @@
           "mode": "menu",
           "tools": [
             {
+              "name": "Cryptomator",
+              "description": "Шифрование для вашего облака стало простым.",
+              "icon": "cryptomator.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/privacy/cryptomator.sh"
+            },
+            {
               "name": "Express VPN",
               "description": "Express VPN",
               "icon": "expressvpn.svg",
@@ -9283,6 +9612,13 @@
               "icon": "protonvpn.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/utils/privacy/proton-vpn.sh"
+            },
+            {
+              "name": "SiriKali",
+              "description": "Графический интерфейс для Gocryptfs, Securefs и Cryfs.",
+              "icon": "sirikali.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/privacy/sirikali.sh"
             },
             {
               "name": "Surfshark VPN",
