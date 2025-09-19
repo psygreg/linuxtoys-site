@@ -127,7 +127,7 @@
     "psycachy": "Psycachy Kernel",
     "psycachy_desc": "A modified kernel with patches ported from CachyOS alongside fixes for better compatibility and stability on Debian/Ubuntu.",
     "lsw": "Linux Subsystem for Windows",
-    "lsw_desc": "Installs Windows on Linux through a Docker container. Does NOT have GPU acceleration.",
+    "lsw_desc": "Allows installing Windows on Linux in a Docker container with WinBoat, doing all the hard parts of the setup for you. Does NOT have GPU acceleration.",
     "btassist_desc": "A Btrfs snapshots and subvolumes manager. Uses snapper as its back-end.",
     "touchegg_desc": "A multi-touch gesture recognizer allowing you to configure gestures for various actions on Xorg desktops.",
     "thumb_desc": "Installs ffmpegthumbnailer to generate thumbnails for video files in file managers.",
@@ -244,7 +244,10 @@
     "nerdfonts_desc": "Iconic font aggregator, collection, and patcher.",
     "starship_desc": "The minimal, blazing-fast, and infinitely customizable prompt for any shell.",
     "pnpm_desc": "Fast, disk space efficient package manager.",
-    "nixpkgs_desc": "Adds support for Nix packages and the NixPKGs repository on your system."
+    "nixpkgs_desc": "Adds support for Nix packages and the NixPKGs repository on your system.",
+    "lazyman_desc": "Manage multiple NeoVim configurations.",
+    "ides": "IDEs",
+    "ides_desc": "Integrated Development Environments for various programming languages and frameworks."
   },
   "pt": {
     "subtitle": "Uma coleção amigável de ferramentas para Linux.",
@@ -375,7 +378,7 @@
     "psycachy": "Psycachy Kernel",
     "psycachy_desc": "Um kernel modificado com patches portados do CachyOS juntamente com correções para melhor compatibilidade e estabilidade no Debian/Ubuntu.",
     "lsw": "Subsistema Linux para Windows",
-    "lsw_desc": "Instala o Windows no Linux por um container do Docker. NÃO possui aceleração de GPU.",
+    "lsw_desc": "Permite instalar o Windows no Linux em um contêiner Docker com o WinBoat, fazendo todas as partes difíceis da configuração por você. NÃO TEM aceleração GPU.",
     "btassist_desc": "Um gerenciador de snapshots e subvolumes Btrfs. Usa o snapper como back-end.",
     "touchegg_desc": "Um reconhecedor de gestos multi-toque que permite configurar gestos para várias ações em desktops Xorg.",
     "thumb_desc": "Instala o ffmpegthumbnailer para gerar miniaturas de arquivos de vídeo em gerenciadores de arquivos.",
@@ -491,7 +494,10 @@
     "nerdfonts_desc": "Agregador, coleção e patcher de fontes icônicas.",
     "starship_desc": "O prompt minimalista, ultra-rápido e infinitamente personalizável para qualquer shell.",
     "pnpm_desc": "Gerenciador de pacotes rápido e eficiente em espaço em disco.",
-    "nixpkgs_desc": "Adiciona suporte para pacotes Nix e o repositório NixPKGs no seu sistema."
+    "nixpkgs_desc": "Adiciona suporte para pacotes Nix e o repositório NixPKGs no seu sistema.",
+    "lazyman_desc": "Gerenciar várias configurações do NeoVim.",
+    "ides": "IDEs",
+    "ides_desc": "Ambientes de Desenvolvimento Integrados para várias linguagens de programação e frameworks."
   },
   "es": {
     "subtitle": "Una colección amigable de herramientas para Linux.",
@@ -622,7 +628,7 @@
     "psycachy": "Kernel Psycachy",
     "psycachy_desc": "Un kernel modificado con parches portados de CachyOS junto con arreglos para mejor compatibilidad y estabilidad en Debian/Ubuntu.",
     "lsw": "Subsistema de Linux para Windows",
-    "lsw_desc": "Instala Windows en Linux a través de un contenedor Docker. NO tiene aceleración de GPU.",
+    "lsw_desc": "Permite instalar Windows en Linux en un contenedor Docker con WinBoat, haciendo todas las partes difíciles de la configuración por ti. NO TIENE aceleración GPU.",
     "btassist_desc": "Un gestor de instantáneas y subvolúmenes de Btrfs. Usa snapper como su backend.",
     "touchegg_desc": "Un reconocedor de gestos multitáctil que permite configurar gestos para varias acciones en escritorios Xorg.",
     "thumb_desc": "Instala ffmpegthumbnailer para generar miniaturas de archivos de video en gestores de archivos.",
@@ -738,7 +744,10 @@
     "nerdfonts_desc": "Agregador, colección y parcheador de fuentes icónicas.",
     "starship_desc": "El prompt minimal, ultrarrápido e infinitamente personalizable para cualquier shell.",
     "pnpm_desc": "Gestor de paquets rápido y eficiente en espacio en disco.",
-    "nixpkgs_desc": "Agrega soporte para paquets Nix y el repositorio NixPKGs en su sistema."
+    "nixpkgs_desc": "Agrega soporte para paquets Nix y el repositorio NixPKGs en su sistema.",
+    "lazyman_desc": "Gestionar múltiples configuraciones de NeoVim.",
+    "ides": "IDEs",
+    "ides_desc": "Entornos de Desarrollo Integrados para varios lenguajes de programación y frameworks."
   },
   "fr": {
     "subtitle": "Une collection d'outils pour Linux de manière conviviale.",
@@ -869,7 +878,7 @@
     "psycachy": "Noyau Psycachy",
     "psycachy_desc": "Un noyau modifié avec des patches portés de CachyOS ainsi que des corrections pour une meilleure compatibilité et stabilité sur Debian/Ubuntu.",
     "lsw": "Sous-système Linux pour Windows",
-    "lsw_desc": "Installe Windows sur Linux via un conteneur Docker. N'a PAS d'accélération GPU.",
+    "lsw_desc": "Permet d'installer Windows sur Linux dans un conteneur Docker avec WinBoat, en gérant toutes les parties difficiles de la configuration pour vous. N'A PAS d'accélération GPU.",
     "btassist_desc": "Un gestionnaire de snapshots et sous-volumes Btrfs. Utilise snapper comme backend.",
     "touchegg_desc": "Un reconnaisseur de gestes multi-tactiles vous permettant de configurer des gestes pour diverses actions sur les bureaux Xorg.",
     "thumb_desc": "Installe ffmpegthumbnailer pour générer des vignettes pour les fichiers vidéo dans les gestionnaires de fichiers.",
@@ -985,7 +994,10 @@
     "nerdfonts_desc": "Agrégateur, collection et patcher de polices iconiques.",
     "starship_desc": "L'invite minimal, ultra-rapide et infiniment personnalisable pour n'importe quel shell.",
     "pnpm_desc": "Gestionnaire de paquets rapide et efficace en espace disque.",
-    "nixpkgs_desc": "Ajoute la prise en charge des paquets Nix et du dépôt NixPKGs sur votre système."
+    "nixpkgs_desc": "Ajoute la prise en charge des paquets Nix et du dépôt NixPKGs sur votre système.",
+    "lazyman_desc": "Gérer plusieurs configurations NeoVim.",
+    "ides": "IDEs",
+    "ides_desc": "Environnements de Développement Intégrés pour divers langages de programmation et frameworks."
   },
   "de": {
     "subtitle": "Eine freundliche Sammlung von Tools für Linux.",
@@ -1116,7 +1128,7 @@
     "psycachy": "Psycachy Kernel",
     "psycachy_desc": "Ein modifizierter Kernel mit von CachyOS portierten Patches zusammen mit Fixes für bessere Kompatibilität und Stabilität auf Debian/Ubuntu.",
     "lsw": "Linux Subsystem für Windows",
-    "lsw_desc": "Installiert Windows auf Linux durch einen Docker-Container. Hat KEINE GPU-Beschleunigung.",
+    "lsw_desc": "Ermöglicht die Installation von Windows auf Linux in einem Docker-Container mit WinBoat, das alle schwierigen Teile der Einrichtung für Sie übernimmt. HAT KEINE GPU-Beschleunigung.",
     "btassist_desc": "Ein Btrfs-Snapshots und Subvolume-Manager. Verwendet snapper als Backend.",
     "touchegg_desc": "Ein Multi-Touch-Gestenerkenner, mit dem Sie Gesten für verschiedene Aktionen auf Xorg-Desktops konfigurieren können.",
     "thumb_desc": "Installiert ffmpegthumbnailer zur Generierung von Thumbnails für Videodateien in Dateimanagern.",
@@ -1232,7 +1244,10 @@
     "nerdfonts_desc": "Ikonschrift Aggregator, Sammlung und Patcher.",
     "starship_desc": "Die minimale, blitzschnelle und unendlich anpassbare Eingabeaufforderung für jede Shell.",
     "pnpm_desc": "Schneller, platzsparender Paketmanager.",
-    "nixpkgs_desc": "Fügt Unterstützung für Nix-Pakete und das NixPKGs-Repository auf Ihrem System hinzu."
+    "nixpkgs_desc": "Fügt Unterstützung für Nix-Pakete und das NixPKGs-Repository auf Ihrem System hinzu.",
+    "lazyman_desc": "Verwalten Sie mehrere NeoVim-Konfigurationen.",
+    "ides": "IDEs",
+    "ides_desc": "Integrierte Entwicklungsumgebungen für verschiedene Programmiersprachen und Frameworks."
   },
   "zh": {
     "subtitle": "适用于Linux的用户友好工具集合。",
@@ -1365,7 +1380,7 @@
     "psycachy": "Psycachy内核",
     "psycachy_desc": "从CachyOS移植补丁的修改内核，以及为Debian/Ubuntu更好兼容性和稳定性的修复。",
     "lsw": "Linux Windows子系统",
-    "lsw_desc": "通过Docker容器在Linux上安装Windows。没有GPU加速。",
+    "lsw_desc": "允许使用 WinBoat 在 Docker 容器中在 Linux 上安装 Windows，处理设置的所有困难部分。不具有 GPU 加速。",
     "btassist_desc": "Btrfs快照和子卷管理器。使用snapper作为后端。",
     "touchegg_desc": "多点触控手势识别器，允许您为Xorg桌面上的各种操作配置手势。",
     "thumb_desc": "安装ffmpegthumbnailer为文件管理器中的视频文件生成缩略图。",
@@ -1481,7 +1496,10 @@
     "nerdfonts_desc": "图标字体聚合器、集合和补丁程序。",
     "starship_desc": "适用于任何 shell 的最小、闪电般快速且无限可定制的提示符。",
     "pnpm_desc": "快速、磁盘空间高效的包管理器。",
-    "nixpkgs_desc": "在您的系统上添加对 Nix 包和 NixPKGs 仓库的支持。"
+    "nixpkgs_desc": "在您的系统上添加对 Nix 包和 NixPKGs 仓库的支持。",
+    "lazyman_desc": "管理多个 NeoVim 配置。",
+    "ides": "IDE",
+    "ides_desc": "用于各种编程语言和框架的集成开发环境。"
   },
   "ja": {
     "subtitle": "Linuxのためのユーザーフレンドリーなツール集。",
@@ -1612,7 +1630,7 @@
     "psycachy": "Psyacahyカーネル",
     "psycachy_desc": "CachyOSから移植されたパッチと、Debian/Ubuntuでのより良い互換性と安定性のための修正を持つ変更されたカーネル。",
     "lsw": "Linux Subsystem for Windows",
-    "lsw_desc": "Dockerコンテナを通してLinux上にWindowsをインストール。GPU加速はありません。",
+    "lsw_desc": "WinBoat を使用して Docker コンテナ内で Linux に Windows をインストールできます。セットアップの難しい部分をすべて処理します。GPU アクセラレーションはありません。",
     "btassist_desc": "Btrfsスナップショットとサブボリュームマネージャー。snapperをバックエンドとして使用。",
     "touchegg_desc": "Xorgデスクトップでさまざまなアクションのジェスチャーを設定できるマルチタッチジェスチャー認識器。",
     "thumb_desc": "ファイルマネージャーでビデオファイルのサムネイルを生成するffmpegthumbnailerをインストール。",
@@ -1728,7 +1746,10 @@
     "nerdfonts_desc": "アイコニックフォントのアグリゲーター、コレクション、およびパッチャー。",
     "starship_desc": "あらゆるシェル向けの最小限、超高速、無限にカスタマイズ可能なプロンプト。",
     "pnpm_desc": "高速でディスク容量を効率的に使用するパッケージマネージャー。",
-    "nixpkgs_desc": "システムに Nix パッケージと NixPKGs リポジトリのサポートを追加します。"
+    "nixpkgs_desc": "システムに Nix パッケージと NixPKGs リポジトリのサポートを追加します。",
+    "lazyman_desc": "複数のNeoVim設定を管理します。",
+    "ides": "IDE",
+    "ides_desc": "さまざまなプログラミング言語とフレームワークのための統合開発環境。"
   },
   "ru": {
     "subtitle": "Коллекция инструментов для Linux в удобном формате.",
@@ -1859,7 +1880,7 @@
     "psycachy": "Ядро Psycachy",
     "psycachy_desc": "Модифицированное ядро с патчами, портированными из CachyOS, а также исправлениями для лучшей совместимости и стабильности в Debian/Ubuntu.",
     "lsw": "Подсистема Linux для Windows",
-    "lsw_desc": "Устанавливает Windows в Linux через Docker-контейнер. НЕ имеет ускорения GPU.",
+    "lsw_desc": "Позволяет установить Windows на Linux в контейнере Docker с WinBoat, который выполняет все сложные части настройки за вас. НЕ ИМЕЕТ ускорения GPU.",
     "btassist_desc": "Менеджер снимков и подтомов Btrfs. Использует snapper в качестве бэкенда.",
     "touchegg_desc": "Распознаватель мультитач-жестов, позволяющий настраивать жесты для различных действий на рабочих столах Xorg.",
     "thumb_desc": "Устанавливает ffmpegthumbnailer для генерации миниатюр видеофайлов в файловых менеджерах.",
@@ -1975,6 +1996,9 @@
     "nerdfonts_desc": "Агрегатор, коллекция и патчер иконических шрифтов.",
     "starship_desc": "Минимальный, молниеносный и бесконечно настраиваемый промпт для любой оболочки.",
     "pnpm_desc": "Быстрый менеджер пакетов, эффективный по использованию дискового пространства.",
-    "nixpkgs_desc": "Добавляет поддержку пакетов Nix и репозитория NixPKGs в вашей системе."
+    "nixpkgs_desc": "Добавляет поддержку пакетов Nix и репозитория NixPKGs в вашей системе.",
+    "lazyman_desc": "Управление несколькими конфигурациями NeoVim.",
+    "ides": "IDE",
+    "ides_desc": "Интегрированные среды разработки для различных языков программирования и фреймворков."
   }
 }

@@ -2,31 +2,10 @@
   "en": {
     "devs": {
       "name": "devs",
-      "icon": "devs.svg",
+      "icon": "ide.png",
       "description": "Tools and resources for software developers.",
       "mode": "menu",
       "tools": [
-        {
-          "name": "Android Studio",
-          "description": "IDE and toolkit for Android development.",
-          "icon": "android-studio.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/devs/androidstd.sh"
-        },
-        {
-          "name": "Visual Studio Code",
-          "description": "A powerful and feature-rich code editor by Microsoft.",
-          "icon": "code.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/devs/code.sh"
-        },
-        {
-          "name": "VSCodium",
-          "description": "An open-source version of Visual Studio Code, based on VSCode-OSS.",
-          "icon": "vscodium.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/devs/codium.sh"
-        },
         {
           "name": "Docker",
           "description": "The open source container service provider and basic tools for it, like docker-compose. Includes a container with Portainer CE for managing Docker from a web UI.",
@@ -77,13 +56,6 @@
           "scriptPath": "p3/scripts/devs/java.sh"
         },
         {
-          "name": "JetBrains Toolbox",
-          "description": "A tool for managing JetBrains IDE installations.",
-          "icon": "jetbrains-toolbox.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/devs/jetbrains-toolbox.sh"
-        },
-        {
           "name": "Maven",
           "description": "A build automation tool used primarily for Java projects. Not needed if using Mise.",
           "icon": "maven.svg",
@@ -96,13 +68,6 @@
           "icon": "mise.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/mise.sh"
-        },
-        {
-          "name": "NeoVim",
-          "description": "A powerful CLI-based text editor for developers.",
-          "icon": "neovim.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/devs/neovim.sh"
         },
         {
           "name": "Node Version Manager",
@@ -147,13 +112,6 @@
           "scriptPath": "p3/scripts/devs/starship.sh"
         },
         {
-          "name": "Sublime Text",
-          "description": "A sophisticated text editor for code, markup and prose.",
-          "icon": "sublime.png",
-          "version": "4",
-          "scriptPath": "p3/scripts/devs/sublimetext.sh"
-        },
-        {
           "name": "Tailscale",
           "description": "A zero-config VPN that connects your devices securely over the internet.",
           "icon": "tailscale.png",
@@ -168,7 +126,66 @@
           "scriptPath": "p3/scripts/devs/unity.sh"
         }
       ],
-      "subcategories": {},
+      "subcategories": {
+        "ides": {
+          "name": "ides",
+          "icon": "code.svg",
+          "description": "Integrated Development Environments for various programming languages and frameworks.",
+          "mode": "menu",
+          "tools": [
+            {
+              "name": "Android Studio",
+              "description": "IDE and toolkit for Android development.",
+              "icon": "android-studio.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/androidstd.sh"
+            },
+            {
+              "name": "Visual Studio Code",
+              "description": "A powerful and feature-rich code editor by Microsoft.",
+              "icon": "code.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/code.sh"
+            },
+            {
+              "name": "VSCodium",
+              "description": "An open-source version of Visual Studio Code, based on VSCode-OSS.",
+              "icon": "vscodium.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/codium.sh"
+            },
+            {
+              "name": "JetBrains Toolbox",
+              "description": "A tool for managing JetBrains IDE installations.",
+              "icon": "jetbrains-toolbox.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/jetbrains-toolbox.sh"
+            },
+            {
+              "name": "Lazyman",
+              "description": "Manage multiple NeoVim configurations.",
+              "icon": "lazyman.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/lazyman.sh"
+            },
+            {
+              "name": "NeoVim",
+              "description": "A powerful CLI-based text editor for developers.",
+              "icon": "neovim.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/neovim.sh"
+            },
+            {
+              "name": "Sublime Text",
+              "description": "A sophisticated text editor for code, markup and prose.",
+              "icon": "sublime.png",
+              "version": "4",
+              "scriptPath": "p3/scripts/devs/ides/sublimetext.sh"
+            }
+          ],
+          "displayName": "IDEs"
+        }
+      },
       "displayName": "Developers"
     },
     "drivers": {
@@ -392,7 +409,7 @@
         },
         {
           "name": "LSW-WinBoat",
-          "description": "Installs Windows on Linux through a Docker container. Does NOT have GPU acceleration.",
+          "description": "Allows installing Windows on Linux in a Docker container with WinBoat, doing all the hard parts of the setup for you. Does NOT have GPU acceleration.",
           "icon": "lsw.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/lsw.sh"
@@ -1209,31 +1226,10 @@
   "pt": {
     "devs": {
       "name": "devs",
-      "icon": "devs.svg",
+      "icon": "ide.png",
       "description": "Ferramentas e recursos para desenvolvedores de software.",
       "mode": "menu",
       "tools": [
-        {
-          "name": "Android Studio",
-          "description": "IDE e kit de ferramentas para desenvolvimento Android.",
-          "icon": "android-studio.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/devs/androidstd.sh"
-        },
-        {
-          "name": "Visual Studio Code",
-          "description": "Um editor de código poderoso e repleto de recursos da Microsoft.",
-          "icon": "code.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/devs/code.sh"
-        },
-        {
-          "name": "VSCodium",
-          "description": "Uma versão de código aberto do Visual Studio Code, baseada no VSCode-OSS.",
-          "icon": "vscodium.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/devs/codium.sh"
-        },
         {
           "name": "Docker",
           "description": "O provedor de serviços de container de código aberto e ferramentas básicas para ele, como docker-compose. Inclui um container com o Portainer CE para gerenciar o Docker a partir de uma interface da web.",
@@ -1284,13 +1280,6 @@
           "scriptPath": "p3/scripts/devs/java.sh"
         },
         {
-          "name": "JetBrains Toolbox",
-          "description": "Uma ferramenta para gerenciar instalações de IDEs da JetBrains.",
-          "icon": "jetbrains-toolbox.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/devs/jetbrains-toolbox.sh"
-        },
-        {
           "name": "Maven",
           "description": "Uma ferramenta de automação de builds usada principalmente para projetos Java. Não é necessária se utilizar Mise.",
           "icon": "maven.svg",
@@ -1303,13 +1292,6 @@
           "icon": "mise.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/mise.sh"
-        },
-        {
-          "name": "NeoVim",
-          "description": "Um editor de texto em CLI moderno e extensível, baseado no Vim.",
-          "icon": "neovim.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/devs/neovim.sh"
         },
         {
           "name": "Node Version Manager",
@@ -1354,13 +1336,6 @@
           "scriptPath": "p3/scripts/devs/starship.sh"
         },
         {
-          "name": "Sublime Text",
-          "description": "Um editor de texto sofisticado para código, marcação e prosa.",
-          "icon": "sublime.png",
-          "version": "4",
-          "scriptPath": "p3/scripts/devs/sublimetext.sh"
-        },
-        {
           "name": "Tailscale",
           "description": "Uma VPN sem configuração que conecta seus dispositivos com segurança pela Internet.",
           "icon": "tailscale.png",
@@ -1375,7 +1350,66 @@
           "scriptPath": "p3/scripts/devs/unity.sh"
         }
       ],
-      "subcategories": {},
+      "subcategories": {
+        "ides": {
+          "name": "ides",
+          "icon": "code.svg",
+          "description": "Ambientes de Desenvolvimento Integrados para várias linguagens de programação e frameworks.",
+          "mode": "menu",
+          "tools": [
+            {
+              "name": "Android Studio",
+              "description": "IDE e kit de ferramentas para desenvolvimento Android.",
+              "icon": "android-studio.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/androidstd.sh"
+            },
+            {
+              "name": "Visual Studio Code",
+              "description": "Um editor de código poderoso e repleto de recursos da Microsoft.",
+              "icon": "code.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/code.sh"
+            },
+            {
+              "name": "VSCodium",
+              "description": "Uma versão de código aberto do Visual Studio Code, baseada no VSCode-OSS.",
+              "icon": "vscodium.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/codium.sh"
+            },
+            {
+              "name": "JetBrains Toolbox",
+              "description": "Uma ferramenta para gerenciar instalações de IDEs da JetBrains.",
+              "icon": "jetbrains-toolbox.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/jetbrains-toolbox.sh"
+            },
+            {
+              "name": "Lazyman",
+              "description": "Gerenciar várias configurações do NeoVim.",
+              "icon": "lazyman.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/lazyman.sh"
+            },
+            {
+              "name": "NeoVim",
+              "description": "Um editor de texto em CLI moderno e extensível, baseado no Vim.",
+              "icon": "neovim.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/neovim.sh"
+            },
+            {
+              "name": "Sublime Text",
+              "description": "Um editor de texto sofisticado para código, marcação e prosa.",
+              "icon": "sublime.png",
+              "version": "4",
+              "scriptPath": "p3/scripts/devs/ides/sublimetext.sh"
+            }
+          ],
+          "displayName": "IDEs"
+        }
+      },
       "displayName": "Desenvolvedores"
     },
     "drivers": {
@@ -1599,7 +1633,7 @@
         },
         {
           "name": "LSW-WinBoat",
-          "description": "Instala o Windows no Linux por um container do Docker. NÃO possui aceleração de GPU.",
+          "description": "Permite instalar o Windows no Linux em um contêiner Docker com o WinBoat, fazendo todas as partes difíceis da configuração por você. NÃO TEM aceleração GPU.",
           "icon": "lsw.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/lsw.sh"
@@ -2416,31 +2450,10 @@
   "es": {
     "devs": {
       "name": "devs",
-      "icon": "devs.svg",
+      "icon": "ide.png",
       "description": "Herramientas y recursos para desarrolladores de software.",
       "mode": "menu",
       "tools": [
-        {
-          "name": "Android Studio",
-          "description": "IDE y toolkit para desarrollo Android.",
-          "icon": "android-studio.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/devs/androidstd.sh"
-        },
-        {
-          "name": "Visual Studio Code",
-          "description": "Un editor de código poderoso y rico en características por Microsoft.",
-          "icon": "code.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/devs/code.sh"
-        },
-        {
-          "name": "VSCodium",
-          "description": "Una versión de código abierto de Visual Studio Code, basada en VSCode-OSS.",
-          "icon": "vscodium.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/devs/codium.sh"
-        },
         {
           "name": "Docker",
           "description": "El proveedor de servicios de contenedores de código abierto y herramientas básicas para él, como docker-compose. Incluye un contenedor con Portainer CE para gestionar Docker desde una UI web.",
@@ -2491,13 +2504,6 @@
           "scriptPath": "p3/scripts/devs/java.sh"
         },
         {
-          "name": "JetBrains Toolbox",
-          "description": "Una herramienta para gestionar instalaciones de IDE JetBrains.",
-          "icon": "jetbrains-toolbox.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/devs/jetbrains-toolbox.sh"
-        },
-        {
           "name": "Maven",
           "description": "Una herramienta de automatización de construcción usada principalmente para proyectos Java. No necesaria si usa Mise.",
           "icon": "maven.svg",
@@ -2510,13 +2516,6 @@
           "icon": "mise.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/mise.sh"
-        },
-        {
-          "name": "NeoVim",
-          "description": "Un editor de texto poderoso basado en CLI para desarrolladores.",
-          "icon": "neovim.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/devs/neovim.sh"
         },
         {
           "name": "Node Version Manager",
@@ -2561,13 +2560,6 @@
           "scriptPath": "p3/scripts/devs/starship.sh"
         },
         {
-          "name": "Sublime Text",
-          "description": "Un editor de texto sofisticado para código, markup y prosa.",
-          "icon": "sublime.png",
-          "version": "4",
-          "scriptPath": "p3/scripts/devs/sublimetext.sh"
-        },
-        {
           "name": "Tailscale",
           "description": "Una VPN de configuración cero que conecta sus dispositivos de forma segura a través de internet.",
           "icon": "tailscale.png",
@@ -2582,7 +2574,66 @@
           "scriptPath": "p3/scripts/devs/unity.sh"
         }
       ],
-      "subcategories": {},
+      "subcategories": {
+        "ides": {
+          "name": "ides",
+          "icon": "code.svg",
+          "description": "Entornos de Desarrollo Integrados para varios lenguajes de programación y frameworks.",
+          "mode": "menu",
+          "tools": [
+            {
+              "name": "Android Studio",
+              "description": "IDE y toolkit para desarrollo Android.",
+              "icon": "android-studio.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/androidstd.sh"
+            },
+            {
+              "name": "Visual Studio Code",
+              "description": "Un editor de código poderoso y rico en características por Microsoft.",
+              "icon": "code.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/code.sh"
+            },
+            {
+              "name": "VSCodium",
+              "description": "Una versión de código abierto de Visual Studio Code, basada en VSCode-OSS.",
+              "icon": "vscodium.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/codium.sh"
+            },
+            {
+              "name": "JetBrains Toolbox",
+              "description": "Una herramienta para gestionar instalaciones de IDE JetBrains.",
+              "icon": "jetbrains-toolbox.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/jetbrains-toolbox.sh"
+            },
+            {
+              "name": "Lazyman",
+              "description": "Gestionar múltiples configuraciones de NeoVim.",
+              "icon": "lazyman.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/lazyman.sh"
+            },
+            {
+              "name": "NeoVim",
+              "description": "Un editor de texto poderoso basado en CLI para desarrolladores.",
+              "icon": "neovim.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/neovim.sh"
+            },
+            {
+              "name": "Sublime Text",
+              "description": "Un editor de texto sofisticado para código, markup y prosa.",
+              "icon": "sublime.png",
+              "version": "4",
+              "scriptPath": "p3/scripts/devs/ides/sublimetext.sh"
+            }
+          ],
+          "displayName": "IDEs"
+        }
+      },
       "displayName": "Desarrolladores"
     },
     "drivers": {
@@ -2806,7 +2857,7 @@
         },
         {
           "name": "LSW-WinBoat",
-          "description": "Instala Windows en Linux a través de un contenedor Docker. NO tiene aceleración de GPU.",
+          "description": "Permite instalar Windows en Linux en un contenedor Docker con WinBoat, haciendo todas las partes difíciles de la configuración por ti. NO TIENE aceleración GPU.",
           "icon": "lsw.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/lsw.sh"
@@ -3623,31 +3674,10 @@
   "fr": {
     "devs": {
       "name": "devs",
-      "icon": "devs.svg",
+      "icon": "ide.png",
       "description": "Outils et ressources pour les développeurs logiciels.",
       "mode": "menu",
       "tools": [
-        {
-          "name": "Android Studio",
-          "description": "IDE et toolkit pour le développement Android.",
-          "icon": "android-studio.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/devs/androidstd.sh"
-        },
-        {
-          "name": "Visual Studio Code",
-          "description": "Un éditeur de code puissant et riche en fonctionnalités de Microsoft.",
-          "icon": "code.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/devs/code.sh"
-        },
-        {
-          "name": "VSCodium",
-          "description": "Une version open source de Visual Studio Code, basée sur VSCode-OSS.",
-          "icon": "vscodium.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/devs/codium.sh"
-        },
         {
           "name": "Docker",
           "description": "Le fournisseur de services de conteneurs open source et outils de base pour cela, comme docker-compose. Inclut un conteneur avec Portainer CE pour gérer Docker depuis une interface web.",
@@ -3698,13 +3728,6 @@
           "scriptPath": "p3/scripts/devs/java.sh"
         },
         {
-          "name": "JetBrains Toolbox",
-          "description": "Un outil pour gérer les installations d'IDE JetBrains.",
-          "icon": "jetbrains-toolbox.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/devs/jetbrains-toolbox.sh"
-        },
-        {
           "name": "Maven",
           "description": "Un outil d'automatisation de build utilisé principalement pour les projets Java. Non nécessaire si vous utilisez Mise.",
           "icon": "maven.svg",
@@ -3717,13 +3740,6 @@
           "icon": "mise.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/mise.sh"
-        },
-        {
-          "name": "NeoVim",
-          "description": "Un puissant éditeur de texte basé sur CLI pour les développeurs.",
-          "icon": "neovim.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/devs/neovim.sh"
         },
         {
           "name": "Node Version Manager",
@@ -3768,13 +3784,6 @@
           "scriptPath": "p3/scripts/devs/starship.sh"
         },
         {
-          "name": "Sublime Text",
-          "description": "Un éditeur de texte sophistiqué pour le code, le markup et la prose.",
-          "icon": "sublime.png",
-          "version": "4",
-          "scriptPath": "p3/scripts/devs/sublimetext.sh"
-        },
-        {
           "name": "Tailscale",
           "description": "Un VPN zéro-configuration qui connecte vos appareils en sécurité via internet.",
           "icon": "tailscale.png",
@@ -3789,7 +3798,66 @@
           "scriptPath": "p3/scripts/devs/unity.sh"
         }
       ],
-      "subcategories": {},
+      "subcategories": {
+        "ides": {
+          "name": "ides",
+          "icon": "code.svg",
+          "description": "Environnements de Développement Intégrés pour divers langages de programmation et frameworks.",
+          "mode": "menu",
+          "tools": [
+            {
+              "name": "Android Studio",
+              "description": "IDE et toolkit pour le développement Android.",
+              "icon": "android-studio.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/androidstd.sh"
+            },
+            {
+              "name": "Visual Studio Code",
+              "description": "Un éditeur de code puissant et riche en fonctionnalités de Microsoft.",
+              "icon": "code.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/code.sh"
+            },
+            {
+              "name": "VSCodium",
+              "description": "Une version open source de Visual Studio Code, basée sur VSCode-OSS.",
+              "icon": "vscodium.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/codium.sh"
+            },
+            {
+              "name": "JetBrains Toolbox",
+              "description": "Un outil pour gérer les installations d'IDE JetBrains.",
+              "icon": "jetbrains-toolbox.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/jetbrains-toolbox.sh"
+            },
+            {
+              "name": "Lazyman",
+              "description": "Gérer plusieurs configurations NeoVim.",
+              "icon": "lazyman.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/lazyman.sh"
+            },
+            {
+              "name": "NeoVim",
+              "description": "Un puissant éditeur de texte basé sur CLI pour les développeurs.",
+              "icon": "neovim.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/neovim.sh"
+            },
+            {
+              "name": "Sublime Text",
+              "description": "Un éditeur de texte sophistiqué pour le code, le markup et la prose.",
+              "icon": "sublime.png",
+              "version": "4",
+              "scriptPath": "p3/scripts/devs/ides/sublimetext.sh"
+            }
+          ],
+          "displayName": "IDEs"
+        }
+      },
       "displayName": "Développeurs"
     },
     "drivers": {
@@ -4013,7 +4081,7 @@
         },
         {
           "name": "LSW-WinBoat",
-          "description": "Installe Windows sur Linux via un conteneur Docker. N'a PAS d'accélération GPU.",
+          "description": "Permet d'installer Windows sur Linux dans un conteneur Docker avec WinBoat, en gérant toutes les parties difficiles de la configuration pour vous. N'A PAS d'accélération GPU.",
           "icon": "lsw.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/lsw.sh"
@@ -4830,31 +4898,10 @@
   "de": {
     "devs": {
       "name": "devs",
-      "icon": "devs.svg",
+      "icon": "ide.png",
       "description": "Werkzeuge und Ressourcen für Software-Entwickler.",
       "mode": "menu",
       "tools": [
-        {
-          "name": "Android Studio",
-          "description": "IDE und Toolkit für Android-Entwicklung.",
-          "icon": "android-studio.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/devs/androidstd.sh"
-        },
-        {
-          "name": "Visual Studio Code",
-          "description": "Ein mächtiger und funktionsreicher Code-Editor von Microsoft.",
-          "icon": "code.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/devs/code.sh"
-        },
-        {
-          "name": "VSCodium",
-          "description": "Eine quelloffene Version von Visual Studio Code, basierend auf VSCode-OSS.",
-          "icon": "vscodium.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/devs/codium.sh"
-        },
         {
           "name": "Docker",
           "description": "Der quelloffene Container-Service-Provider und grundlegende Tools dafür, wie docker-compose. Beinhaltet einen Container mit Portainer CE zur Verwaltung von Docker über eine Web-UI.",
@@ -4905,13 +4952,6 @@
           "scriptPath": "p3/scripts/devs/java.sh"
         },
         {
-          "name": "JetBrains Toolbox",
-          "description": "Ein Tool zur Verwaltung von JetBrains IDE-Installationen.",
-          "icon": "jetbrains-toolbox.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/devs/jetbrains-toolbox.sh"
-        },
-        {
           "name": "Maven",
           "description": "Ein Build-Automatisierungstool, das hauptsächlich für Java-Projekte verwendet wird. Nicht benötigt bei Verwendung von Mise.",
           "icon": "maven.svg",
@@ -4924,13 +4964,6 @@
           "icon": "mise.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/mise.sh"
-        },
-        {
-          "name": "NeoVim",
-          "description": "Ein mächtiger CLI-basierter Texteditor für Entwickler.",
-          "icon": "neovim.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/devs/neovim.sh"
         },
         {
           "name": "Node Version Manager",
@@ -4975,13 +5008,6 @@
           "scriptPath": "p3/scripts/devs/starship.sh"
         },
         {
-          "name": "Sublime Text",
-          "description": "Ein raffinierter Texteditor für Code, Markup und Prosa.",
-          "icon": "sublime.png",
-          "version": "4",
-          "scriptPath": "p3/scripts/devs/sublimetext.sh"
-        },
-        {
           "name": "Tailscale",
           "description": "Ein Zero-Config-VPN, das Ihre Geräte sicher über das Internet verbindet.",
           "icon": "tailscale.png",
@@ -4996,7 +5022,66 @@
           "scriptPath": "p3/scripts/devs/unity.sh"
         }
       ],
-      "subcategories": {},
+      "subcategories": {
+        "ides": {
+          "name": "ides",
+          "icon": "code.svg",
+          "description": "Integrierte Entwicklungsumgebungen für verschiedene Programmiersprachen und Frameworks.",
+          "mode": "menu",
+          "tools": [
+            {
+              "name": "Android Studio",
+              "description": "IDE und Toolkit für Android-Entwicklung.",
+              "icon": "android-studio.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/androidstd.sh"
+            },
+            {
+              "name": "Visual Studio Code",
+              "description": "Ein mächtiger und funktionsreicher Code-Editor von Microsoft.",
+              "icon": "code.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/code.sh"
+            },
+            {
+              "name": "VSCodium",
+              "description": "Eine quelloffene Version von Visual Studio Code, basierend auf VSCode-OSS.",
+              "icon": "vscodium.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/codium.sh"
+            },
+            {
+              "name": "JetBrains Toolbox",
+              "description": "Ein Tool zur Verwaltung von JetBrains IDE-Installationen.",
+              "icon": "jetbrains-toolbox.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/jetbrains-toolbox.sh"
+            },
+            {
+              "name": "Lazyman",
+              "description": "Verwalten Sie mehrere NeoVim-Konfigurationen.",
+              "icon": "lazyman.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/lazyman.sh"
+            },
+            {
+              "name": "NeoVim",
+              "description": "Ein mächtiger CLI-basierter Texteditor für Entwickler.",
+              "icon": "neovim.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/neovim.sh"
+            },
+            {
+              "name": "Sublime Text",
+              "description": "Ein raffinierter Texteditor für Code, Markup und Prosa.",
+              "icon": "sublime.png",
+              "version": "4",
+              "scriptPath": "p3/scripts/devs/ides/sublimetext.sh"
+            }
+          ],
+          "displayName": "IDEs"
+        }
+      },
       "displayName": "Entwickler"
     },
     "drivers": {
@@ -5220,7 +5305,7 @@
         },
         {
           "name": "LSW-WinBoat",
-          "description": "Installiert Windows auf Linux durch einen Docker-Container. Hat KEINE GPU-Beschleunigung.",
+          "description": "Ermöglicht die Installation von Windows auf Linux in einem Docker-Container mit WinBoat, das alle schwierigen Teile der Einrichtung für Sie übernimmt. HAT KEINE GPU-Beschleunigung.",
           "icon": "lsw.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/lsw.sh"
@@ -6037,31 +6122,10 @@
   "zh": {
     "devs": {
       "name": "devs",
-      "icon": "devs.svg",
+      "icon": "ide.png",
       "description": "软件开发者的工具和资源。",
       "mode": "menu",
       "tools": [
-        {
-          "name": "Android Studio",
-          "description": "Android开发的IDE和工具包。",
-          "icon": "android-studio.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/devs/androidstd.sh"
-        },
-        {
-          "name": "Visual Studio Code",
-          "description": "Microsoft的强大且功能丰富的代码编辑器。",
-          "icon": "code.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/devs/code.sh"
-        },
-        {
-          "name": "VSCodium",
-          "description": "Visual Studio Code的开源版本，基于VSCode-OSS。",
-          "icon": "vscodium.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/devs/codium.sh"
-        },
         {
           "name": "Docker",
           "description": "开源容器服务提供商和基本工具，如docker-compose。包括带有Portainer CE的容器，用于从Web UI管理Docker。",
@@ -6112,13 +6176,6 @@
           "scriptPath": "p3/scripts/devs/java.sh"
         },
         {
-          "name": "JetBrains Toolbox",
-          "description": "管理JetBrains IDE安装的工具。",
-          "icon": "jetbrains-toolbox.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/devs/jetbrains-toolbox.sh"
-        },
-        {
           "name": "Maven",
           "description": "主要用于Java项目的构建自动化工具。如果使用Mise则不需要。",
           "icon": "maven.svg",
@@ -6131,13 +6188,6 @@
           "icon": "mise.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/mise.sh"
-        },
-        {
-          "name": "NeoVim",
-          "description": "开发者的强大基于CLI的文本编辑器。",
-          "icon": "neovim.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/devs/neovim.sh"
         },
         {
           "name": "Node Version Manager",
@@ -6182,13 +6232,6 @@
           "scriptPath": "p3/scripts/devs/starship.sh"
         },
         {
-          "name": "Sublime Text",
-          "description": "用于代码、标记和散文的精密文本编辑器。",
-          "icon": "sublime.png",
-          "version": "4",
-          "scriptPath": "p3/scripts/devs/sublimetext.sh"
-        },
-        {
           "name": "Tailscale",
           "description": "通过互联网安全连接设备的零配置VPN。",
           "icon": "tailscale.png",
@@ -6203,7 +6246,66 @@
           "scriptPath": "p3/scripts/devs/unity.sh"
         }
       ],
-      "subcategories": {},
+      "subcategories": {
+        "ides": {
+          "name": "ides",
+          "icon": "code.svg",
+          "description": "用于各种编程语言和框架的集成开发环境。",
+          "mode": "menu",
+          "tools": [
+            {
+              "name": "Android Studio",
+              "description": "Android开发的IDE和工具包。",
+              "icon": "android-studio.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/androidstd.sh"
+            },
+            {
+              "name": "Visual Studio Code",
+              "description": "Microsoft的强大且功能丰富的代码编辑器。",
+              "icon": "code.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/code.sh"
+            },
+            {
+              "name": "VSCodium",
+              "description": "Visual Studio Code的开源版本，基于VSCode-OSS。",
+              "icon": "vscodium.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/codium.sh"
+            },
+            {
+              "name": "JetBrains Toolbox",
+              "description": "管理JetBrains IDE安装的工具。",
+              "icon": "jetbrains-toolbox.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/jetbrains-toolbox.sh"
+            },
+            {
+              "name": "Lazyman",
+              "description": "管理多个 NeoVim 配置。",
+              "icon": "lazyman.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/lazyman.sh"
+            },
+            {
+              "name": "NeoVim",
+              "description": "开发者的强大基于CLI的文本编辑器。",
+              "icon": "neovim.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/neovim.sh"
+            },
+            {
+              "name": "Sublime Text",
+              "description": "用于代码、标记和散文的精密文本编辑器。",
+              "icon": "sublime.png",
+              "version": "4",
+              "scriptPath": "p3/scripts/devs/ides/sublimetext.sh"
+            }
+          ],
+          "displayName": "IDE"
+        }
+      },
       "displayName": "开发者"
     },
     "drivers": {
@@ -6427,7 +6529,7 @@
         },
         {
           "name": "LSW-WinBoat",
-          "description": "通过Docker容器在Linux上安装Windows。没有GPU加速。",
+          "description": "允许使用 WinBoat 在 Docker 容器中在 Linux 上安装 Windows，处理设置的所有困难部分。不具有 GPU 加速。",
           "icon": "lsw.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/lsw.sh"
@@ -7244,31 +7346,10 @@
   "ja": {
     "devs": {
       "name": "devs",
-      "icon": "devs.svg",
+      "icon": "ide.png",
       "description": "ソフトウェア開発者のためのツールとリソース。",
       "mode": "menu",
       "tools": [
-        {
-          "name": "Android Studio",
-          "description": "Android開発用IDEとツールキット。",
-          "icon": "android-studio.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/devs/androidstd.sh"
-        },
-        {
-          "name": "Visual Studio Code",
-          "description": "Microsoftの強力で機能豊富なコードエディター。",
-          "icon": "code.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/devs/code.sh"
-        },
-        {
-          "name": "VSCodium",
-          "description": "VSCode-OSSベースのVisual Studio Codeのオープンソース版。",
-          "icon": "vscodium.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/devs/codium.sh"
-        },
         {
           "name": "Docker",
           "description": "オープンソースコンテナサービスプロバイダーとdocker-composeなどの基本ツール。Web UIからDockerを管理するためのPortainer CEとのコンテナを含みます。",
@@ -7319,13 +7400,6 @@
           "scriptPath": "p3/scripts/devs/java.sh"
         },
         {
-          "name": "JetBrains Toolbox",
-          "description": "JetBrains IDEインストールを管理するツール。",
-          "icon": "jetbrains-toolbox.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/devs/jetbrains-toolbox.sh"
-        },
-        {
           "name": "Maven",
           "description": "主にJavaプロジェクト用のビルド自動化ツール。Miseを使用する場合は不要。",
           "icon": "maven.svg",
@@ -7338,13 +7412,6 @@
           "icon": "mise.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/mise.sh"
-        },
-        {
-          "name": "NeoVim",
-          "description": "開発者向けの強力なCLIベーステキストエディター。",
-          "icon": "neovim.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/devs/neovim.sh"
         },
         {
           "name": "Node Version Manager",
@@ -7389,13 +7456,6 @@
           "scriptPath": "p3/scripts/devs/starship.sh"
         },
         {
-          "name": "Sublime Text",
-          "description": "コード、マークアップ、散文のための洗練されたテキストエディター。",
-          "icon": "sublime.png",
-          "version": "4",
-          "scriptPath": "p3/scripts/devs/sublimetext.sh"
-        },
-        {
           "name": "Tailscale",
           "description": "インターネット上でデバイスを安全に接続するゼロ設定VPN。",
           "icon": "tailscale.png",
@@ -7410,7 +7470,66 @@
           "scriptPath": "p3/scripts/devs/unity.sh"
         }
       ],
-      "subcategories": {},
+      "subcategories": {
+        "ides": {
+          "name": "ides",
+          "icon": "code.svg",
+          "description": "さまざまなプログラミング言語とフレームワークのための統合開発環境。",
+          "mode": "menu",
+          "tools": [
+            {
+              "name": "Android Studio",
+              "description": "Android開発用IDEとツールキット。",
+              "icon": "android-studio.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/androidstd.sh"
+            },
+            {
+              "name": "Visual Studio Code",
+              "description": "Microsoftの強力で機能豊富なコードエディター。",
+              "icon": "code.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/code.sh"
+            },
+            {
+              "name": "VSCodium",
+              "description": "VSCode-OSSベースのVisual Studio Codeのオープンソース版。",
+              "icon": "vscodium.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/codium.sh"
+            },
+            {
+              "name": "JetBrains Toolbox",
+              "description": "JetBrains IDEインストールを管理するツール。",
+              "icon": "jetbrains-toolbox.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/jetbrains-toolbox.sh"
+            },
+            {
+              "name": "Lazyman",
+              "description": "複数のNeoVim設定を管理します。",
+              "icon": "lazyman.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/lazyman.sh"
+            },
+            {
+              "name": "NeoVim",
+              "description": "開発者向けの強力なCLIベーステキストエディター。",
+              "icon": "neovim.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/neovim.sh"
+            },
+            {
+              "name": "Sublime Text",
+              "description": "コード、マークアップ、散文のための洗練されたテキストエディター。",
+              "icon": "sublime.png",
+              "version": "4",
+              "scriptPath": "p3/scripts/devs/ides/sublimetext.sh"
+            }
+          ],
+          "displayName": "IDE"
+        }
+      },
       "displayName": "開発者"
     },
     "drivers": {
@@ -7634,7 +7753,7 @@
         },
         {
           "name": "LSW-WinBoat",
-          "description": "Dockerコンテナを通してLinux上にWindowsをインストール。GPU加速はありません。",
+          "description": "WinBoat を使用して Docker コンテナ内で Linux に Windows をインストールできます。セットアップの難しい部分をすべて処理します。GPU アクセラレーションはありません。",
           "icon": "lsw.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/lsw.sh"
@@ -8451,31 +8570,10 @@
   "ru": {
     "devs": {
       "name": "devs",
-      "icon": "devs.svg",
+      "icon": "ide.png",
       "description": "Инструменты и ресурсы для разработчиков программного обеспечения.",
       "mode": "menu",
       "tools": [
-        {
-          "name": "Android Studio",
-          "description": "IDE и инструментарий для разработки Android.",
-          "icon": "android-studio.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/devs/androidstd.sh"
-        },
-        {
-          "name": "Visual Studio Code",
-          "description": "Мощный и многофункциональный редактор кода от Microsoft.",
-          "icon": "code.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/devs/code.sh"
-        },
-        {
-          "name": "VSCodium",
-          "description": "Версия Visual Studio Code с открытым исходным кодом, основанная на VSCode-OSS.",
-          "icon": "vscodium.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/devs/codium.sh"
-        },
         {
           "name": "Docker",
           "description": "Поставщик контейнерных услуг с открытым исходным кодом и основные инструменты для него, такие как docker-compose. Включает контейнер с Portainer CE для управления Docker из веб-интерфейса.",
@@ -8526,13 +8624,6 @@
           "scriptPath": "p3/scripts/devs/java.sh"
         },
         {
-          "name": "JetBrains Toolbox",
-          "description": "Инструмент для управления установками IDE JetBrains.",
-          "icon": "jetbrains-toolbox.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/devs/jetbrains-toolbox.sh"
-        },
-        {
           "name": "Maven",
           "description": "Инструмент автоматизации сборки, используемый в основном для проектов Java. Не нужен при использовании Mise.",
           "icon": "maven.svg",
@@ -8545,13 +8636,6 @@
           "icon": "mise.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/mise.sh"
-        },
-        {
-          "name": "NeoVim",
-          "description": "Мощный текстовый редактор на основе CLI для разработчиков.",
-          "icon": "neovim.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/devs/neovim.sh"
         },
         {
           "name": "Node Version Manager",
@@ -8596,13 +8680,6 @@
           "scriptPath": "p3/scripts/devs/starship.sh"
         },
         {
-          "name": "Sublime Text",
-          "description": "Сложный текстовый редактор для кода, разметки и прозы.",
-          "icon": "sublime.png",
-          "version": "4",
-          "scriptPath": "p3/scripts/devs/sublimetext.sh"
-        },
-        {
           "name": "Tailscale",
           "description": "VPN без настройки, который безопасно соединяет ваши устройства через интернет.",
           "icon": "tailscale.png",
@@ -8617,7 +8694,66 @@
           "scriptPath": "p3/scripts/devs/unity.sh"
         }
       ],
-      "subcategories": {},
+      "subcategories": {
+        "ides": {
+          "name": "ides",
+          "icon": "code.svg",
+          "description": "Интегрированные среды разработки для различных языков программирования и фреймворков.",
+          "mode": "menu",
+          "tools": [
+            {
+              "name": "Android Studio",
+              "description": "IDE и инструментарий для разработки Android.",
+              "icon": "android-studio.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/androidstd.sh"
+            },
+            {
+              "name": "Visual Studio Code",
+              "description": "Мощный и многофункциональный редактор кода от Microsoft.",
+              "icon": "code.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/code.sh"
+            },
+            {
+              "name": "VSCodium",
+              "description": "Версия Visual Studio Code с открытым исходным кодом, основанная на VSCode-OSS.",
+              "icon": "vscodium.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/codium.sh"
+            },
+            {
+              "name": "JetBrains Toolbox",
+              "description": "Инструмент для управления установками IDE JetBrains.",
+              "icon": "jetbrains-toolbox.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/jetbrains-toolbox.sh"
+            },
+            {
+              "name": "Lazyman",
+              "description": "Управление несколькими конфигурациями NeoVim.",
+              "icon": "lazyman.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/lazyman.sh"
+            },
+            {
+              "name": "NeoVim",
+              "description": "Мощный текстовый редактор на основе CLI для разработчиков.",
+              "icon": "neovim.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/neovim.sh"
+            },
+            {
+              "name": "Sublime Text",
+              "description": "Сложный текстовый редактор для кода, разметки и прозы.",
+              "icon": "sublime.png",
+              "version": "4",
+              "scriptPath": "p3/scripts/devs/ides/sublimetext.sh"
+            }
+          ],
+          "displayName": "IDE"
+        }
+      },
       "displayName": "Разработчики"
     },
     "drivers": {
@@ -8841,7 +8977,7 @@
         },
         {
           "name": "LSW-WinBoat",
-          "description": "Устанавливает Windows в Linux через Docker-контейнер. НЕ имеет ускорения GPU.",
+          "description": "Позволяет установить Windows на Linux в контейнере Docker с WinBoat, который выполняет все сложные части настройки за вас. НЕ ИМЕЕТ ускорения GPU.",
           "icon": "lsw.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/lsw.sh"
