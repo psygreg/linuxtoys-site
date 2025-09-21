@@ -133,18 +133,22 @@ Requieren un procedimiento de instalación personalizado o ajustes específicos 
 
 ### Docker
 
-Instala los repositorios oficiales de Docker (excepto para Arch Linux y OpenSUSE, que no los necesitarán) y todos los paquetes necesarios desde allí a través del gestor de paquetes de tu sistema, luego añade tu usuario al grupo de usuarios `docker` e instala Portainer CE, que funciona constantemente en segundo plano ya que su propósito es ser un tablero de Docker y usa recursos negligibles de la máquina. *La instalación de Portainer CE no ocurrirá en sistemas basados en `rpm-ostree` a menos que el usuario ejecute el instalador nuevamente debido a restricciones en las implementaciones de ostree.*
+Instala los repositorios oficiales de Docker (excepto para Arch Linux y OpenSUSE, que no los necesitarán) y todos los paquetes necesarios desde allí a través del gestor de paquetes de tu sistema, luego añade tu usuario al grupo de usuarios `docker`.
 
 **Paquetes Instalados o Actualizados**
-- Arch:`docker docker-compose curl`
+- Arch:`docker docker-compose`
 - Fedora: `docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin`
 - OpenSUSE:`docker docker-compose`
 - Debian/Ubuntu: `docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin`
 
-**Instalación de Portainer CE**
+### Portainer CE
+
+Instala un contenedor Portainer CE en Docker siguiendo las instrucciones de su documentación. Se ejecuta constantemente en segundo plano ya que su propósito es ser un panel de Docker desde una interfaz de usuario del navegador y utiliza recursos insignificantes de la máquina. Requiere Docker configurado correctamente con uso sin root por LinuxToys mismo o manualmente.
+
+**Procedimiento de Instalación:**
 ```
-sudo docker volume create portainer_data
-sudo docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:lts
+docker volume create portainer_data
+docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:lts
 ```
 
 ### Godot Engine

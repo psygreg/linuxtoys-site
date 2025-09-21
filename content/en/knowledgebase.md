@@ -133,7 +133,7 @@ Require a custom installation procedure or specific tweaks to get them to work o
 
 ### Docker
 
-Installs the official Docker repositories (except for Arch Linux and OpenSUSE, that won't need them) and all packages needed from there through your system's package manager, then adds your user to the `docker` usergroup and installs Portainer CE, which runs constantly in the background since its purpose is to be a Docker dashboard and it uses negligible resources from the machine. *The Portainer CE installation won't happen in `rpm-ostree`-based systems unless the user runs the installer again due to restrictions in ostree deployments.*
+Installs the official Docker repositories (except for Arch Linux and OpenSUSE, that won't need them) and all packages needed from there through your system's package manager, then adds your user to the `docker` usergroup.
 
 **Packages Installed or Updated**
 - Arch:`docker docker-compose`
@@ -141,10 +141,14 @@ Installs the official Docker repositories (except for Arch Linux and OpenSUSE, t
 - OpenSUSE:`docker docker-compose`
 - Debian/Ubuntu: `docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin`
 
-**Portainer CE installation**
+### Portainer CE
+
+Installs a Portainer CE container on Docker following instructions from its documentation. It runs constantly in the background since its purpose is to be a Docker dashboard from a browser UI and uses negligible resources from the machine. Requires Docker properly set up with rootless use by LinuxToys itself or manually.
+
+**Installation Procedure:**
 ```
-sudo docker volume create portainer_data
-sudo docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:lts
+docker volume create portainer_data
+docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:lts
 ```
 
 ### Godot Engine

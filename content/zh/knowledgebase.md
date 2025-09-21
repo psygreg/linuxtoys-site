@@ -133,7 +133,7 @@
 
 ### Docker
 
-安装官方Docker存储库（除了Arch Linux和OpenSUSE，它们不需要）和通过系统包管理器从那里安装所有必要的包，然后将用户添加到`docker`用户组，并安装Portainer CE，它持续在后台运行，因为其目的是成为Docker控制面板，它使用可忽略的机器资源。*Portainer CE 安装不会在基于 `rpm-ostree` 的系统上发生，除非用户由于 ostree 部署的限制而再次运行安装程序。*
+安装官方 Docker 仓库（Arch Linux 和 OpenSUSE 除外，它们不需要），然后通过您的系统包管理器从那里安装所有必需的包，然后将您的用户添加到 `docker` 用户组。
 
 **安装或更新的包**
 - Arch：`docker docker-compose`
@@ -141,10 +141,14 @@
 - OpenSUSE：`docker docker-compose`
 - Debian/Ubuntu：`docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin`
 
-**Portainer CE安装**
+### Portainer CE
+
+按照其文档中的说明在 Docker 上安装 Portainer CE 容器。它一直在后台运行，因为其目的是从浏览器用户界面成为 Docker 仪表板，并使用机器的微不足道的资源。需要 Docker 由 LinuxToys 本身或手动正确设置为 rootless 使用。
+
+**安装程序：**
 ```
-sudo docker volume create portainer_data
-sudo docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:lts
+docker volume create portainer_data
+docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:lts
 ```
 
 ### Godot Engine

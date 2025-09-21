@@ -133,7 +133,7 @@
 
 ### Docker
 
-Устанавливает официальные репозитории Docker (кроме Arch Linux и OpenSUSE, которым они не нужны) и все необходимые пакеты оттуда через пакетный менеджер вашей системы, затем добавляет вашего пользователя в группу пользователей `docker` и устанавливает Portainer CE, который постоянно работает в фоне, поскольку его цель - быть панелью управления Docker, и он использует пренебрежимо малые ресурсы машины. *Установка Portainer CE не произойдет в системах на базе `rpm-ostree`, если пользователь не запустит установщик снова из-за ограничений в развертываниях ostree.*
+Устанавливает официальные репозитории Docker (кроме Arch Linux и OpenSUSE, которым они не понадобятся) и все необходимые пакеты оттуда через менеджер пакетов вашей системы, затем добавляет вашего пользователя в группу пользователей `docker`.
 
 **Установленные или обновленные пакеты**
 - Arch:`docker docker-compose`
@@ -141,10 +141,14 @@
 - OpenSUSE:`docker docker-compose`
 - Debian/Ubuntu: `docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin`
 
-**Установка Portainer CE**
+### Portainer CE
+
+Устанавливает контейнер Portainer CE в Docker, следуя инструкциям его документации. Он работает постоянно в фоновом режиме, поскольку его цель - быть панелью управления Docker из интерфейса браузера и использовать незначительные ресурсы машины. Требует Docker, правильно настроенного с использованием без root самим LinuxToys или вручную.
+
+**Процедура установки:**
 ```
-sudo docker volume create portainer_data
-sudo docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:lts
+docker volume create portainer_data
+docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:lts
 ```
 
 ### Godot Engine

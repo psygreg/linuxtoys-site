@@ -133,7 +133,7 @@ LinuxToysによって実装される、最適に動作するためのカスタ�
 
 ### Docker
 
-公式のDockerリポジトリ（Arch LinuxとOpenSUSEは不要なので除く）とそこから必要なすべてのパッケージをシステムのパッケージマネージャーを通じてインストールし、ユーザーを`docker`ユーザーグループに追加し、Portainer CEをインストールします。これはDockerダッシュボードが目的であり、マシンからの無視できるリソースを使用するため、常にバックグラウンドで動作します。*Portainer CEのインストールは、`rpm-ostree`ベースのシステムではostreeデプロイメントの制限により、ユーザーがインストーラーを再度実行しない限り行われません。*
+公式のDockerリポジトリをインストールします（Arch LinuxとOpenSUSEは必要ないので除く）し、システムのパッケージマネージャーを通じてそこから必要なすべてのパッケージをインストールし、その後、ユーザーを `docker` ユーザーグループに追加します。
 
 **インストールまたは更新されたパッケージ**
 - Arch：`docker docker-compose`
@@ -141,10 +141,14 @@ LinuxToysによって実装される、最適に動作するためのカスタ�
 - OpenSUSE：`docker docker-compose`
 - Debian/Ubuntu：`docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin`
 
-**Portainer CEのインストール**
+### Portainer CE
+
+ドキュメントの指示に従ってDockerにPortainer CEコンテナをインストールします。ブラウザのユーザーインターフェースからDockerダッシュボードになることを目的としており、マシンのリソースをほとんど使用しないため、常にバックグラウンドで実行されます。LinuxToys自体または手動でrootless使用で正しく設定されたDockerが必要です。
+
+**インストール手順：**
 ```
-sudo docker volume create portainer_data
-sudo docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:lts
+docker volume create portainer_data
+docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:lts
 ```
 
 ### Godot Engine
