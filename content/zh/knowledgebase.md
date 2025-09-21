@@ -44,6 +44,7 @@
 - IVPN：来自其[官方存储库](https://repo.ivpn.net/stable)。
 - Mullvad VPN：来自其[官方存储库](https://repository.mullvad.net)或在Arch上来自[Chaotic-AUR](https://aur.chaotic.cx)。
 - NordVPN：来自其[官方存储库](https://downloads.nordcdn.com/apps)或在Arch上来自[Chaotic-AUR](https://aur.chaotic.cx)。
+- Input Remapper：来自[Chaotic-AUR](https://aur.chaotic.cx)。其他系统从标准存储库安装。
 
 ### 其他
 - Heroic Games Launcher：在Fedora/Arch上来自其[官方GitHub存储库](https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher)。其他系统从Flathub安装。
@@ -132,13 +133,13 @@
 
 ### Docker
 
-安装官方Docker存储库（除了Arch Linux和OpenSUSE，它们不需要）和通过系统包管理器从那里安装所有必要的包，然后将用户添加到`docker`用户组，并安装Portainer CE，它持续在后台运行，因为其目的是成为Docker控制面板，它使用可忽略的机器资源。
+安装官方Docker存储库（除了Arch Linux和OpenSUSE，它们不需要）和通过系统包管理器从那里安装所有必要的包，然后将用户添加到`docker`用户组，并安装Portainer CE，它持续在后台运行，因为其目的是成为Docker控制面板，它使用可忽略的机器资源。*Portainer CE 安装不会在基于 `rpm-ostree` 的系统上发生，除非用户由于 ostree 部署的限制而再次运行安装程序。
 
 **安装或更新的包**
-- Arch：`docker docker-compose curl dialog git iproute2 libnotify`
-- Fedora：`docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin curl dialog git iproute libnotify`
-- OpenSUSE：`docker docker-compose curl dialog git iproute2 libnotify-tools`
-- Debian/Ubuntu：`docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin curl dialog git iproute2 libnotify-bin`
+- Arch：`docker docker-compose`
+- Fedora：`docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin`
+- OpenSUSE：`docker docker-compose`
+- Debian/Ubuntu：`docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin`
 
 **Portainer CE安装**
 ```
@@ -504,6 +505,37 @@ firewall-cmd --reload
 AutomaticUpdatePolicy=stage
 ```
 - 启用 `rpm-ostree-automatic.timer` systemd 服务
+
+### Nerd Fonts
+
+从[NerdFonts](https://www.nerdfonts.com)获取可用字体的信息，并显示它们以供安装。选定的字体将安装在`$HOME/.local/share/fonts`，可以通过简单删除添加到该目录的文件来删除。
+
+### Lazyman
+
+安装*Lazyman*配置管理器用于*NeoVim*以及用户选择的配置。可以通过删除其文件夹来删除。
+
+**安装或更新的包**
+- 所有系统：`neovim git`
+
+**额外安装的文件**
+- 目录：`$HOME/.config/nvim-Lazyman`
+
+### Starship
+
+使用[Starship](https://starship.rs)的官方脚本进行安装或更新。可以通过删除添加到您的`.bashrc`、`.zshrc`或类似shell配置文件中的行来恢复，以启用它。
+
+**应用的用户自定义设置**
+- 添加到`~/.bashrc`
+```
+eval "$(starship init bash)"
+```
+
+### Oh My ZSH
+
+使用[Oh My ZSH](https://ohmyz.sh)的官方脚本进行安装或更新。可以通过删除从您的`.zshrc`加载它的行来恢复。
+
+**安装或更新的包**
+- 所有系统：`zsh`
 
 ## 存储库安装程序
 

@@ -44,6 +44,7 @@ Aus Standard-System-Repositories oder mit von LinuxToys hinzugefügten Repositor
 - IVPN: aus seinen [offiziellen Repositories](https://repo.ivpn.net/stable).
 - Mullvad VPN: aus seinen [offiziellen Repositories](https://repository.mullvad.net) oder [Chaotic-AUR](https://aur.chaotic.cx) auf Arch.
 - NordVPN: aus seinem [offiziellen Repository](https://downloads.nordcdn.com/apps) oder [Chaotic-AUR](https://aur.chaotic.cx) auf Arch.
+- Input Remapper: aus [Chaotic-AUR](https://aur.chaotic.cx). Andere Systeme haben es aus Standard-Repositories installiert.
 
 ### Andere
 - Heroic Games Launcher: aus seinem [offiziellen GitHub-Repository](https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher) für Fedora/Arch. Andere Systeme haben es von Flathub installiert.
@@ -132,13 +133,13 @@ Benötigen ein benutzerdefiniertes Installationsverfahren oder spezifische Anpas
 
 ### Docker
 
-Installiert die offiziellen Docker-Repositories (außer für Arch Linux und OpenSUSE, die sie nicht benötigen) und alle benötigten Pakete von dort über den Paketmanager Ihres Systems, fügt dann Ihren Benutzer zur `docker` Benutzergruppe hinzu und installiert Portainer CE, das ständig im Hintergrund läuft, da sein Zweck ein Docker-Dashboard ist und es vernachlässigbare Ressourcen vom Rechner verwendet.
+Installiert die offiziellen Docker-Repositories (außer für Arch Linux und OpenSUSE, die sie nicht benötigen) und alle benötigten Pakete von dort über den Paketmanager Ihres Systems, fügt dann Ihren Benutzer zur `docker` Benutzergruppe hinzu und installiert Portainer CE, das ständig im Hintergrund läuft, da sein Zweck ein Docker-Dashboard ist und es vernachlässigbare Ressourcen vom Rechner verwendet. *Die Portainer CE-Installation wird in `rpm-ostree`-basierten Systemen nicht erfolgen, es sei denn, der Benutzer führt den Installer erneut aus aufgrund von Einschränkungen in ostree-Bereitstellungen.
 
 **Installierte oder aktualisierte Pakete**
-- Arch:`docker docker-compose curl dialog git iproute2 libnotify`
-- Fedora: `docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin curl dialog git iproute libnotify`
-- OpenSUSE:`docker docker-compose curl dialog git iproute2 libnotify-tools`
-- Debian/Ubuntu: `docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin curl dialog git iproute2 libnotify-bin`
+- Arch:`docker docker-compose`
+- Fedora: `docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin`
+- OpenSUSE:`docker docker-compose`
+- Debian/Ubuntu: `docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin`
 
 **Portainer CE Installation**
 ```
@@ -504,6 +505,37 @@ Aktiviert die automatischen Updates von `rpm-ostree` im Stage-Modus, sodass Ihre
 AutomaticUpdatePolicy=stage
 ```
 - aktiviert den `rpm-ostree-automatic.timer` systemd-Dienst
+
+### Nerd Fonts
+
+Ruft Daten zu Schriftarten ab, die von [NerdFonts](https://www.nerdfonts.com) verfügbar sind, und zeigt sie zur Installation an. Die ausgewählte Schriftart wird bei `$HOME/.local/share/fonts` installiert und kann durch einfaches Löschen der hinzugefügten Dateien entfernt werden.
+
+### Lazyman
+
+Installiert den *Lazyman*-Konfigurationsmanager für *NeoVim* zusammen mit einer Konfiguration der Wahl des Benutzers. Kann durch Löschen seines Ordners entfernt werden.
+
+**Installierte oder aktualisierte Pakete**
+- Alle Systeme: `neovim git`
+
+**Zusätzlich installierte Dateien**
+- Verzeichnis: `$HOME/.config/nvim-Lazyman`
+
+### Starship
+
+Verwendet das offizielle Skript von [Starship](https://starship.rs) für Installation oder Aktualisierung. Kann rückgängig gemacht werden, indem die hinzugefügte Zeile entfernt wird, um es in Ihrer `.bashrc`, `.zshrc` oder ähnlichen Konfigurationsdatei für Ihre Shell zu aktivieren.
+
+**Angewendete benutzerdefinierte Einstellungen**
+- hinzugefügt zu `~/.bashrc`
+```
+eval "$(starship init bash)"
+```
+
+### Oh My ZSH
+
+Verwendet das offizielle Skript von [Oh My ZSH](https://ohmyz.sh) für Installation oder Aktualisierung. Kann rückgängig gemacht werden, indem die Zeile entfernt wird, die es aus Ihrer `.zshrc` lädt.
+
+**Installierte oder aktualisierte Pakete**
+- Alle Systeme: `zsh`
 
 ## Repository Installer
 

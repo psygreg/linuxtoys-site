@@ -44,6 +44,7 @@
 - IVPN：その[公式リポジトリ](https://repo.ivpn.net/stable)から。
 - Mullvad VPN：その[公式リポジトリ](https://repository.mullvad.net)またはArchでは[Chaotic-AUR](https://aur.chaotic.cx)から。
 - NordVPN：その[公式リポジトリ](https://downloads.nordcdn.com/apps)またはArchでは[Chaotic-AUR](https://aur.chaotic.cx)から。
+- Input Remapper：[Chaotic-AUR](https://aur.chaotic.cx)から。他のシステムはデフォルトリポジトリからインストールされています。
 
 ### その他
 - Heroic Games Launcher：Fedora/Archでは[公式GitHubリポジトリ](https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher)から。他のシステムはFlathubからインストールされています。
@@ -132,13 +133,13 @@ LinuxToysによって実装される、最適に動作するためのカスタ�
 
 ### Docker
 
-公式のDockerリポジトリ（Arch LinuxとOpenSUSEは不要なので除く）とそこから必要なすべてのパッケージをシステムのパッケージマネージャーを通じてインストールし、ユーザーを`docker`ユーザーグループに追加し、Portainer CEをインストールします。これはDockerダッシュボードが目的であり、マシンからの無視できるリソースを使用するため、常にバックグラウンドで動作します。
+公式のDockerリポジトリ（Arch LinuxとOpenSUSEは不要なので除く）とそこから必要なすべてのパッケージをシステムのパッケージマネージャーを通じてインストールし、ユーザーを`docker`ユーザーグループに追加し、Portainer CEをインストールします。これはDockerダッシュボードが目的であり、マシンからの無視できるリソースを使用するため、常にバックグラウンドで動作します。*Portainer CEのインストールは、`rpm-ostree`ベースのシステムではostreeデプロイメントの制限により、ユーザーがインストーラーを再度実行しない限り行われません。
 
 **インストールまたは更新されたパッケージ**
-- Arch：`docker docker-compose curl dialog git iproute2 libnotify`
-- Fedora：`docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin curl dialog git iproute libnotify`
-- OpenSUSE：`docker docker-compose curl dialog git iproute2 libnotify-tools`
-- Debian/Ubuntu：`docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin curl dialog git iproute2 libnotify-bin`
+- Arch：`docker docker-compose`
+- Fedora：`docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin`
+- OpenSUSE：`docker docker-compose`
+- Debian/Ubuntu：`docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin`
 
 **Portainer CEのインストール**
 ```
@@ -504,6 +505,37 @@ Flathubからメインアプリケーションをインストールし、その[
 AutomaticUpdatePolicy=stage
 ```
 - `rpm-ostree-automatic.timer` systemdサービスを有効化
+
+### Nerd Fonts
+
+[NerdFonts](https://www.nerdfonts.com)から利用可能なフォントのデータを取得し、インストール用に表示します。選択されたフォントは`$HOME/.local/share/fonts`にインストールされ、そのディレクトリに追加されたファイルを削除するだけで削除できます。
+
+### Lazyman
+
+ユーザーの選択した設定とともに*NeoVim*用の*Lazyman*設定マネージャーをインストールします。そのフォルダを削除することで削除できます。
+
+**インストールまたは更新されたパッケージ**
+- すべてのシステム: `neovim git`
+
+**追加でインストールされたファイル**
+- ディレクトリ: `$HOME/.config/nvim-Lazyman`
+
+### Starship
+
+インストールまたは更新に[Starship](https://starship.rs)の公式スクリプトを使用します。シェルの`.bashrc`、`.zshrc`、または同様の設定ファイルでそれを有効にするために追加された行を削除することで元に戻せます。
+
+**適用されたカスタム設定**
+- `~/.bashrc`に追加
+```
+eval "$(starship init bash)"
+```
+
+### Oh My ZSH
+
+インストールまたは更新に[Oh My ZSH](https://ohmyz.sh)の公式スクリプトを使用します。`.zshrc`からそれをソースする行を削除することで元に戻せます。
+
+**インストールまたは更新されたパッケージ**
+- すべてのシステム: `zsh`
 
 ## リポジトリインストーラー
 

@@ -44,6 +44,7 @@
 - IVPN: из его [официальных репозиториев](https://repo.ivpn.net/stable).
 - Mullvad VPN: из его [официальных репозиториев](https://repository.mullvad.net) или [Chaotic-AUR](https://aur.chaotic.cx) на Arch.
 - NordVPN: из его [официального репозитория](https://downloads.nordcdn.com/apps) или [Chaotic-AUR](https://aur.chaotic.cx) на Arch.
+- Input Remapper: из [Chaotic-AUR](https://aur.chaotic.cx). Другие системы имеют его установленным из стандартных репозиториев.
 
 ### Другие
 - Heroic Games Launcher: из его [официального GitHub репозитория](https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher) для Fedora/Arch. Другие системы имеют его установленным из Flathub.
@@ -132,13 +133,13 @@
 
 ### Docker
 
-Устанавливает официальные репозитории Docker (кроме Arch Linux и OpenSUSE, которым они не нужны) и все необходимые пакеты оттуда через пакетный менеджер вашей системы, затем добавляет вашего пользователя в группу пользователей `docker` и устанавливает Portainer CE, который постоянно работает в фоне, поскольку его цель - быть панелью управления Docker, и он использует пренебрежимо малые ресурсы машины.
+Устанавливает официальные репозитории Docker (кроме Arch Linux и OpenSUSE, которым они не нужны) и все необходимые пакеты оттуда через пакетный менеджер вашей системы, затем добавляет вашего пользователя в группу пользователей `docker` и устанавливает Portainer CE, который постоянно работает в фоне, поскольку его цель - быть панелью управления Docker, и он использует пренебрежимо малые ресурсы машины. *Установка Portainer CE не произойдет в системах на базе `rpm-ostree`, если пользователь не запустит установщик снова из-за ограничений в развертываниях ostree.
 
 **Установленные или обновленные пакеты**
-- Arch:`docker docker-compose curl dialog git iproute2 libnotify`
-- Fedora: `docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin curl dialog git iproute libnotify`
-- OpenSUSE:`docker docker-compose curl dialog git iproute2 libnotify-tools`
-- Debian/Ubuntu: `docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin curl dialog git iproute2 libnotify-bin`
+- Arch:`docker docker-compose`
+- Fedora: `docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin`
+- OpenSUSE:`docker docker-compose`
+- Debian/Ubuntu: `docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin`
 
 **Установка Portainer CE**
 ```
@@ -504,6 +505,37 @@ firewall-cmd --reload
 AutomaticUpdatePolicy=stage
 ```
 - включает службу systemd `rpm-ostree-automatic.timer`
+
+### Nerd Fonts
+
+Получает данные о шрифтах, доступных на [NerdFonts](https://www.nerdfonts.com), и отображает их для установки. Выбранный шрифт будет установлен в `$HOME/.local/share/fonts`, и его можно удалить, просто удалив добавленные файлы в этот каталог.
+
+### Lazyman
+
+Устанавливает менеджер конфигурации *Lazyman* для *NeoVim* вместе с конфигурацией по выбору пользователя. Может быть удален путем удаления его папки.
+
+**Установленные или обновленные пакеты**
+- Все системы: `neovim git`
+
+**Дополнительно установленные файлы**
+- Каталог: `$HOME/.config/nvim-Lazyman`
+
+### Starship
+
+Использует официальный скрипт от [Starship](https://starship.rs) для установки или обновления. Может быть отменено путем удаления добавленной строки для его включения в вашем `.bashrc`, `.zshrc` или аналогичном файле конфигурации для вашей оболочки.
+
+**Примененные пользовательские настройки**
+- добавлено в `~/.bashrc`
+```
+eval "$(starship init bash)"
+```
+
+### Oh My ZSH
+
+Использует официальный скрипт от [Oh My ZSH](https://ohmyz.sh) для установки или обновления. Может быть отменено путем удаления строки, которая его загружает из вашего `.zshrc`.
+
+**Установленные или обновленные пакеты**
+- Все системы: `zsh`
 
 ## Установщики репозиториев
 

@@ -44,6 +44,7 @@ Desde repositorios del sistema por defecto, o teniendo repositorios añadidos po
 - IVPN: desde sus [repositorios oficiales](https://repo.ivpn.net/stable).
 - Mullvad VPN: desde sus [repositorios oficiales](https://repository.mullvad.net) o [Chaotic-AUR](https://aur.chaotic.cx) en Arch.
 - NordVPN: desde su [repositorio oficial](https://downloads.nordcdn.com/apps) o [Chaotic-AUR](https://aur.chaotic.cx) en Arch.
+- Input Remapper: desde [Chaotic-AUR](https://aur.chaotic.cx). Otros sistemas lo tienen instalado desde repositorios por defecto.
 
 ### Otros
 - Heroic Games Launcher: desde su [repositorio oficial de GitHub](https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher) para Fedora/Arch. Otros sistemas lo tienen instalado desde Flathub.
@@ -132,13 +133,13 @@ Requieren un procedimiento de instalación personalizado o ajustes específicos 
 
 ### Docker
 
-Instala los repositorios oficiales de Docker (excepto para Arch Linux y OpenSUSE, que no los necesitarán) y todos los paquetes necesarios desde allí a través del gestor de paquetes de tu sistema, luego añade tu usuario al grupo de usuarios `docker` e instala Portainer CE, que funciona constantemente en segundo plano ya que su propósito es ser un tablero de Docker y usa recursos negligibles de la máquina.
+Instala los repositorios oficiales de Docker (excepto para Arch Linux y OpenSUSE, que no los necesitarán) y todos los paquetes necesarios desde allí a través del gestor de paquetes de tu sistema, luego añade tu usuario al grupo de usuarios `docker` e instala Portainer CE, que funciona constantemente en segundo plano ya que su propósito es ser un tablero de Docker y usa recursos negligibles de la máquina. *La instalación de Portainer CE no ocurrirá en sistemas basados en `rpm-ostree` a menos que el usuario ejecute el instalador nuevamente debido a restricciones en las implementaciones de ostree.
 
 **Paquetes Instalados o Actualizados**
-- Arch:`docker docker-compose curl dialog git iproute2 libnotify`
-- Fedora: `docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin curl dialog git iproute libnotify`
-- OpenSUSE:`docker docker-compose curl dialog git iproute2 libnotify-tools`
-- Debian/Ubuntu: `docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin curl dialog git iproute2 libnotify-bin`
+- Arch:`docker docker-compose curl`
+- Fedora: `docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin`
+- OpenSUSE:`docker docker-compose`
+- Debian/Ubuntu: `docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin`
 
 **Instalación de Portainer CE**
 ```
@@ -504,6 +505,37 @@ Habilita las actualizaciones automáticas de `rpm-ostree` en modo de preparació
 AutomaticUpdatePolicy=stage
 ```
 - habilita el servicio systemd `rpm-ostree-automatic.timer`
+
+### Nerd Fonts
+
+Obtiene datos sobre fuentes disponibles de [NerdFonts](https://www.nerdfonts.com) y las muestra para instalación. La fuente seleccionada se instalará en `$HOME/.local/share/fonts`, y se puede eliminar simplemente eliminando los archivos agregados a ese directorio.
+
+### Lazyman
+
+Instala el administrador de configuración *Lazyman* para *NeoVim* junto con una configuración de la elección del usuario. Se puede eliminar eliminando su carpeta.
+
+**Paquetes instalados o actualizados**
+- Todos los sistemas: `neovim git`
+
+**Archivos adicionales instalados**
+- Directorio: `$HOME/.config/nvim-Lazyman`
+
+### Starship
+
+Utiliza el script oficial de [Starship](https://starship.rs) para instalación o actualización. Se puede revertir eliminando la línea agregada para habilitarlo en su `.bashrc`, `.zshrc` o archivo de configuración similar para su shell.
+
+**Configuraciones personalizadas aplicadas**
+- agregado a `~/.bashrc`
+```
+eval "$(starship init bash)"
+```
+
+### Oh My ZSH
+
+Utiliza el script oficial de [Oh My ZSH](https://ohmyz.sh) para instalación o actualización. Se puede revertir eliminando la línea que lo carga desde su `.zshrc`.
+
+**Paquetes instalados o actualizados**
+- Todos los sistemas: `zsh`
 
 ## Instaladores de Repositorio
 

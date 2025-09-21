@@ -44,6 +44,7 @@ Depuis les dépôts système par défaut, ou avec des dépôts ajoutés par Linu
 - IVPN : depuis ses [dépôts officiels](https://repo.ivpn.net/stable).
 - Mullvad VPN : depuis ses [dépôts officiels](https://repository.mullvad.net) ou [Chaotic-AUR](https://aur.chaotic.cx) sur Arch.
 - NordVPN : depuis son [dépôt officiel](https://downloads.nordcdn.com/apps) ou [Chaotic-AUR](https://aur.chaotic.cx) sur Arch.
+- Input Remapper : depuis [Chaotic-AUR](https://aur.chaotic.cx). Les autres systèmes l'ont installé depuis les dépôts par défaut.
 
 ### Autres
 - Heroic Games Launcher : depuis son [dépôt GitHub officiel](https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher) pour Fedora/Arch. Les autres systèmes l'ont installé depuis Flathub.
@@ -132,13 +133,13 @@ Nécessitent une procédure d'installation personnalisée ou des ajustements sp�
 
 ### Docker
 
-Installe les dépôts Docker officiels (sauf pour Arch Linux et OpenSUSE, qui n'en auront pas besoin) et tous les paquets nécessaires depuis là via le gestionnaire de paquets de votre système, puis ajoute votre utilisateur au groupe d'utilisateurs `docker` et installe Portainer CE, qui fonctionne constamment en arrière-plan puisque son but est d'être un tableau de bord Docker et il utilise des ressources négligeables de la machine.
+Installe les dépôts Docker officiels (sauf pour Arch Linux et OpenSUSE, qui n'en auront pas besoin) et tous les paquets nécessaires depuis là via le gestionnaire de paquets de votre système, puis ajoute votre utilisateur au groupe d'utilisateurs `docker` et installe Portainer CE, qui fonctionne constamment en arrière-plan puisque son but est d'être un tableau de bord Docker et il utilise des ressources négligeables de la machine. *L'installation de Portainer CE n'aura pas lieu sur les systèmes basés sur `rpm-ostree` à moins que l'utilisateur n'exécute à nouveau l'installateur en raison de restrictions dans les déploiements ostree.
 
 **Paquets Installés ou Mis à Jour**
-- Arch:`docker docker-compose curl dialog git iproute2 libnotify`
-- Fedora: `docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin curl dialog git iproute libnotify`
-- OpenSUSE:`docker docker-compose curl dialog git iproute2 libnotify-tools`
-- Debian/Ubuntu: `docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin curl dialog git iproute2 libnotify-bin`
+- Arch:`docker docker-compose`
+- Fedora: `docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin`
+- OpenSUSE:`docker docker-compose`
+- Debian/Ubuntu: `docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin`
 
 **Installation de Portainer CE**
 ```
@@ -504,6 +505,37 @@ Active les mises à jour automatiques de `rpm-ostree` en mode de préparation, a
 AutomaticUpdatePolicy=stage
 ```
 - active le service systemd `rpm-ostree-automatic.timer`
+
+### Nerd Fonts
+
+Récupère les données sur les polices disponibles sur [NerdFonts](https://www.nerdfonts.com) et les affiche pour installation. La police sélectionnée sera installée à `$HOME/.local/share/fonts`, et peut être supprimée en supprimant simplement les fichiers ajoutés à ce répertoire.
+
+### Lazyman
+
+Installe le gestionnaire de configuration *Lazyman* pour *NeoVim* avec une configuration de votre choix. Peut être supprimé en supprimant son dossier.
+
+**Paquets installés ou mis à jour**
+- Tous les systèmes : `neovim git`
+
+**Fichiers supplémentaires installés**
+- Répertoire : `$HOME/.config/nvim-Lazyman`
+
+### Starship
+
+Utilise le script officiel de [Starship](https://starship.rs) pour l'installation ou la mise à jour. Peut être annulé en supprimant la ligne ajoutée pour l'activer dans votre `.bashrc`, `.zshrc` ou fichier de configuration similaire pour votre shell.
+
+**Paramètres personnalisés appliqués**
+- ajouté à `~/.bashrc`
+```
+eval "$(starship init bash)"
+```
+
+### Oh My ZSH
+
+Utilise le script officiel de [Oh My ZSH](https://ohmyz.sh) pour l'installation ou la mise à jour. Peut être annulé en supprimant la ligne qui le source depuis votre `.zshrc`.
+
+**Paquets installés ou mis à jour**
+- Tous les systèmes : `zsh`
 
 ## Installateurs de Dépôt
 
