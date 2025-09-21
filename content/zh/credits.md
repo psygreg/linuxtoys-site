@@ -40,7 +40,7 @@
 - **[Vinegar](https://vinegarhq.org/Home/index.html)** 由 *VinegarHQ团队* 开发
 - **[Custom Wine Builds](https://github.com/NelloKudo/WineBuilder)** 由 *'NelloKudo'* 开发
 - **[LSFG-VK](https://github.com/PancakeTAS/lsfg-vk)** 由 *'PancakeTAS'* 开发
-- **[WinApps](https://github.com/winapps-org/winapps)** - LSW的Windows应用集成
+- **[WinBoat](https://github.com/TibixDev/winboat)** - LSW 的 Windows 设置 由 *'Tibix'* 开发
 
 ## 📱 移动设备 & 虚拟化
 
