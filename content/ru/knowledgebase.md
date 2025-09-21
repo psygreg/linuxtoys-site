@@ -23,6 +23,7 @@
 - Lutris (Fedora/Arch; другие получают из Flathub)
 - F3 - Fight Flash Fraud (также открывает документацию в вашем браузере после установки)
 - Wireguard
+- VLC
 
 ### Добавленные репозитории
 - Visual Studio Code: из [официального репозитория Microsoft.](https://packages.microsoft.com)
@@ -109,6 +110,8 @@
 - Surfshark
 - Ungoogled Chromium
 - Gear Lever
+- Cryptomator
+- SiriKali
 
 #### Добавленные репозитории
 

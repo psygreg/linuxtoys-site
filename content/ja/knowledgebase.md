@@ -23,6 +23,7 @@
 - Lutris（Fedora/Arch；他はFlathubから入手）
 - F3 - Fight Flash Fraud（インストール後にブラウザでドキュメントも開きます）
 - Wireguard
+- VLC
 
 ### 追加されたリポジトリ
 - Visual Studio Code：[Microsoftの公式リポジトリ](https://packages.microsoft.com)から。
@@ -109,6 +110,8 @@ flathubから、またはLinuxToysによって追加されたリポジトリが�
 - Surfshark
 - Ungoogled Chromium
 - Gear Lever
+- Cryptomator
+- SiriKali
 
 #### 追加されたリポジトリ
 

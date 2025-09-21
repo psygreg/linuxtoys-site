@@ -23,6 +23,7 @@ Depuis les dépôts système par défaut, ou avec des dépôts ajoutés par Linu
 - Lutris (Fedora/Arch ; les autres l'ont depuis Flathub)
 - F3 - Fight Flash Fraud (ouvre aussi sa documentation dans votre navigateur après installation)
 - Wireguard
+- VLC
 
 ### Dépôts ajoutés
 - Visual Studio Code : depuis [le dépôt officiel de Microsoft.](https://packages.microsoft.com)
@@ -109,6 +110,8 @@ Depuis flathub, ou avec des dépôts ajoutés par LinuxToys, et aucun autre chan
 - Surfshark
 - Ungoogled Chromium
 - Gear Lever
+- Cryptomator
+- SiriKali
 
 #### Dépôts ajoutés
 

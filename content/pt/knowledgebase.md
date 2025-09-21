@@ -23,6 +23,7 @@ A partir de repositórios padrão do sistema, ou tendo repositórios adicionados
 - Lutris (Fedora/Arch; outros têm do Flathub)
 - F3 - Fight Flash Fraud (também abre sua documentação no seu navegador após instalado)
 - Wireguard
+- VLC
 
 ### Repositórios adicionados
 - Visual Studio Code: do [repositório oficial da Microsoft.](https://packages.microsoft.com)
@@ -109,6 +110,8 @@ Do flathub, ou tendo repositórios adicionados pelo LinuxToys, e nenhuma outra m
 - Surfshark
 - Ungoogled Chromium
 - Gear Lever
+- Cryptomator
+- SiriKali
 
 #### Repositórios adicionados
 
