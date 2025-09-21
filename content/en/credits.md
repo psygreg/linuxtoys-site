@@ -40,7 +40,7 @@
 - **[Vinegar](https://vinegarhq.org/Home/index.html)** by *the VinegarHQ team*
 - **[Custom Wine Builds](https://github.com/NelloKudo/WineBuilder)** by *'NelloKudo'*
 - **[LSFG-VK](https://github.com/PancakeTAS/lsfg-vk)** by *'PancakeTAS'*
-- **[WinApps](https://github.com/winapps-org/winapps)** - Windows apps integration for LSW
+- **[WinBoat](https://github.com/TibixDev/winboat)** - Windows setup for LSW by *'Tibix'*
 
 ## 📱 Mobile & Virtualization
 
