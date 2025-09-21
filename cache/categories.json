@@ -1,31 +1,10 @@
 {
   "devs": {
     "name": "devs",
-    "icon": "devs.svg",
+    "icon": "ide.png",
     "description": "devs_desc",
     "mode": "menu",
     "tools": [
-      {
-        "name": "Android Studio",
-        "description": "droidstd_desc",
-        "icon": "android-studio.svg",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/devs/androidstd.sh"
-      },
-      {
-        "name": "Visual Studio Code",
-        "description": "code_desc",
-        "icon": "code.svg",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/devs/code.sh"
-      },
-      {
-        "name": "VSCodium",
-        "description": "codium_desc",
-        "icon": "vscodium.svg",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/devs/codium.sh"
-      },
       {
         "name": "Docker",
         "description": "docker_desc",
@@ -76,13 +55,6 @@
         "scriptPath": "p3/scripts/devs/java.sh"
       },
       {
-        "name": "JetBrains Toolbox",
-        "description": "jbtb_desc",
-        "icon": "jetbrains-toolbox.svg",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/devs/jetbrains-toolbox.sh"
-      },
-      {
         "name": "Maven",
         "description": "mvn_desc",
         "icon": "maven.svg",
@@ -95,13 +67,6 @@
         "icon": "mise.svg",
         "version": "1.0",
         "scriptPath": "p3/scripts/devs/mise.sh"
-      },
-      {
-        "name": "NeoVim",
-        "description": "nvim_desc",
-        "icon": "neovim.svg",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/devs/neovim.sh"
       },
       {
         "name": "Node Version Manager",
@@ -146,13 +111,6 @@
         "scriptPath": "p3/scripts/devs/starship.sh"
       },
       {
-        "name": "Sublime Text",
-        "description": "sublime_desc",
-        "icon": "sublime.png",
-        "version": "4",
-        "scriptPath": "p3/scripts/devs/sublimetext.sh"
-      },
-      {
         "name": "Tailscale",
         "description": "tailscale_desc",
         "icon": "tailscale.png",
@@ -167,7 +125,65 @@
         "scriptPath": "p3/scripts/devs/unity.sh"
       }
     ],
-    "subcategories": {}
+    "subcategories": {
+      "ides": {
+        "name": "ides",
+        "icon": "code.svg",
+        "description": "ides_desc",
+        "mode": "menu",
+        "tools": [
+          {
+            "name": "Android Studio",
+            "description": "droidstd_desc",
+            "icon": "android-studio.svg",
+            "version": "1.0",
+            "scriptPath": "p3/scripts/devs/ides/androidstd.sh"
+          },
+          {
+            "name": "Visual Studio Code",
+            "description": "code_desc",
+            "icon": "code.svg",
+            "version": "1.0",
+            "scriptPath": "p3/scripts/devs/ides/code.sh"
+          },
+          {
+            "name": "VSCodium",
+            "description": "codium_desc",
+            "icon": "vscodium.svg",
+            "version": "1.0",
+            "scriptPath": "p3/scripts/devs/ides/codium.sh"
+          },
+          {
+            "name": "JetBrains Toolbox",
+            "description": "jbtb_desc",
+            "icon": "jetbrains-toolbox.svg",
+            "version": "1.0",
+            "scriptPath": "p3/scripts/devs/ides/jetbrains-toolbox.sh"
+          },
+          {
+            "name": "Lazyman",
+            "description": "lazyman_desc",
+            "icon": "lazyman.png",
+            "version": "1.0",
+            "scriptPath": "p3/scripts/devs/ides/lazyman.sh"
+          },
+          {
+            "name": "NeoVim",
+            "description": "nvim_desc",
+            "icon": "neovim.svg",
+            "version": "1.0",
+            "scriptPath": "p3/scripts/devs/ides/neovim.sh"
+          },
+          {
+            "name": "Sublime Text",
+            "description": "sublime_desc",
+            "icon": "sublime.png",
+            "version": "4",
+            "scriptPath": "p3/scripts/devs/ides/sublimetext.sh"
+          }
+        ]
+      }
+    }
   },
   "drivers": {
     "name": "drivers",
