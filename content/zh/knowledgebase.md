@@ -133,7 +133,7 @@
 
 ### Docker
 
-安装官方Docker存储库（除了Arch Linux和OpenSUSE，它们不需要）和通过系统包管理器从那里安装所有必要的包，然后将用户添加到`docker`用户组，并安装Portainer CE，它持续在后台运行，因为其目的是成为Docker控制面板，它使用可忽略的机器资源。*Portainer CE 安装不会在基于 `rpm-ostree` 的系统上发生，除非用户由于 ostree 部署的限制而再次运行安装程序。
+安装官方Docker存储库（除了Arch Linux和OpenSUSE，它们不需要）和通过系统包管理器从那里安装所有必要的包，然后将用户添加到`docker`用户组，并安装Portainer CE，它持续在后台运行，因为其目的是成为Docker控制面板，它使用可忽略的机器资源。*Portainer CE 安装不会在基于 `rpm-ostree` 的系统上发生，除非用户由于 ostree 部署的限制而再次运行安装程序。*
 
 **安装或更新的包**
 - Arch：`docker docker-compose`
@@ -559,6 +559,36 @@ eval "$(starship init bash)"
 
 ### RPMFusion
 按照其文档安装，对Fedora Atomic（基于`rpm-ostree`）系统进行特定迭代。
+
+## LSW-WinBoat
+
+设置一个*Docker*安装，使用正确的设置和补丁以与**WinBoat**一起使用 - 它可以在Docker容器中安装Windows并与其应用程序交互，将它们集成到主机系统中。然后，从其[官方GitHub存储库](https://github.com/TibixDev/winboat)安装*WinBoat*本身，并从Flathub安装*FreeRDP*以使用它。
+
+**安装或更新的包**
+- Arch：`docker docker-compose winboat-bin`
+- Fedora：`docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin winboat`
+- OpenSUSE：`docker docker-compose winboat`
+- Debian/Ubuntu：`docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin winboat`
+
+- Flathub：`com.freerdp.FreeRDP`
+
+**应用的用户自定义设置**
+- 启用 `docker` 和 `docker.socket` systemd 服务
+- 在 `/etc/modules-load.d/iptables.conf` 中启用具有正确设置的 `iptables` 内核模块：
+```
+ip_tables
+niptable_nat
+```
+- 通过将用户添加到 `docker` 用户组来启用无root Docker使用，这需要为基于 `rpm-ostree` 的系统进行自定义补丁：
+```
+echo "$(getent group docker)" >> /etc/group
+```
+- 在 `firewalld` 中打开内部Docker端口8006和3389，以允许WinBoat访问其容器，修复Fedora及其衍生产品上的问题（不适用于其他操作系统）：
+```
+firewall-cmd --zone=docker --change-interface=docker0
+firewall-cmd --zone=docker --add-port=8006/tcp --permanent
+firewall-cmd --zone=docker --add-port=3389/tcp --permanent
+```
 
 ## 优化的默认设置
 

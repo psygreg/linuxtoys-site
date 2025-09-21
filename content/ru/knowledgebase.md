@@ -133,7 +133,7 @@
 
 ### Docker
 
-Устанавливает официальные репозитории Docker (кроме Arch Linux и OpenSUSE, которым они не нужны) и все необходимые пакеты оттуда через пакетный менеджер вашей системы, затем добавляет вашего пользователя в группу пользователей `docker` и устанавливает Portainer CE, который постоянно работает в фоне, поскольку его цель - быть панелью управления Docker, и он использует пренебрежимо малые ресурсы машины. *Установка Portainer CE не произойдет в системах на базе `rpm-ostree`, если пользователь не запустит установщик снова из-за ограничений в развертываниях ostree.
+Устанавливает официальные репозитории Docker (кроме Arch Linux и OpenSUSE, которым они не нужны) и все необходимые пакеты оттуда через пакетный менеджер вашей системы, затем добавляет вашего пользователя в группу пользователей `docker` и устанавливает Portainer CE, который постоянно работает в фоне, поскольку его цель - быть панелью управления Docker, и он использует пренебрежимо малые ресурсы машины. *Установка Portainer CE не произойдет в системах на базе `rpm-ostree`, если пользователь не запустит установщик снова из-за ограничений в развертываниях ostree.*
 
 **Установленные или обновленные пакеты**
 - Arch:`docker docker-compose`
@@ -559,6 +559,36 @@ eval "$(starship init bash)"
 
 ### RPMFusion
 Установлен следуя их документации, с специфической итерацией для систем Fedora Atomic (на основе `rpm-ostree`).
+
+## LSW-WinBoat
+
+Настраивает установку *Docker* с правильными настройками и патчами для использования с **WinBoat** - который может установить Windows в контейнер Docker и взаимодействовать с его приложениями, интегрируя их в хост-систему. Затем устанавливает *WinBoat* сам по себе из его [официального репозитория GitHub](https://github.com/TibixDev/winboat), и *FreeRDP* из Flathub для его использования.
+
+**Установленные или обновленные пакеты**
+- Arch:`docker docker-compose winboat-bin`
+- Fedora: `docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin winboat`
+- OpenSUSE:`docker docker-compose winboat`
+- Debian/Ubuntu: `docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin winboat`
+
+- Flathub: `com.freerdp.FreeRDP`
+
+**Примененные пользовательские настройки**
+- Включает службы systemd `docker` и `docker.socket`
+- Включает модуль ядра `iptables` с правильными настройками, в `/etc/modules-load.d/iptables.conf`:
+```
+ip_tables
+niptable_nat
+```
+- Включает использование Docker без root, добавляя пользователя в группу пользователей `docker`, что требует пользовательского патча для систем на базе `rpm-ostree`:
+```
+echo "$(getent group docker)" >> /etc/group
+```
+- Открывает внутренние порты Docker 8006 и 3389 в `firewalld`, чтобы позволить WinBoat достичь своего контейнера, исправляя проблему на Fedora и производных (не применимо к другим операционным системам):
+```
+firewall-cmd --zone=docker --change-interface=docker0
+firewall-cmd --zone=docker --add-port=8006/tcp --permanent
+firewall-cmd --zone=docker --add-port=3389/tcp --permanent
+```
 
 ## Оптимизированные настройки по умолчанию
 
