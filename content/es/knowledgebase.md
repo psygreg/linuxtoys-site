@@ -113,6 +113,7 @@ Desde flathub, o teniendo repositorios añadidos por LinuxToys, y no se hacen ot
 - Gear Lever
 - Cryptomator
 - SiriKali
+- LogSEQ
 
 #### Repositorios añadidos
 

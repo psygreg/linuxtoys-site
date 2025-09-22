@@ -113,6 +113,7 @@ From flathub, or having repositories added by LinuxToys, and no other changes ar
 - Gear Lever
 - Cryptomator
 - SiriKali
+- LogSEQ
 
 #### Added repositories
 

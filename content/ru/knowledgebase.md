@@ -113,6 +113,7 @@
 - Gear Lever
 - Cryptomator
 - SiriKali
+- LogSEQ
 
 #### Добавленные репозитории
 

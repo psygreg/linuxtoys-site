@@ -113,6 +113,7 @@
 - Gear Lever
 - Cryptomator
 - SiriKali
+- LogSEQ
 
 #### 添加的存储库
 

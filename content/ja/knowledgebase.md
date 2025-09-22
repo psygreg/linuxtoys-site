@@ -113,6 +113,7 @@ flathubから、またはLinuxToysによって追加されたリポジトリが�
 - Gear Lever
 - Cryptomator
 - SiriKali
+- LogSEQ
 
 #### 追加されたリポジトリ
 

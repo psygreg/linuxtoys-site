@@ -113,6 +113,7 @@ Von Flathub oder mit von LinuxToys hinzugefügten Repositories, und es werden ke
 - Gear Lever
 - Cryptomator
 - SiriKali
+- LogSEQ
 
 #### Hinzugefügte Repositories
 

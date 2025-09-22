@@ -113,6 +113,7 @@ Depuis flathub, ou avec des dépôts ajoutés par LinuxToys, et aucun autre chan
 - Gear Lever
 - Cryptomator
 - SiriKali
+- LogSEQ
 
 #### Dépôts ajoutés
 

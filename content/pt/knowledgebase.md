@@ -113,6 +113,7 @@ Do flathub, ou tendo repositórios adicionados pelo LinuxToys, e nenhuma outra m
 - Gear Lever
 - Cryptomator
 - SiriKali
+- LogSEQ
 
 #### Repositórios adicionados
 
