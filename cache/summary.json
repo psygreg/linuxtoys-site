@@ -1,13 +1,11 @@
 {
-  "lastUpdated": "2025-09-21T06:29:57.695Z",
+  "lastUpdated": "2025-09-22T06:33:29.137Z",
   "categoryCount": 8,
-  "totalTools": 159,
+  "totalTools": 128,
   "supportedLanguages": [
-    "en",
     "pt",
     "es",
     "fr",
-    "de",
     "zh",
     "ja",
     "ru"
