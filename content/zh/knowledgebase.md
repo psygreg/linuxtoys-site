@@ -559,7 +559,7 @@ eval "$(starship init bash)"
 - 所有系统：`flatpak`
 
 ### Pip
-通过标准存储库的`python-pip`（Arch）或`python3-pip`（其他系统）包安装。
+通过标准存储库的`python-pip`（Arch）或`python3-pip`（其他系统）包安装。包括 `pipx`，用于按照文档推荐的方式在虚拟环境中自动设置 PyPI 包。
 
 ### RPMFusion
 按照其文档安装，对Fedora Atomic（基于`rpm-ostree`）系统进行特定迭代。

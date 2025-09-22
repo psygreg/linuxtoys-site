@@ -559,7 +559,7 @@ Instala `flatpak` e adiciona o repositório Flathub tanto no nível de sistema q
 - Todos os sistemas: `flatpak`
 
 ### Pip
-Instalado através de pacotes `python-pip` (Arch) ou `python3-pip` (outros sistemas) dos repositórios padrão.
+Instalado através de pacotes `python-pip` (Arch) ou `python3-pip` (outros sistemas) dos repositórios padrão. Inclui `pipx` para configuração automatizada de pacotes PyPI em ambientes virtuais, conforme recomendado na documentação.
 
 ### RPMFusion
 Instalado seguindo a documentação deles, com uma iteração específica para sistemas Fedora Atomic (baseados em `rpm-ostree`).
