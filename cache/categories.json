@@ -6,13 +6,6 @@
     "mode": "menu",
     "tools": [
       {
-        "name": "Docker",
-        "description": "docker_desc",
-        "icon": "docker.svg",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/devs/docker.sh"
-      },
-      {
         "name": ".NET SDK",
         "description": "dotnet_desc",
         "icon": "dotnet.svg",
@@ -39,13 +32,6 @@
         "icon": "httpie.svg",
         "version": "1.0",
         "scriptPath": "p3/scripts/devs/httpie.sh"
-      },
-      {
-        "name": "Insomnia",
-        "description": "insomnia_desc",
-        "icon": "insomnia.svg",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/devs/insomnia.sh"
       },
       {
         "name": "Java OpenJDK",
@@ -88,6 +74,13 @@
         "icon": "pnpm.svg",
         "version": "1.0",
         "scriptPath": "p3/scripts/devs/pnpm.sh"
+      },
+      {
+        "name": "Portainer CE",
+        "description": "portainer_desc",
+        "icon": "portainer.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/devs/portainer.sh"
       },
       {
         "name": "Postman",
@@ -154,32 +147,11 @@
             "scriptPath": "p3/scripts/devs/ides/codium.sh"
           },
           {
-            "name": "JetBrains Toolbox",
-            "description": "jbtb_desc",
-            "icon": "jetbrains-toolbox.svg",
-            "version": "1.0",
-            "scriptPath": "p3/scripts/devs/ides/jetbrains-toolbox.sh"
-          },
-          {
-            "name": "Lazyman",
-            "description": "lazyman_desc",
-            "icon": "lazyman.png",
-            "version": "1.0",
-            "scriptPath": "p3/scripts/devs/ides/lazyman.sh"
-          },
-          {
             "name": "NeoVim",
             "description": "nvim_desc",
             "icon": "neovim.svg",
             "version": "1.0",
             "scriptPath": "p3/scripts/devs/ides/neovim.sh"
-          },
-          {
-            "name": "Sublime Text",
-            "description": "sublime_desc",
-            "icon": "sublime.png",
-            "version": "4",
-            "scriptPath": "p3/scripts/devs/ides/sublimetext.sh"
           }
         ]
       }
@@ -187,8 +159,8 @@
   },
   "drivers": {
     "name": "drivers",
-    "icon": "device.svg",
-    "description": "drivers_desc",
+    "icon": "folder-open",
+    "description": "A category of scripts.",
     "mode": "menu",
     "tools": [
       {
@@ -227,25 +199,11 @@
         "scriptPath": "p3/scripts/drivers/nv-ostree-470.sh"
       },
       {
-        "name": "Nvidia Drivers",
-        "description": "nv_desc",
-        "icon": "nvidia.svg",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/drivers/nv-ostree.sh"
-      },
-      {
         "name": "Nvidia Drivers (v470)",
         "description": "nv_desc_470",
         "icon": "nvidia.svg",
         "version": "1.0",
         "scriptPath": "p3/scripts/drivers/nv-pacman-470.sh"
-      },
-      {
-        "name": "Nvidia Drivers (Proprietary)",
-        "description": "nv_desc",
-        "icon": "nvidia.svg",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/drivers/nv-pacman-prop.sh"
       },
       {
         "name": "Nvidia Drivers (Open Modules)",
@@ -348,13 +306,6 @@
         "scriptPath": "p3/scripts/extra/cnfh.sh"
       },
       {
-        "name": "codecfix-hw",
-        "description": "codecfix-hw_desc",
-        "icon": "codec.svg",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/extra/codecfix-hw.sh"
-      },
-      {
         "name": "codecfix",
         "description": "codecfix_desc",
         "icon": "codec.svg",
@@ -367,20 +318,6 @@
         "icon": "mscf.svg",
         "version": "1.0",
         "scriptPath": "p3/scripts/extra/corefonts.sh"
-      },
-      {
-        "name": "dsplitm",
-        "description": "dsplitm_desc",
-        "icon": "utils.svg",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/extra/dsplitm.sh"
-      },
-      {
-        "name": "EarlyOOM",
-        "description": "earlyoom_desc",
-        "icon": "preload.svg",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/extra/earlyoom.sh"
       },
       {
         "name": "GRUB-btrfs",
@@ -404,25 +341,11 @@
         "scriptPath": "p3/scripts/extra/iwd.sh"
       },
       {
-        "name": "LSW-WinBoat",
-        "description": "lsw_desc",
-        "icon": "lsw.svg",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/extra/lsw.sh"
-      },
-      {
         "name": "LucidGlyph",
         "description": "lg_desc",
         "icon": "lucidglyph.svg",
         "version": "1.0",
         "scriptPath": "p3/scripts/extra/lucidglyph.sh"
-      },
-      {
-        "name": "CPU ondemand",
-        "description": "ondemand_desc",
-        "icon": "optimizer.svg",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/extra/ondemand.sh"
       },
       {
         "name": "ostree-autoupd",
@@ -437,13 +360,6 @@
         "icon": "preload.svg",
         "version": "1.0",
         "scriptPath": "p3/scripts/extra/preload.sh"
-      },
-      {
-        "name": "psaver",
-        "description": "psaver_desc",
-        "icon": "psaver.svg",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/extra/psaver.sh"
       },
       {
         "name": "psycachy",
@@ -465,13 +381,6 @@
         "icon": "suse.svg",
         "version": "1.0",
         "scriptPath": "p3/scripts/extra/susefix.sh"
-      },
-      {
-        "name": "swapfile",
-        "description": "swapfile_desc",
-        "icon": "swapfile.svg",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/extra/swapfile.sh"
       },
       {
         "name": "Thumbnailer",
@@ -516,20 +425,6 @@
         "icon": "gaming.svg",
         "version": "1.0",
         "scriptPath": "p3/scripts/game/gamemode.sh"
-      },
-      {
-        "name": "GeForce NOW",
-        "description": "gfn_desc",
-        "icon": "nvidia.svg",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/game/gfn.sh"
-      },
-      {
-        "name": "GOverlay",
-        "description": "goverlay_desc",
-        "icon": "goverlay.svg",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/game/goverlay.sh"
       },
       {
         "name": "Gamescope",
@@ -655,17 +550,10 @@
   },
   "office": {
     "name": "office",
-    "icon": "office.svg",
-    "description": "office_desc",
-    "mode": "checklist",
+    "icon": "folder-open",
+    "description": "A category of scripts.",
+    "mode": "menu",
     "tools": [
-      {
-        "name": "AnyDesk",
-        "description": "anydesk_desc",
-        "icon": "anydesk.svg",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/office/anydesk.sh"
-      },
       {
         "name": "Audacity",
         "description": "audacity_desc",
@@ -716,13 +604,6 @@
         "scriptPath": "p3/scripts/office/figma.sh"
       },
       {
-        "name": "Foliate",
-        "description": "foliate_desc",
-        "icon": "foliate.svg",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/office/foliate.sh"
-      },
-      {
         "name": "FreeCAD",
         "description": "freecad_desc",
         "icon": "freecad.svg",
@@ -751,13 +632,6 @@
         "scriptPath": "p3/scripts/office/kdenlive.sh"
       },
       {
-        "name": "KiCad",
-        "description": "kicad_desc",
-        "icon": "kicad.svg",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/office/kicad.sh"
-      },
-      {
         "name": "Krita",
         "description": "krita_desc",
         "icon": "krita.svg",
@@ -779,25 +653,11 @@
         "scriptPath": "p3/scripts/office/msteams.sh"
       },
       {
-        "name": "Obsidian",
-        "description": "obsidian_desc",
-        "icon": "obsidian.svg",
-        "version": "1.9.10",
-        "scriptPath": "p3/scripts/office/obsidian.sh"
-      },
-      {
         "name": "OnlyOffice",
         "description": "onlyoffice_desc",
         "icon": "onlyoffice.svg",
         "version": "1.0",
         "scriptPath": "p3/scripts/office/onlyoffice.sh"
-      },
-      {
-        "name": "Pinta",
-        "description": "pinta_desc",
-        "icon": "pinta.svg",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/office/pinta.sh"
       },
       {
         "name": "PJeOffice Pro",
@@ -830,13 +690,6 @@
     "mode": "menu",
     "tools": [
       {
-        "name": "Homebrew",
-        "description": "brew_desc",
-        "icon": "brew.png",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/repos/brew.sh"
-      },
-      {
         "name": "Cargo",
         "description": "cargo_desc",
         "icon": "cargo.svg",
@@ -856,13 +709,6 @@
         "icon": "flathub.svg",
         "version": "1.0",
         "scriptPath": "p3/scripts/repos/flathub.sh"
-      },
-      {
-        "name": "Nix Packages",
-        "description": "nixpkgs_desc",
-        "icon": "nix.svg",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/repos/nix.sh"
       },
       {
         "name": "Pip",
@@ -927,8 +773,8 @@
   },
   "utils": {
     "name": "utils",
-    "icon": "utils.svg",
-    "description": "utils_desc",
+    "icon": "folder-open",
+    "description": "A category of scripts.",
     "mode": "menu",
     "tools": [
       {
@@ -953,27 +799,6 @@
         "scriptPath": "p3/scripts/utils/bottles.sh"
       },
       {
-        "name": "Distrobox-Adv",
-        "description": "Container do Debian via distrobox com pacotes que fornecem ambiente para uso de certificado digital por advogados no Brasil. Também inclui o Distroshelf.",
-        "icon": "boxadv.svg",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/utils/boxadv.sh"
-      },
-      {
-        "name": "Cloudflare WARP",
-        "description": "cloudflare_warp_desc",
-        "icon": "cloudflare-warp.svg",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/utils/cloudflare-warp.sh"
-      },
-      {
-        "name": "Distroshelf",
-        "description": "distroshelf_desc",
-        "icon": "distroshelf.svg",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/utils/distroshelf.sh"
-      },
-      {
         "name": "EasyEffects",
         "description": "efx_desc",
         "icon": "efx.svg",
@@ -988,25 +813,11 @@
         "scriptPath": "p3/scripts/utils/f3.sh"
       },
       {
-        "name": "Flatseal",
-        "description": "fseal_desc",
-        "icon": "flatseal.svg",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/utils/flatseal.sh"
-      },
-      {
         "name": "Gear Lever",
         "description": "glever_desc",
         "icon": "gearlever.png",
         "version": "1.0",
         "scriptPath": "p3/scripts/utils/gearlever.sh"
-      },
-      {
-        "name": "HandBrake",
-        "description": "hndbrk_desc",
-        "icon": "handbrake.svg",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/utils/handbrake.sh"
       },
       {
         "name": "LACT",
@@ -1030,18 +841,18 @@
         "scriptPath": "p3/scripts/utils/nerdfonts.sh"
       },
       {
-        "name": "OBS Studio",
-        "description": "obs_desc",
-        "icon": "obs.svg",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/utils/obs.sh"
-      },
-      {
         "name": "QPWGraph",
         "description": "qpw_desc",
         "icon": "qpwgraph.svg",
         "version": "1.0",
         "scriptPath": "p3/scripts/utils/qpw.sh"
+      },
+      {
+        "name": "VLC",
+        "description": "vlc_desc",
+        "icon": "vlc.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/vlc.sh"
       },
       {
         "name": "Warehouse",
@@ -1087,11 +898,11 @@
             "scriptPath": "p3/scripts/utils/peripherals/oprzr.sh"
           },
           {
-            "name": "Piper",
-            "description": "piper_desc",
-            "icon": "piper.svg",
+            "name": "Input Remapper",
+            "description": "remapper_desc",
+            "icon": "application-x-executable",
             "version": "1.0",
-            "scriptPath": "p3/scripts/utils/peripherals/piper.sh"
+            "scriptPath": "p3/scripts/utils/peripherals/remapper.sh"
           },
           {
             "name": "StreamController",
@@ -1111,37 +922,16 @@
       },
       "privacy": {
         "name": "privacy",
-        "icon": "privacy.svg",
-        "description": "privacy_desc",
+        "icon": "folder-open",
+        "description": "A subcategory of scripts.",
         "mode": "menu",
         "tools": [
-          {
-            "name": "Cryptomator",
-            "description": "cryptomator_desc",
-            "icon": "cryptomator.png",
-            "version": "1.0",
-            "scriptPath": "p3/scripts/utils/privacy/cryptomator.sh"
-          },
           {
             "name": "Express VPN",
             "description": "Express VPN",
             "icon": "expressvpn.svg",
             "version": "1.0",
             "scriptPath": "p3/scripts/utils/privacy/express-vpn.sh"
-          },
-          {
-            "name": "IVPN",
-            "description": "IVPN",
-            "icon": "ivpn.svg",
-            "version": "1.0",
-            "scriptPath": "p3/scripts/utils/privacy/ivpn.sh"
-          },
-          {
-            "name": "LibreWolf",
-            "description": "LibreWolf",
-            "icon": "librewolf.svg",
-            "version": "1.0",
-            "scriptPath": "p3/scripts/utils/privacy/librewolf.sh"
           },
           {
             "name": "Mullvad Browser",
@@ -1198,13 +988,6 @@
             "icon": "windscribe.svg",
             "version": "1.0",
             "scriptPath": "p3/scripts/utils/privacy/windscribe-vpn.sh"
-          },
-          {
-            "name": "WireGuard",
-            "description": "WireGuard",
-            "icon": "wireguard.svg",
-            "version": "1.0",
-            "scriptPath": "p3/scripts/utils/privacy/wireguard.sh"
           }
         ]
       }
