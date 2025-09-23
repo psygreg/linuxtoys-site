@@ -114,6 +114,12 @@ Desde flathub, o teniendo repositorios añadidos por LinuxToys, y no se hacen ot
 - Cryptomator
 - SiriKali
 - LogSEQ
+- Endless Key
+- GeoGebra
+- Kolibri
+- Stellarium
+- Kalzium
+- GCompris
 
 #### Repositorios añadidos
 

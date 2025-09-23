@@ -34,6 +34,7 @@
 - **[Foliate](https://johnfactotum.github.io/foliate)** von *John Factotum*
 - **[MakeResolveDeb](https://www.danieltufvesson.com/makeresolvedeb)** von *Daniel Tufvesson*
 - **[DaVinciBox](https://github.com/zelikos/davincibox)** von *Patrick Csikos*
+- **[LogSEQ](https://logseq.com)** - Datenschutzfokussiert, Open-Source-Wissensdatenbank
 
 ## 🎮 Gaming & Emulation
 
@@ -58,6 +59,7 @@
 - **[Touchégg](https://github.com/JoseExposito/touchegg)** von *José Expósito*
 - **[Oversteer](https://github.com/berarma/oversteer)** von *Bernat*
 - **[Realtek RTL8821CE driver](https://github.com/tomaspinho/rtl8821ce)** von *Tomás Pinho*
+- **[Input Remapper](https://github.com/sezanzeb/input-remapper)** von *Tobi 'sezanzeb'*
 
 ## 🔧 Entwicklung & Paketverwaltung
 

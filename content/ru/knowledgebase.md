@@ -114,6 +114,12 @@
 - Cryptomator
 - SiriKali
 - LogSEQ
+- Endless Key
+- GeoGebra
+- Kolibri
+- Stellarium
+- Kalzium
+- GCompris
 
 #### Добавленные репозитории
 

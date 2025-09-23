@@ -114,6 +114,12 @@ flathubから、またはLinuxToysによって追加されたリポジトリが�
 - Cryptomator
 - SiriKali
 - LogSEQ
+- Endless Key
+- GeoGebra
+- Kolibri
+- Stellarium
+- Kalzium
+- GCompris
 
 #### 追加されたリポジトリ
 

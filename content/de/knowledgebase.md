@@ -114,6 +114,12 @@ Von Flathub oder mit von LinuxToys hinzugefügten Repositories, und es werden ke
 - Cryptomator
 - SiriKali
 - LogSEQ
+- Endless Key
+- GeoGebra
+- Kolibri
+- Stellarium
+- Kalzium
+- GCompris
 
 #### Hinzugefügte Repositories
 

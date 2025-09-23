@@ -114,6 +114,12 @@ Depuis flathub, ou avec des dépôts ajoutés par LinuxToys, et aucun autre chan
 - Cryptomator
 - SiriKali
 - LogSEQ
+- Endless Key
+- GeoGebra
+- Kolibri
+- Stellarium
+- Kalzium
+- GCompris
 
 #### Dépôts ajoutés
 

@@ -34,6 +34,7 @@
 - **[Foliate](https://johnfactotum.github.io/foliate)** 由 *John Factotum* 开发
 - **[MakeResolveDeb](https://www.danieltufvesson.com/makeresolvedeb)** 由 *Daniel Tufvesson* 开发
 - **[DaVinciBox](https://github.com/zelikos/davincibox)** 由 *Patrick Csikos* 开发
+- **[LogSEQ](https://logseq.com)** - 注重隐私的开源知识库
 
 ## 🎮 游戏 & 模拟
 
@@ -58,6 +59,7 @@
 - **[Touchégg](https://github.com/JoseExposito/touchegg)** 由 *José Expósito* 开发
 - **[Oversteer](https://github.com/berarma/oversteer)** 由 *Bernat* 开发
 - **[Realtek RTL8821CE driver](https://github.com/tomaspinho/rtl8821ce)** 由 *Tomás Pinho* 开发
+- **[Input Remapper](https://github.com/sezanzeb/input-remapper)** 由 *Tobi 'sezanzeb'* 开发
 
 ## 🔧 开发 & 包管理
 
