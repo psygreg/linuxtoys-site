@@ -1,6 +1,10 @@
 {
   "title": "ユーザーフレンドリーな方法でのツールのコレクションで、Linuxでの生活をこれまで以上に簡単にします",
   "meta-description": "Linuxでの生活をこれまで以上に簡単にすることができるユーザーフレンドリーなツールのコレクション。ゲーマー、開発者、エンスージアスト向けの便利なスクリプト。",
+  "handbook-meta-description": "LinuxToys ツールとスクリプト開発の完全ガイド",
+  "knowledgebase-meta-description": "LinuxToys ナレッジベース - LinuxToys 機能の包括的なガイド",
+  "credits-meta-description": "LinuxToys の機能を可能にしたすべての素晴らしい開発者へのクレジットと謝辞",
+  "cli-mode-meta-description": "LinuxToys CLI モードを使用して自動インストールを行う方法を学びましょう",
   "github-button": "GitHubで見る",
   "install-title": "クイックインストール",
   "for-you-title": "あなたのために",

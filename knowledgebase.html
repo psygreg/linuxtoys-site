@@ -31,6 +31,68 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
     
+    <script>
+      // Set knowledgebase meta descriptions based on browser language immediately
+      (function() {
+        const knowledgebaseMetaDescriptions = {
+          'en': 'LinuxToys Knowledge Base - Comprehensive guide to LinuxToys features',
+          'pt': 'Base de Conhecimento LinuxToys - Guia abrangente dos recursos do LinuxToys',
+          'es': 'Base de Conocimiento LinuxToys - Guía completa de las características de LinuxToys',
+          'fr': 'Base de Connaissances LinuxToys - Guide complet des fonctionnalités LinuxToys',
+          'de': 'LinuxToys Wissensdatenbank - Umfassender Leitfaden zu LinuxToys-Funktionen',
+          'zh': 'LinuxToys 知识库 - LinuxToys 功能的综合指南',
+          'ja': 'LinuxToys ナレッジベース - LinuxToys 機能の包括的なガイド',
+          'ru': 'База знаний LinuxToys - Полное руководство по функциям LinuxToys'
+        };
+        
+        // Detect browser language
+        function detectBrowserLanguage() {
+          const browserLanguages = [
+            navigator.language,
+            ...(navigator.languages || []),
+            navigator.userLanguage,
+            navigator.browserLanguage,
+            navigator.systemLanguage
+          ].filter(Boolean);
+          
+          const supportedLanguages = ['en', 'pt', 'es', 'fr', 'de', 'zh', 'ja', 'ru'];
+          
+          for (const browserLang of browserLanguages) {
+            const langCode = browserLang.split('-')[0].toLowerCase();
+            if (supportedLanguages.includes(langCode)) {
+              return langCode;
+            }
+          }
+          
+          return 'en'; // fallback
+        }
+        
+        // Set meta descriptions immediately
+        const detectedLang = detectBrowserLanguage();
+        const description = knowledgebaseMetaDescriptions[detectedLang];
+        
+        if (description) {
+          // Update main description meta tag
+          const metaDesc = document.querySelector('meta[name="description"]');
+          if (metaDesc) {
+            metaDesc.setAttribute('content', description);
+          }
+          
+          // Update Open Graph description
+          const ogDesc = document.querySelector('meta[property="og:description"]');
+          if (ogDesc) {
+            ogDesc.setAttribute('content', description);
+          }
+          
+          // Update Twitter description
+          const twitterDesc = document.querySelector('meta[name="twitter:description"]');
+          if (twitterDesc) {
+            twitterDesc.setAttribute('content', description);
+          }
+        }
+      })();
+    </script>
+    
     <style>
       body {
         font-family: "Inter", sans-serif;
@@ -376,6 +438,10 @@
           if (button) {
             button.addEventListener('click', async () => {
               await translationManager.setLanguage(lang);
+              
+              // Update meta descriptions for new language
+              updateMetaDescriptions(translationManager);
+              
               updateCurrentLang();
               dropdown.classList.add('hidden');
               
@@ -391,6 +457,31 @@
         });
         
         updateCurrentLang();
+      }
+      
+      function updateMetaDescriptions(translationManager) {
+        if (translationManager) {
+          const description = translationManager.getTranslation('knowledgebase-meta-description');
+          if (description) {
+            // Update main description meta tag
+            const metaDesc = document.querySelector('meta[name="description"]');
+            if (metaDesc) {
+              metaDesc.setAttribute('content', description);
+            }
+            
+            // Update Open Graph description
+            const ogDesc = document.querySelector('meta[property="og:description"]');
+            if (ogDesc) {
+              ogDesc.setAttribute('content', description);
+            }
+            
+            // Update Twitter description
+            const twitterDesc = document.querySelector('meta[name="twitter:description"]');
+            if (twitterDesc) {
+              twitterDesc.setAttribute('content', description);
+            }
+          }
+        }
       }
     </script>
   </body>

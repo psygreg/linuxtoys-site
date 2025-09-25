@@ -1,6 +1,10 @@
 {
   "title": "以用户友好的方式收集工具，让您在Linux上的生活比以往任何时候都更轻松",
   "meta-description": "一个用户友好的工具集合，让您在Linux上的生活比以往任何时候都更轻松。为游戏玩家、开发者和爱好者提供有用的脚本。",
+  "handbook-meta-description": "LinuxToys 工具和脚本开发的完整指南",
+  "knowledgebase-meta-description": "LinuxToys 知识库 - LinuxToys 功能的综合指南",
+  "credits-meta-description": "感谢所有让 LinuxToys 功能成为可能的优秀开发者",
+  "cli-mode-meta-description": "学习如何使用 LinuxToys CLI 模式进行自动化安装",
   "github-button": "在GitHub上查看",
   "install-title": "快速安装",
   "for-you-title": "为您服务",

@@ -1,6 +1,10 @@
 {
   "title": "A collection of tools in a user-friendly way to make your life on Linux easier than ever",
   "meta-description": "A user-friendly collection of tools to make your life on Linux easier than ever. Useful scripts for gamers, developers and enthusiasts.",
+  "handbook-meta-description": "Complete guide for developing LinuxToys tools and scripts",
+  "knowledgebase-meta-description": "LinuxToys Knowledge Base - Comprehensive guide to LinuxToys features",
+  "credits-meta-description": "Credits and acknowledgments for all the amazing developers who made LinuxToys features possible",
+  "cli-mode-meta-description": "Learn how to use LinuxToys CLI mode for automated installations",
   "github-button": "View on GitHub",
   "install-title": "Quick-Install",
   "for-you-title": "For you",
