@@ -1039,6 +1039,13 @@
         "scriptPath": "p3/scripts/utils/efx.sh"
       },
       {
+        "name": "Extension Manager",
+        "description": "extman_desc",
+        "icon": "extensions.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/extman.sh"
+      },
+      {
         "name": "F3 (Fight Flash Fraud)",
         "description": "f3_desc",
         "icon": "utils.svg",
@@ -1100,6 +1107,13 @@
         "icon": "qpwgraph.svg",
         "version": "1.0",
         "scriptPath": "p3/scripts/utils/qpw.sh"
+      },
+      {
+        "name": "Gnome Tweaks",
+        "description": "tweaks_desc",
+        "icon": "tweaks.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/tweaks.sh"
       },
       {
         "name": "VLC",
