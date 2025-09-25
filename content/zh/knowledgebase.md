@@ -24,6 +24,7 @@
 - F3 - Fight Flash Fraud（安装后还会在浏览器中打开其文档）
 - Wireguard
 - VLC
+- Gnome Tweaks
 
 ### 添加的存储库
 - Visual Studio Code：来自[官方Microsoft存储库。](https://packages.microsoft.com)
@@ -120,6 +121,7 @@
 - Stellarium
 - Kalzium
 - GCompris
+- Extension Manager
 
 #### 添加的存储库
 

@@ -101,6 +101,8 @@ source "$SCRIPT_DIR/libs/helpers.lib"
 - **`# noconfirm:`** - Skip confirmation dialog if set to `yes`
 - **`# localize:`** - Comma-separated list of supported locales
 - **`# nocontainer:`** - Hide script in containerized environments
+- **`# gpu:`** - Only displays script for select GPU vendors, valid entries `Amd`, `Intel`, `Nvidia`. Can have more than one vendor.
+- **`# desktop:`** - Only displays script for select desktop environments, valid entries `gnome`, `plasma` and `other`.
 
 #### Compatibility System
 

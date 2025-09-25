@@ -101,6 +101,8 @@ source "$SCRIPT_DIR/libs/helpers.lib"
 - **`# noconfirm:`** - Omitir diálogo de confirmación si se establece en `yes`
 - **`# localize:`** - Lista separada por comas de locales soportados
 - **`# nocontainer:`** - Ocultar script en entornos containerizados
+- **`# gpu:`** - Solo mostrar script para proveedores de GPU seleccionados, entradas válidas `Amd`, `Intel`, `Nvidia`. Puede tener más de un proveedor.
+- **`# desktop:`** - Solo mostrar script para entornos de escritorio seleccionados, entradas válidas `gnome`, `plasma` y `other`.
 
 #### Sistema de Compatibilidad
 

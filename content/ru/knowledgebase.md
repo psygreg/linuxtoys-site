@@ -24,6 +24,7 @@
 - F3 - Fight Flash Fraud (также открывает документацию в вашем браузере после установки)
 - Wireguard
 - VLC
+- Gnome Tweaks
 
 ### Добавленные репозитории
 - Visual Studio Code: из [официального репозитория Microsoft.](https://packages.microsoft.com)
@@ -120,6 +121,7 @@
 - Stellarium
 - Kalzium
 - GCompris
+- Extension Manager
 
 #### Добавленные репозитории
 

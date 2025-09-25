@@ -24,6 +24,7 @@
 - F3 - Fight Flash Fraud（インストール後にブラウザでドキュメントも開きます）
 - Wireguard
 - VLC
+- Gnome Tweaks
 
 ### 追加されたリポジトリ
 - Visual Studio Code：[Microsoftの公式リポジトリ](https://packages.microsoft.com)から。
@@ -120,6 +121,7 @@ flathubから、またはLinuxToysによって追加されたリポジトリが�
 - Stellarium
 - Kalzium
 - GCompris
+- Extension Manager
 
 #### 追加されたリポジトリ
 

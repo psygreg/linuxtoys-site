@@ -101,6 +101,8 @@ source "$SCRIPT_DIR/libs/helpers.lib"
 - **`# noconfirm:`** - Bestätigungsdialog überspringen wenn auf `yes` gesetzt
 - **`# localize:`** - Komma-getrennte Liste unterstützter Locales
 - **`# nocontainer:`** - Skript in containerisierten Umgebungen verstecken
+- **`# gpu:`** - Nur Skript für ausgewählte GPU-Hersteller anzeigen, gültige Einträge `Amd`, `Intel`, `Nvidia`. Kann mehr als einen Hersteller haben.
+- **`# desktop:`** - Nur Skript für ausgewählte Desktop-Umgebungen anzeigen, gültige Einträge `gnome`, `plasma` und `other`.
 
 #### Kompatibilitätssystem
 

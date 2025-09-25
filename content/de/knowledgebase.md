@@ -24,6 +24,7 @@ Aus Standard-System-Repositories oder mit von LinuxToys hinzugefügten Repositor
 - F3 - Fight Flash Fraud (öffnet auch seine Dokumentation in Ihrem Browser nach der Installation)
 - Wireguard
 - VLC
+- Gnome Tweaks
 
 ### Hinzugefügte Repositories
 - Visual Studio Code: aus [Microsofts offiziellem Repository.](https://packages.microsoft.com)
@@ -120,6 +121,7 @@ Von Flathub oder mit von LinuxToys hinzugefügten Repositories, und es werden ke
 - Stellarium
 - Kalzium
 - GCompris
+- Extension Manager
 
 #### Hinzugefügte Repositories
 

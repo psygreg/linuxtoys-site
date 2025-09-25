@@ -24,6 +24,7 @@ A partir de repositórios padrão do sistema, ou tendo repositórios adicionados
 - F3 - Fight Flash Fraud (também abre sua documentação no seu navegador após instalado)
 - Wireguard
 - VLC
+- Gnome Tweaks
 
 ### Repositórios adicionados
 - Visual Studio Code: do [repositório oficial da Microsoft.](https://packages.microsoft.com)
@@ -120,6 +121,7 @@ Do flathub, ou tendo repositórios adicionados pelo LinuxToys, e nenhuma outra m
 - Stellarium
 - Kalzium
 - GCompris
+- Extension Manager
 
 #### Repositórios adicionados
 

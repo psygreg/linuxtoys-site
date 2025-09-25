@@ -24,6 +24,7 @@ Depuis les dépôts système par défaut, ou avec des dépôts ajoutés par Linu
 - F3 - Fight Flash Fraud (ouvre aussi sa documentation dans votre navigateur après installation)
 - Wireguard
 - VLC
+- Gnome Tweaks
 
 ### Dépôts ajoutés
 - Visual Studio Code : depuis [le dépôt officiel de Microsoft.](https://packages.microsoft.com)
@@ -120,6 +121,7 @@ Depuis flathub, ou avec des dépôts ajoutés par LinuxToys, et aucun autre chan
 - Stellarium
 - Kalzium
 - GCompris
+- Extension Manager
 
 #### Dépôts ajoutés
 
