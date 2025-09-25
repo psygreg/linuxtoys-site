@@ -30,68 +30,6 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
     
-    <script>
-      // Set credits meta descriptions based on browser language immediately
-      (function() {
-        const creditsMetaDescriptions = {
-          'en': 'Credits and acknowledgments for all the amazing developers who made LinuxToys features possible',
-          'pt': 'Créditos e agradecimentos para todos os incríveis desenvolvedores que tornaram possíveis os recursos do LinuxToys',
-          'es': 'Créditos y reconocimientos para todos los increíbles desarrolladores que hicieron posibles las características de LinuxToys',
-          'fr': 'Crédits et remerciements pour tous les développeurs incroyables qui ont rendu possibles les fonctionnalités LinuxToys',
-          'de': 'Credits und Anerkennungen für alle großartigen Entwickler, die LinuxToys-Funktionen möglich gemacht haben',
-          'zh': '感谢所有让 LinuxToys 功能成为可能的优秀开发者',
-          'ja': 'LinuxToys の機能を可能にしたすべての素晴らしい開発者へのクレジットと謝辞',
-          'ru': 'Благодарности и признание для всех замечательных разработчиков, которые сделали возможными функции LinuxToys'
-        };
-        
-        // Detect browser language
-        function detectBrowserLanguage() {
-          const browserLanguages = [
-            navigator.language,
-            ...(navigator.languages || []),
-            navigator.userLanguage,
-            navigator.browserLanguage,
-            navigator.systemLanguage
-          ].filter(Boolean);
-          
-          const supportedLanguages = ['en', 'pt', 'es', 'fr', 'de', 'zh', 'ja', 'ru'];
-          
-          for (const browserLang of browserLanguages) {
-            const langCode = browserLang.split('-')[0].toLowerCase();
-            if (supportedLanguages.includes(langCode)) {
-              return langCode;
-            }
-          }
-          
-          return 'en'; // fallback
-        }
-        
-        // Set meta descriptions immediately
-        const detectedLang = detectBrowserLanguage();
-        const description = creditsMetaDescriptions[detectedLang];
-        
-        if (description) {
-          // Update main description meta tag
-          const metaDesc = document.querySelector('meta[name="description"]');
-          if (metaDesc) {
-            metaDesc.setAttribute('content', description);
-          }
-          
-          // Update Open Graph description
-          const ogDesc = document.querySelector('meta[property="og:description"]');
-          if (ogDesc) {
-            ogDesc.setAttribute('content', description);
-          }
-          
-          // Update Twitter description
-          const twitterDesc = document.querySelector('meta[name="twitter:description"]');
-          if (twitterDesc) {
-            twitterDesc.setAttribute('content', description);
-          }
-        }
-      })();
-    </script>
-    
     <style>
       body {
         font-family: "Inter", sans-serif;
@@ -427,9 +365,6 @@
             button.addEventListener('click', async () => {
               await translationManager.setLanguage(lang);
               
-              // Update meta descriptions for new language
-              updateMetaDescriptions(translationManager);
-              
               updateCurrentLang();
               dropdown.classList.add('hidden');
               
@@ -444,30 +379,6 @@
         updateCurrentLang();
       }
       
-      function updateMetaDescriptions(translationManager) {
-        if (translationManager) {
-          const description = translationManager.getTranslation('credits-meta-description');
-          if (description) {
-            // Update main description meta tag
-            const metaDesc = document.querySelector('meta[name="description"]');
-            if (metaDesc) {
-              metaDesc.setAttribute('content', description);
-            }
-            
-            // Update Open Graph description
-            const ogDesc = document.querySelector('meta[property="og:description"]');
-            if (ogDesc) {
-              ogDesc.setAttribute('content', description);
-            }
-            
-            // Update Twitter description
-            const twitterDesc = document.querySelector('meta[name="twitter:description"]');
-            if (twitterDesc) {
-              twitterDesc.setAttribute('content', description);
-            }
-          }
-        }
-      }
     </script>
   </body>
 </html>

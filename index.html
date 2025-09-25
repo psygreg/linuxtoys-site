@@ -55,50 +55,6 @@
       rel="stylesheet"
     />
     
-    <script>
-      // Set meta description based on browser language immediately
-      (function() {
-        const metaDescriptions = {
-          'en': 'A user-friendly collection of tools to make your life on Linux easier than ever. Useful scripts for gamers, developers and enthusiasts.',
-          'pt': 'Uma coleção amigável de ferramentas para tornar sua vida no Linux mais fácil do que nunca. Scripts úteis para gamers, desenvolvedores e entusiastas.',
-          'es': 'Una colección amigable de herramientas para hacer tu vida en Linux más fácil que nunca. Scripts útiles para gamers, desarrolladores y entusiastas.',
-          'fr': 'Une collection conviviale d\'outils pour rendre votre vie sur Linux plus facile que jamais. Scripts utiles pour les gamers, développeurs et passionnés.',
-          'de': 'Eine benutzerfreundliche Sammlung von Tools, um Ihr Leben unter Linux einfacher denn je zu machen. Nützliche Skripte für Gamer, Entwickler und Enthusiasten.',
-          'zh': '一个用户友好的工具集合，让您在Linux上的生活比以往任何时候都更轻松。为游戏玩家、开发者和爱好者提供有用的脚本。',
-          'ja': 'Linuxでの生活をこれまで以上に簡単にすることができるユーザーフレンドリーなツールのコレクション。ゲーマー、開発者、エンスージアスト向けの便利なスクリプト。',
-          'ru': 'Удобная коллекция инструментов, чтобы сделать вашу жизнь в Linux проще, чем когда-либо. Полезные скрипты для геймеров, разработчиков и энтузиастов.'
-        };
-        
-        // Detect browser language
-        function detectBrowserLanguage() {
-          const browserLanguages = [
-            navigator.language,
-            ...(navigator.languages || []),
-            navigator.userLanguage,
-            navigator.browserLanguage,
-            navigator.systemLanguage
-          ].filter(Boolean);
-          
-          const supportedLanguages = ['en', 'pt', 'es', 'fr', 'de', 'zh', 'ja', 'ru'];
-          
-          for (const browserLang of browserLanguages) {
-            const langCode = browserLang.split('-')[0].toLowerCase();
-            if (supportedLanguages.includes(langCode)) {
-              return langCode;
-            }
-          }
-          
-          return 'en'; // fallback
-        }
-        
-        // Set meta description immediately
-        const detectedLang = detectBrowserLanguage();
-        const metaDescription = document.querySelector('meta[name="description"]');
-        if (metaDescription && metaDescriptions[detectedLang]) {
-          metaDescription.setAttribute('content', metaDescriptions[detectedLang]);
-        }
-      })();
-    </script>
     <style>
       body {
         font-family: "Inter", sans-serif;
@@ -861,18 +817,6 @@
           
           const displayText = languageMap[detectedLang] || '🇺🇸 EN';
           currentLang.textContent = displayText;
-        }
-      }
-
-      function updateMetaDescription() {
-        if (window.translationManager) {
-          const metaDescription = document.querySelector('meta[name="description"]');
-          if (metaDescription) {
-            const translatedDescription = window.translationManager.getTranslation('meta-description');
-            if (translatedDescription) {
-              metaDescription.setAttribute('content', translatedDescription);
-            }
-          }
         }
       }
 

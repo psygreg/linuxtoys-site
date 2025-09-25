@@ -30,68 +30,6 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
     
-    <script>
-      // Set CLI mode meta descriptions based on browser language immediately
-      (function() {
-        const cliModeMetaDescriptions = {
-          'en': 'Learn how to use LinuxToys CLI mode for automated installations',
-          'pt': 'Aprenda a usar o modo CLI do LinuxToys para instalações automatizadas',
-          'es': 'Aprende a usar el modo CLI de LinuxToys para instalaciones automatizadas',
-          'fr': 'Apprenez à utiliser le mode CLI de LinuxToys pour les installations automatisées',
-          'de': 'Erfahren Sie, wie Sie den CLI-Modus von LinuxToys für automatisierte Installationen verwenden',
-          'zh': '学习如何使用 LinuxToys CLI 模式进行自动化安装',
-          'ja': 'LinuxToys CLI モードを使用して自動インストールを行う方法を学びましょう',
-          'ru': 'Узнайте, как использовать режим CLI LinuxToys для автоматизированных установок'
-        };
-        
-        // Detect browser language
-        function detectBrowserLanguage() {
-          const browserLanguages = [
-            navigator.language,
-            ...(navigator.languages || []),
-            navigator.userLanguage,
-            navigator.browserLanguage,
-            navigator.systemLanguage
-          ].filter(Boolean);
-          
-          const supportedLanguages = ['en', 'pt', 'es', 'fr', 'de', 'zh', 'ja', 'ru'];
-          
-          for (const browserLang of browserLanguages) {
-            const langCode = browserLang.split('-')[0].toLowerCase();
-            if (supportedLanguages.includes(langCode)) {
-              return langCode;
-            }
-          }
-          
-          return 'en'; // fallback
-        }
-        
-        // Set meta descriptions immediately
-        const detectedLang = detectBrowserLanguage();
-        const description = cliModeMetaDescriptions[detectedLang];
-        
-        if (description) {
-          // Update main description meta tag
-          const metaDesc = document.querySelector('meta[name="description"]');
-          if (metaDesc) {
-            metaDesc.setAttribute('content', description);
-          }
-          
-          // Update Open Graph description
-          const ogDesc = document.querySelector('meta[property="og:description"]');
-          if (ogDesc) {
-            ogDesc.setAttribute('content', description);
-          }
-          
-          // Update Twitter description
-          const twitterDesc = document.querySelector('meta[name="twitter:description"]');
-          if (twitterDesc) {
-            twitterDesc.setAttribute('content', description);
-          }
-        }
-      })();
-    </script>
-    
     <style>
       body {
         font-family: "Inter", sans-serif;
@@ -447,9 +385,6 @@
               console.log(`Switching to language: ${lang}`);
               await translationManager.setLanguage(lang);
               
-              // Update meta descriptions for new language
-              updateMetaDescriptions(translationManager);
-              
               // Merge additional translations after language change
               if (window.additionalTranslations) {
                 translationManager.mergeTranslations(window.additionalTranslations);
@@ -468,30 +403,6 @@
         updateCurrentLang();
       }
       
-      function updateMetaDescriptions(translationManager) {
-        if (translationManager) {
-          const description = translationManager.getTranslation('cli-mode-meta-description');
-          if (description) {
-            // Update main description meta tag
-            const metaDesc = document.querySelector('meta[name="description"]');
-            if (metaDesc) {
-              metaDesc.setAttribute('content', description);
-            }
-            
-            // Update Open Graph description
-            const ogDesc = document.querySelector('meta[property="og:description"]');
-            if (ogDesc) {
-              ogDesc.setAttribute('content', description);
-            }
-            
-            // Update Twitter description
-            const twitterDesc = document.querySelector('meta[name="twitter:description"]');
-            if (twitterDesc) {
-              twitterDesc.setAttribute('content', description);
-            }
-          }
-        }
-      }
     </script>
   </body>
 </html>
