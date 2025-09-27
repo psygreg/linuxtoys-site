@@ -122,6 +122,7 @@
 - Kalzium
 - GCompris
 - Extension Manager
+- Termux
 
 #### Добавленные репозитории
 
@@ -549,6 +550,114 @@ eval "$(starship init bash)"
 
 **Установленные или обновленные пакеты**
 - Все системы: `zsh`
+
+### Настройки systemd CachyOS
+
+Применяет различные оптимизации производительности и исправления для распространенных проблем. Хотя все они будут установлены, многие из них будут активны только при необходимости - поскольку они будут задействованы только если устройства, на которые они нацелены, найдены в вашей системе. Это позволяет вам изменять компоненты с динамически применяемыми патчами для этих новых частей. Для атомных систем Fedora и Universal Blue, эти будут установлены как многослойный пакет и могут быть удалены просто удалив пакет через `rpm-ostree`. Для других, они могут быть отменены путем удаления соответствующих файлов. И пакеты, и прямые методы установки используют файлы, полученные непосредственно из репозиториев *CachyOS*.
+
+**Установленные или обновленные пакеты**
+- Fedora atomic: `linuxtoys-cfg-atom`
+- Universal Blue: `optimize-cfg-ublue`
+
+**Примененные пользовательские настройки**
+- `/usr/lib/systemd/journald.conf.d/00-journal-size.conf`
+```
+[Journal]
+SystemMaxUse=50M
+```
+- `/usr/lib/udev/rules.d/20-audio-pm.rules`
+```
+SUBSYSTEM=="power_supply", ENV{POWER_SUPPLY_ONLINE}=="0", TEST=="/sys/module/snd_hda_intel", \
+    RUN+="/bin/sh -c 'echo $$(cat /run/udev/snd_hda_intel-powersave 2>/dev/null || \
+        echo 10) > /sys/module/snd_hda_intel/parameters/power_save'"
+
+SUBSYSTEM=="power_supply", ENV{POWER_SUPPLY_ONLINE}=="1", TEST=="/sys/module/snd_hda_intel", \
+    RUN+="/bin/sh -c '[[ $$(cat /sys/module/snd_hda_intel/parameters/power_save) != 0 ]] && \
+        echo $$(cat /sys/module/snd_hda_intel/parameters/power_save) > /run/udev/snd_hda_intel-powersave; \
+        echo 0 > /sys/module/snd_hda_intel/parameters/power_save'"
+```
+- `/usr/lib/udev/rules.d/40-hpet-permissions.rules`
+```
+KERNEL=="rtc0", GROUP="audio"
+KERNEL=="hpet", GROUP="audio"
+```
+- `/usr/lib/udev/rules.d/50-sata.rules`
+```
+ACTION=="add", SUBSYSTEM=="scsi_host", KERNEL=="host*", \
+    ATTR{link_power_management_policy}=="*", \
+    ATTR{link_power_management_policy}="max_performance"
+```
+- `/usr/lib/udev/rules.d/60-ioschedulers.rules`
+```
+# HDD
+ACTION=="add|change", KERNEL=="sd[a-z]*", ATTR{queue/rotational}=="1", \
+    ATTR{queue/scheduler}="bfq"
+
+# SSD
+ACTION=="add|change", KERNEL=="sd[a-z]*|mmcblk[0-9]*", ATTR{queue/rotational}=="0", \
+    ATTR{queue/scheduler}="mq-deadline"
+
+# NVMe SSD
+ACTION=="add|change", KERNEL=="nvme[0-9]*", ATTR{queue/rotational}=="0", \
+    ATTR{queue/scheduler}="none"
+```
+- `/usr/lib/udev/rules.d/69-hdparm.rules`
+```
+ACTION=="add|change", KERNEL=="sd[a-z]", ATTR{queue/rotational}=="1", \
+    RUN+="/usr/bin/hdparm -B 254 -S 0 /dev/%k"
+```
+- `/usr/lib/sysctl.d/99-cachyos-settings.conf`
+```
+vm.swappiness = 100
+vm.vfs_cache_pressure = 50
+vm.dirty_bytes = 268435456
+vm.page-cluster = 0
+vm.dirty_background_bytes = 67108864
+vm.dirty_writeback_centisecs = 1500
+kernel.nmi_watchdog = 0
+kernel.unprivileged_userns_clone = 1
+kernel.printk = 3 3 3 3
+kernel.kptr_restrict = 2
+kernel.kexec_load_disabled = 1
+net.core.netdev_max_backlog = 4096
+fs.file-max = 2097152
+```
+- `/usr/lib/udev/rules.d/99-cpu-dma-latency.rules`
+```
+DEVPATH=="/devices/virtual/misc/cpu_dma_latency", OWNER="root", GROUP="audio", MODE="0660"
+```
+- `/usr/lib/modprobe.d/amdgpu.conf`
+```
+options amdgpu si_support=1 cik_support=1
+options radeon si_support=0 cik_support=0
+```
+- `/usr/lib/modprobe.d/blacklist.conf`
+```
+# Черный список модуля Intel TCO Watchdog/Timer
+blacklist iTCO_wdt
+
+# Черный список модуля AMD SP5100 TCO Watchdog/Timer (Требуется для процессоров Ryzen)
+blacklist sp5100_tco
+```
+- `/usr/lib/tmpfiles.d/coredump.conf` - не включено для систем Universal Blue, у которых есть своя настройка для этого
+```
+d /var/lib/systemd/coredump 0755 root root 3d
+```
+- `/usr/lib/modprobe.d/nvidia.conf`
+```
+options nvidia NVreg_UsePageAttributeTable=1 \
+    NVreg_InitializeSystemMemoryAllocations=0 \
+    NVreg_DynamicPowerManagement=0x02 \
+    NVreg_RegistryDwords=RMIntrLockingMode=1
+```
+- `/usr/lib/tmpfiles.d/thp.conf`
+```
+w! /sys/kernel/mm/transparent_hugepage/defrag - - - - defer+madvise
+```
+- `/usr/lib/tmpfiles.d/thp-shrinker.conf`
+```
+w! /sys/kernel/mm/transparent_hugepage/khugepaged/max_ptes_none - - - - 4091
+```
 
 ## Установщики репозиториев
 

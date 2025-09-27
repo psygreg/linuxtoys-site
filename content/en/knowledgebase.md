@@ -122,6 +122,7 @@ From flathub, or having repositories added by LinuxToys, and no other changes ar
 - Kalzium
 - GCompris
 - Extension Manager
+- Termux
 
 #### Added repositories
 
@@ -550,6 +551,114 @@ Uses the official script from [Oh My ZSH](https://ohmyz.sh) for installation or 
 
 **Packages Installed or Updated**
 - All systems: `zsh`
+
+### CachyOS systemd settings
+
+Applies various performance tweaks and fixes for common issues. While all of them will be installed, many of those will only become active if needed - as they will only be engaged if the devices it targets are found in your system. This allows for you to change components with patches for those new parts being applied dynamically. For atomic Fedora and Universal Blue systems, these will be installed as a layered package and can be removed by just removing the package through `rpm-ostree`. For others, they can be reverted by removing the corresponding files. Both the packages and the direct installation methods utilize files sourced directly from *CachyOS'* repositories.
+
+**Packages Installed or Updated**
+- Fedora atomic: `linuxtoys-cfg-atom`
+- Universal Blue: `optimize-cfg-ublue`
+
+**Custom settings applied**
+- `/usr/lib/systemd/journald.conf.d/00-journal-size.conf`
+```
+[Journal]
+SystemMaxUse=50M
+```
+- `/usr/lib/udev/rules.d/20-audio-pm.rules`
+```
+SUBSYSTEM=="power_supply", ENV{POWER_SUPPLY_ONLINE}=="0", TEST=="/sys/module/snd_hda_intel", \
+    RUN+="/bin/sh -c 'echo $$(cat /run/udev/snd-hda-intel-powersave 2>/dev/null || \
+        echo 10) > /sys/module/snd_hda_intel/parameters/power_save'"
+
+SUBSYSTEM=="power_supply", ENV{POWER_SUPPLY_ONLINE}=="1", TEST=="/sys/module/snd_hda_intel", \
+    RUN+="/bin/sh -c '[[ $$(cat /sys/module/snd_hda_intel/parameters/power_save) != 0 ]] && \
+        echo $$(cat /sys/module/snd_hda_intel/parameters/power_save) > /run/udev/snd-hda-intel-powersave; \
+        echo 0 > /sys/module/snd_hda_intel/parameters/power_save'"
+```
+- `/usr/lib/udev/rules.d/40-hpet-permissions.rules`
+```
+KERNEL=="rtc0", GROUP="audio"
+KERNEL=="hpet", GROUP="audio"
+```
+- `/usr/lib/udev/rules.d/50-sata.rules`
+```
+ACTION=="add", SUBSYSTEM=="scsi_host", KERNEL=="host*", \
+    ATTR{link_power_management_policy}=="*", \
+    ATTR{link_power_management_policy}="max_performance"
+```
+- `/usr/lib/udev/rules.d/60-ioschedulers.rules`
+```
+# HDD
+ACTION=="add|change", KERNEL=="sd[a-z]*", ATTR{queue/rotational}=="1", \
+    ATTR{queue/scheduler}="bfq"
+
+# SSD
+ACTION=="add|change", KERNEL=="sd[a-z]*|mmcblk[0-9]*", ATTR{queue/rotational}=="0", \
+    ATTR{queue/scheduler}="mq-deadline"
+
+# NVMe SSD
+ACTION=="add|change", KERNEL=="nvme[0-9]*", ATTR{queue/rotational}=="0", \
+    ATTR{queue/scheduler}="none"
+```
+- `/usr/lib/udev/rules.d/69-hdparm.rules`
+```
+ACTION=="add|change", KERNEL=="sd[a-z]", ATTR{queue/rotational}=="1", \
+    RUN+="/usr/bin/hdparm -B 254 -S 0 /dev/%k"
+```
+- `/usr/lib/sysctl.d/99-cachyos-settings.conf`
+```
+vm.swappiness = 100
+vm.vfs_cache_pressure = 50
+vm.dirty_bytes = 268435456
+vm.page-cluster = 0
+vm.dirty_background_bytes = 67108864
+vm.dirty_writeback_centisecs = 1500
+kernel.nmi_watchdog = 0
+kernel.unprivileged_userns_clone = 1
+kernel.printk = 3 3 3 3
+kernel.kptr_restrict = 2
+kernel.kexec_load_disabled = 1
+net.core.netdev_max_backlog = 4096
+fs.file-max = 2097152
+```
+- `/usr/lib/udev/rules.d/99-cpu-dma-latency.rules`
+```
+DEVPATH=="/devices/virtual/misc/cpu_dma_latency", OWNER="root", GROUP="audio", MODE="0660"
+```
+- `/usr/lib/modprobe.d/amdgpu.conf`
+```
+options amdgpu si_support=1 cik_support=1
+options radeon si_support=0 cik_support=0
+```
+- `/usr/lib/modprobe.d/blacklist.conf`
+```
+# Blacklist the Intel TCO Watchdog/Timer module
+blacklist iTCO_wdt
+
+# Blacklist the AMD SP5100 TCO Watchdog/Timer module (Required for Ryzen cpus)
+blacklist sp5100_tco
+```
+- `/usr/lib/tmpfiles.d/coredump.conf` - not included for Universal Blue systems, that have their own setting for this
+```
+d /var/lib/systemd/coredump 0755 root root 3d
+```
+- `/usr/lib/modprobe.d/nvidia.conf`
+```
+options nvidia NVreg_UsePageAttributeTable=1 \
+    NVreg_InitializeSystemMemoryAllocations=0 \
+    NVreg_DynamicPowerManagement=0x02 \
+    NVreg_RegistryDwords=RMIntrLockingMode=1
+```
+- `/usr/lib/tmpfiles.d/thp.conf`
+```
+w! /sys/kernel/mm/transparent_hugepage/defrag - - - - defer+madvise
+```
+- `/usr/lib/tmpfiles.d/thp-shrinker.conf`
+```
+w! /sys/kernel/mm/transparent_hugepage/khugepaged/max_ptes_none - - - - 4091
+```
 
 ## Repository Installers
 
