@@ -967,6 +967,13 @@
         "scriptPath": "p3/scripts/sysadm/cockpit.sh"
       },
       {
+        "name": "Termius",
+        "description": "termius_desc",
+        "icon": "termius.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/sysadm/termius.sh"
+      },
+      {
         "name": "Topgrade",
         "description": "topgrade_desc",
         "icon": "topgrade.svg",
