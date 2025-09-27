@@ -976,6 +976,13 @@
           "scriptPath": "p3/scripts/sysadm/cockpit.sh"
         },
         {
+          "name": "Termius",
+          "description": "Modern SSH client for Linux with intuitive graphical interface and advanced connection management features.",
+          "icon": "termius.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/sysadm/termius.sh"
+        },
+        {
           "name": "Topgrade",
           "description": "A tool for upgrading all installed packages on any Linux system.",
           "icon": "topgrade.svg",
@@ -2292,6 +2299,13 @@
           "icon": "cockpit.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/sysadm/cockpit.sh"
+        },
+        {
+          "name": "Termius",
+          "description": "Cliente SSH moderno para Linux com interface gráfica intuitiva e recursos avançados de gerenciamento de conexões.",
+          "icon": "termius.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/sysadm/termius.sh"
         },
         {
           "name": "Topgrade",
@@ -3612,6 +3626,13 @@
           "scriptPath": "p3/scripts/sysadm/cockpit.sh"
         },
         {
+          "name": "Termius",
+          "description": "termius_desc",
+          "icon": "termius.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/sysadm/termius.sh"
+        },
+        {
           "name": "Topgrade",
           "description": "Una herramienta para actualizar todos los paquetes instalados en cualquier sistema Linux.",
           "icon": "topgrade.svg",
@@ -4928,6 +4949,13 @@
           "icon": "cockpit.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/sysadm/cockpit.sh"
+        },
+        {
+          "name": "Termius",
+          "description": "termius_desc",
+          "icon": "termius.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/sysadm/termius.sh"
         },
         {
           "name": "Topgrade",
@@ -6248,6 +6276,13 @@
           "scriptPath": "p3/scripts/sysadm/cockpit.sh"
         },
         {
+          "name": "Termius",
+          "description": "termius_desc",
+          "icon": "termius.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/sysadm/termius.sh"
+        },
+        {
           "name": "Topgrade",
           "description": "Ein Tool zum Upgraden aller installierten Pakete auf jedem Linux-System.",
           "icon": "topgrade.svg",
@@ -7564,6 +7599,13 @@
           "icon": "cockpit.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/sysadm/cockpit.sh"
+        },
+        {
+          "name": "Termius",
+          "description": "termius_desc",
+          "icon": "termius.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/sysadm/termius.sh"
         },
         {
           "name": "Topgrade",
@@ -8884,6 +8926,13 @@
           "scriptPath": "p3/scripts/sysadm/cockpit.sh"
         },
         {
+          "name": "Termius",
+          "description": "termius_desc",
+          "icon": "termius.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/sysadm/termius.sh"
+        },
+        {
           "name": "Topgrade",
           "description": "任意のLinuxシステムでインストール済みの全パッケージをアップグレードするツール。",
           "icon": "topgrade.svg",
@@ -10200,6 +10249,13 @@
           "icon": "cockpit.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/sysadm/cockpit.sh"
+        },
+        {
+          "name": "Termius",
+          "description": "termius_desc",
+          "icon": "termius.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/sysadm/termius.sh"
         },
         {
           "name": "Topgrade",
