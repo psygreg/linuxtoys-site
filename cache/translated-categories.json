@@ -931,6 +931,13 @@
           "scriptPath": "p3/scripts/repos/nix.sh"
         },
         {
+          "name": "Paru",
+          "description": "A popular AUR helper written in Rust. Similar to yay.",
+          "icon": "archpkg.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/paru.sh"
+        },
+        {
           "name": "Pip",
           "description": "Python package manager. Typically useful for Python developers.",
           "icon": "pip.svg",
@@ -943,6 +950,13 @@
           "icon": "rpmfusion.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/repos/rpmfusion.sh"
+        },
+        {
+          "name": "Yay",
+          "description": "A popular AUR helper written in Go. Similar to paru.",
+          "icon": "archpkg.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/yay.sh"
         }
       ],
       "subcategories": {},
@@ -2256,6 +2270,13 @@
           "scriptPath": "p3/scripts/repos/nix.sh"
         },
         {
+          "name": "Paru",
+          "description": "Um assistente AUR popular escrito em Rust. Similar ao yay.",
+          "icon": "archpkg.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/paru.sh"
+        },
+        {
           "name": "Pip",
           "description": "Gerenciador de pacotes Python. Tipicamente útil para desenvolvedores Python.",
           "icon": "pip.svg",
@@ -2268,6 +2289,13 @@
           "icon": "rpmfusion.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/repos/rpmfusion.sh"
+        },
+        {
+          "name": "Yay",
+          "description": "Um assistente AUR popular escrito em Go. Similar ao paru.",
+          "icon": "archpkg.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/yay.sh"
         }
       ],
       "subcategories": {},
@@ -3581,6 +3609,13 @@
           "scriptPath": "p3/scripts/repos/nix.sh"
         },
         {
+          "name": "Paru",
+          "description": "Un asistente AUR popular escrito en Rust. Similar a yay.",
+          "icon": "archpkg.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/paru.sh"
+        },
+        {
           "name": "Pip",
           "description": "Gestor de paquetes de Python. Típicamente útil para desarrolladores de Python.",
           "icon": "pip.svg",
@@ -3593,6 +3628,13 @@
           "icon": "rpmfusion.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/repos/rpmfusion.sh"
+        },
+        {
+          "name": "Yay",
+          "description": "Un asistente AUR popular escrito en Go. Similar a paru.",
+          "icon": "archpkg.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/yay.sh"
         }
       ],
       "subcategories": {},
@@ -3627,7 +3669,7 @@
         },
         {
           "name": "Termius",
-          "description": "termius_desc",
+          "description": "Cliente SSH moderno para Linux con interfaz gráfica intuitiva y funciones avanzadas de gestión de conexiones.",
           "icon": "termius.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/sysadm/termius.sh"
@@ -4906,6 +4948,13 @@
           "scriptPath": "p3/scripts/repos/nix.sh"
         },
         {
+          "name": "Paru",
+          "description": "Un assistant AUR populaire écrit en Rust. Similaire à yay.",
+          "icon": "archpkg.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/paru.sh"
+        },
+        {
           "name": "Pip",
           "description": "Gestionnaire de paquets Python. Généralement utile pour les développeurs Python.",
           "icon": "pip.svg",
@@ -4918,6 +4967,13 @@
           "icon": "rpmfusion.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/repos/rpmfusion.sh"
+        },
+        {
+          "name": "Yay",
+          "description": "Un assistant AUR populaire écrit en Go. Similaire à paru.",
+          "icon": "archpkg.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/yay.sh"
         }
       ],
       "subcategories": {},
@@ -4952,7 +5008,7 @@
         },
         {
           "name": "Termius",
-          "description": "termius_desc",
+          "description": "Client SSH moderne pour Linux avec une interface graphique intuitive et des fonctionnalités avancées de gestion des connexions.",
           "icon": "termius.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/sysadm/termius.sh"
@@ -6231,6 +6287,13 @@
           "scriptPath": "p3/scripts/repos/nix.sh"
         },
         {
+          "name": "Paru",
+          "description": "Ein beliebter AUR-Helfer, geschrieben in Rust. Ähnlich wie yay.",
+          "icon": "archpkg.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/paru.sh"
+        },
+        {
           "name": "Pip",
           "description": "Python-Paketmanager. Typischerweise nützlich für Python-Entwickler.",
           "icon": "pip.svg",
@@ -6243,6 +6306,13 @@
           "icon": "rpmfusion.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/repos/rpmfusion.sh"
+        },
+        {
+          "name": "Yay",
+          "description": "Ein beliebter AUR-Helfer, geschrieben in Go. Ähnlich wie paru.",
+          "icon": "archpkg.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/yay.sh"
         }
       ],
       "subcategories": {},
@@ -6277,7 +6347,7 @@
         },
         {
           "name": "Termius",
-          "description": "termius_desc",
+          "description": "Moderner SSH-Client für Linux mit intuitiver grafischer Benutzeroberfläche und erweiterten Verbindungsverwaltungsfunktionen.",
           "icon": "termius.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/sysadm/termius.sh"
@@ -7556,6 +7626,13 @@
           "scriptPath": "p3/scripts/repos/nix.sh"
         },
         {
+          "name": "Paru",
+          "description": "一个用 Rust 编写的流行 AUR 助手。与 yay 类似。",
+          "icon": "archpkg.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/paru.sh"
+        },
+        {
           "name": "Pip",
           "description": "Python包管理器。通常对Python开发者有用。",
           "icon": "pip.svg",
@@ -7568,6 +7645,13 @@
           "icon": "rpmfusion.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/repos/rpmfusion.sh"
+        },
+        {
+          "name": "Yay",
+          "description": "一个用 Go 编写的流行 AUR 助手。与 paru 类似。",
+          "icon": "archpkg.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/yay.sh"
         }
       ],
       "subcategories": {},
@@ -7602,7 +7686,7 @@
         },
         {
           "name": "Termius",
-          "description": "termius_desc",
+          "description": "现代Linux SSH客户端，具有直观的图形界面和高级连接管理功能。",
           "icon": "termius.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/sysadm/termius.sh"
@@ -8881,6 +8965,13 @@
           "scriptPath": "p3/scripts/repos/nix.sh"
         },
         {
+          "name": "Paru",
+          "description": "Rust で書かれた人気の AUR ヘルパー。yay に似ています。",
+          "icon": "archpkg.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/paru.sh"
+        },
+        {
           "name": "Pip",
           "description": "Pythonパッケージマネージャー。通常Python開発者に有用。",
           "icon": "pip.svg",
@@ -8893,6 +8984,13 @@
           "icon": "rpmfusion.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/repos/rpmfusion.sh"
+        },
+        {
+          "name": "Yay",
+          "description": "Go で書かれた人気の AUR ヘルパー。paru に似ています。",
+          "icon": "archpkg.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/yay.sh"
         }
       ],
       "subcategories": {},
@@ -8927,7 +9025,7 @@
         },
         {
           "name": "Termius",
-          "description": "termius_desc",
+          "description": "Linux用のモダンなSSHクライアント。直感的なグラフィカルインターフェースと高度な接続管理機能を備えています。",
           "icon": "termius.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/sysadm/termius.sh"
@@ -10206,6 +10304,13 @@
           "scriptPath": "p3/scripts/repos/nix.sh"
         },
         {
+          "name": "Paru",
+          "description": "Популярный помощник AUR, написанный на Rust. Похож на yay.",
+          "icon": "archpkg.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/paru.sh"
+        },
+        {
           "name": "Pip",
           "description": "Менеджер пакетов Python. Обычно полезен для разработчиков Python.",
           "icon": "pip.svg",
@@ -10218,6 +10323,13 @@
           "icon": "rpmfusion.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/repos/rpmfusion.sh"
+        },
+        {
+          "name": "Yay",
+          "description": "Популярный помощник AUR, написанный на Go. Похож на paru.",
+          "icon": "archpkg.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/yay.sh"
         }
       ],
       "subcategories": {},
@@ -10252,7 +10364,7 @@
         },
         {
           "name": "Termius",
-          "description": "termius_desc",
+          "description": "Современный SSH-клиент для Linux с интуитивно понятным графическим интерфейсом и расширенными функциями управления подключениями.",
           "icon": "termius.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/sysadm/termius.sh"

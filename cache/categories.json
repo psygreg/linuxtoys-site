@@ -923,6 +923,13 @@
         "scriptPath": "p3/scripts/repos/nix.sh"
       },
       {
+        "name": "Paru",
+        "description": "paru_desc",
+        "icon": "archpkg.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/repos/paru.sh"
+      },
+      {
         "name": "Pip",
         "description": "pip_desc",
         "icon": "pip.svg",
@@ -935,6 +942,13 @@
         "icon": "rpmfusion.svg",
         "version": "1.0",
         "scriptPath": "p3/scripts/repos/rpmfusion.sh"
+      },
+      {
+        "name": "Yay",
+        "description": "yay_desc",
+        "icon": "archpkg.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/repos/yay.sh"
       }
     ],
     "subcategories": {}
