@@ -76,6 +76,13 @@
         "scriptPath": "p3/scripts/devs/nvm.sh"
       },
       {
+        "name": "Oh My Bash",
+        "description": "omb_desc",
+        "icon": "ohmybash.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/devs/ohmyba.sh"
+      },
+      {
         "name": "Oh My Zsh",
         "description": "omz_desc",
         "icon": "zsh.png",
@@ -397,6 +404,13 @@
         "icon": "btassist.svg",
         "version": "1.0",
         "scriptPath": "p3/scripts/extra/btassist.sh"
+      },
+      {
+        "name": "cachyconfs",
+        "description": "cachyconfs_desc",
+        "icon": "cachyos.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/cachyconfs.sh"
       },
       {
         "name": "Distrobox Command Handler",

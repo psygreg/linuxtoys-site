@@ -264,7 +264,10 @@
     "tweaks_desc": "Change settings related to GTK3 apps and GNOME Shell from themes to font rendering.",
     "extman_desc": "Search, download and manage GNOME extensions easily.",
     "yay_desc": "A popular AUR helper written in Go. Similar to paru.",
-    "paru_desc": "A popular AUR helper written in Rust. Similar to yay."
+    "paru_desc": "A popular AUR helper written in Rust. Similar to yay.",
+    "cachyconfs_desc": "Optimized configurations for better performance and responsiveness and small fixes for typical issues used by default on CachyOS, filtered for universal compatibility.",
+    "cachyconfs": "CachyOS systemd Configuration",
+    "omb_desc": "A delightful community-driven framework for managing your bash configuration."
   },
   "pt": {
     "subtitle": "Uma coleção amigável de ferramentas para Linux.",
@@ -531,7 +534,10 @@
     "tweaks_desc": "Alterar configurações relacionadas a aplicações GTK3 e GNOME Shell, desde temas até renderização de fontes.",
     "extman_desc": "Pesquisar, baixar e gerenciar extensões GNOME facilmente.",
     "yay_desc": "Um assistente AUR popular escrito em Go. Similar ao paru.",
-    "paru_desc": "Um assistente AUR popular escrito em Rust. Similar ao yay."
+    "paru_desc": "Um assistente AUR popular escrito em Rust. Similar ao yay.",
+    "cachyconfs_desc": "Configurações otimizadas para melhor desempenho e responsividade, e pequenas correções para problemas típicos usados por padrão no CachyOS, filtrados para compatibilidade universal.",
+    "cachyconfs": "Configuração systemd CachyOS",
+    "omb_desc": "Uma estrutura encantadora orientada pela comunidade para gerenciar sua configuração bash."
   },
   "es": {
     "subtitle": "Una colección amigable de herramientas para Linux.",
@@ -798,7 +804,10 @@
     "tweaks_desc": "Cambiar configuraciones relacionadas con aplicaciones GTK3 y GNOME Shell desde temas hasta renderizado de fuentes.",
     "extman_desc": "Buscar, descargar y gestionar extensiones de GNOME fácilmente.",
     "yay_desc": "Un asistente AUR popular escrito en Go. Similar a paru.",
-    "paru_desc": "Un asistente AUR popular escrito en Rust. Similar a yay."
+    "paru_desc": "Un asistente AUR popular escrito en Rust. Similar a yay.",
+    "cachyconfs_desc": "Configuraciones optimizadas para un mejor rendimiento y capacidad de respuesta, y pequeñas correcciones para problemas típicos utilizados por defecto en CachyOS, filtrados para compatibilidad universal.",
+    "cachyconfs": "Configuración systemd de CachyOS",
+    "omb_desc": "Un marco encantador impulsado por la comunidad para gestionar tu configuración de bash."
   },
   "fr": {
     "subtitle": "Une collection d'outils pour Linux de manière conviviale.",
@@ -1065,7 +1074,10 @@
     "tweaks_desc": "Modifier les paramètres relatifs aux applications GTK3 et au Shell GNOME, des thèmes au rendu des polices.",
     "extman_desc": "Rechercher, télécharger et gérer facilement les extensions GNOME.",
     "yay_desc": "Un assistant AUR populaire écrit en Go. Similaire à paru.",
-    "paru_desc": "Un assistant AUR populaire écrit en Rust. Similaire à yay."
+    "paru_desc": "Un assistant AUR populaire écrit en Rust. Similaire à yay.",
+    "cachyconfs_desc": "Configurations optimisées pour de meilleures performances et réactivité, ainsi que de petits correctifs pour les problèmes typiques utilisés par défaut sur CachyOS, filtrés pour une compatibilité universelle.",
+    "cachyconfs": "Configuration systemd CachyOS",
+    "omb_desc": "Un cadre délicieux piloté par la communauté pour gérer votre configuration bash."
   },
   "de": {
     "subtitle": "Eine freundliche Sammlung von Tools für Linux.",
@@ -1332,7 +1344,10 @@
     "tweaks_desc": "Einstellungen ändern, die sich auf GTK3-Apps und GNOME-Shell beziehen, von Themen bis zur Schriftwiedergabe.",
     "extman_desc": "GNOME-Erweiterungen einfach suchen, herunterladen und verwalten.",
     "yay_desc": "Ein beliebter AUR-Helfer, geschrieben in Go. Ähnlich wie paru.",
-    "paru_desc": "Ein beliebter AUR-Helfer, geschrieben in Rust. Ähnlich wie yay."
+    "paru_desc": "Ein beliebter AUR-Helfer, geschrieben in Rust. Ähnlich wie yay.",
+    "cachyconfs_desc": "Optimierte Konfigurationen für bessere Leistung und Reaktionsfähigkeit sowie kleine Fixes für typische Probleme, die standardmäßig auf CachyOS verwendet werden, gefiltert für universelle Kompatibilität.",
+    "cachyconfs": "CachyOS systemd Konfiguration",
+    "omb_desc": "Ein entzückendes, gemeinschaftlich betriebenes Framework zur Verwaltung Ihrer Bash-Konfiguration."
   },
   "zh": {
     "subtitle": "适用于Linux的用户友好工具集合。",
@@ -1601,7 +1616,10 @@
     "tweaks_desc": "更改与 GTK3 应用程序和 GNOME Shell 相关的设置，从主题到字体渲染。",
     "extman_desc": "轻松搜索、下载和管理 GNOME 扩展。",
     "yay_desc": "一个用 Go 编写的流行 AUR 助手。与 paru 类似。",
-    "paru_desc": "一个用 Rust 编写的流行 AUR 助手。与 yay 类似。"
+    "paru_desc": "一个用 Rust 编写的流行 AUR 助手。与 yay 类似。",
+    "cachyconfs_desc": "针对 CachyOS 默认使用的优化配置，以提高性能和响应能力，并修复典型问题，经过筛选以实现通用兼容性。",
+    "cachyconfs": "CachyOS systemd 配置",
+    "omb_desc": "一个令人愉快的社区驱动框架，用于管理您的 bash 配置。"
   },
   "ja": {
     "subtitle": "Linuxのためのユーザーフレンドリーなツール集。",
@@ -1868,7 +1886,10 @@
     "tweaks_desc": "GTK3 アプリと GNOME Shell に関連する設定を、テーマからフォントレンダリングまで変更します。",
     "extman_desc": "GNOME 拡張機能を簡単に検索、ダウンロード、管理します。",
     "yay_desc": "Go で書かれた人気の AUR ヘルパー。paru に似ています。",
-    "paru_desc": "Rust で書かれた人気の AUR ヘルパー。yay に似ています。"
+    "paru_desc": "Rust で書かれた人気の AUR ヘルパー。yay に似ています。",
+    "cachyconfs_desc": "CachyOS でデフォルトで使用されるパフォーマンスと応答性を向上させる最適化された設定、および典型的な問題に対する小さな修正。普遍的な互換性のためにフィルタリングされています。",
+    "cachyconfs": "CachyOS systemd 設定",
+    "omb_desc": "あなたの bash 設定を管理するための楽しいコミュニティ駆動型フレームワーク。"
   },
   "ru": {
     "subtitle": "Коллекция инструментов для Linux в удобном формате.",
@@ -2135,6 +2156,9 @@
     "tweaks_desc": "Изменить настройки, связанные с приложениями GTK3 и оболочкой GNOME, от тем до рендеринга шрифтов.",
     "extman_desc": "Легко искать, скачивать и управлять расширениями GNOME.",
     "yay_desc": "Популярный помощник AUR, написанный на Go. Похож на paru.",
-    "paru_desc": "Популярный помощник AUR, написанный на Rust. Похож на yay."
+    "paru_desc": "Популярный помощник AUR, написанный на Rust. Похож на yay.",
+    "cachyconfs_desc": "Оптимизированные конфигурации для лучшей производительности и отзывчивости, а также небольшие исправления типичных проблем, используемые по умолчанию в CachyOS, отфильтрованные для универсальной совместимости.",
+    "cachyconfs": "Конфигурация systemd CachyOS",
+    "omb_desc": "Восхитительный фреймворк, управляемый сообществом, для управления вашей конфигурацией bash."
   }
 }
