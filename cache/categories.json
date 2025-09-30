@@ -76,6 +76,13 @@
         "scriptPath": "p3/scripts/devs/nvm.sh"
       },
       {
+        "name": "Oh My Bash",
+        "description": "omb_desc",
+        "icon": "ohmybash.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/devs/ohmyba.sh"
+      },
+      {
         "name": "Oh My Zsh",
         "description": "omz_desc",
         "icon": "zsh.png",
@@ -397,6 +404,13 @@
         "icon": "btassist.svg",
         "version": "1.0",
         "scriptPath": "p3/scripts/extra/btassist.sh"
+      },
+      {
+        "name": "cachyconfs",
+        "description": "cachyconfs_desc",
+        "icon": "cachyos.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/cachyconfs.sh"
       },
       {
         "name": "Distrobox Command Handler",
@@ -923,6 +937,13 @@
         "scriptPath": "p3/scripts/repos/nix.sh"
       },
       {
+        "name": "Paru",
+        "description": "paru_desc",
+        "icon": "archpkg.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/repos/paru.sh"
+      },
+      {
         "name": "Pip",
         "description": "pip_desc",
         "icon": "pip.svg",
@@ -935,6 +956,13 @@
         "icon": "rpmfusion.svg",
         "version": "1.0",
         "scriptPath": "p3/scripts/repos/rpmfusion.sh"
+      },
+      {
+        "name": "Yay",
+        "description": "yay_desc",
+        "icon": "archpkg.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/repos/yay.sh"
       }
     ],
     "subcategories": {}

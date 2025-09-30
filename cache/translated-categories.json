@@ -77,6 +77,13 @@
           "scriptPath": "p3/scripts/devs/nvm.sh"
         },
         {
+          "name": "Oh My Bash",
+          "description": "A delightful community-driven framework for managing your bash configuration.",
+          "icon": "ohmybash.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/ohmyba.sh"
+        },
+        {
           "name": "Oh My Zsh",
           "description": "A framework for managing your zsh configuration.",
           "icon": "zsh.png",
@@ -402,6 +409,13 @@
           "icon": "btassist.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/btassist.sh"
+        },
+        {
+          "name": "CachyOS systemd Configuration",
+          "description": "Optimized configurations for better performance and responsiveness and small fixes for typical issues used by default on CachyOS, filtered for universal compatibility.",
+          "icon": "cachyos.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/cachyconfs.sh"
         },
         {
           "name": "Distrobox Command Handler",
@@ -931,6 +945,13 @@
           "scriptPath": "p3/scripts/repos/nix.sh"
         },
         {
+          "name": "Paru",
+          "description": "A popular AUR helper written in Rust. Similar to yay.",
+          "icon": "archpkg.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/paru.sh"
+        },
+        {
           "name": "Pip",
           "description": "Python package manager. Typically useful for Python developers.",
           "icon": "pip.svg",
@@ -943,6 +964,13 @@
           "icon": "rpmfusion.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/repos/rpmfusion.sh"
+        },
+        {
+          "name": "Yay",
+          "description": "A popular AUR helper written in Go. Similar to paru.",
+          "icon": "archpkg.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/yay.sh"
         }
       ],
       "subcategories": {},
@@ -1402,6 +1430,13 @@
           "scriptPath": "p3/scripts/devs/nvm.sh"
         },
         {
+          "name": "Oh My Bash",
+          "description": "Uma estrutura encantadora orientada pela comunidade para gerenciar sua configuração bash.",
+          "icon": "ohmybash.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/ohmyba.sh"
+        },
+        {
           "name": "Oh My Zsh",
           "description": "Um framework para gerenciar sua configuração do zsh.",
           "icon": "zsh.png",
@@ -1727,6 +1762,13 @@
           "icon": "btassist.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/btassist.sh"
+        },
+        {
+          "name": "Configuração systemd CachyOS",
+          "description": "Configurações otimizadas para melhor desempenho e responsividade, e pequenas correções para problemas típicos usados por padrão no CachyOS, filtrados para compatibilidade universal.",
+          "icon": "cachyos.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/cachyconfs.sh"
         },
         {
           "name": "Distrobox Command Handler",
@@ -2256,6 +2298,13 @@
           "scriptPath": "p3/scripts/repos/nix.sh"
         },
         {
+          "name": "Paru",
+          "description": "Um assistente AUR popular escrito em Rust. Similar ao yay.",
+          "icon": "archpkg.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/paru.sh"
+        },
+        {
           "name": "Pip",
           "description": "Gerenciador de pacotes Python. Tipicamente útil para desenvolvedores Python.",
           "icon": "pip.svg",
@@ -2268,6 +2317,13 @@
           "icon": "rpmfusion.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/repos/rpmfusion.sh"
+        },
+        {
+          "name": "Yay",
+          "description": "Um assistente AUR popular escrito em Go. Similar ao paru.",
+          "icon": "archpkg.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/yay.sh"
         }
       ],
       "subcategories": {},
@@ -2727,6 +2783,13 @@
           "scriptPath": "p3/scripts/devs/nvm.sh"
         },
         {
+          "name": "Oh My Bash",
+          "description": "Un marco encantador impulsado por la comunidad para gestionar tu configuración de bash.",
+          "icon": "ohmybash.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/ohmyba.sh"
+        },
+        {
           "name": "Oh My Zsh",
           "description": "Un framework para gestionar tu configuración de zsh.",
           "icon": "zsh.png",
@@ -3052,6 +3115,13 @@
           "icon": "btassist.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/btassist.sh"
+        },
+        {
+          "name": "Configuración systemd de CachyOS",
+          "description": "Configuraciones optimizadas para un mejor rendimiento y capacidad de respuesta, y pequeñas correcciones para problemas típicos utilizados por defecto en CachyOS, filtrados para compatibilidad universal.",
+          "icon": "cachyos.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/cachyconfs.sh"
         },
         {
           "name": "Distrobox Command Handler",
@@ -3581,6 +3651,13 @@
           "scriptPath": "p3/scripts/repos/nix.sh"
         },
         {
+          "name": "Paru",
+          "description": "Un asistente AUR popular escrito en Rust. Similar a yay.",
+          "icon": "archpkg.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/paru.sh"
+        },
+        {
           "name": "Pip",
           "description": "Gestor de paquetes de Python. Típicamente útil para desarrolladores de Python.",
           "icon": "pip.svg",
@@ -3593,6 +3670,13 @@
           "icon": "rpmfusion.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/repos/rpmfusion.sh"
+        },
+        {
+          "name": "Yay",
+          "description": "Un asistente AUR popular escrito en Go. Similar a paru.",
+          "icon": "archpkg.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/yay.sh"
         }
       ],
       "subcategories": {},
@@ -3627,7 +3711,7 @@
         },
         {
           "name": "Termius",
-          "description": "termius_desc",
+          "description": "Cliente SSH moderno para Linux con interfaz gráfica intuitiva y funciones avanzadas de gestión de conexiones.",
           "icon": "termius.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/sysadm/termius.sh"
@@ -4052,6 +4136,13 @@
           "scriptPath": "p3/scripts/devs/nvm.sh"
         },
         {
+          "name": "Oh My Bash",
+          "description": "Un cadre délicieux piloté par la communauté pour gérer votre configuration bash.",
+          "icon": "ohmybash.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/ohmyba.sh"
+        },
+        {
           "name": "Oh My Zsh",
           "description": "Un framework pour gérer votre configuration zsh.",
           "icon": "zsh.png",
@@ -4377,6 +4468,13 @@
           "icon": "btassist.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/btassist.sh"
+        },
+        {
+          "name": "Configuration systemd CachyOS",
+          "description": "Configurations optimisées pour de meilleures performances et réactivité, ainsi que de petits correctifs pour les problèmes typiques utilisés par défaut sur CachyOS, filtrés pour une compatibilité universelle.",
+          "icon": "cachyos.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/cachyconfs.sh"
         },
         {
           "name": "Distrobox Command Handler",
@@ -4906,6 +5004,13 @@
           "scriptPath": "p3/scripts/repos/nix.sh"
         },
         {
+          "name": "Paru",
+          "description": "Un assistant AUR populaire écrit en Rust. Similaire à yay.",
+          "icon": "archpkg.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/paru.sh"
+        },
+        {
           "name": "Pip",
           "description": "Gestionnaire de paquets Python. Généralement utile pour les développeurs Python.",
           "icon": "pip.svg",
@@ -4918,6 +5023,13 @@
           "icon": "rpmfusion.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/repos/rpmfusion.sh"
+        },
+        {
+          "name": "Yay",
+          "description": "Un assistant AUR populaire écrit en Go. Similaire à paru.",
+          "icon": "archpkg.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/yay.sh"
         }
       ],
       "subcategories": {},
@@ -4952,7 +5064,7 @@
         },
         {
           "name": "Termius",
-          "description": "termius_desc",
+          "description": "Client SSH moderne pour Linux avec une interface graphique intuitive et des fonctionnalités avancées de gestion des connexions.",
           "icon": "termius.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/sysadm/termius.sh"
@@ -5377,6 +5489,13 @@
           "scriptPath": "p3/scripts/devs/nvm.sh"
         },
         {
+          "name": "Oh My Bash",
+          "description": "Ein entzückendes, gemeinschaftlich betriebenes Framework zur Verwaltung Ihrer Bash-Konfiguration.",
+          "icon": "ohmybash.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/ohmyba.sh"
+        },
+        {
           "name": "Oh My Zsh",
           "description": "Ein Framework zur Verwaltung Ihrer zsh-Konfiguration.",
           "icon": "zsh.png",
@@ -5702,6 +5821,13 @@
           "icon": "btassist.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/btassist.sh"
+        },
+        {
+          "name": "CachyOS systemd Konfiguration",
+          "description": "Optimierte Konfigurationen für bessere Leistung und Reaktionsfähigkeit sowie kleine Fixes für typische Probleme, die standardmäßig auf CachyOS verwendet werden, gefiltert für universelle Kompatibilität.",
+          "icon": "cachyos.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/cachyconfs.sh"
         },
         {
           "name": "Distrobox Command Handler",
@@ -6231,6 +6357,13 @@
           "scriptPath": "p3/scripts/repos/nix.sh"
         },
         {
+          "name": "Paru",
+          "description": "Ein beliebter AUR-Helfer, geschrieben in Rust. Ähnlich wie yay.",
+          "icon": "archpkg.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/paru.sh"
+        },
+        {
           "name": "Pip",
           "description": "Python-Paketmanager. Typischerweise nützlich für Python-Entwickler.",
           "icon": "pip.svg",
@@ -6243,6 +6376,13 @@
           "icon": "rpmfusion.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/repos/rpmfusion.sh"
+        },
+        {
+          "name": "Yay",
+          "description": "Ein beliebter AUR-Helfer, geschrieben in Go. Ähnlich wie paru.",
+          "icon": "archpkg.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/yay.sh"
         }
       ],
       "subcategories": {},
@@ -6277,7 +6417,7 @@
         },
         {
           "name": "Termius",
-          "description": "termius_desc",
+          "description": "Moderner SSH-Client für Linux mit intuitiver grafischer Benutzeroberfläche und erweiterten Verbindungsverwaltungsfunktionen.",
           "icon": "termius.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/sysadm/termius.sh"
@@ -6702,6 +6842,13 @@
           "scriptPath": "p3/scripts/devs/nvm.sh"
         },
         {
+          "name": "Oh My Bash",
+          "description": "一个令人愉快的社区驱动框架，用于管理您的 bash 配置。",
+          "icon": "ohmybash.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/ohmyba.sh"
+        },
+        {
           "name": "Oh My Zsh",
           "description": "用于管理您的 zsh 配置的框架。",
           "icon": "zsh.png",
@@ -7027,6 +7174,13 @@
           "icon": "btassist.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/btassist.sh"
+        },
+        {
+          "name": "CachyOS systemd 配置",
+          "description": "针对 CachyOS 默认使用的优化配置，以提高性能和响应能力，并修复典型问题，经过筛选以实现通用兼容性。",
+          "icon": "cachyos.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/cachyconfs.sh"
         },
         {
           "name": "Distrobox Command Handler",
@@ -7556,6 +7710,13 @@
           "scriptPath": "p3/scripts/repos/nix.sh"
         },
         {
+          "name": "Paru",
+          "description": "一个用 Rust 编写的流行 AUR 助手。与 yay 类似。",
+          "icon": "archpkg.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/paru.sh"
+        },
+        {
           "name": "Pip",
           "description": "Python包管理器。通常对Python开发者有用。",
           "icon": "pip.svg",
@@ -7568,6 +7729,13 @@
           "icon": "rpmfusion.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/repos/rpmfusion.sh"
+        },
+        {
+          "name": "Yay",
+          "description": "一个用 Go 编写的流行 AUR 助手。与 paru 类似。",
+          "icon": "archpkg.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/yay.sh"
         }
       ],
       "subcategories": {},
@@ -7602,7 +7770,7 @@
         },
         {
           "name": "Termius",
-          "description": "termius_desc",
+          "description": "现代Linux SSH客户端，具有直观的图形界面和高级连接管理功能。",
           "icon": "termius.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/sysadm/termius.sh"
@@ -8027,6 +8195,13 @@
           "scriptPath": "p3/scripts/devs/nvm.sh"
         },
         {
+          "name": "Oh My Bash",
+          "description": "あなたの bash 設定を管理するための楽しいコミュニティ駆動型フレームワーク。",
+          "icon": "ohmybash.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/ohmyba.sh"
+        },
+        {
           "name": "Oh My Zsh",
           "description": "zsh設定を管理するためのフレームワーク。",
           "icon": "zsh.png",
@@ -8352,6 +8527,13 @@
           "icon": "btassist.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/btassist.sh"
+        },
+        {
+          "name": "CachyOS systemd 設定",
+          "description": "CachyOS でデフォルトで使用されるパフォーマンスと応答性を向上させる最適化された設定、および典型的な問題に対する小さな修正。普遍的な互換性のためにフィルタリングされています。",
+          "icon": "cachyos.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/cachyconfs.sh"
         },
         {
           "name": "Distrobox Command Handler",
@@ -8881,6 +9063,13 @@
           "scriptPath": "p3/scripts/repos/nix.sh"
         },
         {
+          "name": "Paru",
+          "description": "Rust で書かれた人気の AUR ヘルパー。yay に似ています。",
+          "icon": "archpkg.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/paru.sh"
+        },
+        {
           "name": "Pip",
           "description": "Pythonパッケージマネージャー。通常Python開発者に有用。",
           "icon": "pip.svg",
@@ -8893,6 +9082,13 @@
           "icon": "rpmfusion.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/repos/rpmfusion.sh"
+        },
+        {
+          "name": "Yay",
+          "description": "Go で書かれた人気の AUR ヘルパー。paru に似ています。",
+          "icon": "archpkg.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/yay.sh"
         }
       ],
       "subcategories": {},
@@ -8927,7 +9123,7 @@
         },
         {
           "name": "Termius",
-          "description": "termius_desc",
+          "description": "Linux用のモダンなSSHクライアント。直感的なグラフィカルインターフェースと高度な接続管理機能を備えています。",
           "icon": "termius.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/sysadm/termius.sh"
@@ -9352,6 +9548,13 @@
           "scriptPath": "p3/scripts/devs/nvm.sh"
         },
         {
+          "name": "Oh My Bash",
+          "description": "Восхитительный фреймворк, управляемый сообществом, для управления вашей конфигурацией bash.",
+          "icon": "ohmybash.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/ohmyba.sh"
+        },
+        {
           "name": "Oh My Zsh",
           "description": "Фреймворк для управления вашей конфигурацией zsh.",
           "icon": "zsh.png",
@@ -9677,6 +9880,13 @@
           "icon": "btassist.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/btassist.sh"
+        },
+        {
+          "name": "Конфигурация systemd CachyOS",
+          "description": "Оптимизированные конфигурации для лучшей производительности и отзывчивости, а также небольшие исправления типичных проблем, используемые по умолчанию в CachyOS, отфильтрованные для универсальной совместимости.",
+          "icon": "cachyos.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/cachyconfs.sh"
         },
         {
           "name": "Distrobox Command Handler",
@@ -10206,6 +10416,13 @@
           "scriptPath": "p3/scripts/repos/nix.sh"
         },
         {
+          "name": "Paru",
+          "description": "Популярный помощник AUR, написанный на Rust. Похож на yay.",
+          "icon": "archpkg.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/paru.sh"
+        },
+        {
           "name": "Pip",
           "description": "Менеджер пакетов Python. Обычно полезен для разработчиков Python.",
           "icon": "pip.svg",
@@ -10218,6 +10435,13 @@
           "icon": "rpmfusion.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/repos/rpmfusion.sh"
+        },
+        {
+          "name": "Yay",
+          "description": "Популярный помощник AUR, написанный на Go. Похож на paru.",
+          "icon": "archpkg.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/yay.sh"
         }
       ],
       "subcategories": {},
@@ -10252,7 +10476,7 @@
         },
         {
           "name": "Termius",
-          "description": "termius_desc",
+          "description": "Современный SSH-клиент для Linux с интуитивно понятным графическим интерфейсом и расширенными функциями управления подключениями.",
           "icon": "termius.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/sysadm/termius.sh"

@@ -225,7 +225,7 @@
     "no": "No",
     "local_scripts_name": "Local Scripts",
     "local_scripts_desc": "Your own added scripts. You can drag and drop to add new scripts here.",
-    "script_template_doc_comment": "# Refer to the documentation at https://linuxtoys.luminhost.xyz/handbook.html for more information.",
+    "script_template_doc_comment": "# Refer to the documentation at https://linux.toys/handbook.html for more information.",
     "create_new_script_name": "Create New Script",
     "create_new_script_desc": "Create a new local script. It will be opened in your default text editor after creation.",
     "script_name_prompt": "Enter your script name:",
@@ -262,7 +262,12 @@
     "edu": "Education",
     "edu_desc": "Resources for learning and teaching for all ages.",
     "tweaks_desc": "Change settings related to GTK3 apps and GNOME Shell from themes to font rendering.",
-    "extman_desc": "Search, download and manage GNOME extensions easily."
+    "extman_desc": "Search, download and manage GNOME extensions easily.",
+    "yay_desc": "A popular AUR helper written in Go. Similar to paru.",
+    "paru_desc": "A popular AUR helper written in Rust. Similar to yay.",
+    "cachyconfs_desc": "Optimized configurations for better performance and responsiveness and small fixes for typical issues used by default on CachyOS, filtered for universal compatibility.",
+    "cachyconfs": "CachyOS systemd Configuration",
+    "omb_desc": "A delightful community-driven framework for managing your bash configuration."
   },
   "pt": {
     "subtitle": "Uma coleção amigável de ferramentas para Linux.",
@@ -491,7 +496,7 @@
     "no": "Não",
     "local_scripts_name": "Scripts Locais",
     "local_scripts_desc": "Seus próprios scripts adicionados. Você pode arrastar e soltar para adicionar novos scripts aqui.",
-    "script_template_doc_comment": "# Consulte a documentação em https://linuxtoys.luminhost.xyz/handbook.html para mais informações.",
+    "script_template_doc_comment": "# Consulte a documentação em https://linux.toys/handbook.html para mais informações.",
     "create_new_script_name": "Criar Novo Script",
     "create_new_script_desc": "Criar um novo script local. Será aberto no seu editor de texto padrão após a criação.",
     "script_name_prompt": "Digite o nome do seu script:",
@@ -527,7 +532,12 @@
     "edu": "Educação",
     "edu_desc": "Recursos para aprendizagem e ensino para todas as idades.",
     "tweaks_desc": "Alterar configurações relacionadas a aplicações GTK3 e GNOME Shell, desde temas até renderização de fontes.",
-    "extman_desc": "Pesquisar, baixar e gerenciar extensões GNOME facilmente."
+    "extman_desc": "Pesquisar, baixar e gerenciar extensões GNOME facilmente.",
+    "yay_desc": "Um assistente AUR popular escrito em Go. Similar ao paru.",
+    "paru_desc": "Um assistente AUR popular escrito em Rust. Similar ao yay.",
+    "cachyconfs_desc": "Configurações otimizadas para melhor desempenho e responsividade, e pequenas correções para problemas típicos usados por padrão no CachyOS, filtrados para compatibilidade universal.",
+    "cachyconfs": "Configuração systemd CachyOS",
+    "omb_desc": "Uma estrutura encantadora orientada pela comunidade para gerenciar sua configuração bash."
   },
   "es": {
     "subtitle": "Una colección amigable de herramientas para Linux.",
@@ -732,6 +742,7 @@
     "topgrade_desc": "Una herramienta para actualizar todos los paquetes instalados en cualquier sistema Linux.",
     "cockpitclient_desc": "Una interfaz basada en web para gestionar servidores Linux (cliente).",
     "adir_desc": "Instala todos los paquetes necesarios para unirse a dominios Active Directory usando realmd.",
+    "termius_desc": "Cliente SSH moderno para Linux con interfaz gráfica intuitiva y funciones avanzadas de gestión de conexiones.",
     "select_language": "Seleccionar Idioma",
     "select_language_title": "Selección de Idioma",
     "select_language_message": "Por favor, seleccione su idioma preferido:",
@@ -755,7 +766,7 @@
     "no": "No",
     "local_scripts_name": "Scripts Locales",
     "local_scripts_desc": "Sus propios scripts añadidos. Puede arrastrar y soltar para añadir nuevos scripts aquí.",
-    "script_template_doc_comment": "# Consulte la documentación en https://linuxtoys.luminhost.xyz/handbook.html para más información.",
+    "script_template_doc_comment": "# Consulte la documentación en https://linux.toys/handbook.html para más información.",
     "create_new_script_name": "Crear Nuevo Script",
     "create_new_script_desc": "Crear un nuevo script local. Se abrirá en su editor de texto predeterminado después de la creación.",
     "script_name_prompt": "Ingrese el nombre de su script:",
@@ -791,7 +802,12 @@
     "edu": "Educación",
     "edu_desc": "Recursos para el aprendizaje y la enseñanza para todas las edades.",
     "tweaks_desc": "Cambiar configuraciones relacionadas con aplicaciones GTK3 y GNOME Shell desde temas hasta renderizado de fuentes.",
-    "extman_desc": "Buscar, descargar y gestionar extensiones de GNOME fácilmente."
+    "extman_desc": "Buscar, descargar y gestionar extensiones de GNOME fácilmente.",
+    "yay_desc": "Un asistente AUR popular escrito en Go. Similar a paru.",
+    "paru_desc": "Un asistente AUR popular escrito en Rust. Similar a yay.",
+    "cachyconfs_desc": "Configuraciones optimizadas para un mejor rendimiento y capacidad de respuesta, y pequeñas correcciones para problemas típicos utilizados por defecto en CachyOS, filtrados para compatibilidad universal.",
+    "cachyconfs": "Configuración systemd de CachyOS",
+    "omb_desc": "Un marco encantador impulsado por la comunidad para gestionar tu configuración de bash."
   },
   "fr": {
     "subtitle": "Une collection d'outils pour Linux de manière conviviale.",
@@ -996,6 +1012,7 @@
     "topgrade_desc": "Un outil pour mettre à jour tous les paquets installés sur n'importe quel système Linux.",
     "cockpitclient_desc": "Une interface web pour gérer les serveurs Linux (client).",
     "adir_desc": "Installe tous les paquets nécessaires pour rejoindre des domaines Active Directory en utilisant realmd.",
+    "termius_desc": "Client SSH moderne pour Linux avec une interface graphique intuitive et des fonctionnalités avancées de gestion des connexions.",
     "select_language": "Sélectionner la langue",
     "select_language_title": "Sélection de la langue",
     "select_language_message": "Veuillez sélectionner votre langue préférée :",
@@ -1019,7 +1036,7 @@
     "no": "Non",
     "local_scripts_name": "Scripts locaux",
     "local_scripts_desc": "Vos propres scripts ajoutés. Vous pouvez glisser-déposer pour ajouter de nouveaux scripts ici.",
-    "script_template_doc_comment": "# Consultez la documentation sur https://linuxtoys.luminhost.xyz/handbook.html pour plus d'informations.",
+    "script_template_doc_comment": "# Consultez la documentation sur https://linux.toys/handbook.html pour plus d'informations.",
     "create_new_script_name": "Créer un nouveau script",
     "create_new_script_desc": "Créer un nouveau script local. Il sera ouvert dans votre éditeur de texte par défaut après la création.",
     "script_name_prompt": "Entrez le nom de votre script :",
@@ -1055,7 +1072,12 @@
     "edu": "Éducation",
     "edu_desc": "Ressources pour l'apprentissage et l'enseignement pour tous les âges.",
     "tweaks_desc": "Modifier les paramètres relatifs aux applications GTK3 et au Shell GNOME, des thèmes au rendu des polices.",
-    "extman_desc": "Rechercher, télécharger et gérer facilement les extensions GNOME."
+    "extman_desc": "Rechercher, télécharger et gérer facilement les extensions GNOME.",
+    "yay_desc": "Un assistant AUR populaire écrit en Go. Similaire à paru.",
+    "paru_desc": "Un assistant AUR populaire écrit en Rust. Similaire à yay.",
+    "cachyconfs_desc": "Configurations optimisées pour de meilleures performances et réactivité, ainsi que de petits correctifs pour les problèmes typiques utilisés par défaut sur CachyOS, filtrés pour une compatibilité universelle.",
+    "cachyconfs": "Configuration systemd CachyOS",
+    "omb_desc": "Un cadre délicieux piloté par la communauté pour gérer votre configuration bash."
   },
   "de": {
     "subtitle": "Eine freundliche Sammlung von Tools für Linux.",
@@ -1260,6 +1282,7 @@
     "topgrade_desc": "Ein Tool zum Upgraden aller installierten Pakete auf jedem Linux-System.",
     "cockpitclient_desc": "Eine webbasierte Oberfläche zur Verwaltung von Linux-Servern (Client).",
     "adir_desc": "Installiert alle notwendigen Pakete zum Beitritt zu Active Directory-Domains mit realmd.",
+    "termius_desc": "Moderner SSH-Client für Linux mit intuitiver grafischer Benutzeroberfläche und erweiterten Verbindungsverwaltungsfunktionen.",
     "select_language": "Sprache auswählen",
     "select_language_title": "Sprachauswahl",
     "select_language_message": "Bitte wählen Sie Ihre bevorzugte Sprache:",
@@ -1283,7 +1306,7 @@
     "no": "Nein",
     "local_scripts_name": "Lokale Skripte",
     "local_scripts_desc": "Ihre eigenen hinzugefügten Skripte. Sie können hier per Drag & Drop neue Skripte hinzufügen.",
-    "script_template_doc_comment": "# Siehe die Dokumentation unter https://linuxtoys.luminhost.xyz/handbook.html für weitere Informationen.",
+    "script_template_doc_comment": "# Siehe die Dokumentation unter https://linux.toys/handbook.html für weitere Informationen.",
     "create_new_script_name": "Neues Skript erstellen",
     "create_new_script_desc": "Ein neues lokales Skript erstellen. Es wird nach der Erstellung in Ihrem Standard-Texteditor geöffnet.",
     "script_name_prompt": "Geben Sie den Namen Ihres Skripts ein:",
@@ -1319,7 +1342,12 @@
     "edu": "Bildung",
     "edu_desc": "Ressourcen für Lernen und Lehren für alle Altersgruppen.",
     "tweaks_desc": "Einstellungen ändern, die sich auf GTK3-Apps und GNOME-Shell beziehen, von Themen bis zur Schriftwiedergabe.",
-    "extman_desc": "GNOME-Erweiterungen einfach suchen, herunterladen und verwalten."
+    "extman_desc": "GNOME-Erweiterungen einfach suchen, herunterladen und verwalten.",
+    "yay_desc": "Ein beliebter AUR-Helfer, geschrieben in Go. Ähnlich wie paru.",
+    "paru_desc": "Ein beliebter AUR-Helfer, geschrieben in Rust. Ähnlich wie yay.",
+    "cachyconfs_desc": "Optimierte Konfigurationen für bessere Leistung und Reaktionsfähigkeit sowie kleine Fixes für typische Probleme, die standardmäßig auf CachyOS verwendet werden, gefiltert für universelle Kompatibilität.",
+    "cachyconfs": "CachyOS systemd Konfiguration",
+    "omb_desc": "Ein entzückendes, gemeinschaftlich betriebenes Framework zur Verwaltung Ihrer Bash-Konfiguration."
   },
   "zh": {
     "subtitle": "适用于Linux的用户友好工具集合。",
@@ -1526,6 +1554,7 @@
     "topgrade_desc": "升级任何Linux系统上所有已安装软件包的工具。",
     "cockpitclient_desc": "管理Linux服务器的基于网络的界面（客户端）。",
     "adir_desc": "安装使用realmd加入Active Directory域所需的所有软件包。",
+    "termius_desc": "现代Linux SSH客户端，具有直观的图形界面和高级连接管理功能。",
     "select_language": "选择语言",
     "select_language_title": "语言选择",
     "select_language_message": "请选择您的首选语言：",
@@ -1549,7 +1578,7 @@
     "no": "否",
     "local_scripts_name": "本地脚本",
     "local_scripts_desc": "您自己添加的脚本。您可以拖放文件来在这里添加新脚本。",
-    "script_template_doc_comment": "# 请参阅 https://linuxtoys.luminhost.xyz/handbook.html 的文档以获取更多信息。",
+    "script_template_doc_comment": "# 请参阅 https://linux.toys/handbook.html 的文档以获取更多信息。",
     "create_new_script_name": "创建新脚本",
     "create_new_script_desc": "创建一个新的本地脚本。创建后将在您的默认文本编辑器中打开。",
     "script_name_prompt": "输入您的脚本名称：",
@@ -1585,7 +1614,12 @@
     "edu": "教育",
     "edu_desc": "适合所有年龄的学习和教学资源。",
     "tweaks_desc": "更改与 GTK3 应用程序和 GNOME Shell 相关的设置，从主题到字体渲染。",
-    "extman_desc": "轻松搜索、下载和管理 GNOME 扩展。"
+    "extman_desc": "轻松搜索、下载和管理 GNOME 扩展。",
+    "yay_desc": "一个用 Go 编写的流行 AUR 助手。与 paru 类似。",
+    "paru_desc": "一个用 Rust 编写的流行 AUR 助手。与 yay 类似。",
+    "cachyconfs_desc": "针对 CachyOS 默认使用的优化配置，以提高性能和响应能力，并修复典型问题，经过筛选以实现通用兼容性。",
+    "cachyconfs": "CachyOS systemd 配置",
+    "omb_desc": "一个令人愉快的社区驱动框架，用于管理您的 bash 配置。"
   },
   "ja": {
     "subtitle": "Linuxのためのユーザーフレンドリーなツール集。",
@@ -1790,6 +1824,7 @@
     "topgrade_desc": "任意のLinuxシステムでインストール済みの全パッケージをアップグレードするツール。",
     "cockpitclient_desc": "Linuxサーバー管理のためのウェブベースインターフェース（クライアント）。",
     "adir_desc": "realmdを使用してActive Directoryドメインに参加するために必要な全パッケージをインストール。",
+    "termius_desc": "Linux用のモダンなSSHクライアント。直感的なグラフィカルインターフェースと高度な接続管理機能を備えています。",
     "select_language": "言語を選択",
     "select_language_title": "言語選択",
     "select_language_message": "お好みの言語を選択してください：",
@@ -1813,7 +1848,7 @@
     "no": "いいえ",
     "local_scripts_name": "ローカルスクリプト",
     "local_scripts_desc": "あなた自身が追加したスクリプトです。ここにドラッグ＆ドロップして新しいスクリプトを追加できます。",
-    "script_template_doc_comment": "# 詳細については https://linuxtoys.luminhost.xyz/handbook.html のドキュメントを参照してください。",
+    "script_template_doc_comment": "# 詳細については https://linux.toys/handbook.html のドキュメントを参照してください。",
     "create_new_script_name": "新しいスクリプトを作成",
     "create_new_script_desc": "新しいローカルスクリプトを作成します。作成後、デフォルトのテキストエディターで開かれます。",
     "script_name_prompt": "スクリプト名を入力してください：",
@@ -1849,7 +1884,12 @@
     "edu": "教育",
     "edu_desc": "あらゆる年齢層のための学習と指導のリソース。",
     "tweaks_desc": "GTK3 アプリと GNOME Shell に関連する設定を、テーマからフォントレンダリングまで変更します。",
-    "extman_desc": "GNOME 拡張機能を簡単に検索、ダウンロード、管理します。"
+    "extman_desc": "GNOME 拡張機能を簡単に検索、ダウンロード、管理します。",
+    "yay_desc": "Go で書かれた人気の AUR ヘルパー。paru に似ています。",
+    "paru_desc": "Rust で書かれた人気の AUR ヘルパー。yay に似ています。",
+    "cachyconfs_desc": "CachyOS でデフォルトで使用されるパフォーマンスと応答性を向上させる最適化された設定、および典型的な問題に対する小さな修正。普遍的な互換性のためにフィルタリングされています。",
+    "cachyconfs": "CachyOS systemd 設定",
+    "omb_desc": "あなたの bash 設定を管理するための楽しいコミュニティ駆動型フレームワーク。"
   },
   "ru": {
     "subtitle": "Коллекция инструментов для Linux в удобном формате.",
@@ -2054,6 +2094,7 @@
     "topgrade_desc": "Инструмент для обновления всех установленных пакетов в любой системе Linux.",
     "cockpitclient_desc": "Веб-интерфейс для управления серверами Linux (клиент).",
     "adir_desc": "Устанавливает все пакеты, необходимые для присоединения к доменам Active Directory с использованием realmd.",
+    "termius_desc": "Современный SSH-клиент для Linux с интуитивно понятным графическим интерфейсом и расширенными функциями управления подключениями.",
     "select_language": "Выбрать язык",
     "select_language_title": "Выбор языка",
     "select_language_message": "Пожалуйста, выберите предпочитаемый язык:",
@@ -2077,7 +2118,7 @@
     "no": "Нет",
     "local_scripts_name": "Локальные скрипты",
     "local_scripts_desc": "Ваши собственные добавленные скрипты. Вы можете перетащить файлы сюда, чтобы добавить новые скрипты.",
-    "script_template_doc_comment": "# Обратитесь к документации на https://linuxtoys.luminhost.xyz/handbook.html для получения дополнительной информации.",
+    "script_template_doc_comment": "# Обратитесь к документации на https://linux.toys/handbook.html для получения дополнительной информации.",
     "create_new_script_name": "Создать новый скрипт",
     "create_new_script_desc": "Создать новый локальный скрипт. Он будет открыт в вашем текстовом редакторе по умолчанию после создания.",
     "script_name_prompt": "Введите имя вашего скрипта:",
@@ -2113,6 +2154,11 @@
     "edu": "Образование",
     "edu_desc": "Ресурсы для обучения и преподавания для всех возрастов.",
     "tweaks_desc": "Изменить настройки, связанные с приложениями GTK3 и оболочкой GNOME, от тем до рендеринга шрифтов.",
-    "extman_desc": "Легко искать, скачивать и управлять расширениями GNOME."
+    "extman_desc": "Легко искать, скачивать и управлять расширениями GNOME.",
+    "yay_desc": "Популярный помощник AUR, написанный на Go. Похож на paru.",
+    "paru_desc": "Популярный помощник AUR, написанный на Rust. Похож на yay.",
+    "cachyconfs_desc": "Оптимизированные конфигурации для лучшей производительности и отзывчивости, а также небольшие исправления типичных проблем, используемые по умолчанию в CachyOS, отфильтрованные для универсальной совместимости.",
+    "cachyconfs": "Конфигурация systemd CachyOS",
+    "omb_desc": "Восхитительный фреймворк, управляемый сообществом, для управления вашей конфигурацией bash."
   }
 }
