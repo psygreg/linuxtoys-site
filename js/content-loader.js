@@ -2,7 +2,7 @@ class ContentLoader {
   constructor(translationManager) {
     this.translationManager = translationManager;
     this.contentType = null;
-    this.supportedLanguages = ['en', 'pt', 'es', 'fr', 'de', 'zh', 'ja', 'ru'];
+    this.supportedLanguages = ['en', 'pt', 'es', 'fr', 'de', 'zh', 'ja', 'ru', 'nl'];
   }
 
   async init() {
@@ -100,6 +100,7 @@ class ContentLoader {
         'es': 'Manual del Desarrollador - LinuxToys',
         'fr': 'Manuel du Développeur - LinuxToys',
         'de': 'Entwicklerhandbuch - LinuxToys',
+        'nl': 'Ontwikkelaarshandboek - LinuxToys',
         'zh': '开发者手册 - LinuxToys',
         'ja': '開発者ハンドブック - LinuxToys',
         'ru': 'Руководство разработчика - LinuxToys'
@@ -110,6 +111,7 @@ class ContentLoader {
         'es': 'Instrucciones del Modo CLI - LinuxToys',
         'fr': 'Instructions du Mode CLI - LinuxToys',
         'de': 'CLI-Modus Anweisungen - LinuxToys',
+        'nl': 'CLI-modus Instructies - LinuxToys',
         'zh': 'CLI 模式说明 - LinuxToys',
         'ja': 'CLIモードの説明 - LinuxToys',
         'ru': 'Инструкции CLI режима - LinuxToys'
@@ -120,6 +122,7 @@ class ContentLoader {
         'es': 'Base de Conocimientos - LinuxToys',
         'fr': 'Base de Connaissances - LinuxToys',
         'de': 'Wissensdatenbank - LinuxToys',
+        'nl': 'Kennisbank - LinuxToys',
         'zh': '知识库 - LinuxToys',
         'ja': 'ナレッジベース - LinuxToys',
         'ru': 'База знаний - LinuxToys'
@@ -130,6 +133,7 @@ class ContentLoader {
         'es': 'Créditos & Reconocimientos - LinuxToys',
         'fr': 'Crédits & Remerciements - LinuxToys',
         'de': 'Credits & Danksagungen - LinuxToys',
+        'nl': 'Credits & Dankbetuigingen - LinuxToys',
         'zh': '致谢 & 鸣谢 - LinuxToys',
         'ja': 'クレジット & 謝辞 - LinuxToys',
         'ru': 'Авторские права и благодарности - LinuxToys'
@@ -143,6 +147,7 @@ class ContentLoader {
         'es': 'Guía completa para desarrollar herramientas y scripts de LinuxToys',
         'fr': 'Guide complet pour développer des outils et scripts LinuxToys',
         'de': 'Vollständiger Leitfaden für die Entwicklung von LinuxToys-Tools und -Skripten',
+        'nl': 'Volledige gids voor het ontwikkelen van LinuxToys tools en scripts',
         'zh': '开发 LinuxToys 工具和脚本的完整指南',
         'ja': 'LinuxToysツールとスクリプトの開発完全ガイド',
         'ru': 'Полное руководство по разработке инструментов и скриптов LinuxToys'
@@ -153,6 +158,7 @@ class ContentLoader {
         'es': 'Aprende a usar el modo CLI de LinuxToys para instalaciones automatizadas',
         'fr': 'Apprenez à utiliser le mode CLI de LinuxToys pour les installations automatisées',
         'de': 'Erfahren Sie, wie Sie den LinuxToys CLI-Modus für automatisierte Installationen verwenden',
+        'nl': 'Leer hoe je LinuxToys CLI-modus gebruikt voor geautomatiseerde installaties',
         'zh': '学习如何使用 LinuxToys CLI 模式进行自动化安装',
         'ja': '自動インストール用のLinuxToys CLIモードの使用方法を学ぶ',
         'ru': 'Изучите, как использовать режим CLI LinuxToys для автоматических установок'
@@ -163,6 +169,7 @@ class ContentLoader {
         'es': 'Guía completa de características y procedimientos de instalación de LinuxToys',
         'fr': 'Guide complet des fonctionnalités et procédures d\'installation de LinuxToys',
         'de': 'Umfassender Leitfaden zu LinuxToys-Funktionen und Installationsverfahren',
+        'nl': 'Uitgebreide gids voor LinuxToys functies en installatieprocedures',
         'zh': 'LinuxToys 功能和安装程序的综合指南',
         'ja': 'LinuxToysの機能とインストール手順の包括的ガイド',
         'ru': 'Полное руководство по функциям и процедурам установки LinuxToys'
@@ -173,6 +180,7 @@ class ContentLoader {
         'es': 'Créditos y reconocimientos para todos los increíbles desarrolladores que hicieron posibles las características de LinuxToys',
         'fr': 'Crédits et remerciements pour tous les incroyables développeurs qui ont rendu possibles les fonctionnalités de LinuxToys',
         'de': 'Credits und Danksagungen an alle erstaunlichen Entwickler, die die LinuxToys-Features möglich gemacht haben',
+        'nl': 'Credits en dankbetuigingen voor alle geweldige ontwikkelaars die LinuxToys functies mogelijk maakten',
         'zh': '向所有使LinuxToys功能成为可能的优秀开发者致谢和鸣谢',
         'ja': 'LinuxToysの機能を可能にしてくれた全ての素晴らしい開発者への謝辞と感謝',
         'ru': 'Благодарности и признание всем удивительным разработчикам, которые сделали возможными функции LinuxToys'
@@ -292,6 +300,16 @@ const additionalTranslations = {
     'footer-description': 'Делаем Linux проще, по одному инструменту за раз.',
     'footer-support': 'Поддержка',
     'footer-rights': 'Все права защищены.'
+  },
+  'nl': {
+    'back-to-home': 'Terug naar Home',
+    'loading-content': 'Inhoud laden...',
+    'error-title': 'Inhoud niet beschikbaar',
+    'error-message': 'Sorry, de inhoud van deze pagina is nog niet beschikbaar in de geselecteerde taal.',
+    'return-home': 'Terug naar homepagina',
+    'footer-description': 'Linux gemakkelijker maken, één tool tegelijk.',
+    'footer-support': 'Ondersteuning',
+    'footer-rights': 'Alle rechten voorbehouden.'
   }
 };
 

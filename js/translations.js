@@ -3,7 +3,7 @@ class TranslationManager {
     this.currentLang = 'en';
     this.translations = {};
     this.fallbackLang = 'en';
-    this.supportedLanguages = ['en', 'pt', 'es', 'fr', 'de', 'zh', 'ja', 'ru']; // Added new languages
+    this.supportedLanguages = ['en', 'pt', 'es', 'fr', 'de', 'nl', 'zh', 'ja', 'ru']; // Added new languages
   }
 
   detectBrowserLanguage() {
