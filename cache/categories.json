@@ -118,6 +118,13 @@
         "scriptPath": "p3/scripts/devs/pyenv.sh"
       },
       {
+        "name": "SDKMAN",
+        "description": "The Software Development Kit Manager",
+        "icon": "sdkman.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/devs/sdkman.sh"
+      },
+      {
         "name": "Starship",
         "description": "starship_desc",
         "icon": "starship.png",
@@ -1032,6 +1039,13 @@
         "scriptPath": "p3/scripts/utils/archupd.sh"
       },
       {
+        "name": "Audacity",
+        "description": "Audacity is the world's most popular audio editing and recording app",
+        "icon": "audacity.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/audacity.sh"
+      },
+      {
         "name": "Bazaar",
         "description": "bazaar_desc",
         "icon": "bazaar.svg",
@@ -1058,6 +1072,13 @@
         "icon": "cloudflare-warp.svg",
         "version": "1.0",
         "scriptPath": "p3/scripts/utils/cloudflare-warp.sh"
+      },
+      {
+        "name": "CPU-X",
+        "description": "Gathers information on CPU, motherboard and more",
+        "icon": "cpu-x.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/cpu-x.sh"
       },
       {
         "name": "Distroshelf",
@@ -1137,6 +1158,13 @@
         "scriptPath": "p3/scripts/utils/obs.sh"
       },
       {
+        "name": "PeaZip",
+        "description": "Free file archiver utility",
+        "icon": "peazip.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/peazip.sh"
+      },
+      {
         "name": "QPWGraph",
         "description": "qpw_desc",
         "icon": "qpwgraph.svg",
@@ -1173,6 +1201,35 @@
       }
     ],
     "subcategories": {
+      "chat": {
+        "name": "chat",
+        "icon": "chat.svg",
+        "description": "Messaging and Chat Apps",
+        "mode": "menu",
+        "tools": [
+          {
+            "name": "Signal Desktop",
+            "description": "Private messenger",
+            "icon": "signal.png",
+            "version": "1.0",
+            "scriptPath": "p3/scripts/utils/chat/signal_desktop.sh"
+          },
+          {
+            "name": "Telegram",
+            "description": "New era of messaging",
+            "icon": "telegram.png",
+            "version": "1.0",
+            "scriptPath": "p3/scripts/utils/chat/telegram.sh"
+          },
+          {
+            "name": "ZapZap",
+            "description": "WhatsApp Messenger",
+            "icon": "zapzap.png",
+            "version": "1.0",
+            "scriptPath": "p3/scripts/utils/chat/zapzap.sh"
+          }
+        ]
+      },
       "peripherals": {
         "name": "peripherals",
         "icon": "peripherals.svg",
