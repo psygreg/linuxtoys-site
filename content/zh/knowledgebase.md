@@ -123,6 +123,11 @@
 - GCompris
 - Extension Manager
 - Termux
+- CPU-X
+- PeaZip
+- Telegram
+- Signal
+- ZapZap
 
 #### 添加的存储库
 
@@ -450,6 +455,21 @@ sudo ufw enable
 - OpenSUSE：`xorriso curl wget newt libxcb-dri2-0 libxcb-dri2-0-32bit libgthread-2_0-0 libgthread-2_0-0-32bit libapr1 libapr-util1 libQt5Gui5 libglib-2_0-0 libglib-2_0-0-32bit libgio-2_0-0 libgmodule-2_0-0 mesa-libGLU libxcrypt-compat`
 - Debian/Ubuntu：`fakeroot xorriso libqt5gui5 libxcb-dri2-0:i386 libxcb-dri2-0 libcrypt1 libglu1-mesa libglib2.0-0t64 libglib2.0-0t64:i386 libapr1 libaprutil1` 和 `davinci-resolve`或`davinci-resolve-studio`
 
+**为 DaVinciBox 安装或更新的包**
+- 所有系统: `lshw distrobox podman`
+
+**更新 DaVinciBox**
+
+更新 distrobox 容器本身就像在其中运行 `sudo dnf update` 一样简单。但是，要为新的 Resolve 版本更新 DaVinciBox，您需要遵循下面的删除过程，然后通过 LinuxToys 重新安装。
+
+**DaVinciBox 删除**
+- 只需按顺序运行这些命令：
+```
+distrobox enter davincibox -- add-davinci-launcher remove
+distrobox stop davincibox
+distrobox rm davincibox
+```
+
 ### Active Directory
 
 安装启用Active Directory域集成所需的所有包。
@@ -658,6 +678,9 @@ w! /sys/kernel/mm/transparent_hugepage/defrag - - - - defer+madvise
 ```
 w! /sys/kernel/mm/transparent_hugepage/khugepaged/max_ptes_none - - - - 4091
 ```
+
+### SDKMAN
+通过其官方脚本安装。可以通过从 LinuxToys 再次运行安装程序来删除。
 
 ## 存储库安装程序
 

@@ -123,6 +123,11 @@ Depuis flathub, ou avec des dépôts ajoutés par LinuxToys, et aucun autre chan
 - GCompris
 - Extension Manager
 - Termux
+- CPU-X
+- PeaZip
+- Telegram
+- Signal
+- ZapZap
 
 #### Dépôts ajoutés
 
@@ -450,6 +455,21 @@ Offre une installation via [DaVinciBox](https://github.com/zelikos/davincibox) s
 - OpenSUSE: `xorriso curl wget newt libxcb-dri2-0 libxcb-dri2-0-32bit libgthread-2_0-0 libgthread-2_0-0-32bit libapr1 libapr-util1 libQt5Gui5 libglib-2_0-0 libglib-2_0-0-32bit libgio-2_0-0 libgmodule-2_0-0 mesa-libGLU libxcrypt-compat`
 - Debian/Ubuntu: `fakeroot xorriso libqt5gui5 libxcb-dri2-0:i386 libxcb-dri2-0 libcrypt1 libglu1-mesa libglib2.0-0t64 libglib2.0-0t64:i386 libapr1 libaprutil1` et `davinci-resolve` ou `davinci-resolve-studio`
 
+**Paquets installés ou mis à jour pour DaVinciBox**
+- Tous les systèmes : `lshw distrobox podman`
+
+**Mise à jour de DaVinciBox**
+
+La mise à jour du conteneur distrobox lui-même est aussi simple que d'exécuter `sudo dnf update` à l'intérieur. Cependant, pour mettre à jour DaVinciBox pour les nouvelles versions de Resolve, vous devrez suivre la procédure de suppression ci-dessous, puis le réinstaller via LinuxToys.
+
+**Suppression de DaVinciBox**
+- Exécutez simplement ces commandes en séquence:
+```
+distrobox enter davincibox -- add-davinci-launcher remove
+distrobox stop davincibox
+distrobox rm davincibox
+```
+
 ### Active Directory
 
 Installe tous les paquets nécessaires pour activer l'intégration dans les domaines Active Directory.
@@ -658,6 +678,9 @@ w! /sys/kernel/mm/transparent_hugepage/defrag - - - - defer+madvise
 ```
 w! /sys/kernel/mm/transparent_hugepage/khugepaged/max_ptes_none - - - - 4091
 ```
+
+### SDKMAN
+Installé via son script officiel. Peut être supprimé en exécutant à nouveau l'installateur depuis LinuxToys.
 
 ## Installateurs de Dépôt
 

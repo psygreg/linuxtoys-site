@@ -123,6 +123,11 @@ From flathub, or having repositories added by LinuxToys, and no other changes ar
 - GCompris
 - Extension Manager
 - Termux
+- CPU-X
+- PeaZip
+- Telegram
+- Signal
+- ZapZap
 
 #### Added repositories
 
@@ -451,6 +456,21 @@ Offers installation through [DaVinciBox](https://github.com/zelikos/davincibox) 
 - OpenSUSE: `xorriso curl wget newt libxcb-dri2-0 libxcb-dri2-0-32bit libgthread-2_0-0 libgthread-2_0-0-32bit libapr1 libapr-util1 libQt5Gui5 libglib-2_0-0 libglib-2_0-0-32bit libgio-2_0-0 libgmodule-2_0-0 mesa-libGLU libxcrypt-compat`
 - Debian/Ubuntu: `fakeroot xorriso libqt5gui5 libxcb-dri2-0:i386 libxcb-dri2-0 libcrypt1 libglu1-mesa libglib2.0-0t64 libglib2.0-0t64:i386 libapr1 libaprutil1` and `davinci-resolve` or `davinci-resolve-studio`
 
+**Packages Installed or Updated for DaVinciBox**
+- All systems: `lshw distrobox podman`
+
+**Updating DaVinciBox**
+
+Updating the distrobox container itself is as simple as just running `sudo dnf update` within it. However, to update DaVinciBox for new Resolve versions, you will need to follow the removal procedure below, then reinstall it through LinuxToys.
+
+**DaVinciBox removal**
+- Just run these commands in sequence:
+```
+distrobox enter davincibox -- add-davinci-launcher remove
+distrobox stop davincibox
+distrobox rm davincibox
+```
+
 ### Active Directory
 
 Installs all packages necessary to enable integration into Active Directory domains.
@@ -659,6 +679,9 @@ w! /sys/kernel/mm/transparent_hugepage/defrag - - - - defer+madvise
 ```
 w! /sys/kernel/mm/transparent_hugepage/khugepaged/max_ptes_none - - - - 4091
 ```
+
+### SDKMAN
+Installed through its official script. Can be removed running the installer again from LinuxToys.
 
 ## Repository Installers
 

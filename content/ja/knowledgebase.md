@@ -123,6 +123,11 @@ flathubから、またはLinuxToysによって追加されたリポジトリが�
 - GCompris
 - Extension Manager
 - Termux
+- CPU-X
+- PeaZip
+- Telegram
+- Signal
+- ZapZap
 
 #### 追加されたリポジトリ
 
@@ -450,6 +455,21 @@ Flathubからアプリケーションをインストールし、`/etc/udev/rules
 - OpenSUSE：`xorriso curl wget newt libxcb-dri2-0 libxcb-dri2-0-32bit libgthread-2_0-0 libgthread-2_0-0-32bit libapr1 libapr-util1 libQt5Gui5 libglib-2_0-0 libglib-2_0-0-32bit libgio-2_0-0 libgmodule-2_0-0 mesa-libGLU libxcrypt-compat`
 - Debian/Ubuntu：`fakeroot xorriso libqt5gui5 libxcb-dri2-0:i386 libxcb-dri2-0 libcrypt1 libglu1-mesa libglib2.0-0t64 libglib2.0-0t64:i386 libapr1 libaprutil1`と`davinci-resolve`または`davinci-resolve-studio`
 
+**DaVinciBox 用にインストールまたは更新されたパッケージ**
+- すべてのシステム: `lshw distrobox podman`
+
+**DaVinciBox の更新**
+
+distrobox コンテナ自体を更新するのは、その中で `sudo dnf update` を実行するだけです。ただし、新しい Resolve バージョン用の DaVinciBox を更新するには、以下の削除手順に従い、LinuxToys を通じて再インストールする必要があります。
+
+**DaVinciBox の削除**
+- これらのコマンドを順番に実行するだけです:
+```
+distrobox enter davincibox -- add-davinci-launcher remove
+distrobox stop davincibox
+distrobox rm davincibox
+```
+
 ### Active Directory
 
 Active Directoryドメインへの統合を有効にするために必要なすべてのパッケージをインストールします。
@@ -658,6 +678,9 @@ w! /sys/kernel/mm/transparent_hugepage/defrag - - - - defer+madvise
 ```
 w! /sys/kernel/mm/transparent_hugepage/khugepaged/max_ptes_none - - - - 4091
 ```
+
+### SDKMAN
+公式スクリプトを通じてインストールされます。LinuxToysからインストーラーを再度実行することで削除できます。
 
 ## リポジトリインストーラー
 

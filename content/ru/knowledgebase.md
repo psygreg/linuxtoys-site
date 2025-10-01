@@ -123,6 +123,11 @@
 - GCompris
 - Extension Manager
 - Termux
+- CPU-X
+- PeaZip
+- Telegram
+- Signal
+- ZapZap
 
 #### Добавленные репозитории
 
@@ -450,6 +455,21 @@ sudo ufw enable
 - OpenSUSE: `xorriso curl wget newt libxcb-dri2-0 libxcb-dri2-0-32bit libgthread-2_0-0 libgthread-2_0-0-32bit libapr1 libapr-util1 libQt5Gui5 libglib-2_0-0 libglib-2_0-0-32bit libgio-2_0-0 libgmodule-2_0-0 mesa-libGLU libxcrypt-compat`
 - Debian/Ubuntu: `fakeroot xorriso libqt5gui5 libxcb-dri2-0:i386 libxcb-dri2-0 libcrypt1 libglu1-mesa libglib2.0-0t64 libglib2.0-0t64:i386 libapr1 libaprutil1` и `davinci-resolve` или `davinci-resolve-studio`
 
+**Установленные или обновленные пакеты для DaVinciBox**
+- Все системы: `lshw distrobox podman`
+
+**Обновление DaVinciBox**
+
+Обновление самого контейнера distrobox так же просто, как запуск `sudo dnf update` внутри него. Однако, чтобы обновить DaVinciBox для новых версий Resolve, вам нужно будет следовать процедуре удаления ниже, а затем переустановить его через LinuxToys.
+
+**Удаление DaVinciBox**
+- Просто выполните эти команды по порядку:
+```
+distrobox enter davincibox -- add-davinci-launcher remove
+distrobox stop davincibox
+distrobox rm davincibox
+```
+
 ### Active Directory
 
 Устанавливает все пакеты, необходимые для включения интеграции в домены Active Directory.
@@ -658,6 +678,9 @@ w! /sys/kernel/mm/transparent_hugepage/defrag - - - - defer+madvise
 ```
 w! /sys/kernel/mm/transparent_hugepage/khugepaged/max_ptes_none - - - - 4091
 ```
+
+### SDKMAN
+Устанавливается через официальный скрипт. Может быть удален путем повторного запуска установщика из LinuxToys.
 
 ## Установщики репозиториев
 
