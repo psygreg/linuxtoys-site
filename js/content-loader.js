@@ -2,7 +2,7 @@ class ContentLoader {
   constructor(translationManager) {
     this.translationManager = translationManager;
     this.contentType = null;
-    this.supportedLanguages = ['en', 'pt', 'es', 'fr', 'de', 'zh', 'ja', 'ru', 'nl'];
+    this.supportedLanguages = ['en', 'pt', 'es', 'fr', 'de', 'zh', 'ja', 'ru', 'nl', 'ga'];
   }
 
   async init() {
@@ -103,7 +103,8 @@ class ContentLoader {
         'nl': 'Ontwikkelaarshandboek - LinuxToys',
         'zh': '开发者手册 - LinuxToys',
         'ja': '開発者ハンドブック - LinuxToys',
-        'ru': 'Руководство разработчика - LinuxToys'
+        'ru': 'Руководство разработчика - LinuxToys',
+        'ga': 'Lámhleabhar Forbróra - LinuxToys'
       },
       'cli-mode': {
         'en': 'CLI Mode Instructions - LinuxToys',
@@ -114,7 +115,8 @@ class ContentLoader {
         'nl': 'CLI-modus Instructies - LinuxToys',
         'zh': 'CLI 模式说明 - LinuxToys',
         'ja': 'CLIモードの説明 - LinuxToys',
-        'ru': 'Инструкции CLI режима - LinuxToys'
+        'ru': 'Инструкции CLI режима - LinuxToys',
+        'ga': 'Treoracha Mód CLI - LinuxToys'
       },
       'knowledgebase': {
         'en': 'Knowledge Base - LinuxToys',
@@ -125,7 +127,8 @@ class ContentLoader {
         'nl': 'Kennisbank - LinuxToys',
         'zh': '知识库 - LinuxToys',
         'ja': 'ナレッジベース - LinuxToys',
-        'ru': 'База знаний - LinuxToys'
+        'ru': 'База знаний - LinuxToys',
+        'ga': 'Bunachar Eolais - LinuxToys'
       },
       'credits': {
         'en': 'Credits & Acknowledgments - LinuxToys',
@@ -136,7 +139,8 @@ class ContentLoader {
         'nl': 'Credits & Dankbetuigingen - LinuxToys',
         'zh': '致谢 & 鸣谢 - LinuxToys',
         'ja': 'クレジット & 謝辞 - LinuxToys',
-        'ru': 'Авторские права и благодарности - LinuxToys'
+        'ru': 'Авторские права и благодарности - LinuxToys',
+        'ga': 'Creidiúintí & Aitheantas - LinuxToys'
       }
     };
 
@@ -310,6 +314,16 @@ const additionalTranslations = {
     'footer-description': 'Linux gemakkelijker maken, één tool tegelijk.',
     'footer-support': 'Ondersteuning',
     'footer-rights': 'Alle rechten voorbehouden.'
+  },
+  'ga': {
+    'back-to-home': 'Ar Ais go Baile',
+    'loading-content': 'Ábhar á lódáil...',
+    'error-title': 'Ábhar nach bhfuil ar fáil',
+    'error-message': 'Tá brón orainn, níl an t-ábhar don leathanach seo ar fáil sa teanga roghnaithe fós.',
+    'return-home': 'Fill ar an leathanach baile',
+    'footer-description': 'Linux a dhéanamh níos éasca, uirlis amháin ag an am.',
+    'footer-support': 'Tacaíocht',
+    'footer-rights': 'Gach ceart ar cosaint.'
   }
 };
 
