@@ -1,4 +1,55 @@
 {
+  "chat": {
+    "name": "chat",
+    "icon": "chat.svg",
+    "description": "chat_desc",
+    "mode": "menu",
+    "tools": [
+      {
+        "name": "Discord",
+        "description": "discord_desc",
+        "icon": "discord.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/chat/discord.sh"
+      },
+      {
+        "name": "Microsoft Teams",
+        "description": "msteams_desc",
+        "icon": "teams.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/chat/msteams.sh"
+      },
+      {
+        "name": "Signal Desktop",
+        "description": "signal_desc",
+        "icon": "signal.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/chat/signal_desktop.sh"
+      },
+      {
+        "name": "Slack",
+        "description": "slack_desc",
+        "icon": "slack.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/chat/slack.sh"
+      },
+      {
+        "name": "Telegram",
+        "description": "telegram_desc",
+        "icon": "telegram.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/chat/telegram.sh"
+      },
+      {
+        "name": "ZapZap",
+        "description": "zap_desc",
+        "icon": "zapzap.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/chat/zapzap.sh"
+      }
+    ],
+    "subcategories": {}
+  },
   "devs": {
     "name": "devs",
     "icon": "ide.png",
@@ -119,7 +170,7 @@
       },
       {
         "name": "SDKMAN",
-        "description": "The Software Development Kit Manager",
+        "description": "sdkman_desc",
         "icon": "sdkman.png",
         "version": "1.0",
         "scriptPath": "p3/scripts/devs/sdkman.sh"
@@ -583,13 +634,6 @@
     "mode": "checklist",
     "tools": [
       {
-        "name": "Discord",
-        "description": "discord_desc",
-        "icon": "discord.svg",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/game/discord.sh"
-      },
-      {
         "name": "Gamemode",
         "description": "gamemode_desc",
         "icon": "gaming.svg",
@@ -851,13 +895,6 @@
         "scriptPath": "p3/scripts/office/libreoffice.sh"
       },
       {
-        "name": "Microsoft Teams",
-        "description": "msteams_desc",
-        "icon": "teams.svg",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/office/msteams.sh"
-      },
-      {
         "name": "Obsidian",
         "description": "obsidian_desc",
         "icon": "obsidian.svg",
@@ -884,13 +921,6 @@
         "icon": "pjeoffice-pro.png",
         "version": "1.0",
         "scriptPath": "p3/scripts/office/pjeoffice.sh"
-      },
-      {
-        "name": "Slack",
-        "description": "slack_desc",
-        "icon": "slack.svg",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/office/slack.sh"
       },
       {
         "name": "Zen Browser",
@@ -1002,6 +1032,13 @@
         "scriptPath": "p3/scripts/sysadm/cockpit.sh"
       },
       {
+        "name": "CPU-X",
+        "description": "cpux_desc",
+        "icon": "cpu-x.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/sysadm/cpu-x.sh"
+      },
+      {
         "name": "Termius",
         "description": "termius_desc",
         "icon": "termius.png",
@@ -1039,13 +1076,6 @@
         "scriptPath": "p3/scripts/utils/archupd.sh"
       },
       {
-        "name": "Audacity",
-        "description": "Audacity is the world's most popular audio editing and recording app",
-        "icon": "audacity.png",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/utils/audacity.sh"
-      },
-      {
         "name": "Bazaar",
         "description": "bazaar_desc",
         "icon": "bazaar.svg",
@@ -1072,13 +1102,6 @@
         "icon": "cloudflare-warp.svg",
         "version": "1.0",
         "scriptPath": "p3/scripts/utils/cloudflare-warp.sh"
-      },
-      {
-        "name": "CPU-X",
-        "description": "Gathers information on CPU, motherboard and more",
-        "icon": "cpu-x.png",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/utils/cpu-x.sh"
       },
       {
         "name": "Distroshelf",
@@ -1159,7 +1182,7 @@
       },
       {
         "name": "PeaZip",
-        "description": "Free file archiver utility",
+        "description": "peazip_desc",
         "icon": "peazip.png",
         "version": "1.0",
         "scriptPath": "p3/scripts/utils/peazip.sh"
@@ -1201,35 +1224,6 @@
       }
     ],
     "subcategories": {
-      "chat": {
-        "name": "chat",
-        "icon": "chat.svg",
-        "description": "Messaging and Chat Apps",
-        "mode": "menu",
-        "tools": [
-          {
-            "name": "Signal Desktop",
-            "description": "Private messenger",
-            "icon": "signal.png",
-            "version": "1.0",
-            "scriptPath": "p3/scripts/utils/chat/signal_desktop.sh"
-          },
-          {
-            "name": "Telegram",
-            "description": "New era of messaging",
-            "icon": "telegram.png",
-            "version": "1.0",
-            "scriptPath": "p3/scripts/utils/chat/telegram.sh"
-          },
-          {
-            "name": "ZapZap",
-            "description": "WhatsApp Messenger",
-            "icon": "zapzap.png",
-            "version": "1.0",
-            "scriptPath": "p3/scripts/utils/chat/zapzap.sh"
-          }
-        ]
-      },
       "peripherals": {
         "name": "peripherals",
         "icon": "peripherals.svg",

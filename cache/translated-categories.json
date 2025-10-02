@@ -1,5 +1,57 @@
 {
   "en": {
+    "chat": {
+      "name": "chat",
+      "icon": "chat.svg",
+      "description": "Messaging and social apps.",
+      "mode": "menu",
+      "tools": [
+        {
+          "name": "Discord",
+          "description": "A popular communication platform for gamers and communities.",
+          "icon": "discord.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/discord.sh"
+        },
+        {
+          "name": "Microsoft Teams",
+          "description": "A collaboration platform for remote work.",
+          "icon": "teams.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/msteams.sh"
+        },
+        {
+          "name": "Signal Desktop",
+          "description": "Private messenger with end-to-end encryption and no user IDs.",
+          "icon": "signal.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/signal_desktop.sh"
+        },
+        {
+          "name": "Slack",
+          "description": "Team collaboration and messaging platform.",
+          "icon": "slack.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/slack.sh"
+        },
+        {
+          "name": "Telegram",
+          "description": "Messaging app with better social features and bigger group limits.",
+          "icon": "telegram.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/telegram.sh"
+        },
+        {
+          "name": "ZapZap",
+          "description": "An electron wrapper for WhatsApp Web.",
+          "icon": "zapzap.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/zapzap.sh"
+        }
+      ],
+      "subcategories": {},
+      "displayName": "Social"
+    },
     "devs": {
       "name": "devs",
       "icon": "ide.png",
@@ -120,7 +172,7 @@
         },
         {
           "name": "SDKMAN",
-          "description": "The Software Development Kit Manager",
+          "description": "Manages parallel versions of multiple Software Development Kits.",
           "icon": "sdkman.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/sdkman.sh"
@@ -589,13 +641,6 @@
       "mode": "checklist",
       "tools": [
         {
-          "name": "Discord",
-          "description": "A popular communication platform for gamers and communities.",
-          "icon": "discord.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/discord.sh"
-        },
-        {
           "name": "Gamemode",
           "description": "A daemon for optimizing game performance on Linux.",
           "icon": "gaming.svg",
@@ -858,13 +903,6 @@
           "scriptPath": "p3/scripts/office/libreoffice.sh"
         },
         {
-          "name": "Microsoft Teams",
-          "description": "A collaboration platform for remote work.",
-          "icon": "teams.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/office/msteams.sh"
-        },
-        {
           "name": "Obsidian",
           "description": "A free, flexible app for your thoughts, notes, and organization.",
           "icon": "obsidian.svg",
@@ -891,13 +929,6 @@
           "icon": "pjeoffice-pro.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/pjeoffice.sh"
-        },
-        {
-          "name": "Slack",
-          "description": "Team collaboration and messaging platform.",
-          "icon": "slack.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/office/slack.sh"
         },
         {
           "name": "Zen Browser",
@@ -1011,6 +1042,13 @@
           "scriptPath": "p3/scripts/sysadm/cockpit.sh"
         },
         {
+          "name": "CPU-X",
+          "description": "Gathers information on CPU, motherboard and more.",
+          "icon": "cpu-x.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/sysadm/cpu-x.sh"
+        },
+        {
           "name": "Termius",
           "description": "Modern SSH client for Linux with intuitive graphical interface and advanced connection management features.",
           "icon": "termius.png",
@@ -1049,13 +1087,6 @@
           "scriptPath": "p3/scripts/utils/archupd.sh"
         },
         {
-          "name": "Audacity",
-          "description": "Audacity is the world's most popular audio editing and recording app",
-          "icon": "audacity.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/utils/audacity.sh"
-        },
-        {
           "name": "Bazaar",
           "description": "A new app store with a focus on discovering and installing applications and add-ons from Flatpak remotes, and supporting the developers who make the Linux desktop possible.",
           "icon": "bazaar.svg",
@@ -1082,13 +1113,6 @@
           "icon": "cloudflare-warp.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/cloudflare-warp.sh"
-        },
-        {
-          "name": "CPU-X",
-          "description": "Gathers information on CPU, motherboard and more",
-          "icon": "cpu-x.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/utils/cpu-x.sh"
         },
         {
           "name": "Distroshelf",
@@ -1169,7 +1193,7 @@
         },
         {
           "name": "PeaZip",
-          "description": "Free file archiver utility",
+          "description": "Free file archiver utility supporting many formats.",
           "icon": "peazip.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/peazip.sh"
@@ -1211,36 +1235,6 @@
         }
       ],
       "subcategories": {
-        "chat": {
-          "name": "chat",
-          "icon": "chat.svg",
-          "description": "Messaging and Chat Apps",
-          "mode": "menu",
-          "tools": [
-            {
-              "name": "Signal Desktop",
-              "description": "Private messenger",
-              "icon": "signal.png",
-              "version": "1.0",
-              "scriptPath": "p3/scripts/utils/chat/signal_desktop.sh"
-            },
-            {
-              "name": "Telegram",
-              "description": "New era of messaging",
-              "icon": "telegram.png",
-              "version": "1.0",
-              "scriptPath": "p3/scripts/utils/chat/telegram.sh"
-            },
-            {
-              "name": "ZapZap",
-              "description": "WhatsApp Messenger",
-              "icon": "zapzap.png",
-              "version": "1.0",
-              "scriptPath": "p3/scripts/utils/chat/zapzap.sh"
-            }
-          ],
-          "displayName": "chat"
-        },
         "peripherals": {
           "name": "peripherals",
           "icon": "peripherals.svg",
@@ -1411,6 +1405,58 @@
     }
   },
   "pt": {
+    "chat": {
+      "name": "chat",
+      "icon": "chat.svg",
+      "description": "Aplicativos de mensagens e redes sociais.",
+      "mode": "menu",
+      "tools": [
+        {
+          "name": "Discord",
+          "description": "Uma popular plataforma de comunicação para gamers e comunidades.",
+          "icon": "discord.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/discord.sh"
+        },
+        {
+          "name": "Microsoft Teams",
+          "description": "Uma plataforma de colaboração para trabalho remoto.",
+          "icon": "teams.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/msteams.sh"
+        },
+        {
+          "name": "Signal Desktop",
+          "description": "Mensageiro privado com criptografia de ponta a ponta e sem IDs de usuário.",
+          "icon": "signal.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/signal_desktop.sh"
+        },
+        {
+          "name": "Slack",
+          "description": "Plataforma de colaboração e mensagens para equipes.",
+          "icon": "slack.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/slack.sh"
+        },
+        {
+          "name": "Telegram",
+          "description": "Aplicativo de mensagens com melhores recursos sociais e limites de grupo maiores.",
+          "icon": "telegram.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/telegram.sh"
+        },
+        {
+          "name": "ZapZap",
+          "description": "Um wrapper Electron para WhatsApp Web.",
+          "icon": "zapzap.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/zapzap.sh"
+        }
+      ],
+      "subcategories": {},
+      "displayName": "Social"
+    },
     "devs": {
       "name": "devs",
       "icon": "ide.png",
@@ -1531,7 +1577,7 @@
         },
         {
           "name": "SDKMAN",
-          "description": "The Software Development Kit Manager",
+          "description": "Gerencia versões paralelas de vários kits de desenvolvimento de software.",
           "icon": "sdkman.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/sdkman.sh"
@@ -2000,13 +2046,6 @@
       "mode": "checklist",
       "tools": [
         {
-          "name": "Discord",
-          "description": "Uma popular plataforma de comunicação para gamers e comunidades.",
-          "icon": "discord.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/discord.sh"
-        },
-        {
           "name": "Gamemode",
           "description": "Um daemon para otimizar o desempenho de jogos no Linux. Acionado com a opção de inicialização `gamemoderun`.",
           "icon": "gaming.svg",
@@ -2269,13 +2308,6 @@
           "scriptPath": "p3/scripts/office/libreoffice.sh"
         },
         {
-          "name": "Microsoft Teams",
-          "description": "Uma plataforma de colaboração para trabalho remoto.",
-          "icon": "teams.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/office/msteams.sh"
-        },
-        {
           "name": "Obsidian",
           "description": "Um aplicativo gratuito e flexível para seus pensamentos, anotações e organização.",
           "icon": "obsidian.svg",
@@ -2302,13 +2334,6 @@
           "icon": "pjeoffice-pro.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/pjeoffice.sh"
-        },
-        {
-          "name": "Slack",
-          "description": "Plataforma de colaboração e mensagens para equipes.",
-          "icon": "slack.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/office/slack.sh"
         },
         {
           "name": "Zen Browser",
@@ -2422,6 +2447,13 @@
           "scriptPath": "p3/scripts/sysadm/cockpit.sh"
         },
         {
+          "name": "CPU-X",
+          "description": "Reúne informações sobre CPU, placa-mãe e mais.",
+          "icon": "cpu-x.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/sysadm/cpu-x.sh"
+        },
+        {
           "name": "Termius",
           "description": "Cliente SSH moderno para Linux com interface gráfica intuitiva e recursos avançados de gerenciamento de conexões.",
           "icon": "termius.png",
@@ -2460,13 +2492,6 @@
           "scriptPath": "p3/scripts/utils/archupd.sh"
         },
         {
-          "name": "Audacity",
-          "description": "Audacity is the world's most popular audio editing and recording app",
-          "icon": "audacity.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/utils/audacity.sh"
-        },
-        {
           "name": "Bazaar",
           "description": "Uma nova loja de aplicativos com foco em descobrir e instalar aplicativos e complementos de repositórios Flatpak, apoiando os desenvolvedores que tornam o desktop Linux possível.",
           "icon": "bazaar.svg",
@@ -2493,13 +2518,6 @@
           "icon": "cloudflare-warp.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/cloudflare-warp.sh"
-        },
-        {
-          "name": "CPU-X",
-          "description": "Gathers information on CPU, motherboard and more",
-          "icon": "cpu-x.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/utils/cpu-x.sh"
         },
         {
           "name": "Distroshelf",
@@ -2580,7 +2598,7 @@
         },
         {
           "name": "PeaZip",
-          "description": "Free file archiver utility",
+          "description": "Utilitário gratuito de arquivamento de arquivos que suporta muitos formatos.",
           "icon": "peazip.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/peazip.sh"
@@ -2622,36 +2640,6 @@
         }
       ],
       "subcategories": {
-        "chat": {
-          "name": "chat",
-          "icon": "chat.svg",
-          "description": "Messaging and Chat Apps",
-          "mode": "menu",
-          "tools": [
-            {
-              "name": "Signal Desktop",
-              "description": "Private messenger",
-              "icon": "signal.png",
-              "version": "1.0",
-              "scriptPath": "p3/scripts/utils/chat/signal_desktop.sh"
-            },
-            {
-              "name": "Telegram",
-              "description": "New era of messaging",
-              "icon": "telegram.png",
-              "version": "1.0",
-              "scriptPath": "p3/scripts/utils/chat/telegram.sh"
-            },
-            {
-              "name": "ZapZap",
-              "description": "WhatsApp Messenger",
-              "icon": "zapzap.png",
-              "version": "1.0",
-              "scriptPath": "p3/scripts/utils/chat/zapzap.sh"
-            }
-          ],
-          "displayName": "chat"
-        },
         "peripherals": {
           "name": "peripherals",
           "icon": "peripherals.svg",
@@ -2822,6 +2810,58 @@
     }
   },
   "es": {
+    "chat": {
+      "name": "chat",
+      "icon": "chat.svg",
+      "description": "Aplicaciones de mensajería y redes sociales.",
+      "mode": "menu",
+      "tools": [
+        {
+          "name": "Discord",
+          "description": "Una popular plataforma de comunicación para jugadores y comunidades.",
+          "icon": "discord.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/discord.sh"
+        },
+        {
+          "name": "Microsoft Teams",
+          "description": "Una plataforma de colaboración para trabajo remoto.",
+          "icon": "teams.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/msteams.sh"
+        },
+        {
+          "name": "Signal Desktop",
+          "description": "Mensajero privado con cifrado de extremo a extremo y sin ID de usuario.",
+          "icon": "signal.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/signal_desktop.sh"
+        },
+        {
+          "name": "Slack",
+          "description": "Plataforma de colaboración y mensajería para equipos.",
+          "icon": "slack.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/slack.sh"
+        },
+        {
+          "name": "Telegram",
+          "description": "Aplicación de mensajería con mejores funciones sociales y límites de grupo más grandes.",
+          "icon": "telegram.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/telegram.sh"
+        },
+        {
+          "name": "ZapZap",
+          "description": "Un envoltorio de Electron para WhatsApp Web.",
+          "icon": "zapzap.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/zapzap.sh"
+        }
+      ],
+      "subcategories": {},
+      "displayName": "Social"
+    },
     "devs": {
       "name": "devs",
       "icon": "ide.png",
@@ -2942,7 +2982,7 @@
         },
         {
           "name": "SDKMAN",
-          "description": "The Software Development Kit Manager",
+          "description": "Gestiona versiones paralelas de múltiples kits de desarrollo de software.",
           "icon": "sdkman.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/sdkman.sh"
@@ -3411,13 +3451,6 @@
       "mode": "checklist",
       "tools": [
         {
-          "name": "Discord",
-          "description": "Una popular plataforma de comunicación para jugadores y comunidades.",
-          "icon": "discord.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/discord.sh"
-        },
-        {
           "name": "Gamemode",
           "description": "Un demonio para optimizar el rendimiento de juegos en Linux.",
           "icon": "gaming.svg",
@@ -3680,13 +3713,6 @@
           "scriptPath": "p3/scripts/office/libreoffice.sh"
         },
         {
-          "name": "Microsoft Teams",
-          "description": "Una plataforma de colaboración para trabajo remoto.",
-          "icon": "teams.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/office/msteams.sh"
-        },
-        {
           "name": "Obsidian",
           "description": "Una aplicación gratuita y flexible para sus pensamientos, notas y organización.",
           "icon": "obsidian.svg",
@@ -3713,13 +3739,6 @@
           "icon": "pjeoffice-pro.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/pjeoffice.sh"
-        },
-        {
-          "name": "Slack",
-          "description": "Plataforma de colaboración y mensajería para equipos.",
-          "icon": "slack.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/office/slack.sh"
         },
         {
           "name": "Zen Browser",
@@ -3833,6 +3852,13 @@
           "scriptPath": "p3/scripts/sysadm/cockpit.sh"
         },
         {
+          "name": "CPU-X",
+          "description": "Reúne información sobre la CPU, la placa base y más.",
+          "icon": "cpu-x.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/sysadm/cpu-x.sh"
+        },
+        {
           "name": "Termius",
           "description": "Cliente SSH moderno para Linux con interfaz gráfica intuitiva y funciones avanzadas de gestión de conexiones.",
           "icon": "termius.png",
@@ -3871,13 +3897,6 @@
           "scriptPath": "p3/scripts/utils/archupd.sh"
         },
         {
-          "name": "Audacity",
-          "description": "Audacity is the world's most popular audio editing and recording app",
-          "icon": "audacity.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/utils/audacity.sh"
-        },
-        {
           "name": "Bazaar",
           "description": "Una nueva tienda de aplicaciones con enfoque en descubrir e instalar aplicaciones y complementos de remotos Flatpak, y apoyando a los desarrolladores que hacen posible el escritorio Linux.",
           "icon": "bazaar.svg",
@@ -3904,13 +3923,6 @@
           "icon": "cloudflare-warp.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/cloudflare-warp.sh"
-        },
-        {
-          "name": "CPU-X",
-          "description": "Gathers information on CPU, motherboard and more",
-          "icon": "cpu-x.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/utils/cpu-x.sh"
         },
         {
           "name": "Distroshelf",
@@ -3991,7 +4003,7 @@
         },
         {
           "name": "PeaZip",
-          "description": "Free file archiver utility",
+          "description": "Utilidad gratuita de archivado de archivos que soporta muchos formatos.",
           "icon": "peazip.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/peazip.sh"
@@ -4033,36 +4045,6 @@
         }
       ],
       "subcategories": {
-        "chat": {
-          "name": "chat",
-          "icon": "chat.svg",
-          "description": "Messaging and Chat Apps",
-          "mode": "menu",
-          "tools": [
-            {
-              "name": "Signal Desktop",
-              "description": "Private messenger",
-              "icon": "signal.png",
-              "version": "1.0",
-              "scriptPath": "p3/scripts/utils/chat/signal_desktop.sh"
-            },
-            {
-              "name": "Telegram",
-              "description": "New era of messaging",
-              "icon": "telegram.png",
-              "version": "1.0",
-              "scriptPath": "p3/scripts/utils/chat/telegram.sh"
-            },
-            {
-              "name": "ZapZap",
-              "description": "WhatsApp Messenger",
-              "icon": "zapzap.png",
-              "version": "1.0",
-              "scriptPath": "p3/scripts/utils/chat/zapzap.sh"
-            }
-          ],
-          "displayName": "chat"
-        },
         "peripherals": {
           "name": "peripherals",
           "icon": "peripherals.svg",
@@ -4233,6 +4215,58 @@
     }
   },
   "fr": {
+    "chat": {
+      "name": "chat",
+      "icon": "chat.svg",
+      "description": "Applications de messagerie et sociales.",
+      "mode": "menu",
+      "tools": [
+        {
+          "name": "Discord",
+          "description": "Une plateforme de communication populaire pour les gamers et les communautés.",
+          "icon": "discord.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/discord.sh"
+        },
+        {
+          "name": "Microsoft Teams",
+          "description": "Une plateforme de collaboration pour le travail à distance.",
+          "icon": "teams.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/msteams.sh"
+        },
+        {
+          "name": "Signal Desktop",
+          "description": "Messager privé avec chiffrement de bout en bout et sans ID utilisateur.",
+          "icon": "signal.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/signal_desktop.sh"
+        },
+        {
+          "name": "Slack",
+          "description": "Plateforme de collaboration et de messagerie d'équipe.",
+          "icon": "slack.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/slack.sh"
+        },
+        {
+          "name": "Telegram",
+          "description": "Application de messagerie avec de meilleures fonctionnalités sociales et des limites de groupe plus grandes.",
+          "icon": "telegram.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/telegram.sh"
+        },
+        {
+          "name": "ZapZap",
+          "description": "Un wrapper Electron pour WhatsApp Web.",
+          "icon": "zapzap.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/zapzap.sh"
+        }
+      ],
+      "subcategories": {},
+      "displayName": "Social"
+    },
     "devs": {
       "name": "devs",
       "icon": "ide.png",
@@ -4353,7 +4387,7 @@
         },
         {
           "name": "SDKMAN",
-          "description": "The Software Development Kit Manager",
+          "description": "Gère des versions parallèles de plusieurs kits de développement logiciel.",
           "icon": "sdkman.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/sdkman.sh"
@@ -4822,13 +4856,6 @@
       "mode": "checklist",
       "tools": [
         {
-          "name": "Discord",
-          "description": "Une plateforme de communication populaire pour les gamers et les communautés.",
-          "icon": "discord.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/discord.sh"
-        },
-        {
           "name": "Gamemode",
           "description": "Un daemon pour optimiser les performances de jeu sous Linux.",
           "icon": "gaming.svg",
@@ -5091,13 +5118,6 @@
           "scriptPath": "p3/scripts/office/libreoffice.sh"
         },
         {
-          "name": "Microsoft Teams",
-          "description": "Une plateforme de collaboration pour le travail à distance.",
-          "icon": "teams.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/office/msteams.sh"
-        },
-        {
           "name": "Obsidian",
           "description": "Une application gratuite et flexible pour vos pensées, notes et organisation.",
           "icon": "obsidian.svg",
@@ -5124,13 +5144,6 @@
           "icon": "pjeoffice-pro.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/pjeoffice.sh"
-        },
-        {
-          "name": "Slack",
-          "description": "Plateforme de collaboration et de messagerie d'équipe.",
-          "icon": "slack.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/office/slack.sh"
         },
         {
           "name": "Zen Browser",
@@ -5244,6 +5257,13 @@
           "scriptPath": "p3/scripts/sysadm/cockpit.sh"
         },
         {
+          "name": "CPU-X",
+          "description": "Recueille des informations sur le CPU, la carte mère et plus.",
+          "icon": "cpu-x.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/sysadm/cpu-x.sh"
+        },
+        {
           "name": "Termius",
           "description": "Client SSH moderne pour Linux avec une interface graphique intuitive et des fonctionnalités avancées de gestion des connexions.",
           "icon": "termius.png",
@@ -5282,13 +5302,6 @@
           "scriptPath": "p3/scripts/utils/archupd.sh"
         },
         {
-          "name": "Audacity",
-          "description": "Audacity is the world's most popular audio editing and recording app",
-          "icon": "audacity.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/utils/audacity.sh"
-        },
-        {
           "name": "Bazaar",
           "description": "Un nouveau magasin d'applications axé sur la découverte et l'installation d'applications et d'add-ons depuis les remotes Flatpak, et soutenant les développeurs qui rendent le bureau Linux possible.",
           "icon": "bazaar.svg",
@@ -5315,13 +5328,6 @@
           "icon": "cloudflare-warp.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/cloudflare-warp.sh"
-        },
-        {
-          "name": "CPU-X",
-          "description": "Gathers information on CPU, motherboard and more",
-          "icon": "cpu-x.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/utils/cpu-x.sh"
         },
         {
           "name": "Distroshelf",
@@ -5402,7 +5408,7 @@
         },
         {
           "name": "PeaZip",
-          "description": "Free file archiver utility",
+          "description": "Utilitaire d'archivage de fichiers gratuit prenant en charge de nombreux formats.",
           "icon": "peazip.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/peazip.sh"
@@ -5444,36 +5450,6 @@
         }
       ],
       "subcategories": {
-        "chat": {
-          "name": "chat",
-          "icon": "chat.svg",
-          "description": "Messaging and Chat Apps",
-          "mode": "menu",
-          "tools": [
-            {
-              "name": "Signal Desktop",
-              "description": "Private messenger",
-              "icon": "signal.png",
-              "version": "1.0",
-              "scriptPath": "p3/scripts/utils/chat/signal_desktop.sh"
-            },
-            {
-              "name": "Telegram",
-              "description": "New era of messaging",
-              "icon": "telegram.png",
-              "version": "1.0",
-              "scriptPath": "p3/scripts/utils/chat/telegram.sh"
-            },
-            {
-              "name": "ZapZap",
-              "description": "WhatsApp Messenger",
-              "icon": "zapzap.png",
-              "version": "1.0",
-              "scriptPath": "p3/scripts/utils/chat/zapzap.sh"
-            }
-          ],
-          "displayName": "chat"
-        },
         "peripherals": {
           "name": "peripherals",
           "icon": "peripherals.svg",
@@ -5644,6 +5620,58 @@
     }
   },
   "de": {
+    "chat": {
+      "name": "chat",
+      "icon": "chat.svg",
+      "description": "Messaging- und Social-Apps.",
+      "mode": "menu",
+      "tools": [
+        {
+          "name": "Discord",
+          "description": "Eine beliebte Kommunikationsplattform für Gamer und Communities.",
+          "icon": "discord.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/discord.sh"
+        },
+        {
+          "name": "Microsoft Teams",
+          "description": "Eine Kollaborationsplattform für Remote-Arbeit.",
+          "icon": "teams.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/msteams.sh"
+        },
+        {
+          "name": "Signal Desktop",
+          "description": "Privater Messenger mit Ende-zu-Ende-Verschlüsselung und ohne Benutzer-IDs.",
+          "icon": "signal.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/signal_desktop.sh"
+        },
+        {
+          "name": "Slack",
+          "description": "Team-Kollaborations- und Messaging-Plattform.",
+          "icon": "slack.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/slack.sh"
+        },
+        {
+          "name": "Telegram",
+          "description": "Messaging-App mit besseren sozialen Funktionen und größeren Gruppenlimits.",
+          "icon": "telegram.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/telegram.sh"
+        },
+        {
+          "name": "ZapZap",
+          "description": "Ein Electron-Wrapper für WhatsApp Web.",
+          "icon": "zapzap.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/zapzap.sh"
+        }
+      ],
+      "subcategories": {},
+      "displayName": "Sozial"
+    },
     "devs": {
       "name": "devs",
       "icon": "ide.png",
@@ -5764,7 +5792,7 @@
         },
         {
           "name": "SDKMAN",
-          "description": "The Software Development Kit Manager",
+          "description": "Verwaltet parallele Versionen mehrerer Software Development Kits.",
           "icon": "sdkman.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/sdkman.sh"
@@ -6233,13 +6261,6 @@
       "mode": "checklist",
       "tools": [
         {
-          "name": "Discord",
-          "description": "Eine beliebte Kommunikationsplattform für Gamer und Communities.",
-          "icon": "discord.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/discord.sh"
-        },
-        {
           "name": "Gamemode",
           "description": "Ein Daemon zur Optimierung der Spiele-Leistung unter Linux.",
           "icon": "gaming.svg",
@@ -6502,13 +6523,6 @@
           "scriptPath": "p3/scripts/office/libreoffice.sh"
         },
         {
-          "name": "Microsoft Teams",
-          "description": "Eine Kollaborationsplattform für Remote-Arbeit.",
-          "icon": "teams.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/office/msteams.sh"
-        },
-        {
           "name": "Obsidian",
           "description": "Eine kostenlose, flexible App für Ihre Gedanken, Notizen und Organisation.",
           "icon": "obsidian.svg",
@@ -6535,13 +6549,6 @@
           "icon": "pjeoffice-pro.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/pjeoffice.sh"
-        },
-        {
-          "name": "Slack",
-          "description": "Team-Kollaborations- und Messaging-Plattform.",
-          "icon": "slack.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/office/slack.sh"
         },
         {
           "name": "Zen Browser",
@@ -6655,6 +6662,13 @@
           "scriptPath": "p3/scripts/sysadm/cockpit.sh"
         },
         {
+          "name": "CPU-X",
+          "description": "Sammelt Informationen über CPU, Mainboard und mehr.",
+          "icon": "cpu-x.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/sysadm/cpu-x.sh"
+        },
+        {
           "name": "Termius",
           "description": "Moderner SSH-Client für Linux mit intuitiver grafischer Benutzeroberfläche und erweiterten Verbindungsverwaltungsfunktionen.",
           "icon": "termius.png",
@@ -6693,13 +6707,6 @@
           "scriptPath": "p3/scripts/utils/archupd.sh"
         },
         {
-          "name": "Audacity",
-          "description": "Audacity is the world's most popular audio editing and recording app",
-          "icon": "audacity.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/utils/audacity.sh"
-        },
-        {
           "name": "Bazaar",
           "description": "Ein neuer App Store mit Fokus auf das Entdecken und Installieren von Anwendungen und Add-ons von Flatpak-Remotes und die Unterstützung der Entwickler, die den Linux-Desktop möglich machen.",
           "icon": "bazaar.svg",
@@ -6726,13 +6733,6 @@
           "icon": "cloudflare-warp.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/cloudflare-warp.sh"
-        },
-        {
-          "name": "CPU-X",
-          "description": "Gathers information on CPU, motherboard and more",
-          "icon": "cpu-x.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/utils/cpu-x.sh"
         },
         {
           "name": "Distroshelf",
@@ -6813,7 +6813,7 @@
         },
         {
           "name": "PeaZip",
-          "description": "Free file archiver utility",
+          "description": "Kostenloses Datei-Archivierungstool, das viele Formate unterstützt.",
           "icon": "peazip.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/peazip.sh"
@@ -6855,36 +6855,6 @@
         }
       ],
       "subcategories": {
-        "chat": {
-          "name": "chat",
-          "icon": "chat.svg",
-          "description": "Messaging and Chat Apps",
-          "mode": "menu",
-          "tools": [
-            {
-              "name": "Signal Desktop",
-              "description": "Private messenger",
-              "icon": "signal.png",
-              "version": "1.0",
-              "scriptPath": "p3/scripts/utils/chat/signal_desktop.sh"
-            },
-            {
-              "name": "Telegram",
-              "description": "New era of messaging",
-              "icon": "telegram.png",
-              "version": "1.0",
-              "scriptPath": "p3/scripts/utils/chat/telegram.sh"
-            },
-            {
-              "name": "ZapZap",
-              "description": "WhatsApp Messenger",
-              "icon": "zapzap.png",
-              "version": "1.0",
-              "scriptPath": "p3/scripts/utils/chat/zapzap.sh"
-            }
-          ],
-          "displayName": "chat"
-        },
         "peripherals": {
           "name": "peripherals",
           "icon": "peripherals.svg",
@@ -7055,6 +7025,58 @@
     }
   },
   "zh": {
+    "chat": {
+      "name": "chat",
+      "icon": "chat.svg",
+      "description": "消息和社交应用。",
+      "mode": "menu",
+      "tools": [
+        {
+          "name": "Discord",
+          "description": "游戏玩家和社区的流行通信平台。",
+          "icon": "discord.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/discord.sh"
+        },
+        {
+          "name": "Microsoft Teams",
+          "description": "远程工作的协作平台。",
+          "icon": "teams.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/msteams.sh"
+        },
+        {
+          "name": "Signal Desktop",
+          "description": "具有端到端加密且无用户ID的私人信使。",
+          "icon": "signal.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/signal_desktop.sh"
+        },
+        {
+          "name": "Slack",
+          "description": "团队协作和消息平台。",
+          "icon": "slack.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/slack.sh"
+        },
+        {
+          "name": "Telegram",
+          "description": "具有更好社交功能和更大群组限制的消息应用。",
+          "icon": "telegram.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/telegram.sh"
+        },
+        {
+          "name": "ZapZap",
+          "description": "WhatsApp Web 的 Electron 包装器。",
+          "icon": "zapzap.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/zapzap.sh"
+        }
+      ],
+      "subcategories": {},
+      "displayName": "社交"
+    },
     "devs": {
       "name": "devs",
       "icon": "ide.png",
@@ -7175,7 +7197,7 @@
         },
         {
           "name": "SDKMAN",
-          "description": "The Software Development Kit Manager",
+          "description": "管理多个软件开发工具包的并行版本。",
           "icon": "sdkman.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/sdkman.sh"
@@ -7644,13 +7666,6 @@
       "mode": "checklist",
       "tools": [
         {
-          "name": "Discord",
-          "description": "游戏玩家和社区的流行通信平台。",
-          "icon": "discord.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/discord.sh"
-        },
-        {
           "name": "Gamemode",
           "description": "用于优化Linux游戏性能的守护程序。",
           "icon": "gaming.svg",
@@ -7913,13 +7928,6 @@
           "scriptPath": "p3/scripts/office/libreoffice.sh"
         },
         {
-          "name": "Microsoft Teams",
-          "description": "远程工作的协作平台。",
-          "icon": "teams.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/office/msteams.sh"
-        },
-        {
           "name": "Obsidian",
           "description": "自由灵活的思考、笔记和组织应用程序。",
           "icon": "obsidian.svg",
@@ -7946,13 +7954,6 @@
           "icon": "pjeoffice-pro.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/pjeoffice.sh"
-        },
-        {
-          "name": "Slack",
-          "description": "团队协作和消息平台。",
-          "icon": "slack.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/office/slack.sh"
         },
         {
           "name": "Zen Browser",
@@ -8066,6 +8067,13 @@
           "scriptPath": "p3/scripts/sysadm/cockpit.sh"
         },
         {
+          "name": "CPU-X",
+          "description": "收集有关 CPU、主板等的信�",
+          "icon": "cpu-x.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/sysadm/cpu-x.sh"
+        },
+        {
           "name": "Termius",
           "description": "现代Linux SSH客户端，具有直观的图形界面和高级连接管理功能。",
           "icon": "termius.png",
@@ -8104,13 +8112,6 @@
           "scriptPath": "p3/scripts/utils/archupd.sh"
         },
         {
-          "name": "Audacity",
-          "description": "Audacity is the world's most popular audio editing and recording app",
-          "icon": "audacity.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/utils/audacity.sh"
-        },
-        {
           "name": "Bazaar",
           "description": "新的应用商店，专注于发现和安装来自Flatpak远程存储库的应用程序和附加组件，并支持使Linux桌面成为可能的开发者。",
           "icon": "bazaar.svg",
@@ -8137,13 +8138,6 @@
           "icon": "cloudflare-warp.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/cloudflare-warp.sh"
-        },
-        {
-          "name": "CPU-X",
-          "description": "Gathers information on CPU, motherboard and more",
-          "icon": "cpu-x.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/utils/cpu-x.sh"
         },
         {
           "name": "Distroshelf",
@@ -8224,7 +8218,7 @@
         },
         {
           "name": "PeaZip",
-          "description": "Free file archiver utility",
+          "description": "支持多种格式的免费文件归档工具。",
           "icon": "peazip.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/peazip.sh"
@@ -8266,36 +8260,6 @@
         }
       ],
       "subcategories": {
-        "chat": {
-          "name": "chat",
-          "icon": "chat.svg",
-          "description": "Messaging and Chat Apps",
-          "mode": "menu",
-          "tools": [
-            {
-              "name": "Signal Desktop",
-              "description": "Private messenger",
-              "icon": "signal.png",
-              "version": "1.0",
-              "scriptPath": "p3/scripts/utils/chat/signal_desktop.sh"
-            },
-            {
-              "name": "Telegram",
-              "description": "New era of messaging",
-              "icon": "telegram.png",
-              "version": "1.0",
-              "scriptPath": "p3/scripts/utils/chat/telegram.sh"
-            },
-            {
-              "name": "ZapZap",
-              "description": "WhatsApp Messenger",
-              "icon": "zapzap.png",
-              "version": "1.0",
-              "scriptPath": "p3/scripts/utils/chat/zapzap.sh"
-            }
-          ],
-          "displayName": "chat"
-        },
         "peripherals": {
           "name": "peripherals",
           "icon": "peripherals.svg",
@@ -8466,6 +8430,58 @@
     }
   },
   "ja": {
+    "chat": {
+      "name": "chat",
+      "icon": "chat.svg",
+      "description": "メッセージングとソーシャルアプリ。",
+      "mode": "menu",
+      "tools": [
+        {
+          "name": "Discord",
+          "description": "ゲーマーとコミュニティのための人気のコミュニケーションプラットフォーム。",
+          "icon": "discord.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/discord.sh"
+        },
+        {
+          "name": "Microsoft Teams",
+          "description": "リモートワーク用のコラボレーションプラットフォーム。",
+          "icon": "teams.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/msteams.sh"
+        },
+        {
+          "name": "Signal Desktop",
+          "description": "エンドツーエンド暗号化とユーザーIDなしのプライベートメッセンジャー。",
+          "icon": "signal.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/signal_desktop.sh"
+        },
+        {
+          "name": "Slack",
+          "description": "チームコラボレーションとメッセージングプラットフォーム。",
+          "icon": "slack.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/slack.sh"
+        },
+        {
+          "name": "Telegram",
+          "description": "より良いソーシャル機能と大きなグループ制限を持つメッセージングアプリ。",
+          "icon": "telegram.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/telegram.sh"
+        },
+        {
+          "name": "ZapZap",
+          "description": "WhatsApp Web の Electron ラッパー。",
+          "icon": "zapzap.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/zapzap.sh"
+        }
+      ],
+      "subcategories": {},
+      "displayName": "ソーシャル"
+    },
     "devs": {
       "name": "devs",
       "icon": "ide.png",
@@ -8586,7 +8602,7 @@
         },
         {
           "name": "SDKMAN",
-          "description": "The Software Development Kit Manager",
+          "description": "複数のソフトウェア開発キットの並行バージョンを管理します。",
           "icon": "sdkman.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/sdkman.sh"
@@ -9055,13 +9071,6 @@
       "mode": "checklist",
       "tools": [
         {
-          "name": "Discord",
-          "description": "ゲーマーとコミュニティのための人気のコミュニケーションプラットフォーム。",
-          "icon": "discord.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/discord.sh"
-        },
-        {
           "name": "Gamemode",
           "description": "Linuxでのゲームパフォーマンスを最適化するためのデーモン。",
           "icon": "gaming.svg",
@@ -9324,13 +9333,6 @@
           "scriptPath": "p3/scripts/office/libreoffice.sh"
         },
         {
-          "name": "Microsoft Teams",
-          "description": "リモートワーク用のコラボレーションプラットフォーム。",
-          "icon": "teams.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/office/msteams.sh"
-        },
-        {
           "name": "Obsidian",
           "description": "思考、ノート、整理のための自由で柔軟なアプリ。",
           "icon": "obsidian.svg",
@@ -9357,13 +9359,6 @@
           "icon": "pjeoffice-pro.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/pjeoffice.sh"
-        },
-        {
-          "name": "Slack",
-          "description": "チームコラボレーションとメッセージングプラットフォーム。",
-          "icon": "slack.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/office/slack.sh"
         },
         {
           "name": "Zen Browser",
@@ -9477,6 +9472,13 @@
           "scriptPath": "p3/scripts/sysadm/cockpit.sh"
         },
         {
+          "name": "CPU-X",
+          "description": "CPU、マザーボードなどの情報を収集します。",
+          "icon": "cpu-x.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/sysadm/cpu-x.sh"
+        },
+        {
           "name": "Termius",
           "description": "Linux用のモダンなSSHクライアント。直感的なグラフィカルインターフェースと高度な接続管理機能を備えています。",
           "icon": "termius.png",
@@ -9515,13 +9517,6 @@
           "scriptPath": "p3/scripts/utils/archupd.sh"
         },
         {
-          "name": "Audacity",
-          "description": "Audacity is the world's most popular audio editing and recording app",
-          "icon": "audacity.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/utils/audacity.sh"
-        },
-        {
           "name": "Bazaar",
           "description": "Flatpakリモートからアプリケーションとアドオンの発見・インストールに重点を置き、Linuxデスクトップを可能にする開発者をサポートする新しいアプリストア。",
           "icon": "bazaar.svg",
@@ -9548,13 +9543,6 @@
           "icon": "cloudflare-warp.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/cloudflare-warp.sh"
-        },
-        {
-          "name": "CPU-X",
-          "description": "Gathers information on CPU, motherboard and more",
-          "icon": "cpu-x.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/utils/cpu-x.sh"
         },
         {
           "name": "Distroshelf",
@@ -9635,7 +9623,7 @@
         },
         {
           "name": "PeaZip",
-          "description": "Free file archiver utility",
+          "description": "多くの形式をサポートする無料のファイルアーカイバーユーティリティ。",
           "icon": "peazip.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/peazip.sh"
@@ -9677,36 +9665,6 @@
         }
       ],
       "subcategories": {
-        "chat": {
-          "name": "chat",
-          "icon": "chat.svg",
-          "description": "Messaging and Chat Apps",
-          "mode": "menu",
-          "tools": [
-            {
-              "name": "Signal Desktop",
-              "description": "Private messenger",
-              "icon": "signal.png",
-              "version": "1.0",
-              "scriptPath": "p3/scripts/utils/chat/signal_desktop.sh"
-            },
-            {
-              "name": "Telegram",
-              "description": "New era of messaging",
-              "icon": "telegram.png",
-              "version": "1.0",
-              "scriptPath": "p3/scripts/utils/chat/telegram.sh"
-            },
-            {
-              "name": "ZapZap",
-              "description": "WhatsApp Messenger",
-              "icon": "zapzap.png",
-              "version": "1.0",
-              "scriptPath": "p3/scripts/utils/chat/zapzap.sh"
-            }
-          ],
-          "displayName": "chat"
-        },
         "peripherals": {
           "name": "peripherals",
           "icon": "peripherals.svg",
@@ -9877,6 +9835,58 @@
     }
   },
   "ru": {
+    "chat": {
+      "name": "chat",
+      "icon": "chat.svg",
+      "description": "Приложения для обмена сообщениями и социальных сетей.",
+      "mode": "menu",
+      "tools": [
+        {
+          "name": "Discord",
+          "description": "Популярная платформа для общения игроков и сообществ.",
+          "icon": "discord.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/discord.sh"
+        },
+        {
+          "name": "Microsoft Teams",
+          "description": "Платформа для совместной работы и удалённой работы.",
+          "icon": "teams.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/msteams.sh"
+        },
+        {
+          "name": "Signal Desktop",
+          "description": "Приватный мессенджер с сквозным шифрованием и без пользовательских ID.",
+          "icon": "signal.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/signal_desktop.sh"
+        },
+        {
+          "name": "Slack",
+          "description": "Платформа для командного сотрудничества и обмена сообщениями.",
+          "icon": "slack.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/slack.sh"
+        },
+        {
+          "name": "Telegram",
+          "description": "Приложение для обмена сообщениями с лучшими социальными функциями и большими лимитами групп.",
+          "icon": "telegram.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/telegram.sh"
+        },
+        {
+          "name": "ZapZap",
+          "description": "Обертка Electron для WhatsApp Web.",
+          "icon": "zapzap.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/zapzap.sh"
+        }
+      ],
+      "subcategories": {},
+      "displayName": "Социальный"
+    },
     "devs": {
       "name": "devs",
       "icon": "ide.png",
@@ -9997,7 +10007,7 @@
         },
         {
           "name": "SDKMAN",
-          "description": "The Software Development Kit Manager",
+          "description": "Управляет параллельными версиями нескольких наборов для разработки программного обеспечения.",
           "icon": "sdkman.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/sdkman.sh"
@@ -10466,13 +10476,6 @@
       "mode": "checklist",
       "tools": [
         {
-          "name": "Discord",
-          "description": "Популярная платформа для общения игроков и сообществ.",
-          "icon": "discord.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/discord.sh"
-        },
-        {
           "name": "Gamemode",
           "description": "Демон для оптимизации игровой производительности в Linux.",
           "icon": "gaming.svg",
@@ -10735,13 +10738,6 @@
           "scriptPath": "p3/scripts/office/libreoffice.sh"
         },
         {
-          "name": "Microsoft Teams",
-          "description": "Платформа для совместной работы и удалённой работы.",
-          "icon": "teams.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/office/msteams.sh"
-        },
-        {
           "name": "Obsidian",
           "description": "Бесплатное, гибкое приложение для ваших мыслей, заметок и организации.",
           "icon": "obsidian.svg",
@@ -10768,13 +10764,6 @@
           "icon": "pjeoffice-pro.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/pjeoffice.sh"
-        },
-        {
-          "name": "Slack",
-          "description": "Платформа для командного сотрудничества и обмена сообщениями.",
-          "icon": "slack.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/office/slack.sh"
         },
         {
           "name": "Zen Browser",
@@ -10888,6 +10877,13 @@
           "scriptPath": "p3/scripts/sysadm/cockpit.sh"
         },
         {
+          "name": "CPU-X",
+          "description": "Собирает информацию о процессоре, материнской плате и др.",
+          "icon": "cpu-x.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/sysadm/cpu-x.sh"
+        },
+        {
           "name": "Termius",
           "description": "Современный SSH-клиент для Linux с интуитивно понятным графическим интерфейсом и расширенными функциями управления подключениями.",
           "icon": "termius.png",
@@ -10926,13 +10922,6 @@
           "scriptPath": "p3/scripts/utils/archupd.sh"
         },
         {
-          "name": "Audacity",
-          "description": "Audacity is the world's most popular audio editing and recording app",
-          "icon": "audacity.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/utils/audacity.sh"
-        },
-        {
           "name": "Bazaar",
           "description": "Новый магазин приложений с фокусом на обнаружение и установку приложений и дополнений из удалённых репозиториев Flatpak и поддержку разработчиков, которые делают рабочий стол Linux возможным.",
           "icon": "bazaar.svg",
@@ -10959,13 +10948,6 @@
           "icon": "cloudflare-warp.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/cloudflare-warp.sh"
-        },
-        {
-          "name": "CPU-X",
-          "description": "Gathers information on CPU, motherboard and more",
-          "icon": "cpu-x.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/utils/cpu-x.sh"
         },
         {
           "name": "Distroshelf",
@@ -11046,7 +11028,7 @@
         },
         {
           "name": "PeaZip",
-          "description": "Free file archiver utility",
+          "description": "Бесплатная утилита для архивации файлов, поддерживающая множество форматов.",
           "icon": "peazip.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/peazip.sh"
@@ -11088,36 +11070,6 @@
         }
       ],
       "subcategories": {
-        "chat": {
-          "name": "chat",
-          "icon": "chat.svg",
-          "description": "Messaging and Chat Apps",
-          "mode": "menu",
-          "tools": [
-            {
-              "name": "Signal Desktop",
-              "description": "Private messenger",
-              "icon": "signal.png",
-              "version": "1.0",
-              "scriptPath": "p3/scripts/utils/chat/signal_desktop.sh"
-            },
-            {
-              "name": "Telegram",
-              "description": "New era of messaging",
-              "icon": "telegram.png",
-              "version": "1.0",
-              "scriptPath": "p3/scripts/utils/chat/telegram.sh"
-            },
-            {
-              "name": "ZapZap",
-              "description": "WhatsApp Messenger",
-              "icon": "zapzap.png",
-              "version": "1.0",
-              "scriptPath": "p3/scripts/utils/chat/zapzap.sh"
-            }
-          ],
-          "displayName": "chat"
-        },
         "peripherals": {
           "name": "peripherals",
           "icon": "peripherals.svg",
