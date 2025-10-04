@@ -1195,6 +1195,13 @@
         "scriptPath": "p3/scripts/utils/qpw.sh"
       },
       {
+        "name": "S3Drive",
+        "description": "Convert S3, SFTP, WebDAV or Rclone back-end into your encrypted storage",
+        "icon": "s3drive.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/s3drive.sh"
+      },
+      {
         "name": "Gnome Tweaks",
         "description": "tweaks_desc",
         "icon": "tweaks.svg",
