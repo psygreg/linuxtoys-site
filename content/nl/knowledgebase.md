@@ -128,6 +128,8 @@ Van flathub, of repositories toegevoegd door LinuxToys, en geen andere wijziging
 - Telegram
 - Signal
 - ZapZap
+- S3Drive
+- Moonlight
 
 #### Toegevoegde repositories
 
@@ -681,6 +683,14 @@ w! /sys/kernel/mm/transparent_hugepage/khugepaged/max_ptes_none - - - - 4091
 
 ### SDKMAN
 Geïnstalleerd door zijn officiële script. Kan verwijderd worden door de installer opnieuw te draaien van LinuxToys.
+
+### Acer Manager
+Geïnstalleerd met behulp van het script dat wordt geleverd in de [officiële GitHub repository](https://github.com/PXDiv/Div-Acer-Manager-Max) na het installeren van de juiste afhankelijkheden ervoor.
+
+**Geïnstalleerde of Bijgewerkte Pakketten**
+- Arch: `base-devel linux${_k:+-${_k}}-headers`
+- Fedora/OpenSUSE: `make gcc kernel-headers kernel-devel`
+- Debian/Ubuntu: `make build-essential`
 
 ## Repository Installers
 

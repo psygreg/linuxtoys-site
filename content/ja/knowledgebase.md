@@ -128,6 +128,8 @@ flathubから、またはLinuxToysによって追加されたリポジトリが�
 - Telegram
 - Signal
 - ZapZap
+- S3Drive
+- Moonlight
 
 #### 追加されたリポジトリ
 
@@ -681,6 +683,14 @@ w! /sys/kernel/mm/transparent_hugepage/khugepaged/max_ptes_none - - - - 4091
 
 ### SDKMAN
 公式スクリプトを通じてインストールされます。LinuxToysからインストーラーを再度実行することで削除できます。
+
+### Acer Manager
+適切な依存関係をインストールした後、[公式GitHubリポジトリ](https://github.com/PXDiv/Div-Acer-Manager-Max)で提供されているスクリプトを使用してインストールされます。
+
+**インストールまたは更新されたパッケージ**
+- Arch: `base-devel linux${_k:+-${_k}}-headers`
+- Fedora/OpenSUSE: `make gcc kernel-headers kernel-devel`
+- Debian/Ubuntu: `make build-essential`
 
 ## リポジトリインストーラー
 

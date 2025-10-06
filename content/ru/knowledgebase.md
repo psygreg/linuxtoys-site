@@ -128,6 +128,8 @@
 - Telegram
 - Signal
 - ZapZap
+- S3Drive
+- Moonlight
 
 #### Добавленные репозитории
 
@@ -681,6 +683,14 @@ w! /sys/kernel/mm/transparent_hugepage/khugepaged/max_ptes_none - - - - 4091
 
 ### SDKMAN
 Устанавливается через официальный скрипт. Может быть удален путем повторного запуска установщика из LinuxToys.
+
+### Acer Manager
+Устанавливается с использованием скрипта, предоставленного в [официальном репозитории GitHub](https://github.com/PXDiv/Div-Acer-Manager-Max), после установки необходимых зависимостей для него.
+
+**Установленные или обновленные пакеты**
+- Arch: `base-devel linux${_k:+-${_k}}-headers`
+- Fedora/OpenSUSE: `make gcc kernel-headers kernel-devel`
+- Debian/Ubuntu: `make build-essential`
 
 ## Установщики репозиториев
 

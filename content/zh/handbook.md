@@ -75,6 +75,7 @@
 # noconfirm: yes
 # localize: en, pt...
 # nocontainer
+# repo: https://repo.url
 
 # --- 脚本代码开始 ---
 source "$SCRIPT_DIR/libs/linuxtoys.lib"
@@ -103,6 +104,7 @@ source "$SCRIPT_DIR/libs/helpers.lib"
 - **`# nocontainer:`** - 在容器化环境中隐藏脚本
 - **`# gpu:`** - 仅为选定的GPU供应商显示脚本，有效条目 `Amd`、`Intel`、`Nvidia`。可以有多个供应商。
 - **`# desktop:`** - 仅为选定的桌面环境显示脚本，有效条目 `gnome`、`plasma` 和 `other`。
+- **`#repo:`** - 使脚本名称在确认对话框中可点击。应该允许用户快速访问相应功能的原始仓库。
 
 #### 兼容性系统
 

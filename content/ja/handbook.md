@@ -75,6 +75,7 @@ Linuxをすべてのユーザーにとってよりアクセシブルでユーザ
 # noconfirm: yes
 # localize: en, pt...
 # nocontainer
+# repo: https://repo.url
 
 # --- スクリプトコードの開始 ---
 source "$SCRIPT_DIR/libs/linuxtoys.lib"
@@ -103,6 +104,7 @@ source "$SCRIPT_DIR/libs/helpers.lib"
 - **`# nocontainer:`** - コンテナ化環境でスクリプトを非表示
 - **`# gpu:`** - 選択したGPUベンダーのスクリプトのみを表示します。有効なエントリは `Amd`, `Intel`, `Nvidia` です。複数のベンダーを指定できます。
 - **`# desktop:`** - 選択したデスクトップ環境のスクリプトのみを表示します。有効なエントリは `gnome`, `plasma`, `other` です。
+- **`#repo:`** - 確認ダイアログでスクリプト名をクリック可能にします。ユーザーが対応する機能の元のリポジトリに素早くアクセスできるようにする必要があります。
 
 #### 互換性システム
 

@@ -128,6 +128,8 @@
 - Telegram
 - Signal
 - ZapZap
+- S3Drive
+- Moonlight
 
 #### 添加的存储库
 
@@ -681,6 +683,14 @@ w! /sys/kernel/mm/transparent_hugepage/khugepaged/max_ptes_none - - - - 4091
 
 ### SDKMAN
 通过其官方脚本安装。可以通过从 LinuxToys 再次运行安装程序来删除。
+
+### Acer Manager
+在安装所需的依赖项后，使用[官方GitHub存储库](https://github.com/PXDiv/Div-Acer-Manager-Max)中提供的脚本进行安装。
+
+**安装或更新的软件包**
+- Arch: `base-devel linux${_k:+-${_k}}-headers`
+- Fedora/OpenSUSE: `make gcc kernel-headers kernel-devel`
+- Debian/Ubuntu: `make build-essential`
 
 ## 存储库安装程序
 

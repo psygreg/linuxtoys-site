@@ -128,6 +128,8 @@ Do flathub, ou tendo repositórios adicionados pelo LinuxToys, e nenhuma outra m
 - Telegram
 - Signal
 - ZapZap
+- S3Drive
+- Moonlight
 
 #### Repositórios adicionados
 
@@ -681,6 +683,14 @@ w! /sys/kernel/mm/transparent_hugepage/khugepaged/max_ptes_none - - - - 4091
 
 ### SDKMAN
 Instalado através de seu script oficial. Pode ser removido executando o instalador novamente do LinuxToys.
+
+### Acer Manager
+Instalado usando o script fornecido no [repositório oficial do GitHub](https://github.com/PXDiv/Div-Acer-Manager-Max) após instalar as dependências adequadas para ele.
+
+**Pacotes Instalados ou Atualizados**
+- Arch: `base-devel linux${_k:+-${_k}}-headers`
+- Fedora/OpenSUSE: `make gcc kernel-headers kernel-devel`
+- Debian/Ubuntu: `make build-essential`
 
 ## Instaladores de Repositório
 

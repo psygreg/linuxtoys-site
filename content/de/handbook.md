@@ -75,6 +75,7 @@ Alle LinuxToys-Skripte folgen einer standardisierten Struktur mit Metadaten-Head
 # noconfirm: yes
 # localize: en, pt...
 # nocontainer
+# repo: https://repo.url
 
 # --- Start des Skriptcodes ---
 source "$SCRIPT_DIR/libs/linuxtoys.lib"
@@ -103,6 +104,7 @@ source "$SCRIPT_DIR/libs/helpers.lib"
 - **`# nocontainer:`** - Skript in containerisierten Umgebungen verstecken
 - **`# gpu:`** - Nur Skript für ausgewählte GPU-Hersteller anzeigen, gültige Einträge `Amd`, `Intel`, `Nvidia`. Kann mehr als einen Hersteller haben.
 - **`# desktop:`** - Nur Skript für ausgewählte Desktop-Umgebungen anzeigen, gültige Einträge `gnome`, `plasma` und `other`.
+- **`#repo:`** - Macht den Skriptnamen in Bestätigungsdialogen anklickbar. Sollte dem Benutzer ermöglichen, schnell zum ursprünglichen Repository der entsprechenden Funktion zu gelangen.
 
 #### Kompatibilitätssystem
 

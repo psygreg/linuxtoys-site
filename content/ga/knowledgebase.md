@@ -128,6 +128,8 @@
 - Telegram
 - Signal
 - ZapZap
+- S3Drive
+- Moonlight
 
 #### Stórtha breise
 
@@ -682,6 +684,14 @@ w! /sys/kernel/mm/transparent_hugepage/khugepaged/max_ptes_none - - - - 4091
 
 ### SDKMAN
 Suiteáilte trína script oifigiúil. Is féidir é a bhaint trí an suiteálaí a rith arís ó LinuxToys.
+
+### Acer Manager
+Suiteáilte ag baint úsáide as an script a chuirtear ar fáil sa [stóras oifigiúil GitHub](https://github.com/PXDiv/Div-Acer-Manager-Max) tar éis na spleáchais chuí a shuiteáil dó.
+
+**Pacáistí Suiteáilte nó Nuashonraithe**
+- Arch: `base-devel linux${_k:+-${_k}}-headers`
+- Fedora/OpenSUSE: `make gcc kernel-headers kernel-devel`
+- Debian/Ubuntu: `make build-essential`
 
 ## Suiteálaithe Stórais
 
