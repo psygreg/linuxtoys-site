@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2025-10-01T06:32:09.384Z",
-  "categoryCount": 9,
+  "lastUpdated": "2025-10-05T06:28:03.791Z",
+  "categoryCount": 10,
   "totalTools": 183,
   "supportedLanguages": [
     "en",
@@ -13,6 +13,7 @@
     "ru"
   ],
   "categories": [
+    "chat",
     "devs",
     "drivers",
     "edu",

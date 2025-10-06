@@ -267,7 +267,15 @@
     "paru_desc": "A popular AUR helper written in Rust. Similar to yay.",
     "cachyconfs_desc": "Optimized configurations for better performance and responsiveness and small fixes for typical issues used by default on CachyOS, filtered for universal compatibility.",
     "cachyconfs": "CachyOS systemd Configuration",
-    "omb_desc": "A delightful community-driven framework for managing your bash configuration."
+    "omb_desc": "A delightful community-driven framework for managing your bash configuration.",
+    "sdkman_desc": "Manages parallel versions of multiple Software Development Kits.",
+    "cpux_desc": "Gathers information on CPU, motherboard and more.",
+    "chat": "Social",
+    "chat_desc": "Messaging and social apps.",
+    "signal_desc": "Private messenger with end-to-end encryption and no user IDs.",
+    "telegram_desc": "Messaging app with better social features and bigger group limits.",
+    "zap_desc": "An electron wrapper for WhatsApp Web.",
+    "peazip_desc": "Free file archiver utility supporting many formats."
   },
   "pt": {
     "subtitle": "Uma coleção amigável de ferramentas para Linux.",
@@ -537,7 +545,15 @@
     "paru_desc": "Um assistente AUR popular escrito em Rust. Similar ao yay.",
     "cachyconfs_desc": "Configurações otimizadas para melhor desempenho e responsividade, e pequenas correções para problemas típicos usados por padrão no CachyOS, filtrados para compatibilidade universal.",
     "cachyconfs": "Configuração systemd CachyOS",
-    "omb_desc": "Uma estrutura encantadora orientada pela comunidade para gerenciar sua configuração bash."
+    "omb_desc": "Uma estrutura encantadora orientada pela comunidade para gerenciar sua configuração bash.",
+    "sdkman_desc": "Gerencia versões paralelas de vários kits de desenvolvimento de software.",
+    "cpux_desc": "Reúne informações sobre CPU, placa-mãe e mais.",
+    "chat": "Social",
+    "chat_desc": "Aplicativos de mensagens e redes sociais.",
+    "signal_desc": "Mensageiro privado com criptografia de ponta a ponta e sem IDs de usuário.",
+    "telegram_desc": "Aplicativo de mensagens com melhores recursos sociais e limites de grupo maiores.",
+    "zap_desc": "Um wrapper Electron para WhatsApp Web.",
+    "peazip_desc": "Utilitário gratuito de arquivamento de arquivos que suporta muitos formatos."
   },
   "es": {
     "subtitle": "Una colección amigable de herramientas para Linux.",
@@ -807,7 +823,15 @@
     "paru_desc": "Un asistente AUR popular escrito en Rust. Similar a yay.",
     "cachyconfs_desc": "Configuraciones optimizadas para un mejor rendimiento y capacidad de respuesta, y pequeñas correcciones para problemas típicos utilizados por defecto en CachyOS, filtrados para compatibilidad universal.",
     "cachyconfs": "Configuración systemd de CachyOS",
-    "omb_desc": "Un marco encantador impulsado por la comunidad para gestionar tu configuración de bash."
+    "omb_desc": "Un marco encantador impulsado por la comunidad para gestionar tu configuración de bash.",
+    "sdkman_desc": "Gestiona versiones paralelas de múltiples kits de desarrollo de software.",
+    "cpux_desc": "Reúne información sobre la CPU, la placa base y más.",
+    "chat": "Social",
+    "chat_desc": "Aplicaciones de mensajería y redes sociales.",
+    "signal_desc": "Mensajero privado con cifrado de extremo a extremo y sin ID de usuario.",
+    "telegram_desc": "Aplicación de mensajería con mejores funciones sociales y límites de grupo más grandes.",
+    "zap_desc": "Un envoltorio de Electron para WhatsApp Web.",
+    "peazip_desc": "Utilidad gratuita de archivado de archivos que soporta muchos formatos."
   },
   "fr": {
     "subtitle": "Une collection d'outils pour Linux de manière conviviale.",
@@ -1077,7 +1101,15 @@
     "paru_desc": "Un assistant AUR populaire écrit en Rust. Similaire à yay.",
     "cachyconfs_desc": "Configurations optimisées pour de meilleures performances et réactivité, ainsi que de petits correctifs pour les problèmes typiques utilisés par défaut sur CachyOS, filtrés pour une compatibilité universelle.",
     "cachyconfs": "Configuration systemd CachyOS",
-    "omb_desc": "Un cadre délicieux piloté par la communauté pour gérer votre configuration bash."
+    "omb_desc": "Un cadre délicieux piloté par la communauté pour gérer votre configuration bash.",
+    "sdkman_desc": "Gère des versions parallèles de plusieurs kits de développement logiciel.",
+    "cpux_desc": "Recueille des informations sur le CPU, la carte mère et plus.",
+    "chat": "Social",
+    "chat_desc": "Applications de messagerie et sociales.",
+    "signal_desc": "Messager privé avec chiffrement de bout en bout et sans ID utilisateur.",
+    "telegram_desc": "Application de messagerie avec de meilleures fonctionnalités sociales et des limites de groupe plus grandes.",
+    "zap_desc": "Un wrapper Electron pour WhatsApp Web.",
+    "peazip_desc": "Utilitaire d'archivage de fichiers gratuit prenant en charge de nombreux formats."
   },
   "de": {
     "subtitle": "Eine freundliche Sammlung von Tools für Linux.",
@@ -1347,7 +1379,15 @@
     "paru_desc": "Ein beliebter AUR-Helfer, geschrieben in Rust. Ähnlich wie yay.",
     "cachyconfs_desc": "Optimierte Konfigurationen für bessere Leistung und Reaktionsfähigkeit sowie kleine Fixes für typische Probleme, die standardmäßig auf CachyOS verwendet werden, gefiltert für universelle Kompatibilität.",
     "cachyconfs": "CachyOS systemd Konfiguration",
-    "omb_desc": "Ein entzückendes, gemeinschaftlich betriebenes Framework zur Verwaltung Ihrer Bash-Konfiguration."
+    "omb_desc": "Ein entzückendes, gemeinschaftlich betriebenes Framework zur Verwaltung Ihrer Bash-Konfiguration.",
+    "sdkman_desc": "Verwaltet parallele Versionen mehrerer Software Development Kits.",
+    "cpux_desc": "Sammelt Informationen über CPU, Mainboard und mehr.",
+    "chat": "Sozial",
+    "chat_desc": "Messaging- und Social-Apps.",
+    "signal_desc": "Privater Messenger mit Ende-zu-Ende-Verschlüsselung und ohne Benutzer-IDs.",
+    "telegram_desc": "Messaging-App mit besseren sozialen Funktionen und größeren Gruppenlimits.",
+    "zap_desc": "Ein Electron-Wrapper für WhatsApp Web.",
+    "peazip_desc": "Kostenloses Datei-Archivierungstool, das viele Formate unterstützt."
   },
   "zh": {
     "subtitle": "适用于Linux的用户友好工具集合。",
@@ -1619,7 +1659,15 @@
     "paru_desc": "一个用 Rust 编写的流行 AUR 助手。与 yay 类似。",
     "cachyconfs_desc": "针对 CachyOS 默认使用的优化配置，以提高性能和响应能力，并修复典型问题，经过筛选以实现通用兼容性。",
     "cachyconfs": "CachyOS systemd 配置",
-    "omb_desc": "一个令人愉快的社区驱动框架，用于管理您的 bash 配置。"
+    "omb_desc": "一个令人愉快的社区驱动框架，用于管理您的 bash 配置。",
+    "sdkman_desc": "管理多个软件开发工具包的并行版本。",
+    "cpux_desc": "收集有关 CPU、主板等的信�",
+    "chat": "社交",
+    "chat_desc": "消息和社交应用。",
+    "signal_desc": "具有端到端加密且无用户ID的私人信使。",
+    "telegram_desc": "具有更好社交功能和更大群组限制的消息应用。",
+    "zap_desc": "WhatsApp Web 的 Electron 包装器。",
+    "peazip_desc": "支持多种格式的免费文件归档工具。"
   },
   "ja": {
     "subtitle": "Linuxのためのユーザーフレンドリーなツール集。",
@@ -1889,7 +1937,15 @@
     "paru_desc": "Rust で書かれた人気の AUR ヘルパー。yay に似ています。",
     "cachyconfs_desc": "CachyOS でデフォルトで使用されるパフォーマンスと応答性を向上させる最適化された設定、および典型的な問題に対する小さな修正。普遍的な互換性のためにフィルタリングされています。",
     "cachyconfs": "CachyOS systemd 設定",
-    "omb_desc": "あなたの bash 設定を管理するための楽しいコミュニティ駆動型フレームワーク。"
+    "omb_desc": "あなたの bash 設定を管理するための楽しいコミュニティ駆動型フレームワーク。",
+    "sdkman_desc": "複数のソフトウェア開発キットの並行バージョンを管理します。",
+    "cpux_desc": "CPU、マザーボードなどの情報を収集します。",
+    "chat": "ソーシャル",
+    "chat_desc": "メッセージングとソーシャルアプリ。",
+    "signal_desc": "エンドツーエンド暗号化とユーザーIDなしのプライベートメッセンジャー。",
+    "telegram_desc": "より良いソーシャル機能と大きなグループ制限を持つメッセージングアプリ。",
+    "zap_desc": "WhatsApp Web の Electron ラッパー。",
+    "peazip_desc": "多くの形式をサポートする無料のファイルアーカイバーユーティリティ。"
   },
   "ru": {
     "subtitle": "Коллекция инструментов для Linux в удобном формате.",
@@ -2159,6 +2215,14 @@
     "paru_desc": "Популярный помощник AUR, написанный на Rust. Похож на yay.",
     "cachyconfs_desc": "Оптимизированные конфигурации для лучшей производительности и отзывчивости, а также небольшие исправления типичных проблем, используемые по умолчанию в CachyOS, отфильтрованные для универсальной совместимости.",
     "cachyconfs": "Конфигурация systemd CachyOS",
-    "omb_desc": "Восхитительный фреймворк, управляемый сообществом, для управления вашей конфигурацией bash."
+    "omb_desc": "Восхитительный фреймворк, управляемый сообществом, для управления вашей конфигурацией bash.",
+    "sdkman_desc": "Управляет параллельными версиями нескольких наборов для разработки программного обеспечения.",
+    "cpux_desc": "Собирает информацию о процессоре, материнской плате и др.",
+    "chat": "Социальный",
+    "chat_desc": "Приложения для обмена сообщениями и социальных сетей.",
+    "signal_desc": "Приватный мессенджер с сквозным шифрованием и без пользовательских ID.",
+    "telegram_desc": "Приложение для обмена сообщениями с лучшими социальными функциями и большими лимитами групп.",
+    "zap_desc": "Обертка Electron для WhatsApp Web.",
+    "peazip_desc": "Бесплатная утилита для архивации файлов, поддерживающая множество форматов."
   }
 }
