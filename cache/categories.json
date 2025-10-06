@@ -271,6 +271,13 @@
         "scriptPath": "p3/scripts/drivers/bcm.sh"
       },
       {
+        "name": "Acer Manager",
+        "description": "damx_desc",
+        "icon": "damx.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/drivers/damx.sh"
+      },
+      {
         "name": "Intel Compute Runtime",
         "description": "icr_desc",
         "icon": "intel.png",
@@ -704,6 +711,13 @@
         "scriptPath": "p3/scripts/game/mgjuice.sh"
       },
       {
+        "name": "Moonlight",
+        "description": "mlight_desc",
+        "icon": "moonlight.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/game/moonlight.sh"
+      },
+      {
         "name": "Osu!",
         "description": "osu_desc",
         "icon": "osu.png",
@@ -746,15 +760,8 @@
         "scriptPath": "p3/scripts/game/steam.sh"
       },
       {
-        "name": "Oversteer",
-        "description": "oversteer_desc",
-        "icon": "oversteer.png",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/game/steer.sh"
-      },
-      {
         "name": "Sunshine",
-        "description": "Self-hosted game stream host for Moonlight.",
+        "description": "sunshine_desc",
         "icon": "sunshine.png",
         "version": "1.0",
         "scriptPath": "p3/scripts/game/sunshine.sh"
@@ -1196,7 +1203,7 @@
       },
       {
         "name": "S3Drive",
-        "description": "Convert S3, SFTP, WebDAV or Rclone back-end into your encrypted storage",
+        "description": "s3d_desc",
         "icon": "s3drive.png",
         "version": "1.0",
         "scriptPath": "p3/scripts/utils/s3drive.sh"
@@ -1275,7 +1282,7 @@
           {
             "name": "StreamController",
             "description": "sc_desc",
-            "icon": "streamcontroller.svg",
+            "icon": "sc.png",
             "version": "1.0",
             "scriptPath": "p3/scripts/utils/peripherals/sc.sh"
           },
@@ -1285,6 +1292,13 @@
             "icon": "solaar.svg",
             "version": "1.0",
             "scriptPath": "p3/scripts/utils/peripherals/solaar.sh"
+          },
+          {
+            "name": "Oversteer",
+            "description": "oversteer_desc",
+            "icon": "oversteer.png",
+            "version": "1.0",
+            "scriptPath": "p3/scripts/utils/peripherals/steer.sh"
           }
         ]
       },
