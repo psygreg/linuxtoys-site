@@ -960,7 +960,7 @@
       }
 
       function setupInstallCommand() {
-        const command = `yes | sh -c "$(curl -fsSL https://linux.toys/install.sh)"`;
+        const command = `curl -fsSL https://linux.toys/install.sh | sh`;
         const element = document.getElementById('install-code');
         
         // Store the complete command for copying
