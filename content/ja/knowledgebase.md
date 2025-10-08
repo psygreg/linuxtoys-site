@@ -25,6 +25,7 @@
 - Wireguard
 - VLC
 - Gnome Tweaks
+- OBS Studio（マシンにIntel GPU（ディスクリートまたは統合型）がある場合、[Pipewire Audio Capture](https://github.com/dimtpap/obs-pipewire-audio-capture)プラグインを含む）。それ以外の場合は、Flathubからユーザーレベルのflatpakとしてインストールされます。
 
 ### 追加されたリポジトリ
 - Visual Studio Code：[Microsoftの公式リポジトリ](https://packages.microsoft.com)から。
@@ -102,7 +103,6 @@ flathubから、またはLinuxToysによって追加されたリポジトリが�
 - Flatseal
 - Handbrake
 - Mission Center
-- OBS Studio（[Pipewire Audio Capture](https://github.com/dimtpap/obs-pipewire-audio-capture)プラグインを含む）
 - QPWGraph
 - Warehouse
 - StreamController
@@ -137,7 +137,6 @@ flathubから、またはLinuxToysによって追加されたリポジトリが�
 
 ### システムレベル
 
-- GPU Screen Recorder
 - Bazaar
 - EasyEffects
 - LACT
@@ -691,6 +690,20 @@ w! /sys/kernel/mm/transparent_hugepage/khugepaged/max_ptes_none - - - - 4091
 - Arch: `base-devel linux${_k:+-${_k}}-headers`
 - Fedora/OpenSUSE: `make gcc kernel-headers kernel-devel`
 - Debian/Ubuntu: `make build-essential`
+
+### GPU Screen Recorder
+*QuickSync*が正常に動作するようにIntel GPU(ディスクリートまたは統合型)がシステムで検出された場合、[Pacstall](https://pacstall.dev)、[COPR](https://copr.fedorainfracloud.org/coprs/brycensranch/gpu-screen-recorder-git)、または[AUR](https://aur.archlinux.org/packages/gpu-screen-recorder)からインストールされます。それ以外の場合は、Flathubからシステムレベルのflatpakとしてインストールされます。
+
+**インストールまたは更新されたパッケージ**
+- Arch/Debian/Ubuntu/OpenSUSE: `intel-media-driver gpu-screen-recorder`
+- Fedora: `libva-intel-media-driver gpu-screen-recorder-ui`
+
+**追加の手順が必要です!**
+インストール後、ターミナルで次を実行します:
+```
+gsr-ui
+```
+設定(歯車アイコン)からシステム起動時に起動するように設定し、Alt+Zを押してUIを終了し、ターミナルウィンドウを閉じて再起動します。再起動後、プログラムの設定を好みに合わせて調整し、お好きなように使用できます。
 
 ## リポジトリインストーラー
 

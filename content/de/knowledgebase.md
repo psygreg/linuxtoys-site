@@ -25,6 +25,7 @@ Aus Standard-System-Repositories oder mit von LinuxToys hinzugefügten Repositor
 - Wireguard
 - VLC
 - Gnome Tweaks
+- OBS Studio (beinhaltet [Pipewire Audio Capture](https://github.com/dimtpap/obs-pipewire-audio-capture) Plugin), wenn die Maschine über eine Intel GPU (diskret oder integriert) verfügt. Andernfalls wird es als Flatpak auf Benutzerebene von Flathub installiert.
 
 ### Hinzugefügte Repositories
 - Visual Studio Code: aus [Microsofts offiziellem Repository.](https://packages.microsoft.com)
@@ -102,7 +103,6 @@ Von Flathub oder mit von LinuxToys hinzugefügten Repositories, und es werden ke
 - Flatseal
 - Handbrake
 - Mission Center
-- OBS Studio (beinhaltet [Pipewire Audio Capture](https://github.com/dimtpap/obs-pipewire-audio-capture) Plugin)
 - QPWGraph
 - Warehouse
 - StreamController
@@ -137,7 +137,6 @@ Von Flathub oder mit von LinuxToys hinzugefügten Repositories, und es werden ke
 
 ### System-Level
 
-- GPU Screen Recorder
 - Bazaar
 - EasyEffects
 - LACT
@@ -691,6 +690,20 @@ Installiert unter Verwendung des im [offiziellen GitHub-Repository](https://gith
 - Arch: `base-devel linux${_k:+-${_k}}-headers`
 - Fedora/OpenSUSE: `make gcc kernel-headers kernel-devel`
 - Debian/Ubuntu: `make build-essential`
+
+### GPU Screen Recorder
+Installiert von [Pacstall](https://pacstall.dev), [COPR](https://copr.fedorainfracloud.org/coprs/brycensranch/gpu-screen-recorder-git) oder dem [AUR](https://aur.archlinux.org/packages/gpu-screen-recorder), wenn eine Intel-GPU (dediziert oder integriert) in Ihrem System erkannt wird, damit *QuickSync* ordnungsgemäß funktioniert. Andernfalls wird es als System-Level-Flatpak von Flathub installiert.
+
+**Installierte oder aktualisierte Pakete**
+- Arch/Debian/Ubuntu/OpenSUSE: `intel-media-driver gpu-screen-recorder`
+- Fedora: `libva-intel-media-driver gpu-screen-recorder-ui`
+
+**Zusätzliche Schritte erforderlich!**
+Nach der Installation führen Sie im Terminal aus:
+```
+gsr-ui
+```
+Und stellen Sie es so ein, dass es beim Systemstart über die Einstellungen (das Zahnradsymbol) gestartet wird, drücken Sie dann Alt+Z, um die Benutzeroberfläche zu verlassen, schließen Sie das Terminalfenster und starten Sie neu. Nach dem Neustart können Sie die Programmeinstellungen nach Ihren Wünschen anpassen und es wie gewünscht verwenden.
 
 ## Repository Installer
 

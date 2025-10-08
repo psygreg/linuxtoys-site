@@ -25,6 +25,7 @@ Van standaard systeem repositories, of repositories toegevoegd door LinuxToys, e
 - Wireguard
 - VLC
 - Gnome Tweaks
+- OBS Studio (inclusief [Pipewire Audio Capture](https://github.com/dimtpap/obs-pipewire-audio-capture) plugin), als de machine een Intel GPU (discreet of geïntegreerd) heeft. Anders wordt het geïnstalleerd als een flatpak op gebruikersniveau van Flathub.
 
 ### Toegevoegde repositories
 - Visual Studio Code: van [Microsoft's officiële repository.](https://packages.microsoft.com)
@@ -102,7 +103,6 @@ Van flathub, of repositories toegevoegd door LinuxToys, en geen andere wijziging
 - Flatseal
 - Handbrake
 - Mission Center
-- OBS Studio (bevat [Pipewire Audio Capture](https://github.com/dimtpap/obs-pipewire-audio-capture) plugin)
 - QPWGraph
 - Warehouse
 - StreamController
@@ -137,7 +137,6 @@ Van flathub, of repositories toegevoegd door LinuxToys, en geen andere wijziging
 
 ### Systeem-niveau
 
-- GPU Screen Recorder
 - Bazaar
 - EasyEffects
 - LACT
@@ -691,6 +690,20 @@ Geïnstalleerd met behulp van het script dat wordt geleverd in de [officiële Gi
 - Arch: `base-devel linux${_k:+-${_k}}-headers`
 - Fedora/OpenSUSE: `make gcc kernel-headers kernel-devel`
 - Debian/Ubuntu: `make build-essential`
+
+### GPU Screen Recorder
+Geïnstalleerd vanaf [Pacstall](https://pacstall.dev), [COPR](https://copr.fedorainfracloud.org/coprs/brycensranch/gpu-screen-recorder-git) of de [AUR](https://aur.archlinux.org/packages/gpu-screen-recorder) als een Intel GPU (dedicated of geïntegreerd) wordt gedetecteerd in uw systeem zodat *QuickSync* correct werkt. Anders wordt het geïnstalleerd vanaf Flathub als een systeemniveau flatpak.
+
+**Geïnstalleerde of Bijgewerkte Pakketten**
+- Arch/Debian/Ubuntu/OpenSUSE: `intel-media-driver gpu-screen-recorder`
+- Fedora: `libva-intel-media-driver gpu-screen-recorder-ui`
+
+**Aanvullende procedures vereist!**
+Na installatie, voer uit in de terminal:
+```
+gsr-ui
+```
+En stel het in om te starten bij het opstarten van het systeem vanuit de instellingen (het tandwielpictogram), druk vervolgens op Alt+Z om de UI te verlaten, sluit het terminalvenster en herstart. Na het herstarten kunt u de programma-instellingen naar uw voorkeuren aanpassen en het gebruiken zoals u wilt.
 
 ## Repository Installers
 

@@ -25,6 +25,7 @@
 - Wireguard
 - VLC
 - Gnome Tweaks
+- OBS Studio (включает плагин [Pipewire Audio Capture](https://github.com/dimtpap/obs-pipewire-audio-capture)), если на машине установлен графический процессор Intel (дискретный или интегрированный). В противном случае он будет установлен как flatpak пользовательского уровня из Flathub.
 
 ### Добавленные репозитории
 - Visual Studio Code: из [официального репозитория Microsoft.](https://packages.microsoft.com)
@@ -102,7 +103,6 @@
 - Flatseal
 - Handbrake
 - Mission Center
-- OBS Studio (включает плагин [Pipewire Audio Capture](https://github.com/dimtpap/obs-pipewire-audio-capture))
 - QPWGraph
 - Warehouse
 - StreamController
@@ -137,7 +137,6 @@
 
 ### Системный уровень
 
-- GPU Screen Recorder
 - Bazaar
 - EasyEffects
 - LACT
@@ -691,6 +690,20 @@ w! /sys/kernel/mm/transparent_hugepage/khugepaged/max_ptes_none - - - - 4091
 - Arch: `base-devel linux${_k:+-${_k}}-headers`
 - Fedora/OpenSUSE: `make gcc kernel-headers kernel-devel`
 - Debian/Ubuntu: `make build-essential`
+
+### GPU Screen Recorder
+Устанавливается из [Pacstall](https://pacstall.dev), [COPR](https://copr.fedorainfracloud.org/coprs/brycensranch/gpu-screen-recorder-git) или [AUR](https://aur.archlinux.org/packages/gpu-screen-recorder), если в вашей системе обнаружен графический процессор Intel (дискретный или интегрированный), чтобы *QuickSync* работал правильно. В противном случае он будет установлен из Flathub в качестве системного flatpak.
+
+**Установленные или обновленные пакеты**
+- Arch/Debian/Ubuntu/OpenSUSE: `intel-media-driver gpu-screen-recorder`
+- Fedora: `libva-intel-media-driver gpu-screen-recorder-ui`
+
+**Требуются дополнительные процедуры!**
+После установки выполните в терминале:
+```
+gsr-ui
+```
+И настройте его для запуска при запуске системы из настроек (значок шестеренки), затем нажмите Alt+Z, чтобы выйти из интерфейса, закройте окно терминала и перезагрузитесь. После перезагрузки вы можете настроить параметры программы по своему усмотрению и использовать ее по своему желанию.
 
 ## Установщики репозиториев
 

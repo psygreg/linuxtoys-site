@@ -25,6 +25,7 @@ Desde repositorios del sistema por defecto, o teniendo repositorios añadidos po
 - Wireguard
 - VLC
 - Gnome Tweaks
+- OBS Studio (incluye el plugin [Pipewire Audio Capture](https://github.com/dimtpap/obs-pipewire-audio-capture)), si la máquina tiene una GPU Intel (discreta o integrada). De lo contrario, se instalará como un flatpak a nivel de usuario desde Flathub.
 
 ### Repositorios añadidos
 - Visual Studio Code: desde [el repositorio oficial de Microsoft.](https://packages.microsoft.com)
@@ -102,7 +103,6 @@ Desde flathub, o teniendo repositorios añadidos por LinuxToys, y no se hacen ot
 - Flatseal
 - Handbrake
 - Mission Center
-- OBS Studio (incluye plugin [Pipewire Audio Capture](https://github.com/dimtpap/obs-pipewire-audio-capture))
 - QPWGraph
 - Warehouse
 - StreamController
@@ -137,7 +137,6 @@ Desde flathub, o teniendo repositorios añadidos por LinuxToys, y no se hacen ot
 
 ### Nivel de sistema
 
-- GPU Screen Recorder
 - Bazaar
 - EasyEffects
 - LACT
@@ -691,6 +690,20 @@ Instalado utilizando el script proporcionado en el [repositorio oficial de GitHu
 - Arch: `base-devel linux${_k:+-${_k}}-headers`
 - Fedora/OpenSUSE: `make gcc kernel-headers kernel-devel`
 - Debian/Ubuntu: `make build-essential`
+
+### GPU Screen Recorder
+Instalado desde [Pacstall](https://pacstall.dev), [COPR](https://copr.fedorainfracloud.org/coprs/brycensranch/gpu-screen-recorder-git) o el [AUR](https://aur.archlinux.org/packages/gpu-screen-recorder) si se detecta una GPU Intel (discreta o integrada) en su sistema para que *QuickSync* funcione correctamente. De lo contrario, se instalará desde Flathub como un flatpak a nivel de sistema.
+
+**Paquetes Instalados o Actualizados**
+- Arch/Debian/Ubuntu/OpenSUSE: `intel-media-driver gpu-screen-recorder`
+- Fedora: `libva-intel-media-driver gpu-screen-recorder-ui`
+
+**¡Procedimientos adicionales requeridos!**
+Después de la instalación, ejecute en la terminal:
+```
+gsr-ui
+```
+Y configúrelo para que se inicie al arrancar el sistema desde su configuración (el ícono de engranaje), luego presione Alt+Z para salir de su interfaz, cierre la ventana de la terminal y reinicie. Después de reiniciar, puede ajustar la configuración del programa a sus preferencias y usarlo como desee.
 
 ## Instaladores de Repositorio
 

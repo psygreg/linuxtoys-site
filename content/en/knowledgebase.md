@@ -25,6 +25,7 @@ From default system repositories, or having repositories added by LinuxToys, and
 - Wireguard
 - VLC
 - Gnome Tweaks
+- OBS Studio (includes [Pipewire Audio Capture](https://github.com/dimtpap/obs-pipewire-audio-capture) plugin), if the machine has an Intel GPU (discrete or integrated). Otherwise, it will be installed as a user-level flatpak from Flathub.
 
 ### Added repositories
 - Visual Studio Code: from [Microsoft's official repository.](https://packages.microsoft.com)
@@ -102,7 +103,6 @@ From flathub, or having repositories added by LinuxToys, and no other changes ar
 - Flatseal
 - Handbrake
 - Mission Center
-- OBS Studio (includes [Pipewire Audio Capture](https://github.com/dimtpap/obs-pipewire-audio-capture) plugin)
 - QPWGraph
 - Warehouse
 - StreamController
@@ -137,7 +137,6 @@ From flathub, or having repositories added by LinuxToys, and no other changes ar
 
 ### System-level
 
-- GPU Screen Recorder
 - Bazaar
 - EasyEffects
 - LACT
@@ -692,6 +691,20 @@ Installed using the script provided in the [official GitHub repository](https://
 - Arch: `base-devel linux${_k:+-${_k}}-headers`
 - Fedora/OpenSUSE: `make gcc kernel-headers kernel-devel`
 - Debian/Ubuntu: `make build-essential`
+
+### GPU Screen Recorder
+Installed from [Pacstall](https://pacstall.dev), [COPR](https://copr.fedorainfracloud.org/coprs/brycensranch/gpu-screen-recorder-git) or the [AUR](https://aur.archlinux.org/packages/gpu-screen-recorder) if an Intel GPU (discrete or integrated) is detected in your system for *QuickSync* to work properly. Otherwise, it will be installed from Flathub as a system-level flatpak.
+
+**Packages Installed or Updated**
+- Arch/Debian/Ubuntu/OpenSUSE: `intel-media-driver gpu-screen-recorder`
+- Fedora: `libva-intel-media-driver gpu-screen-recorder-ui`
+
+**Additional procedures required!**
+After installation, run in terminal:
+```
+gsr-ui
+```
+And set it to start on system startup from its settings (the gear icon), then press Alt+Z to leave its UI, close the terminal window and reboot. After rebooting, you can tune the program's settings to your preferences and use it as you'd like.
 
 ## Repository Installers
 

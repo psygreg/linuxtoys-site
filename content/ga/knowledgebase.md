@@ -25,6 +25,7 @@
 - Wireguard
 - VLC
 - Gnome Tweaks
+- OBS Studio (cuimsíonn breiseán [Pipewire Audio Capture](https://github.com/dimtpap/obs-pipewire-audio-capture)), má tá GPU Intel ag an meaisín (discréideach nó comhtháite). Seachas sin, suiteálfar é mar flatpak leibhéal úsáideora ó Flathub.
 
 ### Stórtha breise
 - Visual Studio Code: ó [stóras oifigiúil Microsoft.](https://packages.microsoft.com)
@@ -102,7 +103,6 @@
 - Flatseal
 - Handbrake
 - Mission Center
-- OBS Studio (cuimsíonn breiseán [Pipewire Audio Capture](https://github.com/dimtpap/obs-pipewire-audio-capture))
 - QPWGraph
 - Warehouse
 - StreamController
@@ -137,7 +137,6 @@
 
 ### Leibhéal córais
 
-- GPU Screen Recorder
 - Bazaar
 - EasyEffects
 - LACT
@@ -692,6 +691,20 @@ Suiteáilte ag baint úsáide as an script a chuirtear ar fáil sa [stóras oifi
 - Arch: `base-devel linux${_k:+-${_k}}-headers`
 - Fedora/OpenSUSE: `make gcc kernel-headers kernel-devel`
 - Debian/Ubuntu: `make build-essential`
+
+### GPU Screen Recorder
+Suiteáilte ó [Pacstall](https://pacstall.dev), [COPR](https://copr.fedorainfracloud.org/coprs/brycensranch/gpu-screen-recorder-git) nó an [AUR](https://aur.archlinux.org/packages/gpu-screen-recorder) má bhaintear GPU Intel (discréideach nó comhtháite) i do chóras le go n-oibreoidh *QuickSync* i gceart. Mura n-oibreoidh, suiteálfar é ó Flathub mar fhlatpak leibhéal córais.
+
+**Pacáistí Suiteáilte nó Nuashonraithe**
+- Arch/Debian/Ubuntu/OpenSUSE: `intel-media-driver gpu-screen-recorder`
+- Fedora: `libva-intel-media-driver gpu-screen-recorder-ui`
+
+**Nósanna imeachta breise ag teastáil!**
+Tar éis suiteála, rith sa teirminéal:
+```
+gsr-ui
+```
+Agus socraigh é le tosú ar thosach an chórais óna shocruithe (an deilbhín giar), ansin brúigh Alt+Z le fágáil óna chomhéadan, dún an fhuinneog teirminéil agus atosaigh. Tar éis atosaithe, is féidir leat socruithe an chláir a choigeartú de réir do roghanna agus é a úsáid mar is mian leat.
 
 ## Suiteálaithe Stórais
 

@@ -25,6 +25,7 @@
 - Wireguard
 - VLC
 - Gnome Tweaks
+- OBS Studio（包含[Pipewire Audio Capture](https://github.com/dimtpap/obs-pipewire-audio-capture)插件），如果机器具有Intel GPU（独立或集成）。否则，它将作为来自Flathub的用户级flatpak安装。
 
 ### 添加的存储库
 - Visual Studio Code：来自[官方Microsoft存储库。](https://packages.microsoft.com)
@@ -102,7 +103,6 @@
 - Flatseal
 - Handbrake
 - Mission Center
-- OBS Studio（包含[Pipewire Audio Capture](https://github.com/dimtpap/obs-pipewire-audio-capture)插件）
 - QPWGraph
 - Warehouse
 - StreamController
@@ -137,7 +137,6 @@
 
 ### 系统级
 
-- GPU Screen Recorder
 - Bazaar
 - EasyEffects
 - LACT
@@ -691,6 +690,20 @@ w! /sys/kernel/mm/transparent_hugepage/khugepaged/max_ptes_none - - - - 4091
 - Arch: `base-devel linux${_k:+-${_k}}-headers`
 - Fedora/OpenSUSE: `make gcc kernel-headers kernel-devel`
 - Debian/Ubuntu: `make build-essential`
+
+### GPU Screen Recorder
+如果在您的系统中检测到Intel GPU(独立或集成)，则从[Pacstall](https://pacstall.dev)、[COPR](https://copr.fedorainfracloud.org/coprs/brycensranch/gpu-screen-recorder-git)或[AUR](https://aur.archlinux.org/packages/gpu-screen-recorder)安装，以使*QuickSync*正常工作。否则，将从Flathub安装为系统级flatpak。
+
+**安装或更新的软件包**
+- Arch/Debian/Ubuntu/OpenSUSE: `intel-media-driver gpu-screen-recorder`
+- Fedora: `libva-intel-media-driver gpu-screen-recorder-ui`
+
+**需要额外的步骤！**
+安装后，在终端中运行：
+```
+gsr-ui
+```
+并从其设置(齿轮图标)将其设置为在系统启动时启动，然后按Alt+Z退出其界面，关闭终端窗口并重新启动。重新启动后，您可以根据自己的喜好调整程序的设置并按照您的意愿使用它。
 
 ## 存储库安装程序
 

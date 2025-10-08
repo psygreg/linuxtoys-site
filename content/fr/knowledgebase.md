@@ -25,6 +25,7 @@ Depuis les dépôts système par défaut, ou avec des dépôts ajoutés par Linu
 - Wireguard
 - VLC
 - Gnome Tweaks
+- OBS Studio (inclut le plugin [Pipewire Audio Capture](https://github.com/dimtpap/obs-pipewire-audio-capture)), si la machine possède un GPU Intel (discret ou intégré). Sinon, il sera installé en tant que flatpak au niveau utilisateur depuis Flathub.
 
 ### Dépôts ajoutés
 - Visual Studio Code : depuis [le dépôt officiel de Microsoft.](https://packages.microsoft.com)
@@ -102,7 +103,6 @@ Depuis flathub, ou avec des dépôts ajoutés par LinuxToys, et aucun autre chan
 - Flatseal
 - Handbrake
 - Mission Center
-- OBS Studio (inclut le plugin [Pipewire Audio Capture](https://github.com/dimtpap/obs-pipewire-audio-capture))
 - QPWGraph
 - Warehouse
 - StreamController
@@ -137,7 +137,6 @@ Depuis flathub, ou avec des dépôts ajoutés par LinuxToys, et aucun autre chan
 
 ### Niveau système
 
-- GPU Screen Recorder
 - Bazaar
 - EasyEffects
 - LACT
@@ -691,6 +690,20 @@ Installé en utilisant le script fourni dans le [dépôt GitHub officiel](https:
 - Arch: `base-devel linux${_k:+-${_k}}-headers`
 - Fedora/OpenSUSE: `make gcc kernel-headers kernel-devel`
 - Debian/Ubuntu: `make build-essential`
+
+### GPU Screen Recorder
+Installé depuis [Pacstall](https://pacstall.dev), [COPR](https://copr.fedorainfracloud.org/coprs/brycensranch/gpu-screen-recorder-git) ou l'[AUR](https://aur.archlinux.org/packages/gpu-screen-recorder) si un GPU Intel (discret ou intégré) est détecté dans votre système pour que *QuickSync* fonctionne correctement. Sinon, il sera installé depuis Flathub en tant que flatpak au niveau système.
+
+**Paquets Installés ou Mis à Jour**
+- Arch/Debian/Ubuntu/OpenSUSE: `intel-media-driver gpu-screen-recorder`
+- Fedora: `libva-intel-media-driver gpu-screen-recorder-ui`
+
+**Procédures supplémentaires requises !**
+Après l'installation, exécutez dans le terminal :
+```
+gsr-ui
+```
+Et configurez-le pour qu'il démarre au démarrage du système depuis ses paramètres (l'icône d'engrenage), puis appuyez sur Alt+Z pour quitter son interface, fermez la fenêtre du terminal et redémarrez. Après le redémarrage, vous pouvez ajuster les paramètres du programme selon vos préférences et l'utiliser comme vous le souhaitez.
 
 ## Installateurs de Dépôt
 
