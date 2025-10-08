@@ -76,6 +76,7 @@ Tous les scripts LinuxToys suivent une structure standardisée avec des en-tête
 # localize: en, pt...
 # nocontainer
 # repo: https://repo.url
+# negates: onescript, twoscript
 
 # --- Début du code de script ---
 source "$SCRIPT_DIR/libs/linuxtoys.lib"
@@ -104,7 +105,8 @@ source "$SCRIPT_DIR/libs/helpers.lib"
 - **`# nocontainer:`** - Masquer le script dans les environnements conteneurisés
 - **`# gpu:`** - Afficher uniquement le script pour les fournisseurs de GPU sélectionnés, entrées valides `Amd`, `Intel`, `Nvidia`. Peut avoir plus d'un fournisseur.
 - **`# desktop:`** - Afficher uniquement le script pour les environnements de bureau sélectionnés, entrées valides `gnome`, `plasma` et `other`.
-- **`#repo:`** - Rend le nom du script cliquable dans les dialogues de confirmation. Devrait permettre à l'utilisateur d'accéder rapidement au dépôt original de la fonctionnalité correspondante.
+- **`# repo:`** - Rend le nom du script cliquable dans les dialogues de confirmation. Devrait permettre à l'utilisateur d'accéder rapidement au dépôt original de la fonctionnalité correspondante.
+- **`# negates:`** - Masque les scripts suivants si le script avec cet en-tête est trouvé compatible avec la machine de l'utilisateur. Peut avoir plusieurs scripts séparés par des virgules, sans l'extension `.sh`.
 
 #### Système de Compatibilité
 

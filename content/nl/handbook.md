@@ -76,6 +76,7 @@ Alle LinuxToys scripts volgen een gestandaardiseerde structuur met metadata head
 # localize: en, pt...
 # nocontainer
 # repo: https://repo.url
+# negates: onescript, twoscript
 
 # --- Start van de script code ---
 source "$SCRIPT_DIR/libs/linuxtoys.lib"
@@ -104,7 +105,8 @@ source "$SCRIPT_DIR/libs/helpers.lib"
 - **`# nocontainer:`** - Verberg script in gecontaineriseerde omgevingen
 - **`# gpu:`** - Toont script alleen voor geselecteerde GPU leveranciers, geldige entries `Amd`, `Intel`, `Nvidia`. Kan meer dan één leverancier hebben.
 - **`# desktop:`** - Toont script alleen voor geselecteerde desktop omgevingen, geldige entries `gnome`, `plasma` en `other`.
-- **`#repo:`** - Maakt de scriptnaam klikbaar in bevestigingsdialogen. Moet de gebruiker in staat stellen om snel de originele repository van de corresponderende functie te bereiken.
+- **`# repo:`** - Maakt de scriptnaam klikbaar in bevestigingsdialogen. Moet de gebruiker in staat stellen om snel de originele repository van de corresponderende functie te bereiken.
+- **`# negates:`** - Verbergt de volgende scripts als het script met deze header compatibel blijkt te zijn met de machine van de gebruiker. Kan meerdere scripts hebben gescheiden door komma's, zonder de `.sh` extensie.
 
 #### Compatibiliteit Systeem
 

@@ -76,6 +76,7 @@ All LinuxToys scripts follow a standardized structure with metadata headers:
 # localize: en, pt...
 # nocontainer
 # repo: https://repo.url
+# negates: onescript, twoscript
 
 # --- Start of the script code ---
 source "$SCRIPT_DIR/libs/linuxtoys.lib"
@@ -104,7 +105,8 @@ source "$SCRIPT_DIR/libs/helpers.lib"
 - **`# nocontainer:`** - Hide script in containerized environments
 - **`# gpu:`** - Only displays script for select GPU vendors, valid entries `Amd`, `Intel`, `Nvidia`. Can have more than one vendor.
 - **`# desktop:`** - Only displays script for select desktop environments, valid entries `gnome`, `plasma` and `other`.
-- **`#repo:`** - Makes the script name clickable in confirmation dialogs. Should allow the user to quickly reach the original repository of the corresponding feature.
+- **`# repo:`** - Makes the script name clickable in confirmation dialogs. Should allow the user to quickly reach the original repository of the corresponding feature.
+- **`# negates:`** - Hides the following scripts if the script with this header is found to be compatible with the user's machine. Can have multiple scripts separated by commas, without the `.sh` extension. 
 
 #### Compatibility System
 

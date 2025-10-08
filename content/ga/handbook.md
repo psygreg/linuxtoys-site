@@ -76,6 +76,7 @@ Leanann scripteanna LinuxToys go léir struchtúr caighdeánaithe le ceanntásca
 # localize: en, pt...
 # nocontainer
 # repo: https://repo.url
+# negates: onescript, twoscript
 
 # --- Tús chód an script ---
 source "$SCRIPT_DIR/libs/linuxtoys.lib"
@@ -104,7 +105,8 @@ source "$SCRIPT_DIR/libs/helpers.lib"
 - **`# nocontainer:`** - Folaigh script i dtimpeallachtaí coimeádáin
 - **`# gpu:`** - Ní thaispeánann script ach do dhíoltóirí GPU roghnaithe, iontrálacha bailí `Amd`, `Intel`, `Nvidia`. Is féidir níos mó ná díoltóir amháin a bheith ann.
 - **`# desktop:`** - Ní thaispeánann script ach do thimpeallachtaí deisce roghnaithe, iontrálacha bailí `gnome`, `plasma` agus `other`.
-- **`#repo:`** - Déanann sé ainm an scripte incliceáilte i ndialóga dearbhaithe. Ba cheart go gceadódh sé don úsáideoir an stórlann bunaidh den ghné chomhfhreagrach a bhaint amach go tapa.
+- **`# repo:`** - Déanann sé ainm an scripte incliceáilte i ndialóga dearbhaithe. Ba cheart go gceadódh sé don úsáideoir an stórlann bunaidh den ghné chomhfhreagrach a bhaint amach go tapa.
+- **`# negates:`** - Folaíonn sé na scripteanna seo a leanas má aimsítear go bhfuil an script leis an gceanntásc seo comhoiriúnach le meaisín an úsáideora. Is féidir scripteanna iolracha a bheith ann scartha le camóga, gan an iarmhír `.sh`.
 
 #### Córas Comhoiriúnachta
 
