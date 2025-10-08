@@ -195,6 +195,30 @@ _lang_
 # Isso define a variável $langfile (ex: "en", "pt")
 ```
 
+**Detecção de Sistema**
+
+```bash
+# para fedora e sistemas baseados em rpm-ostree
+if is_fedora || is_ostree; then
+    # comando
+# apenas para debian
+elif is_debian; then
+    # comando
+# para qualquer sistema que não seja baseado em Arch que não seja CachyOS
+elif ! is_arch; then
+    # comando
+fi
+```
+
+Fornecemos um conjunto de bibliotecas para detecção simplificada de sistema. Estas podem ser usadas em declarações if e praticamente qualquer coisa que possa ler de STDOUT, e funcionarão exatamente como você esperaria. Chaves suportadas:
+- `is_fedora`: Fedora, CentOS, RHEL
+- `is_ostree`: qualquer distribuição Atômica baseada em Fedora
+- `is_arch`: qualquer sistema baseado em Arch, exceto CachyOS
+- `is_cachy`: CachyOS especificamente
+- `is_debian`: Debian especificamente
+- `is_ubuntu`: qualquer sistema baseado em Debian/Ubuntu
+- `is_suse`: qualquer sistema baseado em OpenSUSE
+
 #### helpers.lib
 
 Fornece funções auxiliares especializadas para tarefas comuns:

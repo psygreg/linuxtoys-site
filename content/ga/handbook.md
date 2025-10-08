@@ -195,6 +195,30 @@ _lang_
 # Socraíonn sé seo an athróg $langfile (m.sh., "en", "pt")
 ```
 
+**Braiteacht Córais**
+
+```bash
+# do fedora agus córais bunaithe ar rpm-ostree
+if is_fedora || is_ostree; then
+    # ordú
+# do debian amháin
+elif is_debian; then
+    # ordú
+# d'aon chóras seachas córais bunaithe ar Arch nach CachyOS iad
+elif ! is_arch; then
+    # ordú
+fi
+```
+
+Soláthraímid sraith leabharlann le haghaidh braiteacht chórais shimplithe. Is féidir iad seo a úsáid i ráitis if agus beagnach aon rud a léann ó STDOUT, agus oibreoidh siad díreach mar a bheifá ag súil. Eochracha tacaithe:
+- `is_fedora`: Fedora, CentOS, RHEL
+- `is_ostree`: aon dáileadh Adamhach bunaithe ar Fedora
+- `is_arch`: aon chóras bunaithe ar Arch, ach amháin CachyOS
+- `is_cachy`: CachyOS go sonrach
+- `is_debian`: Debian go sonrach
+- `is_ubuntu`: aon chóras bunaithe ar Debian/Ubuntu
+- `is_suse`: aon chóras bunaithe ar OpenSUSE
+
 #### helpers.lib
 
 Soláthraíonn feidhmeanna cúnta speisialaithe do thascanna coitianta:

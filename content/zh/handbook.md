@@ -184,6 +184,30 @@ _lang_
 # 这会设置$langfile变量（例如"en"、"pt"）
 ```
 
+**系统检测**
+
+```bash
+# 对于fedora和基于rpm-ostree的系统
+if is_fedora || is_ostree; then
+    # 命令
+# 仅对于debian
+elif is_debian; then
+    # 命令
+# 对于除CachyOS之外的任何非Arch系统
+elif ! is_arch; then
+    # 命令
+fi
+```
+
+我们提供一组用于简化系统检测的库。这些可以在if语句和几乎任何可以从STDOUT读取的内容中使用，并且将完全按照您的预期工作。支持的键：
+- `is_fedora`：Fedora、CentOS、RHEL
+- `is_ostree`：任何基于Fedora的原子发行版
+- `is_arch`：任何基于Arch的系统，除了CachyOS
+- `is_cachy`：专门指CachyOS
+- `is_debian`：专门指Debian
+- `is_ubuntu`：任何基于Debian/Ubuntu的系统
+- `is_suse`：任何基于OpenSUSE的系统
+
 #### helpers.lib
 
 为常见任务提供专门的辅助函数：

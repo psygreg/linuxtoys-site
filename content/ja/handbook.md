@@ -195,6 +195,30 @@ _lang_
 # これは$langfile変数を設定します（例：「en」、「pt」）
 ```
 
+**システム検出**
+
+```bash
+# fedoraおよびrpm-ostreeベースのシステムの場合
+if is_fedora || is_ostree; then
+    # コマンド
+# debianのみの場合
+elif is_debian; then
+    # コマンド
+# CachyOS以外のArchベースのシステム以外のすべてのシステムの場合
+elif ! is_arch; then
+    # コマンド
+fi
+```
+
+簡素化されたシステム検出のための一連のライブラリを提供します。これらはif文やSTDOUTから読み取れるほとんどすべてのもので使用でき、期待通りに動作します。サポートされているキー：
+- `is_fedora`：Fedora、CentOS、RHEL
+- `is_ostree`：Fedoraベースのアトミックディストリビューション
+- `is_arch`：CachyOSを除くArchベースのシステム
+- `is_cachy`：CachyOS専用
+- `is_debian`：Debian専用
+- `is_ubuntu`：Debian/Ubuntuベースのシステム
+- `is_suse`：OpenSUSEベースのシステム
+
 ### 言語とローカライゼーション
 
 #### 翻訳システム

@@ -195,6 +195,30 @@ _lang_
 # Dies setzt die $langfile-Variable (z.B. "en", "pt")
 ```
 
+**Systemerkennung**
+
+```bash
+# für Fedora und rpm-ostree basierte Systeme
+if is_fedora || is_ostree; then
+    # Befehl
+# nur für Debian
+elif is_debian; then
+    # Befehl
+# für jedes System außer Arch-basierten Systemen, die nicht CachyOS sind
+elif ! is_arch; then
+    # Befehl
+fi
+```
+
+Wir bieten eine Reihe von Bibliotheken für vereinfachte Systemerkennung. Diese können in if-Anweisungen und praktisch allem verwendet werden, das von STDOUT lesen kann, und funktionieren genau wie erwartet. Unterstützte Schlüssel:
+- `is_fedora`: Fedora, CentOS, RHEL
+- `is_ostree`: jede Atomic Fedora-basierte Distribution
+- `is_arch`: jedes Arch-basierte System, außer CachyOS
+- `is_cachy`: CachyOS spezifisch
+- `is_debian`: Debian spezifisch
+- `is_ubuntu`: jedes Debian/Ubuntu-basierte System
+- `is_suse`: jedes OpenSUSE-basierte System
+
 #### helpers.lib
 
 Bietet spezialisierte Hilfsfunktionen für häufige Aufgaben:
