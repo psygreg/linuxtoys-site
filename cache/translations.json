@@ -279,7 +279,10 @@
     "ml_desc": "Open source PC client for NVIDIA GameStream and Sunshine.",
     "sunshine_desc": "Self-hosted game stream host for Moonlight.",
     "s3d_desc": "Convert S3, SFTP, WebDAV or Rclone back-end into your encrypted storage.",
-    "damx_desc": "Utility for controlling Acer gaming laptop features and performance tuning."
+    "damx_desc": "Utility for controlling Acer gaming laptop features and performance tuning.",
+    "pacstall_desc": "Allows you to use the latest software without compromises, similarly to AUR but for Debian/Ubuntu. Use with caution.",
+    "gtk_bmg_fix": "GTK Battlemage Fix",
+    "gtk_bmg_fix_desc": "Fixes rendering issues with GTK applications on Intel Battlemage (B-series) GPUs."
   },
   "pt": {
     "subtitle": "Uma coleção amigável de ferramentas para Linux.",
@@ -561,7 +564,10 @@
     "ml_desc": "Cliente de PC de código aberto para NVIDIA GameStream e Sunshine.",
     "sunshine_desc": "Host de transmissão de jogos auto-hospedado para Moonlight.",
     "s3d_desc": "Converta o back-end S3, SFTP, WebDAV ou Rclone em seu armazenamento criptografado.",
-    "damx_desc": "Utilitário para controlar recursos de laptops gaming Acer e ajuste de desempenho."
+    "damx_desc": "Utilitário para controlar recursos de laptops gaming Acer e ajuste de desempenho.",
+    "pacstall_desc": "Permite usar o software mais recente sem compromissos, semelhante ao AUR, mas para Debian/Ubuntu. Use com cautela.",
+    "gtk_bmg_fix": "Correção GTK Battlemage",
+    "gtk_bmg_fix_desc": "Corrige problemas de renderização com aplicações GTK em GPUs Intel Battlemage (série B)."
   },
   "es": {
     "subtitle": "Una colección amigable de herramientas para Linux.",
@@ -843,7 +849,10 @@
     "ml_desc": "Cliente de PC de código abierto para NVIDIA GameStream y Sunshine.",
     "sunshine_desc": "Host de transmisión de juegos autoalojado para Moonlight.",
     "s3d_desc": "Convierte el back-end de S3, SFTP, WebDAV o Rclone en tu almacenamiento cifrado.",
-    "damx_desc": "Utilidad para controlar las características y el ajuste de rendimiento de portátiles gaming Acer."
+    "damx_desc": "Utilidad para controlar las características y el ajuste de rendimiento de portátiles gaming Acer.",
+    "pacstall_desc": "Te permite usar el software más reciente sin compromisos, similar a AUR pero para Debian/Ubuntu. Úsalo con precaución.",
+    "gtk_bmg_fix": "Corrección GTK Battlemage",
+    "gtk_bmg_fix_desc": "Soluciona problemas de renderizado con aplicaciones GTK en GPUs Intel Battlemage (serie B)."
   },
   "fr": {
     "subtitle": "Une collection d'outils pour Linux de manière conviviale.",
@@ -1125,7 +1134,10 @@
     "ml_desc": "Client PC open source pour NVIDIA GameStream et Sunshine.",
     "sunshine_desc": "Hôte de streaming de jeux auto-hébergé pour Moonlight.",
     "s3d_desc": "Convertissez le back-end S3, SFTP, WebDAV ou Rclone en votre stockage chiffré.",
-    "damx_desc": "Utilitaire pour contrôler les fonctionnalités et régler les performances des ordinateurs portables gaming Acer."
+    "damx_desc": "Utilitaire pour contrôler les fonctionnalités et régler les performances des ordinateurs portables gaming Acer.",
+    "pacstall_desc": "Vous permet d'utiliser les derniers logiciels sans compromis, similaire à AUR mais pour Debian/Ubuntu. Utilisez avec prudence.",
+    "gtk_bmg_fix": "Correctif GTK Battlemage",
+    "gtk_bmg_fix_desc": "Corrige les problèmes de rendu avec les applications GTK sur les GPU Intel Battlemage (série B)."
   },
   "de": {
     "subtitle": "Eine freundliche Sammlung von Tools für Linux.",
@@ -1407,7 +1419,10 @@
     "ml_desc": "Open-Source-PC-Client für NVIDIA GameStream und Sunshine.",
     "sunshine_desc": "Selbst gehosteter Game-Stream-Host für Moonlight.",
     "s3d_desc": "Konvertieren Sie S3, SFTP, WebDAV oder Rclone-Backend in Ihren verschlüsselten Speicher.",
-    "damx_desc": "Dienstprogramm zur Steuerung von Acer Gaming-Laptop-Funktionen und Leistungsoptimierung."
+    "damx_desc": "Dienstprogramm zur Steuerung von Acer Gaming-Laptop-Funktionen und Leistungsoptimierung.",
+    "pacstall_desc": "Ermöglicht die Nutzung der neuesten Software ohne Kompromisse, ähnlich wie AUR, aber für Debian/Ubuntu. Mit Vorsicht verwenden.",
+    "gtk_bmg_fix": "GTK Battlemage-Fix",
+    "gtk_bmg_fix_desc": "Behebt Rendering-Probleme mit GTK-Anwendungen auf Intel Battlemage (B-Serie) GPUs."
   },
   "zh": {
     "subtitle": "适用于Linux的用户友好工具集合。",
@@ -1691,7 +1706,10 @@
     "ml_desc": "适用于 NVIDIA GameStream 和 Sunshine 的开源 PC 客户端。",
     "sunshine_desc": "用于 Moonlight 的自托管游戏流主机。",
     "s3d_desc": "将 S3、SFTP、WebDAV 或 Rclone 后端转换为您的加密存储。",
-    "damx_desc": "用于控制 Acer 游戏笔记本电脑功能和性能调整的实用程序。"
+    "damx_desc": "用于控制 Acer 游戏笔记本电脑功能和性能调整的实用程序。",
+    "pacstall_desc": "允许您使用最新软件而无需妥协，类似于 AUR 但适用于 Debian/Ubuntu。请谨慎使用。",
+    "gtk_bmg_fix": "GTK Battlemage 修复",
+    "gtk_bmg_fix_desc": "修复 Intel Battlemage（B 系列）GPU 上 GTK 应用程序的渲染问题。"
   },
   "ja": {
     "subtitle": "Linuxのためのユーザーフレンドリーなツール集。",
@@ -1973,7 +1991,10 @@
     "ml_desc": "NVIDIA GameStreamとSunshine用のオープンソースPCクライアント。",
     "sunshine_desc": "Moonlight用のセルフホスト型ゲームストリームホスト。",
     "s3d_desc": "S3、SFTP、WebDAV、またはRcloneのバックエンドを暗号化されたストレージに変換します。",
-    "damx_desc": "Acer ゲーミングラップトップの機能とパフォーマンスチューニングを制御するユーティリティ。"
+    "damx_desc": "Acer ゲーミングラップトップの機能とパフォーマンスチューニングを制御するユーティリティ。",
+    "pacstall_desc": "妥協することなく最新のソフトウェアを使用できます。AURに似ていますがDebian/Ubuntu用です。注意して使用してください。",
+    "gtk_bmg_fix": "GTK Battlemage 修正",
+    "gtk_bmg_fix_desc": "Intel Battlemage (B シリーズ) GPU で GTK アプリケーションのレンダリングの問題を修正します。"
   },
   "ru": {
     "subtitle": "Коллекция инструментов для Linux в удобном формате.",
@@ -2255,6 +2276,9 @@
     "ml_desc": "Клиент ПК с открытым исходным кодом для NVIDIA GameStream и Sunshine.",
     "sunshine_desc": "Самостоятельно размещаемый хост для стриминга игр для Moonlight.",
     "s3d_desc": "Преобразуйте бэкенд S3, SFTP, WebDAV или Rclone в зашифрованное хранилище.",
-    "damx_desc": "Утилита для управления функциями игровых ноутбуков Acer и настройки производительности."
+    "damx_desc": "Утилита для управления функциями игровых ноутбуков Acer и настройки производительности.",
+    "pacstall_desc": "Позволяет использовать новейшее программное обеспечение без компромиссов, аналогично AUR, но для Debian/Ubuntu. Используйте с осторожностью.",
+    "gtk_bmg_fix": "Исправление GTK Battlemage",
+    "gtk_bmg_fix_desc": "Исправляет проблемы с отрисовкой GTK-приложений на GPU Intel Battlemage (серия B)."
   }
 }
