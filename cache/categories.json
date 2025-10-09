@@ -527,6 +527,13 @@
         "scriptPath": "p3/scripts/extra/grubtrfs.sh"
       },
       {
+        "name": "gtk_bmg_fix",
+        "description": "gtk_bmg_fix_desc",
+        "icon": "intel.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/gtk-bmg-fix.sh"
+      },
+      {
         "name": "hwaccel-flatpak",
         "description": "hwaccel-flatpak_desc",
         "icon": "flathub.svg",
@@ -667,6 +674,13 @@
         "icon": "gaming.svg",
         "version": "1.0",
         "scriptPath": "p3/scripts/game/gscope.sh"
+      },
+      {
+        "name": "GPU Screen Recorder",
+        "description": "gsr_desc",
+        "icon": "gsr.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/game/gsr-intel.sh"
       },
       {
         "name": "GPU Screen Recorder",
@@ -981,6 +995,13 @@
         "scriptPath": "p3/scripts/repos/nix.sh"
       },
       {
+        "name": "Pacstall",
+        "description": "pacstall_desc",
+        "icon": "pacstall.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/repos/pacstall.sh"
+      },
+      {
         "name": "Paru",
         "description": "paru_desc",
         "icon": "archpkg.png",
@@ -1179,6 +1200,13 @@
         "icon": "nerdfonts.svg",
         "version": "1.0",
         "scriptPath": "p3/scripts/utils/nerdfonts.sh"
+      },
+      {
+        "name": "OBS Studio",
+        "description": "obs_desc",
+        "icon": "obs.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/obs-intel.sh"
       },
       {
         "name": "OBS Studio",

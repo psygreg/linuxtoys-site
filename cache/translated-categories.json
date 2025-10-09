@@ -533,6 +533,13 @@
           "scriptPath": "p3/scripts/extra/grubtrfs.sh"
         },
         {
+          "name": "GTK Battlemage Fix",
+          "description": "Fixes rendering issues with GTK applications on Intel Battlemage (B-series) GPUs.",
+          "icon": "intel.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/gtk-bmg-fix.sh"
+        },
+        {
           "name": "Hardware Acceleration for Flatpak",
           "description": "Installs ffmpeg-full into the currently supported flatpak platforms, allowing applications to use hardware-accelerated media playback.",
           "icon": "flathub.svg",
@@ -674,6 +681,13 @@
           "icon": "gaming.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/game/gscope.sh"
+        },
+        {
+          "name": "GPU Screen Recorder",
+          "description": "A screen recording tool with hardware encoding akin to Shadowplay for any GPU on Linux.",
+          "icon": "gsr.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/game/gsr-intel.sh"
         },
         {
           "name": "GPU Screen Recorder",
@@ -990,6 +1004,13 @@
           "scriptPath": "p3/scripts/repos/nix.sh"
         },
         {
+          "name": "Pacstall",
+          "description": "Allows you to use the latest software without compromises, similarly to AUR but for Debian/Ubuntu. Use with caution.",
+          "icon": "pacstall.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/pacstall.sh"
+        },
+        {
           "name": "Paru",
           "description": "A popular AUR helper written in Rust. Similar to yay.",
           "icon": "archpkg.png",
@@ -1190,6 +1211,13 @@
           "icon": "nerdfonts.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/nerdfonts.sh"
+        },
+        {
+          "name": "OBS Studio",
+          "description": "A popular open-source streaming and recording software.",
+          "icon": "obs.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/obs-intel.sh"
         },
         {
           "name": "OBS Studio",
@@ -1959,6 +1987,13 @@
           "scriptPath": "p3/scripts/extra/grubtrfs.sh"
         },
         {
+          "name": "Correção GTK Battlemage",
+          "description": "Corrige problemas de renderização com aplicações GTK em GPUs Intel Battlemage (série B).",
+          "icon": "intel.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/gtk-bmg-fix.sh"
+        },
+        {
           "name": "Aceleração por Hardware para Flatpak",
           "description": "Instala o ffmpeg-full nas plataformas flatpak atualmente suportadas, permitindo que aplicações usem reprodução de mídia acelerada por hardware.",
           "icon": "flathub.svg",
@@ -2100,6 +2135,13 @@
           "icon": "gaming.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/game/gscope.sh"
+        },
+        {
+          "name": "GPU Screen Recorder",
+          "description": "Uma ferramenta de gravação de tela com codificação de hardware semelhante ao Shadowplay para qualquer GPU no Linux.",
+          "icon": "gsr.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/game/gsr-intel.sh"
         },
         {
           "name": "GPU Screen Recorder",
@@ -2416,6 +2458,13 @@
           "scriptPath": "p3/scripts/repos/nix.sh"
         },
         {
+          "name": "Pacstall",
+          "description": "Permite usar o software mais recente sem compromissos, semelhante ao AUR, mas para Debian/Ubuntu. Use com cautela.",
+          "icon": "pacstall.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/pacstall.sh"
+        },
+        {
           "name": "Paru",
           "description": "Um assistente AUR popular escrito em Rust. Similar ao yay.",
           "icon": "archpkg.png",
@@ -2616,6 +2665,13 @@
           "icon": "nerdfonts.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/nerdfonts.sh"
+        },
+        {
+          "name": "OBS Studio",
+          "description": "Um popular software de streaming e gravação de código aberto.",
+          "icon": "obs.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/obs-intel.sh"
         },
         {
           "name": "OBS Studio",
@@ -3385,6 +3441,13 @@
           "scriptPath": "p3/scripts/extra/grubtrfs.sh"
         },
         {
+          "name": "Corrección GTK Battlemage",
+          "description": "Soluciona problemas de renderizado con aplicaciones GTK en GPUs Intel Battlemage (serie B).",
+          "icon": "intel.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/gtk-bmg-fix.sh"
+        },
+        {
           "name": "Aceleración por Hardware para Flatpak",
           "description": "Instala ffmpeg-full en las plataformas flatpak actualmente soportadas, permitiendo que las aplicaciones usen reproducción de medios acelerada por hardware.",
           "icon": "flathub.svg",
@@ -3526,6 +3589,13 @@
           "icon": "gaming.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/game/gscope.sh"
+        },
+        {
+          "name": "GPU Screen Recorder",
+          "description": "Una herramienta de grabación de pantalla con codificación por hardware similar a Shadowplay para cualquier GPU en Linux.",
+          "icon": "gsr.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/game/gsr-intel.sh"
         },
         {
           "name": "GPU Screen Recorder",
@@ -3842,6 +3912,13 @@
           "scriptPath": "p3/scripts/repos/nix.sh"
         },
         {
+          "name": "Pacstall",
+          "description": "Te permite usar el software más reciente sin compromisos, similar a AUR pero para Debian/Ubuntu. Úsalo con precaución.",
+          "icon": "pacstall.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/pacstall.sh"
+        },
+        {
           "name": "Paru",
           "description": "Un asistente AUR popular escrito en Rust. Similar a yay.",
           "icon": "archpkg.png",
@@ -4042,6 +4119,13 @@
           "icon": "nerdfonts.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/nerdfonts.sh"
+        },
+        {
+          "name": "OBS Studio",
+          "description": "Un popular software de streaming y grabación de código abierto.",
+          "icon": "obs.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/obs-intel.sh"
         },
         {
           "name": "OBS Studio",
@@ -4811,6 +4895,13 @@
           "scriptPath": "p3/scripts/extra/grubtrfs.sh"
         },
         {
+          "name": "Correctif GTK Battlemage",
+          "description": "Corrige les problèmes de rendu avec les applications GTK sur les GPU Intel Battlemage (série B).",
+          "icon": "intel.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/gtk-bmg-fix.sh"
+        },
+        {
           "name": "Accélération Matérielle pour Flatpak",
           "description": "Installe ffmpeg-full dans les plateformes flatpak actuellement supportées, permettant aux applications d'utiliser la lecture de médias accélérée par le matériel.",
           "icon": "flathub.svg",
@@ -4952,6 +5043,13 @@
           "icon": "gaming.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/game/gscope.sh"
+        },
+        {
+          "name": "GPU Screen Recorder",
+          "description": "Un outil d'enregistrement d'écran avec encodage matériel similaire à Shadowplay pour toute GPU sous Linux.",
+          "icon": "gsr.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/game/gsr-intel.sh"
         },
         {
           "name": "GPU Screen Recorder",
@@ -5268,6 +5366,13 @@
           "scriptPath": "p3/scripts/repos/nix.sh"
         },
         {
+          "name": "Pacstall",
+          "description": "Vous permet d'utiliser les derniers logiciels sans compromis, similaire à AUR mais pour Debian/Ubuntu. Utilisez avec prudence.",
+          "icon": "pacstall.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/pacstall.sh"
+        },
+        {
           "name": "Paru",
           "description": "Un assistant AUR populaire écrit en Rust. Similaire à yay.",
           "icon": "archpkg.png",
@@ -5468,6 +5573,13 @@
           "icon": "nerdfonts.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/nerdfonts.sh"
+        },
+        {
+          "name": "OBS Studio",
+          "description": "Un logiciel de streaming et d'enregistrement open source populaire.",
+          "icon": "obs.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/obs-intel.sh"
         },
         {
           "name": "OBS Studio",
@@ -6237,6 +6349,13 @@
           "scriptPath": "p3/scripts/extra/grubtrfs.sh"
         },
         {
+          "name": "GTK Battlemage-Fix",
+          "description": "Behebt Rendering-Probleme mit GTK-Anwendungen auf Intel Battlemage (B-Serie) GPUs.",
+          "icon": "intel.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/gtk-bmg-fix.sh"
+        },
+        {
           "name": "Hardware-Beschleunigung für Flatpak",
           "description": "Installiert ffmpeg-full in die derzeit unterstützten Flatpak-Plattformen und ermöglicht Anwendungen die Verwendung hardwarebeschleunigter Medienwiedergabe.",
           "icon": "flathub.svg",
@@ -6378,6 +6497,13 @@
           "icon": "gaming.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/game/gscope.sh"
+        },
+        {
+          "name": "GPU Screen Recorder",
+          "description": "Ein Bildschirmaufnahme-Tool mit Hardware-Kodierung ähnlich Shadowplay für jede GPU unter Linux.",
+          "icon": "gsr.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/game/gsr-intel.sh"
         },
         {
           "name": "GPU Screen Recorder",
@@ -6694,6 +6820,13 @@
           "scriptPath": "p3/scripts/repos/nix.sh"
         },
         {
+          "name": "Pacstall",
+          "description": "Ermöglicht die Nutzung der neuesten Software ohne Kompromisse, ähnlich wie AUR, aber für Debian/Ubuntu. Mit Vorsicht verwenden.",
+          "icon": "pacstall.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/pacstall.sh"
+        },
+        {
           "name": "Paru",
           "description": "Ein beliebter AUR-Helfer, geschrieben in Rust. Ähnlich wie yay.",
           "icon": "archpkg.png",
@@ -6894,6 +7027,13 @@
           "icon": "nerdfonts.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/nerdfonts.sh"
+        },
+        {
+          "name": "OBS Studio",
+          "description": "Eine beliebte quelloffene Streaming- und Aufnahme-Software.",
+          "icon": "obs.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/obs-intel.sh"
         },
         {
           "name": "OBS Studio",
@@ -7663,6 +7803,13 @@
           "scriptPath": "p3/scripts/extra/grubtrfs.sh"
         },
         {
+          "name": "GTK Battlemage 修复",
+          "description": "修复 Intel Battlemage（B 系列）GPU 上 GTK 应用程序的渲染问题。",
+          "icon": "intel.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/gtk-bmg-fix.sh"
+        },
+        {
           "name": "Flatpak硬件加速",
           "description": "将ffmpeg-full安装到当前支持的flatpak平台中，允许应用程序使用硬件加速的媒体播放。",
           "icon": "flathub.svg",
@@ -7804,6 +7951,13 @@
           "icon": "gaming.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/game/gscope.sh"
+        },
+        {
+          "name": "GPU Screen Recorder",
+          "description": "具有硬件编码的屏幕录制工具，类似于Linux上任何GPU的Shadowplay。",
+          "icon": "gsr.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/game/gsr-intel.sh"
         },
         {
           "name": "GPU Screen Recorder",
@@ -8120,6 +8274,13 @@
           "scriptPath": "p3/scripts/repos/nix.sh"
         },
         {
+          "name": "Pacstall",
+          "description": "允许您使用最新软件而无需妥协，类似于 AUR 但适用于 Debian/Ubuntu。请谨慎使用。",
+          "icon": "pacstall.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/pacstall.sh"
+        },
+        {
           "name": "Paru",
           "description": "一个用 Rust 编写的流行 AUR 助手。与 yay 类似。",
           "icon": "archpkg.png",
@@ -8320,6 +8481,13 @@
           "icon": "nerdfonts.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/nerdfonts.sh"
+        },
+        {
+          "name": "OBS Studio",
+          "description": "流行的开源流媒体和录制软件。",
+          "icon": "obs.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/obs-intel.sh"
         },
         {
           "name": "OBS Studio",
@@ -9089,6 +9257,13 @@
           "scriptPath": "p3/scripts/extra/grubtrfs.sh"
         },
         {
+          "name": "GTK Battlemage 修正",
+          "description": "Intel Battlemage (B シリーズ) GPU で GTK アプリケーションのレンダリングの問題を修正します。",
+          "icon": "intel.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/gtk-bmg-fix.sh"
+        },
+        {
           "name": "Flatpakハードウェアアクセラレーション",
           "description": "現在サポートされているflatpakプラットフォームにffmpeg-fullをインストールし、アプリケーションがハードウェア加速メディア再生を使用できるようにします。",
           "icon": "flathub.svg",
@@ -9230,6 +9405,13 @@
           "icon": "gaming.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/game/gscope.sh"
+        },
+        {
+          "name": "GPU Screen Recorder",
+          "description": "LinuxでどんなGPUでもShadowplayのような、ハードウェアエンコーディング付きのスクリーン録画ツール。",
+          "icon": "gsr.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/game/gsr-intel.sh"
         },
         {
           "name": "GPU Screen Recorder",
@@ -9546,6 +9728,13 @@
           "scriptPath": "p3/scripts/repos/nix.sh"
         },
         {
+          "name": "Pacstall",
+          "description": "妥協することなく最新のソフトウェアを使用できます。AURに似ていますがDebian/Ubuntu用です。注意して使用してください。",
+          "icon": "pacstall.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/pacstall.sh"
+        },
+        {
           "name": "Paru",
           "description": "Rust で書かれた人気の AUR ヘルパー。yay に似ています。",
           "icon": "archpkg.png",
@@ -9746,6 +9935,13 @@
           "icon": "nerdfonts.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/nerdfonts.sh"
+        },
+        {
+          "name": "OBS Studio",
+          "description": "人気のオープンソースストリーミング・録画ソフトウェア。",
+          "icon": "obs.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/obs-intel.sh"
         },
         {
           "name": "OBS Studio",
@@ -10515,6 +10711,13 @@
           "scriptPath": "p3/scripts/extra/grubtrfs.sh"
         },
         {
+          "name": "Исправление GTK Battlemage",
+          "description": "Исправляет проблемы с отрисовкой GTK-приложений на GPU Intel Battlemage (серия B).",
+          "icon": "intel.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/gtk-bmg-fix.sh"
+        },
+        {
           "name": "Аппаратное ускорение для Flatpak",
           "description": "Устанавливает ffmpeg-full в текущие поддерживаемые платформы flatpak, позволяя приложениям использовать аппаратно-ускоренное воспроизведение медиа.",
           "icon": "flathub.svg",
@@ -10656,6 +10859,13 @@
           "icon": "gaming.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/game/gscope.sh"
+        },
+        {
+          "name": "GPU Screen Recorder",
+          "description": "Инструмент для записи экрана с аппаратным кодированием, аналогичный Shadowplay для любого GPU в Linux.",
+          "icon": "gsr.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/game/gsr-intel.sh"
         },
         {
           "name": "GPU Screen Recorder",
@@ -10972,6 +11182,13 @@
           "scriptPath": "p3/scripts/repos/nix.sh"
         },
         {
+          "name": "Pacstall",
+          "description": "Позволяет использовать новейшее программное обеспечение без компромиссов, аналогично AUR, но для Debian/Ubuntu. Используйте с осторожностью.",
+          "icon": "pacstall.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/pacstall.sh"
+        },
+        {
           "name": "Paru",
           "description": "Популярный помощник AUR, написанный на Rust. Похож на yay.",
           "icon": "archpkg.png",
@@ -11172,6 +11389,13 @@
           "icon": "nerdfonts.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/nerdfonts.sh"
+        },
+        {
+          "name": "OBS Studio",
+          "description": "Популярное программное обеспечение для стриминга и записи с открытым исходным кодом.",
+          "icon": "obs.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/obs-intel.sh"
         },
         {
           "name": "OBS Studio",
