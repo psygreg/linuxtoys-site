@@ -706,6 +706,15 @@ gsr-ui
 ```
 Agus socraigh é le tosú ar thosach an chórais óna shocruithe (an deilbhín giar), ansin brúigh Alt+Z le fágáil óna chomhéadan, dún an fhuinneog teirminéil agus atosaigh. Tar éis atosaithe, is féidir leat socruithe an chláir a choigeartú de réir do roghanna agus é a úsáid mar is mian leat.
 
+### Deisiúchán GTK Battlemage
+Deisíonn fadhbanna le rindreáil feidhmchlár GTK le GPU Intel Arc sraith-B (*Battlemage*) trí iad a athrú go mód OpenGL. Is féidir é a chúlghairm trí an líne arna cur leis a bhaint go simplí ag úsáid eagarthóir téacs ar nós `nano`.
+
+**Socruithe saincheaptha curtha i bhfeidhm**
+- Curtha le `/etc/environment`:
+```
+GSK_RENDERER=ngl
+```
+
 ## Suiteálaithe Stórais
 
 ### Brew
@@ -728,6 +737,9 @@ Suiteáilte trí phacáistí `python-pip` (Arch) nó `python3-pip` (córais eile
 
 ### RPMFusion
 Suiteáilte ag leanúint a ndoiciméadachta, le hiteráid shonrach do chórais Fedora Atomic (`rpm-ostree`-bhunaithe).
+
+### Pacstall
+Suiteáilte lena script oifigiúil. Ar fáil do Debian/Ubuntu amháin.
 
 ## LSW-WinBoat
 

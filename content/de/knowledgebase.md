@@ -705,6 +705,15 @@ gsr-ui
 ```
 Und stellen Sie es so ein, dass es beim Systemstart über die Einstellungen (das Zahnradsymbol) gestartet wird, drücken Sie dann Alt+Z, um die Benutzeroberfläche zu verlassen, schließen Sie das Terminalfenster und starten Sie neu. Nach dem Neustart können Sie die Programmeinstellungen nach Ihren Wünschen anpassen und es wie gewünscht verwenden.
 
+### Battlemage GTK Fix
+Behebt Probleme beim Rendern von GTK-Anwendungen mit Intel Arc B-Serie (*Battlemage*) GPUs, indem diese in den OpenGL-Modus geschaltet werden. Kann rückgängig gemacht werden, indem die angehängte Zeile einfach mit einem Texteditor wie `nano` entfernt wird.
+
+**Angewendete benutzerdefinierte Einstellungen**
+- Angehängt an `/etc/environment`:
+```
+GSK_RENDERER=ngl
+```
+
 ## Repository Installer
 
 ### Brew
@@ -727,6 +736,9 @@ Installiert über `python-pip` (Arch) oder `python3-pip` (andere Systeme) Pakete
 
 ### RPMFusion
 Installiert gemäß ihrer Dokumentation mit einer spezifischen Iteration für Fedora Atomic (`rpm-ostree`-basierte) Systeme.
+
+### Pacstall
+Installiert mit ihrem offiziellen Skript. Nur verfügbar für Debian/Ubuntu.
 
 ## LSW-WinBoat
 

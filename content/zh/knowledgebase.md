@@ -705,6 +705,15 @@ gsr-ui
 ```
 并从其设置(齿轮图标)将其设置为在系统启动时启动，然后按Alt+Z退出其界面，关闭终端窗口并重新启动。重新启动后，您可以根据自己的喜好调整程序的设置并按照您的意愿使用它。
 
+### Battlemage GTK修复
+通过将Intel Arc B系列（*Battlemage*）GPU切换到OpenGL模式来修复GTK应用程序的渲染问题。可以通过使用文本编辑器（如`nano`）简单删除附加的行来恢复。
+
+**应用的自定义设置**
+- 附加到`/etc/environment`：
+```
+GSK_RENDERER=ngl
+```
+
 ## 存储库安装程序
 
 ### Brew
@@ -727,6 +736,9 @@ gsr-ui
 
 ### RPMFusion
 按照其文档安装，对Fedora Atomic（基于`rpm-ostree`）系统进行特定迭代。
+
+### Pacstall
+使用其官方脚本安装。仅适用于Debian/Ubuntu。
 
 ## LSW-WinBoat
 
