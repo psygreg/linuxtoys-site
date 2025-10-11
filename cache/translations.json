@@ -282,7 +282,9 @@
     "damx_desc": "Utility for controlling Acer gaming laptop features and performance tuning.",
     "pacstall_desc": "Allows you to use the latest software without compromises, similarly to AUR but for Debian/Ubuntu. Use with caution.",
     "gtk_bmg_fix": "GTK Battlemage Fix",
-    "gtk_bmg_fix_desc": "Fixes rendering issues with GTK applications on Intel Battlemage (B-series) GPUs."
+    "gtk_bmg_fix_desc": "Fixes rendering issues with GTK applications on Intel Battlemage (B-series) GPUs.",
+    "unsupported_os_title": "Unsupported System",
+    "unsupported_os_message": "Unsupported operating system."
   },
   "pt": {
     "subtitle": "Uma coleção amigável de ferramentas para Linux.",
@@ -567,7 +569,9 @@
     "damx_desc": "Utilitário para controlar recursos de laptops gaming Acer e ajuste de desempenho.",
     "pacstall_desc": "Permite usar o software mais recente sem compromissos, semelhante ao AUR, mas para Debian/Ubuntu. Use com cautela.",
     "gtk_bmg_fix": "Correção GTK Battlemage",
-    "gtk_bmg_fix_desc": "Corrige problemas de renderização com aplicações GTK em GPUs Intel Battlemage (série B)."
+    "gtk_bmg_fix_desc": "Corrige problemas de renderização com aplicações GTK em GPUs Intel Battlemage (série B).",
+    "unsupported_os_title": "Sistema não suportado",
+    "unsupported_os_message": "Sistema operacional não suportado."
   },
   "es": {
     "subtitle": "Una colección amigable de herramientas para Linux.",
@@ -852,7 +856,9 @@
     "damx_desc": "Utilidad para controlar las características y el ajuste de rendimiento de portátiles gaming Acer.",
     "pacstall_desc": "Te permite usar el software más reciente sin compromisos, similar a AUR pero para Debian/Ubuntu. Úsalo con precaución.",
     "gtk_bmg_fix": "Corrección GTK Battlemage",
-    "gtk_bmg_fix_desc": "Soluciona problemas de renderizado con aplicaciones GTK en GPUs Intel Battlemage (serie B)."
+    "gtk_bmg_fix_desc": "Soluciona problemas de renderizado con aplicaciones GTK en GPUs Intel Battlemage (serie B).",
+    "unsupported_os_title": "Sistema no compatible",
+    "unsupported_os_message": "Sistema operativo no compatible."
   },
   "fr": {
     "subtitle": "Une collection d'outils pour Linux de manière conviviale.",
@@ -1137,7 +1143,9 @@
     "damx_desc": "Utilitaire pour contrôler les fonctionnalités et régler les performances des ordinateurs portables gaming Acer.",
     "pacstall_desc": "Vous permet d'utiliser les derniers logiciels sans compromis, similaire à AUR mais pour Debian/Ubuntu. Utilisez avec prudence.",
     "gtk_bmg_fix": "Correctif GTK Battlemage",
-    "gtk_bmg_fix_desc": "Corrige les problèmes de rendu avec les applications GTK sur les GPU Intel Battlemage (série B)."
+    "gtk_bmg_fix_desc": "Corrige les problèmes de rendu avec les applications GTK sur les GPU Intel Battlemage (série B).",
+    "unsupported_os_title": "Système non pris en charge",
+    "unsupported_os_message": "Système d'exploitation non pris en charge."
   },
   "de": {
     "subtitle": "Eine freundliche Sammlung von Tools für Linux.",
@@ -1422,7 +1430,9 @@
     "damx_desc": "Dienstprogramm zur Steuerung von Acer Gaming-Laptop-Funktionen und Leistungsoptimierung.",
     "pacstall_desc": "Ermöglicht die Nutzung der neuesten Software ohne Kompromisse, ähnlich wie AUR, aber für Debian/Ubuntu. Mit Vorsicht verwenden.",
     "gtk_bmg_fix": "GTK Battlemage-Fix",
-    "gtk_bmg_fix_desc": "Behebt Rendering-Probleme mit GTK-Anwendungen auf Intel Battlemage (B-Serie) GPUs."
+    "gtk_bmg_fix_desc": "Behebt Rendering-Probleme mit GTK-Anwendungen auf Intel Battlemage (B-Serie) GPUs.",
+    "unsupported_os_title": "Nicht unterstütztes System",
+    "unsupported_os_message": "Nicht unterstütztes Betriebssystem."
   },
   "zh": {
     "subtitle": "适用于Linux的用户友好工具集合。",
@@ -1709,7 +1719,9 @@
     "damx_desc": "用于控制 Acer 游戏笔记本电脑功能和性能调整的实用程序。",
     "pacstall_desc": "允许您使用最新软件而无需妥协，类似于 AUR 但适用于 Debian/Ubuntu。请谨慎使用。",
     "gtk_bmg_fix": "GTK Battlemage 修复",
-    "gtk_bmg_fix_desc": "修复 Intel Battlemage（B 系列）GPU 上 GTK 应用程序的渲染问题。"
+    "gtk_bmg_fix_desc": "修复 Intel Battlemage（B 系列）GPU 上 GTK 应用程序的渲染问题。",
+    "unsupported_os_title": "不支持的系统",
+    "unsupported_os_message": "不支持的操作系统。"
   },
   "ja": {
     "subtitle": "Linuxのためのユーザーフレンドリーなツール集。",
@@ -1994,7 +2006,9 @@
     "damx_desc": "Acer ゲーミングラップトップの機能とパフォーマンスチューニングを制御するユーティリティ。",
     "pacstall_desc": "妥協することなく最新のソフトウェアを使用できます。AURに似ていますがDebian/Ubuntu用です。注意して使用してください。",
     "gtk_bmg_fix": "GTK Battlemage 修正",
-    "gtk_bmg_fix_desc": "Intel Battlemage (B シリーズ) GPU で GTK アプリケーションのレンダリングの問題を修正します。"
+    "gtk_bmg_fix_desc": "Intel Battlemage (B シリーズ) GPU で GTK アプリケーションのレンダリングの問題を修正します。",
+    "unsupported_os_title": "サポートされていないシステム",
+    "unsupported_os_message": "サポートされていないオペレーティングシステム。"
   },
   "ru": {
     "subtitle": "Коллекция инструментов для Linux в удобном формате.",
@@ -2279,6 +2293,8 @@
     "damx_desc": "Утилита для управления функциями игровых ноутбуков Acer и настройки производительности.",
     "pacstall_desc": "Позволяет использовать новейшее программное обеспечение без компромиссов, аналогично AUR, но для Debian/Ubuntu. Используйте с осторожностью.",
     "gtk_bmg_fix": "Исправление GTK Battlemage",
-    "gtk_bmg_fix_desc": "Исправляет проблемы с отрисовкой GTK-приложений на GPU Intel Battlemage (серия B)."
+    "gtk_bmg_fix_desc": "Исправляет проблемы с отрисовкой GTK-приложений на GPU Intel Battlemage (серия B).",
+    "unsupported_os_title": "Неподдерживаемая система",
+    "unsupported_os_message": "Неподдерживаемая операционная система."
   }
 }
