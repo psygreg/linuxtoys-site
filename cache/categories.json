@@ -285,6 +285,13 @@
         "scriptPath": "p3/scripts/drivers/icr.sh"
       },
       {
+        "name": "Intel Xe Driver",
+        "description": "intelxe_desc",
+        "icon": "intel.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/drivers/intelxe.sh"
+      },
+      {
         "name": "modsign",
         "description": "modsign_desc",
         "icon": "sign.svg",
@@ -504,6 +511,13 @@
         "icon": "mscf.svg",
         "version": "1.0",
         "scriptPath": "p3/scripts/extra/corefonts.sh"
+      },
+      {
+        "name": "DNSMasq",
+        "description": "dnsmasq_desc",
+        "icon": "network.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/dnsmasq.sh"
       },
       {
         "name": "dsplitm",
@@ -739,6 +753,13 @@
         "scriptPath": "p3/scripts/game/osu.sh"
       },
       {
+        "name": "Prism Launcher",
+        "description": "prism_desc",
+        "icon": "prism.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/game/prism.sh"
+      },
+      {
         "name": "ProtonPlus",
         "description": "pp_desc",
         "icon": "protonplus.svg",
@@ -823,6 +844,13 @@
         "icon": "blender.svg",
         "version": "1.0",
         "scriptPath": "p3/scripts/office/blender.sh"
+      },
+      {
+        "name": "Brave Browser",
+        "description": "brave_desc",
+        "icon": "brave.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/office/brave.sh"
       },
       {
         "name": "Google Chrome",
@@ -1221,6 +1249,13 @@
         "icon": "peazip.png",
         "version": "1.0",
         "scriptPath": "p3/scripts/utils/peazip.sh"
+      },
+      {
+        "name": "Pika Backup",
+        "description": "pika_desc",
+        "icon": "pika.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/pika.sh"
       },
       {
         "name": "QPWGraph",

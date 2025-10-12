@@ -281,10 +281,15 @@
     "s3d_desc": "Convert S3, SFTP, WebDAV or Rclone back-end into your encrypted storage.",
     "damx_desc": "Utility for controlling Acer gaming laptop features and performance tuning.",
     "pacstall_desc": "Allows you to use the latest software without compromises, similarly to AUR but for Debian/Ubuntu. Use with caution.",
-    "gtk_bmg_fix": "GTK Battlemage Fix",
-    "gtk_bmg_fix_desc": "Fixes rendering issues with GTK applications on Intel Battlemage (B-series) GPUs.",
     "unsupported_os_title": "Unsupported System",
-    "unsupported_os_message": "Unsupported operating system."
+    "unsupported_os_message": "Unsupported operating system.",
+    "dnsmasq_desc": "Set up local DNS caching to speed up domain name resolution, improve browsing performance and fix problems with losing download speeds on Steam.",
+    "pika_desc": "A simple and space-efficient backup application based on BorgBackup.",
+    "prism_desc": "A custom launcher for Minecraft Java Edition with support for mods and shaders.",
+    "brave_desc": "A privacy-focused web browser with built-in ad blocking.",
+    "gtk_bmg_fix": "GTK Rendering Fix",
+    "gtk_bmg_fix_desc": "Fixes rendering issues with GTK applications on Intel Battlemage (B-series) and Nvidia GPUs.",
+    "intelxe_desc": "Switches Intel drivers to the newer Xe driver on supported discrete GPUs (Battlemage/Alchemist) to improve performance and compatibility."
   },
   "pt": {
     "subtitle": "Uma coleção amigável de ferramentas para Linux.",
@@ -568,10 +573,15 @@
     "s3d_desc": "Converta o back-end S3, SFTP, WebDAV ou Rclone em seu armazenamento criptografado.",
     "damx_desc": "Utilitário para controlar recursos de laptops gaming Acer e ajuste de desempenho.",
     "pacstall_desc": "Permite usar o software mais recente sem compromissos, semelhante ao AUR, mas para Debian/Ubuntu. Use com cautela.",
-    "gtk_bmg_fix": "Correção GTK Battlemage",
-    "gtk_bmg_fix_desc": "Corrige problemas de renderização com aplicações GTK em GPUs Intel Battlemage (série B).",
+    "gtk_bmg_fix": "Correção de renderização GTK",
+    "gtk_bmg_fix_desc": "Corrige problemas de renderização com aplicativos GTK em GPUs Intel Battlemage (série B) e Nvidia.",
     "unsupported_os_title": "Sistema não suportado",
-    "unsupported_os_message": "Sistema operacional não suportado."
+    "unsupported_os_message": "Sistema operacional não suportado.",
+    "dnsmasq_desc": "Configure o cache DNS local para acelerar a resolução de nomes de domínio, melhorar o desempenho de navegação e corrigir problemas com perda de velocidade de download no Steam.",
+    "pika_desc": "Um aplicativo de backup simples e eficiente em espaço baseado em BorgBackup.",
+    "prism_desc": "Um lançador personalizado para Minecraft Java Edition com suporte para mods e shaders.",
+    "brave_desc": "Um navegador web focado em privacidade com bloqueio de anúncios integrado.",
+    "intelxe_desc": "Alterna os drivers Intel para o driver Xe mais recente em GPUs discretas suportadas (Battlemage/Alchemist) para melhorar o desempenho e a compatibilidade."
   },
   "es": {
     "subtitle": "Una colección amigable de herramientas para Linux.",
@@ -855,10 +865,15 @@
     "s3d_desc": "Convierte el back-end de S3, SFTP, WebDAV o Rclone en tu almacenamiento cifrado.",
     "damx_desc": "Utilidad para controlar las características y el ajuste de rendimiento de portátiles gaming Acer.",
     "pacstall_desc": "Te permite usar el software más reciente sin compromisos, similar a AUR pero para Debian/Ubuntu. Úsalo con precaución.",
-    "gtk_bmg_fix": "Corrección GTK Battlemage",
-    "gtk_bmg_fix_desc": "Soluciona problemas de renderizado con aplicaciones GTK en GPUs Intel Battlemage (serie B).",
+    "gtk_bmg_fix": "Corrección de renderizado GTK",
+    "gtk_bmg_fix_desc": "Soluciona problemas de renderizado con aplicaciones GTK en Intel Battlemage (serie B) y GPU Nvidia.",
     "unsupported_os_title": "Sistema no compatible",
-    "unsupported_os_message": "Sistema operativo no compatible."
+    "unsupported_os_message": "Sistema operativo no compatible.",
+    "dnsmasq_desc": "Configure el almacenamiento en caché de DNS local para acelerar la resolución de nombres de dominio, mejorar el rendimiento de navegación y solucionar problemas con la pérdida de velocidad de descarga en Steam.",
+    "pika_desc": "Una aplicación de respaldo simple y eficiente en espacio basada en BorgBackup.",
+    "prism_desc": "Un lanzador personalizado para Minecraft Java Edition con soporte para mods y shaders.",
+    "brave_desc": "Un navegador web centrado en la privacidad con bloqueo de anuncios integrado.",
+    "intelxe_desc": "Cambia los controladores de Intel al controlador Xe más nuevo en GPU discretas compatibles (Battlemage/Alchemist) para mejorar el rendimiento y la compatibilidad."
   },
   "fr": {
     "subtitle": "Une collection d'outils pour Linux de manière conviviale.",
@@ -1142,10 +1157,15 @@
     "s3d_desc": "Convertissez le back-end S3, SFTP, WebDAV ou Rclone en votre stockage chiffré.",
     "damx_desc": "Utilitaire pour contrôler les fonctionnalités et régler les performances des ordinateurs portables gaming Acer.",
     "pacstall_desc": "Vous permet d'utiliser les derniers logiciels sans compromis, similaire à AUR mais pour Debian/Ubuntu. Utilisez avec prudence.",
-    "gtk_bmg_fix": "Correctif GTK Battlemage",
-    "gtk_bmg_fix_desc": "Corrige les problèmes de rendu avec les applications GTK sur les GPU Intel Battlemage (série B).",
+    "gtk_bmg_fix": "Correction du rendu GTK",
+    "gtk_bmg_fix_desc": "Corrige les problèmes de rendu avec les applications GTK sur les GPU Intel Battlemage (série B) et Nvidia.",
     "unsupported_os_title": "Système non pris en charge",
-    "unsupported_os_message": "Système d'exploitation non pris en charge."
+    "unsupported_os_message": "Système d'exploitation non pris en charge.",
+    "dnsmasq_desc": "Configurez la mise en cache DNS locale pour accélérer la résolution des noms de domaine, améliorer les performances de navigation et résoudre les problèmes de perte de vitesse de téléchargement sur Steam.",
+    "pika_desc": "Une application de sauvegarde simple et économe en espace basée sur BorgBackup.",
+    "prism_desc": "Un lanceur personnalisé pour Minecraft Java Edition avec prise en charge des mods et des shaders.",
+    "brave_desc": "Un navigateur Web axé sur la confidentialité avec blocage des publicités intégré.",
+    "intelxe_desc": "Change les pilotes Intel vers le pilote Xe plus récent sur les GPU discrets pris en charge (Battlemage/Alchemist) pour améliorer les performances et la compatibilité."
   },
   "de": {
     "subtitle": "Eine freundliche Sammlung von Tools für Linux.",
@@ -1429,10 +1449,15 @@
     "s3d_desc": "Konvertieren Sie S3, SFTP, WebDAV oder Rclone-Backend in Ihren verschlüsselten Speicher.",
     "damx_desc": "Dienstprogramm zur Steuerung von Acer Gaming-Laptop-Funktionen und Leistungsoptimierung.",
     "pacstall_desc": "Ermöglicht die Nutzung der neuesten Software ohne Kompromisse, ähnlich wie AUR, aber für Debian/Ubuntu. Mit Vorsicht verwenden.",
-    "gtk_bmg_fix": "GTK Battlemage-Fix",
-    "gtk_bmg_fix_desc": "Behebt Rendering-Probleme mit GTK-Anwendungen auf Intel Battlemage (B-Serie) GPUs.",
+    "gtk_bmg_fix": "GTK-Rendering-Fix",
+    "gtk_bmg_fix_desc": "Behebt Rendering-Probleme mit GTK-Anwendungen auf Intel Battlemage (B-Serie) und Nvidia-GPUs.",
     "unsupported_os_title": "Nicht unterstütztes System",
-    "unsupported_os_message": "Nicht unterstütztes Betriebssystem."
+    "unsupported_os_message": "Nicht unterstütztes Betriebssystem.",
+    "dnsmasq_desc": "Richten Sie lokales DNS-Caching ein, um die Auflösung von Domainnamen zu beschleunigen, die Browser-Leistung zu verbessern und Probleme mit dem Verlust der Download-Geschwindigkeit bei Steam zu beheben.",
+    "pika_desc": "Eine einfache und platzsparende Backup-Anwendung basierend auf BorgBackup.",
+    "prism_desc": "Ein benutzerdefinierter Launcher für Minecraft Java Edition mit Unterstützung für Mods und Shader.",
+    "brave_desc": "Ein datenschutzorientierter Webbrowser mit integrierter Werbeblocker.",
+    "intelxe_desc": "Wechselt Intel-Treiber zum neueren Xe-Treiber auf unterstützten dedizierten GPUs (Battlemage/Alchemist), um Leistung und Kompatibilität zu verbessern."
   },
   "zh": {
     "subtitle": "适用于Linux的用户友好工具集合。",
@@ -1718,10 +1743,15 @@
     "s3d_desc": "将 S3、SFTP、WebDAV 或 Rclone 后端转换为您的加密存储。",
     "damx_desc": "用于控制 Acer 游戏笔记本电脑功能和性能调整的实用程序。",
     "pacstall_desc": "允许您使用最新软件而无需妥协，类似于 AUR 但适用于 Debian/Ubuntu。请谨慎使用。",
-    "gtk_bmg_fix": "GTK Battlemage 修复",
-    "gtk_bmg_fix_desc": "修复 Intel Battlemage（B 系列）GPU 上 GTK 应用程序的渲染问题。",
+    "gtk_bmg_fix": "GTK渲染修复",
+    "gtk_bmg_fix_desc": "修复Intel Battlemage（B系列）和Nvidia GPU上GTK应用程序的渲染问题。",
     "unsupported_os_title": "不支持的系统",
-    "unsupported_os_message": "不支持的操作系统。"
+    "unsupported_os_message": "不支持的操作系统。",
+    "dnsmasq_desc": "设置本地DNS缓存以加快域名解析速度，提高浏览性能并修复Steam上下载速度丢失的问题。",
+    "pika_desc": "一个基于BorgBackup的简单且节省空间的备份应用程序。",
+    "prism_desc": "一个支持模组和光影的Minecraft Java版自定义启动器。",
+    "brave_desc": "一个注重隐私的网络浏览器，内置广告拦截功能。",
+    "intelxe_desc": "将Intel驱动程序切换到受支持的独立GPU（Battlemage/Alchemist）上的较新Xe驱动程序，以提高性能和兼容性。"
   },
   "ja": {
     "subtitle": "Linuxのためのユーザーフレンドリーなツール集。",
@@ -2005,10 +2035,15 @@
     "s3d_desc": "S3、SFTP、WebDAV、またはRcloneのバックエンドを暗号化されたストレージに変換します。",
     "damx_desc": "Acer ゲーミングラップトップの機能とパフォーマンスチューニングを制御するユーティリティ。",
     "pacstall_desc": "妥協することなく最新のソフトウェアを使用できます。AURに似ていますがDebian/Ubuntu用です。注意して使用してください。",
-    "gtk_bmg_fix": "GTK Battlemage 修正",
-    "gtk_bmg_fix_desc": "Intel Battlemage (B シリーズ) GPU で GTK アプリケーションのレンダリングの問題を修正します。",
+    "gtk_bmg_fix": "GTKレンダリング修正",
+    "gtk_bmg_fix_desc": "Intel Battlemage（Bシリーズ）およびNvidia GPUでのGTKアプリケーションのレンダリング問題を修正します。",
     "unsupported_os_title": "サポートされていないシステム",
-    "unsupported_os_message": "サポートされていないオペレーティングシステム。"
+    "unsupported_os_message": "サポートされていないオペレーティングシステム。",
+    "dnsmasq_desc": "ローカルDNSキャッシュを設定して、ドメイン名解決を高速化し、ブラウジングパフォーマンスを向上させ、Steamでのダウンロード速度低下の問題を修正します。",
+    "pika_desc": "BorgBackupベースのシンプルでスペース効率の良いバックアップアプリケーション。",
+    "prism_desc": "MODとシェーダーのサポートを備えたMinecraft Java Editionのカスタムランチャー。",
+    "brave_desc": "広告ブロック機能を内蔵したプライバシー重視のWebブラウザ。",
+    "intelxe_desc": "サポートされている独立GPU（Battlemage/Alchemist）でIntelドライバーを新しいXeドライバーに切り替えて、パフォーマンスと互換性を向上させます。"
   },
   "ru": {
     "subtitle": "Коллекция инструментов для Linux в удобном формате.",
@@ -2292,9 +2327,14 @@
     "s3d_desc": "Преобразуйте бэкенд S3, SFTP, WebDAV или Rclone в зашифрованное хранилище.",
     "damx_desc": "Утилита для управления функциями игровых ноутбуков Acer и настройки производительности.",
     "pacstall_desc": "Позволяет использовать новейшее программное обеспечение без компромиссов, аналогично AUR, но для Debian/Ubuntu. Используйте с осторожностью.",
-    "gtk_bmg_fix": "Исправление GTK Battlemage",
-    "gtk_bmg_fix_desc": "Исправляет проблемы с отрисовкой GTK-приложений на GPU Intel Battlemage (серия B).",
+    "gtk_bmg_fix": "Исправление рендеринга GTK",
+    "gtk_bmg_fix_desc": "Исправляет проблемы рендеринга приложений GTK на Intel Battlemage (серия B) и Nvidia GPU.",
     "unsupported_os_title": "Неподдерживаемая система",
-    "unsupported_os_message": "Неподдерживаемая операционная система."
+    "unsupported_os_message": "Неподдерживаемая операционная система.",
+    "dnsmasq_desc": "Настройте локальное кэширование DNS для ускорения разрешения доменных имён, улучшения производительности браузера и устранения проблем с потерей скорости загрузки в Steam.",
+    "pika_desc": "Простое и экономичное приложение для резервного копирования на основе BorgBackup.",
+    "prism_desc": "Пользовательский лаунчер для Minecraft Java Edition с поддержкой модов и шейдеров.",
+    "brave_desc": "Ориентированный на конфиденциальность веб-браузер со встроенной блокировкой рекламы.",
+    "intelxe_desc": "Переключает драйверы Intel на более новый драйвер Xe на поддерживаемых дискретных GPU (Battlemage/Alchemist) для улучшения производительности и совместимости."
   }
 }
