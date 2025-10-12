@@ -130,6 +130,9 @@
 - ZapZap
 - S3Drive
 - Moonlight
+- Pika Backup
+- Brave
+- Prism Launcher
 
 #### Stórtha breise
 
@@ -706,14 +709,41 @@ gsr-ui
 ```
 Agus socraigh é le tosú ar thosach an chórais óna shocruithe (an deilbhín giar), ansin brúigh Alt+Z le fágáil óna chomhéadan, dún an fhuinneog teirminéil agus atosaigh. Tar éis atosaithe, is féidir leat socruithe an chláir a choigeartú de réir do roghanna agus é a úsáid mar is mian leat.
 
-### Deisiúchán GTK Battlemage
-Deisíonn fadhbanna le rindreáil feidhmchlár GTK le GPU Intel Arc sraith-B (*Battlemage*) trí iad a athrú go mód OpenGL. Is féidir é a chúlghairm trí an líne arna cur leis a bhaint go simplí ag úsáid eagarthóir téacs ar nós `nano`.
+### Deisiúchán Rindreálaí GTK
+Deisíonn fadhbanna le rindreáil feidhmchlár GTK le GPU Intel Arc sraith-B (*Battlemage*) agus Nvidia trí iad a athrú go mód OpenGL. Is féidir é a chúlghairm trí an líne arna cur leis a bhaint go simplí ag úsáid eagarthóir téacs ar nós `nano`.
 
 **Socruithe saincheaptha curtha i bhfeidhm**
 - Curtha le `/etc/environment`:
 ```
 GSK_RENDERER=ngl
 ```
+
+### Tiománaí Intel Xe
+Cumasaíonn sé an tiománaí Intel `xe` nua ón eithne. Cé go bhfuil sé i láthair ó leagan 6.8, níl sé cumasaithe de réir réamhshocraithe, rud a fhágann go gcailleann próiseálaithe grafaice Intel níos nuaí, go háirithe GPU aonair (Arc), feidhmíocht shuntasach ar fud an bhoird, go háirithe ar thascanna áirithe ríomhaireachta. Is féidir é a chúlghairm trí na paraiméadair a bhaint ag úsáid `rpm-ostree kargs --delete` le haghaidh Fedora Atomic, nó trí an comhad `/etc/grub.d/01_intel_xe_enable` a scriosadh le haghaidh córais eile.
+
+**Socruithe saincheaptha curtha i bhfeidhm**
+- Ar dtús, faightear an athróg `$DEVID` tríd an ordú seo a leanas:
+```
+lspci -nnd ::03xx | grep -Ei 'battlemage|alchemist' | sed -n 's/.*\[8086:\([0-9a-f]\+\)\].*/\1/p'
+```
+- ansin, le haghaidh Fedora Atomic (córais bhunaithe ar `rpm-ostree`):
+```
+rpm-ostree kargs --append='i915.force_probe=!'"$DEVID" --append="xe.force_probe=$DEVID"
+```
+- nó córais eile: cruthaíonn sé `/etc/grub.d/01_intel_xe_enable`
+```
+GRUB_CMDLINE_LINUX="\${GRUB_CMDLINE_LINUX} i915.force_probe=!$DEVID xe.force_probe=$DEVID"
+```
+
+### DNSMasq
+Suiteálann sé `dnsmasq` agus cumasaíonn sé roinnt socruithe le haghaidh feidhmíochta agus comhoiriúnachta bharrmhaithe, fiú ar chórais ag rith `systemd-resolved`, mar thaisce DNS áitiúil. Úsáideach chun luasanna brabhsála idirlín a fheabhsú agus mar réiteach ar fhadhb coitianta le titim luais íoslódála Steam.
+
+**Pacáistí Suiteáilte nó Nuashonraithe**
+- Debian: `dnsmasq resolvconf`
+- Córais eile: `dnsmasq`
+
+**Socruithe saincheaptha curtha i bhfeidhm**
+- Cumasaíonn (díchoinníonn) sé `domain-needed`, `bogus-priv` agus `bind-interfaces` ar `/etc/dnsmasq.conf`
 
 ## Suiteálaithe Stórais
 

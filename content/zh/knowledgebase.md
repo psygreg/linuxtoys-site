@@ -130,6 +130,9 @@
 - ZapZap
 - S3Drive
 - Moonlight
+- Pika Backup
+- Brave
+- Prism Launcher
 
 #### 添加的存储库
 
@@ -705,14 +708,41 @@ gsr-ui
 ```
 并从其设置(齿轮图标)将其设置为在系统启动时启动，然后按Alt+Z退出其界面，关闭终端窗口并重新启动。重新启动后，您可以根据自己的喜好调整程序的设置并按照您的意愿使用它。
 
-### Battlemage GTK修复
-通过将Intel Arc B系列（*Battlemage*）GPU切换到OpenGL模式来修复GTK应用程序的渲染问题。可以通过使用文本编辑器（如`nano`）简单删除附加的行来恢复。
+### GTK渲染器修复
+通过将Intel Arc B系列（*Battlemage*）和Nvidia GPU切换到OpenGL模式来修复GTK应用程序的渲染问题。可以通过使用文本编辑器（如`nano`）简单删除附加的行来恢复。
 
 **应用的自定义设置**
 - 附加到`/etc/environment`：
 ```
 GSK_RENDERER=ngl
 ```
+
+### Intel Xe驱动程序
+启用内核中的新Intel `xe`驱动程序。虽然它从6.8版本开始就存在，但默认情况下未启用，这导致较新的Intel图形处理器，特别是独立（Arc）GPU，在整体上，特别是在某些计算任务上，缺少相当大的性能。可以通过使用`rpm-ostree kargs --delete`删除Fedora Atomic的参数，或删除其他系统的`/etc/grub.d/01_intel_xe_enable`文件来恢复。
+
+**应用的自定义设置**
+- 首先，通过以下命令获取`$DEVID`变量：
+```
+lspci -nnd ::03xx | grep -Ei 'battlemage|alchemist' | sed -n 's/.*\[8086:\([0-9a-f]\+\)\].*/\1/p'
+```
+- 然后，对于Fedora Atomic（基于`rpm-ostree`的系统）：
+```
+rpm-ostree kargs --append='i915.force_probe=!'"$DEVID" --append="xe.force_probe=$DEVID"
+```
+- 或其他系统：创建`/etc/grub.d/01_intel_xe_enable`
+```
+GRUB_CMDLINE_LINUX="\${GRUB_CMDLINE_LINUX} i915.force_probe=!$DEVID xe.force_probe=$DEVID"
+```
+
+### DNSMasq
+安装`dnsmasq`并启用一些设置以实现最佳操作和兼容性，即使在运行`systemd-resolved`的系统上，作为本地DNS缓存。有助于提高互联网浏览速度，并作为常见的Steam下载速度下降问题的修复。
+
+**安装或更新的包**
+- Debian：`dnsmasq resolvconf`
+- 其他系统：`dnsmasq`
+
+**应用的自定义设置**
+- 在`/etc/dnsmasq.conf`中启用（取消注释）`domain-needed`、`bogus-priv`和`bind-interfaces`
 
 ## 存储库安装程序
 

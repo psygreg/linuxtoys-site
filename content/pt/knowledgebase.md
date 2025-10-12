@@ -130,6 +130,9 @@ Do flathub, ou tendo repositórios adicionados pelo LinuxToys, e nenhuma outra m
 - ZapZap
 - S3Drive
 - Moonlight
+- Pika Backup
+- Brave
+- Prism Launcher
 
 #### Repositórios adicionados
 
@@ -705,14 +708,41 @@ gsr-ui
 ```
 E configure-o para iniciar na inicialização do sistema a partir das configurações (o ícone de engrenagem), pressione Alt+Z para sair da interface, feche a janela do terminal e reinicie. Após reiniciar, você pode ajustar as configurações do programa de acordo com suas preferências e usá-lo como desejar.
 
-### Correção GTK para Battlemage
-Corrige problemas com a renderização de aplicações GTK com GPUs Intel Arc série B (*Battlemage*) ao alterná-las para o modo OpenGL. Pode ser revertido simplesmente removendo a linha adicionada usando um editor de texto como `nano`.
+### Correção de Renderizador GTK
+Corrige problemas com a renderização de aplicações GTK com GPUs Intel Arc série B (*Battlemage*) e Nvidia ao alterná-las para o modo OpenGL. Pode ser revertido simplesmente removendo a linha adicionada usando um editor de texto como `nano`.
 
 **Configurações personalizadas aplicadas**
 - Adicionado a `/etc/environment`:
 ```
 GSK_RENDERER=ngl
 ```
+
+### Driver Intel Xe
+Habilita o novo driver Intel `xe` do kernel. Embora esteja presente desde a versão 6.8, não é habilitado por padrão, o que faz com que processadores gráficos Intel mais novos, especialmente GPUs discretas (Arc), tenham performance consideravelmente inferior em geral, especialmente em certas tarefas de computação. Pode ser revertido removendo os parâmetros usando `rpm-ostree kargs --delete` para Fedora Atomic, ou deletando o arquivo `/etc/grub.d/01_intel_xe_enable` para outros sistemas.
+
+**Configurações personalizadas aplicadas**
+- Primeiro, a variável `$DEVID` é obtida através do seguinte comando:
+```
+lspci -nnd ::03xx | grep -Ei 'battlemage|alchemist' | sed -n 's/.*\[8086:\([0-9a-f]\+\)\].*/\1/p'
+```
+- então, para Fedora Atomic (sistemas baseados em `rpm-ostree`):
+```
+rpm-ostree kargs --append='i915.force_probe=!'"$DEVID" --append="xe.force_probe=$DEVID"
+```
+- ou outros sistemas: cria `/etc/grub.d/01_intel_xe_enable`
+```
+GRUB_CMDLINE_LINUX="\${GRUB_CMDLINE_LINUX} i915.force_probe=!$DEVID xe.force_probe=$DEVID"
+```
+
+### DNSMasq
+Instala `dnsmasq` e habilita algumas configurações para operação e compatibilidade ideais, mesmo em sistemas rodando `systemd-resolved`, como um cache DNS local. Útil para melhorar velocidades de navegação na internet e como correção para um problema comum de queda de velocidade de download do Steam.
+
+**Pacotes Instalados ou Atualizados**
+- Debian: `dnsmasq resolvconf`
+- Outros sistemas: `dnsmasq`
+
+**Configurações personalizadas aplicadas**
+- Habilita (descomenta) `domain-needed`, `bogus-priv` e `bind-interfaces` em `/etc/dnsmasq.conf`
 
 ## Instaladores de Repositório
 

@@ -130,6 +130,9 @@ flathubから、またはLinuxToysによって追加されたリポジトリが�
 - ZapZap
 - S3Drive
 - Moonlight
+- Pika Backup
+- Brave
+- Prism Launcher
 
 #### 追加されたリポジトリ
 
@@ -705,14 +708,41 @@ gsr-ui
 ```
 設定(歯車アイコン)からシステム起動時に起動するように設定し、Alt+Zを押してUIを終了し、ターミナルウィンドウを閉じて再起動します。再起動後、プログラムの設定を好みに合わせて調整し、お好きなように使用できます。
 
-### Battlemage GTK修正
-Intel Arc Bシリーズ（*Battlemage*）GPUでGTKアプリケーションのレンダリングに問題がある場合、OpenGLモードに切り替えることで修正します。`nano`などのテキストエディタを使用して追加された行を削除するだけで元に戻すことができます。
+### GTKレンダラー修正
+Intel Arc Bシリーズ（*Battlemage*）およびNvidia GPUでGTKアプリケーションのレンダリングに問題がある場合、OpenGLモードに切り替えることで修正します。`nano`などのテキストエディタを使用して追加された行を削除するだけで元に戻すことができます。
 
 **適用されるカスタム設定**
-- `/etc/enviroment`に追加：
+- `/etc/environment`に追加：
 ```
 GSK_RENDERER=ngl
 ```
+
+### Intel Xeドライバー
+カーネルから新しいIntel `xe`ドライバーを有効にします。バージョン6.8以降存在していますが、デフォルトでは有効になっていないため、新しいIntelグラフィックスプロセッサ、特にディスクリート（Arc）GPUでは、全体的に、特に特定のコンピューティングタスクにおいて、かなりのパフォーマンスが不足しています。Fedora Atomicの場合は`rpm-ostree kargs --delete`を使用してパラメータを削除するか、他のシステムの場合は`/etc/grub.d/01_intel_xe_enable`ファイルを削除することで元に戻すことができます。
+
+**適用されるカスタム設定**
+- まず、次のコマンドで`$DEVID`変数を取得します：
+```
+lspci -nnd ::03xx | grep -Ei 'battlemage|alchemist' | sed -n 's/.*\[8086:\([0-9a-f]\+\)\].*/\1/p'
+```
+- 次に、Fedora Atomic（`rpm-ostree`ベースのシステム）の場合：
+```
+rpm-ostree kargs --append='i915.force_probe=!'"$DEVID" --append="xe.force_probe=$DEVID"
+```
+- または他のシステム：`/etc/grub.d/01_intel_xe_enable`を作成
+```
+GRUB_CMDLINE_LINUX="\${GRUB_CMDLINE_LINUX} i915.force_probe=!$DEVID xe.force_probe=$DEVID"
+```
+
+### DNSMasq
+`dnsmasq`をインストールし、`systemd-resolved`を実行しているシステムでも、ローカルDNSキャッシュとして最適な動作と互換性のためにいくつかの設定を有効にします。インターネットブラウジング速度の向上や、Steamのダウンロード速度低下の一般的な問題の修正に役立ちます。
+
+**インストールまたは更新されたパッケージ**
+- Debian：`dnsmasq resolvconf`
+- 他のシステム：`dnsmasq`
+
+**適用されるカスタム設定**
+- `/etc/dnsmasq.conf`で`domain-needed`、`bogus-priv`、`bind-interfaces`を有効化（コメント解除）
 
 ## リポジトリインストーラー
 
