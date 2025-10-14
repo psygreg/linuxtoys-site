@@ -736,6 +736,10 @@ rpm-ostree kargs --append='i915.force_probe=!'"$DEVID" --append="xe.force_probe=
 ```
 GRUB_CMDLINE_LINUX="\${GRUB_CMDLINE_LINUX} i915.force_probe=!$DEVID xe.force_probe=$DEVID"
 ```
+- ten slotte, om hardware videodecodering in te schakelen, toegevoegd aan `/etc/environment`:
+```
+VDPAU_DRIVER=va_gl
+```
 
 ### DNSMasq
 Installeert `dnsmasq` en schakelt een paar instellingen in voor optimale werking en compatibiliteit, zelfs op systemen die `systemd-resolved` draaien, als een lokale DNS-cache. Nuttig voor het verbeteren van internetbrowsesnelheden en als oplossing voor een veel voorkomend probleem met dalende Steam downloadsnelheid.

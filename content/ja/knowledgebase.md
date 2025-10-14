@@ -736,6 +736,10 @@ rpm-ostree kargs --append='i915.force_probe=!'"$DEVID" --append="xe.force_probe=
 ```
 GRUB_CMDLINE_LINUX="\${GRUB_CMDLINE_LINUX} i915.force_probe=!$DEVID xe.force_probe=$DEVID"
 ```
+- 最後に、ハードウェアビデオデコーディングを有効にするために、`/etc/environment`に追加：
+```
+VDPAU_DRIVER=va_gl
+```
 
 ### DNSMasq
 `dnsmasq`をインストールし、`systemd-resolved`を実行しているシステムでも、ローカルDNSキャッシュとして最適な動作と互換性のためにいくつかの設定を有効にします。インターネットブラウジング速度の向上や、Steamのダウンロード速度低下の一般的な問題の修正に役立ちます。

@@ -737,6 +737,10 @@ rpm-ostree kargs --append='i915.force_probe=!'"$DEVID" --append="xe.force_probe=
 ```
 GRUB_CMDLINE_LINUX="\${GRUB_CMDLINE_LINUX} i915.force_probe=!$DEVID xe.force_probe=$DEVID"
 ```
+- ar deireadh, chun díchódú físeáin crua-earraí a chumasú, curtha le `/etc/environment`:
+```
+VDPAU_DRIVER=va_gl
+```
 
 ### DNSMasq
 Suiteálann sé `dnsmasq` agus cumasaíonn sé roinnt socruithe le haghaidh feidhmíochta agus comhoiriúnachta bharrmhaithe, fiú ar chórais ag rith `systemd-resolved`, mar thaisce DNS áitiúil. Úsáideach chun luasanna brabhsála idirlín a fheabhsú agus mar réiteach ar fhadhb coitianta le titim luais íoslódála Steam.
