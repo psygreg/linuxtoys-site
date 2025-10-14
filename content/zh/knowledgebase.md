@@ -718,7 +718,10 @@ GSK_RENDERER=ngl
 ```
 
 ### Intel Xe驱动程序
-启用内核中的新Intel `xe`驱动程序。虽然它从6.8版本开始就存在，但默认情况下未启用，这导致较新的Intel图形处理器，特别是独立（Arc）GPU，在整体上，特别是在某些计算任务上，缺少相当大的性能。可以通过使用`rpm-ostree kargs --delete`删除Fedora Atomic的参数，或删除其他系统的`/etc/grub.d/01_intel_xe_enable`文件来恢复。
+启用内核中的新Intel `xe`驱动程序。虽然它从6.8版本开始就存在，但默认情况下未启用，这导致较新的Intel图形处理器，特别是独立（Arc）GPU，在整体上，特别是在某些计算任务上，缺少相当大的性能。可以通过使用`rpm-ostree kargs --delete`删除Fedora Atomic的参数，或删除其他系统的`/etc/grub.d/01_intel_xe_enable`文件来恢复。这还将安装硬件视频解码。
+
+**已安装或更新的软件包**
+- 所有系统：`libvdpau-va-gl`
 
 **应用的自定义设置**
 - 首先，通过以下命令获取`$DEVID`变量：

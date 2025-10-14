@@ -719,7 +719,10 @@ GSK_RENDERER=ngl
 ```
 
 ### Tiománaí Intel Xe
-Cumasaíonn sé an tiománaí Intel `xe` nua ón eithne. Cé go bhfuil sé i láthair ó leagan 6.8, níl sé cumasaithe de réir réamhshocraithe, rud a fhágann go gcailleann próiseálaithe grafaice Intel níos nuaí, go háirithe GPU aonair (Arc), feidhmíocht shuntasach ar fud an bhoird, go háirithe ar thascanna áirithe ríomhaireachta. Is féidir é a chúlghairm trí na paraiméadair a bhaint ag úsáid `rpm-ostree kargs --delete` le haghaidh Fedora Atomic, nó trí an comhad `/etc/grub.d/01_intel_xe_enable` a scriosadh le haghaidh córais eile.
+Cumasaíonn sé an tiománaí Intel `xe` nua ón eithne. Cé go bhfuil sé i láthair ó leagan 6.8, níl sé cumasaithe de réir réamhshocraithe, rud a fhágann go gcailleann próiseálaithe grafaice Intel níos nuaí, go háirithe GPU aonair (Arc), feidhmíocht shuntasach ar fud an bhoird, go háirithe ar thascanna áirithe ríomhaireachta. Is féidir é a chúlghairm trí na paraiméadair a bhaint ag úsáid `rpm-ostree kargs --delete` le haghaidh Fedora Atomic, nó trí an comhad `/etc/grub.d/01_intel_xe_enable` a scriosadh le haghaidh córais eile. Suiteálfaidh sé seo díchódú físeáin crua-earraí freisin.
+
+**Pacáistí suiteáilte nó nuashonraithe**
+- Gach córas: `libvdpau-va-gl`
 
 **Socruithe saincheaptha curtha i bhfeidhm**
 - Ar dtús, faightear an athróg `$DEVID` tríd an ordú seo a leanas:

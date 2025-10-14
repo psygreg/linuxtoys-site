@@ -718,7 +718,10 @@ GSK_RENDERER=ngl
 ```
 
 ### Intel Xe Treiber
-Aktiviert den neuen Intel `xe` Treiber aus dem Kernel. Obwohl er seit Version 6.8 vorhanden ist, ist er standardmäßig nicht aktiviert, was dazu führt, dass neuere Intel-Grafikprozessoren, insbesondere diskrete (Arc) GPUs, erhebliche Leistungseinbußen aufweisen, besonders bei bestimmten Rechenaufgaben. Kann rückgängig gemacht werden, indem die Parameter mit `rpm-ostree kargs --delete` für Fedora Atomic entfernt werden oder die Datei `/etc/grub.d/01_intel_xe_enable` für andere Systeme gelöscht wird.
+Aktiviert den neuen Intel `xe` Treiber aus dem Kernel. Obwohl er seit Version 6.8 vorhanden ist, ist er standardmäßig nicht aktiviert, was dazu führt, dass neuere Intel-Grafikprozessoren, insbesondere diskrete (Arc) GPUs, erhebliche Leistungseinbußen aufweisen, besonders bei bestimmten Rechenaufgaben. Kann rückgängig gemacht werden, indem die Parameter mit `rpm-ostree kargs --delete` für Fedora Atomic entfernt werden oder die Datei `/etc/grub.d/01_intel_xe_enable` für andere Systeme gelöscht wird. Dies wird auch Hardware-Videodekodierung installieren.
+
+**Installierte oder aktualisierte Pakete**
+- Alle Systeme: `libvdpau-va-gl`
 
 **Angewendete benutzerdefinierte Einstellungen**
 - Zunächst wird die Variable `$DEVID` durch folgenden Befehl ermittelt:

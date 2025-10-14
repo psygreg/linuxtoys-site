@@ -718,7 +718,10 @@ GSK_RENDERER=ngl
 ```
 
 ### Pilote Intel Xe
-Active le nouveau pilote Intel `xe` du noyau. Bien qu'il soit présent depuis la version 6.8, il n'est pas activé par défaut, ce qui fait que les processeurs graphiques Intel plus récents, en particulier les GPU discrets (Arc), perdent des performances considérables dans l'ensemble, en particulier sur certaines tâches informatiques. Peut être annulé en supprimant les paramètres avec `rpm-ostree kargs --delete` pour Fedora Atomic, ou en supprimant le fichier `/etc/grub.d/01_intel_xe_enable` pour les autres systèmes.
+Active le nouveau pilote Intel `xe` du noyau. Bien qu'il soit présent depuis la version 6.8, il n'est pas activé par défaut, ce qui fait que les processeurs graphiques Intel plus récents, en particulier les GPU discrets (Arc), perdent des performances considérables dans l'ensemble, en particulier sur certaines tâches informatiques. Peut être annulé en supprimant les paramètres avec `rpm-ostree kargs --delete` pour Fedora Atomic, ou en supprimant le fichier `/etc/grub.d/01_intel_xe_enable` pour les autres systèmes. Cela installera également le décodage vidéo matériel.
+
+**Paquets installés ou mis à jour**
+- Tous les systèmes : `libvdpau-va-gl`
 
 **Paramètres personnalisés appliqués**
 - Tout d'abord, la variable `$DEVID` est obtenue via la commande suivante :

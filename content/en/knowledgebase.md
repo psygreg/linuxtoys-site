@@ -719,7 +719,10 @@ GSK_RENDERER=ngl
 ```
 
 ### Intel Xe Driver
-Enables the new Intel `xe` driver from the kernel. While it's present since version 6.8, it's not enabled by default, which causes newer Intel graphics processors, specially discrete (Arc) GPUs, to be missing considerable performance across the board, specially on certain computing tasks. Can be reverted by removing the parameters using `rpm-ostree kargs --delete` for Fedora atomic, or deleting the `/etc/grub.d/01_intel_xe_enable` file for other systems.
+Enables the new Intel `xe` driver from the kernel. While it's present since version 6.8, it's not enabled by default, which causes newer Intel graphics processors, specially discrete (Arc) GPUs, to be missing considerable performance across the board, specially on certain computing tasks. Can be reverted by removing the parameters using `rpm-ostree kargs --delete` for Fedora atomic, or deleting the `/etc/grub.d/01_intel_xe_enable` file for other systems. This will also install hardware video decoding.
+
+**Packages Installed or Updated**
+- All systems: `libvdpau-va-gl`
 
 **Custom settings applied**
 - First, the `$DEVID` variable is obtained through the following command:

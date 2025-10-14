@@ -718,7 +718,10 @@ GSK_RENDERER=ngl
 ```
 
 ### Intel Xe Driver
-Schakelt de nieuwe Intel `xe` driver van de kernel in. Hoewel deze aanwezig is sinds versie 6.8, is deze niet standaard ingeschakeld, wat ervoor zorgt dat nieuwere Intel grafische processors, met name discrete (Arc) GPU's, aanzienlijke prestaties missen over de hele linie, vooral bij bepaalde rekentaken. Kan worden teruggedraaid door de parameters te verwijderen met `rpm-ostree kargs --delete` voor Fedora Atomic, of door het bestand `/etc/grub.d/01_intel_xe_enable` te verwijderen voor andere systemen.
+Schakelt de nieuwe Intel `xe` driver van de kernel in. Hoewel deze aanwezig is sinds versie 6.8, is deze niet standaard ingeschakeld, wat ervoor zorgt dat nieuwere Intel grafische processors, met name discrete (Arc) GPU's, aanzienlijke prestaties missen over de hele linie, vooral bij bepaalde rekentaken. Kan worden teruggedraaid door de parameters te verwijderen met `rpm-ostree kargs --delete` voor Fedora Atomic, of door het bestand `/etc/grub.d/01_intel_xe_enable` te verwijderen voor andere systemen. Dit zal ook hardware videodecodering installeren.
+
+**Geïnstalleerde of bijgewerkte pakketten**
+- Alle systemen: `libvdpau-va-gl`
 
 **Toegepaste aangepaste instellingen**
 - Eerst wordt de `$DEVID` variabele verkregen via het volgende commando:
