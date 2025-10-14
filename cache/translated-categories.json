@@ -854,13 +854,6 @@
           "scriptPath": "p3/scripts/office/blender.sh"
         },
         {
-          "name": "Brave Browser",
-          "description": "A privacy-focused web browser with built-in ad blocking.",
-          "icon": "brave.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/office/brave.sh"
-        },
-        {
           "name": "Google Chrome",
           "description": "A popular web browser from Google.",
           "icon": "chrome.svg",
@@ -870,7 +863,7 @@
         {
           "name": "Cohesion",
           "description": "A community port of Notion for Linux.",
-          "icon": "notion.svg",
+          "icon": "cohesion.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/cohesion.sh"
         },
@@ -1383,6 +1376,13 @@
           "description": "Tools and resources for privacy on Linux.",
           "mode": "menu",
           "tools": [
+            {
+              "name": "Brave Browser",
+              "description": "A privacy-focused web browser with built-in ad blocking.",
+              "icon": "brave.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/privacy/brave.sh"
+            },
             {
               "name": "Cryptomator",
               "description": "Encryption for your cloud made easy.",
@@ -2343,13 +2343,6 @@
           "scriptPath": "p3/scripts/office/blender.sh"
         },
         {
-          "name": "Brave Browser",
-          "description": "Um navegador web focado em privacidade com bloqueio de anúncios integrado.",
-          "icon": "brave.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/office/brave.sh"
-        },
-        {
           "name": "Google Chrome",
           "description": "Um popular navegador da web do Google.",
           "icon": "chrome.svg",
@@ -2359,7 +2352,7 @@
         {
           "name": "Cohesion",
           "description": "Um port da comunidade do Notion para Linux.",
-          "icon": "notion.svg",
+          "icon": "cohesion.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/cohesion.sh"
         },
@@ -2872,6 +2865,13 @@
           "description": "Ferramentas e recursos para privacidade no Linux.",
           "mode": "menu",
           "tools": [
+            {
+              "name": "Brave Browser",
+              "description": "Um navegador web focado em privacidade com bloqueio de anúncios integrado.",
+              "icon": "brave.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/privacy/brave.sh"
+            },
             {
               "name": "Cryptomator",
               "description": "Criptografia para sua nuvem facilitada.",
@@ -3832,13 +3832,6 @@
           "scriptPath": "p3/scripts/office/blender.sh"
         },
         {
-          "name": "Brave Browser",
-          "description": "Un navegador web centrado en la privacidad con bloqueo de anuncios integrado.",
-          "icon": "brave.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/office/brave.sh"
-        },
-        {
           "name": "Google Chrome",
           "description": "Un popular navegador web de Google.",
           "icon": "chrome.svg",
@@ -3848,7 +3841,7 @@
         {
           "name": "Cohesion",
           "description": "Un port comunitario de Notion para Linux.",
-          "icon": "notion.svg",
+          "icon": "cohesion.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/cohesion.sh"
         },
@@ -4361,6 +4354,13 @@
           "description": "Herramientas y recursos para privacidad en Linux.",
           "mode": "menu",
           "tools": [
+            {
+              "name": "Brave Browser",
+              "description": "Un navegador web centrado en la privacidad con bloqueo de anuncios integrado.",
+              "icon": "brave.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/privacy/brave.sh"
+            },
             {
               "name": "Cryptomator",
               "description": "Cifrado para tu nube hecho fácil.",
@@ -5321,13 +5321,6 @@
           "scriptPath": "p3/scripts/office/blender.sh"
         },
         {
-          "name": "Brave Browser",
-          "description": "Un navigateur Web axé sur la confidentialité avec blocage des publicités intégré.",
-          "icon": "brave.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/office/brave.sh"
-        },
-        {
           "name": "Google Chrome",
           "description": "Un navigateur web populaire de Google.",
           "icon": "chrome.svg",
@@ -5337,7 +5330,7 @@
         {
           "name": "Cohesion",
           "description": "Un port communautaire de Notion pour Linux.",
-          "icon": "notion.svg",
+          "icon": "cohesion.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/cohesion.sh"
         },
@@ -5850,6 +5843,13 @@
           "description": "Outils et ressources pour la confidentialité sous Linux.",
           "mode": "menu",
           "tools": [
+            {
+              "name": "Brave Browser",
+              "description": "Un navigateur Web axé sur la confidentialité avec blocage des publicités intégré.",
+              "icon": "brave.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/privacy/brave.sh"
+            },
             {
               "name": "Cryptomator",
               "description": "Chiffrement pour votre cloud rendu facile.",
@@ -6810,13 +6810,6 @@
           "scriptPath": "p3/scripts/office/blender.sh"
         },
         {
-          "name": "Brave Browser",
-          "description": "Ein datenschutzorientierter Webbrowser mit integrierter Werbeblocker.",
-          "icon": "brave.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/office/brave.sh"
-        },
-        {
           "name": "Google Chrome",
           "description": "Ein beliebter Webbrowser von Google.",
           "icon": "chrome.svg",
@@ -6826,7 +6819,7 @@
         {
           "name": "Cohesion",
           "description": "Ein Community-Port von Notion für Linux.",
-          "icon": "notion.svg",
+          "icon": "cohesion.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/cohesion.sh"
         },
@@ -7339,6 +7332,13 @@
           "description": "Werkzeuge und Ressourcen für Datenschutz unter Linux.",
           "mode": "menu",
           "tools": [
+            {
+              "name": "Brave Browser",
+              "description": "Ein datenschutzorientierter Webbrowser mit integrierter Werbeblocker.",
+              "icon": "brave.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/privacy/brave.sh"
+            },
             {
               "name": "Cryptomator",
               "description": "Verschlüsselung für Ihre Cloud ganz einfach.",
@@ -8299,13 +8299,6 @@
           "scriptPath": "p3/scripts/office/blender.sh"
         },
         {
-          "name": "Brave Browser",
-          "description": "一个注重隐私的网络浏览器，内置广告拦截功能。",
-          "icon": "brave.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/office/brave.sh"
-        },
-        {
           "name": "Google Chrome",
           "description": "Google的流行网络浏览器。",
           "icon": "chrome.svg",
@@ -8315,7 +8308,7 @@
         {
           "name": "Cohesion",
           "description": "Notion的社区Linux移植版。",
-          "icon": "notion.svg",
+          "icon": "cohesion.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/cohesion.sh"
         },
@@ -8828,6 +8821,13 @@
           "description": "Linux隐私的工具和资源。",
           "mode": "menu",
           "tools": [
+            {
+              "name": "Brave Browser",
+              "description": "一个注重隐私的网络浏览器，内置广告拦截功能。",
+              "icon": "brave.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/privacy/brave.sh"
+            },
             {
               "name": "Cryptomator",
               "description": "让您的云加密变得简单。",
@@ -9788,13 +9788,6 @@
           "scriptPath": "p3/scripts/office/blender.sh"
         },
         {
-          "name": "Brave Browser",
-          "description": "広告ブロック機能を内蔵したプライバシー重視のWebブラウザ。",
-          "icon": "brave.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/office/brave.sh"
-        },
-        {
           "name": "Google Chrome",
           "description": "Googleの人気のウェブブラウザー。",
           "icon": "chrome.svg",
@@ -9804,7 +9797,7 @@
         {
           "name": "Cohesion",
           "description": "NotionのコミュニティLinuxポート。",
-          "icon": "notion.svg",
+          "icon": "cohesion.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/cohesion.sh"
         },
@@ -10317,6 +10310,13 @@
           "description": "Linuxでのプライバシーのためのツールとリソース。",
           "mode": "menu",
           "tools": [
+            {
+              "name": "Brave Browser",
+              "description": "広告ブロック機能を内蔵したプライバシー重視のWebブラウザ。",
+              "icon": "brave.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/privacy/brave.sh"
+            },
             {
               "name": "Cryptomator",
               "description": "クラウドの暗号化を簡単に。",
@@ -11277,13 +11277,6 @@
           "scriptPath": "p3/scripts/office/blender.sh"
         },
         {
-          "name": "Brave Browser",
-          "description": "Ориентированный на конфиденциальность веб-браузер со встроенной блокировкой рекламы.",
-          "icon": "brave.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/office/brave.sh"
-        },
-        {
           "name": "Google Chrome",
           "description": "Популярный веб-браузер от Google.",
           "icon": "chrome.svg",
@@ -11293,7 +11286,7 @@
         {
           "name": "Cohesion",
           "description": "Сообщественный порт Notion для Linux.",
-          "icon": "notion.svg",
+          "icon": "cohesion.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/cohesion.sh"
         },
@@ -11806,6 +11799,13 @@
           "description": "Инструменты и ресурсы для конфиденциальности в Linux.",
           "mode": "menu",
           "tools": [
+            {
+              "name": "Brave Browser",
+              "description": "Ориентированный на конфиденциальность веб-браузер со встроенной блокировкой рекламы.",
+              "icon": "brave.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/privacy/brave.sh"
+            },
             {
               "name": "Cryptomator",
               "description": "Шифрование для вашего облака стало простым.",
