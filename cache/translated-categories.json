@@ -289,6 +289,13 @@
           "scriptPath": "p3/scripts/drivers/icr.sh"
         },
         {
+          "name": "Intel Xe Driver",
+          "description": "Switches Intel drivers to the newer Xe driver on supported discrete GPUs (Battlemage/Alchemist) to improve performance and compatibility.",
+          "icon": "intel.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/intelxe.sh"
+        },
+        {
           "name": "Kernel module signing",
           "description": "Enables signing kernel modules and drivers with a Machine Owner Key for Secure Boot.",
           "icon": "sign.svg",
@@ -512,6 +519,13 @@
           "scriptPath": "p3/scripts/extra/corefonts.sh"
         },
         {
+          "name": "DNSMasq",
+          "description": "Set up local DNS caching to speed up domain name resolution, improve browsing performance and fix problems with losing download speeds on Steam.",
+          "icon": "network.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/dnsmasq.sh"
+        },
+        {
           "name": "Split-lock Mitigation Disabler",
           "description": "Disable split-lock mitigation, which is not a security feature therefore is safe to disable, for improved performance in many apps and games.",
           "icon": "utils.svg",
@@ -533,8 +547,8 @@
           "scriptPath": "p3/scripts/extra/grubtrfs.sh"
         },
         {
-          "name": "GTK Battlemage Fix",
-          "description": "Fixes rendering issues with GTK applications on Intel Battlemage (B-series) GPUs.",
+          "name": "GTK Rendering Fix",
+          "description": "Fixes rendering issues with GTK applications on Intel Battlemage (B-series) and Nvidia GPUs.",
           "icon": "intel.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/gtk-bmg-fix.sh"
@@ -746,6 +760,13 @@
           "scriptPath": "p3/scripts/game/osu.sh"
         },
         {
+          "name": "Prism Launcher",
+          "description": "A custom launcher for Minecraft Java Edition with support for mods and shaders.",
+          "icon": "prism.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/game/prism.sh"
+        },
+        {
           "name": "ProtonPlus",
           "description": "A GTK-based tool to easily obtain community runners for gaming on Linux.",
           "icon": "protonplus.svg",
@@ -831,6 +852,13 @@
           "icon": "blender.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/blender.sh"
+        },
+        {
+          "name": "Brave Browser",
+          "description": "A privacy-focused web browser with built-in ad blocking.",
+          "icon": "brave.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/office/brave.sh"
         },
         {
           "name": "Google Chrome",
@@ -1232,6 +1260,13 @@
           "icon": "peazip.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/peazip.sh"
+        },
+        {
+          "name": "Pika Backup",
+          "description": "A simple and space-efficient backup application based on BorgBackup.",
+          "icon": "pika.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/pika.sh"
         },
         {
           "name": "QPWGraph",
@@ -1743,6 +1778,13 @@
           "scriptPath": "p3/scripts/drivers/icr.sh"
         },
         {
+          "name": "Intel Xe Driver",
+          "description": "Alterna os drivers Intel para o driver Xe mais recente em GPUs discretas suportadas (Battlemage/Alchemist) para melhorar o desempenho e a compatibilidade.",
+          "icon": "intel.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/intelxe.sh"
+        },
+        {
           "name": "Assinatura de módulos do kernel",
           "description": "Habilita a assinatura de drivers e módulos do kernel com uma chave local (MOK) para uso com Secure Boot.",
           "icon": "sign.svg",
@@ -1966,6 +2008,13 @@
           "scriptPath": "p3/scripts/extra/corefonts.sh"
         },
         {
+          "name": "DNSMasq",
+          "description": "Configure o cache DNS local para acelerar a resolução de nomes de domínio, melhorar o desempenho de navegação e corrigir problemas com perda de velocidade de download no Steam.",
+          "icon": "network.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/dnsmasq.sh"
+        },
+        {
           "name": "Desativar Mitigação de Split-lock",
           "description": "Desativa a mitigação de split-lock, que não é um recurso de segurança, portanto é seguro desativá-la, para melhorar o desempenho em muitos aplicativos e jogos.",
           "icon": "utils.svg",
@@ -1987,8 +2036,8 @@
           "scriptPath": "p3/scripts/extra/grubtrfs.sh"
         },
         {
-          "name": "Correção GTK Battlemage",
-          "description": "Corrige problemas de renderização com aplicações GTK em GPUs Intel Battlemage (série B).",
+          "name": "Correção de renderização GTK",
+          "description": "Corrige problemas de renderização com aplicativos GTK em GPUs Intel Battlemage (série B) e Nvidia.",
           "icon": "intel.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/gtk-bmg-fix.sh"
@@ -2200,6 +2249,13 @@
           "scriptPath": "p3/scripts/game/osu.sh"
         },
         {
+          "name": "Prism Launcher",
+          "description": "Um lançador personalizado para Minecraft Java Edition com suporte para mods e shaders.",
+          "icon": "prism.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/game/prism.sh"
+        },
+        {
           "name": "ProtonPlus",
           "description": "Uma ferramenta baseada em GTK para obter facilmente runners da comunidade para jogos no Linux.",
           "icon": "protonplus.svg",
@@ -2285,6 +2341,13 @@
           "icon": "blender.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/blender.sh"
+        },
+        {
+          "name": "Brave Browser",
+          "description": "Um navegador web focado em privacidade com bloqueio de anúncios integrado.",
+          "icon": "brave.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/office/brave.sh"
         },
         {
           "name": "Google Chrome",
@@ -2686,6 +2749,13 @@
           "icon": "peazip.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/peazip.sh"
+        },
+        {
+          "name": "Pika Backup",
+          "description": "Um aplicativo de backup simples e eficiente em espaço baseado em BorgBackup.",
+          "icon": "pika.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/pika.sh"
         },
         {
           "name": "QPWGraph",
@@ -3197,6 +3267,13 @@
           "scriptPath": "p3/scripts/drivers/icr.sh"
         },
         {
+          "name": "Intel Xe Driver",
+          "description": "Cambia los controladores de Intel al controlador Xe más nuevo en GPU discretas compatibles (Battlemage/Alchemist) para mejorar el rendimiento y la compatibilidad.",
+          "icon": "intel.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/intelxe.sh"
+        },
+        {
           "name": "Firma de módulos del kernel",
           "description": "Habilita la firma de módulos del kernel y controladores con una Clave de Propietario de Máquina para Secure Boot.",
           "icon": "sign.svg",
@@ -3420,6 +3497,13 @@
           "scriptPath": "p3/scripts/extra/corefonts.sh"
         },
         {
+          "name": "DNSMasq",
+          "description": "Configure el almacenamiento en caché de DNS local para acelerar la resolución de nombres de dominio, mejorar el rendimiento de navegación y solucionar problemas con la pérdida de velocidad de descarga en Steam.",
+          "icon": "network.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/dnsmasq.sh"
+        },
+        {
           "name": "Deshabilitador de Mitigación Split-lock",
           "description": "Deshabilita la mitigación split-lock, que no es una característica de seguridad por lo tanto es seguro deshabilitar, para mejorar el rendimiento en muchas aplicaciones y juegos.",
           "icon": "utils.svg",
@@ -3441,8 +3525,8 @@
           "scriptPath": "p3/scripts/extra/grubtrfs.sh"
         },
         {
-          "name": "Corrección GTK Battlemage",
-          "description": "Soluciona problemas de renderizado con aplicaciones GTK en GPUs Intel Battlemage (serie B).",
+          "name": "Corrección de renderizado GTK",
+          "description": "Soluciona problemas de renderizado con aplicaciones GTK en Intel Battlemage (serie B) y GPU Nvidia.",
           "icon": "intel.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/gtk-bmg-fix.sh"
@@ -3654,6 +3738,13 @@
           "scriptPath": "p3/scripts/game/osu.sh"
         },
         {
+          "name": "Prism Launcher",
+          "description": "Un lanzador personalizado para Minecraft Java Edition con soporte para mods y shaders.",
+          "icon": "prism.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/game/prism.sh"
+        },
+        {
           "name": "ProtonPlus",
           "description": "Una herramienta basada en GTK para obtener fácilmente runners comunitarios para juegos en Linux.",
           "icon": "protonplus.svg",
@@ -3739,6 +3830,13 @@
           "icon": "blender.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/blender.sh"
+        },
+        {
+          "name": "Brave Browser",
+          "description": "Un navegador web centrado en la privacidad con bloqueo de anuncios integrado.",
+          "icon": "brave.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/office/brave.sh"
         },
         {
           "name": "Google Chrome",
@@ -4140,6 +4238,13 @@
           "icon": "peazip.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/peazip.sh"
+        },
+        {
+          "name": "Pika Backup",
+          "description": "Una aplicación de respaldo simple y eficiente en espacio basada en BorgBackup.",
+          "icon": "pika.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/pika.sh"
         },
         {
           "name": "QPWGraph",
@@ -4651,6 +4756,13 @@
           "scriptPath": "p3/scripts/drivers/icr.sh"
         },
         {
+          "name": "Intel Xe Driver",
+          "description": "Change les pilotes Intel vers le pilote Xe plus récent sur les GPU discrets pris en charge (Battlemage/Alchemist) pour améliorer les performances et la compatibilité.",
+          "icon": "intel.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/intelxe.sh"
+        },
+        {
           "name": "Signature des modules noyau",
           "description": "Active la signature des modules noyau et pilotes avec une clé propriétaire de machine (MOK) pour Secure Boot.",
           "icon": "sign.svg",
@@ -4874,6 +4986,13 @@
           "scriptPath": "p3/scripts/extra/corefonts.sh"
         },
         {
+          "name": "DNSMasq",
+          "description": "Configurez la mise en cache DNS locale pour accélérer la résolution des noms de domaine, améliorer les performances de navigation et résoudre les problèmes de perte de vitesse de téléchargement sur Steam.",
+          "icon": "network.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/dnsmasq.sh"
+        },
+        {
           "name": "Désactivateur de mitigation Split-lock",
           "description": "Désactive la mitigation split-lock, qui n'est pas une fonctionnalité de sécurité et peut donc être désactivée en toute sécurité, pour de meilleures performances dans de nombreuses applications et jeux.",
           "icon": "utils.svg",
@@ -4895,8 +5014,8 @@
           "scriptPath": "p3/scripts/extra/grubtrfs.sh"
         },
         {
-          "name": "Correctif GTK Battlemage",
-          "description": "Corrige les problèmes de rendu avec les applications GTK sur les GPU Intel Battlemage (série B).",
+          "name": "Correction du rendu GTK",
+          "description": "Corrige les problèmes de rendu avec les applications GTK sur les GPU Intel Battlemage (série B) et Nvidia.",
           "icon": "intel.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/gtk-bmg-fix.sh"
@@ -5108,6 +5227,13 @@
           "scriptPath": "p3/scripts/game/osu.sh"
         },
         {
+          "name": "Prism Launcher",
+          "description": "Un lanceur personnalisé pour Minecraft Java Edition avec prise en charge des mods et des shaders.",
+          "icon": "prism.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/game/prism.sh"
+        },
+        {
           "name": "ProtonPlus",
           "description": "Un outil basé sur GTK pour obtenir facilement des runners communautaires pour le gaming sous Linux.",
           "icon": "protonplus.svg",
@@ -5193,6 +5319,13 @@
           "icon": "blender.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/blender.sh"
+        },
+        {
+          "name": "Brave Browser",
+          "description": "Un navigateur Web axé sur la confidentialité avec blocage des publicités intégré.",
+          "icon": "brave.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/office/brave.sh"
         },
         {
           "name": "Google Chrome",
@@ -5594,6 +5727,13 @@
           "icon": "peazip.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/peazip.sh"
+        },
+        {
+          "name": "Pika Backup",
+          "description": "Une application de sauvegarde simple et économe en espace basée sur BorgBackup.",
+          "icon": "pika.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/pika.sh"
         },
         {
           "name": "QPWGraph",
@@ -6105,6 +6245,13 @@
           "scriptPath": "p3/scripts/drivers/icr.sh"
         },
         {
+          "name": "Intel Xe Driver",
+          "description": "Wechselt Intel-Treiber zum neueren Xe-Treiber auf unterstützten dedizierten GPUs (Battlemage/Alchemist), um Leistung und Kompatibilität zu verbessern.",
+          "icon": "intel.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/intelxe.sh"
+        },
+        {
           "name": "Kernel-Modul-Signierung",
           "description": "Ermöglicht die Signierung von Kernel-Modulen und Treibern mit einem Machine Owner Key für Secure Boot.",
           "icon": "sign.svg",
@@ -6328,6 +6475,13 @@
           "scriptPath": "p3/scripts/extra/corefonts.sh"
         },
         {
+          "name": "DNSMasq",
+          "description": "Richten Sie lokales DNS-Caching ein, um die Auflösung von Domainnamen zu beschleunigen, die Browser-Leistung zu verbessern und Probleme mit dem Verlust der Download-Geschwindigkeit bei Steam zu beheben.",
+          "icon": "network.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/dnsmasq.sh"
+        },
+        {
           "name": "Split-lock Mitigation Deaktivierer",
           "description": "Deaktiviert Split-lock-Mitigation, die keine Sicherheitsfunktion ist und daher sicher deaktiviert werden kann, für verbesserte Leistung in vielen Apps und Spielen.",
           "icon": "utils.svg",
@@ -6349,8 +6503,8 @@
           "scriptPath": "p3/scripts/extra/grubtrfs.sh"
         },
         {
-          "name": "GTK Battlemage-Fix",
-          "description": "Behebt Rendering-Probleme mit GTK-Anwendungen auf Intel Battlemage (B-Serie) GPUs.",
+          "name": "GTK-Rendering-Fix",
+          "description": "Behebt Rendering-Probleme mit GTK-Anwendungen auf Intel Battlemage (B-Serie) und Nvidia-GPUs.",
           "icon": "intel.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/gtk-bmg-fix.sh"
@@ -6562,6 +6716,13 @@
           "scriptPath": "p3/scripts/game/osu.sh"
         },
         {
+          "name": "Prism Launcher",
+          "description": "Ein benutzerdefinierter Launcher für Minecraft Java Edition mit Unterstützung für Mods und Shader.",
+          "icon": "prism.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/game/prism.sh"
+        },
+        {
           "name": "ProtonPlus",
           "description": "Ein GTK-basiertes Tool zum einfachen Erhalten von Community-Runnern für Gaming unter Linux.",
           "icon": "protonplus.svg",
@@ -6647,6 +6808,13 @@
           "icon": "blender.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/blender.sh"
+        },
+        {
+          "name": "Brave Browser",
+          "description": "Ein datenschutzorientierter Webbrowser mit integrierter Werbeblocker.",
+          "icon": "brave.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/office/brave.sh"
         },
         {
           "name": "Google Chrome",
@@ -7048,6 +7216,13 @@
           "icon": "peazip.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/peazip.sh"
+        },
+        {
+          "name": "Pika Backup",
+          "description": "Eine einfache und platzsparende Backup-Anwendung basierend auf BorgBackup.",
+          "icon": "pika.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/pika.sh"
         },
         {
           "name": "QPWGraph",
@@ -7559,6 +7734,13 @@
           "scriptPath": "p3/scripts/drivers/icr.sh"
         },
         {
+          "name": "Intel Xe Driver",
+          "description": "将Intel驱动程序切换到受支持的独立GPU（Battlemage/Alchemist）上的较新Xe驱动程序，以提高性能和兼容性。",
+          "icon": "intel.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/intelxe.sh"
+        },
+        {
           "name": "内核模块签名",
           "description": "启用使用机器所有者密钥为Secure Boot签名内核模块和驱动程序。",
           "icon": "sign.svg",
@@ -7782,6 +7964,13 @@
           "scriptPath": "p3/scripts/extra/corefonts.sh"
         },
         {
+          "name": "DNSMasq",
+          "description": "设置本地DNS缓存以加快域名解析速度，提高浏览性能并修复Steam上下载速度丢失的问题。",
+          "icon": "network.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/dnsmasq.sh"
+        },
+        {
           "name": "Split-lock缓解禁用器",
           "description": "禁用split-lock缓解，这不是安全功能，因此禁用是安全的，可以提高许多应用程序和游戏的性能。",
           "icon": "utils.svg",
@@ -7803,8 +7992,8 @@
           "scriptPath": "p3/scripts/extra/grubtrfs.sh"
         },
         {
-          "name": "GTK Battlemage 修复",
-          "description": "修复 Intel Battlemage（B 系列）GPU 上 GTK 应用程序的渲染问题。",
+          "name": "GTK渲染修复",
+          "description": "修复Intel Battlemage（B系列）和Nvidia GPU上GTK应用程序的渲染问题。",
           "icon": "intel.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/gtk-bmg-fix.sh"
@@ -8016,6 +8205,13 @@
           "scriptPath": "p3/scripts/game/osu.sh"
         },
         {
+          "name": "Prism Launcher",
+          "description": "一个支持模组和光影的Minecraft Java版自定义启动器。",
+          "icon": "prism.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/game/prism.sh"
+        },
+        {
           "name": "ProtonPlus",
           "description": "基于GTK的工具，用于轻松获取Linux游戏的社区运行器。",
           "icon": "protonplus.svg",
@@ -8101,6 +8297,13 @@
           "icon": "blender.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/blender.sh"
+        },
+        {
+          "name": "Brave Browser",
+          "description": "一个注重隐私的网络浏览器，内置广告拦截功能。",
+          "icon": "brave.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/office/brave.sh"
         },
         {
           "name": "Google Chrome",
@@ -8502,6 +8705,13 @@
           "icon": "peazip.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/peazip.sh"
+        },
+        {
+          "name": "Pika Backup",
+          "description": "一个基于BorgBackup的简单且节省空间的备份应用程序。",
+          "icon": "pika.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/pika.sh"
         },
         {
           "name": "QPWGraph",
@@ -9013,6 +9223,13 @@
           "scriptPath": "p3/scripts/drivers/icr.sh"
         },
         {
+          "name": "Intel Xe Driver",
+          "description": "サポートされている独立GPU（Battlemage/Alchemist）でIntelドライバーを新しいXeドライバーに切り替えて、パフォーマンスと互換性を向上させます。",
+          "icon": "intel.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/intelxe.sh"
+        },
+        {
           "name": "カーネルモジュール署名",
           "description": "Secure Boot用のMachine Owner Keyでカーネルモジュールとドライバーの署名を有効化。",
           "icon": "sign.svg",
@@ -9236,6 +9453,13 @@
           "scriptPath": "p3/scripts/extra/corefonts.sh"
         },
         {
+          "name": "DNSMasq",
+          "description": "ローカルDNSキャッシュを設定して、ドメイン名解決を高速化し、ブラウジングパフォーマンスを向上させ、Steamでのダウンロード速度低下の問題を修正します。",
+          "icon": "network.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/dnsmasq.sh"
+        },
+        {
           "name": "Split-lock緩和無効化",
           "description": "セキュリティ機能ではないため無効化が安全なsplit-lock緩和を無効にして、多くのアプリとゲームでのパフォーマンスを向上させます。",
           "icon": "utils.svg",
@@ -9257,8 +9481,8 @@
           "scriptPath": "p3/scripts/extra/grubtrfs.sh"
         },
         {
-          "name": "GTK Battlemage 修正",
-          "description": "Intel Battlemage (B シリーズ) GPU で GTK アプリケーションのレンダリングの問題を修正します。",
+          "name": "GTKレンダリング修正",
+          "description": "Intel Battlemage（Bシリーズ）およびNvidia GPUでのGTKアプリケーションのレンダリング問題を修正します。",
           "icon": "intel.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/gtk-bmg-fix.sh"
@@ -9470,6 +9694,13 @@
           "scriptPath": "p3/scripts/game/osu.sh"
         },
         {
+          "name": "Prism Launcher",
+          "description": "MODとシェーダーのサポートを備えたMinecraft Java Editionのカスタムランチャー。",
+          "icon": "prism.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/game/prism.sh"
+        },
+        {
           "name": "ProtonPlus",
           "description": "Linuxゲーミングのためのコミュニティランナーを簡単に取得するGTKベースのツール。",
           "icon": "protonplus.svg",
@@ -9555,6 +9786,13 @@
           "icon": "blender.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/blender.sh"
+        },
+        {
+          "name": "Brave Browser",
+          "description": "広告ブロック機能を内蔵したプライバシー重視のWebブラウザ。",
+          "icon": "brave.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/office/brave.sh"
         },
         {
           "name": "Google Chrome",
@@ -9956,6 +10194,13 @@
           "icon": "peazip.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/peazip.sh"
+        },
+        {
+          "name": "Pika Backup",
+          "description": "BorgBackupベースのシンプルでスペース効率の良いバックアップアプリケーション。",
+          "icon": "pika.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/pika.sh"
         },
         {
           "name": "QPWGraph",
@@ -10467,6 +10712,13 @@
           "scriptPath": "p3/scripts/drivers/icr.sh"
         },
         {
+          "name": "Intel Xe Driver",
+          "description": "Переключает драйверы Intel на более новый драйвер Xe на поддерживаемых дискретных GPU (Battlemage/Alchemist) для улучшения производительности и совместимости.",
+          "icon": "intel.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/intelxe.sh"
+        },
+        {
           "name": "Подписывание модулей ядра",
           "description": "Включает подписывание модулей ядра и драйверов с помощью Machine Owner Key для Secure Boot.",
           "icon": "sign.svg",
@@ -10690,6 +10942,13 @@
           "scriptPath": "p3/scripts/extra/corefonts.sh"
         },
         {
+          "name": "DNSMasq",
+          "description": "Настройте локальное кэширование DNS для ускорения разрешения доменных имён, улучшения производительности браузера и устранения проблем с потерей скорости загрузки в Steam.",
+          "icon": "network.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/dnsmasq.sh"
+        },
+        {
           "name": "Отключение митигации Split-lock",
           "description": "Отключает митигацию split-lock, которая не является функцией безопасности и поэтому безопасна для отключения, для улучшения производительности во многих приложениях и играх.",
           "icon": "utils.svg",
@@ -10711,8 +10970,8 @@
           "scriptPath": "p3/scripts/extra/grubtrfs.sh"
         },
         {
-          "name": "Исправление GTK Battlemage",
-          "description": "Исправляет проблемы с отрисовкой GTK-приложений на GPU Intel Battlemage (серия B).",
+          "name": "Исправление рендеринга GTK",
+          "description": "Исправляет проблемы рендеринга приложений GTK на Intel Battlemage (серия B) и Nvidia GPU.",
           "icon": "intel.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/gtk-bmg-fix.sh"
@@ -10924,6 +11183,13 @@
           "scriptPath": "p3/scripts/game/osu.sh"
         },
         {
+          "name": "Prism Launcher",
+          "description": "Пользовательский лаунчер для Minecraft Java Edition с поддержкой модов и шейдеров.",
+          "icon": "prism.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/game/prism.sh"
+        },
+        {
           "name": "ProtonPlus",
           "description": "Инструмент на основе GTK для лёгкого получения сообщественных раннеров для игр в Linux.",
           "icon": "protonplus.svg",
@@ -11009,6 +11275,13 @@
           "icon": "blender.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/blender.sh"
+        },
+        {
+          "name": "Brave Browser",
+          "description": "Ориентированный на конфиденциальность веб-браузер со встроенной блокировкой рекламы.",
+          "icon": "brave.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/office/brave.sh"
         },
         {
           "name": "Google Chrome",
@@ -11410,6 +11683,13 @@
           "icon": "peazip.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/peazip.sh"
+        },
+        {
+          "name": "Pika Backup",
+          "description": "Простое и экономичное приложение для резервного копирования на основе BorgBackup.",
+          "icon": "pika.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/pika.sh"
         },
         {
           "name": "QPWGraph",
