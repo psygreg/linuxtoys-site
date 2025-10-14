@@ -846,13 +846,6 @@
         "scriptPath": "p3/scripts/office/blender.sh"
       },
       {
-        "name": "Brave Browser",
-        "description": "brave_desc",
-        "icon": "brave.svg",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/office/brave.sh"
-      },
-      {
         "name": "Google Chrome",
         "description": "chrome_desc",
         "icon": "chrome.svg",
@@ -862,7 +855,7 @@
       {
         "name": "Cohesion",
         "description": "cohesion_desc",
-        "icon": "notion.svg",
+        "icon": "cohesion.svg",
         "version": "1.0",
         "scriptPath": "p3/scripts/office/cohesion.sh"
       },
@@ -1371,6 +1364,13 @@
         "description": "privacy_desc",
         "mode": "menu",
         "tools": [
+          {
+            "name": "Brave Browser",
+            "description": "brave_desc",
+            "icon": "brave.svg",
+            "version": "1.0",
+            "scriptPath": "p3/scripts/utils/privacy/brave.sh"
+          },
           {
             "name": "Cryptomator",
             "description": "cryptomator_desc",
