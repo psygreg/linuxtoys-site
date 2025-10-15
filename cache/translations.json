@@ -289,7 +289,15 @@
     "brave_desc": "A privacy-focused web browser with built-in ad blocking.",
     "gtk_bmg_fix": "GTK Rendering Fix",
     "gtk_bmg_fix_desc": "Fixes rendering issues with GTK applications on Intel Battlemage (B-series) and Nvidia GPUs.",
-    "intelxe_desc": "Switches Intel drivers to the newer Xe driver on supported discrete GPUs (Battlemage/Alchemist) to improve performance and compatibility."
+    "intelxe_desc": "Switches Intel drivers to the newer Xe driver on supported discrete GPUs (Battlemage/Alchemist) to improve performance and compatibility.",
+    "term_view_execute": " Execute ",
+    "term_view_running_label": " Running ",
+    "term_view_done": " Done ",
+    "term_view_waiting": "Waiting {current}/{total}",
+    "term_view_running": "Running {current}/{total}",
+    "term_view_done_text": "Done",
+    "archsb": "Secure Boot for Arch",
+    "archsb_desc": "Quickly set up Secure Boot on Arch Linux. Requires setting the Secure Boot mode to \"Setup\" in your UEFI firmware settings."
   },
   "pt": {
     "subtitle": "Uma coleção amigável de ferramentas para Linux.",
@@ -581,7 +589,15 @@
     "pika_desc": "Um aplicativo de backup simples e eficiente em espaço baseado em BorgBackup.",
     "prism_desc": "Um lançador personalizado para Minecraft Java Edition com suporte para mods e shaders.",
     "brave_desc": "Um navegador web focado em privacidade com bloqueio de anúncios integrado.",
-    "intelxe_desc": "Alterna os drivers Intel para o driver Xe mais recente em GPUs discretas suportadas (Battlemage/Alchemist) para melhorar o desempenho e a compatibilidade."
+    "intelxe_desc": "Alterna os drivers Intel para o driver Xe mais recente em GPUs discretas suportadas (Battlemage/Alchemist) para melhorar o desempenho e a compatibilidade.",
+    "term_view_execute": " Executar ",
+    "term_view_running_label": " Executando ",
+    "term_view_done": " Concluído ",
+    "term_view_waiting": "Aguardando {current}/{total}",
+    "term_view_running": "Executando {current}/{total}",
+    "term_view_done_text": "Concluído",
+    "archsb": "Secure Boot para Arch",
+    "archsb_desc": "Configure rapidamente o Secure Boot no Arch Linux. Requer configurar o modo Secure Boot para \"Setup\" nas configurações de firmware UEFI."
   },
   "es": {
     "subtitle": "Una colección amigable de herramientas para Linux.",
@@ -873,7 +889,15 @@
     "pika_desc": "Una aplicación de respaldo simple y eficiente en espacio basada en BorgBackup.",
     "prism_desc": "Un lanzador personalizado para Minecraft Java Edition con soporte para mods y shaders.",
     "brave_desc": "Un navegador web centrado en la privacidad con bloqueo de anuncios integrado.",
-    "intelxe_desc": "Cambia los controladores de Intel al controlador Xe más nuevo en GPU discretas compatibles (Battlemage/Alchemist) para mejorar el rendimiento y la compatibilidad."
+    "intelxe_desc": "Cambia los controladores de Intel al controlador Xe más nuevo en GPU discretas compatibles (Battlemage/Alchemist) para mejorar el rendimiento y la compatibilidad.",
+    "term_view_execute": " Ejecutar ",
+    "term_view_running_label": " Ejecutando ",
+    "term_view_done": " Listo ",
+    "term_view_waiting": "Esperando {current}/{total}",
+    "term_view_running": "Ejecutando {current}/{total}",
+    "term_view_done_text": "Listo",
+    "archsb": "Secure Boot para Arch",
+    "archsb_desc": "Configure rápidamente Secure Boot en Arch Linux. Requiere configurar el modo Secure Boot en \"Setup\" en la configuración del firmware UEFI."
   },
   "fr": {
     "subtitle": "Une collection d'outils pour Linux de manière conviviale.",
@@ -1165,7 +1189,15 @@
     "pika_desc": "Une application de sauvegarde simple et économe en espace basée sur BorgBackup.",
     "prism_desc": "Un lanceur personnalisé pour Minecraft Java Edition avec prise en charge des mods et des shaders.",
     "brave_desc": "Un navigateur Web axé sur la confidentialité avec blocage des publicités intégré.",
-    "intelxe_desc": "Change les pilotes Intel vers le pilote Xe plus récent sur les GPU discrets pris en charge (Battlemage/Alchemist) pour améliorer les performances et la compatibilité."
+    "intelxe_desc": "Change les pilotes Intel vers le pilote Xe plus récent sur les GPU discrets pris en charge (Battlemage/Alchemist) pour améliorer les performances et la compatibilité.",
+    "term_view_execute": " Exécuter ",
+    "term_view_running_label": " En cours ",
+    "term_view_done": " Terminé ",
+    "term_view_waiting": "En attente {current}/{total}",
+    "term_view_running": "En cours {current}/{total}",
+    "term_view_done_text": "Terminé",
+    "archsb": "Démarrage sécurisé pour Arch",
+    "archsb_desc": "Configurez rapidement le démarrage sécurisé sur Arch Linux. Nécessite de définir le mode de démarrage sécurisé sur \"Setup\" dans les paramètres du firmware UEFI."
   },
   "de": {
     "subtitle": "Eine freundliche Sammlung von Tools für Linux.",
@@ -1457,7 +1489,15 @@
     "pika_desc": "Eine einfache und platzsparende Backup-Anwendung basierend auf BorgBackup.",
     "prism_desc": "Ein benutzerdefinierter Launcher für Minecraft Java Edition mit Unterstützung für Mods und Shader.",
     "brave_desc": "Ein datenschutzorientierter Webbrowser mit integrierter Werbeblocker.",
-    "intelxe_desc": "Wechselt Intel-Treiber zum neueren Xe-Treiber auf unterstützten dedizierten GPUs (Battlemage/Alchemist), um Leistung und Kompatibilität zu verbessern."
+    "intelxe_desc": "Wechselt Intel-Treiber zum neueren Xe-Treiber auf unterstützten dedizierten GPUs (Battlemage/Alchemist), um Leistung und Kompatibilität zu verbessern.",
+    "term_view_execute": " Ausführen ",
+    "term_view_running_label": " Läuft ",
+    "term_view_done": " Fertig ",
+    "term_view_waiting": "Warten {current}/{total}",
+    "term_view_running": "Läuft {current}/{total}",
+    "term_view_done_text": "Fertig",
+    "archsb": "Secure Boot für Arch",
+    "archsb_desc": "Richten Sie Secure Boot schnell auf Arch Linux ein. Erfordert das Setzen des Secure Boot-Modus auf \"Setup\" in Ihren UEFI-Firmware-Einstellungen."
   },
   "zh": {
     "subtitle": "适用于Linux的用户友好工具集合。",
@@ -1751,7 +1791,15 @@
     "pika_desc": "一个基于BorgBackup的简单且节省空间的备份应用程序。",
     "prism_desc": "一个支持模组和光影的Minecraft Java版自定义启动器。",
     "brave_desc": "一个注重隐私的网络浏览器，内置广告拦截功能。",
-    "intelxe_desc": "将Intel驱动程序切换到受支持的独立GPU（Battlemage/Alchemist）上的较新Xe驱动程序，以提高性能和兼容性。"
+    "intelxe_desc": "将Intel驱动程序切换到受支持的独立GPU（Battlemage/Alchemist）上的较新Xe驱动程序，以提高性能和兼容性。",
+    "term_view_execute": " 执行 ",
+    "term_view_running_label": " 运行中 ",
+    "term_view_done": " 完成 ",
+    "term_view_waiting": "等待中 {current}/{total}",
+    "term_view_running": "运行中 {current}/{total}",
+    "term_view_done_text": "完成",
+    "archsb": "Arch 安全启动",
+    "archsb_desc": "在 Arch Linux 上快速设置安全启动。需要在您的 UEFI 固件设置中将安全启动模式设置为\"Setup\"。"
   },
   "ja": {
     "subtitle": "Linuxのためのユーザーフレンドリーなツール集。",
@@ -2043,7 +2091,15 @@
     "pika_desc": "BorgBackupベースのシンプルでスペース効率の良いバックアップアプリケーション。",
     "prism_desc": "MODとシェーダーのサポートを備えたMinecraft Java Editionのカスタムランチャー。",
     "brave_desc": "広告ブロック機能を内蔵したプライバシー重視のWebブラウザ。",
-    "intelxe_desc": "サポートされている独立GPU（Battlemage/Alchemist）でIntelドライバーを新しいXeドライバーに切り替えて、パフォーマンスと互換性を向上させます。"
+    "intelxe_desc": "サポートされている独立GPU（Battlemage/Alchemist）でIntelドライバーを新しいXeドライバーに切り替えて、パフォーマンスと互換性を向上させます。",
+    "term_view_execute": " 実行 ",
+    "term_view_running_label": " 実行中 ",
+    "term_view_done": " 完了 ",
+    "term_view_waiting": "待機中 {current}/{total}",
+    "term_view_running": "実行中 {current}/{total}",
+    "term_view_done_text": "完了",
+    "archsb": "Arch用セキュアブート",
+    "archsb_desc": "Arch Linuxでセキュアブートを素早く設定します。UEFIファームウェア設定でセキュアブートモードを\"Setup\"に設定する必要があります。"
   },
   "ru": {
     "subtitle": "Коллекция инструментов для Linux в удобном формате.",
@@ -2335,6 +2391,14 @@
     "pika_desc": "Простое и экономичное приложение для резервного копирования на основе BorgBackup.",
     "prism_desc": "Пользовательский лаунчер для Minecraft Java Edition с поддержкой модов и шейдеров.",
     "brave_desc": "Ориентированный на конфиденциальность веб-браузер со встроенной блокировкой рекламы.",
-    "intelxe_desc": "Переключает драйверы Intel на более новый драйвер Xe на поддерживаемых дискретных GPU (Battlemage/Alchemist) для улучшения производительности и совместимости."
+    "intelxe_desc": "Переключает драйверы Intel на более новый драйвер Xe на поддерживаемых дискретных GPU (Battlemage/Alchemist) для улучшения производительности и совместимости.",
+    "term_view_execute": " Выполнить ",
+    "term_view_running_label": " Выполняется ",
+    "term_view_done": " Готово ",
+    "term_view_waiting": "Ожидание {current}/{total}",
+    "term_view_running": "Выполняется {current}/{total}",
+    "term_view_done_text": "Готово",
+    "archsb": "Безопасная загрузка для Arch",
+    "archsb_desc": "Быстро настройте безопасную загрузку на Arch Linux. Требуется установить режим безопасной загрузки в \"Setup\" в настройках прошивки UEFI."
   }
 }
