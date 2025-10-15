@@ -471,6 +471,13 @@
     "mode": "menu",
     "tools": [
       {
+        "name": "archsb",
+        "description": "archsb_desc",
+        "icon": "application-x-executable",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/archsb.sh"
+      },
+      {
         "name": "btrfs-Assistant",
         "description": "btassist_desc",
         "icon": "btassist.svg",
