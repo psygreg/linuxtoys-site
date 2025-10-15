@@ -348,17 +348,12 @@ wifi.backend=iwd
 
 ### CPU ondemand
 
-Изменяет стандартный регулятор GPU на `ondemand` (`powersave` является стандартом для большинства дистрибутивов), делая частоты процессора более отзывчивыми и увеличивая отзывчивость и производительность системы при небольшом среднем увеличении потребления энергии. Не рекомендуется для ноутбуков из-за их ограниченных возможностей теплоотвода.
+Изменяет стандартный регулятор на `schedutil` для процессоров Intel (`powersave` является стандартом для большинства дистрибутивов); или изменяет внутренний энергетический профиль процессоров AMD (Zen 2 и новее) на `balance_performance`. Делая частоты процессора более отзывчивыми и увеличивая отзывчивость и производительность системы при небольшом среднем увеличении потребления энергии. Не рекомендуется для ноутбуков из-за их ограниченных возможностей теплоотвода.
 
 **Примененные пользовательские настройки**
-- Для процессоров *Intel* драйвер `intel_pstate` предотвращает использование регулятора `ondemand` и должен быть отключен первым:
+- Для процессоров *Intel* драйвер `intel_pstate` предотвращает использование регулятора `ondemand` и должен быть отключен первым. Это делается путем добавления следующего параметра ядра в `GRUB_CMDLINE_LINUX` или в виде файла конфигурации `systemd-boot`.
 ```
-if [ -n "${GRUB_CMDLINE_LINUX}" ]; then
-    GRUB_CMDLINE_LINUX="${GRUB_CMDLINE_LINUX} intel_pstate=disable"
-else
-    GRUB_CMDLINE_LINUX="intel_pstate=disable"
-fi
-export GRUB_CMDLINE_LINUX
+intel_pstate=disable
 ```
 - Создает и включает новую службу systemd: `/etc/systemd/system/set-ondemand-governor.service`
 ```
@@ -368,11 +363,15 @@ After=multi-user.target
 
 [Service]
 Type=oneshot
-ExecStart=/bin/bash -c 'for cpu in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor; do echo ondemand > "$cpu" 2>/dev/null || true; done'
+ExecStart=/bin/bash -c 'for cpu in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor; do echo schedutil > "$cpu" 2>/dev/null || true; done'
 RemainAfterExit=yes
 
 [Install]
 WantedBy=multi-user.target
+```
+- Если работает совместимый процессор AMD, строка `ExecStart=` будет:
+```
+ExecStart=/bin/bash -c 'for cpu in /sys/devices/system/cpu/cpu*/cpufreq/energy_performance_preference; do echo balance_performance > "$cpu" 2>/dev/null || true; done'
 ```
 
 ### Power Optimizer

@@ -348,17 +348,12 @@ Geïnstalleerd met het officiële script van zijn [repository](https://github.co
 
 ### CPU ondemand
 
-Wijzigt de standaard GPU governor naar `ondemand` (`powersave` is de standaard voor de meeste distributies), maakt CPU frequenties meer reactief en verhoogt systeemresponsiviteit en prestaties, tegen een lichte gemiddelde stroomverbruik verhoging. Niet aanbevolen op laptops vanwege hun beperkte thermische afvoercapaciteiten.
+Wijzigt de standaard governor naar `schedutil` voor Intel CPUs (`powersave` is de standaard voor de meeste distributies); of wijzigt het interne energieprofiel van AMD (Zen 2 en nieuwer) processors naar `balance_performance`. Maakt CPU frequenties meer reactief en verhoogt systeemresponsiviteit en prestaties, tegen een lichte gemiddelde stroomverbruik verhoging. Niet aanbevolen op laptops vanwege hun beperkte thermische afvoercapaciteiten.
 
 **Aangepaste instellingen toegepast**
-- Voor *Intel* CPUs, de `intel_pstate` driver voorkomt het gebruik van `ondemand` governor en moet eerst uitgeschakeld worden:
+- Voor *Intel* CPUs, de `intel_pstate` driver voorkomt het gebruik van `ondemand` governor en moet eerst uitgeschakeld worden. Dit wordt gedaan door de volgende kernel parameter toe te voegen aan `GRUB_CMDLINE_LINUX` of als een `systemd-boot` configuratiebestand.
 ```
-if [ -n "${GRUB_CMDLINE_LINUX}" ]; then
-    GRUB_CMDLINE_LINUX="${GRUB_CMDLINE_LINUX} intel_pstate=disable"
-else
-    GRUB_CMDLINE_LINUX="intel_pstate=disable"
-fi
-export GRUB_CMDLINE_LINUX
+intel_pstate=disable
 ```
 - Creëert en schakelt een nieuwe systemd service in: `/etc/systemd/system/set-ondemand-governor.service`
 ```
@@ -368,11 +363,15 @@ After=multi-user.target
 
 [Service]
 Type=oneshot
-ExecStart=/bin/bash -c 'for cpu in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor; do echo ondemand > "$cpu" 2>/dev/null || true; done'
+ExecStart=/bin/bash -c 'for cpu in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor; do echo schedutil > "$cpu" 2>/dev/null || true; done'
 RemainAfterExit=yes
 
 [Install]
 WantedBy=multi-user.target
+```
+- Als een compatibele AMD cpu wordt uitgevoerd, zal de `ExecStart=` regel zijn:
+```
+ExecStart=/bin/bash -c 'for cpu in /sys/devices/system/cpu/cpu*/cpufreq/energy_performance_preference; do echo balance_performance > "$cpu" 2>/dev/null || true; done'
 ```
 
 ### Power Optimizer

@@ -348,17 +348,12 @@ wifi.backend=iwd
 
 ### CPU ondemand
 
-将默认GPU调节器更改为`ondemand`（`powersave`是大多数发行版的默认值），使CPU频率更加响应，并在平均功耗略有增加的情况下提高系统响应性和性能。由于散热能力有限，不建议用于笔记本电脑。
+将Intel CPU的默认调节器更改为`schedutil`（`powersave`是大多数发行版的默认值）；或将AMD（Zen 2及更新版本）处理器的内部能源配置文件更改为`balance_performance`。使CPU频率更加响应，并在平均功耗略有增加的情况下提高系统响应性和性能。由于散热能力有限，不建议用于笔记本电脑。
 
 **应用的自定义配置**
-- 对于*Intel*处理器，`intel_pstate`驱动程序阻止使用`ondemand`调节器，必须首先禁用：
+- 对于*Intel*处理器，`intel_pstate`驱动程序阻止使用`ondemand`调节器，必须首先禁用。这是通过将以下内核参数添加到`GRUB_CMDLINE_LINUX`或作为`systemd-boot`配置文件来完成的。
 ```
-if [ -n "${GRUB_CMDLINE_LINUX}" ]; then
-    GRUB_CMDLINE_LINUX="${GRUB_CMDLINE_LINUX} intel_pstate=disable"
-else
-    GRUB_CMDLINE_LINUX="intel_pstate=disable"
-fi
-export GRUB_CMDLINE_LINUX
+intel_pstate=disable
 ```
 - 创建并启用新的systemd服务：`/etc/systemd/system/set-ondemand-governor.service`
 ```
@@ -368,11 +363,15 @@ After=multi-user.target
 
 [Service]
 Type=oneshot
-ExecStart=/bin/bash -c 'for cpu in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor; do echo ondemand > "$cpu" 2>/dev/null || true; done'
+ExecStart=/bin/bash -c 'for cpu in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor; do echo schedutil > "$cpu" 2>/dev/null || true; done'
 RemainAfterExit=yes
 
 [Install]
 WantedBy=multi-user.target
+```
+- 如果运行兼容的AMD cpu，`ExecStart=`行将为：
+```
+ExecStart=/bin/bash -c 'for cpu in /sys/devices/system/cpu/cpu*/cpufreq/energy_performance_preference; do echo balance_performance > "$cpu" 2>/dev/null || true; done'
 ```
 
 ### Power Optimizer

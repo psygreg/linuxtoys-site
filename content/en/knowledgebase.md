@@ -349,17 +349,12 @@ Installed using the official script from its [repository](https://github.com/max
 
 ### CPU ondemand
 
-Changes the default GPU governor to `ondemand` (`powersave` is the default for most distributions), making CPU frequencies more reactive and increasing system responsiveness and performance, at a slight average power draw increase. Not recommended on laptops for their limited thermal dissipation capabilities.
+Changes the default governor to `schedutil` for Intel CPUs (`powersave` is the default for most distributions); or changes the internal energy profile of AMD (Zen 2 and newer) processors to `balance_performance`. making CPU frequencies more reactive and increasing system responsiveness and performance, at a slight average power draw increase. Not recommended on laptops for their limited thermal dissipation capabilities.
 
 **Custom settings applied**
-- For *Intel* CPUs, the `intel_pstate` driver prevents the usage of `ondemand` governor and has to be disabled first:
+- For *Intel* CPUs, the `intel_pstate` driver prevents the usage of `ondemand` governor and has to be disabled first. This is done by adding the following kernel parameter to `GRUB_CMDLINE_LINUX` or as a `systemd-boot` configuration file.
 ```
-if [ -n "${GRUB_CMDLINE_LINUX}" ]; then
-    GRUB_CMDLINE_LINUX="${GRUB_CMDLINE_LINUX} intel_pstate=disable"
-else
-    GRUB_CMDLINE_LINUX="intel_pstate=disable"
-fi
-export GRUB_CMDLINE_LINUX
+intel_pstate=disable
 ```
 - Creates and enables a new systemd service: `/etc/systemd/system/set-ondemand-governor.service`
 ```
@@ -369,11 +364,15 @@ After=multi-user.target
 
 [Service]
 Type=oneshot
-ExecStart=/bin/bash -c 'for cpu in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor; do echo ondemand > "$cpu" 2>/dev/null || true; done'
+ExecStart=/bin/bash -c 'for cpu in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor; do echo schedutil > "$cpu" 2>/dev/null || true; done'
 RemainAfterExit=yes
 
 [Install]
 WantedBy=multi-user.target
+```
+- If running a compatible AMD cpu, the `ExecStart=` line will be:
+```
+ExecStart=/bin/bash -c 'for cpu in /sys/devices/system/cpu/cpu*/cpufreq/energy_performance_preference; do echo balance_performance > "$cpu" 2>/dev/null || true; done'
 ```
 
 ### Power Optimizer

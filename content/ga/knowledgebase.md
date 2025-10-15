@@ -349,17 +349,12 @@ Suiteáilte ag baint úsáide as an script oifigiúil óna [stóras](https://git
 
 ### CPU ondemand
 
-Athraíonn sé an rialtóir GPU réamhshocraithe go `ondemand` (is é `powersave` an réamhshocrú do chuid mhór dáileachán), ag déanamh minicíochtaí CPU níos imoibríche agus ag méadú freagartha agus feidhmíochta an chórais, le hardú beag ar mheántarraingt cumhachta. Ní mholtar é ar ríomhairí glúine mar gheall ar a gcumas teoranta díscaoilte teirmeach.
+Athraíonn sé an rialtóir réamhshocraithe go `schedutil` do CPUanna Intel (is é `powersave` an réamhshocrú do chuid mhór dáileachán); nó athraíonn sé próifíl fuinnimh inmheánach phróiseálaithe AMD (Zen 2 agus níos nuaí) go `balance_performance`. Ag déanamh minicíochtaí CPU níos imoibríche agus ag méadú freagartha agus feidhmíochta an chórais, le hardú beag ar mheántarraingt cumhachta. Ní mholtar é ar ríomhairí glúine mar gheall ar a gcumas teoranta díscaoilte teirmeach.
 
 **Socruithe saincheaptha curtha i bhfeidhm**
-- Do CPUanna *Intel*, cuireann an tiománaí `intel_pstate` cosc ar úsáid rialtóir `ondemand` agus caithfear é a dhíchumasú ar dtús:
+- Do CPUanna *Intel*, cuireann an tiománaí `intel_pstate` cosc ar úsáid rialtóir `ondemand` agus caithfear é a dhíchumasú ar dtús. Déantar é seo trí pharaiméadar eithne seo a leanas a chur le `GRUB_CMDLINE_LINUX` nó mar chomhad cumraíochta `systemd-boot`.
 ```
-if [ -n "${GRUB_CMDLINE_LINUX}" ]; then
-    GRUB_CMDLINE_LINUX="${GRUB_CMDLINE_LINUX} intel_pstate=disable"
-else
-    GRUB_CMDLINE_LINUX="intel_pstate=disable"
-fi
-export GRUB_CMDLINE_LINUX
+intel_pstate=disable
 ```
 - Cruthaíonn agus cumasaíonn sé seirbhís systemd nua: `/etc/systemd/system/set-ondemand-governor.service`
 ```
@@ -369,11 +364,15 @@ After=multi-user.target
 
 [Service]
 Type=oneshot
-ExecStart=/bin/bash -c 'for cpu in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor; do echo ondemand > "$cpu" 2>/dev/null || true; done'
+ExecStart=/bin/bash -c 'for cpu in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor; do echo schedutil > "$cpu" 2>/dev/null || true; done'
 RemainAfterExit=yes
 
 [Install]
 WantedBy=multi-user.target
+```
+- Má tá cpu AMD comhoiriúnach á rith, beidh an líne `ExecStart=`:
+```
+ExecStart=/bin/bash -c 'for cpu in /sys/devices/system/cpu/cpu*/cpufreq/energy_performance_preference; do echo balance_performance > "$cpu" 2>/dev/null || true; done'
 ```
 
 ### Optamaitheoir Cumhachta

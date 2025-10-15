@@ -348,17 +348,12 @@ wifi.backend=iwd
 
 ### CPU ondemand
 
-デフォルトのGPUガバナーを`ondemand`に変更します（`powersave`はほとんどのディストリビューションのデフォルト）。CPU周波数をより反応的にし、システムの応答性とパフォーマンスを向上させますが、平均的な電力消費がわずかに増加します。熱放散能力が限られているため、ラップトップには推奨されません。
+Intel CPUのデフォルトガバナーを`schedutil`に変更します（`powersave`はほとんどのディストリビューションのデフォルト）。または、AMD（Zen 2以降）プロセッサーの内部エネルギープロファイルを`balance_performance`に変更します。CPU周波数をより反応的にし、システムの応答性とパフォーマンスを向上させますが、平均的な電力消費がわずかに増加します。熱放散能力が限られているため、ラップトップには推奨されません。
 
 **適用されたカスタム設定**
-- *Intel* CPU用、`intel_pstate`ドライバーが`ondemand`ガバナーの使用を防ぐため、最初に無効にする必要があります：
+- *Intel* CPU用、`intel_pstate`ドライバーが`ondemand`ガバナーの使用を防ぐため、最初に無効にする必要があります。これは、以下のカーネルパラメータを`GRUB_CMDLINE_LINUX`に追加するか、`systemd-boot`設定ファイルとして追加することで行われます。
 ```
-if [ -n "${GRUB_CMDLINE_LINUX}" ]; then
-    GRUB_CMDLINE_LINUX="${GRUB_CMDLINE_LINUX} intel_pstate=disable"
-else
-    GRUB_CMDLINE_LINUX="intel_pstate=disable"
-fi
-export GRUB_CMDLINE_LINUX
+intel_pstate=disable
 ```
 - 新しいsystemdサービスを作成して有効にします：`/etc/systemd/system/set-ondemand-governor.service`
 ```
@@ -368,11 +363,15 @@ After=multi-user.target
 
 [Service]
 Type=oneshot
-ExecStart=/bin/bash -c 'for cpu in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor; do echo ondemand > "$cpu" 2>/dev/null || true; done'
+ExecStart=/bin/bash -c 'for cpu in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor; do echo schedutil > "$cpu" 2>/dev/null || true; done'
 RemainAfterExit=yes
 
 [Install]
 WantedBy=multi-user.target
+```
+- 互換性のあるAMD cpuを実行している場合、`ExecStart=`行は次のようになります：
+```
+ExecStart=/bin/bash -c 'for cpu in /sys/devices/system/cpu/cpu*/cpufreq/energy_performance_preference; do echo balance_performance > "$cpu" 2>/dev/null || true; done'
 ```
 
 ### Power Optimizer

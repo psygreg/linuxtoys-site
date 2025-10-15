@@ -348,17 +348,12 @@ Installé en utilisant le script officiel depuis son [dépôt](https://github.co
 
 ### CPU ondemand
 
-Change le gouverneur GPU par défaut en `ondemand` (`powersave` est le défaut pour la plupart des distributions), rendant les fréquences CPU plus réactives et augmentant la réactivité et les performances du système, avec une légère augmentation moyenne de consommation d'énergie. Non recommandé sur les ordinateurs portables pour leurs capacités limitées de dissipation thermique.
+Change le gouverneur par défaut en `schedutil` pour les CPU Intel (`powersave` est le défaut pour la plupart des distributions) ; ou change le profil énergétique interne des processeurs AMD (Zen 2 et plus récents) en `balance_performance`. Rendant les fréquences CPU plus réactives et augmentant la réactivité et les performances du système, avec une légère augmentation moyenne de consommation d'énergie. Non recommandé sur les ordinateurs portables pour leurs capacités limitées de dissipation thermique.
 
 **Paramètres personnalisés appliqués**
-- Pour les CPU *Intel*, le pilote `intel_pstate` empêche l'utilisation du gouverneur `ondemand` et doit être désactivé en premier :
+- Pour les CPU *Intel*, le pilote `intel_pstate` empêche l'utilisation du gouverneur `ondemand` et doit être désactivé en premier. Cela se fait en ajoutant le paramètre de noyau suivant à `GRUB_CMDLINE_LINUX` ou en tant que fichier de configuration `systemd-boot`.
 ```
-if [ -n "${GRUB_CMDLINE_LINUX}" ]; then
-    GRUB_CMDLINE_LINUX="${GRUB_CMDLINE_LINUX} intel_pstate=disable"
-else
-    GRUB_CMDLINE_LINUX="intel_pstate=disable"
-fi
-export GRUB_CMDLINE_LINUX
+intel_pstate=disable
 ```
 - Crée et active un nouveau service systemd : `/etc/systemd/system/set-ondemand-governor.service`
 ```
@@ -368,11 +363,15 @@ After=multi-user.target
 
 [Service]
 Type=oneshot
-ExecStart=/bin/bash -c 'for cpu in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor; do echo ondemand > "$cpu" 2>/dev/null || true; done'
+ExecStart=/bin/bash -c 'for cpu in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor; do echo schedutil > "$cpu" 2>/dev/null || true; done'
 RemainAfterExit=yes
 
 [Install]
 WantedBy=multi-user.target
+```
+- Si un processeur AMD compatible est en cours d'exécution, la ligne `ExecStart=` sera :
+```
+ExecStart=/bin/bash -c 'for cpu in /sys/devices/system/cpu/cpu*/cpufreq/energy_performance_preference; do echo balance_performance > "$cpu" 2>/dev/null || true; done'
 ```
 
 ### Power Optimizer
