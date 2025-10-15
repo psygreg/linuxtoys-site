@@ -751,6 +751,24 @@ Installeert `dnsmasq` en schakelt een paar instellingen in voor optimale werking
 **Toegepaste aangepaste instellingen**
 - Schakelt (uncomments) `domain-needed`, `bogus-priv` en `bind-interfaces` in op `/etc/dnsmasq.conf`
 
+### Secure Boot voor Arch
+Maakt Arch Linux in staat om te werken met Secure Boot ingeschakeld, waardoor dual boot met Windows mogelijk is terwijl games met kernel anticheats worden uitgevoerd en een extra beveiligingslaag wordt geboden. Voor dat doel maakt LinuxToys gebruik van `sbctl`, dat problemen kan hebben op sommige moederborden. Zoek op internet naar problemen met uw specifieke moederbord voordat u deze functie gebruikt.
+
+**Pakketten Geïnstalleerd of Bijgewerkt**
+- Arch: `sbctl efibootmgr`
+
+**Toegepaste aangepaste instellingen**
+- Ten eerste moet GRUB worden voorbereid indien aanwezig:
+```
+grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB --modules="tpm" --disable-shim-lock
+```
+- Vervolgens worden sleutels gemaakt via `sbctl` en als volgt ingeschreven:
+```
+sbctl create-keys
+sbctl enroll-keys -m -f
+```
+- Ten slotte worden alle bestanden die via `sbctl verify` een handtekening voor Secure Boot nodig hebben, ondertekend met `sbctl sign -s`.
+
 ## Repository Installers
 
 ### Brew

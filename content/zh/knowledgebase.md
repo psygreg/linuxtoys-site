@@ -751,6 +751,24 @@ VDPAU_DRIVER=va_gl
 **应用的自定义设置**
 - 在`/etc/dnsmasq.conf`中启用（取消注释）`domain-needed`、`bogus-priv`和`bind-interfaces`
 
+### Arch的Secure Boot
+使Arch Linux能够在启用Secure Boot的情况下运行，允许在运行带有内核反作弊的游戏时与Windows双启动，并提供额外的安全层。为此，LinuxToys使用`sbctl`，它在某些主板上可能会出现问题。在使用此功能之前，请在互联网上搜索您特定主板的问题。
+
+**安装或更新的包**
+- Arch：`sbctl efibootmgr`
+
+**应用的自定义设置**
+- 首先，如果存在GRUB，则必须准备：
+```
+grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB --modules="tpm" --disable-shim-lock
+```
+- 然后，通过`sbctl`创建密钥并按如下方式注册：
+```
+sbctl create-keys
+sbctl enroll-keys -m -f
+```
+- 最后，通过`sbctl verify`发现需要Secure Boot签名的所有文件都使用`sbctl sign -s`进行签名。
+
 ## 存储库安装程序
 
 ### Brew

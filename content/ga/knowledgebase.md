@@ -752,6 +752,24 @@ Suiteálann sé `dnsmasq` agus cumasaíonn sé roinnt socruithe le haghaidh feid
 **Socruithe saincheaptha curtha i bhfeidhm**
 - Cumasaíonn (díchoinníonn) sé `domain-needed`, `bogus-priv` agus `bind-interfaces` ar `/etc/dnsmasq.conf`
 
+### Tosaithe Slán d'Arch
+Déanann sé Arch Linux in ann oibriú le Tosaithe Slán cumasaithe, rud a cheadaíonn tosú dúbailte le Windows agus cluichí a rith le frith-chealgacha eithne agus ciseal breise slándála a sholáthar. Chun an chríoch sin, úsáideann LinuxToys `sbctl`, a d'fhéadfadh fadhbanna a bheith aige ar roinnt cláir mháthar. Déan cuardach ar an idirlíon le haghaidh fadhbanna le do chlár mháthair ar leith sula n-úsáideann tú an ghné seo.
+
+**Pacáistí Suiteáilte nó Nuashonraithe**
+- Arch: `sbctl efibootmgr`
+
+**Socruithe saincheaptha curtha i bhfeidhm**
+- Ar dtús, caithfear GRUB a ullmhú má tá sé i láthair:
+```
+grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB --modules="tpm" --disable-shim-lock
+```
+- Ansin, cruthaítear eochracha trí `sbctl` agus cláraitear iad mar seo a leanas:
+```
+sbctl create-keys
+sbctl enroll-keys -m -f
+```
+- Ar deireadh, síníonn `sbctl sign -s` gach comhad a aimsítear go bhfuil síniú ag teastáil uaidh do Thosaithe Slán trí `sbctl verify`.
+
 ## Suiteálaithe Stórais
 
 ### Brew
