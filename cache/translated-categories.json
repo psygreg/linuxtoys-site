@@ -528,7 +528,7 @@
         {
           "name": "DNSMasq",
           "description": "Set up local DNS caching to speed up domain name resolution, improve browsing performance and fix problems with losing download speeds on Steam.",
-          "icon": "network.svg",
+          "icon": "dnsmasq.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/dnsmasq.sh"
         },
@@ -754,7 +754,7 @@
         },
         {
           "name": "Moonlight",
-          "description": "mlight_desc",
+          "description": "Open source PC client for NVIDIA GameStream and Sunshine.",
           "icon": "moonlight.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/game/moonlight.sh"
@@ -2024,7 +2024,7 @@
         {
           "name": "DNSMasq",
           "description": "Configure o cache DNS local para acelerar a resolução de nomes de domínio, melhorar o desempenho de navegação e corrigir problemas com perda de velocidade de download no Steam.",
-          "icon": "network.svg",
+          "icon": "dnsmasq.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/dnsmasq.sh"
         },
@@ -2250,7 +2250,7 @@
         },
         {
           "name": "Moonlight",
-          "description": "mlight_desc",
+          "description": "Cliente de PC de código aberto para NVIDIA GameStream e Sunshine.",
           "icon": "moonlight.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/game/moonlight.sh"
@@ -3520,7 +3520,7 @@
         {
           "name": "DNSMasq",
           "description": "Configure el almacenamiento en caché de DNS local para acelerar la resolución de nombres de dominio, mejorar el rendimiento de navegación y solucionar problemas con la pérdida de velocidad de descarga en Steam.",
-          "icon": "network.svg",
+          "icon": "dnsmasq.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/dnsmasq.sh"
         },
@@ -3746,7 +3746,7 @@
         },
         {
           "name": "Moonlight",
-          "description": "mlight_desc",
+          "description": "Cliente de PC de código abierto para NVIDIA GameStream y Sunshine.",
           "icon": "moonlight.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/game/moonlight.sh"
@@ -5016,7 +5016,7 @@
         {
           "name": "DNSMasq",
           "description": "Configurez la mise en cache DNS locale pour accélérer la résolution des noms de domaine, améliorer les performances de navigation et résoudre les problèmes de perte de vitesse de téléchargement sur Steam.",
-          "icon": "network.svg",
+          "icon": "dnsmasq.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/dnsmasq.sh"
         },
@@ -5242,7 +5242,7 @@
         },
         {
           "name": "Moonlight",
-          "description": "mlight_desc",
+          "description": "Client PC open source pour NVIDIA GameStream et Sunshine.",
           "icon": "moonlight.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/game/moonlight.sh"
@@ -6512,7 +6512,7 @@
         {
           "name": "DNSMasq",
           "description": "Richten Sie lokales DNS-Caching ein, um die Auflösung von Domainnamen zu beschleunigen, die Browser-Leistung zu verbessern und Probleme mit dem Verlust der Download-Geschwindigkeit bei Steam zu beheben.",
-          "icon": "network.svg",
+          "icon": "dnsmasq.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/dnsmasq.sh"
         },
@@ -6738,7 +6738,7 @@
         },
         {
           "name": "Moonlight",
-          "description": "mlight_desc",
+          "description": "Open-Source-PC-Client für NVIDIA GameStream und Sunshine.",
           "icon": "moonlight.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/game/moonlight.sh"
@@ -8008,7 +8008,7 @@
         {
           "name": "DNSMasq",
           "description": "设置本地DNS缓存以加快域名解析速度，提高浏览性能并修复Steam上下载速度丢失的问题。",
-          "icon": "network.svg",
+          "icon": "dnsmasq.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/dnsmasq.sh"
         },
@@ -8234,7 +8234,7 @@
         },
         {
           "name": "Moonlight",
-          "description": "mlight_desc",
+          "description": "适用于NVIDIA GameStream和Sunshine的开源PC客户端。",
           "icon": "moonlight.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/game/moonlight.sh"
@@ -9504,7 +9504,7 @@
         {
           "name": "DNSMasq",
           "description": "ローカルDNSキャッシュを設定して、ドメイン名解決を高速化し、ブラウジングパフォーマンスを向上させ、Steamでのダウンロード速度低下の問題を修正します。",
-          "icon": "network.svg",
+          "icon": "dnsmasq.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/dnsmasq.sh"
         },
@@ -9730,7 +9730,7 @@
         },
         {
           "name": "Moonlight",
-          "description": "mlight_desc",
+          "description": "NVIDIA GameStreamとSunshine用のオープンソースPCクライアント。",
           "icon": "moonlight.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/game/moonlight.sh"
@@ -11000,7 +11000,7 @@
         {
           "name": "DNSMasq",
           "description": "Настройте локальное кэширование DNS для ускорения разрешения доменных имён, улучшения производительности браузера и устранения проблем с потерей скорости загрузки в Steam.",
-          "icon": "network.svg",
+          "icon": "dnsmasq.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/dnsmasq.sh"
         },
@@ -11226,7 +11226,7 @@
         },
         {
           "name": "Moonlight",
-          "description": "mlight_desc",
+          "description": "Клиент ПК с открытым исходным кодом для NVIDIA GameStream и Sunshine.",
           "icon": "moonlight.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/game/moonlight.sh"

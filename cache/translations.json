@@ -297,7 +297,8 @@
     "term_view_running": "Running {current}/{total}",
     "term_view_done_text": "Done",
     "archsb": "Secure Boot for Arch",
-    "archsb_desc": "Quickly set up Secure Boot on Arch Linux. Requires setting the Secure Boot mode to \"Setup\" in your UEFI firmware settings."
+    "archsb_desc": "Quickly set up Secure Boot on Arch Linux. Requires setting the Secure Boot mode to \"Setup\" in your UEFI firmware settings.",
+    "mlight_desc": "Open source PC client for NVIDIA GameStream and Sunshine."
   },
   "pt": {
     "subtitle": "Uma coleção amigável de ferramentas para Linux.",
@@ -597,7 +598,8 @@
     "term_view_running": "Executando {current}/{total}",
     "term_view_done_text": "Concluído",
     "archsb": "Secure Boot para Arch",
-    "archsb_desc": "Configure rapidamente o Secure Boot no Arch Linux. Requer configurar o modo Secure Boot para \"Setup\" nas configurações de firmware UEFI."
+    "archsb_desc": "Configure rapidamente o Secure Boot no Arch Linux. Requer configurar o modo Secure Boot para \"Setup\" nas configurações de firmware UEFI.",
+    "mlight_desc": "Cliente de PC de código aberto para NVIDIA GameStream e Sunshine."
   },
   "es": {
     "subtitle": "Una colección amigable de herramientas para Linux.",
@@ -897,7 +899,8 @@
     "term_view_running": "Ejecutando {current}/{total}",
     "term_view_done_text": "Listo",
     "archsb": "Secure Boot para Arch",
-    "archsb_desc": "Configure rápidamente Secure Boot en Arch Linux. Requiere configurar el modo Secure Boot en \"Setup\" en la configuración del firmware UEFI."
+    "archsb_desc": "Configure rápidamente Secure Boot en Arch Linux. Requiere configurar el modo Secure Boot en \"Setup\" en la configuración del firmware UEFI.",
+    "mlight_desc": "Cliente de PC de código abierto para NVIDIA GameStream y Sunshine."
   },
   "fr": {
     "subtitle": "Une collection d'outils pour Linux de manière conviviale.",
@@ -1197,7 +1200,8 @@
     "term_view_running": "En cours {current}/{total}",
     "term_view_done_text": "Terminé",
     "archsb": "Démarrage sécurisé pour Arch",
-    "archsb_desc": "Configurez rapidement le démarrage sécurisé sur Arch Linux. Nécessite de définir le mode de démarrage sécurisé sur \"Setup\" dans les paramètres du firmware UEFI."
+    "archsb_desc": "Configurez rapidement le démarrage sécurisé sur Arch Linux. Nécessite de définir le mode de démarrage sécurisé sur \"Setup\" dans les paramètres du firmware UEFI.",
+    "mlight_desc": "Client PC open source pour NVIDIA GameStream et Sunshine."
   },
   "de": {
     "subtitle": "Eine freundliche Sammlung von Tools für Linux.",
@@ -1497,7 +1501,8 @@
     "term_view_running": "Läuft {current}/{total}",
     "term_view_done_text": "Fertig",
     "archsb": "Secure Boot für Arch",
-    "archsb_desc": "Richten Sie Secure Boot schnell auf Arch Linux ein. Erfordert das Setzen des Secure Boot-Modus auf \"Setup\" in Ihren UEFI-Firmware-Einstellungen."
+    "archsb_desc": "Richten Sie Secure Boot schnell auf Arch Linux ein. Erfordert das Setzen des Secure Boot-Modus auf \"Setup\" in Ihren UEFI-Firmware-Einstellungen.",
+    "mlight_desc": "Open-Source-PC-Client für NVIDIA GameStream und Sunshine."
   },
   "zh": {
     "subtitle": "适用于Linux的用户友好工具集合。",
@@ -1799,7 +1804,8 @@
     "term_view_running": "运行中 {current}/{total}",
     "term_view_done_text": "完成",
     "archsb": "Arch 安全启动",
-    "archsb_desc": "在 Arch Linux 上快速设置安全启动。需要在您的 UEFI 固件设置中将安全启动模式设置为\"Setup\"。"
+    "archsb_desc": "在 Arch Linux 上快速设置安全启动。需要在您的 UEFI 固件设置中将安全启动模式设置为\"Setup\"。",
+    "mlight_desc": "适用于NVIDIA GameStream和Sunshine的开源PC客户端。"
   },
   "ja": {
     "subtitle": "Linuxのためのユーザーフレンドリーなツール集。",
@@ -2099,7 +2105,8 @@
     "term_view_running": "実行中 {current}/{total}",
     "term_view_done_text": "完了",
     "archsb": "Arch用セキュアブート",
-    "archsb_desc": "Arch Linuxでセキュアブートを素早く設定します。UEFIファームウェア設定でセキュアブートモードを\"Setup\"に設定する必要があります。"
+    "archsb_desc": "Arch Linuxでセキュアブートを素早く設定します。UEFIファームウェア設定でセキュアブートモードを\"Setup\"に設定する必要があります。",
+    "mlight_desc": "NVIDIA GameStreamとSunshine用のオープンソースPCクライアント。"
   },
   "ru": {
     "subtitle": "Коллекция инструментов для Linux в удобном формате.",
@@ -2399,6 +2406,7 @@
     "term_view_running": "Выполняется {current}/{total}",
     "term_view_done_text": "Готово",
     "archsb": "Безопасная загрузка для Arch",
-    "archsb_desc": "Быстро настройте безопасную загрузку на Arch Linux. Требуется установить режим безопасной загрузки в \"Setup\" в настройках прошивки UEFI."
+    "archsb_desc": "Быстро настройте безопасную загрузку на Arch Linux. Требуется установить режим безопасной загрузки в \"Setup\" в настройках прошивки UEFI.",
+    "mlight_desc": "Клиент ПК с открытым исходным кодом для NVIDIA GameStream и Sunshine."
   }
 }

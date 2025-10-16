@@ -522,7 +522,7 @@
       {
         "name": "DNSMasq",
         "description": "dnsmasq_desc",
-        "icon": "network.svg",
+        "icon": "dnsmasq.svg",
         "version": "1.0",
         "scriptPath": "p3/scripts/extra/dnsmasq.sh"
       },
