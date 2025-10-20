@@ -298,7 +298,14 @@
     "term_view_done_text": "Done",
     "archsb": "Secure Boot for Arch",
     "archsb_desc": "Quickly set up Secure Boot on Arch Linux. Requires setting the Secure Boot mode to \"Setup\" in your UEFI firmware settings.",
-    "mlight_desc": "Open source PC client for NVIDIA GameStream and Sunshine."
+    "mlight_desc": "Open source PC client for NVIDIA GameStream and Sunshine.",
+    "kernel_update_available_title": "Kernel Update Available",
+    "kernel_update_available_message": "A new version of the kernel is available.",
+    "kernel_update_current_version": "Current version:",
+    "kernel_update_latest_version": "Latest version:",
+    "kernel_update_install_btn": "Install Update",
+    "kernel_update_ignore_btn": "Ignore",
+    "kernel_update_reboot_required": "A system reboot will be required after installation."
   },
   "pt": {
     "subtitle": "Uma coleção amigável de ferramentas para Linux.",
@@ -599,7 +606,14 @@
     "term_view_done_text": "Concluído",
     "archsb": "Secure Boot para Arch",
     "archsb_desc": "Configure rapidamente o Secure Boot no Arch Linux. Requer configurar o modo Secure Boot para \"Setup\" nas configurações de firmware UEFI.",
-    "mlight_desc": "Cliente de PC de código aberto para NVIDIA GameStream e Sunshine."
+    "mlight_desc": "Cliente de PC de código aberto para NVIDIA GameStream e Sunshine.",
+    "kernel_update_available_title": "Atualização do kernel disponível",
+    "kernel_update_available_message": "Uma nova versão do kernel está disponível.",
+    "kernel_update_current_version": "Versão atual:",
+    "kernel_update_latest_version": "Última versão:",
+    "kernel_update_install_btn": "Instalar atualização",
+    "kernel_update_ignore_btn": "Ignorar",
+    "kernel_update_reboot_required": "Uma reinicialização do sistema será necessária após a instalação."
   },
   "es": {
     "subtitle": "Una colección amigable de herramientas para Linux.",
@@ -900,7 +914,14 @@
     "term_view_done_text": "Listo",
     "archsb": "Secure Boot para Arch",
     "archsb_desc": "Configure rápidamente Secure Boot en Arch Linux. Requiere configurar el modo Secure Boot en \"Setup\" en la configuración del firmware UEFI.",
-    "mlight_desc": "Cliente de PC de código abierto para NVIDIA GameStream y Sunshine."
+    "mlight_desc": "Cliente de PC de código abierto para NVIDIA GameStream y Sunshine.",
+    "kernel_update_available_title": "Actualización del kernel disponible",
+    "kernel_update_available_message": "Hay una nueva versión del kernel disponible.",
+    "kernel_update_current_version": "Versión actual:",
+    "kernel_update_latest_version": "Última versión:",
+    "kernel_update_install_btn": "Instalar actualización",
+    "kernel_update_ignore_btn": "Ignorar",
+    "kernel_update_reboot_required": "Se requerirá un reinicio del sistema después de la instalación."
   },
   "fr": {
     "subtitle": "Une collection d'outils pour Linux de manière conviviale.",
@@ -1201,7 +1222,14 @@
     "term_view_done_text": "Terminé",
     "archsb": "Démarrage sécurisé pour Arch",
     "archsb_desc": "Configurez rapidement le démarrage sécurisé sur Arch Linux. Nécessite de définir le mode de démarrage sécurisé sur \"Setup\" dans les paramètres du firmware UEFI.",
-    "mlight_desc": "Client PC open source pour NVIDIA GameStream et Sunshine."
+    "mlight_desc": "Client PC open source pour NVIDIA GameStream et Sunshine.",
+    "kernel_update_available_title": "Mise à jour du noyau disponible",
+    "kernel_update_available_message": "Une nouvelle version du noyau est disponible.",
+    "kernel_update_current_version": "Version actuelle :",
+    "kernel_update_latest_version": "Dernière version :",
+    "kernel_update_install_btn": "Installer la mise à jour",
+    "kernel_update_ignore_btn": "Ignorer",
+    "kernel_update_reboot_required": "Un redémarrage du système sera nécessaire après l'installation."
   },
   "de": {
     "subtitle": "Eine freundliche Sammlung von Tools für Linux.",
@@ -1502,7 +1530,14 @@
     "term_view_done_text": "Fertig",
     "archsb": "Secure Boot für Arch",
     "archsb_desc": "Richten Sie Secure Boot schnell auf Arch Linux ein. Erfordert das Setzen des Secure Boot-Modus auf \"Setup\" in Ihren UEFI-Firmware-Einstellungen.",
-    "mlight_desc": "Open-Source-PC-Client für NVIDIA GameStream und Sunshine."
+    "mlight_desc": "Open-Source-PC-Client für NVIDIA GameStream und Sunshine.",
+    "kernel_update_available_title": "Kernel-Update verfügbar",
+    "kernel_update_available_message": "Eine neue Version des Kernels ist verfügbar.",
+    "kernel_update_current_version": "Aktuelle Version:",
+    "kernel_update_latest_version": "Neueste Version:",
+    "kernel_update_install_btn": "Update installieren",
+    "kernel_update_ignore_btn": "Ignorieren",
+    "kernel_update_reboot_required": "Nach der Installation ist ein Systemneustart erforderlich."
   },
   "zh": {
     "subtitle": "适用于Linux的用户友好工具集合。",
@@ -1805,7 +1840,14 @@
     "term_view_done_text": "完成",
     "archsb": "Arch 安全启动",
     "archsb_desc": "在 Arch Linux 上快速设置安全启动。需要在您的 UEFI 固件设置中将安全启动模式设置为\"Setup\"。",
-    "mlight_desc": "适用于NVIDIA GameStream和Sunshine的开源PC客户端。"
+    "mlight_desc": "适用于NVIDIA GameStream和Sunshine的开源PC客户端。",
+    "kernel_update_available_title": "内核更新可用",
+    "kernel_update_available_message": "有新版本的内核可用。",
+    "kernel_update_current_version": "当前版本：",
+    "kernel_update_latest_version": "最新版本：",
+    "kernel_update_install_btn": "安装更新",
+    "kernel_update_ignore_btn": "忽略",
+    "kernel_update_reboot_required": "安装后需要重新启动系统。"
   },
   "ja": {
     "subtitle": "Linuxのためのユーザーフレンドリーなツール集。",
@@ -2106,7 +2148,14 @@
     "term_view_done_text": "完了",
     "archsb": "Arch用セキュアブート",
     "archsb_desc": "Arch Linuxでセキュアブートを素早く設定します。UEFIファームウェア設定でセキュアブートモードを\"Setup\"に設定する必要があります。",
-    "mlight_desc": "NVIDIA GameStreamとSunshine用のオープンソースPCクライアント。"
+    "mlight_desc": "NVIDIA GameStreamとSunshine用のオープンソースPCクライアント。",
+    "kernel_update_available_title": "カーネルアップデートが利用可能",
+    "kernel_update_available_message": "カーネルの新しいバージョンが利用可能です。",
+    "kernel_update_current_version": "現在のバージョン：",
+    "kernel_update_latest_version": "最新バージョン：",
+    "kernel_update_install_btn": "アップデートをインストール",
+    "kernel_update_ignore_btn": "無視",
+    "kernel_update_reboot_required": "インストール後にシステムの再起動が必要になります。"
   },
   "ru": {
     "subtitle": "Коллекция инструментов для Linux в удобном формате.",
@@ -2407,6 +2456,13 @@
     "term_view_done_text": "Готово",
     "archsb": "Безопасная загрузка для Arch",
     "archsb_desc": "Быстро настройте безопасную загрузку на Arch Linux. Требуется установить режим безопасной загрузки в \"Setup\" в настройках прошивки UEFI.",
-    "mlight_desc": "Клиент ПК с открытым исходным кодом для NVIDIA GameStream и Sunshine."
+    "mlight_desc": "Клиент ПК с открытым исходным кодом для NVIDIA GameStream и Sunshine.",
+    "kernel_update_available_title": "Доступно обновление ядра",
+    "kernel_update_available_message": "Доступна новая версия ядра.",
+    "kernel_update_current_version": "Текущая версия:",
+    "kernel_update_latest_version": "Последняя версия:",
+    "kernel_update_install_btn": "Установить обновление",
+    "kernel_update_ignore_btn": "Игнорировать",
+    "kernel_update_reboot_required": "После установки потребуется перезагрузка системы."
   }
 }
