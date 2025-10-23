@@ -305,7 +305,12 @@
     "kernel_update_latest_version": "Latest version:",
     "kernel_update_install_btn": "Install Update",
     "kernel_update_ignore_btn": "Ignore",
-    "kernel_update_reboot_required": "A system reboot will be required after installation."
+    "kernel_update_reboot_required": "A system reboot will be required after installation.",
+    "optimusui_desc": "A graphical user interface for Laptops with Nvidia Optimus Technology (eg. switchable Graphics).",
+    "cancel_script_title": "Cancel Running Script?",
+    "cancel_script_message": "A script is currently running. If you go back now, the running task will be cancelled. Are you sure you want to cancel?",
+    "cancel_script_continue_btn": "Continue Running",
+    "cancel_script_cancel_btn": "Cancel Script"
   },
   "pt": {
     "subtitle": "Uma coleção amigável de ferramentas para Linux.",
@@ -613,7 +618,12 @@
     "kernel_update_latest_version": "Última versão:",
     "kernel_update_install_btn": "Instalar atualização",
     "kernel_update_ignore_btn": "Ignorar",
-    "kernel_update_reboot_required": "Uma reinicialização do sistema será necessária após a instalação."
+    "kernel_update_reboot_required": "Uma reinicialização do sistema será necessária após a instalação.",
+    "optimusui_desc": "Uma interface gráfica de usuário para computadores portáteis com tecnologia Nvidia Optimus (por exemplo, gráficos comutáveis).",
+    "cancel_script_title": "Cancelar script em execução?",
+    "cancel_script_message": "Um script está em execução. Se você voltar agora, a tarefa em execução será cancelada. Tem certeza de que deseja cancelar?",
+    "cancel_script_continue_btn": "Continuar Execução",
+    "cancel_script_cancel_btn": "Cancelar Script"
   },
   "es": {
     "subtitle": "Una colección amigable de herramientas para Linux.",
@@ -921,7 +931,12 @@
     "kernel_update_latest_version": "Última versión:",
     "kernel_update_install_btn": "Instalar actualización",
     "kernel_update_ignore_btn": "Ignorar",
-    "kernel_update_reboot_required": "Se requerirá un reinicio del sistema después de la instalación."
+    "kernel_update_reboot_required": "Se requerirá un reinicio del sistema después de la instalación.",
+    "optimusui_desc": "Una interfaz gráfica de usuario para computadoras portátiles con tecnología Nvidia Optimus (por ejemplo, gráficos conmutables).",
+    "cancel_script_title": "¿Cancelar el script en ejecución?",
+    "cancel_script_message": "Un script se está ejecutando actualmente. Si retrocede ahora, la tarea en ejecución se cancelará. ¿Está seguro de que desea cancelar?",
+    "cancel_script_continue_btn": "Continuar Ejecución",
+    "cancel_script_cancel_btn": "Cancelar Script"
   },
   "fr": {
     "subtitle": "Une collection d'outils pour Linux de manière conviviale.",
@@ -1229,7 +1244,12 @@
     "kernel_update_latest_version": "Dernière version :",
     "kernel_update_install_btn": "Installer la mise à jour",
     "kernel_update_ignore_btn": "Ignorer",
-    "kernel_update_reboot_required": "Un redémarrage du système sera nécessaire après l'installation."
+    "kernel_update_reboot_required": "Un redémarrage du système sera nécessaire après l'installation.",
+    "optimusui_desc": "Une interface utilisateur graphique pour les ordinateurs portables dotés de la technologie Nvidia Optimus (par exemple, graphiques commutables).",
+    "cancel_script_title": "Annuler le script en cours d'exécution?",
+    "cancel_script_message": "Un script est en cours d'exécution. Si vous revenez maintenant, la tâche en cours sera annulée. Êtes-vous sûr de vouloir annuler?",
+    "cancel_script_continue_btn": "Continuer l'exécution",
+    "cancel_script_cancel_btn": "Annuler le Script"
   },
   "de": {
     "subtitle": "Eine freundliche Sammlung von Tools für Linux.",
@@ -1537,7 +1557,12 @@
     "kernel_update_latest_version": "Neueste Version:",
     "kernel_update_install_btn": "Update installieren",
     "kernel_update_ignore_btn": "Ignorieren",
-    "kernel_update_reboot_required": "Nach der Installation ist ein Systemneustart erforderlich."
+    "kernel_update_reboot_required": "Nach der Installation ist ein Systemneustart erforderlich.",
+    "optimusui_desc": "Eine grafische Benutzeroberfläche für Laptops mit Nvidia-Optimus-Technologie (z. B. umschaltbare Grafik).",
+    "cancel_script_title": "Laufendes Skript abbrechen?",
+    "cancel_script_message": "Ein Skript wird derzeit ausgeführt. Wenn Sie jetzt zurückgehen, wird die laufende Aufgabe abgebrochen. Möchten Sie wirklich abbrechen?",
+    "cancel_script_continue_btn": "Weiterhin Ausführen",
+    "cancel_script_cancel_btn": "Skript Abbrechen"
   },
   "zh": {
     "subtitle": "适用于Linux的用户友好工具集合。",
@@ -1847,7 +1872,12 @@
     "kernel_update_latest_version": "最新版本：",
     "kernel_update_install_btn": "安装更新",
     "kernel_update_ignore_btn": "忽略",
-    "kernel_update_reboot_required": "安装后需要重新启动系统。"
+    "kernel_update_reboot_required": "安装后需要重新启动系统。",
+    "optimusui_desc": "适用于配备Nvidia Optimus技术的笔记本电脑的图形用户界面（例如，可切换的图形）。",
+    "cancel_script_title": "取消正在运行的脚本?",
+    "cancel_script_message": "脚本正在运行。 如果您现在返回，正在运行的任务将被取消。 您确定要取消吗?",
+    "cancel_script_continue_btn": "继续运行",
+    "cancel_script_cancel_btn": "取消脚本"
   },
   "ja": {
     "subtitle": "Linuxのためのユーザーフレンドリーなツール集。",
@@ -2155,7 +2185,12 @@
     "kernel_update_latest_version": "最新バージョン：",
     "kernel_update_install_btn": "アップデートをインストール",
     "kernel_update_ignore_btn": "無視",
-    "kernel_update_reboot_required": "インストール後にシステムの再起動が必要になります。"
+    "kernel_update_reboot_required": "インストール後にシステムの再起動が必要になります。",
+    "optimusui_desc": "Nvidia Optimus テクノロジーを備えたノートパソコン用のグラフィカルユーザーインターフェイス (例：切り替え可能なグラフィックス)。",
+    "cancel_script_title": "実行中のスクリプトをキャンセルしますか?",
+    "cancel_script_message": "現在スクリプトが実行されています。 今戻ると、実行中のタスクがキャンセルされます。 本当にキャンセルしますか?",
+    "cancel_script_continue_btn": "実行を続行",
+    "cancel_script_cancel_btn": "スクリプトをキャンセル"
   },
   "ru": {
     "subtitle": "Коллекция инструментов для Linux в удобном формате.",
@@ -2463,6 +2498,11 @@
     "kernel_update_latest_version": "Последняя версия:",
     "kernel_update_install_btn": "Установить обновление",
     "kernel_update_ignore_btn": "Игнорировать",
-    "kernel_update_reboot_required": "После установки потребуется перезагрузка системы."
+    "kernel_update_reboot_required": "После установки потребуется перезагрузка системы.",
+    "optimusui_desc": "Графический интерфейс пользователя для ноутбуков с технологией Nvidia Optimus (например, переключаемая графика).",
+    "cancel_script_title": "Отменить выполняемый скрипт?",
+    "cancel_script_message": "Скрипт в настоящее время выполняется. Если вы вернетесь сейчас, выполняемая задача будет отменена. Вы уверены, что хотите отменить?",
+    "cancel_script_continue_btn": "Продолжить Выполнение",
+    "cancel_script_cancel_btn": "Отменить Скрипт"
   }
 }

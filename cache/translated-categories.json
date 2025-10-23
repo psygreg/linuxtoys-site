@@ -373,6 +373,13 @@
           "scriptPath": "p3/scripts/drivers/nv-suse.sh"
         },
         {
+          "name": "OptimusUI",
+          "description": "A graphical user interface for Laptops with Nvidia Optimus Technology (eg. switchable Graphics).",
+          "icon": "optimusui.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/optimusui.sh"
+        },
+        {
           "name": "ROCm",
           "description": "AMD's computation workloads driver and tools. Supports discrete GPUs from RDNA and newer architectures.",
           "icon": "amd.png",
@@ -1867,6 +1874,13 @@
           "icon": "nvidia.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/nv-suse.sh"
+        },
+        {
+          "name": "OptimusUI",
+          "description": "Uma interface gráfica de usuário para computadores portáteis com tecnologia Nvidia Optimus (por exemplo, gráficos comutáveis).",
+          "icon": "optimusui.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/optimusui.sh"
         },
         {
           "name": "ROCm",
@@ -3365,6 +3379,13 @@
           "scriptPath": "p3/scripts/drivers/nv-suse.sh"
         },
         {
+          "name": "OptimusUI",
+          "description": "Una interfaz gráfica de usuario para computadoras portátiles con tecnología Nvidia Optimus (por ejemplo, gráficos conmutables).",
+          "icon": "optimusui.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/optimusui.sh"
+        },
+        {
           "name": "ROCm",
           "description": "Controladores y herramientas de AMD para cargas de trabajo computacionales. Soporta GPUs discretas de arquitecturas RDNA y más nuevas.",
           "icon": "amd.png",
@@ -4859,6 +4880,13 @@
           "icon": "nvidia.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/nv-suse.sh"
+        },
+        {
+          "name": "OptimusUI",
+          "description": "Une interface utilisateur graphique pour les ordinateurs portables dotés de la technologie Nvidia Optimus (par exemple, graphiques commutables).",
+          "icon": "optimusui.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/optimusui.sh"
         },
         {
           "name": "ROCm",
@@ -6357,6 +6385,13 @@
           "scriptPath": "p3/scripts/drivers/nv-suse.sh"
         },
         {
+          "name": "OptimusUI",
+          "description": "Eine grafische Benutzeroberfläche für Laptops mit Nvidia-Optimus-Technologie (z. B. umschaltbare Grafik).",
+          "icon": "optimusui.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/optimusui.sh"
+        },
+        {
           "name": "ROCm",
           "description": "AMDs Berechnungsworkload-Treiber und Tools. Unterstützt diskrete GPUs von RDNA und neueren Architekturen.",
           "icon": "amd.png",
@@ -7851,6 +7886,13 @@
           "icon": "nvidia.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/nv-suse.sh"
+        },
+        {
+          "name": "OptimusUI",
+          "description": "适用于配备Nvidia Optimus技术的笔记本电脑的图形用户界面（例如，可切换的图形）。",
+          "icon": "optimusui.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/optimusui.sh"
         },
         {
           "name": "ROCm",
@@ -9349,6 +9391,13 @@
           "scriptPath": "p3/scripts/drivers/nv-suse.sh"
         },
         {
+          "name": "OptimusUI",
+          "description": "Nvidia Optimus テクノロジーを備えたノートパソコン用のグラフィカルユーザーインターフェイス (例：切り替え可能なグラフィックス)。",
+          "icon": "optimusui.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/optimusui.sh"
+        },
+        {
           "name": "ROCm",
           "description": "AMD計算ワークロード用ドライバーとツール。RDNA以降のアーキテクチャの専用GPUをサポート。",
           "icon": "amd.png",
@@ -10843,6 +10892,13 @@
           "icon": "nvidia.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/nv-suse.sh"
+        },
+        {
+          "name": "OptimusUI",
+          "description": "Графический интерфейс пользователя для ноутбуков с технологией Nvidia Optimus (например, переключаемая графика).",
+          "icon": "optimusui.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/optimusui.sh"
         },
         {
           "name": "ROCm",

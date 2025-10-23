@@ -369,6 +369,13 @@
         "scriptPath": "p3/scripts/drivers/nv-suse.sh"
       },
       {
+        "name": "OptimusUI",
+        "description": "optimusui_desc",
+        "icon": "optimusui.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/drivers/optimusui.sh"
+      },
+      {
         "name": "ROCm",
         "description": "rocm_desc",
         "icon": "amd.png",
