@@ -25,7 +25,7 @@
 - Wireguard
 - VLC
 - Gnome Tweaks
-- OBS Studio（マシンにIntel GPU（ディスクリートまたは統合型）がある場合、[Pipewire Audio Capture](https://github.com/dimtpap/obs-pipewire-audio-capture)プラグインを含む）。それ以外の場合は、Flathubからユーザーレベルのflatpakとしてインストールされます。
+- OBS Studio（マシンにIntel GPU（ディスクリートまたは統合型）があり、Archベースのシステムを実行していない場合、[Pipewire Audio Capture](https://github.com/dimtpap/obs-pipewire-audio-capture)プラグインと仮想カメラ互換性のための`v4l2loopback`を含む）。それ以外の場合は、Flathubからユーザーレベルのflatpakとして（Intel GPUがない場合）またはブラウザソースがデフォルトのArch Linuxパッケージに不足しているため[AUR](https://aur.archlinux.org/packages/obs-studio-browser)からインストールされます。
 
 ### 追加されたリポジトリ
 - Visual Studio Code：[Microsoftの公式リポジトリ](https://packages.microsoft.com)から。
@@ -145,6 +145,7 @@ flathubから、またはLinuxToysによって追加されたリポジトリが�
 - LACT
 - Piper（Debian/Ubuntuでは`ratbagd`、他では`libratbag`、ネイティブインストールパッケージを含む）
 - Flatpak用ハードウェアアクセラレーション（現在サポートされているflatpakランタイム用のffmpeg-full）
+- OptimusUI（`nvidia-prime`を含む、動作に必須）
 
 ## カスタム手順
 

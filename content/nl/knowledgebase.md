@@ -25,7 +25,7 @@ Van standaard systeem repositories, of repositories toegevoegd door LinuxToys, e
 - Wireguard
 - VLC
 - Gnome Tweaks
-- OBS Studio (inclusief [Pipewire Audio Capture](https://github.com/dimtpap/obs-pipewire-audio-capture) plugin), als de machine een Intel GPU (discreet of geïntegreerd) heeft. Anders wordt het geïnstalleerd als een flatpak op gebruikersniveau van Flathub.
+- OBS Studio (inclusief [Pipewire Audio Capture](https://github.com/dimtpap/obs-pipewire-audio-capture) plugin en `v4l2loopback` voor Virtual Camera compatibiliteit), als de machine een Intel GPU (discreet of geïntegreerd) heeft en geen Arch-gebaseerde systemen uitvoert. Anders wordt het geïnstalleerd als een flatpak op gebruikersniveau van Flathub (geen Intel GPU) of van de [AUR](https://aur.archlinux.org/packages/obs-studio-browser) vanwege het ontbreken van een browserbron in het standaard Arch Linux-pakket.
 
 ### Toegevoegde repositories
 - Visual Studio Code: van [Microsoft's officiële repository.](https://packages.microsoft.com)
@@ -145,6 +145,7 @@ Van flathub, of repositories toegevoegd door LinuxToys, en geen andere wijziging
 - LACT
 - Piper (bevat `ratbagd` voor Debian/Ubuntu of `libratbag` voor anderen, native geïnstalleerde pakketten)
 - Hardware Acceleratie voor Flatpaks (ffmpeg-full voor de momenteel ondersteunde flatpak runtimes)
+- OptimusUI (bevat `nvidia-prime`, vereist voor werking)
 
 ## Aangepaste Procedures
 

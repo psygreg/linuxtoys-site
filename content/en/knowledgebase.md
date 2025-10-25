@@ -25,7 +25,7 @@ From default system repositories, or having repositories added by LinuxToys, and
 - Wireguard
 - VLC
 - Gnome Tweaks
-- OBS Studio (includes [Pipewire Audio Capture](https://github.com/dimtpap/obs-pipewire-audio-capture) plugin), if the machine has an Intel GPU (discrete or integrated). Otherwise, it will be installed as a user-level flatpak from Flathub.
+- OBS Studio (includes [Pipewire Audio Capture](https://github.com/dimtpap/obs-pipewire-audio-capture) plugin and `v4l2loopback` for Virtual Camera compatibility), if the machine has an Intel GPU (discrete or integrated) and is not running Arch-based systems. Otherwise, it will be installed as a user-level flatpak from Flathub (no Intel GPU) or from the [AUR](https://aur.archlinux.org/packages/obs-studio-browser) due to the lack of a browser source in the default Arch Linux package.
 
 ### Added repositories
 - Visual Studio Code: from [Microsoft's official repository.](https://packages.microsoft.com)
@@ -145,6 +145,7 @@ From flathub, or having repositories added by LinuxToys, and no other changes ar
 - LACT
 - Piper (includes `ratbagd` for Debian/Ubuntu or `libratbag` for others, natively installed packages)
 - Hardware Acceleration for Flatpaks (ffmpeg-full for the currently supported flatpak runtimes)
+- OptimusUI (includes `nvidia-prime`, required for operation)
 
 ## Custom Procedures
 

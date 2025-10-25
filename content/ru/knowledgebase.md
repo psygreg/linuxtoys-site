@@ -25,7 +25,7 @@
 - Wireguard
 - VLC
 - Gnome Tweaks
-- OBS Studio (включает плагин [Pipewire Audio Capture](https://github.com/dimtpap/obs-pipewire-audio-capture)), если на машине установлен графический процессор Intel (дискретный или интегрированный). В противном случае он будет установлен как flatpak пользовательского уровня из Flathub.
+- OBS Studio (включает плагин [Pipewire Audio Capture](https://github.com/dimtpap/obs-pipewire-audio-capture) и `v4l2loopback` для совместимости виртуальной камеры), если на машине установлен графический процессор Intel (дискретный или интегрированный) и она не работает на системах на основе Arch. В противном случае он будет установлен как flatpak пользовательского уровня из Flathub (без Intel GPU) или из [AUR](https://aur.archlinux.org/packages/obs-studio-browser) из-за отсутствия источника браузера в стандартном пакете Arch Linux.
 
 ### Добавленные репозитории
 - Visual Studio Code: из [официального репозитория Microsoft.](https://packages.microsoft.com)
@@ -145,6 +145,7 @@
 - LACT
 - Piper (включает `ratbagd` для Debian/Ubuntu или `libratbag` для других, нативно установленные пакеты)
 - Аппаратное ускорение для Flatpaks (ffmpeg-full для текущих поддерживаемых flatpak runtimes)
+- OptimusUI (включает `nvidia-prime`, необходимо для работы)
 
 ## Пользовательские процедуры
 

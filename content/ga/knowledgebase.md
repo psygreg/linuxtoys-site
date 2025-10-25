@@ -25,7 +25,7 @@
 - Wireguard
 - VLC
 - Gnome Tweaks
-- OBS Studio (cuimsíonn breiseán [Pipewire Audio Capture](https://github.com/dimtpap/obs-pipewire-audio-capture)), má tá GPU Intel ag an meaisín (discréideach nó comhtháite). Seachas sin, suiteálfar é mar flatpak leibhéal úsáideora ó Flathub.
+- OBS Studio (cuimsíonn breiseán [Pipewire Audio Capture](https://github.com/dimtpap/obs-pipewire-audio-capture) agus `v4l2loopback` do chomhoiriúnacht Ceamara Fhíorúil), má tá GPU Intel ag an meaisín (discréideach nó comhtháite) agus nach bhfuil córais bhunaithe ar Arch á rith aici. Seachas sin, suiteálfar é mar flatpak leibhéal úsáideora ó Flathub (gan GPU Intel) nó ó an [AUR](https://aur.archlinux.org/packages/obs-studio-browser) mar gheall ar easpa foinse brabhsálaí i bpacáiste Arch Linux réamhshocraithe.
 
 ### Stórtha breise
 - Visual Studio Code: ó [stóras oifigiúil Microsoft.](https://packages.microsoft.com)
@@ -145,6 +145,7 @@
 - LACT
 - Piper (cuimsíonn `ratbagd` do Debian/Ubuntu nó `libratbag` do chinn eile, pacáistí suiteáilte go dúchasach)
 - Luasghéarú Crua-earraí do Flatpaks (ffmpeg-full do na ré-ama flatpak a dtacaítear leo faoi láthair)
+- OptimusUI (cuimsíonn `nvidia-prime`, riachtanach do oibríonn)
 
 ## Nósanna Imeachta Saincheaptha
 

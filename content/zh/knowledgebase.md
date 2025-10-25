@@ -25,7 +25,7 @@
 - Wireguard
 - VLC
 - Gnome Tweaks
-- OBS Studio（包含[Pipewire Audio Capture](https://github.com/dimtpap/obs-pipewire-audio-capture)插件），如果机器具有Intel GPU（独立或集成）。否则，它将作为来自Flathub的用户级flatpak安装。
+- OBS Studio（包含[Pipewire Audio Capture](https://github.com/dimtpap/obs-pipewire-audio-capture)插件和`v4l2loopback`用于虚拟摄像头兼容性），如果机器具有Intel GPU（独立或集成）并且不运行基于Arch的系统。否则，它将作为来自Flathub的用户级flatpak安装（无Intel GPU）或来自[AUR](https://aur.archlinux.org/packages/obs-studio-browser)（由于默认Arch Linux软件包中缺少浏览器源）。
 
 ### 添加的存储库
 - Visual Studio Code：来自[官方Microsoft存储库。](https://packages.microsoft.com)
@@ -145,6 +145,7 @@
 - LACT
 - Piper（包含Debian/Ubuntu的`ratbagd`或其他系统的`libratbag`本地安装包）
 - Flatpaks硬件加速（当前支持的flatpak运行时的ffmpeg-full）
+- OptimusUI（包含`nvidia-prime`，操作所需）
 
 ## 自定义程序
 
