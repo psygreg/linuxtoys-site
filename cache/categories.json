@@ -369,6 +369,13 @@
         "scriptPath": "p3/scripts/drivers/nv-suse.sh"
       },
       {
+        "name": "OptimusUI",
+        "description": "optimusui_desc",
+        "icon": "optimusui.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/drivers/optimusui.sh"
+      },
+      {
         "name": "ROCm",
         "description": "rocm_desc",
         "icon": "amd.png",
@@ -522,7 +529,7 @@
       {
         "name": "DNSMasq",
         "description": "dnsmasq_desc",
-        "icon": "network.svg",
+        "icon": "dnsmasq.svg",
         "version": "1.0",
         "scriptPath": "p3/scripts/extra/dnsmasq.sh"
       },

@@ -373,6 +373,13 @@
           "scriptPath": "p3/scripts/drivers/nv-suse.sh"
         },
         {
+          "name": "OptimusUI",
+          "description": "A graphical user interface for Laptops with Nvidia Optimus Technology (eg. switchable Graphics).",
+          "icon": "optimusui.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/optimusui.sh"
+        },
+        {
           "name": "ROCm",
           "description": "AMD's computation workloads driver and tools. Supports discrete GPUs from RDNA and newer architectures.",
           "icon": "amd.png",
@@ -528,7 +535,7 @@
         {
           "name": "DNSMasq",
           "description": "Set up local DNS caching to speed up domain name resolution, improve browsing performance and fix problems with losing download speeds on Steam.",
-          "icon": "network.svg",
+          "icon": "dnsmasq.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/dnsmasq.sh"
         },
@@ -754,7 +761,7 @@
         },
         {
           "name": "Moonlight",
-          "description": "mlight_desc",
+          "description": "Open source PC client for NVIDIA GameStream and Sunshine.",
           "icon": "moonlight.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/game/moonlight.sh"
@@ -1869,6 +1876,13 @@
           "scriptPath": "p3/scripts/drivers/nv-suse.sh"
         },
         {
+          "name": "OptimusUI",
+          "description": "Uma interface gráfica de usuário para computadores portáteis com tecnologia Nvidia Optimus (por exemplo, gráficos comutáveis).",
+          "icon": "optimusui.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/optimusui.sh"
+        },
+        {
           "name": "ROCm",
           "description": "Drivers ROCm para GPUs AMD. Suporta GPUs dedicadas a partir da arquitetura RDNA.",
           "icon": "amd.png",
@@ -2024,7 +2038,7 @@
         {
           "name": "DNSMasq",
           "description": "Configure o cache DNS local para acelerar a resolução de nomes de domínio, melhorar o desempenho de navegação e corrigir problemas com perda de velocidade de download no Steam.",
-          "icon": "network.svg",
+          "icon": "dnsmasq.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/dnsmasq.sh"
         },
@@ -2250,7 +2264,7 @@
         },
         {
           "name": "Moonlight",
-          "description": "mlight_desc",
+          "description": "Cliente de PC de código aberto para NVIDIA GameStream e Sunshine.",
           "icon": "moonlight.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/game/moonlight.sh"
@@ -3365,6 +3379,13 @@
           "scriptPath": "p3/scripts/drivers/nv-suse.sh"
         },
         {
+          "name": "OptimusUI",
+          "description": "Una interfaz gráfica de usuario para computadoras portátiles con tecnología Nvidia Optimus (por ejemplo, gráficos conmutables).",
+          "icon": "optimusui.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/optimusui.sh"
+        },
+        {
           "name": "ROCm",
           "description": "Controladores y herramientas de AMD para cargas de trabajo computacionales. Soporta GPUs discretas de arquitecturas RDNA y más nuevas.",
           "icon": "amd.png",
@@ -3520,7 +3541,7 @@
         {
           "name": "DNSMasq",
           "description": "Configure el almacenamiento en caché de DNS local para acelerar la resolución de nombres de dominio, mejorar el rendimiento de navegación y solucionar problemas con la pérdida de velocidad de descarga en Steam.",
-          "icon": "network.svg",
+          "icon": "dnsmasq.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/dnsmasq.sh"
         },
@@ -3746,7 +3767,7 @@
         },
         {
           "name": "Moonlight",
-          "description": "mlight_desc",
+          "description": "Cliente de PC de código abierto para NVIDIA GameStream y Sunshine.",
           "icon": "moonlight.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/game/moonlight.sh"
@@ -4861,6 +4882,13 @@
           "scriptPath": "p3/scripts/drivers/nv-suse.sh"
         },
         {
+          "name": "OptimusUI",
+          "description": "Une interface utilisateur graphique pour les ordinateurs portables dotés de la technologie Nvidia Optimus (par exemple, graphiques commutables).",
+          "icon": "optimusui.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/optimusui.sh"
+        },
+        {
           "name": "ROCm",
           "description": "Pilote et outils de charges de travail de calcul d'AMD. Supporte les GPUs dédiées des architectures RDNA et plus récentes.",
           "icon": "amd.png",
@@ -5016,7 +5044,7 @@
         {
           "name": "DNSMasq",
           "description": "Configurez la mise en cache DNS locale pour accélérer la résolution des noms de domaine, améliorer les performances de navigation et résoudre les problèmes de perte de vitesse de téléchargement sur Steam.",
-          "icon": "network.svg",
+          "icon": "dnsmasq.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/dnsmasq.sh"
         },
@@ -5242,7 +5270,7 @@
         },
         {
           "name": "Moonlight",
-          "description": "mlight_desc",
+          "description": "Client PC open source pour NVIDIA GameStream et Sunshine.",
           "icon": "moonlight.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/game/moonlight.sh"
@@ -6357,6 +6385,13 @@
           "scriptPath": "p3/scripts/drivers/nv-suse.sh"
         },
         {
+          "name": "OptimusUI",
+          "description": "Eine grafische Benutzeroberfläche für Laptops mit Nvidia-Optimus-Technologie (z. B. umschaltbare Grafik).",
+          "icon": "optimusui.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/optimusui.sh"
+        },
+        {
           "name": "ROCm",
           "description": "AMDs Berechnungsworkload-Treiber und Tools. Unterstützt diskrete GPUs von RDNA und neueren Architekturen.",
           "icon": "amd.png",
@@ -6512,7 +6547,7 @@
         {
           "name": "DNSMasq",
           "description": "Richten Sie lokales DNS-Caching ein, um die Auflösung von Domainnamen zu beschleunigen, die Browser-Leistung zu verbessern und Probleme mit dem Verlust der Download-Geschwindigkeit bei Steam zu beheben.",
-          "icon": "network.svg",
+          "icon": "dnsmasq.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/dnsmasq.sh"
         },
@@ -6738,7 +6773,7 @@
         },
         {
           "name": "Moonlight",
-          "description": "mlight_desc",
+          "description": "Open-Source-PC-Client für NVIDIA GameStream und Sunshine.",
           "icon": "moonlight.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/game/moonlight.sh"
@@ -7853,6 +7888,13 @@
           "scriptPath": "p3/scripts/drivers/nv-suse.sh"
         },
         {
+          "name": "OptimusUI",
+          "description": "适用于配备Nvidia Optimus技术的笔记本电脑的图形用户界面（例如，可切换的图形）。",
+          "icon": "optimusui.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/optimusui.sh"
+        },
+        {
           "name": "ROCm",
           "description": "AMD的计算工作负载驱动程序和工具。支持RDNA及更新架构的独立GPU。",
           "icon": "amd.png",
@@ -8008,7 +8050,7 @@
         {
           "name": "DNSMasq",
           "description": "设置本地DNS缓存以加快域名解析速度，提高浏览性能并修复Steam上下载速度丢失的问题。",
-          "icon": "network.svg",
+          "icon": "dnsmasq.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/dnsmasq.sh"
         },
@@ -8234,7 +8276,7 @@
         },
         {
           "name": "Moonlight",
-          "description": "mlight_desc",
+          "description": "适用于NVIDIA GameStream和Sunshine的开源PC客户端。",
           "icon": "moonlight.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/game/moonlight.sh"
@@ -9349,6 +9391,13 @@
           "scriptPath": "p3/scripts/drivers/nv-suse.sh"
         },
         {
+          "name": "OptimusUI",
+          "description": "Nvidia Optimus テクノロジーを備えたノートパソコン用のグラフィカルユーザーインターフェイス (例：切り替え可能なグラフィックス)。",
+          "icon": "optimusui.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/optimusui.sh"
+        },
+        {
           "name": "ROCm",
           "description": "AMD計算ワークロード用ドライバーとツール。RDNA以降のアーキテクチャの専用GPUをサポート。",
           "icon": "amd.png",
@@ -9504,7 +9553,7 @@
         {
           "name": "DNSMasq",
           "description": "ローカルDNSキャッシュを設定して、ドメイン名解決を高速化し、ブラウジングパフォーマンスを向上させ、Steamでのダウンロード速度低下の問題を修正します。",
-          "icon": "network.svg",
+          "icon": "dnsmasq.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/dnsmasq.sh"
         },
@@ -9730,7 +9779,7 @@
         },
         {
           "name": "Moonlight",
-          "description": "mlight_desc",
+          "description": "NVIDIA GameStreamとSunshine用のオープンソースPCクライアント。",
           "icon": "moonlight.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/game/moonlight.sh"
@@ -10845,6 +10894,13 @@
           "scriptPath": "p3/scripts/drivers/nv-suse.sh"
         },
         {
+          "name": "OptimusUI",
+          "description": "Графический интерфейс пользователя для ноутбуков с технологией Nvidia Optimus (например, переключаемая графика).",
+          "icon": "optimusui.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/optimusui.sh"
+        },
+        {
           "name": "ROCm",
           "description": "Драйверы и инструменты AMD для вычислительных нагрузок. Поддерживает дискретные GPU от архитектур RDNA и новее.",
           "icon": "amd.png",
@@ -11000,7 +11056,7 @@
         {
           "name": "DNSMasq",
           "description": "Настройте локальное кэширование DNS для ускорения разрешения доменных имён, улучшения производительности браузера и устранения проблем с потерей скорости загрузки в Steam.",
-          "icon": "network.svg",
+          "icon": "dnsmasq.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/dnsmasq.sh"
         },
@@ -11226,7 +11282,7 @@
         },
         {
           "name": "Moonlight",
-          "description": "mlight_desc",
+          "description": "Клиент ПК с открытым исходным кодом для NVIDIA GameStream и Sunshine.",
           "icon": "moonlight.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/game/moonlight.sh"
