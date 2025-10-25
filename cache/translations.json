@@ -310,7 +310,9 @@
     "cancel_script_title": "Cancel Running Script?",
     "cancel_script_message": "A script is currently running. If you go back now, the running task will be cancelled. Are you sure you want to cancel?",
     "cancel_script_continue_btn": "Continue Running",
-    "cancel_script_cancel_btn": "Cancel Script"
+    "cancel_script_cancel_btn": "Cancel Script",
+    "rtl8821ce_desc": "rtl8821CE driver with firmware",
+    "rcloneui_desc": "A GUI for rclone synchronization."
   },
   "pt": {
     "subtitle": "Uma coleção amigável de ferramentas para Linux.",
@@ -623,7 +625,9 @@
     "cancel_script_title": "Cancelar script em execução?",
     "cancel_script_message": "Um script está em execução. Se você voltar agora, a tarefa em execução será cancelada. Tem certeza de que deseja cancelar?",
     "cancel_script_continue_btn": "Continuar Execução",
-    "cancel_script_cancel_btn": "Cancelar Script"
+    "cancel_script_cancel_btn": "Cancelar Script",
+    "rtl8821ce_desc": "Driver rtl8821CE com firmware",
+    "rcloneui_desc": "GUI para sincronização rclone"
   },
   "es": {
     "subtitle": "Una colección amigable de herramientas para Linux.",
@@ -936,7 +940,9 @@
     "cancel_script_title": "¿Cancelar el script en ejecución?",
     "cancel_script_message": "Un script se está ejecutando actualmente. Si retrocede ahora, la tarea en ejecución se cancelará. ¿Está seguro de que desea cancelar?",
     "cancel_script_continue_btn": "Continuar Ejecución",
-    "cancel_script_cancel_btn": "Cancelar Script"
+    "cancel_script_cancel_btn": "Cancelar Script",
+    "rtl8821ce_desc": "controlador rtl8821CE con firmware",
+    "rcloneui_desc": "GUI para sincronización de rclone"
   },
   "fr": {
     "subtitle": "Une collection d'outils pour Linux de manière conviviale.",
@@ -1249,7 +1255,9 @@
     "cancel_script_title": "Annuler le script en cours d'exécution?",
     "cancel_script_message": "Un script est en cours d'exécution. Si vous revenez maintenant, la tâche en cours sera annulée. Êtes-vous sûr de vouloir annuler?",
     "cancel_script_continue_btn": "Continuer l'exécution",
-    "cancel_script_cancel_btn": "Annuler le Script"
+    "cancel_script_cancel_btn": "Annuler le Script",
+    "rtl8821ce_desc": "Pilote rtl8821CE avec firmware",
+    "rcloneui_desc": "Interface graphique pour la synchronisation rclone"
   },
   "de": {
     "subtitle": "Eine freundliche Sammlung von Tools für Linux.",
@@ -1562,7 +1570,9 @@
     "cancel_script_title": "Laufendes Skript abbrechen?",
     "cancel_script_message": "Ein Skript wird derzeit ausgeführt. Wenn Sie jetzt zurückgehen, wird die laufende Aufgabe abgebrochen. Möchten Sie wirklich abbrechen?",
     "cancel_script_continue_btn": "Weiterhin Ausführen",
-    "cancel_script_cancel_btn": "Skript Abbrechen"
+    "cancel_script_cancel_btn": "Skript Abbrechen",
+    "rtl8821ce_desc": "rtl8821CE-Treiber mit Firmware",
+    "rcloneui_desc": "GUI für rclone-Synchronisierung"
   },
   "zh": {
     "subtitle": "适用于Linux的用户友好工具集合。",
@@ -1877,7 +1887,9 @@
     "cancel_script_title": "取消正在运行的脚本?",
     "cancel_script_message": "脚本正在运行。 如果您现在返回，正在运行的任务将被取消。 您确定要取消吗?",
     "cancel_script_continue_btn": "继续运行",
-    "cancel_script_cancel_btn": "取消脚本"
+    "cancel_script_cancel_btn": "取消脚本",
+    "rtl8821ce_desc": "rtl8821CE驱动程序带固件",
+    "rcloneui_desc": "rclone同步的GUI"
   },
   "ja": {
     "subtitle": "Linuxのためのユーザーフレンドリーなツール集。",
@@ -2190,7 +2202,9 @@
     "cancel_script_title": "実行中のスクリプトをキャンセルしますか?",
     "cancel_script_message": "現在スクリプトが実行されています。 今戻ると、実行中のタスクがキャンセルされます。 本当にキャンセルしますか?",
     "cancel_script_continue_btn": "実行を続行",
-    "cancel_script_cancel_btn": "スクリプトをキャンセル"
+    "cancel_script_cancel_btn": "スクリプトをキャンセル",
+    "rtl8821ce_desc": "ファームウェア付きrtl8821CEドライバー",
+    "rcloneui_desc": "rclone同期用GUI"
   },
   "ru": {
     "subtitle": "Коллекция инструментов для Linux в удобном формате.",
@@ -2503,6 +2517,8 @@
     "cancel_script_title": "Отменить выполняемый скрипт?",
     "cancel_script_message": "Скрипт в настоящее время выполняется. Если вы вернетесь сейчас, выполняемая задача будет отменена. Вы уверены, что хотите отменить?",
     "cancel_script_continue_btn": "Продолжить Выполнение",
-    "cancel_script_cancel_btn": "Отменить Скрипт"
+    "cancel_script_cancel_btn": "Отменить Скрипт",
+    "rtl8821ce_desc": "Драйвер rtl8821CE с прошивкой",
+    "rcloneui_desc": "Графический интерфейс для синхронизации rclone"
   }
 }

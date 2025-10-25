@@ -388,21 +388,21 @@
         },
         {
           "name": "Realtek WiFi 8821CE",
-          "description": "rtl8821ce_desc",
+          "description": "rtl8821CE driver with firmware",
           "icon": "rtl.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/rtl8821ce-arch.sh"
         },
         {
           "name": "Realtek WiFi 8821CE",
-          "description": "rtl8821ce_desc",
+          "description": "rtl8821CE driver with firmware",
           "icon": "rtl.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/rtl8821ce-deb.sh"
         },
         {
           "name": "Realtek WiFi 8821CE",
-          "description": "rtl8821ce_desc",
+          "description": "rtl8821CE driver with firmware",
           "icon": "rtl.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/rtl8821ce-rpm.sh"
@@ -1283,6 +1283,13 @@
           "scriptPath": "p3/scripts/utils/qpw.sh"
         },
         {
+          "name": "Rclone UI",
+          "description": "A GUI for rclone synchronization.",
+          "icon": "rcloneui.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/rclone_ui.sh"
+        },
+        {
           "name": "S3Drive",
           "description": "Convert S3, SFTP, WebDAV or Rclone back-end into your encrypted storage.",
           "icon": "s3drive.png",
@@ -1891,21 +1898,21 @@
         },
         {
           "name": "Realtek WiFi 8821CE",
-          "description": "rtl8821ce_desc",
+          "description": "Driver rtl8821CE com firmware",
           "icon": "rtl.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/rtl8821ce-arch.sh"
         },
         {
           "name": "Realtek WiFi 8821CE",
-          "description": "rtl8821ce_desc",
+          "description": "Driver rtl8821CE com firmware",
           "icon": "rtl.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/rtl8821ce-deb.sh"
         },
         {
           "name": "Realtek WiFi 8821CE",
-          "description": "rtl8821ce_desc",
+          "description": "Driver rtl8821CE com firmware",
           "icon": "rtl.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/rtl8821ce-rpm.sh"
@@ -2786,6 +2793,13 @@
           "scriptPath": "p3/scripts/utils/qpw.sh"
         },
         {
+          "name": "Rclone UI",
+          "description": "GUI para sincronização rclone",
+          "icon": "rcloneui.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/rclone_ui.sh"
+        },
+        {
           "name": "S3Drive",
           "description": "Converta o back-end S3, SFTP, WebDAV ou Rclone em seu armazenamento criptografado.",
           "icon": "s3drive.png",
@@ -3394,21 +3408,21 @@
         },
         {
           "name": "Realtek WiFi 8821CE",
-          "description": "rtl8821ce_desc",
+          "description": "controlador rtl8821CE con firmware",
           "icon": "rtl.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/rtl8821ce-arch.sh"
         },
         {
           "name": "Realtek WiFi 8821CE",
-          "description": "rtl8821ce_desc",
+          "description": "controlador rtl8821CE con firmware",
           "icon": "rtl.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/rtl8821ce-deb.sh"
         },
         {
           "name": "Realtek WiFi 8821CE",
-          "description": "rtl8821ce_desc",
+          "description": "controlador rtl8821CE con firmware",
           "icon": "rtl.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/rtl8821ce-rpm.sh"
@@ -4289,6 +4303,13 @@
           "scriptPath": "p3/scripts/utils/qpw.sh"
         },
         {
+          "name": "Rclone UI",
+          "description": "GUI para sincronización de rclone",
+          "icon": "rcloneui.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/rclone_ui.sh"
+        },
+        {
           "name": "S3Drive",
           "description": "Convierte el back-end de S3, SFTP, WebDAV o Rclone en tu almacenamiento cifrado.",
           "icon": "s3drive.png",
@@ -4897,21 +4918,21 @@
         },
         {
           "name": "Realtek WiFi 8821CE",
-          "description": "rtl8821ce_desc",
+          "description": "Pilote rtl8821CE avec firmware",
           "icon": "rtl.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/rtl8821ce-arch.sh"
         },
         {
           "name": "Realtek WiFi 8821CE",
-          "description": "rtl8821ce_desc",
+          "description": "Pilote rtl8821CE avec firmware",
           "icon": "rtl.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/rtl8821ce-deb.sh"
         },
         {
           "name": "Realtek WiFi 8821CE",
-          "description": "rtl8821ce_desc",
+          "description": "Pilote rtl8821CE avec firmware",
           "icon": "rtl.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/rtl8821ce-rpm.sh"
@@ -5792,6 +5813,13 @@
           "scriptPath": "p3/scripts/utils/qpw.sh"
         },
         {
+          "name": "Rclone UI",
+          "description": "Interface graphique pour la synchronisation rclone",
+          "icon": "rcloneui.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/rclone_ui.sh"
+        },
+        {
           "name": "S3Drive",
           "description": "Convertissez le back-end S3, SFTP, WebDAV ou Rclone en votre stockage chiffré.",
           "icon": "s3drive.png",
@@ -6400,21 +6428,21 @@
         },
         {
           "name": "Realtek WiFi 8821CE",
-          "description": "rtl8821ce_desc",
+          "description": "rtl8821CE-Treiber mit Firmware",
           "icon": "rtl.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/rtl8821ce-arch.sh"
         },
         {
           "name": "Realtek WiFi 8821CE",
-          "description": "rtl8821ce_desc",
+          "description": "rtl8821CE-Treiber mit Firmware",
           "icon": "rtl.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/rtl8821ce-deb.sh"
         },
         {
           "name": "Realtek WiFi 8821CE",
-          "description": "rtl8821ce_desc",
+          "description": "rtl8821CE-Treiber mit Firmware",
           "icon": "rtl.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/rtl8821ce-rpm.sh"
@@ -7295,6 +7323,13 @@
           "scriptPath": "p3/scripts/utils/qpw.sh"
         },
         {
+          "name": "Rclone UI",
+          "description": "GUI für rclone-Synchronisierung",
+          "icon": "rcloneui.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/rclone_ui.sh"
+        },
+        {
           "name": "S3Drive",
           "description": "Konvertieren Sie S3, SFTP, WebDAV oder Rclone-Backend in Ihren verschlüsselten Speicher.",
           "icon": "s3drive.png",
@@ -7903,21 +7938,21 @@
         },
         {
           "name": "Realtek WiFi 8821CE",
-          "description": "rtl8821ce_desc",
+          "description": "rtl8821CE驱动程序带固件",
           "icon": "rtl.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/rtl8821ce-arch.sh"
         },
         {
           "name": "Realtek WiFi 8821CE",
-          "description": "rtl8821ce_desc",
+          "description": "rtl8821CE驱动程序带固件",
           "icon": "rtl.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/rtl8821ce-deb.sh"
         },
         {
           "name": "Realtek WiFi 8821CE",
-          "description": "rtl8821ce_desc",
+          "description": "rtl8821CE驱动程序带固件",
           "icon": "rtl.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/rtl8821ce-rpm.sh"
@@ -8798,6 +8833,13 @@
           "scriptPath": "p3/scripts/utils/qpw.sh"
         },
         {
+          "name": "Rclone UI",
+          "description": "rclone同步的GUI",
+          "icon": "rcloneui.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/rclone_ui.sh"
+        },
+        {
           "name": "S3Drive",
           "description": "将 S3、SFTP、WebDAV 或 Rclone 后端转换为您的加密存储。",
           "icon": "s3drive.png",
@@ -9406,21 +9448,21 @@
         },
         {
           "name": "Realtek WiFi 8821CE",
-          "description": "rtl8821ce_desc",
+          "description": "ファームウェア付きrtl8821CEドライバー",
           "icon": "rtl.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/rtl8821ce-arch.sh"
         },
         {
           "name": "Realtek WiFi 8821CE",
-          "description": "rtl8821ce_desc",
+          "description": "ファームウェア付きrtl8821CEドライバー",
           "icon": "rtl.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/rtl8821ce-deb.sh"
         },
         {
           "name": "Realtek WiFi 8821CE",
-          "description": "rtl8821ce_desc",
+          "description": "ファームウェア付きrtl8821CEドライバー",
           "icon": "rtl.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/rtl8821ce-rpm.sh"
@@ -10301,6 +10343,13 @@
           "scriptPath": "p3/scripts/utils/qpw.sh"
         },
         {
+          "name": "Rclone UI",
+          "description": "rclone同期用GUI",
+          "icon": "rcloneui.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/rclone_ui.sh"
+        },
+        {
           "name": "S3Drive",
           "description": "S3、SFTP、WebDAV、またはRcloneのバックエンドを暗号化されたストレージに変換します。",
           "icon": "s3drive.png",
@@ -10909,21 +10958,21 @@
         },
         {
           "name": "Realtek WiFi 8821CE",
-          "description": "rtl8821ce_desc",
+          "description": "Драйвер rtl8821CE с прошивкой",
           "icon": "rtl.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/rtl8821ce-arch.sh"
         },
         {
           "name": "Realtek WiFi 8821CE",
-          "description": "rtl8821ce_desc",
+          "description": "Драйвер rtl8821CE с прошивкой",
           "icon": "rtl.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/rtl8821ce-deb.sh"
         },
         {
           "name": "Realtek WiFi 8821CE",
-          "description": "rtl8821ce_desc",
+          "description": "Драйвер rtl8821CE с прошивкой",
           "icon": "rtl.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/rtl8821ce-rpm.sh"
@@ -11802,6 +11851,13 @@
           "icon": "qpwgraph.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/qpw.sh"
+        },
+        {
+          "name": "Rclone UI",
+          "description": "Графический интерфейс для синхронизации rclone",
+          "icon": "rcloneui.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/rclone_ui.sh"
         },
         {
           "name": "S3Drive",

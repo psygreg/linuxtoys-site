@@ -1272,6 +1272,13 @@
         "scriptPath": "p3/scripts/utils/qpw.sh"
       },
       {
+        "name": "Rclone UI",
+        "description": "rcloneui_desc",
+        "icon": "rcloneui.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/rclone_ui.sh"
+      },
+      {
         "name": "S3Drive",
         "description": "s3d_desc",
         "icon": "s3drive.png",
