@@ -850,29 +850,6 @@ Uma configuração de um clique que instala uma seleção curada e estável de o
 - *Laptop*: Power Optimizer
 - *Desktop*: CPU ondemand
 
-## Escolhas do Psygreg
-
-Uma seleção curada de aplicações para tornar sua vida gaming no Linux mais fácil do que nunca, a um clique de distância.
-
-#### Recursos Incluídos
-
-- Bazaar
-- Discord
-- Flatseal
-- Gear Lever
-- GPU Screen Recorder
-- Heroic Games Launcher
-- Lutris
-- Mission Center
-- OBS Studio
-- Prism Launcher
-- ProtonPlus
-- Protontricks
-- Steam
-- VLC
-- Extension Manager (apenas para desktops *Gnome*)
-- Gnome Tweaks (apenas para desktops *Gnome*)
-
 ## Recursos Exclusivos da versão em Português
 
 ### Distrobox-Adv
