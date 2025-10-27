@@ -478,6 +478,13 @@
     "mode": "menu",
     "tools": [
       {
+        "name": "AppArmor",
+        "description": "aa_desc",
+        "icon": "apparmor.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/apparmor.sh"
+      },
+      {
         "name": "archsb",
         "description": "archsb_desc",
         "icon": "application-x-executable",
