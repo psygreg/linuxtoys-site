@@ -769,6 +769,24 @@ sbctl enroll-keys -m -f
 ```
 - 最后，通过`sbctl verify`发现需要Secure Boot签名的所有文件都使用`sbctl sign -s`进行签名。
 
+### Debian和Arch Linux的AppArmor设置
+安装并启用基本的AppArmor设置 - 与Ubuntu相同的默认值。为了获得更好的强化MAC，您应该查看[apparmor.d](https://github.com/roddhjav/apparmor.d)，出于多种原因无法以自动化方式安装，您必须仔细阅读其文档才能使用它。
+
+**安装或更新的包**
+- Arch：`apparmor`
+- Debian：`apparmor apparmor-utils`
+
+**应用的自定义设置**
+- AppArmor必须作为系统的MAC通过内核命令行调用。这是通过GRUB用户的`/etc/default/grub.d/99-apparmor.cfg`完成的：
+```
+GRUB_CMDLINE_LINUX_DEFAULT="${GRUB_CMDLINE_LINUX_DEFAULT} apparmor=1 security=apparmor"
+```
+- 或用于systemd-boot用户的`/etc/kernel/cmdline.d/99-apparmor.conf`：
+```
+apparmor=1 security=apparmor
+```
+- `apparmor.service`也被启用。
+
 ## 存储库安装程序
 
 ### Brew

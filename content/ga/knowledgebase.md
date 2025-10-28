@@ -770,6 +770,24 @@ sbctl enroll-keys -m -f
 ```
 - Ar deireadh, síníonn `sbctl sign -s` gach comhad a aimsítear go bhfuil síniú ag teastáil uaidh do Thosaithe Slán trí `sbctl verify`.
 
+### Socrú AppArmor do Dhealain agus Arch Linux
+Suiteálann agus cumasaíonn sé socrú bunúsach AppArmor - na céanna réamhshocruithe is Unbuntu. Maidir le MAC níos cruathaítí, ba cheart duit [apparmor.d](https://github.com/roddhjav/apparmor.d) a fhéachaint, nach féidir a shuiteáil ar bhealach gníomhachtaithe ar bhoinn fáthanna éagsúla agus ní mór duit a dhocúmaintín a léamh go cúramach chun é a úsáid.
+
+**Pacáistí Suiteáilte nó Nuashonraithe**
+- Arch: `apparmor`
+- Debian: `apparmor apparmor-utils`
+
+**Socruithe saincheaptha curtha i bhfeidhm**
+- Caithfear AppArmor a ghlaoch mar MAC don chóras tríd an líne ordaithe eithne. Déantar sé seo trí `/etc/default/grub.d/99-apparmor.cfg` do úsáideoirí GRUB:
+```
+GRUB_CMDLINE_LINUX_DEFAULT="${GRUB_CMDLINE_LINUX_DEFAULT} apparmor=1 security=apparmor"
+```
+- Nó `/etc/kernel/cmdline.d/99-apparmor.conf` do úsáideoirí systemd-boot:
+```
+apparmor=1 security=apparmor
+```
+- Cumasaítear `apparmor.service` freisin.
+
 ## Suiteálaithe Stórais
 
 ### Brew

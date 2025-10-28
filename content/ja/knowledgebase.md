@@ -769,6 +769,24 @@ sbctl enroll-keys -m -f
 ```
 - 最後に、`sbctl verify`を通じてSecure Bootの署名が必要であることが判明したすべてのファイルは、`sbctl sign -s`を使用して署名されます。
 
+### DebianおよびArch LinuxのAppArmorセットアップ
+基本的なAppArmorセットアップをインストールして有効化します - Ubuntuと同じデフォルト設定です。より堅牢化されたMACの場合は、[apparmor.d](https://github.com/roddhjav/apparmor.d)を検討してください。様々な理由により自動化された方法でインストールすることはできず、使用するには慎重にドキュメンテーションを読む必要があります。
+
+**インストールまたは更新されたパッケージ**
+- Arch：`apparmor`
+- Debian：`apparmor apparmor-utils`
+
+**適用されるカスタム設定**
+- AppArmorをシステムのMACとしてカーネルCMDLINEを通じて呼び出す必要があります。これはGRUBユーザーの場合は`/etc/default/grub.d/99-apparmor.cfg`を通じて行われます：
+```
+GRUB_CMDLINE_LINUX_DEFAULT="${GRUB_CMDLINE_LINUX_DEFAULT} apparmor=1 security=apparmor"
+```
+- またはsystemd-bootユーザーの場合は`/etc/kernel/cmdline.d/99-apparmor.conf`：
+```
+apparmor=1 security=apparmor
+```
+- `apparmor.service`も有効化されます。
+
 ## リポジトリインストーラー
 
 ### Brew

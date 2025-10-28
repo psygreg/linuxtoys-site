@@ -769,6 +769,24 @@ sbctl enroll-keys -m -f
 ```
 - Ten slotte worden alle bestanden die via `sbctl verify` een handtekening voor Secure Boot nodig hebben, ondertekend met `sbctl sign -s`.
 
+### AppArmor-instellingen voor Debian en Arch Linux
+Installeert en schakelt een basis AppArmor-instellingen in - dezelfde standaardwaarden als Ubuntu. Voor een beter geharde MAC, kunt u [apparmor.d](https://github.com/roddhjav/apparmor.d) bekijken, dat om verschillende redenen niet automatisch kan worden geïnstalleerd en u moet de documentatie ervan zorgvuldig lezen om het te gebruiken.
+
+**Pakketten Geïnstalleerd of Bijgewerkt**
+- Arch: `apparmor`
+- Debian: `apparmor apparmor-utils`
+
+**Toegepaste aangepaste instellingen**
+- AppArmor moet als MAC voor het systeem via de kernel-CMDLINE worden aangeroepen. Dit gebeurt via `/etc/default/grub.d/99-apparmor.cfg` voor GRUB-gebruikers:
+```
+GRUB_CMDLINE_LINUX_DEFAULT="${GRUB_CMDLINE_LINUX_DEFAULT} apparmor=1 security=apparmor"
+```
+- Of `/etc/kernel/cmdline.d/99-apparmor.conf` voor systemd-boot-gebruikers:
+```
+apparmor=1 security=apparmor
+```
+- `apparmor.service` is ook ingeschakeld.
+
 ## Repository Installers
 
 ### Brew
