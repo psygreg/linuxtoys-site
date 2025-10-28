@@ -484,6 +484,13 @@
       "mode": "menu",
       "tools": [
         {
+          "name": "AppArmor",
+          "description": "aa_desc",
+          "icon": "apparmor.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/apparmor.sh"
+        },
+        {
           "name": "Secure Boot for Arch",
           "description": "Quickly set up Secure Boot on Arch Linux. Requires setting the Secure Boot mode to \"Setup\" in your UEFI firmware settings.",
           "icon": "application-x-executable",
@@ -1993,6 +2000,13 @@
       "description": "Ferramentas adicionais (às vezes experimentais) para Linux.",
       "mode": "menu",
       "tools": [
+        {
+          "name": "AppArmor",
+          "description": "aa_desc",
+          "icon": "apparmor.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/apparmor.sh"
+        },
         {
           "name": "Secure Boot para Arch",
           "description": "Configure rapidamente o Secure Boot no Arch Linux. Requer configurar o modo Secure Boot para \"Setup\" nas configurações de firmware UEFI.",
@@ -3504,6 +3518,13 @@
       "mode": "menu",
       "tools": [
         {
+          "name": "AppArmor",
+          "description": "aa_desc",
+          "icon": "apparmor.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/apparmor.sh"
+        },
+        {
           "name": "Secure Boot para Arch",
           "description": "Configure rápidamente Secure Boot en Arch Linux. Requiere configurar el modo Secure Boot en \"Setup\" en la configuración del firmware UEFI.",
           "icon": "application-x-executable",
@@ -5013,6 +5034,13 @@
       "description": "Outils supplémentaires (parfois expérimentaux) pour Linux.",
       "mode": "menu",
       "tools": [
+        {
+          "name": "AppArmor",
+          "description": "aa_desc",
+          "icon": "apparmor.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/apparmor.sh"
+        },
         {
           "name": "Démarrage sécurisé pour Arch",
           "description": "Configurez rapidement le démarrage sécurisé sur Arch Linux. Nécessite de définir le mode de démarrage sécurisé sur \"Setup\" dans les paramètres du firmware UEFI.",
@@ -6524,6 +6552,13 @@
       "mode": "menu",
       "tools": [
         {
+          "name": "AppArmor",
+          "description": "aa_desc",
+          "icon": "apparmor.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/apparmor.sh"
+        },
+        {
           "name": "Secure Boot für Arch",
           "description": "Richten Sie Secure Boot schnell auf Arch Linux ein. Erfordert das Setzen des Secure Boot-Modus auf \"Setup\" in Ihren UEFI-Firmware-Einstellungen.",
           "icon": "application-x-executable",
@@ -8033,6 +8068,13 @@
       "description": "Linux的附加（有时是实验性的）工具。",
       "mode": "menu",
       "tools": [
+        {
+          "name": "AppArmor",
+          "description": "aa_desc",
+          "icon": "apparmor.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/apparmor.sh"
+        },
         {
           "name": "Arch 安全启动",
           "description": "在 Arch Linux 上快速设置安全启动。需要在您的 UEFI 固件设置中将安全启动模式设置为\"Setup\"。",
@@ -9544,6 +9586,13 @@
       "mode": "menu",
       "tools": [
         {
+          "name": "AppArmor",
+          "description": "aa_desc",
+          "icon": "apparmor.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/apparmor.sh"
+        },
+        {
           "name": "Arch用セキュアブート",
           "description": "Arch Linuxでセキュアブートを素早く設定します。UEFIファームウェア設定でセキュアブートモードを\"Setup\"に設定する必要があります。",
           "icon": "application-x-executable",
@@ -11053,6 +11102,13 @@
       "description": "Дополнительные (иногда экспериментальные) инструменты для Linux.",
       "mode": "menu",
       "tools": [
+        {
+          "name": "AppArmor",
+          "description": "aa_desc",
+          "icon": "apparmor.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/apparmor.sh"
+        },
         {
           "name": "Безопасная загрузка для Arch",
           "description": "Быстро настройте безопасную загрузку на Arch Linux. Требуется установить режим безопасной загрузки в \"Setup\" в настройках прошивки UEFI.",
