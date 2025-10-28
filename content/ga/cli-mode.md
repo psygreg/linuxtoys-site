@@ -1,6 +1,6 @@
 # Mód CLI
 
-Soláthraíonn an modúl seo feidhmiúlacht chomhéadan líne na n-orduithe do LinuxToys, rud a ligeann d'fhoireann TF agus do theicneoirí suiteálacha a uathoibriú ag baint úsáide as comhaid manifeast.
+Soláthraíonn an modúl seo feidhmiúlacht chomhéadan líne na n-orduithe do LinuxToys, rud a ligeann d'fhoireann TF agus do theicneoirí suiteálacha a uathoibriú ag baint úsáide as comhaid manifeast, agus úsáid iomlán an aip gan an comhéadan grafach.
 
 #### Príomhghnéithe:
 - Braiteacht agus suiteáil uathoibríoch pacáistí córais
@@ -11,14 +11,28 @@ Soláthraíonn an modúl seo feidhmiúlacht chomhéadan líne na n-orduithe do L
 
 ## Úsáid Mhód CLI:
 ```
-LT_MANIFEST=1 python3 run.py [roghanna]
+linuxtoys-cli [Option] <item1> <item2> ...
 ```
 
 #### Roghanna:
-    <gan argóintí>             - Úsáid 'manifest.txt' réamhshocraithe sa chomhadlann reatha, cúltaca
-    <cosán_manifeast>          - Úsáid comhad manifeast sonraithe
-    check-updates              - Seiceáil nuashonruithe LinuxToys
-    --help, -h                 - Taispeáin faisnéis úsáide
+```
+linuxtoys-cli [Option] <item1> <item2> ...
+```
+- `-i, --install`: suiteálann roghanna roghnaithe (scripteanna, pacáistí), an mód réamhshocraithe
+- `-s, --script`: suiteálann scripteanna LinuxToys a shonraítear
+- `-p, --package`: suiteálann pacáistí trí bhainisteoirí pacáistí do chóras nó flatpaks (caithfear an t-ainm ceart a thabhairt)
+
+- `-h, --help`: taispeáint na roghanna atá ar fáil
+- `-l, --list`: liostáil gach script ar fáil do do chóras oibriúcháin reatha
+- `-m, --manifest`: do úsáid manifeast
+- `-v, --version`: taispeáint faisnéis an leagan
+- `-y, --yes`: scip prompts deimhnithe
+- `update, upgrade`: seiceáil do nuashonruithe agus uasghrádaigh LinuxToys
+
+Is féidir roghanna a úsáid le chéile ar an gcaoi chéanna le `pacman` Arch.
+```
+linuxtoys-cli -sy apparmor  # rith suiteálaí apparmor do Debian/Arch le deimhniú uathoibríoch
+```
 
 ## Formáid Chomhad Manifeast
 ```

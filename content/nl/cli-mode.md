@@ -1,7 +1,7 @@
 # CLI-modus
 
 Deze module biedt opdrachtregelinterface functionaliteit voor LinuxToys, waardoor IT-personeel 
-en technici installaties kunnen automatiseren met behulp van manifestbestanden.
+en technici installaties kunnen automatiseren met behulp van manifestbestanden, en volledige app-gebruik zonder de grafische interface.
 
 #### Hoofdfuncties:
 - Automatische detectie en installatie van systeempakketten
@@ -12,14 +12,28 @@ en technici installaties kunnen automatiseren met behulp van manifestbestanden.
 
 ## CLI-modus gebruik:
 ```
-LT_MANIFEST=1 python3 run.py [opties]
+linuxtoys-cli [Option] <item1> <item2> ...
 ```
 
 #### Opties:
-    <geen argumenten>       - Gebruik standaard 'manifest.txt' in huidige map, fallback
-    <manifest_pad>          - Gebruik gespecificeerd manifestbestand
-    check-updates           - Controleer op LinuxToys updates
-    --help, -h              - Toon gebruiksinformatie
+```
+linuxtoys-cli [Option] <item1> <item2> ...
+```
+- `-i, --install`: installeert geselecteerde opties (scripts, pakketten), de standaardmodus
+- `-s, --script`: installeert opgegeven LinuxToys-scripts
+- `-p, --package`: installeert pakketten via uw systeempacketbeheerder of flatpaks (juiste naam moet gegeven worden)
+
+- `-h, --help`: toont beschikbare opties
+- `-l, --list`: geeft een lijst van alle beschikbare scripts voor uw huidige besturingssysteem
+- `-m, --manifest`: voor manifest-gebruik
+- `-v, --version`: toont versieinformatie
+- `-y, --yes`: slaat bevestigingsprompts over
+- `update, upgrade`: controleert op updates en werkt LinuxToys bij
+
+Opties kunnen samen gebruikt worden op dezelfde manier als Arch's `pacman`.
+```
+linuxtoys-cli -sy apparmor  # voert apparmor-installatie voor Debian/Arch uit met automatische bevestiging
+```
 
 ## Manifestbestand formaat
 ```

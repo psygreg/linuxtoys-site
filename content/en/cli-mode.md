@@ -1,7 +1,6 @@
 # CLI Mode
 
-This module provides command-line interface functionality for LinuxToys, allowing IT staff 
-and technicians to automate installations using manifest files.
+This module provides command-line interface functionality for LinuxToys, allowing IT staff and technicians to automate installations using manifest files, and full app usage without the graphical interface.
 
 #### Key Features:
 - Automatic detection and installation of system packages
@@ -12,16 +11,30 @@ and technicians to automate installations using manifest files.
 
 ## CLI Mode Usage:
 ```
-LT_MANIFEST=1 python3 run.py [options]
+linuxtoys-cli [Option] <item1> <item2> ...
 ```
 
 #### Options:
-    <no arguments>          - Use default 'manifest.txt' in current directory, fallback
-    <manifest_path>         - Use specified manifest file
-    check-updates           - Check for LinuxToys updates
-    --help, -h              - Show usage information
+```
+linuxtoys-cli [Option] <item1> <item2> ...
+```
+- `-i, --install`: install selected options (scripts, packages), the default mode
+- `-s, --script`: install specified LinuxToys scripts
+- `-p, --package`: install packages your system's package manager or flatpaks (proper name must be given)
 
-## Manifest File Format
+- `-h, --help`: shows the available options
+- `-l, --list`: lists all available scripts for your current operating system
+- `-m, --manifest`: for manifest usage
+- `-v, --version`: show version information
+- `-y, --yes`: skip confirmation prompts
+- `update, upgrade`: check for updates and upgrade LinuxToys
+
+Options can be used together in a similar fashion to Arch's `pacman`.
+```
+linuxtoys-cli -sy apparmor  # run apparmor installer for Debian/Arch with automatic confirmation
+```
+
+## Manifest File Formatting
 ```
 # LinuxToys Manifest File
 

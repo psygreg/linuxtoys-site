@@ -1,7 +1,7 @@
 # Mode CLI
 
 Ce module fournit des fonctionnalités d'interface en ligne de commande pour LinuxToys, permettant au personnel informatique 
-et aux techniciens d'automatiser les installations en utilisant des fichiers manifestes.
+et aux techniciens d'automatiser les installations en utilisant des fichiers manifestes, et une utilisation complète de l'application sans l'interface graphique.
 
 #### Fonctionnalités Principales :
 - Détection automatique et installation des paquets système
@@ -12,14 +12,28 @@ et aux techniciens d'automatiser les installations en utilisant des fichiers man
 
 ## Utilisation du Mode CLI :
 ```
-LT_MANIFEST=1 python3 run.py [options]
+linuxtoys-cli [Option] <item1> <item2> ...
 ```
 
 #### Options :
-    <aucun argument>        - Utilise 'manifest.txt' par défaut dans le répertoire courant, solution de repli
-    <chemin_manifeste>      - Utilise le fichier manifeste spécifié
-    check-updates           - Vérifie les mises à jour LinuxToys
-    --help, -h              - Affiche les informations d'utilisation
+```
+linuxtoys-cli [Option] <item1> <item2> ...
+```
+- `-i, --install`: installe les options sélectionnées (scripts, paquets), le mode par défaut
+- `-s, --script`: installe les scripts LinuxToys spécifiés
+- `-p, --package`: installe les paquets via le gestionnaire de paquets de votre système ou les flatpaks (le nom correct doit être fourni)
+
+- `-h, --help`: affiche les options disponibles
+- `-l, --list`: répertorie tous les scripts disponibles pour votre système d'exploitation actuel
+- `-m, --manifest`: pour l'utilisation des manifestes
+- `-v, --version`: affiche les informations de version
+- `-y, --yes`: ignore les invites de confirmation
+- `update, upgrade`: vérifie les mises à jour et met à jour LinuxToys
+
+Les options peuvent être utilisées ensemble de manière similaire à `pacman` d'Arch.
+```
+linuxtoys-cli -sy apparmor  # exécute l'installateur d'apparmor pour Debian/Arch avec confirmation automatique
+```
 
 ## Format du Fichier Manifeste
 ```
