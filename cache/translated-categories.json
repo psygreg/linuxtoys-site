@@ -485,8 +485,8 @@
       "tools": [
         {
           "name": "AppArmor",
-          "description": "aa_desc",
-          "icon": "apparmor.png",
+          "description": "Strengthens the security of your Linux system by limiting what each application can access and do on the system.",
+          "icon": "apparmor.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/apparmor.sh"
         },
@@ -2002,8 +2002,8 @@
       "tools": [
         {
           "name": "AppArmor",
-          "description": "aa_desc",
-          "icon": "apparmor.png",
+          "description": "Fortalece a segurança do seu sistema Linux limitando o que cada aplicação pode acessar e fazer no sistema.",
+          "icon": "apparmor.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/apparmor.sh"
         },
@@ -3519,8 +3519,8 @@
       "tools": [
         {
           "name": "AppArmor",
-          "description": "aa_desc",
-          "icon": "apparmor.png",
+          "description": "Fortalece la seguridad de tu sistema Linux limitando lo que cada aplicación puede acceder y hacer en el sistema.",
+          "icon": "apparmor.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/apparmor.sh"
         },
@@ -5036,8 +5036,8 @@
       "tools": [
         {
           "name": "AppArmor",
-          "description": "aa_desc",
-          "icon": "apparmor.png",
+          "description": "Renforce la sécurité de votre système Linux en limitant ce que chaque application peut accéder et faire sur le système.",
+          "icon": "apparmor.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/apparmor.sh"
         },
@@ -6553,8 +6553,8 @@
       "tools": [
         {
           "name": "AppArmor",
-          "description": "aa_desc",
-          "icon": "apparmor.png",
+          "description": "Stärkt die Sicherheit deines Linux-Systems, indem es einschränkt, worauf jede Anwendung auf dem System zugreifen und was sie tun kann.",
+          "icon": "apparmor.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/apparmor.sh"
         },
@@ -8070,8 +8070,8 @@
       "tools": [
         {
           "name": "AppArmor",
-          "description": "aa_desc",
-          "icon": "apparmor.png",
+          "description": "通过限制每个应用程序在系统上可以访问和执行的操作来加强Linux系统的安全性。",
+          "icon": "apparmor.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/apparmor.sh"
         },
@@ -9587,8 +9587,8 @@
       "tools": [
         {
           "name": "AppArmor",
-          "description": "aa_desc",
-          "icon": "apparmor.png",
+          "description": "Linux システムのセキュリティを強化し、各アプリケーションがシステムでアクセスおよび実行できることを制限します。",
+          "icon": "apparmor.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/apparmor.sh"
         },
@@ -11104,8 +11104,8 @@
       "tools": [
         {
           "name": "AppArmor",
-          "description": "aa_desc",
-          "icon": "apparmor.png",
+          "description": "Усиливает безопасность вашей системы Linux, ограничивая то, что каждое приложение может получить доступ и делать на системе.",
+          "icon": "apparmor.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/apparmor.sh"
         },
