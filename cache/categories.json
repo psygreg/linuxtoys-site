@@ -480,7 +480,7 @@
       {
         "name": "AppArmor",
         "description": "aa_desc",
-        "icon": "apparmor.png",
+        "icon": "apparmor.svg",
         "version": "1.0",
         "scriptPath": "p3/scripts/extra/apparmor.sh"
       },

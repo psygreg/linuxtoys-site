@@ -312,7 +312,8 @@
     "cancel_script_continue_btn": "Continue Running",
     "cancel_script_cancel_btn": "Cancel Script",
     "rtl8821ce_desc": "rtl8821CE driver with firmware",
-    "rcloneui_desc": "A GUI for rclone synchronization."
+    "rcloneui_desc": "A GUI for rclone synchronization.",
+    "aa_desc": "Strengthens the security of your Linux system by limiting what each application can access and do on the system."
   },
   "pt": {
     "subtitle": "Uma coleção amigável de ferramentas para Linux.",
@@ -627,7 +628,8 @@
     "cancel_script_continue_btn": "Continuar Execução",
     "cancel_script_cancel_btn": "Cancelar Script",
     "rtl8821ce_desc": "Driver rtl8821CE com firmware",
-    "rcloneui_desc": "GUI para sincronização rclone"
+    "rcloneui_desc": "GUI para sincronização rclone",
+    "aa_desc": "Fortalece a segurança do seu sistema Linux limitando o que cada aplicação pode acessar e fazer no sistema."
   },
   "es": {
     "subtitle": "Una colección amigable de herramientas para Linux.",
@@ -942,7 +944,8 @@
     "cancel_script_continue_btn": "Continuar Ejecución",
     "cancel_script_cancel_btn": "Cancelar Script",
     "rtl8821ce_desc": "controlador rtl8821CE con firmware",
-    "rcloneui_desc": "GUI para sincronización de rclone"
+    "rcloneui_desc": "GUI para sincronización de rclone",
+    "aa_desc": "Fortalece la seguridad de tu sistema Linux limitando lo que cada aplicación puede acceder y hacer en el sistema."
   },
   "fr": {
     "subtitle": "Une collection d'outils pour Linux de manière conviviale.",
@@ -1257,7 +1260,8 @@
     "cancel_script_continue_btn": "Continuer l'exécution",
     "cancel_script_cancel_btn": "Annuler le Script",
     "rtl8821ce_desc": "Pilote rtl8821CE avec firmware",
-    "rcloneui_desc": "Interface graphique pour la synchronisation rclone"
+    "rcloneui_desc": "Interface graphique pour la synchronisation rclone",
+    "aa_desc": "Renforce la sécurité de votre système Linux en limitant ce que chaque application peut accéder et faire sur le système."
   },
   "de": {
     "subtitle": "Eine freundliche Sammlung von Tools für Linux.",
@@ -1572,7 +1576,8 @@
     "cancel_script_continue_btn": "Weiterhin Ausführen",
     "cancel_script_cancel_btn": "Skript Abbrechen",
     "rtl8821ce_desc": "rtl8821CE-Treiber mit Firmware",
-    "rcloneui_desc": "GUI für rclone-Synchronisierung"
+    "rcloneui_desc": "GUI für rclone-Synchronisierung",
+    "aa_desc": "Stärkt die Sicherheit deines Linux-Systems, indem es einschränkt, worauf jede Anwendung auf dem System zugreifen und was sie tun kann."
   },
   "zh": {
     "subtitle": "适用于Linux的用户友好工具集合。",
@@ -1889,7 +1894,8 @@
     "cancel_script_continue_btn": "继续运行",
     "cancel_script_cancel_btn": "取消脚本",
     "rtl8821ce_desc": "rtl8821CE驱动程序带固件",
-    "rcloneui_desc": "rclone同步的GUI"
+    "rcloneui_desc": "rclone同步的GUI",
+    "aa_desc": "通过限制每个应用程序在系统上可以访问和执行的操作来加强Linux系统的安全性。"
   },
   "ja": {
     "subtitle": "Linuxのためのユーザーフレンドリーなツール集。",
@@ -2204,7 +2210,8 @@
     "cancel_script_continue_btn": "実行を続行",
     "cancel_script_cancel_btn": "スクリプトをキャンセル",
     "rtl8821ce_desc": "ファームウェア付きrtl8821CEドライバー",
-    "rcloneui_desc": "rclone同期用GUI"
+    "rcloneui_desc": "rclone同期用GUI",
+    "aa_desc": "Linux システムのセキュリティを強化し、各アプリケーションがシステムでアクセスおよび実行できることを制限します。"
   },
   "ru": {
     "subtitle": "Коллекция инструментов для Linux в удобном формате.",
@@ -2519,6 +2526,7 @@
     "cancel_script_continue_btn": "Продолжить Выполнение",
     "cancel_script_cancel_btn": "Отменить Скрипт",
     "rtl8821ce_desc": "Драйвер rtl8821CE с прошивкой",
-    "rcloneui_desc": "Графический интерфейс для синхронизации rclone"
+    "rcloneui_desc": "Графический интерфейс для синхронизации rclone",
+    "aa_desc": "Усиливает безопасность вашей системы Linux, ограничивая то, что каждое приложение может получить доступ и делать на системе."
   }
 }
