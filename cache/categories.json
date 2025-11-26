@@ -247,6 +247,20 @@
             "scriptPath": "p3/scripts/devs/ides/neovim.sh"
           },
           {
+            "name": "Positron",
+            "description": "positron_desc",
+            "icon": "positron.png",
+            "version": "1.0",
+            "scriptPath": "p3/scripts/devs/ides/positron.sh"
+          },
+          {
+            "name": "RStudio",
+            "description": "rstudio_desc",
+            "icon": "rstudio.svg",
+            "version": "1.0",
+            "scriptPath": "p3/scripts/devs/ides/rstudio.sh"
+          },
+          {
             "name": "Sublime Text",
             "description": "sublime_desc",
             "icon": "sublime.png",

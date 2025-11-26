@@ -249,6 +249,20 @@
               "scriptPath": "p3/scripts/devs/ides/neovim.sh"
             },
             {
+              "name": "Positron",
+              "description": "Unifies exploration and production work in one free, AI-assisted environment, empowering the full spectrum of data science in Python and R.",
+              "icon": "positron.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/positron.sh"
+            },
+            {
+              "name": "RStudio",
+              "description": "A set of tools built to help you be more productive with R and Python.",
+              "icon": "rstudio.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/rstudio.sh"
+            },
+            {
               "name": "Sublime Text",
               "description": "A sophisticated text editor for code, markup and prose.",
               "icon": "sublime.png",
@@ -1764,6 +1778,20 @@
               "icon": "neovim.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ides/neovim.sh"
+            },
+            {
+              "name": "Positron",
+              "description": "positron_desc",
+              "icon": "positron.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/positron.sh"
+            },
+            {
+              "name": "RStudio",
+              "description": "rstudio_desc",
+              "icon": "rstudio.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/rstudio.sh"
             },
             {
               "name": "Sublime Text",
@@ -3283,6 +3311,20 @@
               "scriptPath": "p3/scripts/devs/ides/neovim.sh"
             },
             {
+              "name": "Positron",
+              "description": "positron_desc",
+              "icon": "positron.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/positron.sh"
+            },
+            {
+              "name": "RStudio",
+              "description": "rstudio_desc",
+              "icon": "rstudio.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/rstudio.sh"
+            },
+            {
               "name": "Sublime Text",
               "description": "Un editor de texto sofisticado para código, markup y prosa.",
               "icon": "sublime.png",
@@ -4798,6 +4840,20 @@
               "icon": "neovim.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ides/neovim.sh"
+            },
+            {
+              "name": "Positron",
+              "description": "positron_desc",
+              "icon": "positron.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/positron.sh"
+            },
+            {
+              "name": "RStudio",
+              "description": "rstudio_desc",
+              "icon": "rstudio.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/rstudio.sh"
             },
             {
               "name": "Sublime Text",
@@ -6317,6 +6373,20 @@
               "scriptPath": "p3/scripts/devs/ides/neovim.sh"
             },
             {
+              "name": "Positron",
+              "description": "positron_desc",
+              "icon": "positron.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/positron.sh"
+            },
+            {
+              "name": "RStudio",
+              "description": "rstudio_desc",
+              "icon": "rstudio.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/rstudio.sh"
+            },
+            {
               "name": "Sublime Text",
               "description": "Ein raffinierter Texteditor für Code, Markup und Prosa.",
               "icon": "sublime.png",
@@ -7832,6 +7902,20 @@
               "icon": "neovim.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ides/neovim.sh"
+            },
+            {
+              "name": "Positron",
+              "description": "positron_desc",
+              "icon": "positron.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/positron.sh"
+            },
+            {
+              "name": "RStudio",
+              "description": "rstudio_desc",
+              "icon": "rstudio.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/rstudio.sh"
             },
             {
               "name": "Sublime Text",
@@ -9351,6 +9435,20 @@
               "scriptPath": "p3/scripts/devs/ides/neovim.sh"
             },
             {
+              "name": "Positron",
+              "description": "positron_desc",
+              "icon": "positron.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/positron.sh"
+            },
+            {
+              "name": "RStudio",
+              "description": "rstudio_desc",
+              "icon": "rstudio.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/rstudio.sh"
+            },
+            {
               "name": "Sublime Text",
               "description": "コード、マークアップ、散文のための洗練されたテキストエディター。",
               "icon": "sublime.png",
@@ -10866,6 +10964,20 @@
               "icon": "neovim.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ides/neovim.sh"
+            },
+            {
+              "name": "Positron",
+              "description": "positron_desc",
+              "icon": "positron.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/positron.sh"
+            },
+            {
+              "name": "RStudio",
+              "description": "rstudio_desc",
+              "icon": "rstudio.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/rstudio.sh"
             },
             {
               "name": "Sublime Text",
