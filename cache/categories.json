@@ -492,6 +492,13 @@
     "mode": "menu",
     "tools": [
       {
+        "name": "Ananicy-cpp",
+        "description": "ananicy_desc",
+        "icon": "optimizer.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/ananicy.sh"
+      },
+      {
         "name": "AppArmor",
         "description": "aa_desc",
         "icon": "apparmor.svg",
