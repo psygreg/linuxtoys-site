@@ -610,6 +610,13 @@
           "scriptPath": "p3/scripts/extra/iwd.sh"
         },
         {
+          "name": "Plasma VRAM Fix",
+          "description": "Switches KDE Plasma's rendering backend to OpenGL, which uses significantly less VRAM.",
+          "icon": "preload.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/kdememfix.sh"
+        },
+        {
           "name": "LSW-WinBoat",
           "description": "Allows installing Windows on Linux in a Docker container with WinBoat, doing all the hard parts of the setup for you. Does NOT have GPU acceleration.",
           "icon": "lsw.svg",
@@ -2146,6 +2153,13 @@
           "icon": "iwd.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/iwd.sh"
+        },
+        {
+          "name": "Plasma VRAM Fix",
+          "description": "kdememfix_desc",
+          "icon": "preload.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/kdememfix.sh"
         },
         {
           "name": "LSW-WinBoat",
@@ -3686,6 +3700,13 @@
           "scriptPath": "p3/scripts/extra/iwd.sh"
         },
         {
+          "name": "Plasma VRAM Fix",
+          "description": "kdememfix_desc",
+          "icon": "preload.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/kdememfix.sh"
+        },
+        {
           "name": "LSW-WinBoat",
           "description": "Permite instalar Windows en Linux en un contenedor Docker con WinBoat, haciendo todas las partes difíciles de la configuración por ti. NO TIENE aceleración GPU.",
           "icon": "lsw.svg",
@@ -5222,6 +5243,13 @@
           "icon": "iwd.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/iwd.sh"
+        },
+        {
+          "name": "Plasma VRAM Fix",
+          "description": "kdememfix_desc",
+          "icon": "preload.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/kdememfix.sh"
         },
         {
           "name": "LSW-WinBoat",
@@ -6762,6 +6790,13 @@
           "scriptPath": "p3/scripts/extra/iwd.sh"
         },
         {
+          "name": "Plasma VRAM Fix",
+          "description": "kdememfix_desc",
+          "icon": "preload.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/kdememfix.sh"
+        },
+        {
           "name": "LSW-WinBoat",
           "description": "Ermöglicht die Installation von Windows auf Linux in einem Docker-Container mit WinBoat, das alle schwierigen Teile der Einrichtung für Sie übernimmt. HAT KEINE GPU-Beschleunigung.",
           "icon": "lsw.svg",
@@ -8298,6 +8333,13 @@
           "icon": "iwd.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/iwd.sh"
+        },
+        {
+          "name": "Plasma VRAM Fix",
+          "description": "kdememfix_desc",
+          "icon": "preload.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/kdememfix.sh"
         },
         {
           "name": "LSW-WinBoat",
@@ -9838,6 +9880,13 @@
           "scriptPath": "p3/scripts/extra/iwd.sh"
         },
         {
+          "name": "Plasma VRAM Fix",
+          "description": "kdememfix_desc",
+          "icon": "preload.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/kdememfix.sh"
+        },
+        {
           "name": "LSW-WinBoat",
           "description": "WinBoat を使用して Docker コンテナ内で Linux に Windows をインストールできます。セットアップの難しい部分をすべて処理します。GPU アクセラレーションはありません。",
           "icon": "lsw.svg",
@@ -11374,6 +11423,13 @@
           "icon": "iwd.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/iwd.sh"
+        },
+        {
+          "name": "Plasma VRAM Fix",
+          "description": "kdememfix_desc",
+          "icon": "preload.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/kdememfix.sh"
         },
         {
           "name": "LSW-WinBoat",

@@ -604,6 +604,13 @@
         "scriptPath": "p3/scripts/extra/iwd.sh"
       },
       {
+        "name": "Plasma VRAM Fix",
+        "description": "kdememfix_desc",
+        "icon": "preload.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/kdememfix.sh"
+      },
+      {
         "name": "LSW-WinBoat",
         "description": "lsw_desc",
         "icon": "lsw.svg",
