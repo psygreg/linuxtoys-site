@@ -625,6 +625,13 @@
         "scriptPath": "p3/scripts/extra/lucidglyph.sh"
       },
       {
+        "name": "minfreefix",
+        "description": "minfreefix_desc",
+        "icon": "preload.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/minfreefix.sh"
+      },
+      {
         "name": "CPU ondemand",
         "description": "ondemand_desc",
         "icon": "optimizer.svg",
@@ -1356,6 +1363,13 @@
         "description": "peripheral_desc",
         "mode": "menu",
         "tools": [
+          {
+            "name": "OpenLinkHub",
+            "description": "openlinkhub_desc",
+            "icon": "corsair.svg",
+            "version": "1.0",
+            "scriptPath": "p3/scripts/utils/peripherals/openlinkhub.sh"
+          },
           {
             "name": "OpenRGB",
             "description": "oprgb_desc",

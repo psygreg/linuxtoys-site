@@ -631,6 +631,13 @@
           "scriptPath": "p3/scripts/extra/lucidglyph.sh"
         },
         {
+          "name": "Dynamic Minimum Free Memory",
+          "description": "Dynamically adjusts the vm.min_free_kbytes setting based on total system RAM to improve performance and responsiveness.",
+          "icon": "preload.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/minfreefix.sh"
+        },
+        {
           "name": "CPU ondemand",
           "description": "Changes default CPU frequency governor to ondemand for higher performance. Not recommended on laptops. This option can also revert it if already set.",
           "icon": "optimizer.svg",
@@ -1367,6 +1374,13 @@
           "description": "Tools and resources for managing peripheral devices and lighting.",
           "mode": "menu",
           "tools": [
+            {
+              "name": "OpenLinkHub",
+              "description": "Control Corsair iCUE devices on Linux.",
+              "icon": "corsair.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/peripherals/openlinkhub.sh"
+            },
             {
               "name": "OpenRGB",
               "description": "A tool for configuring and managing RGB lighting on Linux, supporting various devices and platforms.",
@@ -2176,6 +2190,13 @@
           "scriptPath": "p3/scripts/extra/lucidglyph.sh"
         },
         {
+          "name": "minfreefix",
+          "description": "minfreefix_desc",
+          "icon": "preload.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/minfreefix.sh"
+        },
+        {
           "name": "CPU ondemand",
           "description": "Muda o governor de frequência de CPU padrão para ondemand para melhor desempenho. Não recomendado em laptops. Esta opção também pode removê-lo caso já esteja definido.",
           "icon": "optimizer.svg",
@@ -2912,6 +2933,13 @@
           "description": "Ferramentas e recursos para gerenciar dispositivos periféricos e iluminação.",
           "mode": "menu",
           "tools": [
+            {
+              "name": "OpenLinkHub",
+              "description": "openlinkhub_desc",
+              "icon": "corsair.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/peripherals/openlinkhub.sh"
+            },
             {
               "name": "OpenRGB",
               "description": "Uma ferramenta para configurar e gerenciar iluminação RGB no Linux, suportando vários dispositivos e plataformas.",
@@ -3721,6 +3749,13 @@
           "scriptPath": "p3/scripts/extra/lucidglyph.sh"
         },
         {
+          "name": "minfreefix",
+          "description": "minfreefix_desc",
+          "icon": "preload.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/minfreefix.sh"
+        },
+        {
           "name": "CPU ondemand",
           "description": "Cambia el gobernador de frecuencia de CPU predeterminado a ondemand para mayor rendimiento. No recomendado en portátiles.",
           "icon": "optimizer.svg",
@@ -4457,6 +4492,13 @@
           "description": "Herramientas y recursos para gestionar dispositivos periféricos e iluminación.",
           "mode": "menu",
           "tools": [
+            {
+              "name": "OpenLinkHub",
+              "description": "openlinkhub_desc",
+              "icon": "corsair.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/peripherals/openlinkhub.sh"
+            },
             {
               "name": "OpenRGB",
               "description": "Una herramienta para configurar y gestionar iluminación RGB en Linux, soportando varios dispositivos y plataformas.",
@@ -5266,6 +5308,13 @@
           "scriptPath": "p3/scripts/extra/lucidglyph.sh"
         },
         {
+          "name": "minfreefix",
+          "description": "minfreefix_desc",
+          "icon": "preload.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/minfreefix.sh"
+        },
+        {
           "name": "CPU ondemand",
           "description": "Change le gouverneur de fréquence CPU par défaut en ondemand pour de meilleures performances. Non recommandé sur les portables. Cette option peut aussi le supprimer s'il est déjà défini.",
           "icon": "optimizer.svg",
@@ -6002,6 +6051,13 @@
           "description": "Outils et ressources pour gérer les périphériques et l'éclairage.",
           "mode": "menu",
           "tools": [
+            {
+              "name": "OpenLinkHub",
+              "description": "openlinkhub_desc",
+              "icon": "corsair.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/peripherals/openlinkhub.sh"
+            },
             {
               "name": "OpenRGB",
               "description": "Un outil pour configurer et gérer l'éclairage RGB sous Linux, supportant divers appareils et plateformes.",
@@ -6811,6 +6867,13 @@
           "scriptPath": "p3/scripts/extra/lucidglyph.sh"
         },
         {
+          "name": "minfreefix",
+          "description": "minfreefix_desc",
+          "icon": "preload.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/minfreefix.sh"
+        },
+        {
           "name": "CPU ondemand",
           "description": "Ändert den Standard-CPU-Frequenz-Governor zu ondemand für höhere Leistung. Nicht empfohlen auf Laptops. Diese Option kann es auch entfernen, falls bereits gesetzt.",
           "icon": "optimizer.svg",
@@ -7547,6 +7610,13 @@
           "description": "Werkzeuge und Ressourcen für die Verwaltung von Peripheriegeräten und Beleuchtung.",
           "mode": "menu",
           "tools": [
+            {
+              "name": "OpenLinkHub",
+              "description": "openlinkhub_desc",
+              "icon": "corsair.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/peripherals/openlinkhub.sh"
+            },
             {
               "name": "OpenRGB",
               "description": "Ein Tool zur Konfiguration und Verwaltung von RGB-Beleuchtung unter Linux, das verschiedene Geräte und Plattformen unterstützt.",
@@ -8356,6 +8426,13 @@
           "scriptPath": "p3/scripts/extra/lucidglyph.sh"
         },
         {
+          "name": "minfreefix",
+          "description": "minfreefix_desc",
+          "icon": "preload.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/minfreefix.sh"
+        },
+        {
           "name": "CPU ondemand",
           "description": "将默认CPU频率调节器更改为ondemand以获得更高性能。不建议在笔记本电脑上使用。此选项还可以在已设置时将其恢复。",
           "icon": "optimizer.svg",
@@ -9092,6 +9169,13 @@
           "description": "管理外设设备和灯光的工具和资源。",
           "mode": "menu",
           "tools": [
+            {
+              "name": "OpenLinkHub",
+              "description": "openlinkhub_desc",
+              "icon": "corsair.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/peripherals/openlinkhub.sh"
+            },
             {
               "name": "OpenRGB",
               "description": "在Linux上配置和管理RGB灯光的工具，支持各种设备和平台。",
@@ -9901,6 +9985,13 @@
           "scriptPath": "p3/scripts/extra/lucidglyph.sh"
         },
         {
+          "name": "minfreefix",
+          "description": "minfreefix_desc",
+          "icon": "preload.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/minfreefix.sh"
+        },
+        {
           "name": "CPU ondemand",
           "description": "より高いパフォーマンスのためにデフォルトCPU周波数ガバナーをondemandに変更。ラップトップでは推奨されません。 すでに設定されている場合は削除オプションも提供します。",
           "icon": "optimizer.svg",
@@ -10637,6 +10728,13 @@
           "description": "周辺機器とライティングを管理するためのツールとリソース。",
           "mode": "menu",
           "tools": [
+            {
+              "name": "OpenLinkHub",
+              "description": "openlinkhub_desc",
+              "icon": "corsair.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/peripherals/openlinkhub.sh"
+            },
             {
               "name": "OpenRGB",
               "description": "さまざまなデバイスとプラットフォームをサポートするLinux上でRGBライティングを設定・管理するツール。",
@@ -11446,6 +11544,13 @@
           "scriptPath": "p3/scripts/extra/lucidglyph.sh"
         },
         {
+          "name": "minfreefix",
+          "description": "minfreefix_desc",
+          "icon": "preload.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/minfreefix.sh"
+        },
+        {
           "name": "CPU ondemand",
           "description": "Изменяет регулятор частоты процессора по умолчанию на ondemand для более высокой производительности. Не рекомендуется для ноутбуков. Эта опция также может удалить его, если он уже установлен.",
           "icon": "optimizer.svg",
@@ -12182,6 +12287,13 @@
           "description": "Инструменты и ресурсы для управления периферийными устройствами и подсветкой.",
           "mode": "menu",
           "tools": [
+            {
+              "name": "OpenLinkHub",
+              "description": "openlinkhub_desc",
+              "icon": "corsair.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/peripherals/openlinkhub.sh"
+            },
             {
               "name": "OpenRGB",
               "description": "Инструмент для настройки и управления RGB-подсветкой в Linux, поддерживающий различные устройства и платформы.",
