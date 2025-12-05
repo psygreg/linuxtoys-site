@@ -59,6 +59,20 @@
       "mode": "menu",
       "tools": [
         {
+          "name": "Adoptium Temurin® JDK",
+          "description": "High-performance, cross-platform, open-source Java runtime binaries that are enterprise-ready and Java SE TCK-tested for general use.",
+          "icon": "adoptium.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/adoptium-jdk.sh"
+        },
+        {
+          "name": "Astah Pro",
+          "description": "Total software design tool with UML, ERD, flowchart, DFD, and more.",
+          "icon": "astahpro.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/astahpro.sh"
+        },
+        {
           "name": "Docker",
           "description": "The Docker Engine container service provider and basic tools for it, like docker-compose.",
           "icon": "docker.svg",
@@ -1617,6 +1631,20 @@
       "description": "Ferramentas e recursos para desenvolvedores de software.",
       "mode": "menu",
       "tools": [
+        {
+          "name": "Adoptium Temurin® JDK",
+          "description": "adoptium_desc",
+          "icon": "adoptium.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/adoptium-jdk.sh"
+        },
+        {
+          "name": "Astah Pro",
+          "description": "astapro_desc",
+          "icon": "astahpro.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/astahpro.sh"
+        },
         {
           "name": "Docker",
           "description": "O provedor de serviços de container Docker Engine e ferramentas básicas para ele, como docker-compose.",
@@ -3177,6 +3205,20 @@
       "mode": "menu",
       "tools": [
         {
+          "name": "Adoptium Temurin® JDK",
+          "description": "adoptium_desc",
+          "icon": "adoptium.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/adoptium-jdk.sh"
+        },
+        {
+          "name": "Astah Pro",
+          "description": "astapro_desc",
+          "icon": "astahpro.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/astahpro.sh"
+        },
+        {
           "name": "Docker",
           "description": "El proveedor de servicios de contenedores Docker Engine y herramientas básicas para él, como docker-compose.",
           "icon": "docker.svg",
@@ -4735,6 +4777,20 @@
       "description": "Outils et ressources pour les développeurs logiciels.",
       "mode": "menu",
       "tools": [
+        {
+          "name": "Adoptium Temurin® JDK",
+          "description": "adoptium_desc",
+          "icon": "adoptium.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/adoptium-jdk.sh"
+        },
+        {
+          "name": "Astah Pro",
+          "description": "astapro_desc",
+          "icon": "astahpro.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/astahpro.sh"
+        },
         {
           "name": "Docker",
           "description": "Le fournisseur de services de conteneurs Docker Engine et outils de base pour cela, comme docker-compose.",
@@ -6295,6 +6351,20 @@
       "mode": "menu",
       "tools": [
         {
+          "name": "Adoptium Temurin® JDK",
+          "description": "adoptium_desc",
+          "icon": "adoptium.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/adoptium-jdk.sh"
+        },
+        {
+          "name": "Astah Pro",
+          "description": "astapro_desc",
+          "icon": "astahpro.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/astahpro.sh"
+        },
+        {
           "name": "Docker",
           "description": "Der Docker Engine Container-Service-Provider und grundlegende Tools dafür, wie docker-compose.",
           "icon": "docker.svg",
@@ -7853,6 +7923,20 @@
       "description": "软件开发者的工具和资源。",
       "mode": "menu",
       "tools": [
+        {
+          "name": "Adoptium Temurin® JDK",
+          "description": "adoptium_desc",
+          "icon": "adoptium.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/adoptium-jdk.sh"
+        },
+        {
+          "name": "Astah Pro",
+          "description": "astapro_desc",
+          "icon": "astahpro.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/astahpro.sh"
+        },
         {
           "name": "Docker",
           "description": "Docker Engine容器服务提供商和其基本工具，如docker-compose。",
@@ -9413,6 +9497,20 @@
       "mode": "menu",
       "tools": [
         {
+          "name": "Adoptium Temurin® JDK",
+          "description": "adoptium_desc",
+          "icon": "adoptium.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/adoptium-jdk.sh"
+        },
+        {
+          "name": "Astah Pro",
+          "description": "astapro_desc",
+          "icon": "astahpro.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/astahpro.sh"
+        },
+        {
           "name": "Docker",
           "description": "Docker Engineコンテナサービスプロバイダーとそのための基本ツール、docker-composeなど。",
           "icon": "docker.svg",
@@ -10971,6 +11069,20 @@
       "description": "Инструменты и ресурсы для разработчиков программного обеспечения.",
       "mode": "menu",
       "tools": [
+        {
+          "name": "Adoptium Temurin® JDK",
+          "description": "adoptium_desc",
+          "icon": "adoptium.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/adoptium-jdk.sh"
+        },
+        {
+          "name": "Astah Pro",
+          "description": "astapro_desc",
+          "icon": "astahpro.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/astahpro.sh"
+        },
         {
           "name": "Docker",
           "description": "Поставщик услуг контейнеров Docker Engine и основные инструменты для него, такие как docker-compose.",

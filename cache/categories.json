@@ -57,6 +57,20 @@
     "mode": "menu",
     "tools": [
       {
+        "name": "Adoptium Temurin® JDK",
+        "description": "adoptium_desc",
+        "icon": "adoptium.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/devs/adoptium-jdk.sh"
+      },
+      {
+        "name": "Astah Pro",
+        "description": "astapro_desc",
+        "icon": "astahpro.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/devs/astahpro.sh"
+      },
+      {
         "name": "Docker",
         "description": "docker_desc",
         "icon": "docker.svg",
