@@ -59,6 +59,20 @@
       "mode": "menu",
       "tools": [
         {
+          "name": "Adoptium Temurin® JDK",
+          "description": "High-performance, cross-platform, open-source Java runtime binaries that are enterprise-ready and Java SE TCK-tested for general use.",
+          "icon": "adoptium.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/adoptium-jdk.sh"
+        },
+        {
+          "name": "Astah Pro",
+          "description": "Total software design tool with UML, ERD, flowchart, DFD, and more.",
+          "icon": "astahpro.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/astahpro.sh"
+        },
+        {
           "name": "Docker",
           "description": "The Docker Engine container service provider and basic tools for it, like docker-compose.",
           "icon": "docker.svg",
@@ -247,6 +261,20 @@
               "icon": "neovim.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ides/neovim.sh"
+            },
+            {
+              "name": "Positron",
+              "description": "Unifies exploration and production work in one free, AI-assisted environment, empowering the full spectrum of data science in Python and R.",
+              "icon": "positron.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/positron.sh"
+            },
+            {
+              "name": "RStudio",
+              "description": "A set of tools built to help you be more productive with R and Python.",
+              "icon": "rstudio.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/rstudio.sh"
             },
             {
               "name": "Sublime Text",
@@ -484,6 +512,13 @@
       "mode": "menu",
       "tools": [
         {
+          "name": "Ananicy-cpp",
+          "description": "A daemon that automatically adjusts the 'niceness' of running processes based on their behavior to improve system responsiveness, and makes 'gamemoderun' unnecessary for games.",
+          "icon": "optimizer.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/ananicy.sh"
+        },
+        {
           "name": "AppArmor",
           "description": "Strengthens the security of your Linux system by limiting what each application can access and do on the system.",
           "icon": "apparmor.svg",
@@ -589,6 +624,13 @@
           "scriptPath": "p3/scripts/extra/iwd.sh"
         },
         {
+          "name": "Plasma VRAM Fix",
+          "description": "Switches KDE Plasma's rendering backend to OpenGL, which uses significantly less VRAM.",
+          "icon": "preload.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/kdememfix.sh"
+        },
+        {
           "name": "LSW-WinBoat",
           "description": "Allows installing Windows on Linux in a Docker container with WinBoat, doing all the hard parts of the setup for you. Does NOT have GPU acceleration.",
           "icon": "lsw.svg",
@@ -601,6 +643,13 @@
           "icon": "lucidglyph.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/lucidglyph.sh"
+        },
+        {
+          "name": "Dynamic Minimum Free Memory",
+          "description": "Dynamically adjusts the vm.min_free_kbytes setting based on total system RAM to improve performance and responsiveness.",
+          "icon": "preload.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/minfreefix.sh"
         },
         {
           "name": "CPU ondemand",
@@ -1340,6 +1389,13 @@
           "mode": "menu",
           "tools": [
             {
+              "name": "OpenLinkHub",
+              "description": "Control Corsair iCUE devices on Linux.",
+              "icon": "corsair.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/peripherals/openlinkhub.sh"
+            },
+            {
               "name": "OpenRGB",
               "description": "A tool for configuring and managing RGB lighting on Linux, supporting various devices and platforms.",
               "icon": "openrgb.svg",
@@ -1576,6 +1632,20 @@
       "mode": "menu",
       "tools": [
         {
+          "name": "Adoptium Temurin® JDK",
+          "description": "adoptium_desc",
+          "icon": "adoptium.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/adoptium-jdk.sh"
+        },
+        {
+          "name": "Astah Pro",
+          "description": "astapro_desc",
+          "icon": "astahpro.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/astahpro.sh"
+        },
+        {
           "name": "Docker",
           "description": "O provedor de serviços de container Docker Engine e ferramentas básicas para ele, como docker-compose.",
           "icon": "docker.svg",
@@ -1764,6 +1834,20 @@
               "icon": "neovim.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ides/neovim.sh"
+            },
+            {
+              "name": "Positron",
+              "description": "positron_desc",
+              "icon": "positron.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/positron.sh"
+            },
+            {
+              "name": "RStudio",
+              "description": "rstudio_desc",
+              "icon": "rstudio.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/rstudio.sh"
             },
             {
               "name": "Sublime Text",
@@ -2001,6 +2085,13 @@
       "mode": "menu",
       "tools": [
         {
+          "name": "Ananicy-cpp",
+          "description": "ananicy_desc",
+          "icon": "optimizer.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/ananicy.sh"
+        },
+        {
           "name": "AppArmor",
           "description": "Fortalece a segurança do seu sistema Linux limitando o que cada aplicação pode acessar e fazer no sistema.",
           "icon": "apparmor.svg",
@@ -2106,6 +2197,13 @@
           "scriptPath": "p3/scripts/extra/iwd.sh"
         },
         {
+          "name": "Plasma VRAM Fix",
+          "description": "kdememfix_desc",
+          "icon": "preload.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/kdememfix.sh"
+        },
+        {
           "name": "LSW-WinBoat",
           "description": "Permite instalar o Windows no Linux em um contêiner Docker com o WinBoat, fazendo todas as partes difíceis da configuração por você. NÃO TEM aceleração GPU.",
           "icon": "lsw.svg",
@@ -2118,6 +2216,13 @@
           "icon": "lucidglyph.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/lucidglyph.sh"
+        },
+        {
+          "name": "minfreefix",
+          "description": "minfreefix_desc",
+          "icon": "preload.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/minfreefix.sh"
         },
         {
           "name": "CPU ondemand",
@@ -2857,6 +2962,13 @@
           "mode": "menu",
           "tools": [
             {
+              "name": "OpenLinkHub",
+              "description": "openlinkhub_desc",
+              "icon": "corsair.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/peripherals/openlinkhub.sh"
+            },
+            {
               "name": "OpenRGB",
               "description": "Uma ferramenta para configurar e gerenciar iluminação RGB no Linux, suportando vários dispositivos e plataformas.",
               "icon": "openrgb.svg",
@@ -3093,6 +3205,20 @@
       "mode": "menu",
       "tools": [
         {
+          "name": "Adoptium Temurin® JDK",
+          "description": "adoptium_desc",
+          "icon": "adoptium.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/adoptium-jdk.sh"
+        },
+        {
+          "name": "Astah Pro",
+          "description": "astapro_desc",
+          "icon": "astahpro.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/astahpro.sh"
+        },
+        {
           "name": "Docker",
           "description": "El proveedor de servicios de contenedores Docker Engine y herramientas básicas para él, como docker-compose.",
           "icon": "docker.svg",
@@ -3281,6 +3407,20 @@
               "icon": "neovim.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ides/neovim.sh"
+            },
+            {
+              "name": "Positron",
+              "description": "positron_desc",
+              "icon": "positron.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/positron.sh"
+            },
+            {
+              "name": "RStudio",
+              "description": "rstudio_desc",
+              "icon": "rstudio.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/rstudio.sh"
             },
             {
               "name": "Sublime Text",
@@ -3518,6 +3658,13 @@
       "mode": "menu",
       "tools": [
         {
+          "name": "Ananicy-cpp",
+          "description": "ananicy_desc",
+          "icon": "optimizer.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/ananicy.sh"
+        },
+        {
           "name": "AppArmor",
           "description": "Fortalece la seguridad de tu sistema Linux limitando lo que cada aplicación puede acceder y hacer en el sistema.",
           "icon": "apparmor.svg",
@@ -3623,6 +3770,13 @@
           "scriptPath": "p3/scripts/extra/iwd.sh"
         },
         {
+          "name": "Plasma VRAM Fix",
+          "description": "kdememfix_desc",
+          "icon": "preload.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/kdememfix.sh"
+        },
+        {
           "name": "LSW-WinBoat",
           "description": "Permite instalar Windows en Linux en un contenedor Docker con WinBoat, haciendo todas las partes difíciles de la configuración por ti. NO TIENE aceleración GPU.",
           "icon": "lsw.svg",
@@ -3635,6 +3789,13 @@
           "icon": "lucidglyph.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/lucidglyph.sh"
+        },
+        {
+          "name": "minfreefix",
+          "description": "minfreefix_desc",
+          "icon": "preload.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/minfreefix.sh"
         },
         {
           "name": "CPU ondemand",
@@ -4374,6 +4535,13 @@
           "mode": "menu",
           "tools": [
             {
+              "name": "OpenLinkHub",
+              "description": "openlinkhub_desc",
+              "icon": "corsair.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/peripherals/openlinkhub.sh"
+            },
+            {
               "name": "OpenRGB",
               "description": "Una herramienta para configurar y gestionar iluminación RGB en Linux, soportando varios dispositivos y plataformas.",
               "icon": "openrgb.svg",
@@ -4610,6 +4778,20 @@
       "mode": "menu",
       "tools": [
         {
+          "name": "Adoptium Temurin® JDK",
+          "description": "adoptium_desc",
+          "icon": "adoptium.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/adoptium-jdk.sh"
+        },
+        {
+          "name": "Astah Pro",
+          "description": "astapro_desc",
+          "icon": "astahpro.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/astahpro.sh"
+        },
+        {
           "name": "Docker",
           "description": "Le fournisseur de services de conteneurs Docker Engine et outils de base pour cela, comme docker-compose.",
           "icon": "docker.svg",
@@ -4798,6 +4980,20 @@
               "icon": "neovim.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ides/neovim.sh"
+            },
+            {
+              "name": "Positron",
+              "description": "positron_desc",
+              "icon": "positron.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/positron.sh"
+            },
+            {
+              "name": "RStudio",
+              "description": "rstudio_desc",
+              "icon": "rstudio.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/rstudio.sh"
             },
             {
               "name": "Sublime Text",
@@ -5035,6 +5231,13 @@
       "mode": "menu",
       "tools": [
         {
+          "name": "Ananicy-cpp",
+          "description": "ananicy_desc",
+          "icon": "optimizer.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/ananicy.sh"
+        },
+        {
           "name": "AppArmor",
           "description": "Renforce la sécurité de votre système Linux en limitant ce que chaque application peut accéder et faire sur le système.",
           "icon": "apparmor.svg",
@@ -5140,6 +5343,13 @@
           "scriptPath": "p3/scripts/extra/iwd.sh"
         },
         {
+          "name": "Plasma VRAM Fix",
+          "description": "kdememfix_desc",
+          "icon": "preload.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/kdememfix.sh"
+        },
+        {
           "name": "LSW-WinBoat",
           "description": "Permet d'installer Windows sur Linux dans un conteneur Docker avec WinBoat, en gérant toutes les parties difficiles de la configuration pour vous. N'A PAS d'accélération GPU.",
           "icon": "lsw.svg",
@@ -5152,6 +5362,13 @@
           "icon": "lucidglyph.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/lucidglyph.sh"
+        },
+        {
+          "name": "minfreefix",
+          "description": "minfreefix_desc",
+          "icon": "preload.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/minfreefix.sh"
         },
         {
           "name": "CPU ondemand",
@@ -5891,6 +6108,13 @@
           "mode": "menu",
           "tools": [
             {
+              "name": "OpenLinkHub",
+              "description": "openlinkhub_desc",
+              "icon": "corsair.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/peripherals/openlinkhub.sh"
+            },
+            {
               "name": "OpenRGB",
               "description": "Un outil pour configurer et gérer l'éclairage RGB sous Linux, supportant divers appareils et plateformes.",
               "icon": "openrgb.svg",
@@ -6127,6 +6351,20 @@
       "mode": "menu",
       "tools": [
         {
+          "name": "Adoptium Temurin® JDK",
+          "description": "adoptium_desc",
+          "icon": "adoptium.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/adoptium-jdk.sh"
+        },
+        {
+          "name": "Astah Pro",
+          "description": "astapro_desc",
+          "icon": "astahpro.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/astahpro.sh"
+        },
+        {
           "name": "Docker",
           "description": "Der Docker Engine Container-Service-Provider und grundlegende Tools dafür, wie docker-compose.",
           "icon": "docker.svg",
@@ -6315,6 +6553,20 @@
               "icon": "neovim.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ides/neovim.sh"
+            },
+            {
+              "name": "Positron",
+              "description": "positron_desc",
+              "icon": "positron.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/positron.sh"
+            },
+            {
+              "name": "RStudio",
+              "description": "rstudio_desc",
+              "icon": "rstudio.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/rstudio.sh"
             },
             {
               "name": "Sublime Text",
@@ -6552,6 +6804,13 @@
       "mode": "menu",
       "tools": [
         {
+          "name": "Ananicy-cpp",
+          "description": "ananicy_desc",
+          "icon": "optimizer.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/ananicy.sh"
+        },
+        {
           "name": "AppArmor",
           "description": "Stärkt die Sicherheit deines Linux-Systems, indem es einschränkt, worauf jede Anwendung auf dem System zugreifen und was sie tun kann.",
           "icon": "apparmor.svg",
@@ -6657,6 +6916,13 @@
           "scriptPath": "p3/scripts/extra/iwd.sh"
         },
         {
+          "name": "Plasma VRAM Fix",
+          "description": "kdememfix_desc",
+          "icon": "preload.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/kdememfix.sh"
+        },
+        {
           "name": "LSW-WinBoat",
           "description": "Ermöglicht die Installation von Windows auf Linux in einem Docker-Container mit WinBoat, das alle schwierigen Teile der Einrichtung für Sie übernimmt. HAT KEINE GPU-Beschleunigung.",
           "icon": "lsw.svg",
@@ -6669,6 +6935,13 @@
           "icon": "lucidglyph.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/lucidglyph.sh"
+        },
+        {
+          "name": "minfreefix",
+          "description": "minfreefix_desc",
+          "icon": "preload.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/minfreefix.sh"
         },
         {
           "name": "CPU ondemand",
@@ -7408,6 +7681,13 @@
           "mode": "menu",
           "tools": [
             {
+              "name": "OpenLinkHub",
+              "description": "openlinkhub_desc",
+              "icon": "corsair.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/peripherals/openlinkhub.sh"
+            },
+            {
               "name": "OpenRGB",
               "description": "Ein Tool zur Konfiguration und Verwaltung von RGB-Beleuchtung unter Linux, das verschiedene Geräte und Plattformen unterstützt.",
               "icon": "openrgb.svg",
@@ -7644,6 +7924,20 @@
       "mode": "menu",
       "tools": [
         {
+          "name": "Adoptium Temurin® JDK",
+          "description": "adoptium_desc",
+          "icon": "adoptium.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/adoptium-jdk.sh"
+        },
+        {
+          "name": "Astah Pro",
+          "description": "astapro_desc",
+          "icon": "astahpro.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/astahpro.sh"
+        },
+        {
           "name": "Docker",
           "description": "Docker Engine容器服务提供商和其基本工具，如docker-compose。",
           "icon": "docker.svg",
@@ -7832,6 +8126,20 @@
               "icon": "neovim.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ides/neovim.sh"
+            },
+            {
+              "name": "Positron",
+              "description": "positron_desc",
+              "icon": "positron.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/positron.sh"
+            },
+            {
+              "name": "RStudio",
+              "description": "rstudio_desc",
+              "icon": "rstudio.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/rstudio.sh"
             },
             {
               "name": "Sublime Text",
@@ -8069,6 +8377,13 @@
       "mode": "menu",
       "tools": [
         {
+          "name": "Ananicy-cpp",
+          "description": "ananicy_desc",
+          "icon": "optimizer.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/ananicy.sh"
+        },
+        {
           "name": "AppArmor",
           "description": "通过限制每个应用程序在系统上可以访问和执行的操作来加强Linux系统的安全性。",
           "icon": "apparmor.svg",
@@ -8174,6 +8489,13 @@
           "scriptPath": "p3/scripts/extra/iwd.sh"
         },
         {
+          "name": "Plasma VRAM Fix",
+          "description": "kdememfix_desc",
+          "icon": "preload.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/kdememfix.sh"
+        },
+        {
           "name": "LSW-WinBoat",
           "description": "允许使用 WinBoat 在 Docker 容器中在 Linux 上安装 Windows，处理设置的所有困难部分。不具有 GPU 加速。",
           "icon": "lsw.svg",
@@ -8186,6 +8508,13 @@
           "icon": "lucidglyph.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/lucidglyph.sh"
+        },
+        {
+          "name": "minfreefix",
+          "description": "minfreefix_desc",
+          "icon": "preload.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/minfreefix.sh"
         },
         {
           "name": "CPU ondemand",
@@ -8925,6 +9254,13 @@
           "mode": "menu",
           "tools": [
             {
+              "name": "OpenLinkHub",
+              "description": "openlinkhub_desc",
+              "icon": "corsair.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/peripherals/openlinkhub.sh"
+            },
+            {
               "name": "OpenRGB",
               "description": "在Linux上配置和管理RGB灯光的工具，支持各种设备和平台。",
               "icon": "openrgb.svg",
@@ -9161,6 +9497,20 @@
       "mode": "menu",
       "tools": [
         {
+          "name": "Adoptium Temurin® JDK",
+          "description": "adoptium_desc",
+          "icon": "adoptium.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/adoptium-jdk.sh"
+        },
+        {
+          "name": "Astah Pro",
+          "description": "astapro_desc",
+          "icon": "astahpro.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/astahpro.sh"
+        },
+        {
           "name": "Docker",
           "description": "Docker Engineコンテナサービスプロバイダーとそのための基本ツール、docker-composeなど。",
           "icon": "docker.svg",
@@ -9349,6 +9699,20 @@
               "icon": "neovim.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ides/neovim.sh"
+            },
+            {
+              "name": "Positron",
+              "description": "positron_desc",
+              "icon": "positron.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/positron.sh"
+            },
+            {
+              "name": "RStudio",
+              "description": "rstudio_desc",
+              "icon": "rstudio.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/rstudio.sh"
             },
             {
               "name": "Sublime Text",
@@ -9586,6 +9950,13 @@
       "mode": "menu",
       "tools": [
         {
+          "name": "Ananicy-cpp",
+          "description": "ananicy_desc",
+          "icon": "optimizer.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/ananicy.sh"
+        },
+        {
           "name": "AppArmor",
           "description": "Linux システムのセキュリティを強化し、各アプリケーションがシステムでアクセスおよび実行できることを制限します。",
           "icon": "apparmor.svg",
@@ -9691,6 +10062,13 @@
           "scriptPath": "p3/scripts/extra/iwd.sh"
         },
         {
+          "name": "Plasma VRAM Fix",
+          "description": "kdememfix_desc",
+          "icon": "preload.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/kdememfix.sh"
+        },
+        {
           "name": "LSW-WinBoat",
           "description": "WinBoat を使用して Docker コンテナ内で Linux に Windows をインストールできます。セットアップの難しい部分をすべて処理します。GPU アクセラレーションはありません。",
           "icon": "lsw.svg",
@@ -9703,6 +10081,13 @@
           "icon": "lucidglyph.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/lucidglyph.sh"
+        },
+        {
+          "name": "minfreefix",
+          "description": "minfreefix_desc",
+          "icon": "preload.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/minfreefix.sh"
         },
         {
           "name": "CPU ondemand",
@@ -10442,6 +10827,13 @@
           "mode": "menu",
           "tools": [
             {
+              "name": "OpenLinkHub",
+              "description": "openlinkhub_desc",
+              "icon": "corsair.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/peripherals/openlinkhub.sh"
+            },
+            {
               "name": "OpenRGB",
               "description": "さまざまなデバイスとプラットフォームをサポートするLinux上でRGBライティングを設定・管理するツール。",
               "icon": "openrgb.svg",
@@ -10678,6 +11070,20 @@
       "mode": "menu",
       "tools": [
         {
+          "name": "Adoptium Temurin® JDK",
+          "description": "adoptium_desc",
+          "icon": "adoptium.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/adoptium-jdk.sh"
+        },
+        {
+          "name": "Astah Pro",
+          "description": "astapro_desc",
+          "icon": "astahpro.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/astahpro.sh"
+        },
+        {
           "name": "Docker",
           "description": "Поставщик услуг контейнеров Docker Engine и основные инструменты для него, такие как docker-compose.",
           "icon": "docker.svg",
@@ -10866,6 +11272,20 @@
               "icon": "neovim.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ides/neovim.sh"
+            },
+            {
+              "name": "Positron",
+              "description": "positron_desc",
+              "icon": "positron.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/positron.sh"
+            },
+            {
+              "name": "RStudio",
+              "description": "rstudio_desc",
+              "icon": "rstudio.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/rstudio.sh"
             },
             {
               "name": "Sublime Text",
@@ -11103,6 +11523,13 @@
       "mode": "menu",
       "tools": [
         {
+          "name": "Ananicy-cpp",
+          "description": "ananicy_desc",
+          "icon": "optimizer.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/ananicy.sh"
+        },
+        {
           "name": "AppArmor",
           "description": "Усиливает безопасность вашей системы Linux, ограничивая то, что каждое приложение может получить доступ и делать на системе.",
           "icon": "apparmor.svg",
@@ -11208,6 +11635,13 @@
           "scriptPath": "p3/scripts/extra/iwd.sh"
         },
         {
+          "name": "Plasma VRAM Fix",
+          "description": "kdememfix_desc",
+          "icon": "preload.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/kdememfix.sh"
+        },
+        {
           "name": "LSW-WinBoat",
           "description": "Позволяет установить Windows на Linux в контейнере Docker с WinBoat, который выполняет все сложные части настройки за вас. НЕ ИМЕЕТ ускорения GPU.",
           "icon": "lsw.svg",
@@ -11220,6 +11654,13 @@
           "icon": "lucidglyph.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/lucidglyph.sh"
+        },
+        {
+          "name": "minfreefix",
+          "description": "minfreefix_desc",
+          "icon": "preload.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/minfreefix.sh"
         },
         {
           "name": "CPU ondemand",
@@ -11958,6 +12399,13 @@
           "description": "Инструменты и ресурсы для управления периферийными устройствами и подсветкой.",
           "mode": "menu",
           "tools": [
+            {
+              "name": "OpenLinkHub",
+              "description": "openlinkhub_desc",
+              "icon": "corsair.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/peripherals/openlinkhub.sh"
+            },
             {
               "name": "OpenRGB",
               "description": "Инструмент для настройки и управления RGB-подсветкой в Linux, поддерживающий различные устройства и платформы.",

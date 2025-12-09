@@ -57,6 +57,20 @@
     "mode": "menu",
     "tools": [
       {
+        "name": "Adoptium Temurin® JDK",
+        "description": "adoptium_desc",
+        "icon": "adoptium.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/devs/adoptium-jdk.sh"
+      },
+      {
+        "name": "Astah Pro",
+        "description": "astapro_desc",
+        "icon": "astahpro.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/devs/astahpro.sh"
+      },
+      {
         "name": "Docker",
         "description": "docker_desc",
         "icon": "docker.svg",
@@ -245,6 +259,20 @@
             "icon": "neovim.svg",
             "version": "1.0",
             "scriptPath": "p3/scripts/devs/ides/neovim.sh"
+          },
+          {
+            "name": "Positron",
+            "description": "positron_desc",
+            "icon": "positron.png",
+            "version": "1.0",
+            "scriptPath": "p3/scripts/devs/ides/positron.sh"
+          },
+          {
+            "name": "RStudio",
+            "description": "rstudio_desc",
+            "icon": "rstudio.svg",
+            "version": "1.0",
+            "scriptPath": "p3/scripts/devs/ides/rstudio.sh"
           },
           {
             "name": "Sublime Text",
@@ -478,6 +506,13 @@
     "mode": "menu",
     "tools": [
       {
+        "name": "Ananicy-cpp",
+        "description": "ananicy_desc",
+        "icon": "optimizer.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/ananicy.sh"
+      },
+      {
         "name": "AppArmor",
         "description": "aa_desc",
         "icon": "apparmor.svg",
@@ -583,6 +618,13 @@
         "scriptPath": "p3/scripts/extra/iwd.sh"
       },
       {
+        "name": "Plasma VRAM Fix",
+        "description": "kdememfix_desc",
+        "icon": "preload.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/kdememfix.sh"
+      },
+      {
         "name": "LSW-WinBoat",
         "description": "lsw_desc",
         "icon": "lsw.svg",
@@ -595,6 +637,13 @@
         "icon": "lucidglyph.svg",
         "version": "1.0",
         "scriptPath": "p3/scripts/extra/lucidglyph.sh"
+      },
+      {
+        "name": "minfreefix",
+        "description": "minfreefix_desc",
+        "icon": "preload.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/minfreefix.sh"
       },
       {
         "name": "CPU ondemand",
@@ -1328,6 +1377,13 @@
         "description": "peripheral_desc",
         "mode": "menu",
         "tools": [
+          {
+            "name": "OpenLinkHub",
+            "description": "openlinkhub_desc",
+            "icon": "corsair.svg",
+            "version": "1.0",
+            "scriptPath": "p3/scripts/utils/peripherals/openlinkhub.sh"
+          },
           {
             "name": "OpenRGB",
             "description": "oprgb_desc",
