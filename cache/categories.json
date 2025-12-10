@@ -209,6 +209,13 @@
         "icon": "unityhub.svg",
         "version": "1.0",
         "scriptPath": "p3/scripts/devs/unity.sh"
+      },
+      {
+        "name": "ZeroTier",
+        "description": "zerotier_desc",
+        "icon": "zerotier.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/devs/zerotier.sh"
       }
     ],
     "subcategories": {

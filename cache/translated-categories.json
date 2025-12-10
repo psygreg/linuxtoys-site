@@ -211,6 +211,13 @@
           "icon": "unityhub.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/unity.sh"
+        },
+        {
+          "name": "ZeroTier",
+          "description": "Creates virtual Ethernet networks of almost unlimited size.",
+          "icon": "zerotier.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/zerotier.sh"
         }
       ],
       "subcategories": {
@@ -1633,14 +1640,14 @@
       "tools": [
         {
           "name": "Adoptium Temurin® JDK",
-          "description": "adoptium_desc",
+          "description": "Binários de runtime Java de código aberto, multiplataforma e de alto desempenho",
           "icon": "adoptium.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/adoptium-jdk.sh"
         },
         {
           "name": "Astah Pro",
-          "description": "astapro_desc",
+          "description": "Ferramenta completa de design de software com UML, ERD, flowchart, DFD e mais",
           "icon": "astahpro.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/astahpro.sh"
@@ -1784,6 +1791,13 @@
           "icon": "unityhub.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/unity.sh"
+        },
+        {
+          "name": "ZeroTier",
+          "description": "Cria redes Ethernet virtuais de tamanho quase ilimitado.",
+          "icon": "zerotier.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/zerotier.sh"
         }
       ],
       "subcategories": {
@@ -1837,14 +1851,14 @@
             },
             {
               "name": "Positron",
-              "description": "positron_desc",
+              "description": "Unifica trabalho de exploração e produção em um ambiente gratuito assistido por IA",
               "icon": "positron.png",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ides/positron.sh"
             },
             {
               "name": "RStudio",
-              "description": "rstudio_desc",
+              "description": "Um conjunto de ferramentas construído para ajudar você a ser mais produtivo com R e Python.",
               "icon": "rstudio.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ides/rstudio.sh"
@@ -2086,7 +2100,7 @@
       "tools": [
         {
           "name": "Ananicy-cpp",
-          "description": "ananicy_desc",
+          "description": "Um daemon que ajusta automaticamente a \"niceness\" de processos em execução com base no seu comportamento",
           "icon": "optimizer.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/ananicy.sh"
@@ -2198,7 +2212,7 @@
         },
         {
           "name": "Plasma VRAM Fix",
-          "description": "kdememfix_desc",
+          "description": "Alterna o backend de renderização do KDE Plasma para OpenGL, que usa significativamente menos VRAM",
           "icon": "preload.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/kdememfix.sh"
@@ -2218,8 +2232,8 @@
           "scriptPath": "p3/scripts/extra/lucidglyph.sh"
         },
         {
-          "name": "minfreefix",
-          "description": "minfreefix_desc",
+          "name": "Memória livre mínima dinâmica",
+          "description": "Ajusta dinamicamente a configuração vm.min_free_kbytes com base na RAM total do sistema",
           "icon": "preload.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/minfreefix.sh"
@@ -2963,7 +2977,7 @@
           "tools": [
             {
               "name": "OpenLinkHub",
-              "description": "openlinkhub_desc",
+              "description": "Controle dispositivos Corsair iCUE no Linux",
               "icon": "corsair.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/utils/peripherals/openlinkhub.sh"
@@ -3206,14 +3220,14 @@
       "tools": [
         {
           "name": "Adoptium Temurin® JDK",
-          "description": "adoptium_desc",
+          "description": "Binarios de tiempo de ejecución Java de código abierto multiplataforma de alto rendimiento",
           "icon": "adoptium.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/adoptium-jdk.sh"
         },
         {
           "name": "Astah Pro",
-          "description": "astapro_desc",
+          "description": "Herramienta completa de diseño de software con UML, ERD, diagrama de flujo, DFD y más",
           "icon": "astahpro.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/astahpro.sh"
@@ -3357,6 +3371,13 @@
           "icon": "unityhub.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/unity.sh"
+        },
+        {
+          "name": "ZeroTier",
+          "description": "Crea redes Ethernet virtuales de tamaño casi ilimitado.",
+          "icon": "zerotier.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/zerotier.sh"
         }
       ],
       "subcategories": {
@@ -3410,14 +3431,14 @@
             },
             {
               "name": "Positron",
-              "description": "positron_desc",
+              "description": "Unifica el trabajo de exploración y producción en un entorno gratuito asistido por IA",
               "icon": "positron.png",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ides/positron.sh"
             },
             {
               "name": "RStudio",
-              "description": "rstudio_desc",
+              "description": "Un conjunto de herramientas diseñadas para ayudarte a ser más productivo con R y Python.",
               "icon": "rstudio.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ides/rstudio.sh"
@@ -3659,7 +3680,7 @@
       "tools": [
         {
           "name": "Ananicy-cpp",
-          "description": "ananicy_desc",
+          "description": "Un daemon que ajusta automáticamente la \"niceness\" de los procesos en ejecución según su comportamiento",
           "icon": "optimizer.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/ananicy.sh"
@@ -3771,7 +3792,7 @@
         },
         {
           "name": "Plasma VRAM Fix",
-          "description": "kdememfix_desc",
+          "description": "Cambia el backend de renderización de KDE Plasma a OpenGL, que usa significativamente menos VRAM",
           "icon": "preload.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/kdememfix.sh"
@@ -3791,8 +3812,8 @@
           "scriptPath": "p3/scripts/extra/lucidglyph.sh"
         },
         {
-          "name": "minfreefix",
-          "description": "minfreefix_desc",
+          "name": "Memoria libre mínima dinámica",
+          "description": "Ajusta dinámicamente la configuración vm.min_free_kbytes según la RAM total del sistema",
           "icon": "preload.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/minfreefix.sh"
@@ -4536,7 +4557,7 @@
           "tools": [
             {
               "name": "OpenLinkHub",
-              "description": "openlinkhub_desc",
+              "description": "Controle dispositivos Corsair iCUE en Linux",
               "icon": "corsair.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/utils/peripherals/openlinkhub.sh"
@@ -4779,14 +4800,14 @@
       "tools": [
         {
           "name": "Adoptium Temurin® JDK",
-          "description": "adoptium_desc",
+          "description": "Binaires Java haute performance, multiplateforme et open-source",
           "icon": "adoptium.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/adoptium-jdk.sh"
         },
         {
           "name": "Astah Pro",
-          "description": "astapro_desc",
+          "description": "Outil de conception logicielle complet avec UML, ERD, diagramme de flux, DFD et plus",
           "icon": "astahpro.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/astahpro.sh"
@@ -4930,6 +4951,13 @@
           "icon": "unityhub.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/unity.sh"
+        },
+        {
+          "name": "ZeroTier",
+          "description": "Crée des réseaux Ethernet virtuels de taille quasi illimitée.",
+          "icon": "zerotier.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/zerotier.sh"
         }
       ],
       "subcategories": {
@@ -4983,14 +5011,14 @@
             },
             {
               "name": "Positron",
-              "description": "positron_desc",
+              "description": "Unifie l'exploration et la production dans un environnement gratuit assisté par l'IA",
               "icon": "positron.png",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ides/positron.sh"
             },
             {
               "name": "RStudio",
-              "description": "rstudio_desc",
+              "description": "Un ensemble d'outils conçus pour vous aider à être plus productif avec R et Python.",
               "icon": "rstudio.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ides/rstudio.sh"
@@ -5232,7 +5260,7 @@
       "tools": [
         {
           "name": "Ananicy-cpp",
-          "description": "ananicy_desc",
+          "description": "Un démon qui ajuste automatiquement la \"niceness\" des processus en cours en fonction de leur comportement",
           "icon": "optimizer.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/ananicy.sh"
@@ -5344,7 +5372,7 @@
         },
         {
           "name": "Plasma VRAM Fix",
-          "description": "kdememfix_desc",
+          "description": "Bascule le backend de rendu de KDE Plasma vers OpenGL, qui utilise beaucoup moins de VRAM",
           "icon": "preload.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/kdememfix.sh"
@@ -5364,8 +5392,8 @@
           "scriptPath": "p3/scripts/extra/lucidglyph.sh"
         },
         {
-          "name": "minfreefix",
-          "description": "minfreefix_desc",
+          "name": "Mémoire libre minimale dynamique",
+          "description": "Ajuste dynamiquement le paramètre vm.min_free_kbytes en fonction de la RAM totale du système",
           "icon": "preload.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/minfreefix.sh"
@@ -6109,7 +6137,7 @@
           "tools": [
             {
               "name": "OpenLinkHub",
-              "description": "openlinkhub_desc",
+              "description": "Contrôlez les appareils Corsair iCUE sous Linux",
               "icon": "corsair.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/utils/peripherals/openlinkhub.sh"
@@ -6352,14 +6380,14 @@
       "tools": [
         {
           "name": "Adoptium Temurin® JDK",
-          "description": "adoptium_desc",
+          "description": "Hochleistungs-Java-Runtime-Binärdateien plattformübergreifend und quelloffen",
           "icon": "adoptium.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/adoptium-jdk.sh"
         },
         {
           "name": "Astah Pro",
-          "description": "astapro_desc",
+          "description": "Umfassendes Software-Design-Tool mit UML, ERD, Flowchart, DFD und mehr",
           "icon": "astahpro.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/astahpro.sh"
@@ -6503,6 +6531,13 @@
           "icon": "unityhub.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/unity.sh"
+        },
+        {
+          "name": "ZeroTier",
+          "description": "Erstellt virtuelle Ethernet-Netzwerke fast unbegrenzter Größe.",
+          "icon": "zerotier.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/zerotier.sh"
         }
       ],
       "subcategories": {
@@ -6556,14 +6591,14 @@
             },
             {
               "name": "Positron",
-              "description": "positron_desc",
+              "description": "Vereinigt Erkennungs- und Produktionsarbeit in einer kostenlosen KI-gestützten Umgebung",
               "icon": "positron.png",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ides/positron.sh"
             },
             {
               "name": "RStudio",
-              "description": "rstudio_desc",
+              "description": "Ein Satz von Tools, die dir helfen, produktiver mit R und Python zu sein.",
               "icon": "rstudio.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ides/rstudio.sh"
@@ -6805,7 +6840,7 @@
       "tools": [
         {
           "name": "Ananicy-cpp",
-          "description": "ananicy_desc",
+          "description": "Ein Daemon, das automatisch die \"Priorität\" laufender Prozesse basierend auf deren Verhalten anpasst",
           "icon": "optimizer.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/ananicy.sh"
@@ -6917,7 +6952,7 @@
         },
         {
           "name": "Plasma VRAM Fix",
-          "description": "kdememfix_desc",
+          "description": "Schaltet das Rendering-Backend von KDE Plasma auf OpenGL um, das erheblich weniger VRAM nutzt",
           "icon": "preload.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/kdememfix.sh"
@@ -6937,8 +6972,8 @@
           "scriptPath": "p3/scripts/extra/lucidglyph.sh"
         },
         {
-          "name": "minfreefix",
-          "description": "minfreefix_desc",
+          "name": "Dynamischer Mindestfreispeicher",
+          "description": "Passt die vm.min_free_kbytes-Einstellung dynamisch auf Basis des gesamten System-RAM an",
           "icon": "preload.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/minfreefix.sh"
@@ -7682,7 +7717,7 @@
           "tools": [
             {
               "name": "OpenLinkHub",
-              "description": "openlinkhub_desc",
+              "description": "Corsair iCUE-Geräte auf Linux steuern",
               "icon": "corsair.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/utils/peripherals/openlinkhub.sh"
@@ -7925,14 +7960,14 @@
       "tools": [
         {
           "name": "Adoptium Temurin® JDK",
-          "description": "adoptium_desc",
+          "description": "高性能、跨平台、开源Java运行时二进制文件",
           "icon": "adoptium.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/adoptium-jdk.sh"
         },
         {
           "name": "Astah Pro",
-          "description": "astapro_desc",
+          "description": "具有UML、ERD、流程图、DFD等的总体软件设计工具",
           "icon": "astahpro.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/astahpro.sh"
@@ -8076,6 +8111,13 @@
           "icon": "unityhub.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/unity.sh"
+        },
+        {
+          "name": "ZeroTier",
+          "description": "创建几乎无限大小的虚拟以太网网络。",
+          "icon": "zerotier.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/zerotier.sh"
         }
       ],
       "subcategories": {
@@ -8129,14 +8171,14 @@
             },
             {
               "name": "Positron",
-              "description": "positron_desc",
+              "description": "在AI辅助的免费环境中统一探索和生产工作",
               "icon": "positron.png",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ides/positron.sh"
             },
             {
               "name": "RStudio",
-              "description": "rstudio_desc",
+              "description": "为帮助您使用R和Python提高工作效率而构建的工具集。",
               "icon": "rstudio.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ides/rstudio.sh"
@@ -8378,7 +8420,7 @@
       "tools": [
         {
           "name": "Ananicy-cpp",
-          "description": "ananicy_desc",
+          "description": "一个守护进程，根据进程的行为自动调整正在运行的进程的\"nice\"值",
           "icon": "optimizer.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/ananicy.sh"
@@ -8490,7 +8532,7 @@
         },
         {
           "name": "Plasma VRAM Fix",
-          "description": "kdememfix_desc",
+          "description": "将KDE Plasma的渲染后端切换到OpenGL，其使用的VRAM明显要少得多",
           "icon": "preload.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/kdememfix.sh"
@@ -8510,8 +8552,8 @@
           "scriptPath": "p3/scripts/extra/lucidglyph.sh"
         },
         {
-          "name": "minfreefix",
-          "description": "minfreefix_desc",
+          "name": "动态最小可用内存",
+          "description": "根据系统总RAM动态调整vm.min_free_kbytes设置",
           "icon": "preload.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/minfreefix.sh"
@@ -9255,7 +9297,7 @@
           "tools": [
             {
               "name": "OpenLinkHub",
-              "description": "openlinkhub_desc",
+              "description": "在Linux上控制Corsair iCUE设备",
               "icon": "corsair.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/utils/peripherals/openlinkhub.sh"
@@ -9498,14 +9540,14 @@
       "tools": [
         {
           "name": "Adoptium Temurin® JDK",
-          "description": "adoptium_desc",
+          "description": "高性能なクロスプラットフォームのオープンソースJavaランタイムバイナリ",
           "icon": "adoptium.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/adoptium-jdk.sh"
         },
         {
           "name": "Astah Pro",
-          "description": "astapro_desc",
+          "description": "UML、ERD、フローチャート、DFDなどを備えた総合的なソフトウェア設計ツール",
           "icon": "astahpro.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/astahpro.sh"
@@ -9649,6 +9691,13 @@
           "icon": "unityhub.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/unity.sh"
+        },
+        {
+          "name": "ZeroTier",
+          "description": "ほぼ無制限のサイズの仮想イーサネットネットワークを作成します。",
+          "icon": "zerotier.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/zerotier.sh"
         }
       ],
       "subcategories": {
@@ -9702,14 +9751,14 @@
             },
             {
               "name": "Positron",
-              "description": "positron_desc",
+              "description": "探索と本番業務を、AIが支援する無料の統合環境で統一",
               "icon": "positron.png",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ides/positron.sh"
             },
             {
               "name": "RStudio",
-              "description": "rstudio_desc",
+              "description": "RおよびPythonを使用してより生産性の高い作業を支援するためのツールセット。",
               "icon": "rstudio.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ides/rstudio.sh"
@@ -9951,7 +10000,7 @@
       "tools": [
         {
           "name": "Ananicy-cpp",
-          "description": "ananicy_desc",
+          "description": "実行中のプロセスの動作に基づいて、それらの\"nice\"値を自動的に調整するデーモン",
           "icon": "optimizer.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/ananicy.sh"
@@ -10063,7 +10112,7 @@
         },
         {
           "name": "Plasma VRAM Fix",
-          "description": "kdememfix_desc",
+          "description": "KDE PlasmaのレンダリングバックエンドをOpenGLに切り替え、大幅に少ないVRAMを使用します",
           "icon": "preload.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/kdememfix.sh"
@@ -10083,8 +10132,8 @@
           "scriptPath": "p3/scripts/extra/lucidglyph.sh"
         },
         {
-          "name": "minfreefix",
-          "description": "minfreefix_desc",
+          "name": "ダイナミック最小フリーメモリ",
+          "description": "システムの総RAMに基づいてvm.min_free_kbytes設定を動的に調整",
           "icon": "preload.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/minfreefix.sh"
@@ -10828,7 +10877,7 @@
           "tools": [
             {
               "name": "OpenLinkHub",
-              "description": "openlinkhub_desc",
+              "description": "Linux上のCorsair iCUEデバイスを制御",
               "icon": "corsair.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/utils/peripherals/openlinkhub.sh"
@@ -11071,14 +11120,14 @@
       "tools": [
         {
           "name": "Adoptium Temurin® JDK",
-          "description": "adoptium_desc",
+          "description": "Высокопроизводительные кроссплатформенные бинарные файлы Java runtime с открытым исходным кодом",
           "icon": "adoptium.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/adoptium-jdk.sh"
         },
         {
           "name": "Astah Pro",
-          "description": "astapro_desc",
+          "description": "Полный инструмент проектирования ПО с UML, ERD, блок-схемой, DFD и другим",
           "icon": "astahpro.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/astahpro.sh"
@@ -11222,6 +11271,13 @@
           "icon": "unityhub.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/unity.sh"
+        },
+        {
+          "name": "ZeroTier",
+          "description": "Создает виртуальные сети Ethernet практически неограниченного размера.",
+          "icon": "zerotier.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/zerotier.sh"
         }
       ],
       "subcategories": {
@@ -11275,14 +11331,14 @@
             },
             {
               "name": "Positron",
-              "description": "positron_desc",
+              "description": "Объединяет исследовательскую и производственную работу в одной бесплатной среде с поддержкой ИИ",
               "icon": "positron.png",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ides/positron.sh"
             },
             {
               "name": "RStudio",
-              "description": "rstudio_desc",
+              "description": "Набор инструментов, предназначенный для повышения продуктивности работы с R и Python.",
               "icon": "rstudio.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ides/rstudio.sh"
@@ -11524,7 +11580,7 @@
       "tools": [
         {
           "name": "Ananicy-cpp",
-          "description": "ananicy_desc",
+          "description": "Демон, который автоматически регулирует \"nice\" значение запущенных процессов на основе их поведения",
           "icon": "optimizer.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/ananicy.sh"
@@ -11636,7 +11692,7 @@
         },
         {
           "name": "Plasma VRAM Fix",
-          "description": "kdememfix_desc",
+          "description": "Переключает бэкэнд рендеринга KDE Plasma на OpenGL, который использует значительно меньше VRAM",
           "icon": "preload.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/kdememfix.sh"
@@ -11656,8 +11712,8 @@
           "scriptPath": "p3/scripts/extra/lucidglyph.sh"
         },
         {
-          "name": "minfreefix",
-          "description": "minfreefix_desc",
+          "name": "Динамический минимум свободной памяти",
+          "description": "Динамически корректирует параметр vm.min_free_kbytes на основе общего объема RAM системы",
           "icon": "preload.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/minfreefix.sh"
@@ -12401,7 +12457,7 @@
           "tools": [
             {
               "name": "OpenLinkHub",
-              "description": "openlinkhub_desc",
+              "description": "Управление устройствами Corsair iCUE в Linux",
               "icon": "corsair.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/utils/peripherals/openlinkhub.sh"

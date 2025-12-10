@@ -322,7 +322,8 @@
     "minfreefix_desc": "Dynamically adjusts the vm.min_free_kbytes setting based on total system RAM to improve performance and responsiveness.",
     "minfreefix": "Dynamic Minimum Free Memory",
     "adoptium_desc": "High-performance, cross-platform, open-source Java runtime binaries that are enterprise-ready and Java SE TCK-tested for general use.",
-    "astapro_desc": "Total software design tool with UML, ERD, flowchart, DFD, and more."
+    "astapro_desc": "Total software design tool with UML, ERD, flowchart, DFD, and more.",
+    "zerotier_desc": "Creates virtual Ethernet networks of almost unlimited size."
   },
   "pt": {
     "subtitle": "Uma coleção amigável de ferramentas para Linux.",
@@ -638,7 +639,17 @@
     "cancel_script_cancel_btn": "Cancelar Script",
     "rtl8821ce_desc": "Driver rtl8821CE com firmware",
     "rcloneui_desc": "GUI para sincronização rclone",
-    "aa_desc": "Fortalece a segurança do seu sistema Linux limitando o que cada aplicação pode acessar e fazer no sistema."
+    "aa_desc": "Fortalece a segurança do seu sistema Linux limitando o que cada aplicação pode acessar e fazer no sistema.",
+    "openlinkhub_desc": "Controle dispositivos Corsair iCUE no Linux",
+    "minfreefix_desc": "Ajusta dinamicamente a configuração vm.min_free_kbytes com base na RAM total do sistema",
+    "minfreefix": "Memória livre mínima dinâmica",
+    "adoptium_desc": "Binários de runtime Java de código aberto, multiplataforma e de alto desempenho",
+    "astapro_desc": "Ferramenta completa de design de software com UML, ERD, flowchart, DFD e mais",
+    "positron_desc": "Unifica trabalho de exploração e produção em um ambiente gratuito assistido por IA",
+    "rstudio_desc": "Um conjunto de ferramentas construído para ajudar você a ser mais produtivo com R e Python.",
+    "ananicy_desc": "Um daemon que ajusta automaticamente a \"niceness\" de processos em execução com base no seu comportamento",
+    "kdememfix_desc": "Alterna o backend de renderização do KDE Plasma para OpenGL, que usa significativamente menos VRAM",
+    "zerotier_desc": "Cria redes Ethernet virtuais de tamanho quase ilimitado."
   },
   "es": {
     "subtitle": "Una colección amigable de herramientas para Linux.",
@@ -954,7 +965,17 @@
     "cancel_script_cancel_btn": "Cancelar Script",
     "rtl8821ce_desc": "controlador rtl8821CE con firmware",
     "rcloneui_desc": "GUI para sincronización de rclone",
-    "aa_desc": "Fortalece la seguridad de tu sistema Linux limitando lo que cada aplicación puede acceder y hacer en el sistema."
+    "aa_desc": "Fortalece la seguridad de tu sistema Linux limitando lo que cada aplicación puede acceder y hacer en el sistema.",
+    "openlinkhub_desc": "Controle dispositivos Corsair iCUE en Linux",
+    "minfreefix_desc": "Ajusta dinámicamente la configuración vm.min_free_kbytes según la RAM total del sistema",
+    "minfreefix": "Memoria libre mínima dinámica",
+    "adoptium_desc": "Binarios de tiempo de ejecución Java de código abierto multiplataforma de alto rendimiento",
+    "astapro_desc": "Herramienta completa de diseño de software con UML, ERD, diagrama de flujo, DFD y más",
+    "positron_desc": "Unifica el trabajo de exploración y producción en un entorno gratuito asistido por IA",
+    "rstudio_desc": "Un conjunto de herramientas diseñadas para ayudarte a ser más productivo con R y Python.",
+    "ananicy_desc": "Un daemon que ajusta automáticamente la \"niceness\" de los procesos en ejecución según su comportamiento",
+    "kdememfix_desc": "Cambia el backend de renderización de KDE Plasma a OpenGL, que usa significativamente menos VRAM",
+    "zerotier_desc": "Crea redes Ethernet virtuales de tamaño casi ilimitado."
   },
   "fr": {
     "subtitle": "Une collection d'outils pour Linux de manière conviviale.",
@@ -1270,7 +1291,17 @@
     "cancel_script_cancel_btn": "Annuler le Script",
     "rtl8821ce_desc": "Pilote rtl8821CE avec firmware",
     "rcloneui_desc": "Interface graphique pour la synchronisation rclone",
-    "aa_desc": "Renforce la sécurité de votre système Linux en limitant ce que chaque application peut accéder et faire sur le système."
+    "aa_desc": "Renforce la sécurité de votre système Linux en limitant ce que chaque application peut accéder et faire sur le système.",
+    "openlinkhub_desc": "Contrôlez les appareils Corsair iCUE sous Linux",
+    "minfreefix_desc": "Ajuste dynamiquement le paramètre vm.min_free_kbytes en fonction de la RAM totale du système",
+    "minfreefix": "Mémoire libre minimale dynamique",
+    "adoptium_desc": "Binaires Java haute performance, multiplateforme et open-source",
+    "astapro_desc": "Outil de conception logicielle complet avec UML, ERD, diagramme de flux, DFD et plus",
+    "positron_desc": "Unifie l'exploration et la production dans un environnement gratuit assisté par l'IA",
+    "rstudio_desc": "Un ensemble d'outils conçus pour vous aider à être plus productif avec R et Python.",
+    "ananicy_desc": "Un démon qui ajuste automatiquement la \"niceness\" des processus en cours en fonction de leur comportement",
+    "kdememfix_desc": "Bascule le backend de rendu de KDE Plasma vers OpenGL, qui utilise beaucoup moins de VRAM",
+    "zerotier_desc": "Crée des réseaux Ethernet virtuels de taille quasi illimitée."
   },
   "de": {
     "subtitle": "Eine freundliche Sammlung von Tools für Linux.",
@@ -1586,7 +1617,17 @@
     "cancel_script_cancel_btn": "Skript Abbrechen",
     "rtl8821ce_desc": "rtl8821CE-Treiber mit Firmware",
     "rcloneui_desc": "GUI für rclone-Synchronisierung",
-    "aa_desc": "Stärkt die Sicherheit deines Linux-Systems, indem es einschränkt, worauf jede Anwendung auf dem System zugreifen und was sie tun kann."
+    "aa_desc": "Stärkt die Sicherheit deines Linux-Systems, indem es einschränkt, worauf jede Anwendung auf dem System zugreifen und was sie tun kann.",
+    "openlinkhub_desc": "Corsair iCUE-Geräte auf Linux steuern",
+    "minfreefix_desc": "Passt die vm.min_free_kbytes-Einstellung dynamisch auf Basis des gesamten System-RAM an",
+    "minfreefix": "Dynamischer Mindestfreispeicher",
+    "adoptium_desc": "Hochleistungs-Java-Runtime-Binärdateien plattformübergreifend und quelloffen",
+    "astapro_desc": "Umfassendes Software-Design-Tool mit UML, ERD, Flowchart, DFD und mehr",
+    "positron_desc": "Vereinigt Erkennungs- und Produktionsarbeit in einer kostenlosen KI-gestützten Umgebung",
+    "rstudio_desc": "Ein Satz von Tools, die dir helfen, produktiver mit R und Python zu sein.",
+    "ananicy_desc": "Ein Daemon, das automatisch die \"Priorität\" laufender Prozesse basierend auf deren Verhalten anpasst",
+    "kdememfix_desc": "Schaltet das Rendering-Backend von KDE Plasma auf OpenGL um, das erheblich weniger VRAM nutzt",
+    "zerotier_desc": "Erstellt virtuelle Ethernet-Netzwerke fast unbegrenzter Größe."
   },
   "zh": {
     "subtitle": "适用于Linux的用户友好工具集合。",
@@ -1904,7 +1945,17 @@
     "cancel_script_cancel_btn": "取消脚本",
     "rtl8821ce_desc": "rtl8821CE驱动程序带固件",
     "rcloneui_desc": "rclone同步的GUI",
-    "aa_desc": "通过限制每个应用程序在系统上可以访问和执行的操作来加强Linux系统的安全性。"
+    "aa_desc": "通过限制每个应用程序在系统上可以访问和执行的操作来加强Linux系统的安全性。",
+    "openlinkhub_desc": "在Linux上控制Corsair iCUE设备",
+    "minfreefix_desc": "根据系统总RAM动态调整vm.min_free_kbytes设置",
+    "minfreefix": "动态最小可用内存",
+    "adoptium_desc": "高性能、跨平台、开源Java运行时二进制文件",
+    "astapro_desc": "具有UML、ERD、流程图、DFD等的总体软件设计工具",
+    "positron_desc": "在AI辅助的免费环境中统一探索和生产工作",
+    "rstudio_desc": "为帮助您使用R和Python提高工作效率而构建的工具集。",
+    "ananicy_desc": "一个守护进程，根据进程的行为自动调整正在运行的进程的\"nice\"值",
+    "kdememfix_desc": "将KDE Plasma的渲染后端切换到OpenGL，其使用的VRAM明显要少得多",
+    "zerotier_desc": "创建几乎无限大小的虚拟以太网网络。"
   },
   "ja": {
     "subtitle": "Linuxのためのユーザーフレンドリーなツール集。",
@@ -2220,7 +2271,17 @@
     "cancel_script_cancel_btn": "スクリプトをキャンセル",
     "rtl8821ce_desc": "ファームウェア付きrtl8821CEドライバー",
     "rcloneui_desc": "rclone同期用GUI",
-    "aa_desc": "Linux システムのセキュリティを強化し、各アプリケーションがシステムでアクセスおよび実行できることを制限します。"
+    "aa_desc": "Linux システムのセキュリティを強化し、各アプリケーションがシステムでアクセスおよび実行できることを制限します。",
+    "openlinkhub_desc": "Linux上のCorsair iCUEデバイスを制御",
+    "minfreefix_desc": "システムの総RAMに基づいてvm.min_free_kbytes設定を動的に調整",
+    "minfreefix": "ダイナミック最小フリーメモリ",
+    "adoptium_desc": "高性能なクロスプラットフォームのオープンソースJavaランタイムバイナリ",
+    "astapro_desc": "UML、ERD、フローチャート、DFDなどを備えた総合的なソフトウェア設計ツール",
+    "positron_desc": "探索と本番業務を、AIが支援する無料の統合環境で統一",
+    "rstudio_desc": "RおよびPythonを使用してより生産性の高い作業を支援するためのツールセット。",
+    "ananicy_desc": "実行中のプロセスの動作に基づいて、それらの\"nice\"値を自動的に調整するデーモン",
+    "kdememfix_desc": "KDE PlasmaのレンダリングバックエンドをOpenGLに切り替え、大幅に少ないVRAMを使用します",
+    "zerotier_desc": "ほぼ無制限のサイズの仮想イーサネットネットワークを作成します。"
   },
   "ru": {
     "subtitle": "Коллекция инструментов для Linux в удобном формате.",
@@ -2536,6 +2597,16 @@
     "cancel_script_cancel_btn": "Отменить Скрипт",
     "rtl8821ce_desc": "Драйвер rtl8821CE с прошивкой",
     "rcloneui_desc": "Графический интерфейс для синхронизации rclone",
-    "aa_desc": "Усиливает безопасность вашей системы Linux, ограничивая то, что каждое приложение может получить доступ и делать на системе."
+    "aa_desc": "Усиливает безопасность вашей системы Linux, ограничивая то, что каждое приложение может получить доступ и делать на системе.",
+    "openlinkhub_desc": "Управление устройствами Corsair iCUE в Linux",
+    "minfreefix_desc": "Динамически корректирует параметр vm.min_free_kbytes на основе общего объема RAM системы",
+    "minfreefix": "Динамический минимум свободной памяти",
+    "adoptium_desc": "Высокопроизводительные кроссплатформенные бинарные файлы Java runtime с открытым исходным кодом",
+    "astapro_desc": "Полный инструмент проектирования ПО с UML, ERD, блок-схемой, DFD и другим",
+    "positron_desc": "Объединяет исследовательскую и производственную работу в одной бесплатной среде с поддержкой ИИ",
+    "rstudio_desc": "Набор инструментов, предназначенный для повышения продуктивности работы с R и Python.",
+    "ananicy_desc": "Демон, который автоматически регулирует \"nice\" значение запущенных процессов на основе их поведения",
+    "kdememfix_desc": "Переключает бэкэнд рендеринга KDE Plasma на OpenGL, который использует значительно меньше VRAM",
+    "zerotier_desc": "Создает виртуальные сети Ethernet практически неограниченного размера."
   }
 }
