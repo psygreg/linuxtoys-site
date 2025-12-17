@@ -323,7 +323,8 @@
     "minfreefix": "Dynamic Minimum Free Memory",
     "adoptium_desc": "High-performance, cross-platform, open-source Java runtime binaries that are enterprise-ready and Java SE TCK-tested for general use.",
     "astapro_desc": "Total software design tool with UML, ERD, flowchart, DFD, and more.",
-    "zerotier_desc": "Creates virtual Ethernet networks of almost unlimited size."
+    "zerotier_desc": "Creates virtual Ethernet networks of almost unlimited size.",
+    "faugus_desc": "A newer, lightweight and simplified application to manage your games and their WINE prefixes on Linux, similarly to Lutris."
   },
   "pt": {
     "subtitle": "Uma coleção amigável de ferramentas para Linux.",
@@ -649,7 +650,8 @@
     "rstudio_desc": "Um conjunto de ferramentas construído para ajudar você a ser mais produtivo com R e Python.",
     "ananicy_desc": "Um daemon que ajusta automaticamente a \"niceness\" de processos em execução com base no seu comportamento",
     "kdememfix_desc": "Alterna o backend de renderização do KDE Plasma para OpenGL, que usa significativamente menos VRAM",
-    "zerotier_desc": "Cria redes Ethernet virtuais de tamanho quase ilimitado."
+    "zerotier_desc": "Cria redes Ethernet virtuais de tamanho quase ilimitado.",
+    "faugus_desc": "Um aplicativo mais novo, leve e simplificado para gerenciar seus jogos e seus prefixos WINE no Linux, semelhante ao Lutris."
   },
   "es": {
     "subtitle": "Una colección amigable de herramientas para Linux.",
@@ -975,7 +977,8 @@
     "rstudio_desc": "Un conjunto de herramientas diseñadas para ayudarte a ser más productivo con R y Python.",
     "ananicy_desc": "Un daemon que ajusta automáticamente la \"niceness\" de los procesos en ejecución según su comportamiento",
     "kdememfix_desc": "Cambia el backend de renderización de KDE Plasma a OpenGL, que usa significativamente menos VRAM",
-    "zerotier_desc": "Crea redes Ethernet virtuales de tamaño casi ilimitado."
+    "zerotier_desc": "Crea redes Ethernet virtuales de tamaño casi ilimitado.",
+    "faugus_desc": "Una aplicación más nueva, ligera y simplificada para administrar tus juegos y sus prefijos de WINE en Linux, de manera similar a Lutris."
   },
   "fr": {
     "subtitle": "Une collection d'outils pour Linux de manière conviviale.",
@@ -1301,7 +1304,8 @@
     "rstudio_desc": "Un ensemble d'outils conçus pour vous aider à être plus productif avec R et Python.",
     "ananicy_desc": "Un démon qui ajuste automatiquement la \"niceness\" des processus en cours en fonction de leur comportement",
     "kdememfix_desc": "Bascule le backend de rendu de KDE Plasma vers OpenGL, qui utilise beaucoup moins de VRAM",
-    "zerotier_desc": "Crée des réseaux Ethernet virtuels de taille quasi illimitée."
+    "zerotier_desc": "Crée des réseaux Ethernet virtuels de taille quasi illimitée.",
+    "faugus_desc": "Une application plus récente, plus légère et simplifiée pour gérer vos jeux et leurs préfixes WINE sur Linux, similaire à Lutris."
   },
   "de": {
     "subtitle": "Eine freundliche Sammlung von Tools für Linux.",
@@ -1627,7 +1631,8 @@
     "rstudio_desc": "Ein Satz von Tools, die dir helfen, produktiver mit R und Python zu sein.",
     "ananicy_desc": "Ein Daemon, das automatisch die \"Priorität\" laufender Prozesse basierend auf deren Verhalten anpasst",
     "kdememfix_desc": "Schaltet das Rendering-Backend von KDE Plasma auf OpenGL um, das erheblich weniger VRAM nutzt",
-    "zerotier_desc": "Erstellt virtuelle Ethernet-Netzwerke fast unbegrenzter Größe."
+    "zerotier_desc": "Erstellt virtuelle Ethernet-Netzwerke fast unbegrenzter Größe.",
+    "faugus_desc": "Eine neuere, leichtere und vereinfachte Anwendung zur Verwaltung Ihrer Spiele und ihrer WINE-Präfixe unter Linux, ähnlich wie Lutris."
   },
   "zh": {
     "subtitle": "适用于Linux的用户友好工具集合。",
@@ -1955,7 +1960,8 @@
     "rstudio_desc": "为帮助您使用R和Python提高工作效率而构建的工具集。",
     "ananicy_desc": "一个守护进程，根据进程的行为自动调整正在运行的进程的\"nice\"值",
     "kdememfix_desc": "将KDE Plasma的渲染后端切换到OpenGL，其使用的VRAM明显要少得多",
-    "zerotier_desc": "创建几乎无限大小的虚拟以太网网络。"
+    "zerotier_desc": "创建几乎无限大小的虚拟以太网网络。",
+    "faugus_desc": "在Linux上管理您的游戏及其WINE前缀的一个更新、更轻量级和简化的应用程序，类似于Lutris。"
   },
   "ja": {
     "subtitle": "Linuxのためのユーザーフレンドリーなツール集。",
@@ -2281,7 +2287,8 @@
     "rstudio_desc": "RおよびPythonを使用してより生産性の高い作業を支援するためのツールセット。",
     "ananicy_desc": "実行中のプロセスの動作に基づいて、それらの\"nice\"値を自動的に調整するデーモン",
     "kdememfix_desc": "KDE PlasmaのレンダリングバックエンドをOpenGLに切り替え、大幅に少ないVRAMを使用します",
-    "zerotier_desc": "ほぼ無制限のサイズの仮想イーサネットネットワークを作成します。"
+    "zerotier_desc": "ほぼ無制限のサイズの仮想イーサネットネットワークを作成します。",
+    "faugus_desc": "Linuxでゲームとそのワインプレフィックスを管理するための、より新しく、軽量で簡潔なアプリケーション、Lutrisに似ています。"
   },
   "ru": {
     "subtitle": "Коллекция инструментов для Linux в удобном формате.",
@@ -2607,6 +2614,7 @@
     "rstudio_desc": "Набор инструментов, предназначенный для повышения продуктивности работы с R и Python.",
     "ananicy_desc": "Демон, который автоматически регулирует \"nice\" значение запущенных процессов на основе их поведения",
     "kdememfix_desc": "Переключает бэкэнд рендеринга KDE Plasma на OpenGL, который использует значительно меньше VRAM",
-    "zerotier_desc": "Создает виртуальные сети Ethernet практически неограниченного размера."
+    "zerotier_desc": "Создает виртуальные сети Ethernet практически неограниченного размера.",
+    "faugus_desc": "Более новое, легкое и упрощенное приложение для управления вашими играми и их префиксами WINE в Linux, подобно Lutris."
   }
 }

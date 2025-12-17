@@ -739,6 +739,13 @@
     "mode": "checklist",
     "tools": [
       {
+        "name": "Faugus Launcher",
+        "description": "faugus_desc",
+        "icon": "faugus-launcher.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/game/faugus.sh"
+      },
+      {
         "name": "Gamemode",
         "description": "gamemode_desc",
         "icon": "gaming.svg",
