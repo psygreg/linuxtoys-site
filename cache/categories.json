@@ -1128,6 +1128,13 @@
         "scriptPath": "p3/scripts/repos/rpmfusion.sh"
       },
       {
+        "name": "Terra",
+        "description": "terra_desc",
+        "icon": "terra.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/repos/terra.sh"
+      },
+      {
         "name": "Yay",
         "description": "yay_desc",
         "icon": "archpkg.png",

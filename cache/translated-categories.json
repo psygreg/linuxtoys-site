@@ -1137,6 +1137,13 @@
           "scriptPath": "p3/scripts/repos/rpmfusion.sh"
         },
         {
+          "name": "Terra",
+          "description": "Terra is a rolling-release Fedora repository for all the software you need.",
+          "icon": "terra.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/terra.sh"
+        },
+        {
           "name": "Yay",
           "description": "A popular AUR helper written in Go. Similar to paru.",
           "icon": "archpkg.png",
@@ -2722,6 +2729,13 @@
           "icon": "rpmfusion.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/repos/rpmfusion.sh"
+        },
+        {
+          "name": "Terra",
+          "description": "terra_desc",
+          "icon": "terra.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/terra.sh"
         },
         {
           "name": "Yay",
@@ -4311,6 +4325,13 @@
           "scriptPath": "p3/scripts/repos/rpmfusion.sh"
         },
         {
+          "name": "Terra",
+          "description": "terra_desc",
+          "icon": "terra.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/terra.sh"
+        },
+        {
           "name": "Yay",
           "description": "Un asistente AUR popular escrito en Go. Similar a paru.",
           "icon": "archpkg.png",
@@ -5896,6 +5917,13 @@
           "icon": "rpmfusion.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/repos/rpmfusion.sh"
+        },
+        {
+          "name": "Terra",
+          "description": "terra_desc",
+          "icon": "terra.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/terra.sh"
         },
         {
           "name": "Yay",
@@ -7485,6 +7513,13 @@
           "scriptPath": "p3/scripts/repos/rpmfusion.sh"
         },
         {
+          "name": "Terra",
+          "description": "terra_desc",
+          "icon": "terra.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/terra.sh"
+        },
+        {
           "name": "Yay",
           "description": "Ein beliebter AUR-Helfer, geschrieben in Go. Ähnlich wie paru.",
           "icon": "archpkg.png",
@@ -9070,6 +9105,13 @@
           "icon": "rpmfusion.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/repos/rpmfusion.sh"
+        },
+        {
+          "name": "Terra",
+          "description": "terra_desc",
+          "icon": "terra.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/terra.sh"
         },
         {
           "name": "Yay",
@@ -10659,6 +10701,13 @@
           "scriptPath": "p3/scripts/repos/rpmfusion.sh"
         },
         {
+          "name": "Terra",
+          "description": "terra_desc",
+          "icon": "terra.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/terra.sh"
+        },
+        {
           "name": "Yay",
           "description": "Go で書かれた人気の AUR ヘルパー。paru に似ています。",
           "icon": "archpkg.png",
@@ -12244,6 +12293,13 @@
           "icon": "rpmfusion.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/repos/rpmfusion.sh"
+        },
+        {
+          "name": "Terra",
+          "description": "terra_desc",
+          "icon": "terra.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/repos/terra.sh"
         },
         {
           "name": "Yay",
