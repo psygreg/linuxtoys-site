@@ -289,6 +289,13 @@
               "icon": "sublime.png",
               "version": "4",
               "scriptPath": "p3/scripts/devs/ides/sublimetext.sh"
+            },
+            {
+              "name": "Zed",
+              "description": "A minimal code editor crafted for speed and collaboration with humans and AI.",
+              "icon": "zed.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/zed.sh"
             }
           ],
           "displayName": "IDEs"
@@ -1883,6 +1890,13 @@
               "icon": "sublime.png",
               "version": "4",
               "scriptPath": "p3/scripts/devs/ides/sublimetext.sh"
+            },
+            {
+              "name": "Zed",
+              "description": "zed_desc",
+              "icon": "zed.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/zed.sh"
             }
           ],
           "displayName": "IDEs"
@@ -3477,6 +3491,13 @@
               "icon": "sublime.png",
               "version": "4",
               "scriptPath": "p3/scripts/devs/ides/sublimetext.sh"
+            },
+            {
+              "name": "Zed",
+              "description": "zed_desc",
+              "icon": "zed.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/zed.sh"
             }
           ],
           "displayName": "IDEs"
@@ -5071,6 +5092,13 @@
               "icon": "sublime.png",
               "version": "4",
               "scriptPath": "p3/scripts/devs/ides/sublimetext.sh"
+            },
+            {
+              "name": "Zed",
+              "description": "zed_desc",
+              "icon": "zed.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/zed.sh"
             }
           ],
           "displayName": "IDEs"
@@ -6665,6 +6693,13 @@
               "icon": "sublime.png",
               "version": "4",
               "scriptPath": "p3/scripts/devs/ides/sublimetext.sh"
+            },
+            {
+              "name": "Zed",
+              "description": "zed_desc",
+              "icon": "zed.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/zed.sh"
             }
           ],
           "displayName": "IDEs"
@@ -8259,6 +8294,13 @@
               "icon": "sublime.png",
               "version": "4",
               "scriptPath": "p3/scripts/devs/ides/sublimetext.sh"
+            },
+            {
+              "name": "Zed",
+              "description": "zed_desc",
+              "icon": "zed.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/zed.sh"
             }
           ],
           "displayName": "IDE"
@@ -9853,6 +9895,13 @@
               "icon": "sublime.png",
               "version": "4",
               "scriptPath": "p3/scripts/devs/ides/sublimetext.sh"
+            },
+            {
+              "name": "Zed",
+              "description": "zed_desc",
+              "icon": "zed.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/zed.sh"
             }
           ],
           "displayName": "IDE"
@@ -11447,6 +11496,13 @@
               "icon": "sublime.png",
               "version": "4",
               "scriptPath": "p3/scripts/devs/ides/sublimetext.sh"
+            },
+            {
+              "name": "Zed",
+              "description": "zed_desc",
+              "icon": "zed.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ides/zed.sh"
             }
           ],
           "displayName": "IDE"
