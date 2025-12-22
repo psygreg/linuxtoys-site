@@ -87,6 +87,13 @@
           "scriptPath": "p3/scripts/devs/dotnet.sh"
         },
         {
+          "name": "Fisher",
+          "description": "A plugin manager for Fish",
+          "icon": "fish.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/fisher.sh"
+        },
+        {
           "name": "Godot Engine 4",
           "description": "A popular open-source game engine for 2D and 3D game development. This version does not support Microsoft .NET (C#).",
           "icon": "godot.svg",
@@ -1686,6 +1693,13 @@
           "icon": "dotnet.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/dotnet.sh"
+        },
+        {
+          "name": "Fisher",
+          "description": "fisher_desc",
+          "icon": "fish.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/fisher.sh"
         },
         {
           "name": "Godot Engine 4",
@@ -3289,6 +3303,13 @@
           "scriptPath": "p3/scripts/devs/dotnet.sh"
         },
         {
+          "name": "Fisher",
+          "description": "fisher_desc",
+          "icon": "fish.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/fisher.sh"
+        },
+        {
           "name": "Godot Engine 4",
           "description": "Un motor de juegos de código abierto popular para desarrollo de juegos 2D y 3D. Esta versión no soporta Microsoft .NET (C#).",
           "icon": "godot.svg",
@@ -4888,6 +4909,13 @@
           "icon": "dotnet.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/dotnet.sh"
+        },
+        {
+          "name": "Fisher",
+          "description": "fisher_desc",
+          "icon": "fish.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/fisher.sh"
         },
         {
           "name": "Godot Engine 4",
@@ -6491,6 +6519,13 @@
           "scriptPath": "p3/scripts/devs/dotnet.sh"
         },
         {
+          "name": "Fisher",
+          "description": "fisher_desc",
+          "icon": "fish.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/fisher.sh"
+        },
+        {
           "name": "Godot Engine 4",
           "description": "Eine beliebte quelloffene Game Engine für 2D- und 3D-Spieleentwicklung. Diese Version unterstützt kein Microsoft .NET (C#).",
           "icon": "godot.svg",
@@ -8090,6 +8125,13 @@
           "icon": "dotnet.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/dotnet.sh"
+        },
+        {
+          "name": "Fisher",
+          "description": "fisher_desc",
+          "icon": "fish.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/fisher.sh"
         },
         {
           "name": "Godot Engine 4",
@@ -9693,6 +9735,13 @@
           "scriptPath": "p3/scripts/devs/dotnet.sh"
         },
         {
+          "name": "Fisher",
+          "description": "fisher_desc",
+          "icon": "fish.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/fisher.sh"
+        },
+        {
           "name": "Godot Engine 4",
           "description": "2Dと3Dゲーム開発のための人気のオープンソースゲームエンジン。このバージョンはMicrosoft .NET（C#）をサポートしません。",
           "icon": "godot.svg",
@@ -11292,6 +11341,13 @@
           "icon": "dotnet.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/dotnet.sh"
+        },
+        {
+          "name": "Fisher",
+          "description": "fisher_desc",
+          "icon": "fish.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/fisher.sh"
         },
         {
           "name": "Godot Engine 4",

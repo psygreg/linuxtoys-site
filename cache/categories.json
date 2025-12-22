@@ -85,6 +85,13 @@
         "scriptPath": "p3/scripts/devs/dotnet.sh"
       },
       {
+        "name": "Fisher",
+        "description": "fisher_desc",
+        "icon": "fish.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/devs/fisher.sh"
+      },
+      {
         "name": "Godot Engine 4",
         "description": "godot_desc",
         "icon": "godot.svg",
