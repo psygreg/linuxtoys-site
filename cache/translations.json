@@ -327,6 +327,8 @@
     "faugus_desc": "A newer, lightweight and simplified application to manage your games and their WINE prefixes on Linux, similarly to Lutris.",
     "terra_desc": "Terra is a rolling-release Fedora repository for all the software you need.",
     "zed_desc": "A minimal code editor crafted for speed and collaboration with humans and AI.",
+    "bitwarden_desc": "A secure and free password manager for all of your devices",
+    "keepassxc_desc": "Secure and Full-featured Password Manager",
     "fisher_desc": "A plugin manager for Fish"
   },
   "pt": {
@@ -654,7 +656,12 @@
     "ananicy_desc": "Um daemon que ajusta automaticamente a \"niceness\" de processos em execução com base no seu comportamento",
     "kdememfix_desc": "Alterna o backend de renderização do KDE Plasma para OpenGL, que usa significativamente menos VRAM",
     "zerotier_desc": "Cria redes Ethernet virtuais de tamanho quase ilimitado.",
-    "faugus_desc": "Um aplicativo mais novo, leve e simplificado para gerenciar seus jogos e seus prefixos WINE no Linux, semelhante ao Lutris."
+    "faugus_desc": "Um aplicativo mais novo, leve e simplificado para gerenciar seus jogos e seus prefixos WINE no Linux, semelhante ao Lutris.",
+    "terra_desc": "Terra é um repositório rolling-release do Fedora para todo o software que você precisa.",
+    "zed_desc": "Um editor de código minimalista projetado para velocidade e colaboração com humanos e IA.",
+    "bitwarden_desc": "Um gerenciador de senhas seguro e gratuito para todos os seus dispositivos.",
+    "keepassxc_desc": "Gerenciador de senhas seguro e completo",
+    "fisher_desc": "Um gerenciador de plugins para Fish"
   },
   "es": {
     "subtitle": "Una colección amigable de herramientas para Linux.",
@@ -981,7 +988,12 @@
     "ananicy_desc": "Un daemon que ajusta automáticamente la \"niceness\" de los procesos en ejecución según su comportamiento",
     "kdememfix_desc": "Cambia el backend de renderización de KDE Plasma a OpenGL, que usa significativamente menos VRAM",
     "zerotier_desc": "Crea redes Ethernet virtuales de tamaño casi ilimitado.",
-    "faugus_desc": "Una aplicación más nueva, ligera y simplificada para administrar tus juegos y sus prefijos de WINE en Linux, de manera similar a Lutris."
+    "faugus_desc": "Una aplicación más nueva, ligera y simplificada para administrar tus juegos y sus prefijos de WINE en Linux, de manera similar a Lutris.",
+    "terra_desc": "Terra es un repositorio rolling-release de Fedora para todo el software que necesitas.",
+    "zed_desc": "Un editor de código minimalista diseñado para la velocidad y la colaboración con humanos e IA.",
+    "bitwarden_desc": "Un gestor de contraseñas seguro y gratuito para todos tus dispositivos.",
+    "keepassxc_desc": "Gestor de contraseñas seguro y completo",
+    "fisher_desc": "Un gestor de complementos para Fish"
   },
   "fr": {
     "subtitle": "Une collection d'outils pour Linux de manière conviviale.",
@@ -1308,7 +1320,12 @@
     "ananicy_desc": "Un démon qui ajuste automatiquement la \"niceness\" des processus en cours en fonction de leur comportement",
     "kdememfix_desc": "Bascule le backend de rendu de KDE Plasma vers OpenGL, qui utilise beaucoup moins de VRAM",
     "zerotier_desc": "Crée des réseaux Ethernet virtuels de taille quasi illimitée.",
-    "faugus_desc": "Une application plus récente, plus légère et simplifiée pour gérer vos jeux et leurs préfixes WINE sur Linux, similaire à Lutris."
+    "faugus_desc": "Une application plus récente, plus légère et simplifiée pour gérer vos jeux et leurs préfixes WINE sur Linux, similaire à Lutris.",
+    "terra_desc": "Terra est un référentiel rolling-release Fedora pour tous les logiciels dont vous avez besoin.",
+    "zed_desc": "Un éditeur de code minimaliste conçu pour la vitesse et la collaboration avec les humains et l'IA.",
+    "bitwarden_desc": "Un gestionnaire de mots de passe sécurisé et gratuit pour tous vos appareils.",
+    "keepassxc_desc": "Gestionnaire de mots de passe sécurisé et complet",
+    "fisher_desc": "Un gestionnaire de plugins pour Fish"
   },
   "de": {
     "subtitle": "Eine freundliche Sammlung von Tools für Linux.",
@@ -1635,7 +1652,12 @@
     "ananicy_desc": "Ein Daemon, das automatisch die \"Priorität\" laufender Prozesse basierend auf deren Verhalten anpasst",
     "kdememfix_desc": "Schaltet das Rendering-Backend von KDE Plasma auf OpenGL um, das erheblich weniger VRAM nutzt",
     "zerotier_desc": "Erstellt virtuelle Ethernet-Netzwerke fast unbegrenzter Größe.",
-    "faugus_desc": "Eine neuere, leichtere und vereinfachte Anwendung zur Verwaltung Ihrer Spiele und ihrer WINE-Präfixe unter Linux, ähnlich wie Lutris."
+    "faugus_desc": "Eine neuere, leichtere und vereinfachte Anwendung zur Verwaltung Ihrer Spiele und ihrer WINE-Präfixe unter Linux, ähnlich wie Lutris.",
+    "terra_desc": "Terra ist ein Fedora Rolling-Release-Repository für die gesamte Software, die Sie benötigen.",
+    "zed_desc": "Ein minimaler Code-Editor für Geschwindigkeit und Zusammenarbeit zwischen Mensch und KI.",
+    "bitwarden_desc": "Ein sicherer und kostenloser Passwort-Manager für alle Ihre Geräte.",
+    "keepassxc_desc": "Sicherer und vollständig ausgestatteter Passwort-Manager",
+    "fisher_desc": "Ein Plugin-Manager für Fish"
   },
   "zh": {
     "subtitle": "适用于Linux的用户友好工具集合。",
@@ -1964,7 +1986,12 @@
     "ananicy_desc": "一个守护进程，根据进程的行为自动调整正在运行的进程的\"nice\"值",
     "kdememfix_desc": "将KDE Plasma的渲染后端切换到OpenGL，其使用的VRAM明显要少得多",
     "zerotier_desc": "创建几乎无限大小的虚拟以太网网络。",
-    "faugus_desc": "在Linux上管理您的游戏及其WINE前缀的一个更新、更轻量级和简化的应用程序，类似于Lutris。"
+    "faugus_desc": "在Linux上管理您的游戏及其WINE前缀的一个更新、更轻量级和简化的应用程序，类似于Lutris。",
+    "terra_desc": "Terra是一个Fedora rolling-release存储库，用于您需要的所有软件。",
+    "zed_desc": "为速度和与人类和AI合作而设计的最小代码编辑器。",
+    "bitwarden_desc": "为您的所有设备提供的安全且免费的密码管理器。",
+    "keepassxc_desc": "安全且功能完整的密码管理器",
+    "fisher_desc": "Fish的插件管理器"
   },
   "ja": {
     "subtitle": "Linuxのためのユーザーフレンドリーなツール集。",
@@ -2291,7 +2318,12 @@
     "ananicy_desc": "実行中のプロセスの動作に基づいて、それらの\"nice\"値を自動的に調整するデーモン",
     "kdememfix_desc": "KDE PlasmaのレンダリングバックエンドをOpenGLに切り替え、大幅に少ないVRAMを使用します",
     "zerotier_desc": "ほぼ無制限のサイズの仮想イーサネットネットワークを作成します。",
-    "faugus_desc": "Linuxでゲームとそのワインプレフィックスを管理するための、より新しく、軽量で簡潔なアプリケーション、Lutrisに似ています。"
+    "faugus_desc": "Linuxでゲームとそのワインプレフィックスを管理するための、より新しく、軽量で簡潔なアプリケーション、Lutrisに似ています。",
+    "terra_desc": "Terraは、必要なすべてのソフトウェア用のFedora rolling-releaseリポジトリです。",
+    "zed_desc": "スピードと人間およびAIとの協力のために作られた最小限のコードエディタ。",
+    "bitwarden_desc": "すべてのデバイスのための安全で無料のパスワードマネージャー。",
+    "keepassxc_desc": "安全で完全な機能を備えたパスワードマネージャー",
+    "fisher_desc": "Fish用のプラグインマネージャー"
   },
   "ru": {
     "subtitle": "Коллекция инструментов для Linux в удобном формате.",
@@ -2618,6 +2650,11 @@
     "ananicy_desc": "Демон, который автоматически регулирует \"nice\" значение запущенных процессов на основе их поведения",
     "kdememfix_desc": "Переключает бэкэнд рендеринга KDE Plasma на OpenGL, который использует значительно меньше VRAM",
     "zerotier_desc": "Создает виртуальные сети Ethernet практически неограниченного размера.",
-    "faugus_desc": "Более новое, легкое и упрощенное приложение для управления вашими играми и их префиксами WINE в Linux, подобно Lutris."
+    "faugus_desc": "Более новое, легкое и упрощенное приложение для управления вашими играми и их префиксами WINE в Linux, подобно Lutris.",
+    "terra_desc": "Terra — это сканирование rolling-release Fedora для всего необходимого вам программного обеспечения.",
+    "zed_desc": "Минимальный редактор кода, разработанный для скорости и сотрудничества между людьми и ИИ.",
+    "bitwarden_desc": "Безопасный и бесплатный менеджер паролей для всех ваших устройств.",
+    "keepassxc_desc": "Безопасный и полнофункциональный менеджер паролей",
+    "fisher_desc": "Менеджер плагинов для Fish"
   }
 }

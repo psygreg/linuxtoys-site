@@ -1484,6 +1484,13 @@
         "mode": "menu",
         "tools": [
           {
+            "name": "Bitwarden",
+            "description": "bitwarden_desc",
+            "icon": "bitwarden.png",
+            "version": "1.0",
+            "scriptPath": "p3/scripts/utils/privacy/bitwarden.sh"
+          },
+          {
             "name": "Brave Browser",
             "description": "brave_desc",
             "icon": "brave.svg",
@@ -1510,6 +1517,13 @@
             "icon": "ivpn.svg",
             "version": "1.0",
             "scriptPath": "p3/scripts/utils/privacy/ivpn.sh"
+          },
+          {
+            "name": "KeePassXC",
+            "description": "keepassxc_desc",
+            "icon": "keepassxc.png",
+            "version": "1.0",
+            "scriptPath": "p3/scripts/utils/privacy/keepassxc.sh"
           },
           {
             "name": "LibreWolf",

@@ -1496,6 +1496,13 @@
           "mode": "menu",
           "tools": [
             {
+              "name": "Bitwarden",
+              "description": "A secure and free password manager for all of your devices",
+              "icon": "bitwarden.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/privacy/bitwarden.sh"
+            },
+            {
               "name": "Brave Browser",
               "description": "A privacy-focused web browser with built-in ad blocking.",
               "icon": "brave.svg",
@@ -1522,6 +1529,13 @@
               "icon": "ivpn.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/utils/privacy/ivpn.sh"
+            },
+            {
+              "name": "KeePassXC",
+              "description": "Secure and Full-featured Password Manager",
+              "icon": "keepassxc.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/privacy/keepassxc.sh"
             },
             {
               "name": "LibreWolf",
@@ -1696,7 +1710,7 @@
         },
         {
           "name": "Fisher",
-          "description": "fisher_desc",
+          "description": "Um gerenciador de plugins para Fish",
           "icon": "fish.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/fisher.sh"
@@ -1907,7 +1921,7 @@
             },
             {
               "name": "Zed",
-              "description": "zed_desc",
+              "description": "Um editor de código minimalista projetado para velocidade e colaboração com humanos e IA.",
               "icon": "zed.png",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ides/zed.sh"
@@ -2760,7 +2774,7 @@
         },
         {
           "name": "Terra",
-          "description": "terra_desc",
+          "description": "Terra é um repositório rolling-release do Fedora para todo o software que você precisa.",
           "icon": "terra.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/repos/terra.sh"
@@ -3104,6 +3118,13 @@
           "mode": "menu",
           "tools": [
             {
+              "name": "Bitwarden",
+              "description": "Um gerenciador de senhas seguro e gratuito para todos os seus dispositivos.",
+              "icon": "bitwarden.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/privacy/bitwarden.sh"
+            },
+            {
               "name": "Brave Browser",
               "description": "Um navegador web focado em privacidade com bloqueio de anúncios integrado.",
               "icon": "brave.svg",
@@ -3130,6 +3151,13 @@
               "icon": "ivpn.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/utils/privacy/ivpn.sh"
+            },
+            {
+              "name": "KeePassXC",
+              "description": "Gerenciador de senhas seguro e completo",
+              "icon": "keepassxc.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/privacy/keepassxc.sh"
             },
             {
               "name": "LibreWolf",
@@ -3304,7 +3332,7 @@
         },
         {
           "name": "Fisher",
-          "description": "fisher_desc",
+          "description": "Un gestor de complementos para Fish",
           "icon": "fish.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/fisher.sh"
@@ -3515,7 +3543,7 @@
             },
             {
               "name": "Zed",
-              "description": "zed_desc",
+              "description": "Un editor de código minimalista diseñado para la velocidad y la colaboración con humanos e IA.",
               "icon": "zed.png",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ides/zed.sh"
@@ -4368,7 +4396,7 @@
         },
         {
           "name": "Terra",
-          "description": "terra_desc",
+          "description": "Terra es un repositorio rolling-release de Fedora para todo el software que necesitas.",
           "icon": "terra.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/repos/terra.sh"
@@ -4712,6 +4740,13 @@
           "mode": "menu",
           "tools": [
             {
+              "name": "Bitwarden",
+              "description": "Un gestor de contraseñas seguro y gratuito para todos tus dispositivos.",
+              "icon": "bitwarden.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/privacy/bitwarden.sh"
+            },
+            {
               "name": "Brave Browser",
               "description": "Un navegador web centrado en la privacidad con bloqueo de anuncios integrado.",
               "icon": "brave.svg",
@@ -4738,6 +4773,13 @@
               "icon": "ivpn.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/utils/privacy/ivpn.sh"
+            },
+            {
+              "name": "KeePassXC",
+              "description": "Gestor de contraseñas seguro y completo",
+              "icon": "keepassxc.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/privacy/keepassxc.sh"
             },
             {
               "name": "LibreWolf",
@@ -4912,7 +4954,7 @@
         },
         {
           "name": "Fisher",
-          "description": "fisher_desc",
+          "description": "Un gestionnaire de plugins pour Fish",
           "icon": "fish.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/fisher.sh"
@@ -5123,7 +5165,7 @@
             },
             {
               "name": "Zed",
-              "description": "zed_desc",
+              "description": "Un éditeur de code minimaliste conçu pour la vitesse et la collaboration avec les humains et l'IA.",
               "icon": "zed.png",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ides/zed.sh"
@@ -5976,7 +6018,7 @@
         },
         {
           "name": "Terra",
-          "description": "terra_desc",
+          "description": "Terra est un référentiel rolling-release Fedora pour tous les logiciels dont vous avez besoin.",
           "icon": "terra.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/repos/terra.sh"
@@ -6320,6 +6362,13 @@
           "mode": "menu",
           "tools": [
             {
+              "name": "Bitwarden",
+              "description": "Un gestionnaire de mots de passe sécurisé et gratuit pour tous vos appareils.",
+              "icon": "bitwarden.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/privacy/bitwarden.sh"
+            },
+            {
               "name": "Brave Browser",
               "description": "Un navigateur Web axé sur la confidentialité avec blocage des publicités intégré.",
               "icon": "brave.svg",
@@ -6346,6 +6395,13 @@
               "icon": "ivpn.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/utils/privacy/ivpn.sh"
+            },
+            {
+              "name": "KeePassXC",
+              "description": "Gestionnaire de mots de passe sécurisé et complet",
+              "icon": "keepassxc.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/privacy/keepassxc.sh"
             },
             {
               "name": "LibreWolf",
@@ -6520,7 +6576,7 @@
         },
         {
           "name": "Fisher",
-          "description": "fisher_desc",
+          "description": "Ein Plugin-Manager für Fish",
           "icon": "fish.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/fisher.sh"
@@ -6731,7 +6787,7 @@
             },
             {
               "name": "Zed",
-              "description": "zed_desc",
+              "description": "Ein minimaler Code-Editor für Geschwindigkeit und Zusammenarbeit zwischen Mensch und KI.",
               "icon": "zed.png",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ides/zed.sh"
@@ -7584,7 +7640,7 @@
         },
         {
           "name": "Terra",
-          "description": "terra_desc",
+          "description": "Terra ist ein Fedora Rolling-Release-Repository für die gesamte Software, die Sie benötigen.",
           "icon": "terra.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/repos/terra.sh"
@@ -7928,6 +7984,13 @@
           "mode": "menu",
           "tools": [
             {
+              "name": "Bitwarden",
+              "description": "Ein sicherer und kostenloser Passwort-Manager für alle Ihre Geräte.",
+              "icon": "bitwarden.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/privacy/bitwarden.sh"
+            },
+            {
               "name": "Brave Browser",
               "description": "Ein datenschutzorientierter Webbrowser mit integrierter Werbeblocker.",
               "icon": "brave.svg",
@@ -7954,6 +8017,13 @@
               "icon": "ivpn.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/utils/privacy/ivpn.sh"
+            },
+            {
+              "name": "KeePassXC",
+              "description": "Sicherer und vollständig ausgestatteter Passwort-Manager",
+              "icon": "keepassxc.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/privacy/keepassxc.sh"
             },
             {
               "name": "LibreWolf",
@@ -8128,7 +8198,7 @@
         },
         {
           "name": "Fisher",
-          "description": "fisher_desc",
+          "description": "Fish的插件管理器",
           "icon": "fish.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/fisher.sh"
@@ -8339,7 +8409,7 @@
             },
             {
               "name": "Zed",
-              "description": "zed_desc",
+              "description": "为速度和与人类和AI合作而设计的最小代码编辑器。",
               "icon": "zed.png",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ides/zed.sh"
@@ -9192,7 +9262,7 @@
         },
         {
           "name": "Terra",
-          "description": "terra_desc",
+          "description": "Terra是一个Fedora rolling-release存储库，用于您需要的所有软件。",
           "icon": "terra.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/repos/terra.sh"
@@ -9536,6 +9606,13 @@
           "mode": "menu",
           "tools": [
             {
+              "name": "Bitwarden",
+              "description": "为您的所有设备提供的安全且免费的密码管理器。",
+              "icon": "bitwarden.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/privacy/bitwarden.sh"
+            },
+            {
               "name": "Brave Browser",
               "description": "一个注重隐私的网络浏览器，内置广告拦截功能。",
               "icon": "brave.svg",
@@ -9562,6 +9639,13 @@
               "icon": "ivpn.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/utils/privacy/ivpn.sh"
+            },
+            {
+              "name": "KeePassXC",
+              "description": "安全且功能完整的密码管理器",
+              "icon": "keepassxc.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/privacy/keepassxc.sh"
             },
             {
               "name": "LibreWolf",
@@ -9736,7 +9820,7 @@
         },
         {
           "name": "Fisher",
-          "description": "fisher_desc",
+          "description": "Fish用のプラグインマネージャー",
           "icon": "fish.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/fisher.sh"
@@ -9947,7 +10031,7 @@
             },
             {
               "name": "Zed",
-              "description": "zed_desc",
+              "description": "スピードと人間およびAIとの協力のために作られた最小限のコードエディタ。",
               "icon": "zed.png",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ides/zed.sh"
@@ -10800,7 +10884,7 @@
         },
         {
           "name": "Terra",
-          "description": "terra_desc",
+          "description": "Terraは、必要なすべてのソフトウェア用のFedora rolling-releaseリポジトリです。",
           "icon": "terra.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/repos/terra.sh"
@@ -11144,6 +11228,13 @@
           "mode": "menu",
           "tools": [
             {
+              "name": "Bitwarden",
+              "description": "すべてのデバイスのための安全で無料のパスワードマネージャー。",
+              "icon": "bitwarden.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/privacy/bitwarden.sh"
+            },
+            {
               "name": "Brave Browser",
               "description": "広告ブロック機能を内蔵したプライバシー重視のWebブラウザ。",
               "icon": "brave.svg",
@@ -11170,6 +11261,13 @@
               "icon": "ivpn.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/utils/privacy/ivpn.sh"
+            },
+            {
+              "name": "KeePassXC",
+              "description": "安全で完全な機能を備えたパスワードマネージャー",
+              "icon": "keepassxc.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/privacy/keepassxc.sh"
             },
             {
               "name": "LibreWolf",
@@ -11344,7 +11442,7 @@
         },
         {
           "name": "Fisher",
-          "description": "fisher_desc",
+          "description": "Менеджер плагинов для Fish",
           "icon": "fish.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/fisher.sh"
@@ -11555,7 +11653,7 @@
             },
             {
               "name": "Zed",
-              "description": "zed_desc",
+              "description": "Минимальный редактор кода, разработанный для скорости и сотрудничества между людьми и ИИ.",
               "icon": "zed.png",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ides/zed.sh"
@@ -12408,7 +12506,7 @@
         },
         {
           "name": "Terra",
-          "description": "terra_desc",
+          "description": "Terra — это сканирование rolling-release Fedora для всего необходимого вам программного обеспечения.",
           "icon": "terra.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/repos/terra.sh"
@@ -12752,6 +12850,13 @@
           "mode": "menu",
           "tools": [
             {
+              "name": "Bitwarden",
+              "description": "Безопасный и бесплатный менеджер паролей для всех ваших устройств.",
+              "icon": "bitwarden.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/privacy/bitwarden.sh"
+            },
+            {
               "name": "Brave Browser",
               "description": "Ориентированный на конфиденциальность веб-браузер со встроенной блокировкой рекламы.",
               "icon": "brave.svg",
@@ -12778,6 +12883,13 @@
               "icon": "ivpn.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/utils/privacy/ivpn.sh"
+            },
+            {
+              "name": "KeePassXC",
+              "description": "Безопасный и полнофункциональный менеджер паролей",
+              "icon": "keepassxc.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/privacy/keepassxc.sh"
             },
             {
               "name": "LibreWolf",
