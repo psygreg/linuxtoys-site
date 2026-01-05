@@ -639,6 +639,13 @@
         "scriptPath": "p3/scripts/extra/iwd.sh"
       },
       {
+        "name": "KDE Connect / GSConnect Fix",
+        "description": "kconnect_desc",
+        "icon": "kconnect.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/kconnect.sh"
+      },
+      {
         "name": "Plasma VRAM Fix",
         "description": "kdememfix_desc",
         "icon": "preload.svg",

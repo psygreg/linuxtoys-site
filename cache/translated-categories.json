@@ -645,6 +645,13 @@
           "scriptPath": "p3/scripts/extra/iwd.sh"
         },
         {
+          "name": "KDE Connect / GSConnect Fix",
+          "description": "Fixes an issue caused by firewalls blocking KDE Connect from establishing a connection between devices by allowing the necessary ports through the firewall.",
+          "icon": "kconnect.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/kconnect.sh"
+        },
+        {
           "name": "Plasma VRAM Fix",
           "description": "Switches KDE Plasma's rendering backend to OpenGL, which uses significantly less VRAM.",
           "icon": "preload.svg",
@@ -2265,6 +2272,13 @@
           "icon": "iwd.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/iwd.sh"
+        },
+        {
+          "name": "KDE Connect / GSConnect Fix",
+          "description": "Corrige um problema causado por firewalls que bloqueiam KDE Connect de estabelecer uma conexão entre dispositivos permitindo as portas necessárias através do firewall.",
+          "icon": "kconnect.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/kconnect.sh"
         },
         {
           "name": "Plasma VRAM Fix",
@@ -3889,6 +3903,13 @@
           "scriptPath": "p3/scripts/extra/iwd.sh"
         },
         {
+          "name": "KDE Connect / GSConnect Fix",
+          "description": "Soluciona un problema causado por cortafuegos que impiden que KDE Connect establezca una conexión entre dispositivos permitiendo los puertos necesarios a través del cortafuegos.",
+          "icon": "kconnect.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/kconnect.sh"
+        },
+        {
           "name": "Plasma VRAM Fix",
           "description": "Cambia el backend de renderización de KDE Plasma a OpenGL, que usa significativamente menos VRAM",
           "icon": "preload.svg",
@@ -5509,6 +5530,13 @@
           "icon": "iwd.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/iwd.sh"
+        },
+        {
+          "name": "KDE Connect / GSConnect Fix",
+          "description": "Résout un problème causé par les pare-feu qui empêchent KDE Connect d'établir une connexion entre les appareils en autorisant les ports nécessaires à travers le pare-feu.",
+          "icon": "kconnect.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/kconnect.sh"
         },
         {
           "name": "Plasma VRAM Fix",
@@ -7133,6 +7161,13 @@
           "scriptPath": "p3/scripts/extra/iwd.sh"
         },
         {
+          "name": "KDE Connect / GSConnect Fix",
+          "description": "Behebt ein Problem, das durch Firewalls verursacht wird, die KDE Connect am Aufbau einer Verbindung zwischen Geräten hindern, indem die erforderlichen Ports durch die Firewall zugelassen werden.",
+          "icon": "kconnect.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/kconnect.sh"
+        },
+        {
           "name": "Plasma VRAM Fix",
           "description": "Schaltet das Rendering-Backend von KDE Plasma auf OpenGL um, das erheblich weniger VRAM nutzt",
           "icon": "preload.svg",
@@ -8753,6 +8788,13 @@
           "icon": "iwd.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/iwd.sh"
+        },
+        {
+          "name": "KDE Connect / GSConnect Fix",
+          "description": "修复由防火墙引起的问题，该问题阻止 KDE Connect 在设备之间建立连接，方法是允许必要的端口通过防火墙。",
+          "icon": "kconnect.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/kconnect.sh"
         },
         {
           "name": "Plasma VRAM Fix",
@@ -10377,6 +10419,13 @@
           "scriptPath": "p3/scripts/extra/iwd.sh"
         },
         {
+          "name": "KDE Connect / GSConnect Fix",
+          "description": "ファイアウォールによってKDE Connectがデバイス間の接続を確立することを妨げるという問題を修正し、ファイアウォールを通じて必要なポートを許可します。",
+          "icon": "kconnect.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/kconnect.sh"
+        },
+        {
           "name": "Plasma VRAM Fix",
           "description": "KDE PlasmaのレンダリングバックエンドをOpenGLに切り替え、大幅に少ないVRAMを使用します",
           "icon": "preload.svg",
@@ -11997,6 +12046,13 @@
           "icon": "iwd.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/iwd.sh"
+        },
+        {
+          "name": "KDE Connect / GSConnect Fix",
+          "description": "Исправляет проблему, вызванную брандмауэрами, которые блокируют KDE Connect от установления соединения между устройствами, разрешив необходимые порты через брандмауэр.",
+          "icon": "kconnect.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/kconnect.sh"
         },
         {
           "name": "Plasma VRAM Fix",

@@ -329,7 +329,8 @@
     "zed_desc": "A minimal code editor crafted for speed and collaboration with humans and AI.",
     "bitwarden_desc": "A secure and free password manager for all of your devices",
     "keepassxc_desc": "Secure and Full-featured Password Manager",
-    "fisher_desc": "A plugin manager for Fish"
+    "fisher_desc": "A plugin manager for Fish",
+    "kconnect_desc": "Fixes an issue caused by firewalls blocking KDE Connect from establishing a connection between devices by allowing the necessary ports through the firewall."
   },
   "pt": {
     "subtitle": "Uma coleção amigável de ferramentas para Linux.",
@@ -661,7 +662,8 @@
     "zed_desc": "Um editor de código minimalista projetado para velocidade e colaboração com humanos e IA.",
     "bitwarden_desc": "Um gerenciador de senhas seguro e gratuito para todos os seus dispositivos.",
     "keepassxc_desc": "Gerenciador de senhas seguro e completo",
-    "fisher_desc": "Um gerenciador de plugins para Fish"
+    "fisher_desc": "Um gerenciador de plugins para Fish",
+    "kconnect_desc": "Corrige um problema causado por firewalls que bloqueiam KDE Connect de estabelecer uma conexão entre dispositivos permitindo as portas necessárias através do firewall."
   },
   "es": {
     "subtitle": "Una colección amigable de herramientas para Linux.",
@@ -993,7 +995,8 @@
     "zed_desc": "Un editor de código minimalista diseñado para la velocidad y la colaboración con humanos e IA.",
     "bitwarden_desc": "Un gestor de contraseñas seguro y gratuito para todos tus dispositivos.",
     "keepassxc_desc": "Gestor de contraseñas seguro y completo",
-    "fisher_desc": "Un gestor de complementos para Fish"
+    "fisher_desc": "Un gestor de complementos para Fish",
+    "kconnect_desc": "Soluciona un problema causado por cortafuegos que impiden que KDE Connect establezca una conexión entre dispositivos permitiendo los puertos necesarios a través del cortafuegos."
   },
   "fr": {
     "subtitle": "Une collection d'outils pour Linux de manière conviviale.",
@@ -1325,7 +1328,8 @@
     "zed_desc": "Un éditeur de code minimaliste conçu pour la vitesse et la collaboration avec les humains et l'IA.",
     "bitwarden_desc": "Un gestionnaire de mots de passe sécurisé et gratuit pour tous vos appareils.",
     "keepassxc_desc": "Gestionnaire de mots de passe sécurisé et complet",
-    "fisher_desc": "Un gestionnaire de plugins pour Fish"
+    "fisher_desc": "Un gestionnaire de plugins pour Fish",
+    "kconnect_desc": "Résout un problème causé par les pare-feu qui empêchent KDE Connect d'établir une connexion entre les appareils en autorisant les ports nécessaires à travers le pare-feu."
   },
   "de": {
     "subtitle": "Eine freundliche Sammlung von Tools für Linux.",
@@ -1657,7 +1661,8 @@
     "zed_desc": "Ein minimaler Code-Editor für Geschwindigkeit und Zusammenarbeit zwischen Mensch und KI.",
     "bitwarden_desc": "Ein sicherer und kostenloser Passwort-Manager für alle Ihre Geräte.",
     "keepassxc_desc": "Sicherer und vollständig ausgestatteter Passwort-Manager",
-    "fisher_desc": "Ein Plugin-Manager für Fish"
+    "fisher_desc": "Ein Plugin-Manager für Fish",
+    "kconnect_desc": "Behebt ein Problem, das durch Firewalls verursacht wird, die KDE Connect am Aufbau einer Verbindung zwischen Geräten hindern, indem die erforderlichen Ports durch die Firewall zugelassen werden."
   },
   "zh": {
     "subtitle": "适用于Linux的用户友好工具集合。",
@@ -1991,7 +1996,8 @@
     "zed_desc": "为速度和与人类和AI合作而设计的最小代码编辑器。",
     "bitwarden_desc": "为您的所有设备提供的安全且免费的密码管理器。",
     "keepassxc_desc": "安全且功能完整的密码管理器",
-    "fisher_desc": "Fish的插件管理器"
+    "fisher_desc": "Fish的插件管理器",
+    "kconnect_desc": "修复由防火墙引起的问题，该问题阻止 KDE Connect 在设备之间建立连接，方法是允许必要的端口通过防火墙。"
   },
   "ja": {
     "subtitle": "Linuxのためのユーザーフレンドリーなツール集。",
@@ -2323,7 +2329,8 @@
     "zed_desc": "スピードと人間およびAIとの協力のために作られた最小限のコードエディタ。",
     "bitwarden_desc": "すべてのデバイスのための安全で無料のパスワードマネージャー。",
     "keepassxc_desc": "安全で完全な機能を備えたパスワードマネージャー",
-    "fisher_desc": "Fish用のプラグインマネージャー"
+    "fisher_desc": "Fish用のプラグインマネージャー",
+    "kconnect_desc": "ファイアウォールによってKDE Connectがデバイス間の接続を確立することを妨げるという問題を修正し、ファイアウォールを通じて必要なポートを許可します。"
   },
   "ru": {
     "subtitle": "Коллекция инструментов для Linux в удобном формате.",
@@ -2655,6 +2662,7 @@
     "zed_desc": "Минимальный редактор кода, разработанный для скорости и сотрудничества между людьми и ИИ.",
     "bitwarden_desc": "Безопасный и бесплатный менеджер паролей для всех ваших устройств.",
     "keepassxc_desc": "Безопасный и полнофункциональный менеджер паролей",
-    "fisher_desc": "Менеджер плагинов для Fish"
+    "fisher_desc": "Менеджер плагинов для Fish",
+    "kconnect_desc": "Исправляет проблему, вызванную брандмауэрами, которые блокируют KDE Connect от установления соединения между устройствами, разрешив необходимые порты через брандмауэр."
   }
 }
