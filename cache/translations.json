@@ -330,7 +330,9 @@
     "bitwarden_desc": "A secure and free password manager for all of your devices",
     "keepassxc_desc": "Secure and Full-featured Password Manager",
     "fisher_desc": "A plugin manager for Fish",
-    "kconnect_desc": "Fixes an issue caused by firewalls blocking KDE Connect from establishing a connection between devices by allowing the necessary ports through the firewall."
+    "kconnect_desc": "Fixes an issue caused by firewalls blocking KDE Connect from establishing a connection between devices by allowing the necessary ports through the firewall.",
+    "bwrapfix_desc": "Solves an issue causing an improperly configured AppArmor to block Bubblewrap from functioning correctly, leading to failures when launching Flatpak applications and games under Proton.",
+    "kisak_desc": "A PPA that provides the latest stable release of Mesa plus select non-invasive early backports for better performance and compatibility with newer graphics cards."
   },
   "pt": {
     "subtitle": "Uma coleção amigável de ferramentas para Linux.",
@@ -663,7 +665,9 @@
     "bitwarden_desc": "Um gerenciador de senhas seguro e gratuito para todos os seus dispositivos.",
     "keepassxc_desc": "Gerenciador de senhas seguro e completo",
     "fisher_desc": "Um gerenciador de plugins para Fish",
-    "kconnect_desc": "Corrige um problema causado por firewalls que bloqueiam KDE Connect de estabelecer uma conexão entre dispositivos permitindo as portas necessárias através do firewall."
+    "kconnect_desc": "Corrige um problema causado por firewalls que bloqueiam KDE Connect de estabelecer uma conexão entre dispositivos permitindo as portas necessárias através do firewall.",
+    "bwrapfix_desc": "Resolve um problema causado por um AppArmor configurado incorretamente que bloqueia o Bubblewrap de funcionar corretamente, levando a falhas ao iniciar aplicativos Flatpak e jogos sob Proton.",
+    "kisak_desc": "Um PPA que fornece a versão estável mais recente do Mesa mais backports iniciais selecionados não invasivos para melhor desempenho e compatibilidade com placas gráficas mais recentes."
   },
   "es": {
     "subtitle": "Una colección amigable de herramientas para Linux.",
@@ -996,7 +1000,9 @@
     "bitwarden_desc": "Un gestor de contraseñas seguro y gratuito para todos tus dispositivos.",
     "keepassxc_desc": "Gestor de contraseñas seguro y completo",
     "fisher_desc": "Un gestor de complementos para Fish",
-    "kconnect_desc": "Soluciona un problema causado por cortafuegos que impiden que KDE Connect establezca una conexión entre dispositivos permitiendo los puertos necesarios a través del cortafuegos."
+    "kconnect_desc": "Soluciona un problema causado por cortafuegos que impiden que KDE Connect establezca una conexión entre dispositivos permitiendo los puertos necesarios a través del cortafuegos.",
+    "bwrapfix_desc": "Resuelve un problema causado por un AppArmor configurado incorrectamente que bloquea a Bubblewrap de funcionar correctamente, llevando a fallos al lanzar aplicaciones Flatpak y juegos bajo Proton.",
+    "kisak_desc": "Un PPA que proporciona la última versión estable de Mesa más backports tempranos selectos no invasivos para un mejor rendimiento y compatibilidad con tarjetas gráficas más nuevas."
   },
   "fr": {
     "subtitle": "Une collection d'outils pour Linux de manière conviviale.",
@@ -1329,7 +1335,9 @@
     "bitwarden_desc": "Un gestionnaire de mots de passe sécurisé et gratuit pour tous vos appareils.",
     "keepassxc_desc": "Gestionnaire de mots de passe sécurisé et complet",
     "fisher_desc": "Un gestionnaire de plugins pour Fish",
-    "kconnect_desc": "Résout un problème causé par les pare-feu qui empêchent KDE Connect d'établir une connexion entre les appareils en autorisant les ports nécessaires à travers le pare-feu."
+    "kconnect_desc": "Résout un problème causé par les pare-feu qui empêchent KDE Connect d'établir une connexion entre les appareils en autorisant les ports nécessaires à travers le pare-feu.",
+    "bwrapfix_desc": "Résout un problème causé par un AppArmor mal configuré qui empêche Bubblewrap de fonctionner correctement, entraînant des échecs lors du lancement d'applications Flatpak et de jeux sous Proton.",
+    "kisak_desc": "Un PPA qui fournit la dernière version stable de Mesa plus des backports précoces sélectionnés non invasifs pour de meilleures performances et compatibilité avec les cartes graphiques plus récentes."
   },
   "de": {
     "subtitle": "Eine freundliche Sammlung von Tools für Linux.",
@@ -1662,7 +1670,9 @@
     "bitwarden_desc": "Ein sicherer und kostenloser Passwort-Manager für alle Ihre Geräte.",
     "keepassxc_desc": "Sicherer und vollständig ausgestatteter Passwort-Manager",
     "fisher_desc": "Ein Plugin-Manager für Fish",
-    "kconnect_desc": "Behebt ein Problem, das durch Firewalls verursacht wird, die KDE Connect am Aufbau einer Verbindung zwischen Geräten hindern, indem die erforderlichen Ports durch die Firewall zugelassen werden."
+    "kconnect_desc": "Behebt ein Problem, das durch Firewalls verursacht wird, die KDE Connect am Aufbau einer Verbindung zwischen Geräten hindern, indem die erforderlichen Ports durch die Firewall zugelassen werden.",
+    "bwrapfix_desc": "Behebt ein Problem, das durch ein falsch konfiguriertes AppArmor verursacht wird, das Bubblewrap daran hindert, korrekt zu funktionieren, was zu Fehlern beim Starten von Flatpak-Anwendungen und Spielen unter Proton führt.",
+    "kisak_desc": "Ein PPA, das die neueste stabile Version von Mesa sowie ausgewählte nicht-invasive frühe Backports für bessere Leistung und Kompatibilität mit neueren Grafikkarten bereitstellt."
   },
   "zh": {
     "subtitle": "适用于Linux的用户友好工具集合。",
@@ -1997,7 +2007,9 @@
     "bitwarden_desc": "为您的所有设备提供的安全且免费的密码管理器。",
     "keepassxc_desc": "安全且功能完整的密码管理器",
     "fisher_desc": "Fish的插件管理器",
-    "kconnect_desc": "修复由防火墙引起的问题，该问题阻止 KDE Connect 在设备之间建立连接，方法是允许必要的端口通过防火墙。"
+    "kconnect_desc": "修复由防火墙引起的问题，该问题阻止 KDE Connect 在设备之间建立连接，方法是允许必要的端口通过防火墙。",
+    "bwrapfix_desc": "解决由配置不当的 AppArmor 导致的问题，该问题阻止 Bubblewrap 正常运行，导致在 Proton 下启动 Flatpak 应用程序和游戏时失败。",
+    "kisak_desc": "一个PPA，提供Mesa的最新稳定版本以及精选的非侵入性早期反向移植，以提高与较新显卡的性能和兼容性。"
   },
   "ja": {
     "subtitle": "Linuxのためのユーザーフレンドリーなツール集。",
@@ -2330,7 +2342,9 @@
     "bitwarden_desc": "すべてのデバイスのための安全で無料のパスワードマネージャー。",
     "keepassxc_desc": "安全で完全な機能を備えたパスワードマネージャー",
     "fisher_desc": "Fish用のプラグインマネージャー",
-    "kconnect_desc": "ファイアウォールによってKDE Connectがデバイス間の接続を確立することを妨げるという問題を修正し、ファイアウォールを通じて必要なポートを許可します。"
+    "kconnect_desc": "ファイアウォールによってKDE Connectがデバイス間の接続を確立することを妨げるという問題を修正し、ファイアウォールを通じて必要なポートを許可します。",
+    "bwrapfix_desc": "誤って設定されたAppArmorがBubblewrapが正しく機能するのをブロックする問題を解決します。これにより、FlatpakアプリケーションとProton下のゲームを起動する際に失敗が発生します。",
+    "kisak_desc": "最新の安定版Mesaと、より新しいグラフィックカードとのパフォーマンスと互換性を向上させるための選択された非侵襲的な早期バックポートを提供するPPA。"
   },
   "ru": {
     "subtitle": "Коллекция инструментов для Linux в удобном формате.",
@@ -2663,6 +2677,8 @@
     "bitwarden_desc": "Безопасный и бесплатный менеджер паролей для всех ваших устройств.",
     "keepassxc_desc": "Безопасный и полнофункциональный менеджер паролей",
     "fisher_desc": "Менеджер плагинов для Fish",
-    "kconnect_desc": "Исправляет проблему, вызванную брандмауэрами, которые блокируют KDE Connect от установления соединения между устройствами, разрешив необходимые порты через брандмауэр."
+    "kconnect_desc": "Исправляет проблему, вызванную брандмауэрами, которые блокируют KDE Connect от установления соединения между устройствами, разрешив необходимые порты через брандмауэр.",
+    "bwrapfix_desc": "Решает проблему, вызванную неправильно настроенным AppArmor, который блокирует правильную работу Bubblewrap, что приводит к сбоям при запуске приложений Flatpak и игр под Proton.",
+    "kisak_desc": "PPA, предоставляющий последний стабильный выпуск Mesa плюс выбранные неинвазивные ранние бэкпорты для лучшей производительности и совместимости с новыми графическими картами."
   }
 }
