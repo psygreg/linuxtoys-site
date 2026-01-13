@@ -141,6 +141,13 @@
         "scriptPath": "p3/scripts/devs/mise.sh"
       },
       {
+        "name": "Nala",
+        "description": "nala_desc",
+        "icon": "terminal.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/devs/nala.sh"
+      },
+      {
         "name": "Node Version Manager",
         "description": "nvm_desc",
         "icon": "nvm.svg",
@@ -343,7 +350,7 @@
       {
         "name": "Kisak-Mesa",
         "description": "kisak_desc",
-        "icon": "video-display",
+        "icon": "kisak.svg",
         "version": "1.0",
         "scriptPath": "p3/scripts/drivers/kisak-mesa.sh"
       },
@@ -564,7 +571,7 @@
       {
         "name": "Bubblewrap Fix",
         "description": "bwrapfix_desc",
-        "icon": "system-run",
+        "icon": "apparmor.svg",
         "version": "1.0",
         "scriptPath": "p3/scripts/extra/bwrapfix.sh"
       },

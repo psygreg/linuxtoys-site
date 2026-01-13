@@ -143,6 +143,13 @@
           "scriptPath": "p3/scripts/devs/mise.sh"
         },
         {
+          "name": "Nala",
+          "description": "An interface for libapt-pkg with better output formatting and parallel download support.",
+          "icon": "terminal.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/nala.sh"
+        },
+        {
           "name": "Node Version Manager",
           "description": "A version manager for Node.js, allowing you to easily switch between different versions. Includes Node.js, NPM and Yarn. Not needed if using Mise.",
           "icon": "nvm.svg",
@@ -347,7 +354,7 @@
         {
           "name": "Kisak-Mesa",
           "description": "A PPA that provides the latest stable release of Mesa plus select non-invasive early backports for better performance and compatibility with newer graphics cards.",
-          "icon": "video-display",
+          "icon": "kisak.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/kisak-mesa.sh"
         },
@@ -570,7 +577,7 @@
         {
           "name": "Bubblewrap Fix",
           "description": "Solves an issue causing an improperly configured AppArmor to block Bubblewrap from functioning correctly, leading to failures when launching Flatpak applications and games under Proton.",
-          "icon": "system-run",
+          "icon": "apparmor.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/bwrapfix.sh"
         },
@@ -1786,6 +1793,13 @@
           "scriptPath": "p3/scripts/devs/mise.sh"
         },
         {
+          "name": "Nala",
+          "description": "Uma interface para libapt-pkg com melhor formatação de saída e suporte para download paralelo.",
+          "icon": "terminal.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/nala.sh"
+        },
+        {
           "name": "Node Version Manager",
           "description": "Um gerenciador de versões para Node.js, permitindo que você alterne facilmente entre diferentes versões. Inclui Node.js, NPM e Yarn. Não é necessário se utilizar Mise.",
           "icon": "nvm.svg",
@@ -1990,7 +2004,7 @@
         {
           "name": "Kisak-Mesa",
           "description": "Um PPA que fornece a versão estável mais recente do Mesa mais backports iniciais selecionados não invasivos para melhor desempenho e compatibilidade com placas gráficas mais recentes.",
-          "icon": "video-display",
+          "icon": "kisak.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/kisak-mesa.sh"
         },
@@ -2213,7 +2227,7 @@
         {
           "name": "Bubblewrap Fix",
           "description": "Resolve um problema causado por um AppArmor configurado incorretamente que bloqueia o Bubblewrap de funcionar corretamente, levando a falhas ao iniciar aplicativos Flatpak e jogos sob Proton.",
-          "icon": "system-run",
+          "icon": "apparmor.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/bwrapfix.sh"
         },
@@ -3429,6 +3443,13 @@
           "scriptPath": "p3/scripts/devs/mise.sh"
         },
         {
+          "name": "Nala",
+          "description": "Una interfaz para libapt-pkg con mejor formato de salida y soporte para descarga paralela.",
+          "icon": "terminal.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/nala.sh"
+        },
+        {
           "name": "Node Version Manager",
           "description": "Un gestor de versiones para Node.js, permitiendo cambiar fácilmente entre diferentes versiones. Incluye Node.js, NPM y Yarn. No necesario si usa Mise.",
           "icon": "nvm.svg",
@@ -3633,7 +3654,7 @@
         {
           "name": "Kisak-Mesa",
           "description": "Un PPA que proporciona la última versión estable de Mesa más backports tempranos selectos no invasivos para un mejor rendimiento y compatibilidad con tarjetas gráficas más nuevas.",
-          "icon": "video-display",
+          "icon": "kisak.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/kisak-mesa.sh"
         },
@@ -3856,7 +3877,7 @@
         {
           "name": "Bubblewrap Fix",
           "description": "Resuelve un problema causado por un AppArmor configurado incorrectamente que bloquea a Bubblewrap de funcionar correctamente, llevando a fallos al lanzar aplicaciones Flatpak y juegos bajo Proton.",
-          "icon": "system-run",
+          "icon": "apparmor.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/bwrapfix.sh"
         },
@@ -5072,6 +5093,13 @@
           "scriptPath": "p3/scripts/devs/mise.sh"
         },
         {
+          "name": "Nala",
+          "description": "Une interface pour libapt-pkg avec un meilleur formatage de sortie et un support de téléchargement parallèle.",
+          "icon": "terminal.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/nala.sh"
+        },
+        {
           "name": "Node Version Manager",
           "description": "Un gestionnaire de versions pour Node.js, vous permettant de basculer facilement entre différentes versions. Inclut Node.js, NPM et Yarn. Non nécessaire si vous utilisez Mise.",
           "icon": "nvm.svg",
@@ -5276,7 +5304,7 @@
         {
           "name": "Kisak-Mesa",
           "description": "Un PPA qui fournit la dernière version stable de Mesa plus des backports précoces sélectionnés non invasifs pour de meilleures performances et compatibilité avec les cartes graphiques plus récentes.",
-          "icon": "video-display",
+          "icon": "kisak.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/kisak-mesa.sh"
         },
@@ -5499,7 +5527,7 @@
         {
           "name": "Bubblewrap Fix",
           "description": "Résout un problème causé par un AppArmor mal configuré qui empêche Bubblewrap de fonctionner correctement, entraînant des échecs lors du lancement d'applications Flatpak et de jeux sous Proton.",
-          "icon": "system-run",
+          "icon": "apparmor.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/bwrapfix.sh"
         },
@@ -6715,6 +6743,13 @@
           "scriptPath": "p3/scripts/devs/mise.sh"
         },
         {
+          "name": "Nala",
+          "description": "Eine Schnittstelle für libapt-pkg mit besserer Ausgabeformatierung und Unterstützung für paralleles Herunterladen.",
+          "icon": "terminal.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/nala.sh"
+        },
+        {
           "name": "Node Version Manager",
           "description": "Ein Versions-Manager für Node.js, der Ihnen erlaubt, einfach zwischen verschiedenen Versionen zu wechseln. Beinhaltet Node.js, NPM und Yarn. Nicht benötigt bei Verwendung von Mise.",
           "icon": "nvm.svg",
@@ -6919,7 +6954,7 @@
         {
           "name": "Kisak-Mesa",
           "description": "Ein PPA, das die neueste stabile Version von Mesa sowie ausgewählte nicht-invasive frühe Backports für bessere Leistung und Kompatibilität mit neueren Grafikkarten bereitstellt.",
-          "icon": "video-display",
+          "icon": "kisak.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/kisak-mesa.sh"
         },
@@ -7142,7 +7177,7 @@
         {
           "name": "Bubblewrap Fix",
           "description": "Behebt ein Problem, das durch ein falsch konfiguriertes AppArmor verursacht wird, das Bubblewrap daran hindert, korrekt zu funktionieren, was zu Fehlern beim Starten von Flatpak-Anwendungen und Spielen unter Proton führt.",
-          "icon": "system-run",
+          "icon": "apparmor.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/bwrapfix.sh"
         },
@@ -8358,6 +8393,13 @@
           "scriptPath": "p3/scripts/devs/mise.sh"
         },
         {
+          "name": "Nala",
+          "description": "一个用于 libapt-pkg 的界面，具有更好的输出格式和并行下载支持。",
+          "icon": "terminal.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/nala.sh"
+        },
+        {
           "name": "Node Version Manager",
           "description": "Node.js的版本管理器，允许您轻松在不同版本之间切换。包括Node.js、NPM和Yarn。如果使用Mise则不需要。",
           "icon": "nvm.svg",
@@ -8562,7 +8604,7 @@
         {
           "name": "Kisak-Mesa",
           "description": "一个PPA，提供Mesa的最新稳定版本以及精选的非侵入性早期反向移植，以提高与较新显卡的性能和兼容性。",
-          "icon": "video-display",
+          "icon": "kisak.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/kisak-mesa.sh"
         },
@@ -8785,7 +8827,7 @@
         {
           "name": "Bubblewrap Fix",
           "description": "解决由配置不当的 AppArmor 导致的问题，该问题阻止 Bubblewrap 正常运行，导致在 Proton 下启动 Flatpak 应用程序和游戏时失败。",
-          "icon": "system-run",
+          "icon": "apparmor.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/bwrapfix.sh"
         },
@@ -10001,6 +10043,13 @@
           "scriptPath": "p3/scripts/devs/mise.sh"
         },
         {
+          "name": "Nala",
+          "description": "より良い出力フォーマットと並列ダウンロードサポートを備えたlibapt-pkgのインターフェース。",
+          "icon": "terminal.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/nala.sh"
+        },
+        {
           "name": "Node Version Manager",
           "description": "Node.jsのバージョンマネージャーで、異なるバージョン間を簡単に切り替えできます。Node.js、NPM、Yarnを含みます。Miseを使用する場合は不要。",
           "icon": "nvm.svg",
@@ -10205,7 +10254,7 @@
         {
           "name": "Kisak-Mesa",
           "description": "最新の安定版Mesaと、より新しいグラフィックカードとのパフォーマンスと互換性を向上させるための選択された非侵襲的な早期バックポートを提供するPPA。",
-          "icon": "video-display",
+          "icon": "kisak.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/kisak-mesa.sh"
         },
@@ -10428,7 +10477,7 @@
         {
           "name": "Bubblewrap Fix",
           "description": "誤って設定されたAppArmorがBubblewrapが正しく機能するのをブロックする問題を解決します。これにより、FlatpakアプリケーションとProton下のゲームを起動する際に失敗が発生します。",
-          "icon": "system-run",
+          "icon": "apparmor.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/bwrapfix.sh"
         },
@@ -11644,6 +11693,13 @@
           "scriptPath": "p3/scripts/devs/mise.sh"
         },
         {
+          "name": "Nala",
+          "description": "Интерфейс для libapt-pkg с улучшенным форматированием вывода и поддержкой параллельной загрузки.",
+          "icon": "terminal.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/nala.sh"
+        },
+        {
           "name": "Node Version Manager",
           "description": "Менеджер версий для Node.js, позволяющий легко переключаться между различными версиями. Включает Node.js, NPM и Yarn. Не нужен при использовании Mise.",
           "icon": "nvm.svg",
@@ -11848,7 +11904,7 @@
         {
           "name": "Kisak-Mesa",
           "description": "PPA, предоставляющий последний стабильный выпуск Mesa плюс выбранные неинвазивные ранние бэкпорты для лучшей производительности и совместимости с новыми графическими картами.",
-          "icon": "video-display",
+          "icon": "kisak.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/kisak-mesa.sh"
         },
@@ -12071,7 +12127,7 @@
         {
           "name": "Bubblewrap Fix",
           "description": "Решает проблему, вызванную неправильно настроенным AppArmor, который блокирует правильную работу Bubblewrap, что приводит к сбоям при запуске приложений Flatpak и игр под Proton.",
-          "icon": "system-run",
+          "icon": "apparmor.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/bwrapfix.sh"
         },
