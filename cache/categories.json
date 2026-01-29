@@ -530,6 +530,13 @@
         "icon": "stellarium.png",
         "version": "1.0",
         "scriptPath": "p3/scripts/edu/stellarium.sh"
+      },
+      {
+        "name": "Tac Writer",
+        "description": "tacw_desc",
+        "icon": "tacwriter.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/edu/tacwriter.sh"
       }
     ],
     "subcategories": {}
@@ -800,6 +807,13 @@
         "icon": "nvidia.svg",
         "version": "1.0",
         "scriptPath": "p3/scripts/game/gfn.sh"
+      },
+      {
+        "name": "Greenlight",
+        "description": "glight_desc",
+        "icon": "greenlight.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/game/glight.sh"
       },
       {
         "name": "GOverlay",
