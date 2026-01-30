@@ -335,7 +335,11 @@
     "kisak_desc": "A PPA that provides the latest stable release of Mesa plus select non-invasive early backports for better performance and compatibility with newer graphics cards.",
     "nala_desc": "An interface for libapt-pkg with better output formatting and parallel download support.",
     "glight_desc": "A community-made client for Xbox's XCloud.",
-    "tacw_desc": "Modern academic writing assistant designed to help students and researchers create structured academic texts using the Continuous Argumentation Technique (TAC)."
+    "tacw_desc": "Modern academic writing assistant designed to help students and researchers create structured academic texts using the Continuous Argumentation Technique (TAC).",
+    "resolvehw": "DaVinci Resolve FFMpeg Plugin",
+    "resolvehw_desc": "Enables hardware-accelerated video encoding for delivery in DaVinci Resolve on Linux through ffmpeg, regardless of GPU manufacturer.",
+    "next_label": "Next",
+    "cancel_label": "Cancel"
   },
   "pt": {
     "subtitle": "Uma coleção amigável de ferramentas para Linux.",
@@ -673,7 +677,11 @@
     "kisak_desc": "Um PPA que fornece a versão estável mais recente do Mesa mais backports iniciais selecionados não invasivos para melhor desempenho e compatibilidade com placas gráficas mais recentes.",
     "nala_desc": "Uma interface para libapt-pkg com melhor formatação de saída e suporte para download paralelo.",
     "glight_desc": "Um cliente feito pela comunidade para Xbox XCloud.",
-    "tacw_desc": "Assistente moderno de escrita acadêmica projetado para ajudar estudantes e pesquisadores a criar textos acadêmicos estruturados usando a Técnica de Argumentação Contínua (TAC)."
+    "tacw_desc": "Assistente moderno de escrita acadêmica projetado para ajudar estudantes e pesquisadores a criar textos acadêmicos estruturados usando a Técnica de Argumentação Contínua (TAC).",
+    "resolvehw": "DaVinci Resolve plugin FFmpeg",
+    "resolvehw_desc": "Habilita a codificação de vídeo acelerada por hardware para entrega no DaVinci Resolve no Linux através do ffmpeg, independentemente do fabricante da GPU.",
+    "next_label": "Próximo",
+    "cancel_label": "Cancelar"
   },
   "es": {
     "subtitle": "Una colección amigable de herramientas para Linux.",
@@ -1011,7 +1019,11 @@
     "kisak_desc": "Un PPA que proporciona la última versión estable de Mesa más backports tempranos selectos no invasivos para un mejor rendimiento y compatibilidad con tarjetas gráficas más nuevas.",
     "nala_desc": "Una interfaz para libapt-pkg con mejor formato de salida y soporte para descarga paralela.",
     "glight_desc": "Un cliente hecho por la comunidad para Xbox XCloud.",
-    "tacw_desc": "Asistente moderno de escritura académica diseñado para ayudar a estudiantes e investigadores a crear textos académicos estructurados utilizando la Técnica de Argumentación Continua (TAC)."
+    "tacw_desc": "Asistente moderno de escritura académica diseñado para ayudar a estudiantes e investigadores a crear textos académicos estructurados utilizando la Técnica de Argumentación Continua (TAC).",
+    "resolvehw": "DaVinci Resolve complemento FFmpeg",
+    "resolvehw_desc": "Habilita la codificación de video acelerada por hardware para la entrega en DaVinci Resolve en Linux a través de ffmpeg, independientemente del fabricante de GPU.",
+    "next_label": "Siguiente",
+    "cancel_label": "Cancelar"
   },
   "fr": {
     "subtitle": "Une collection d'outils pour Linux de manière conviviale.",
@@ -1349,7 +1361,11 @@
     "kisak_desc": "Un PPA qui fournit la dernière version stable de Mesa plus des backports précoces sélectionnés non invasifs pour de meilleures performances et compatibilité avec les cartes graphiques plus récentes.",
     "nala_desc": "Une interface pour libapt-pkg avec un meilleur formatage de sortie et un support de téléchargement parallèle.",
     "glight_desc": "Un client créé par la communauté pour Xbox XCloud.",
-    "tacw_desc": "Assistant moderne d'écriture académique conçu pour aider les étudiants et les chercheurs à créer des textes académiques structurés en utilisant la Technique d'Argumentation Continue (TAC)."
+    "tacw_desc": "Assistant moderne d'écriture académique conçu pour aider les étudiants et les chercheurs à créer des textes académiques structurés en utilisant la Technique d'Argumentation Continue (TAC).",
+    "resolvehw": "DaVinci Resolve plug-in FFmpeg",
+    "resolvehw_desc": "test",
+    "next_label": "Suivant",
+    "cancel_label": "Annuler"
   },
   "de": {
     "subtitle": "Eine freundliche Sammlung von Tools für Linux.",
@@ -1687,7 +1703,11 @@
     "kisak_desc": "Ein PPA, das die neueste stabile Version von Mesa sowie ausgewählte nicht-invasive frühe Backports für bessere Leistung und Kompatibilität mit neueren Grafikkarten bereitstellt.",
     "nala_desc": "Eine Schnittstelle für libapt-pkg mit besserer Ausgabeformatierung und Unterstützung für paralleles Herunterladen.",
     "glight_desc": "Ein von der Community erstellter Client für Xbox XCloud.",
-    "tacw_desc": "Moderner akademischer Schreibassistent, der entwickelt wurde, um Studenten und Forschern zu helfen, strukturierte akademische Texte mit der Continuous Argumentation Technique (TAC) zu erstellen."
+    "tacw_desc": "Moderner akademischer Schreibassistent, der entwickelt wurde, um Studenten und Forschern zu helfen, strukturierte akademische Texte mit der Continuous Argumentation Technique (TAC) zu erstellen.",
+    "resolvehw": "DaVinci Resolve FFmpeg Plugin",
+    "resolvehw_desc": "Aktiviert hardwarebeschleunigte Video-Kodierung für die Auslieferung in DaVinci Resolve auf Linux durch ffmpeg, unabhängig vom GPU-Hersteller.",
+    "next_label": "Weiter",
+    "cancel_label": "Abbrechen"
   },
   "zh": {
     "subtitle": "适用于Linux的用户友好工具集合。",
@@ -2027,7 +2047,11 @@
     "kisak_desc": "一个PPA，提供Mesa的最新稳定版本以及精选的非侵入性早期反向移植，以提高与较新显卡的性能和兼容性。",
     "nala_desc": "一个用于 libapt-pkg 的界面，具有更好的输出格式和并行下载支持。",
     "glight_desc": "Xbox XCloud 的社区制作客户端。",
-    "tacw_desc": "现代学术写作助手，旨在帮助学生和研究人员使用连续论证技术 (TAC) 创建结构化的学术文本。"
+    "tacw_desc": "现代学术写作助手，旨在帮助学生和研究人员使用连续论证技术 (TAC) 创建结构化的学术文本。",
+    "resolvehw": "DaVinci Resolve FFmpeg 插件",
+    "resolvehw_desc": "在 Linux 上通过 ffmpeg 为 DaVinci Resolve 中的交付启用硬件加速视频编码，无论 GPU 制造商如何。",
+    "next_label": "下一步",
+    "cancel_label": "取消"
   },
   "ja": {
     "subtitle": "Linuxのためのユーザーフレンドリーなツール集。",
@@ -2365,7 +2389,11 @@
     "kisak_desc": "最新の安定版Mesaと、より新しいグラフィックカードとのパフォーマンスと互換性を向上させるための選択された非侵襲的な早期バックポートを提供するPPA。",
     "nala_desc": "より良い出力フォーマットと並列ダウンロードサポートを備えたlibapt-pkgのインターフェース。",
     "glight_desc": "Xbox XCloud のコミュニティ製クライアント。",
-    "tacw_desc": "学生や研究者が継続的議論技法 (TAC) を使用して構造化された学術テキストを作成するのを助けるように設計された現代の学術ライティングアシスタント。"
+    "tacw_desc": "学生や研究者が継続的議論技法 (TAC) を使用して構造化された学術テキストを作成するのを助けるように設計された現代の学術ライティングアシスタント。",
+    "resolvehw": "DaVinci Resolve FFmpeg プラグイン",
+    "resolvehw_desc": "DaVinci Resolve で Linux 上の ffmpeg を通じて配信するためのハードウェアアクセラレーションされたビデオエンコーディングを有効にします。GPU メーカーを問わず。",
+    "next_label": "次へ",
+    "cancel_label": "キャンセル"
   },
   "ru": {
     "subtitle": "Коллекция инструментов для Linux в удобном формате.",
@@ -2703,6 +2731,10 @@
     "kisak_desc": "PPA, предоставляющий последний стабильный выпуск Mesa плюс выбранные неинвазивные ранние бэкпорты для лучшей производительности и совместимости с новыми графическими картами.",
     "nala_desc": "Интерфейс для libapt-pkg с улучшенным форматированием вывода и поддержкой параллельной загрузки.",
     "glight_desc": "Клиент, созданный сообществом для Xbox XCloud.",
-    "tacw_desc": "Современный помощник академического письма, предназначенный для помощи студентам и исследователям в создании структурированных академических текстов с использованием Техники непрерывной аргументации (TAC)."
+    "tacw_desc": "Современный помощник академического письма, предназначенный для помощи студентам и исследователям в создании структурированных академических текстов с использованием Техники непрерывной аргументации (TAC).",
+    "resolvehw": "DaVinci Resolve плагин FFmpeg",
+    "resolvehw_desc": "Включает аппаратно-ускоренное кодирование видео для доставки в DaVinci Resolve на Linux через ffmpeg, независимо от производителя GPU.",
+    "next_label": "Далее",
+    "cancel_label": "Отмена"
   }
 }

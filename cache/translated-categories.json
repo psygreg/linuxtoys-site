@@ -743,6 +743,13 @@
           "scriptPath": "p3/scripts/extra/psycachy.sh"
         },
         {
+          "name": "DaVinci Resolve FFMpeg Plugin",
+          "description": "Enables hardware-accelerated video encoding for delivery in DaVinci Resolve on Linux through ffmpeg, regardless of GPU manufacturer.",
+          "icon": "resolve.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/resolvehw.sh"
+        },
+        {
           "name": "Shader Booster",
           "description": "Increases the maximum shader cache size to improve performance in games, especially newer ones.",
           "icon": "gaming.svg",
@@ -2405,6 +2412,13 @@
           "icon": "psycachy.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/psycachy.sh"
+        },
+        {
+          "name": "DaVinci Resolve plugin FFmpeg",
+          "description": "Habilita a codificação de vídeo acelerada por hardware para entrega no DaVinci Resolve no Linux através do ffmpeg, independentemente do fabricante da GPU.",
+          "icon": "resolve.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/resolvehw.sh"
         },
         {
           "name": "Shader Booster",
@@ -4071,6 +4085,13 @@
           "scriptPath": "p3/scripts/extra/psycachy.sh"
         },
         {
+          "name": "DaVinci Resolve complemento FFmpeg",
+          "description": "Habilita la codificación de video acelerada por hardware para la entrega en DaVinci Resolve en Linux a través de ffmpeg, independientemente del fabricante de GPU.",
+          "icon": "resolve.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/resolvehw.sh"
+        },
+        {
           "name": "Shader Booster",
           "description": "Aumenta el tamaño máximo de caché de shaders para mejorar el rendimiento en juegos, especialmente los más nuevos.",
           "icon": "gaming.svg",
@@ -5733,6 +5754,13 @@
           "icon": "psycachy.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/psycachy.sh"
+        },
+        {
+          "name": "DaVinci Resolve plug-in FFmpeg",
+          "description": "test",
+          "icon": "resolve.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/resolvehw.sh"
         },
         {
           "name": "Shader Booster",
@@ -7399,6 +7427,13 @@
           "scriptPath": "p3/scripts/extra/psycachy.sh"
         },
         {
+          "name": "DaVinci Resolve FFmpeg Plugin",
+          "description": "Aktiviert hardwarebeschleunigte Video-Kodierung für die Auslieferung in DaVinci Resolve auf Linux durch ffmpeg, unabhängig vom GPU-Hersteller.",
+          "icon": "resolve.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/resolvehw.sh"
+        },
+        {
           "name": "Shader Booster",
           "description": "Erhöht die maximale Shader-Cache-Größe zur Verbesserung der Leistung in Spielen, besonders neueren.",
           "icon": "gaming.svg",
@@ -9061,6 +9096,13 @@
           "icon": "psycachy.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/psycachy.sh"
+        },
+        {
+          "name": "DaVinci Resolve FFmpeg 插件",
+          "description": "在 Linux 上通过 ffmpeg 为 DaVinci Resolve 中的交付启用硬件加速视频编码，无论 GPU 制造商如何。",
+          "icon": "resolve.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/resolvehw.sh"
         },
         {
           "name": "Shader Booster",
@@ -10727,6 +10769,13 @@
           "scriptPath": "p3/scripts/extra/psycachy.sh"
         },
         {
+          "name": "DaVinci Resolve FFmpeg プラグイン",
+          "description": "DaVinci Resolve で Linux 上の ffmpeg を通じて配信するためのハードウェアアクセラレーションされたビデオエンコーディングを有効にします。GPU メーカーを問わず。",
+          "icon": "resolve.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/resolvehw.sh"
+        },
+        {
           "name": "Shader Booster",
           "description": "最大シェーダーキャッシュサイズを増やしてゲーム、特に新しいゲームでのパフォーマンスを向上させます。",
           "icon": "gaming.svg",
@@ -12389,6 +12438,13 @@
           "icon": "psycachy.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/psycachy.sh"
+        },
+        {
+          "name": "DaVinci Resolve плагин FFmpeg",
+          "description": "Включает аппаратно-ускоренное кодирование видео для доставки в DaVinci Resolve на Linux через ffmpeg, независимо от производителя GPU.",
+          "icon": "resolve.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/resolvehw.sh"
         },
         {
           "name": "Shader Booster",

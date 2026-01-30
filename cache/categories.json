@@ -737,6 +737,13 @@
         "scriptPath": "p3/scripts/extra/psycachy.sh"
       },
       {
+        "name": "resolvehw",
+        "description": "resolvehw_desc",
+        "icon": "resolve.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/resolvehw.sh"
+      },
+      {
         "name": "Shader Booster",
         "description": "sboost_desc",
         "icon": "gaming.svg",
