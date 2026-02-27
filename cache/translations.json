@@ -339,7 +339,10 @@
     "resolvehw": "DaVinci Resolve FFMpeg Plugin",
     "resolvehw_desc": "Enables hardware-accelerated video encoding for delivery in DaVinci Resolve on Linux through ffmpeg, regardless of GPU manufacturer.",
     "next_label": "Next",
-    "cancel_label": "Cancel"
+    "cancel_label": "Cancel",
+    "haguichi_desc": "Facilitates the use of Hamachi on Linux with an intuitive graphical interface that covers all its features.",
+    "firefoxsnap_desc": "Removes Firefox Snap from Ubuntu systems and installs the official Mozilla PPA version while ensuring it will track updates from that repository in the future.",
+    "stoat_desc": "Free and open-source chat client, alternative to Discord."
   },
   "pt": {
     "subtitle": "Uma coleção amigável de ferramentas para Linux.",
@@ -681,7 +684,10 @@
     "resolvehw": "DaVinci Resolve plugin FFmpeg",
     "resolvehw_desc": "Habilita a codificação de vídeo acelerada por hardware para entrega no DaVinci Resolve no Linux através do ffmpeg, independentemente do fabricante da GPU.",
     "next_label": "Próximo",
-    "cancel_label": "Cancelar"
+    "cancel_label": "Cancelar",
+    "haguichi_desc": "Facilita o uso do Hamachi no Linux com uma interface gráfica intuitiva que abrange todos os seus recursos.",
+    "firefoxsnap_desc": "Remove o Firefox Snap dos sistemas Ubuntu e instala a versão oficial do Mozilla PPA, garantindo que ele acompanhará as atualizações desse repositório no futuro.",
+    "stoat_desc": "Cliente de chat gratuito e de código aberto, alternativa ao Discord."
   },
   "es": {
     "subtitle": "Una colección amigable de herramientas para Linux.",
@@ -1023,7 +1029,10 @@
     "resolvehw": "DaVinci Resolve complemento FFmpeg",
     "resolvehw_desc": "Habilita la codificación de video acelerada por hardware para la entrega en DaVinci Resolve en Linux a través de ffmpeg, independientemente del fabricante de GPU.",
     "next_label": "Siguiente",
-    "cancel_label": "Cancelar"
+    "cancel_label": "Cancelar",
+    "haguichi_desc": "Facilita el uso de Hamachi en Linux con una interfaz gráfica intuitiva que cubre todas sus características.",
+    "firefoxsnap_desc": "Elimina Firefox Snap de los sistemas Ubuntu e instala la versión oficial de Mozilla PPA, asegurando que seguirá las actualizaciones de ese repositorio en el futuro.",
+    "stoat_desc": "Cliente de chat gratuito y de código abierto, alternativa a Discord."
   },
   "fr": {
     "subtitle": "Une collection d'outils pour Linux de manière conviviale.",
@@ -1365,7 +1374,10 @@
     "resolvehw": "DaVinci Resolve plug-in FFmpeg",
     "resolvehw_desc": "test",
     "next_label": "Suivant",
-    "cancel_label": "Annuler"
+    "cancel_label": "Annuler",
+    "haguichi_desc": "Facilite l'utilisation de Hamachi sur Linux avec une interface graphique intuitive qui couvre toutes ses fonctionnalités.",
+    "firefoxsnap_desc": "Supprime Firefox Snap des systèmes Ubuntu et installe la version officielle Mozilla PPA tout en s'assurant qu'elle suivra les mises à jour de ce dépôt à l'avenir.",
+    "stoat_desc": "Client de chat gratuito e open-source, alternative à Discord."
   },
   "de": {
     "subtitle": "Eine freundliche Sammlung von Tools für Linux.",
@@ -1707,7 +1719,10 @@
     "resolvehw": "DaVinci Resolve FFmpeg Plugin",
     "resolvehw_desc": "Aktiviert hardwarebeschleunigte Video-Kodierung für die Auslieferung in DaVinci Resolve auf Linux durch ffmpeg, unabhängig vom GPU-Hersteller.",
     "next_label": "Weiter",
-    "cancel_label": "Abbrechen"
+    "cancel_label": "Abbrechen",
+    "haguichi_desc": "Erleichtert die Verwendung von Hamachi unter Linux mit einer intuitiven grafischen Oberfläche, die alle Funktionen abdeckt.",
+    "firefoxsnap_desc": "Entfernt Firefox Snap von Ubuntu-Systemen und installiert die offizielle Mozilla PPA-Version, während sichergestellt wird, dass zukünftige Updates aus diesem Repository bezogen werden.",
+    "stoat_desc": "Kostenloser und quelloffener Chat-Client, Alternative zu Discord."
   },
   "zh": {
     "subtitle": "适用于Linux的用户友好工具集合。",
@@ -2051,7 +2066,10 @@
     "resolvehw": "DaVinci Resolve FFmpeg 插件",
     "resolvehw_desc": "在 Linux 上通过 ffmpeg 为 DaVinci Resolve 中的交付启用硬件加速视频编码，无论 GPU 制造商如何。",
     "next_label": "下一步",
-    "cancel_label": "取消"
+    "cancel_label": "取消",
+    "haguichi_desc": "通过直观的图形界面简化在 Linux 上使用 Hamachi，涵盖其所有功能。",
+    "firefoxsnap_desc": "从 Ubuntu 系统中删除 Firefox Snap 并安装官方 Mozilla PPA 版本，同时确保将来能从该存储库跟踪更新。",
+    "stoat_desc": "免费开源的聊天客户端，Discord 的替代品。"
   },
   "ja": {
     "subtitle": "Linuxのためのユーザーフレンドリーなツール集。",
@@ -2393,7 +2411,10 @@
     "resolvehw": "DaVinci Resolve FFmpeg プラグイン",
     "resolvehw_desc": "DaVinci Resolve で Linux 上の ffmpeg を通じて配信するためのハードウェアアクセラレーションされたビデオエンコーディングを有効にします。GPU メーカーを問わず。",
     "next_label": "次へ",
-    "cancel_label": "キャンセル"
+    "cancel_label": "キャンセル",
+    "haguichi_desc": "すべての機能をカバーする直感的なグラフィカルインターフェースで、Linux上でのHamachiの使用を容易にします。",
+    "firefoxsnap_desc": "UbuntuシステムからFirefox Snapを削除し、公式のMozilla PPAバージョンをインストールします。また、将来そのリポジトリからのアップデートを追跡することを保証します。",
+    "stoat_desc": "無料でオープンソースのチャットクライアント、Discordの代替品。"
   },
   "ru": {
     "subtitle": "Коллекция инструментов для Linux в удобном формате.",
@@ -2735,6 +2756,9 @@
     "resolvehw": "DaVinci Resolve плагин FFmpeg",
     "resolvehw_desc": "Включает аппаратно-ускоренное кодирование видео для доставки в DaVinci Resolve на Linux через ffmpeg, независимо от производителя GPU.",
     "next_label": "Далее",
-    "cancel_label": "Отмена"
+    "cancel_label": "Отмена",
+    "haguichi_desc": "Облегчает использование Hamachi в Linux с интуитивно понятным графическим интерфейсом, охватывающим все его функции.",
+    "firefoxsnap_desc": "Удаляет Firefox Snap из систем Ubuntu и устанавливает официальную версию Mozilla PPA, обеспечивая при этом отслеживание обновлений из этого репозитория в будущем.",
+    "stoat_desc": "Бесплатный чат-клиент с открытым исходным кодом, альтернатива Discord."
   }
 }

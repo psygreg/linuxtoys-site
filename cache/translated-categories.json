@@ -35,6 +35,13 @@
           "scriptPath": "p3/scripts/chat/slack.sh"
         },
         {
+          "name": "Stoat",
+          "description": "Free and open-source chat client, alternative to Discord.",
+          "icon": "stoat.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/stoat.sh"
+        },
+        {
           "name": "Telegram",
           "description": "Messaging app with better social features and bigger group limits.",
           "icon": "telegram.png",
@@ -643,6 +650,13 @@
           "icon": "preload.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/earlyoom.sh"
+        },
+        {
+          "name": "Firefox (no-Snap)",
+          "description": "Removes Firefox Snap from Ubuntu systems and installs the official Mozilla PPA version while ensuring it will track updates from that repository in the future.",
+          "icon": "firefox.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/firefox-antisnap.sh"
         },
         {
           "name": "GRUB-btrfs",
@@ -1360,6 +1374,13 @@
           "scriptPath": "p3/scripts/utils/gearlever.sh"
         },
         {
+          "name": "Haguichi",
+          "description": "Facilitates the use of Hamachi on Linux with an intuitive graphical interface that covers all its features.",
+          "icon": "haguichi.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/haguichi.sh"
+        },
+        {
           "name": "HandBrake",
           "description": "An open-source video converter with support for many formats and codecs.",
           "icon": "handbrake.svg",
@@ -1704,6 +1725,13 @@
           "icon": "slack.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/chat/slack.sh"
+        },
+        {
+          "name": "Stoat",
+          "description": "Cliente de chat gratuito e de código aberto, alternativa ao Discord.",
+          "icon": "stoat.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/stoat.sh"
         },
         {
           "name": "Telegram",
@@ -2314,6 +2342,13 @@
           "icon": "preload.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/earlyoom.sh"
+        },
+        {
+          "name": "Firefox (no-Snap)",
+          "description": "Remove o Firefox Snap dos sistemas Ubuntu e instala a versão oficial do Mozilla PPA, garantindo que ele acompanhará as atualizações desse repositório no futuro.",
+          "icon": "firefox.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/firefox-antisnap.sh"
         },
         {
           "name": "GRUB-btrfs",
@@ -3031,6 +3066,13 @@
           "scriptPath": "p3/scripts/utils/gearlever.sh"
         },
         {
+          "name": "Haguichi",
+          "description": "Facilita o uso do Hamachi no Linux com uma interface gráfica intuitiva que abrange todos os seus recursos.",
+          "icon": "haguichi.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/haguichi.sh"
+        },
+        {
           "name": "HandBrake",
           "description": "Conversor de vídeo open source com suporte a muitos formatos e codecs.",
           "icon": "handbrake.svg",
@@ -3375,6 +3417,13 @@
           "icon": "slack.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/chat/slack.sh"
+        },
+        {
+          "name": "Stoat",
+          "description": "Cliente de chat gratuito y de código abierto, alternativa a Discord.",
+          "icon": "stoat.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/stoat.sh"
         },
         {
           "name": "Telegram",
@@ -3985,6 +4034,13 @@
           "icon": "preload.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/earlyoom.sh"
+        },
+        {
+          "name": "Firefox (no-Snap)",
+          "description": "Elimina Firefox Snap de los sistemas Ubuntu e instala la versión oficial de Mozilla PPA, asegurando que seguirá las actualizaciones de ese repositorio en el futuro.",
+          "icon": "firefox.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/firefox-antisnap.sh"
         },
         {
           "name": "GRUB-btrfs",
@@ -4702,6 +4758,13 @@
           "scriptPath": "p3/scripts/utils/gearlever.sh"
         },
         {
+          "name": "Haguichi",
+          "description": "Facilita el uso de Hamachi en Linux con una interfaz gráfica intuitiva que cubre todas sus características.",
+          "icon": "haguichi.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/haguichi.sh"
+        },
+        {
           "name": "HandBrake",
           "description": "Un convertidor de video de código abierto con soporte para muchos formatos y códecs.",
           "icon": "handbrake.svg",
@@ -5046,6 +5109,13 @@
           "icon": "slack.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/chat/slack.sh"
+        },
+        {
+          "name": "Stoat",
+          "description": "Client de chat gratuito e open-source, alternative à Discord.",
+          "icon": "stoat.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/stoat.sh"
         },
         {
           "name": "Telegram",
@@ -5656,6 +5726,13 @@
           "icon": "preload.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/earlyoom.sh"
+        },
+        {
+          "name": "Firefox (no-Snap)",
+          "description": "Supprime Firefox Snap des systèmes Ubuntu et installe la version officielle Mozilla PPA tout en s'assurant qu'elle suivra les mises à jour de ce dépôt à l'avenir.",
+          "icon": "firefox.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/firefox-antisnap.sh"
         },
         {
           "name": "GRUB-btrfs",
@@ -6373,6 +6450,13 @@
           "scriptPath": "p3/scripts/utils/gearlever.sh"
         },
         {
+          "name": "Haguichi",
+          "description": "Facilite l'utilisation de Hamachi sur Linux avec une interface graphique intuitive qui couvre toutes ses fonctionnalités.",
+          "icon": "haguichi.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/haguichi.sh"
+        },
+        {
           "name": "HandBrake",
           "description": "Un convertisseur vidéo open source avec support pour de nombreux formats et codecs.",
           "icon": "handbrake.svg",
@@ -6717,6 +6801,13 @@
           "icon": "slack.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/chat/slack.sh"
+        },
+        {
+          "name": "Stoat",
+          "description": "Kostenloser und quelloffener Chat-Client, Alternative zu Discord.",
+          "icon": "stoat.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/stoat.sh"
         },
         {
           "name": "Telegram",
@@ -7327,6 +7418,13 @@
           "icon": "preload.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/earlyoom.sh"
+        },
+        {
+          "name": "Firefox (no-Snap)",
+          "description": "Entfernt Firefox Snap von Ubuntu-Systemen und installiert die offizielle Mozilla PPA-Version, während sichergestellt wird, dass zukünftige Updates aus diesem Repository bezogen werden.",
+          "icon": "firefox.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/firefox-antisnap.sh"
         },
         {
           "name": "GRUB-btrfs",
@@ -8044,6 +8142,13 @@
           "scriptPath": "p3/scripts/utils/gearlever.sh"
         },
         {
+          "name": "Haguichi",
+          "description": "Erleichtert die Verwendung von Hamachi unter Linux mit einer intuitiven grafischen Oberfläche, die alle Funktionen abdeckt.",
+          "icon": "haguichi.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/haguichi.sh"
+        },
+        {
           "name": "HandBrake",
           "description": "Ein quelloffener Video-Konverter mit Unterstützung für viele Formate und Codecs.",
           "icon": "handbrake.svg",
@@ -8388,6 +8493,13 @@
           "icon": "slack.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/chat/slack.sh"
+        },
+        {
+          "name": "Stoat",
+          "description": "免费开源的聊天客户端，Discord 的替代品。",
+          "icon": "stoat.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/stoat.sh"
         },
         {
           "name": "Telegram",
@@ -8998,6 +9110,13 @@
           "icon": "preload.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/earlyoom.sh"
+        },
+        {
+          "name": "Firefox (no-Snap)",
+          "description": "从 Ubuntu 系统中删除 Firefox Snap 并安装官方 Mozilla PPA 版本，同时确保将来能从该存储库跟踪更新。",
+          "icon": "firefox.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/firefox-antisnap.sh"
         },
         {
           "name": "GRUB-btrfs",
@@ -9715,6 +9834,13 @@
           "scriptPath": "p3/scripts/utils/gearlever.sh"
         },
         {
+          "name": "Haguichi",
+          "description": "通过直观的图形界面简化在 Linux 上使用 Hamachi，涵盖其所有功能。",
+          "icon": "haguichi.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/haguichi.sh"
+        },
+        {
           "name": "HandBrake",
           "description": "支持许多格式和编解码器的开源视频转换器。",
           "icon": "handbrake.svg",
@@ -10059,6 +10185,13 @@
           "icon": "slack.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/chat/slack.sh"
+        },
+        {
+          "name": "Stoat",
+          "description": "無料でオープンソースのチャットクライアント、Discordの代替品。",
+          "icon": "stoat.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/stoat.sh"
         },
         {
           "name": "Telegram",
@@ -10669,6 +10802,13 @@
           "icon": "preload.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/earlyoom.sh"
+        },
+        {
+          "name": "Firefox (no-Snap)",
+          "description": "UbuntuシステムからFirefox Snapを削除し、公式のMozilla PPAバージョンをインストールします。また、将来そのリポジトリからのアップデートを追跡することを保証します。",
+          "icon": "firefox.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/firefox-antisnap.sh"
         },
         {
           "name": "GRUB-btrfs",
@@ -11386,6 +11526,13 @@
           "scriptPath": "p3/scripts/utils/gearlever.sh"
         },
         {
+          "name": "Haguichi",
+          "description": "すべての機能をカバーする直感的なグラフィカルインターフェースで、Linux上でのHamachiの使用を容易にします。",
+          "icon": "haguichi.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/haguichi.sh"
+        },
+        {
           "name": "HandBrake",
           "description": "多くのフォーマットとコーデックをサポートするオープンソースビデオコンバーター。",
           "icon": "handbrake.svg",
@@ -11730,6 +11877,13 @@
           "icon": "slack.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/chat/slack.sh"
+        },
+        {
+          "name": "Stoat",
+          "description": "Бесплатный чат-клиент с открытым исходным кодом, альтернатива Discord.",
+          "icon": "stoat.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/chat/stoat.sh"
         },
         {
           "name": "Telegram",
@@ -12340,6 +12494,13 @@
           "icon": "preload.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/earlyoom.sh"
+        },
+        {
+          "name": "Firefox (no-Snap)",
+          "description": "Удаляет Firefox Snap из систем Ubuntu и устанавливает официальную версию Mozilla PPA, обеспечивая при этом отслеживание обновлений из этого репозитория в будущем.",
+          "icon": "firefox.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/firefox-antisnap.sh"
         },
         {
           "name": "GRUB-btrfs",
@@ -13055,6 +13216,13 @@
           "icon": "gearlever.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/gearlever.sh"
+        },
+        {
+          "name": "Haguichi",
+          "description": "Облегчает использование Hamachi в Linux с интуитивно понятным графическим интерфейсом, охватывающим все его функции.",
+          "icon": "haguichi.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/haguichi.sh"
         },
         {
           "name": "HandBrake",

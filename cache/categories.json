@@ -34,6 +34,13 @@
         "scriptPath": "p3/scripts/chat/slack.sh"
       },
       {
+        "name": "Stoat",
+        "description": "stoat_desc",
+        "icon": "stoat.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/chat/stoat.sh"
+      },
+      {
         "name": "Telegram",
         "description": "telegram_desc",
         "icon": "telegram.png",
@@ -637,6 +644,13 @@
         "icon": "preload.svg",
         "version": "1.0",
         "scriptPath": "p3/scripts/extra/earlyoom.sh"
+      },
+      {
+        "name": "Firefox (no-Snap)",
+        "description": "firefoxsnap_desc",
+        "icon": "firefox.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/firefox-antisnap.sh"
       },
       {
         "name": "GRUB-btrfs",
@@ -1347,6 +1361,13 @@
         "icon": "gearlever.png",
         "version": "1.0",
         "scriptPath": "p3/scripts/utils/gearlever.sh"
+      },
+      {
+        "name": "Haguichi",
+        "description": "haguichi_desc",
+        "icon": "haguichi.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/haguichi.sh"
       },
       {
         "name": "HandBrake",
