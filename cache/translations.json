@@ -342,7 +342,11 @@
     "cancel_label": "Cancel",
     "haguichi_desc": "Facilitates the use of Hamachi on Linux with an intuitive graphical interface that covers all its features.",
     "firefoxsnap_desc": "Removes Firefox Snap from Ubuntu systems and installs the official Mozilla PPA version while ensuring it will track updates from that repository in the future.",
-    "stoat_desc": "Free and open-source chat client, alternative to Discord."
+    "stoat_desc": "Free and open-source chat client, alternative to Discord.",
+    "needed_requirements_title": "Requirements",
+    "needed_requirements_message": "The following features are required before proceeding with {script_name}:",
+    "needed_requirements_footer": "These required features will be installed first, then the main script will proceed.",
+    "libvirt_desc": "Install and configure virt-manager, libvirt and qemu."
   },
   "pt": {
     "subtitle": "Uma coleção amigável de ferramentas para Linux.",
@@ -687,7 +691,11 @@
     "cancel_label": "Cancelar",
     "haguichi_desc": "Facilita o uso do Hamachi no Linux com uma interface gráfica intuitiva que abrange todos os seus recursos.",
     "firefoxsnap_desc": "Remove o Firefox Snap dos sistemas Ubuntu e instala a versão oficial do Mozilla PPA, garantindo que ele acompanhará as atualizações desse repositório no futuro.",
-    "stoat_desc": "Cliente de chat gratuito e de código aberto, alternativa ao Discord."
+    "stoat_desc": "Cliente de chat gratuito e de código aberto, alternativa ao Discord.",
+    "needed_requirements_title": "Requisitos",
+    "needed_requirements_message": "Os seguintes recursos são necessários antes de prosseguir com {script_name}:",
+    "needed_requirements_footer": "Esses recursos necessários serão instalados primeiro, depois o script principal continuará.",
+    "libvirt_desc": "Instale e configure virt-manager, libvirt e qemu."
   },
   "es": {
     "subtitle": "Una colección amigable de herramientas para Linux.",
@@ -1032,7 +1040,11 @@
     "cancel_label": "Cancelar",
     "haguichi_desc": "Facilita el uso de Hamachi en Linux con una interfaz gráfica intuitiva que cubre todas sus características.",
     "firefoxsnap_desc": "Elimina Firefox Snap de los sistemas Ubuntu e instala la versión oficial de Mozilla PPA, asegurando que seguirá las actualizaciones de ese repositorio en el futuro.",
-    "stoat_desc": "Cliente de chat gratuito y de código abierto, alternativa a Discord."
+    "stoat_desc": "Cliente de chat gratuito y de código abierto, alternativa a Discord.",
+    "needed_requirements_title": "Requisitos",
+    "needed_requirements_message": "Las siguientes funciones son necesarias antes de continuar con {script_name}:",
+    "needed_requirements_footer": "Estas funciones necesarias se instalarán primero, luego continuará el script principal.",
+    "libvirt_desc": "Instale y configure virt-manager, libvirt y qemu."
   },
   "fr": {
     "subtitle": "Une collection d'outils pour Linux de manière conviviale.",
@@ -1377,7 +1389,11 @@
     "cancel_label": "Annuler",
     "haguichi_desc": "Facilite l'utilisation de Hamachi sur Linux avec une interface graphique intuitive qui couvre toutes ses fonctionnalités.",
     "firefoxsnap_desc": "Supprime Firefox Snap des systèmes Ubuntu et installe la version officielle Mozilla PPA tout en s'assurant qu'elle suivra les mises à jour de ce dépôt à l'avenir.",
-    "stoat_desc": "Client de chat gratuito e open-source, alternative à Discord."
+    "stoat_desc": "Client de chat gratuito e open-source, alternative à Discord.",
+    "needed_requirements_title": "Prérequis",
+    "needed_requirements_message": "Les fonctionnalités suivantes sont requises avant de continuer avec {script_name}:",
+    "needed_requirements_footer": "Ces fonctionnalités requises seront installées en premier, puis le script principal continuera.",
+    "libvirt_desc": "Installez et configurez virt-manager, libvirt et qemu."
   },
   "de": {
     "subtitle": "Eine freundliche Sammlung von Tools für Linux.",
@@ -1722,7 +1738,11 @@
     "cancel_label": "Abbrechen",
     "haguichi_desc": "Erleichtert die Verwendung von Hamachi unter Linux mit einer intuitiven grafischen Oberfläche, die alle Funktionen abdeckt.",
     "firefoxsnap_desc": "Entfernt Firefox Snap von Ubuntu-Systemen und installiert die offizielle Mozilla PPA-Version, während sichergestellt wird, dass zukünftige Updates aus diesem Repository bezogen werden.",
-    "stoat_desc": "Kostenloser und quelloffener Chat-Client, Alternative zu Discord."
+    "stoat_desc": "Kostenloser und quelloffener Chat-Client, Alternative zu Discord.",
+    "needed_requirements_title": "Anforderungen",
+    "needed_requirements_message": "Die folgenden Funktionen sind erforderlich, bevor Sie {script_name} fortsetzen:",
+    "needed_requirements_footer": "Diese erforderlichen Funktionen werden zuerst installiert, dann wird das Hauptskript fortgesetzt.",
+    "libvirt_desc": "Installieren und konfigurieren Sie virt-manager, libvirt und qemu."
   },
   "zh": {
     "subtitle": "适用于Linux的用户友好工具集合。",
@@ -2069,7 +2089,11 @@
     "cancel_label": "取消",
     "haguichi_desc": "通过直观的图形界面简化在 Linux 上使用 Hamachi，涵盖其所有功能。",
     "firefoxsnap_desc": "从 Ubuntu 系统中删除 Firefox Snap 并安装官方 Mozilla PPA 版本，同时确保将来能从该存储库跟踪更新。",
-    "stoat_desc": "免费开源的聊天客户端，Discord 的替代品。"
+    "stoat_desc": "免费开源的聊天客户端，Discord 的替代品。",
+    "needed_requirements_title": "要求",
+    "needed_requirements_message": "继续使用 {script_name} 之前需要以下功能:",
+    "needed_requirements_footer": "这些必需的功能将首先安装，然后主脚本将继续进行。",
+    "libvirt_desc": "安装并配置 virt-manager、libvirt 和 qemu。"
   },
   "ja": {
     "subtitle": "Linuxのためのユーザーフレンドリーなツール集。",
@@ -2414,7 +2438,11 @@
     "cancel_label": "キャンセル",
     "haguichi_desc": "すべての機能をカバーする直感的なグラフィカルインターフェースで、Linux上でのHamachiの使用を容易にします。",
     "firefoxsnap_desc": "UbuntuシステムからFirefox Snapを削除し、公式のMozilla PPAバージョンをインストールします。また、将来そのリポジトリからのアップデートを追跡することを保証します。",
-    "stoat_desc": "無料でオープンソースのチャットクライアント、Discordの代替品。"
+    "stoat_desc": "無料でオープンソースのチャットクライアント、Discordの代替品。",
+    "needed_requirements_title": "要件",
+    "needed_requirements_message": "{script_name} を続行する前に、次の機能が必要です:",
+    "needed_requirements_footer": "これらの必要な機能がまずインストールされ、その後、メインスクリプトが続行されます。",
+    "libvirt_desc": "virt-manager、libvirt、qemuをインストールおよび構成します。"
   },
   "ru": {
     "subtitle": "Коллекция инструментов для Linux в удобном формате.",
@@ -2759,6 +2787,10 @@
     "cancel_label": "Отмена",
     "haguichi_desc": "Облегчает использование Hamachi в Linux с интуитивно понятным графическим интерфейсом, охватывающим все его функции.",
     "firefoxsnap_desc": "Удаляет Firefox Snap из систем Ubuntu и устанавливает официальную версию Mozilla PPA, обеспечивая при этом отслеживание обновлений из этого репозитория в будущем.",
-    "stoat_desc": "Бесплатный чат-клиент с открытым исходным кодом, альтернатива Discord."
+    "stoat_desc": "Бесплатный чат-клиент с открытым исходным кодом, альтернатива Discord.",
+    "needed_requirements_title": "Требования",
+    "needed_requirements_message": "Перед продолжением работы с {script_name} требуются следующие функции:",
+    "needed_requirements_footer": "Эти необходимые функции будут установлены в первую очередь, а затем основной скрипт продолжит работу.",
+    "libvirt_desc": "Установите и настройте virt-manager, libvirt и qemu."
   }
 }

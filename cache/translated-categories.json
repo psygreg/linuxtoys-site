@@ -136,6 +136,13 @@
           "scriptPath": "p3/scripts/devs/java.sh"
         },
         {
+          "name": "Virt-Manager",
+          "description": "Install and configure virt-manager, libvirt and qemu.",
+          "icon": "virt-manager.png",
+          "version": "1.1",
+          "scriptPath": "p3/scripts/devs/libvirt-config.sh"
+        },
+        {
           "name": "Maven",
           "description": "A build automation tool used primarily for Java projects. Not needed if using Mise.",
           "icon": "maven.svg",
@@ -1826,6 +1833,13 @@
           "icon": "java.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/java.sh"
+        },
+        {
+          "name": "Virt-Manager",
+          "description": "Instale e configure virt-manager, libvirt e qemu.",
+          "icon": "virt-manager.png",
+          "version": "1.1",
+          "scriptPath": "p3/scripts/devs/libvirt-config.sh"
         },
         {
           "name": "Maven",
@@ -3520,6 +3534,13 @@
           "scriptPath": "p3/scripts/devs/java.sh"
         },
         {
+          "name": "Virt-Manager",
+          "description": "Instale y configure virt-manager, libvirt y qemu.",
+          "icon": "virt-manager.png",
+          "version": "1.1",
+          "scriptPath": "p3/scripts/devs/libvirt-config.sh"
+        },
+        {
           "name": "Maven",
           "description": "Una herramienta de automatización de construcción usada principalmente para proyectos Java. No necesaria si usa Mise.",
           "icon": "maven.svg",
@@ -5210,6 +5231,13 @@
           "icon": "java.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/java.sh"
+        },
+        {
+          "name": "Virt-Manager",
+          "description": "Installez et configurez virt-manager, libvirt et qemu.",
+          "icon": "virt-manager.png",
+          "version": "1.1",
+          "scriptPath": "p3/scripts/devs/libvirt-config.sh"
         },
         {
           "name": "Maven",
@@ -6904,6 +6932,13 @@
           "scriptPath": "p3/scripts/devs/java.sh"
         },
         {
+          "name": "Virt-Manager",
+          "description": "Installieren und konfigurieren Sie virt-manager, libvirt und qemu.",
+          "icon": "virt-manager.png",
+          "version": "1.1",
+          "scriptPath": "p3/scripts/devs/libvirt-config.sh"
+        },
+        {
           "name": "Maven",
           "description": "Ein Build-Automatisierungstool, das hauptsächlich für Java-Projekte verwendet wird. Nicht benötigt bei Verwendung von Mise.",
           "icon": "maven.svg",
@@ -8594,6 +8629,13 @@
           "icon": "java.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/java.sh"
+        },
+        {
+          "name": "Virt-Manager",
+          "description": "安装并配置 virt-manager、libvirt 和 qemu。",
+          "icon": "virt-manager.png",
+          "version": "1.1",
+          "scriptPath": "p3/scripts/devs/libvirt-config.sh"
         },
         {
           "name": "Maven",
@@ -10288,6 +10330,13 @@
           "scriptPath": "p3/scripts/devs/java.sh"
         },
         {
+          "name": "Virt-Manager",
+          "description": "virt-manager、libvirt、qemuをインストールおよび構成します。",
+          "icon": "virt-manager.png",
+          "version": "1.1",
+          "scriptPath": "p3/scripts/devs/libvirt-config.sh"
+        },
+        {
           "name": "Maven",
           "description": "主にJavaプロジェクト用のビルド自動化ツール。Miseを使用する場合は不要。",
           "icon": "maven.svg",
@@ -11978,6 +12027,13 @@
           "icon": "java.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/java.sh"
+        },
+        {
+          "name": "Virt-Manager",
+          "description": "Установите и настройте virt-manager, libvirt и qemu.",
+          "icon": "virt-manager.png",
+          "version": "1.1",
+          "scriptPath": "p3/scripts/devs/libvirt-config.sh"
         },
         {
           "name": "Maven",

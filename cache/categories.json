@@ -134,6 +134,13 @@
         "scriptPath": "p3/scripts/devs/java.sh"
       },
       {
+        "name": "Virt-Manager",
+        "description": "libvirt_desc",
+        "icon": "virt-manager.png",
+        "version": "1.1",
+        "scriptPath": "p3/scripts/devs/libvirt-config.sh"
+      },
+      {
         "name": "Maven",
         "description": "mvn_desc",
         "icon": "maven.svg",
