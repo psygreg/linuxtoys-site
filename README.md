@@ -3,7 +3,7 @@
 [LinuxToys](https://linux.toys) is a collection of user-friendly tools designed for Linux systems. It aims to make powerful Linux functionality accessible to all users through an intuitive interface. For a complete feature list and detailed documentation, please visit our [Wiki](https://linux.toys/knowledgebase.html).
 
 ## For those on GitHub
-This is a mirror of the [Codeberg repository](https://codeberg.org/psygreg/linuxtoys) in which this project is active. If you wish to contribute, consider heading there instead to be credited in the contributors. Your stars here are very welcome in any case!
+This is a mirror of the [official repository](https://git.linux.toys/psygreg/linuxtoys) in which this project is active. If you wish to contribute, consider heading there instead to be credited in the contributors. Your stars here are very welcome in any case!
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="src/dark-lt.png">
