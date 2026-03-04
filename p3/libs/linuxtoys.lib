@@ -110,7 +110,7 @@ _install_() {
         *arch*|*archlinux*|*cachyos*)
             for pak in "${_packages[@]}"; do
                 pacman -Qi "$pak" &>/dev/null && continue
-                
+
                 if pacman -Ss "$pak" | grep -q "$pak"; then
                     sudo pacman -S --noconfirm "$pak"
                 else
@@ -144,6 +144,11 @@ _install_() {
                 rpm -qi "$pak" &>/dev/null || sudo zypper in -y "$pak"
             done
             ;;
+        *solus*)
+            for pak in "${_packages[@]}"; do
+                [ $(eopkg list-installed | grep -q "$pak" &>/dev/null) ] || sudo eopkg install -y "$pak"
+            done
+            ;;
     esac
     unset _packages
 }
@@ -161,7 +166,7 @@ _flatpak_() {
 _lang_() {
     local lang="${LANG:0:2}"
     local available=" am ar bn cs de el en es fa fi fr he hi id it ja ko ms nl pl pt ru sv sw ta th tl tr uk ur vi zh bg bs da hr hu is no sk sl sr nb az lv ga ne my sq tg uz hy ka km lo mn ro et lt "
-    
+
     if [[ "$available" == *" $lang "* ]]; then
         langfile="$lang"
     else
