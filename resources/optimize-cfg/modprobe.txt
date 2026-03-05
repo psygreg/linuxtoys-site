@@ -1,4 +1,0 @@
-https://raw.githubusercontent.com/CachyOS/CachyOS-Settings/master/usr/lib/modprobe.d/20-audio-pm.conf
-https://raw.githubusercontent.com/CachyOS/CachyOS-Settings/master/usr/lib/modprobe.d/amdgpu.conf
-https://raw.githubusercontent.com/CachyOS/CachyOS-Settings/master/usr/lib/modprobe.d/blacklist.conf
-https://raw.githubusercontent.com/CachyOS/CachyOS-Settings/master/usr/lib/modprobe.d/nvidia.conf

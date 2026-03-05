@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LinuxToys</title>
+
+  <link rel="icon" href="elements/linuxtoys.png" type="image/png" />
+
+  <meta name="description"
+    content="A user-friendly collection of tools to make your life on Linux easier than ever. Useful scripts for gamers, developers and enthusiasts." />
+  <meta name="keywords" content="Linux, tools, scripts, gaming, development, linux toys, psygreg" />
+  <meta name="author" content="psygreg" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://psygreg.codeberg.page/linuxtoys/@pages/" />
+  <meta property="og:title" content="LinuxToys" />
+  <meta property="og:description"
+    content="A user-friendly collection of tools to make your life on Linux easier than ever." />
+  <meta property="og:image" content="https://psygreg.codeberg.page/linuxtoys/@pages/elements/screenshot.png" />
+
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://psygreg.codeberg.page/linuxtoys/@pages/" />
+  <meta property="twitter:title" content="LinuxToys" />
+  <meta property="twitter:description"
+    content="A user-friendly collection of tools to make your life on Linux easier than ever." />
+  <meta property="twitter:image" content="https://psygreg.codeberg.page/linuxtoys/@pages/elements/screenshot.png" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/translations.js"></script>
+  <script src="js/tools-loader.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: "Inter", sans-serif;
+    }
+
+    .tool-list {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease-in-out;
+    }
+
+    .tool-list.expanded {
+      max-height: 1000px;
+    }
+
+    .tool-grid-container {
+      column-count: 1;
+      column-gap: 2rem;
+    }
+
+    .tool-grid-container>div {
+      break-inside: avoid;
+      margin-bottom: 2rem;
+    }
+
+    @media (min-width: 768px) {
+      .tool-grid-container {
+        column-count: 2;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .tool-grid-container {
+        column-count: 3;
+      }
+    }
+
+    /* Clickable tools styling */
+    .tool-clickable {
+      transition: all 0.2s ease-in-out;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+
+    .tool-clickable:hover {
+      background-color: rgba(96, 165, 250, 0.1);
+      transform: translateX(4px);
+    }
+  </style>
+</head>
+
+<body class="bg-gray-900 text-white">
+  <header class="bg-gray-800 shadow-md sticky top-0 z-50">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center">
+        <img src="elements/linuxtoys.png" alt="LinuxToys Logo" class="h-8 w-8 mr-3" />
+        <h1 class="text-2xl font-bold text-white">LinuxToys</h1>
+      </div>
+      <div class="flex items-center space-x-4">
+        <div class="relative">
+          <button id="language-dropdown-btn"
+            class="mx-2 px-3 py-1 rounded-md text-sm font-medium bg-blue-600 hover:bg-blue-700 transition duration-300 flex items-center">
+            <span id="current-lang">🇺🇸 EN</span>
+            <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div id="language-dropdown"
+            class="absolute right-0 mt-2 w-28 bg-gray-800 border border-gray-700 rounded-md shadow-lg z-50 hidden max-h-60 overflow-y-auto">
+            <button id="lang-en"
+              class="block w-full px-3 py-2 text-sm text-left hover:bg-gray-700 transition duration-300 rounded-t-md">
+              🇺🇸 EN
+            </button>
+            <button id="lang-pt"
+              class="block w-full px-3 py-2 text-sm text-left hover:bg-gray-700 transition duration-300">
+              🇧🇷 PT
+            </button>
+            <button id="lang-es"
+              class="block w-full px-3 py-2 text-sm text-left hover:bg-gray-700 transition duration-300">
+              🇪🇸 ES
+            </button>
+            <button id="lang-fr"
+              class="block w-full px-3 py-2 text-sm text-left hover:bg-gray-700 transition duration-300">
+              🇫🇷 FR
+            </button>
+            <button id="lang-de"
+              class="block w-full px-3 py-2 text-sm text-left hover:bg-gray-700 transition duration-300">
+              🇩🇪 DE
+            </button>
+            <button id="lang-nl"
+              class="block w-full px-3 py-2 text-sm text-left hover:bg-gray-700 transition duration-300">
+              🇳🇱 NL
+            </button>
+            <button id="lang-zh"
+              class="block w-full px-3 py-2 text-sm text-left hover:bg-gray-700 transition duration-300">
+              🇨🇳 ZH
+            </button>
+            <button id="lang-ja"
+              class="block w-full px-3 py-2 text-sm text-left hover:bg-gray-700 transition duration-300">
+              🇯🇵 JA
+            </button>
+            <button id="lang-ru"
+              class="block w-full px-3 py-2 text-sm text-left hover:bg-gray-700 transition duration-300">
+              🇷🇺 RU
+            </button>
+            <button id="lang-ga"
+              class="block w-full px-3 py-2 text-sm text-left hover:bg-gray-700 transition duration-300 rounded-b-md">
+              🇮🇪 GA
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container mx-auto px-6 py-12">
+    <section class="text-center">
+      <h2 class="text-4xl lg:text-4xl font-bold mb-4" data-key="title">
+        A collection of tools for Linux in a user-friendly way to make your
+        life on Linux easier than ever
+      </h2>
+    </section>
+
+    <section class="text-center mt-8 px-4">
+      <div class="relative w-full max-w-xl mx-auto flex items-center justify-between">
+        <pre id="install-code"
+          class="flex-1 text-green-400 font-mono text-sm px-4 py-3 border-2 border-gray-700 bg-gray-800 rounded-lg text-left whitespace-pre-wrap break-words min-w-0"></pre>
+
+        <button id="copy-button"
+          class="ml-3 p-3 bg-gray-700 hover:bg-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 flex items-center justify-center flex-shrink-0">
+          <svg id="copy-icon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-300" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M8 3h8a2 2 0 012 2v12a2 2 0 01-2 2H8a2 2 0 01-2-2V5a2 2 0 012-2z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h8" />
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <section class="py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h3 class="text-3xl font-bold mb-4" data-key="for-you-title">
+            For you
+          </h3>
+          <p class="text-lg text-gray-400 mb-6 text-justify" data-key="for-you-text">
+            A multitool that just works, with a comfortable, practical and
+            simple graphical interface that looks good and gets the job done.
+            It also follows the theme of your system!
+          </p>
+          <a href="https://codeberg.org/psygreg/linuxtoys/releases" target="_blank"
+            class="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-lg transition duration-300"
+            data-key="get-it-here">Get it here!</a>
+        </div>
+        <img src="elements/screenshot.png" alt="LinuxToys Screenshot 1" class="rounded-lg shadow-lg w-full" />
+      </div>
+    </section>
+
+    <section class="py-16 bg-gray-800 -mx-6 px-6">
+      <div class="container mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <img src="elements/screenshot-2.png" alt="LinuxToys Screenshot 2" class="rounded-lg shadow-lg w-full" />
+          <div>
+            <h3 class="text-3xl font-bold mb-4" data-key="for-professionals-title">
+              For professionals
+            </h3>
+            <p class="text-lg text-gray-400 text-justify" data-key="for-professionals-text">
+              With the CLI mode, taking a long time to set up computers for
+              your customers will be a thing of the past. Just list all
+              features you need installed in the manifest file, and let
+              LinuxToys do the job for you. You can save your custom manifest
+              file to use it to standardize your customers' systems. And don't
+              worry: it won't apply resources that are not meant for the
+              target!
+            </p>
+            <div class="mt-6">
+              <a href="cli-mode.html"
+                class="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300"
+                data-key="cli-mode-button">Learn CLI Mode</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h3 class="text-3xl font-bold mb-4" data-key="for-developers-title">
+            For developers
+          </h3>
+          <p class="text-lg text-gray-400 text-justify" data-key="for-developers-text">
+            The ultimate platform for bash script development allowing for
+            quick deployment of fixes for common issues on Linux, and much
+            more, powered by our libraries. Don't believe it? Take a look at
+            our
+            <a href="handbook.html" class="text-blue-400 hover:underline" data-key="developer-handbook-link">Developer
+              Handbook</a>
+            and see it for yourself!
+          </p>
+        </div>
+        <div class="text-center">
+          <a href="handbook.html"
+            class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-bold py-4 px-10 rounded-lg transition duration-300 text-xl"
+            data-key="handbook-button">View Handbook</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="tools" class="mt-8">
+      <h3 class="text-3xl font-bold text-center mb-10" data-key="tools-title">
+        Tools by Category
+      </h3>
+
+      <!-- Loading indicator -->
+      <div id="tools-loading" class="text-center py-12">
+        <div
+          class="inline-flex items-center px-4 py-2 font-semibold leading-6 text-sm shadow rounded-md text-white bg-gray-800 transition ease-in-out duration-150">
+          <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none"
+            viewBox="0 0 24 24">
+            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+            <path class="opacity-75" fill="currentColor"
+              d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
+            </path>
+          </svg>
+          <span data-key="loading-content">Loading content...</span>
+        </div>
+      </div>
+
+      <div class="tool-grid-container">
+        <div class="bg-gray-800 rounded-lg p-6 flex flex-col">
+          <h4 class="text-xl font-semibold mb-4" data-key="devs">
+            Development
+          </h4>
+          <button
+            class="mt-auto bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 toggle-button"
+            data-key="toggle-button">
+            Show Tools
+          </button>
+          <ul class="tool-list mt-4 space-y-2 text-gray-300">
+            <li>Android Studio</li>
+            <li>VSCode</li>
+            <li>VSCodium</li>
+            <li>Docker</li>
+            <li>.NET SDK</li>
+            <li>Godot Engine</li>
+            <li>HTTPie</li>
+            <li>Insomnia</li>
+            <li>Java</li>
+            <li>Maven</li>
+            <li>Mise</li>
+            <li>Neovim</li>
+            <li>NVM</li>
+            <li>Postman</li>
+            <li>Pyenv</li>
+            <li>Sublime Text</li>
+            <li>Tailscale</li>
+            <li>Unity Hub</li>
+          </ul>
+        </div>
+
+        <div class="bg-gray-800 rounded-lg p-6 flex flex-col">
+          <h4 class="text-xl font-semibold mb-4" data-key="drivers">
+            Drivers
+          </h4>
+          <button
+            class="mt-auto bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 toggle-button"
+            data-key="toggle-button">
+            Show Tools
+          </button>
+          <ul class="tool-list mt-4 space-y-2 text-gray-300">
+            <li>Broadcom</li>
+            <li>Intel Compute Runtime</li>
+            <li>Nvidia</li>
+            <li>ROCm</li>
+            <li>Realtek</li>
+            <li>Rusticl</li>
+            <li>Xpadneo</li>
+          </ul>
+        </div>
+
+        <div class="bg-gray-800 rounded-lg p-6 flex flex-col">
+          <h4 class="text-xl font-semibold mb-4" data-key="extra">Extra</h4>
+          <button
+            class="mt-auto bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 toggle-button"
+            data-key="toggle-button">
+            Show Tools
+          </button>
+          <ul class="tool-list mt-4 space-y-2 text-gray-300">
+            <li>Bluetooth Assistant</li>
+            <li>Config Network File Helper</li>
+            <li>Codec Fix</li>
+            <li>Distro Splitter Mover</li>
+            <li>EarlyOOM</li>
+            <li>Grub BTRFS</li>
+            <li>IWD</li>
+            <li>Linux SWAP Helper</li>
+            <li>LucidGlyph</li>
+            <li>Preload</li>
+            <li>PsychoSaver</li>
+            <li>PsychoCachy</li>
+            <li>System Boost</li>
+            <li>OpenSUSE Fix</li>
+            <li>Swapfile</li>
+            <li>Thumbnails</li>
+            <li>Touchegg</li>
+            <li>UFW</li>
+          </ul>
+        </div>
+
+        <div class="bg-gray-800 rounded-lg p-6 flex flex-col">
+          <h4 class="text-xl font-semibold mb-4" data-key="game">Gaming</h4>
+          <button
+            class="mt-auto bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 toggle-button"
+            data-key="toggle-button">
+            Show Tools
+          </button>
+          <ul class="tool-list mt-4 space-y-2 text-gray-300">
+            <li>Discord</li>
+            <li>GameMode</li>
+            <li>GeForce NOW</li>
+            <li>GOverlay</li>
+            <li>Gamescope</li>
+            <li>Game Save Router</li>
+            <li>Heroic Games Launcher</li>
+            <li>Lossless Scaling for GNU</li>
+            <li>Lutris</li>
+            <li>Minecraft Bedrock Edition</li>
+            <li>MangoJuice</li>
+            <li>osu!</li>
+            <li>ProtonPlus</li>
+            <li>ProtonTricks</li>
+            <li>ProtonUp-Qt</li>
+            <li>Sober</li>
+            <li>Steam</li>
+            <li>Steer</li>
+            <li>Vinegar</li>
+            <li>WIVRN</li>
+          </ul>
+        </div>
+
+        <div class="bg-gray-800 rounded-lg p-6 flex flex-col">
+          <h4 class="text-xl font-semibold mb-4" data-key="office">
+            Office & Productivity
+          </h4>
+          <button
+            class="mt-auto bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 toggle-button"
+            data-key="toggle-button">
+            Show Tools
+          </button>
+          <ul class="tool-list mt-4 space-y-2 text-gray-300">
+            <li>AnyDesk</li>
+            <li>Audacity</li>
+            <li>Blender</li>
+            <li>Google Chrome</li>
+            <li>Cohesion</li>
+            <li>Darktable</li>
+            <li>DaVinci Resolve</li>
+            <li>Figma</li>
+            <li>Foliate</li>
+            <li>FreeCAD</li>
+            <li>GIMP</li>
+            <li>Inkscape</li>
+            <li>Kdenlive</li>
+            <li>KiCad</li>
+            <li>Krita</li>
+            <li>LibreOffice</li>
+            <li>Microsoft Teams</li>
+            <li>Obsidian</li>
+            <li>OnlyOffice</li>
+            <li>Pinta</li>
+            <li>PJe Office</li>
+            <li>Slack</li>
+            <li>Zen</li>
+          </ul>
+        </div>
+
+        <div class="bg-gray-800 rounded-lg p-6 flex flex-col">
+          <h4 class="text-xl font-semibold mb-4" data-key="repos">
+            Repositories
+          </h4>
+          <button
+            class="mt-auto bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 toggle-button"
+            data-key="toggle-button">
+            Show Tools
+          </button>
+          <ul class="tool-list mt-4 space-y-2 text-gray-300">
+            <li>Brew</li>
+            <li>Cargo</li>
+            <li>Chaotic-AUR</li>
+            <li>Flathub</li>
+            <li>Pip</li>
+            <li>RPM Fusion</li>
+          </ul>
+        </div>
+
+        <div class="bg-gray-800 rounded-lg p-6 flex flex-col">
+          <h4 class="text-xl font-semibold mb-4" data-key="utils">
+            Utilities
+          </h4>
+          <button
+            class="mt-auto bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 toggle-button"
+            data-key="toggle-button">
+            Show Tools
+          </button>
+          <ul class="tool-list mt-4 space-y-2 text-gray-300">
+            <li>Bottles</li>
+            <li>Boxedwine Advanced</li>
+            <li>DistroShelf</li>
+            <li>EasyEffects</li>
+            <li>F3</li>
+            <li>Flatseal</li>
+            <li>HandBrake</li>
+            <li>LACT</li>
+            <li>Mission Center</li>
+            <li>OBS Studio</li>
+            <li>OpenRGB</li>
+            <li>OpenRazer</li>
+            <li>QPwGraph</li>
+            <li>StreamController</li>
+            <li>Solaar</li>
+            <li>Warehouse</li>
+            <li>Waydroid</li>
+          </ul>
+        </div>
+
+        <div class="bg-gray-800 rounded-lg p-6 flex flex-col">
+          <h4 class="text-xl font-semibold mb-4" data-key="privacy">
+            Privacy
+          </h4>
+          <button
+            class="mt-auto bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 toggle-button"
+            data-key="toggle-button">
+            Show Tools
+          </button>
+          <ul class="tool-list mt-4 space-y-2 text-gray-300">
+            <li>ExpressVPN</li>
+            <li>IVPN</li>
+            <li>Librewolf</li>
+            <li>Mullvad Browser</li>
+            <li>Mullvad VPN</li>
+            <li>NordVPN</li>
+            <li>Proton VPN</li>
+            <li>Surfshark</li>
+            <li>Ungoogled Chromium</li>
+            <li>WireGuard</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="partners" class="py-12 bg-gray-900">
+      <div class="container mx-auto px-6">
+        <h3 class="text-3xl font-bold text-center mb-12 text-white" data-key="partners-title">
+          Créditos
+        </h3>
+
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+          <div
+            class="bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center justify-between text-center hover:scale-105 transition">
+            <img src="https://avatars.githubusercontent.com/u/48108858?v=4" alt="Logo Psy"
+              class="w-20 h-20 rounded-full shadow-md mb-4" />
+            <h1 class="text-3xl font-bold text-[#e6534b] drop-shadow-[0_0_10px_#e6534b] mb-2">
+              Psygreg
+            </h1>
+            <a href="https://psygreg.linux.toys" target="_blank"
+              class="mt-4 inline-block bg-[#e6534b] hover:bg-[#E63229] text-white font-bold py-2 px-5 rounded-full shadow-md"
+              data-key="credit-psygreg-btn">
+              Lead Developer
+            </a>
+          </div>
+
+          <div
+            class="bg-gray-800 rounded-2xl relative shadow-lg p-6 flex flex-col items-center justify-between text-center hover:scale-105 transition">
+            <img src="elements/LH.png" alt="Logo LuminHost" class="w-20 h-auto rounded-full shadow-md mb-4" />
+            <h1 class="text-3xl font-bold text-[#00ffff] drop-shadow-[0_0_10px_#00ffff] mb-2">
+              Lumin Host
+            </h1>
+            <a href="https://luminhost.xyz/" target="_blank"
+              class="mt-4 inline-block bg-[#00ffff] hover:bg-[#00d1d1] text-black font-bold py-2 px-5 rounded-full shadow-md"
+              data-key="credit-neonhost-btn">
+              Site & Subdomain
+            </a>
+          </div>
+
+          <div
+            class="bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center justify-between text-center hover:scale-105 transition">
+            <img class="w-20 h-20 rounded-full shadow-md mb-4" src="https://github.com/Miranda3000-CPU.png"
+              alt="Jeiel Miranda Github Avatar" />
+            <h2 class="text-3xl font-bold text-blue-700 drop-shadow-[0_0_10px_blue] mb-2">
+              Miranda3000-CPU
+            </h2>
+            <a href="https://github.com/Miranda3000-CPU" target="_blank"
+              class="mt-4 inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-5 rounded-full shadow-md"
+              data-key="credit-jeiel-btn">
+              Site
+            </a>
+          </div>
+
+          <div
+            class="bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center justify-between text-center hover:scale-105 transition">
+            <div
+              class="w-20 h-20 rounded-full shadow-md mb-4 bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
+              <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z"
+                  clip-rule="evenodd" />
+              </svg>
+            </div>
+            <h2
+              class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 drop-shadow-[0_0_10px_rgba(168,85,247,0.5)] mb-2">
+              <span data-key="full-credits-title">Full Credits</span>
+            </h2>
+            <a href="credits.html"
+              class="mt-4 inline-block bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-bold py-2 px-5 rounded-full shadow-md transition duration-300"
+              data-key="view-full-credits">
+              View Full Credits
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-800 py-8 mt-16">
+    <div class="container mx-auto px-6 text-center">
+      <div class="flex justify-center space-x-6 mb-4">
+        <a href="https://codeberg.org/psygreg/linuxtoys" target="_blank"
+          class="text-gray-400 hover:text-white transition duration-300">
+          Codeberg
+        </a>
+        <a href="knowledgebase.html" target="_blank" class="text-gray-400 hover:text-white transition duration-300">
+          Wiki
+        </a>
+        <a href="https://codeberg.org/psygreg/linuxtoys/issues" target="_blank"
+          class="text-gray-400 hover:text-white transition duration-300">
+          <span data-key="footer-support">Support</span>
+        </a>
+      </div>
+      <div class="text-gray-500 text-sm">
+        <p>
+          Copyright © <span id="year"></span> psygreg.
+          <span data-key="license-text"></span>
+          <a href="https://codeberg.org/psygreg/linuxtoys/src/branch/main/LICENSE" target="_blank"
+            class="underline hover:text-blue-400">GPL-3.0</a>.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Initialize translation manager and tools loader
+    let translationManager;
+    let toolsLoader;
+
+    document.addEventListener('DOMContentLoaded', async () => {
+      window.translationManager = new TranslationManager();
+      await window.translationManager.init();
+
+      // Initialize tools loader and make it globally available
+      window.toolsLoader = new ToolsCacheLoader();
+      // Set the language on the tools loader to match the translation manager
+      window.toolsLoader.setLanguage(window.translationManager.currentLang);
+      const toolsUpdated = await window.toolsLoader.init();
+
+      // Set up dropdown functionality AFTER translation manager is ready
+      setupLanguageDropdown();
+
+      // Additional sync after everything is loaded
+      setTimeout(() => {
+        syncDropdownWithCurrentLanguage();
+        // Update meta description with initial language
+        updateMetaDescription();
+      }, 200);
+
+      // Only set up toggle buttons if tools weren't updated from cache
+      if (!toolsUpdated) {
+        setupToggleButtons();
+      }
+
+      // Make all tools clickable to open knowledge base
+      makeToolsClickable();
+
+      // Failsafe: Ensure loading indicator is always hidden after initialization
+      setTimeout(() => {
+        const loadingIndicator = document.getElementById('tools-loading');
+        if (loadingIndicator) {
+          loadingIndicator.style.display = 'none';
+        }
+        const toolsContainer = document.querySelector('.tool-grid-container');
+        if (toolsContainer) {
+          toolsContainer.style.display = 'block';
+        }
+      }, 100);
+
+      // Set up other functionality
+      setupInstallCommand();
+      setupCopyButton();
+      setCurrentYear();
+    });
+
+    function syncDropdownWithCurrentLanguage() {
+      const currentLang = document.getElementById('current-lang');
+      if (window.translationManager) {
+        let detectedLang = 'en'; // default fallback
+
+        // Try different ways to get the current language
+        if (window.translationManager.currentLang) {
+          detectedLang = window.translationManager.currentLang;
+        } else if (window.translationManager.currentLanguage) {
+          detectedLang = window.translationManager.currentLanguage;
+        } else if (window.translationManager.language) {
+          detectedLang = window.translationManager.language;
+        } else {
+          // Fallback: check browser language
+          const browserLang = navigator.language || navigator.userLanguage;
+          if (browserLang.startsWith('pt')) {
+            detectedLang = 'pt';
+          } else if (browserLang.startsWith('es')) {
+            detectedLang = 'es';
+          } else if (browserLang.startsWith('fr')) {
+            detectedLang = 'fr';
+          } else if (browserLang.startsWith('de')) {
+            detectedLang = 'de';
+          } else if (browserLang.startsWith('zh')) {
+            detectedLang = 'zh';
+          } else if (browserLang.startsWith('ja')) {
+            detectedLang = 'ja';
+          } else if (browserLang.startsWith('ru')) {
+            detectedLang = 'ru';
+          }
+        }
+
+        const languageMap = {
+          'en': '🇺🇸 EN',
+          'pt': '🇧🇷 PT',
+          'es': '🇪🇸 ES',
+          'fr': '🇫🇷 FR',
+          'de': '🇩🇪 DE',
+          'nl': '🇳🇱 NL',
+          'zh': '🇨🇳 ZH',
+          'ja': '🇯🇵 JA',
+          'ru': '🇷🇺 RU'
+        };
+
+        const displayText = languageMap[detectedLang] || '🇺🇸 EN';
+        currentLang.textContent = displayText;
+      }
+    }
+
+    function makeToolsClickable() {
+      const toolLists = document.querySelectorAll('.tool-list li');
+
+      toolLists.forEach(toolItem => {
+        // Make all tools clickable
+        toolItem.style.cursor = 'pointer';
+        toolItem.classList.add('tool-clickable');
+
+        // Add click event to open knowledge base
+        toolItem.addEventListener('click', () => {
+          window.open('knowledgebase.html', '_blank');
+        });
+
+        // Add hover effects
+        toolItem.addEventListener('mouseenter', () => {
+          toolItem.style.textDecoration = 'underline';
+          toolItem.style.color = '#60a5fa'; // blue-400
+        });
+
+        toolItem.addEventListener('mouseleave', () => {
+          toolItem.style.textDecoration = 'none';
+          toolItem.style.color = '#d1d5db'; // gray-300 (original color)
+        });
+      });
+    }
+
+    function setupLanguageDropdown() {
+      const dropdownBtn = document.getElementById('language-dropdown-btn');
+      const dropdown = document.getElementById('language-dropdown');
+      const currentLang = document.getElementById('current-lang');
+      const langButtons = dropdown.querySelectorAll('button');
+
+      // Function to update the displayed language
+      function updateDisplayedLanguage(lang) {
+        const languageMap = {
+          'en': '🇺🇸 EN',
+          'pt': '🇧🇷 PT',
+          'es': '🇪🇸 ES',
+          'fr': '🇫🇷 FR',
+          'de': '🇩🇪 DE',
+          'nl': '🇳🇱 NL',
+          'zh': '🇨🇳 ZH',
+          'ja': '🇯🇵 JA',
+          'ru': '🇷🇺 RU'
+        };
+        const displayText = languageMap[lang] || '🇺🇸 EN';
+        currentLang.textContent = displayText;
+      }
+
+      // Set initial language to match translation manager
+      // We need to wait a bit for the translation manager to fully initialize
+      setTimeout(() => {
+        if (window.translationManager && window.translationManager.currentLanguage) {
+          updateDisplayedLanguage(window.translationManager.currentLanguage);
+        } else if (window.translationManager && window.translationManager.detectLanguage) {
+          // Fallback: try to detect the language if currentLanguage isn't set yet
+          const detectedLang = window.translationManager.detectLanguage();
+          updateDisplayedLanguage(detectedLang);
+        }
+      }, 100);
+
+      // Toggle dropdown visibility
+      dropdownBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        dropdown.classList.toggle('hidden');
+      });
+
+      // Handle language selection
+      langButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const lang = button.id.split('-')[1];
+          updateDisplayedLanguage(lang);
+          dropdown.classList.add('hidden');
+
+          // Trigger the existing translation logic
+          if (window.translationManager) {
+            window.translationManager.setLanguage(lang);
+            // Update meta description with new language
+            updateMetaDescription();
+          }
+
+          // Update tools content if tools loader is available
+          if (window.toolsLoader) {
+            window.toolsLoader.onLanguageChange(lang);
+          }
+        });
+      });
+
+      // Close dropdown when clicking outside
+      document.addEventListener('click', () => {
+        dropdown.classList.add('hidden');
+      });
+
+      // Prevent dropdown from closing when clicking inside it
+      dropdown.addEventListener('click', (e) => {
+        e.stopPropagation();
+      });
+    }
+
+    function setupToggleButtons() {
+      const toggleButtons = document.querySelectorAll('.toggle-button');
+
+      toggleButtons.forEach(button => {
+        // Apply initial translation immediately
+        const list = button.nextElementSibling;
+        if (list && list.classList.contains('expanded')) {
+          button.textContent = window.translationManager.getTranslation('toggle-button-less');
+        } else {
+          button.textContent = window.translationManager.getTranslation('toggle-button');
+        }
+
+        button.addEventListener('click', () => {
+          const list = button.nextElementSibling;
+          list.classList.toggle('expanded');
+
+          // Update button text based on current state
+          if (list.classList.contains('expanded')) {
+            button.textContent = window.translationManager.getTranslation('toggle-button-less');
+          } else {
+            button.textContent = window.translationManager.getTranslation('toggle-button');
+          }
+        });
+      });
+    }
+
+    function setupInstallCommand() {
+      const command = `curl -fsSL https://linux.toys/install.sh | bash`;
+      const element = document.getElementById('install-code');
+
+      // Store the complete command for copying
+      element.dataset.fullCommand = command;
+
+      let i = 0;
+      function typeWriter() {
+        if (i < command.length) {
+          element.textContent += command.charAt(i);
+          i++;
+          setTimeout(typeWriter, 30);
+        }
+      }
+
+      // Start the typewriter effect after a short delay
+      setTimeout(typeWriter, 30);
+    }
+
+    function setupCopyButton() {
+      const copyButton = document.getElementById('copy-button');
+      const copyIcon = document.getElementById('copy-icon');
+      const installCode = document.getElementById('install-code');
+
+      copyButton.addEventListener('click', () => {
+        // Always copy the full command, regardless of animation state
+        const code = installCode.dataset.fullCommand || installCode.textContent.trim();
+
+        navigator.clipboard.writeText(code).then(() => {
+          copyIcon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />`;
+
+          setTimeout(() => {
+            copyIcon.innerHTML = `
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8 3h8a2 2 0 012 2v12a2 2 0 01-2 2H8a2 2 0 01-2-2V5a2-2 0 012-2z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h8"/>
+              `;
+          }, 1500);
+        });
+      });
+    }
+
+    function setCurrentYear() {
+      document.getElementById('year').textContent = new Date().getFullYear();
+    }
+  </script>
+</body>
+
+</html>

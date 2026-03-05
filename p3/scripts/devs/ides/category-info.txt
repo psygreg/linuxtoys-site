@@ -1,2 +1,0 @@
-ICON: code.svg
-description: ides_desc

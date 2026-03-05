@@ -1,0 +1,945 @@
+# ナレッジベース
+
+## LinuxToys機能の基本ガイドライン
+
+- 機能は、互換性があり*かつ*関連性のあるシステムでのみ利用可能になります。
+- アプリケーション内のすべての機能とリソースは、常に**KISS**（*Keep It Simple, Stupid*）原則に従う必要があります - ラベルと簡単な説明を通じて理解し、活用しやすくなければなりません。
+- 機能は、ユーザーにとって**最適**に動作するように作られなければなりません。
+- ユーザーとのインタラクションは、予測不可能性を避け、信頼性を確保するために`zenity`プロンプトに限定されています。
+- Flatpakは、flatpakランタイムによる**一貫性**と、きめ細かな権限制御による**セキュリティ**のため、可能な限り使用すべきです。
+
+## ネイティブパッケージとしてインストール
+
+デフォルトのシステムリポジトリから、またはLinuxToysによって追加されたリポジトリがあり、他の変更は行われません。
+
+### デフォルトリポジトリ
+- Java OpenJDK（任意のバージョン）
+- Maven
+- NeoVim
+- Broadcom WiFiドライバー（Fedora/Archでのみ利用可能）
+- Intel Compute Runtime
+- FFMPEGThumbnailer
+- Gamemode
+- Lutris（Fedora/Arch；他はFlathubから入手）
+- F3 - Fight Flash Fraud（インストール後にブラウザでドキュメントも開きます）
+- Wireguard
+- VLC
+- Gnome Tweaks
+- OBS Studio（マシンにIntel GPU（ディスクリートまたは統合型）があり、Archベースのシステムを実行していない場合、[Pipewire Audio Capture](https://github.com/dimtpap/obs-pipewire-audio-capture)プラグインと仮想カメラ互換性のための`v4l2loopback`を含む）。それ以外の場合は、Flathubからユーザーレベルのflatpakとして（Intel GPUがない場合）、ブラウザソースがデフォルトのArch Linuxパッケージに不足しているため[AUR](https://aur.archlinux.org/packages/obs-studio-browser)から、またはUbuntu用の公式PPAリポジトリからインストールされます。
+- Nala
+
+### 追加されたリポジトリ
+- Visual Studio Code：[Microsoftの公式リポジトリ](https://packages.microsoft.com)から。
+- .NET SDK：[Microsoftの公式リポジトリ](https://packages.microsoft.com)から、OpenSUSEとDebianでのみ。他のシステムはデフォルトリポジトリからインストールされています。
+- Sublime Text：[その公式リポジトリ](https://download.sublimetext.com)から。
+- Unity Hub：[Unityの公式リポジトリ](https://hub.unity3d.com/linux/repos)から。Unityによって公式にサポートされているシステムでのみ利用可能。
+- Nvidiaドライバー：Debianでは[Nvidiaの公式リポジトリ](https://developer.download.nvidia.com/compute/cuda/repos)から、Fedoraでは*RPMFusion*から。他のシステムはデフォルトリポジトリからインストールされています。
+- btrfs-Assistant：Archでは[Chaotic-AUR](https://aur.chaotic.cx)から。他のシステムはデフォルトリポジトリからインストールされています。すべてのシステムのデフォルトリポジトリから`snapper`を含みます。
+- Preload：Archでは[Chaotic-AUR](https://aur.chaotic.cx)から、またはFedoraでは[elxreno/preload COPRリポジトリ](https://copr.fedorainfracloud.org/coprs/elxreno/preload)から。他のシステムはデフォルトリポジトリからインストールされています。
+- Touchegg：その公式PPAリポジトリから、またはUbuntuとDebianそれぞれの[GitHubリポジトリ](https://github.com/JoseExposito/touchegg)から。他のシステムはデフォルトリポジトリからインストールされています。X11のみ。
+- Gamescope：Archでは*Multilib*から、Fedoraでは*RPMFusion*から。他のシステムはデフォルトリポジトリからインストールされています。
+- Steam：Archでは*Multilib*から、Fedoraでは*RPMFusion*から。他のシステムはFlathubからインストールされています。
+- Topgrade：*Pip*から。
+- Webmin：その[公式GitHubリポジトリ](https://github.com/webmin/webmin)から。
+- Arch-Update：[Chaotic-AUR](https://aur.chaotic.cx)から。
+- Cloudflare WARP：[Cloudflareの公式リポジトリ](https://pkg.cloudflareclient.com/)から。
+- Solaar：Ubuntuでは公式PPAリポジトリから。他のシステムはデフォルトリポジトリからインストールされています。
+- IVPN：その[公式リポジトリ](https://repo.ivpn.net/stable)から。
+- Mullvad VPN：その[公式リポジトリ](https://repository.mullvad.net)またはArchでは[Chaotic-AUR](https://aur.chaotic.cx)から。
+- NordVPN：その[公式リポジトリ](https://downloads.nordcdn.com/apps)またはArchでは[Chaotic-AUR](https://aur.chaotic.cx)から。
+- Input Remapper：[Chaotic-AUR](https://aur.chaotic.cx)から。他のシステムはデフォルトリポジトリからインストールされています。
+- Kisak-Mesa：公式PPAリポジトリから、"fresh"バージョン。
+- OpenLinkHub：公式の PPA、COPR、および AUR リポジトリから。インストール後に開いたウェブページはコントロールパネルですので、必ずブックマークに保存してください。
+
+### その他
+- Heroic Games Launcher：Fedora/Archでは[公式GitHubリポジトリ](https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher)から。他のシステムはFlathubからインストールされています。
+- LSFG-VK：その[公式GitHubリポジトリ](https://github.com/PancakeTAS/lsfg-vk)から。flatpakランタイムを含みます。Windows用のLossless Scalingが必要です。
+- Figma：[Figma-Linux](https://github.com/Figma-Linux/figma-linux)からのAppImageインストーラーを通じてインストールされます。
+- ExpressVPN：公式のAppImageベースのインストーラーを通じてインストールされます。
+- Windscribe VPN：その[公式リポジトリ](https://windscribe.com/install/desktop)から。
+- Faugus Launcher：Flathubから。Arch Linuxおよび派生システムの場合は公式AURリポジトリから。Fedoraおよび派生システムの場合はCOPRリポジトリから。
+- Positron：互換性のあるシステム用の公式パッケージから。
+- RStudio：互換性のあるシステム用の公式パッケージから。
+- Adoptium JDK：互換性のあるシステム用の公式パッケージから。
+- Astah Pro：互換性のあるシステム用の公式パッケージから。
+
+## flatpakとしてインストール
+
+flathubから、またはLinuxToysによって追加されたリポジトリがあり、他の変更は行われません。システムレベルのflatpakは、厳密に必要な場合にのみ使用されます。
+
+### ユーザーレベル
+- Android Studio
+- VSCodium
+- HTTPie
+- Insomnia
+- Postman
+- Discord
+- GOverlay（Mangohud、ネイティブインストールパッケージを含む）
+- Mangojuice（Mangohud、ネイティブインストールパッケージを含む）
+- Minecraft Bedrock Launcher
+- Osu!
+- ProtonPlus
+- Protontricks
+- ProtonUp
+- Sober
+- Sunshine
+- Vinegar
+- WiVRN（VRデバイスにアプリがインストールされている必要があります - 初回起動時の指示に従ってください）
+- Anydesk
+- Audacity
+- Blender
+- Google Chrome
+- Cohesion
+- Darktable
+- Foliate
+- FreeCAD
+- GIMP（オプションで[PhotoGIMP](https://github.com/Diolinux/PhotoGIMP.git)で`$HOME/.config`と`$HOME/.local`のファイルにパッチを適用）
+- Inkscape
+- Kdenlive
+- KiCAD
+- Krita
+- LibreOffice
+- Teams for Linux
+- Obsidian
+- OnlyOffice
+- Pinta
+- Slack
+- Zen Browser
+- Cockpit Client
+- Bottles
+- Distroshelf（ネイティブインストールパッケージ`podman`と`distrobox`を含む）
+- Flatseal
+- Handbrake
+- Mission Center
+- QPWGraph
+- Warehouse
+- StreamController
+- LibreWolf
+- Mullvad Browser
+- Proton VPN
+- Surfshark
+- Ungoogled Chromium
+- Gear Lever
+- Cryptomator
+- SiriKali
+- LogSEQ
+- Endless Key
+- GeoGebra
+- Kolibri
+- Stellarium
+- Kalzium
+- GCompris
+- Extension Manager
+- Termux
+- CPU-X
+- PeaZip
+- Telegram
+- Signal
+- ZapZap
+- S3Drive
+- Moonlight
+- Pika Backup
+- Brave
+- Prism Launcher
+- Greenlight
+- Zed
+- Bitwarden
+- KeePassXC
+- RcloneUI
+
+#### 追加されたリポジトリ
+
+- GeForce NOW：*Nvidia*によって提供される公式リポジトリから
+
+### システムレベル
+
+- Bazaar
+- EasyEffects
+- LACT
+- Piper（Debian/Ubuntuでは`ratbagd`、他では`libratbag`、ネイティブインストールパッケージを含む）
+- Flatpak用ハードウェアアクセラレーション（現在サポートされているflatpakランタイム用のffmpeg-full）
+- OptimusUI（`nvidia-prime`を含む、動作に必須）
+
+## カスタム手順
+
+LinuxToysによって実装される、最適に動作するためのカスタムインストール手順または特定の調整が必要です。通常、すでにインストールされている場合は削除も提供しますが、必要でない場合（メインのflatpakまたはパッケージを削除すると他の変更が元に戻る場合）または削除の指示がここに記載されている場合を除きます。
+
+### Stoat
+
+NixOS (unstable) 以外のリポジトリには最新のパッケージがないため、公式 GitHub リポジトリで提供されている *zip* ファイルを使用して、LinuxToys によって `$HOME/.local/share/stoat` にインストールまたは更新されます。このディレクトリを削除するだけで削除できます。
+
+### Tac Writer
+
+開発者が [GitHub リポジトリ](https://github.com/narayanls/tac-writer) で提供しているスクリプトを使用して、パッケージ マネージャーを通じて標準パッケージとしてインストールされます。
+
+### Docker
+
+公式のDockerリポジトリをインストールします（Arch LinuxとOpenSUSEは必要ないので除く）し、システムのパッケージマネージャーを通じてそこから必要なすべてのパッケージをインストールし、その後、ユーザーを `docker` ユーザーグループに追加します。
+
+**インストールまたは更新されたパッケージ**
+- Arch：`docker docker-compose`
+- Fedora：`docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin`
+- OpenSUSE：`docker docker-compose`
+- Debian/Ubuntu：`docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin`
+
+### Portainer CE
+
+ドキュメントの指示に従ってDockerにPortainer CEコンテナをインストールします。ブラウザのユーザーインターフェースからDockerダッシュボードになることを目的としており、マシンのリソースをほとんど使用しないため、常にバックグラウンドで実行されます。LinuxToys自体または手動でrootless使用で正しく設定されたDockerが必要です。
+
+**インストール手順：**
+```
+docker volume create portainer_data
+docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:lts
+```
+
+### Godot Engine
+
+**Godot**と**GodotSharp**の両方が、Godotが標準パッケージを提供していないため、カスタム手順を通じてインストールされます。*GodotSharp*には、この文書でも説明されている**.NET SDK**のインストールが含まれ、その機能に必要です。
+
+- インストールされたファイルの場所：`$HOME/.local/godot`
+- アプリメニューショートカットの場所：`$HOME/.local/share/applications`
+
+### Jetbrains Toolbox
+
+JetBrainsは他の方法では悪名高く信頼性のないAppImageのみを提供するため、公式ウェブサイトから最新のtarball版をダウンロードし、カスタム手順を通じてインストールします。
+
+- インストールされたファイルの場所：`$HOME/.local/jetbrains-toolbox`
+- アプリメニューショートカットの場所：`$HOME/.local/share/applications`
+
+### Mise
+
+公式に提供されたインストールスクリプトを使用してインストールし、その後、`bash`、`zsh`、`fish`シェル用の非常に望ましい機能である自動補完を設定するためにドキュメントに従い、完了時にブラウザでドキュメントを表示します。不変性の制約により、不変（`rpm-ostree`ベース）システムでは`zsh`シェルで使用できません。削除はドキュメントに従う必要があり、LinuxToysを通じて実行できません。
+
+### Node Version Manager (NVM)
+
+公式に提供されたインストールスクリプトを使用してインストールするか、公式スクリプトがうまく動作しない`rpm-ostree`ベースのディストリビューション用の手動セットアップを通じて行います。その後、`npm`を通じて`yarn`をインストールし、ブラウザでドキュメントを表示します。削除は、ドキュメントに従うか、`rpm-ostree`ベースシステムでは単に`$HOME/.nvm`を削除することで実行できます。
+
+**インストールまたは更新されたパッケージ**
+- **すべてのシステム**：`nodejs npm`
+- **NPMから**：`yarn`
+
+### PyEnv
+
+必要なすべての依存関係をインストールし、公式スクリプトを使用して*PyEnv*をインストールし、その後`bash`と`zsh`プロファイルファイルにパスを設定し、ブラウザでドキュメントを表示します。削除はドキュメントに従う必要があり、LinuxToysを通じて実行できません。
+
+**インストールまたは更新されたパッケージ**
+- Arch：`base-devel openssl zlib xz tk`
+- Fedora：`make gcc patch zlib-devel bzip2 bzip2-devel readline-devel sqlite sqlite-devel openssl-devel tk-devel libffi-devel xz-devel libuuid-devel gdbm-libs libnsl2`
+- OpenSUSE：`gcc automake bzip2 libbz2-devel xz xz-devel openssl-devel ncurses-devel readline-devel zlib-devel tk-devel libffi-devel sqlite3-devel gdbm-devel make findutils patch`
+- Debian/Ubuntu：`make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev`
+
+### Tailscale
+
+公式インストールスクリプトを使用してインストールします。同じスクリプトを通じて削除できます。
+
+### RPM-OSTree用カーネルモジュール署名
+
+マシンに固有でランダムに生成される**MOK**（Machine Owner Key）を設定し、その後、将来カーネルモジュールにそれで署名するために[akmods-keys](https://github.com/CheariX/silverblue-akmods-keys)をインストールします。Secure Bootが有効な状態で*Nvidia*、*VirtualBox*、その他のカーネルモジュールドライバーを動作させるために必要です。インストール時にSecure Bootが有効な場合、`rpm-ostree`ベースの不変システムでNvidiaドライバーをインストールする際に自動的にトリガーされます。
+
+### Radeon Open Compute (ROCm)
+
+ROCmが適切に動作するために必要なすべてのROCmパッケージと診断ツールをインストールし、ROCmに必要な`/dev/kfd`をrootなしでアクセス可能にするために必要な`render`と`video`ユーザーグループにユーザーを追加します。
+
+**インストールまたは更新されたパッケージ**
+- Arch：`comgr hsa-rocr rccl rocalution rocblas rocfft rocm-smi-lib rocsolver rocsparse rocm-device-libs rocm-smi-lib rocminfo hipcc hiprand hip-runtime-amd radeontop rocm-opencl-runtime ocl-icd clinfo`
+- Fedora：`rocm-comgr rocm-runtime rccl rocalution rocblas rocfft rocm-smi rocsolver rocsparse rocm-device-libs rocminfo rocm-hip hiprand rocm-opencl clinfo`
+- OpenSUSE：`libamd_comgr2 libhsa-runtime64-1 librccl1 librocalution0 librocblas4 librocfft0 librocm_smi64_1 librocsolver0 librocsparse1 rocm-device-libs rocm-smi rocminfo hipcc libhiprand1 libhiprtc-builtins5 radeontop rocm-opencl ocl-icd clinfo`
+- Debian/Ubuntu：`libamd-comgr2 libhsa-runtime64-1 librccl1 librocalution0 librocblas0 librocfft0 librocm-smi64-1 librocsolver0 librocsparse0 rocm-device-libs-17 rocm-smi rocminfo hipcc libhiprand1 libhiprtc-builtins5 radeontop rocm-opencl-icd ocl-icd-libopencl1 clinfo`
+
+### Realtek RTL8821CEドライバー
+
+[Tomás PinhoによるRTL8821CEドライバー](https://github.com/tomaspinho/rtl8821ce.git)とそのすべての依存関係をインストールし、カーネルに付属するデフォルトのRTW8821CEドライバーを置換・ブラックリストに登録します。これは一部のデバイスで適切に動作しないか、まったく動作しません。
+
+**インストールまたは更新されたパッケージ**
+- Arch：`linux-headers dkms bc base-devel rtl8821ce-dkms`
+- Fedora/OpenSUSE：`dkms make kernel-devel rtl8821ce-dkms`
+- Debian/Ubuntu：`bc module-assistant build-essential dkms rtl8821ce-dkms`
+
+### RustICL
+
+Intel Compute Runtime、ROCm、またはCUDAでサポートされていないカード用に、OpenCL用のより新しく高速な実装をインストールして有効にします。
+
+**インストールまたは更新されたパッケージ**
+- Arch：`opencl-mesa clinfo`
+- Fedora：`mesa-libOpenCL clinfo`
+- OpenSUSE：`Mesa-libRusticlOpenCL clinfo`
+- Debian/Ubuntu：`mesa-opencl-icd clinfo`
+
+**その他の変更**
+
+**`/etc/environment`に追加：**
+- *Intel* GPU用
+```
+RUSTICL_ENABLE=iris
+OCL_ICD_VENDORS=/etc/OpenCL/vendors/rusticl.icd
+```
+- *AMD* GPU用
+```
+RUSTICL_ENABLE=radeonsi
+OCL_ICD_VENDORS=/etc/OpenCL/vendors/rusticl.icd
+```
+
+### Xpadneo
+
+必要なすべての依存関係をインストールし、その後[リポジトリ](https://github.com/atar-axis/xpadneo.git)をクローンし、公式スクリプトからインストールします。
+
+**インストールまたは更新されたパッケージ**
+- Arch：`dkms linux-headers bluez bluez-utils`
+- Fedora：`dkms make bluez bluez-tools kernel-devel kernel-headers`
+- OpenSUSE：`dkms make bluez kernel-devel kernel-source`
+- Debian/Ubuntu：`dkms linux-headers-$(uname -r)`
+
+### Distroboxコマンドヘルパー
+
+`bash`と`zsh`用に、distrobox内でコマンドが見つからない場合にホストにコマンドをリダイレクトするために必要なファイルをインストールし、`.bashrc`と`.zshrc`でそれらをソースします。削除は、単にファイルのあるフォルダを削除することで実行できます。
+
+**インストールされたファイルの場所**
+`$HOME/.local/distrobox-handler`
+
+### Fedora/OpenSUSE用ストリーミングコーデック
+
+これらのオペレーティングシステムでハードウェアアクセラレーション付きストリーミングメディアに必要なコーデックをインストールします。必要なパッケージがデフォルトリポジトリで提供されていないため、Fedoraにまだインストールされていない場合はRPMFusionもインストールします。
+
+**インストールまたは更新されたパッケージ**
+- Fedora: `libavcodec-freeworld gstreamer1-plugins-ugly`
+- OpenSUSE：`opi`と、opiから`codecs`
+
+### Microsoft CoreFonts
+
+[SourceForge](http://downloads.sourceforge.net/corefonts)からファイルをダウンロードし、`cabextract`を使用してフォントインストーラーを抽出し、`$HOME/.local/share/fonts`にフォントをインストールします。削除は、`$HOME/.local/share/fonts`からCoreFontsフォルダを削除することで実行できます。
+
+**インストールまたは更新されたパッケージ**
+- すべてのシステム：`cabextract`
+
+### Split-lockミティゲーション無効化
+
+Linuxで良い開発慣行を強制するために行われたsplit-lockミティゲーションを無効にしますが、古いアプリケーションや複数のゲーム（特にLinuxを考慮して作られていない*Playstation Studios*のもの）で著しい性能低下をもたらします。セキュリティ機能ではないため、無効にしても安全です。これは適切なカーネルパラメータを注入する`99-splitlock.conf`ファイルによって行われます。削除は、ファイルを削除することで実行できます。
+
+**インストールされたファイル**
+`/etc/sysctl.d/99-splitlock.conf` > `kernel.split_lock_mitigate=0`
+
+### EarlyOOM
+
+極端なメモリとスワップ圧力の場合に、メモリを大量消費するかリークしているアプリケーションを強制終了し、'out of memory'状況を回避します。Linuxシステムは悪名高くこれに対して不適切に反応し、どのプロセスを終了するかを決定するためにカーネルが実行するヒューリスティックスキャンに数時間かかる場合があります。
+
+**インストールまたは更新されたパッケージ**
+- すべてのシステム：`earlyoom`
+
+**適用されたカスタム設定**
+```
+EARLYOOM_ARGS="-r 0 -m 2 -M 256000 --prefer '^(Web Content|Isolated Web Co)$' --avoid '^(dnf|apt|pacman|rpm-ostree|packagekitd|gnome-shell|gnome-session-c|gnome-session-b|lightdm|sddm|sddm-helper|gdm|gdm-wayland-ses|gdm-session-wor|gdm-x-session|Xorg|Xwayland|systemd|systemd-logind|dbus-daemon|dbus-broker|cinnamon|cinnamon-sessio|kwin_x11|kwin_wayland|plasmashell|ksmserver|plasma_session|startplasma-way|sway|i3|xfce4-session|mate-session|marco|lxqt-session|openbox|cryptsetup)$'"
+```
+
+### GRUB-btrfs
+
+GRUBブートメニューにbtrfsスナップショットを表示し、壊れたシステムを復元する必要がある場合に前のスナップショットを選択するのに最適です。公式[リポジトリ](https://github.com/Antynea/grub-btrfs)からクローンしてインストールし、その後カスタム設定が適用されます。`grub`が必要で、システムで`grub`が見つからない場合は進行しません。削除はドキュメントに従う必要があり、LinuxToysを通じて実行できません。
+
+**インストールまたは更新されたパッケージ**
+- Arch：`gawk inotify-tools`
+- Fedora/OpenSUSE/Debian/Ubuntu：`gawk inotify-tools make`
+
+**適用されたカスタム設定**
+- デフォルトの'root' snapper設定を設定し、snapperデフォルトから以下の変更を行います：
+```
+TIMELINE_CREATE="no"
+NUMBER_LIMIT="5"
+NUMBER_LIMIT_IMPORTANT="5"
+NUMBER_CLEANUP="yes"
+EMPTY_PRE_POST_CLEANUP="yes"
+```
+その後、`snapper-boot.timer`と`snapper-cleanup.timer` systemdサービスを有効にします。
+
+### iNet Wireless Daemon
+
+Intelによって作られたワイヤレスネットワークデーモンで、デフォルトの`wpa_supplicant`よりも全体的なパフォーマンスとレイテンシが優れていますが、特定の企業ネットワークと互換性がない場合があります。
+
+**インストールまたは更新されたパッケージ**
+- すべてのシステム：`iwd`
+
+**適用されたカスタム設定**
+- `/etc/NetworkManager/conf.d/iwd.conf`
+```
+[device]
+wifi.backend=iwd
+```
+- `wpa_supplicant` systemdサービスを無効にします。
+
+### LucidGlyph
+
+その[リポジトリ](https://github.com/maximilionus/lucidglyph)からの公式スクリプトを使用してインストールされます。
+
+### CPU ondemand
+
+Intel CPUのデフォルトガバナーを`schedutil`に変更します（`powersave`はほとんどのディストリビューションのデフォルト）。または、AMD（Zen 2以降）プロセッサーの内部エネルギープロファイルを`balance_performance`に変更します。CPU周波数をより反応的にし、システムの応答性とパフォーマンスを向上させますが、平均的な電力消費がわずかに増加します。熱放散能力が限られているため、ラップトップには推奨されません。
+
+**適用されたカスタム設定**
+- *Intel* CPU用、`intel_pstate`ドライバーが`ondemand`ガバナーの使用を防ぐため、最初に無効にする必要があります。これは、以下のカーネルパラメータを`GRUB_CMDLINE_LINUX`に追加するか、`systemd-boot`設定ファイルとして追加することで行われます。
+```
+intel_pstate=disable
+```
+- 新しいsystemdサービスを作成して有効にします：`/etc/systemd/system/set-ondemand-governor.service`
+```
+[Unit]
+Description=Set CPU governor to ondemand
+After=multi-user.target
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash -c 'for cpu in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor; do echo schedutil > "$cpu" 2>/dev/null || true; done'
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
+```
+- 互換性のあるAMD cpuを実行している場合、`ExecStart=`行は次のようになります：
+```
+ExecStart=/bin/bash -c 'for cpu in /sys/devices/system/cpu/cpu*/cpufreq/energy_performance_preference; do echo balance_performance > "$cpu" 2>/dev/null || true; done'
+```
+
+### Power Optimizer
+
+公式スクリプトまたは[leo/power-options COPRリポジトリ](https://copr.fedorainfracloud.org/coprs/leo/power-options)を通じて、GTKインターフェースを通じて電源設定を直感的かつ詳細に管理するために`power-options`をインストールします。トレイアイコンを含みます。削除はドキュメントに従う必要があり、LinuxToysを通じて実行できませんが、Atomic Fedoraユーザーは単に`power-options`パッケージを削除することで削除できます。
+
+**インストールまたは更新されたパッケージ**
+- Arch：`gtk4 libadwaita`
+- Fedora/OpenSUSE：`gtk4-devel libadwaita-devel`
+- Debian/Ubuntu：`libgtk4-dev libadwaita-1-dev`
+- Atomic Fedora（`rpm-ostree`）：`gtk4-devel libadwaita-devel power-options`
+
+### Psycachyカーネル
+
+Psygregによって維持される、Debian/Ubuntuベースシステム用にテストされ安全と判断されたCachyOSのカーネルパッチの多くを組み込んだ修正されたLinuxカーネル。他のオペレーティングシステムでは利用できません。その[公式リポジトリ](https://github.com/psygreg/linux-psycachy)の最新リリースからダウンロードしてインストールされます。
+
+**インストールまたは更新されたパッケージ**
+- Debian/Ubuntu：`linux-image-psycachy_$(uname -r) linux-headers-psycachy_$(uname -r) linux-libc-dev_$(uname -r)`
+
+### Shader Booster
+
+任意のGPU用のより大きなシェーダーキャッシュサイズを有効にするシェルログイン設定ファイルへのパッチで、複数の現代ゲームでスタッターとFPSドロップを排除します。注意：本当に必要でない限り、全スペースを占有しません。`.bash_profile`、`.profile`、または`.zshrc`に追加された行を削除するだけで元に戻せます。
+
+**適用されたカスタム設定**
+- *AMD*と*Intel* GPU
+```
+# enforce RADV vulkan implementation for AMD GPUs
+export AMD_VULKAN_ICD=RADV
+
+# increase AMD and Intel cache size to 12GB
+export MESA_SHADER_CACHE_MAX_SIZE=12G
+```
+- *Nvidia* GPU
+```
+# increase Nvidia shader cache size to 12GB
+export __GL_SHADER_DISK_CACHE_SIZE=12000000000
+```
+
+### OpenSUSE SELinuxポリシー修正
+
+OpenSUSEでWINE/Protonを通じて何かが実行されることをSELinuxが防ぐ問題を修正します。`1`の代わりに`0`をブール値として使用して同じコマンドを使用することで元に戻せます。
+
+**適用されたカスタム設定**
+```
+setsebool -P selinuxuser_execmod 1
+```
+
+### スワップファイル作成
+
+8GBのスワップファイルを`/swapfile`または`/home/swapfile`（btrfsファイルシステムの場合は`/home/swap/swapfile`）に作成します。btrfsファイルシステムでスワップファイルが正しく動作し、スナップショットの氾濫を避けるために必要な調整を含みます。
+
+**削除**
+```
+sudo swapoff スワップファイルパス
+sudo rm -rf スワップファイルパス
+```
+その後、`/etc/fstab`からスワップファイルエントリを削除します。
+
+### ファイアウォール設定
+
+必要なパッケージをインストールし、ほとんどのユーザーに理想的な賢明なデフォルトを適用します。
+
+**インストールまたは更新されたパッケージ**
+- すべてのシステム：`ufw gufw`
+
+**適用されたカスタム設定**
+```
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+sudo ufw enable
+```
+
+### Oversteer
+
+Flathubからアプリケーションをインストールし、`/etc/udev/rules.d`で動作するために必要な`udev`設定ファイルを適用し、ブラウザでサポートされているデバイスのドキュメントを表示します。設定ファイルはその[公式GitHubリポジトリ](https://github.com/berarma/oversteer)から取得されます。
+
+### DaVinci Resolve
+
+標準的な依存関係と手順に従って[DaVinciBox](https://github.com/zelikos/davincibox)を通じたインストール、またはカスタム手順を通じたネイティブインストールを提供します。*Studio*版にはBlackmagic Designから購入したライセンスが必要です。削除は、アプリショートカットを非エクスポートし、*DaVinciBox*のdistroboxをそのリポジトリの指示に従って削除する、Fedora/OpenSUSEでアプリケーションメニューからアンインストーラーを使用する、または他のシステムではパッケージマネージャーを通じてパッケージを削除することで実行できます。
+
+### DaVinci Resolve 用 FFMpeg エンコーダー
+
+FFMpeg を通じて Linux 上の Nvidia 以外のグラフィックス カードで VAAPI ハードウェア エンコーディングを有効にします。公式 [GitHub リポジトリ](https://github.com/EdvinNilsson/ffmpeg_encoder_plugin) から入手可能な最新バージョンの解凍済み tarball を `/opt/resolve/IOPlugins/` にコピーすることでインストールされます。 **警告:** *DaVinciBox* を使用している場合、この機能が期待どおりに動作するには、コンテナ内に LinuxToys をインストールし、そこからこのインストーラーを実行する必要があります。
+
+**ネイティブインストール用にインストールまたは更新されたパッケージ**
+- Arch：`davinci-resolve`または`davinci-resolve-studio`
+- Fedora：`xorriso qt5-qtgui curl wget newt libxcb libxcb.i686 glib2 glib2.i686 apr apr-util mesa-libGLU libxcrypt-compat`
+- OpenSUSE：`xorriso curl wget newt libxcb-dri2-0 libxcb-dri2-0-32bit libgthread-2_0-0 libgthread-2_0-0-32bit libapr1 libapr-util1 libQt5Gui5 libglib-2_0-0 libglib-2_0-0-32bit libgio-2_0-0 libgmodule-2_0-0 mesa-libGLU libxcrypt-compat`
+- Debian/Ubuntu：`fakeroot xorriso libqt5gui5 libxcb-dri2-0:i386 libxcb-dri2-0 libcrypt1 libglu1-mesa libglib2.0-0t64 libglib2.0-0t64:i386 libapr1 libaprutil1`と`davinci-resolve`または`davinci-resolve-studio`
+
+**DaVinciBox 用にインストールまたは更新されたパッケージ**
+- すべてのシステム: `lshw distrobox podman`
+
+**DaVinciBox の更新**
+
+distrobox コンテナ自体を更新するのは、その中で `sudo dnf update` を実行するだけです。ただし、新しい Resolve バージョン用の DaVinciBox を更新するには、以下の削除手順に従い、LinuxToys を通じて再インストールする必要があります。
+
+**DaVinciBox の削除**
+- これらのコマンドを順番に実行するだけです:
+```
+distrobox enter davincibox -- add-davinci-launcher remove
+distrobox stop davincibox
+distrobox rm davincibox
+```
+
+### Active Directory
+
+Active Directoryドメインへの統合を有効にするために必要なすべてのパッケージをインストールします。
+
+**インストールまたは更新されたパッケージ**
+- Debian：`sssd realmd adcli samba-common-bin adsys krb5-user libpam-krb5 libpam-ccreds auth-client-config oddjob oddjob-mkhomedir`
+- Fedora：`sssd realmd oddjob oddjob-mkhomedir adcli samba-common samba-common-tools krb5-workstation openldap-clients policycoreutils-python`
+- Ubuntu：`sssd realmd adcli samba-common-bin adsys krb5-user libpam-krb5 libpam-ccreds auth-client-config`
+
+### Cockpitサーバー
+
+Debianバックポートまたはデフォルトリポジトリから`cockpit`をインストールします。Atomic Fedoraシステムには追加パッケージが必要です。その後、*Cockpit Client*からアクセスできるようにするためにFedoraとOpenSUSE用の必要なファイアウォール設定を実行します。
+
+**インストールまたは更新されたパッケージ**
+- Arch/Fedora/OpenSUSE/Debian/Ubuntu：`cockpit`
+- Fedora Atomic：`cockpit-system cockpit-ostree cockpit-podman cockpit-kdump cockpit-networkmanager`
+
+**適用されたカスタム設定**
+- `cockpit.socket` systemdサービスを有効にします
+- Fedora用：
+```
+firewall-cmd --add-service=cockpit
+firewall-cmd --add-service=cockpit --permanent
+```
+- OpenSUSE用：
+```
+firewall-cmd --permanent --zone=public --add-service=cockpit
+firewall-cmd --reload
+```
+
+### Waydroid
+
+必要なすべての依存関係を取得し、ディストリビューションのリポジトリから、またはDebian/Ubuntu専用の独自リポジトリから`waydroid`をインストールします。その後、コンテナを初期化し、賢明なデフォルトで***Google Play Store***のサポートを有効にしてAndroidをインストールします。オプションで、AMDプロセッサー用の*libndk*またはIntelプロセッサー用の*libhoudini*を使用してARM翻訳機能をインストールするために[waydroid_scripts](https://github.com/casualsnek/waydroid_script)を使用します。
+
+**インストールまたは更新されたパッケージ**
+- Debian/Ubuntu：`curl ca-certificates python3-venv waydroid`
+- その他：`waydroid`
+
+**ARM翻訳付き**
+- Arch：`python-pip`
+- その他：`python3-pip`
+
+### OpenRGB
+
+Flathubからメインアプリケーションをインストールし、その[公式リポジトリ](https://openrgb.org/releases)またはFedoraでは*RPMFusion*から動作させるためのudevルールを取得します。
+
+**インストールまたは更新されたパッケージ**
+- Fedora：`openrgb-udev-rules`
+
+### OpenRazer
+
+その[公式リポジトリ](https://openrazer.github.io/)から`openrazer-meta`メタパッケージを使用してインストールし、FlathubからGUI *Polychromatic*も併せてインストールします。または、Fedora Atomic（`rpm-ostree`）システムの場合、*Universal Blue*のカーネルモジュールリポジトリからインストールします。Universal Blueシステムの場合、`ujust`によって提供されるスクリプトを使用してインストールします。
+
+**インストールまたは更新されたパッケージ**
+- Fedora：`kernel-devel openrazer-meta`
+- Fedora Atomic：`openrazer-kmod openrazer-kmod-common openrazer-daemon`
+- その他：`openrazer-meta`
+
+### RPM-OSTreeの自動更新
+
+`rpm-ostree`の自動更新をステージモードで有効にすることで、作業が中断されることがありません。アップデートは静かにダウンロードされ、システムの再起動を決定したときに適用される新しいデプロイメントになります。`rpm-ostree-automatic.timer` systemdサービスを無効にすることで元に戻すことができます。
+
+**適用されたカスタム設定**
+- `/etc/rpm-ostreed.conf`に追加
+```
+[Daemon]
+AutomaticUpdatePolicy=stage
+```
+- `rpm-ostree-automatic.timer` systemdサービスを有効化
+
+### Nerd Fonts
+
+[NerdFonts](https://www.nerdfonts.com)から利用可能なフォントのデータを取得し、インストール用に表示します。選択されたフォントは`$HOME/.local/share/fonts`にインストールされ、そのディレクトリに追加されたファイルを削除するだけで削除できます。
+
+### Lazyman
+
+ユーザーの選択した設定とともに*NeoVim*用の*Lazyman*設定マネージャーをインストールします。そのフォルダを削除することで削除できます。
+
+**インストールまたは更新されたパッケージ**
+- すべてのシステム: `neovim git`
+
+**追加でインストールされたファイル**
+- ディレクトリ: `$HOME/.config/nvim-Lazyman`
+
+### Starship
+
+インストールまたは更新に[Starship](https://starship.rs)の公式スクリプトを使用します。シェルの`.bashrc`、`.zshrc`、または同様の設定ファイルでそれを有効にするために追加された行を削除することで元に戻せます。
+
+**適用されたカスタム設定**
+- `~/.bashrc`に追加
+```
+eval "$(starship init bash)"
+```
+
+### Oh My ZSH
+
+インストールまたは更新に[Oh My ZSH](https://ohmyz.sh)の公式スクリプトを使用します。`.zshrc`からそれをソースする行を削除することで元に戻せます。
+
+**インストールまたは更新されたパッケージ**
+- すべてのシステム: `zsh`
+
+### Fisher（および `fish`）
+
+デフォルトのリポジトリから `fish` をインストールし、[公式リポジトリ](https://github.com/jorgebucaran/fisher)で提供されているインストーラーを使用して `fisher` をインストールします。
+
+**インストールまたは更新されたパッケージ**
+- すべてのシステム: `fish`
+
+### CachyOS systemd 設定
+
+一般的な問題に対するさまざまなパフォーマンス調整と修正を適用します。すべてがインストールされますが、多くのものは必要に応じてのみアクティブになります - ターゲットとするデバイスがシステムで見つかった場合にのみ有効化されます。これにより、新しいパーツに対して動的に適用されるパッチでコンポーネントを変更できます。原子的な Fedora および Universal Blue システムの場合、これらはレイヤードパッケージとしてインストールされ、`rpm-ostree` を介してパッケージを削除するだけで削除できます。他の場合、対応するファイルを削除することで元に戻せます。パッケージと直接インストール方法の両方が、*CachyOS* リポジトリから直接取得されたファイルを使用します。
+
+**インストールまたは更新されたパッケージ**
+- Fedora atomic: `linuxtoys-cfg-atom`
+- Universal Blue: `optimize-cfg-ublue`
+
+**適用されたカスタム設定**
+- `/usr/lib/systemd/journald.conf.d/00-journal-size.conf`
+```
+[Journal]
+SystemMaxUse=50M
+```
+- `/usr/lib/udev/rules.d/20-audio-pm.rules`
+```
+SUBSYSTEM=="power_supply", ENV{POWER_SUPPLY_ONLINE}=="0", TEST=="/sys/module/snd_hda_intel", \
+    RUN+="/bin/sh -c 'echo $$(cat /run/udev/snd_hda_intel-powersave 2>/dev/null || \
+        echo 10) > /sys/module/snd_hda_intel/parameters/power_save'"
+
+SUBSYSTEM=="power_supply", ENV{POWER_SUPPLY_ONLINE}=="1", TEST=="/sys/module/snd_hda_intel", \
+    RUN+="/bin/sh -c '[[ $$(cat /sys/module/snd_hda_intel/parameters/power_save) != 0 ]] && \
+        echo $$(cat /sys/module/snd_hda_intel/parameters/power_save) > /run/udev/snd_hda_intel-powersave; \
+        echo 0 > /sys/module/snd_hda_intel/parameters/power_save'"
+```
+- `/usr/lib/udev/rules.d/40-hpet-permissions.rules`
+```
+KERNEL=="rtc0", GROUP="audio"
+KERNEL=="hpet", GROUP="audio"
+```
+- `/usr/lib/udev/rules.d/50-sata.rules`
+```
+ACTION=="add", SUBSYSTEM=="scsi_host", KERNEL=="host*", \
+    ATTR{link_power_management_policy}=="*", \
+    ATTR{link_power_management_policy}="max_performance"
+```
+- `/usr/lib/udev/rules.d/60-ioschedulers.rules`
+```
+# HDD
+ACTION=="add|change", KERNEL=="sd[a-z]*", ATTR{queue/rotational}=="1", \
+    ATTR{queue/scheduler}="bfq"
+
+# SSD
+ACTION=="add|change", KERNEL=="sd[a-z]*|mmcblk[0-9]*", ATTR{queue/rotational}=="0", \
+    ATTR{queue/scheduler}="mq-deadline"
+
+# NVMe SSD
+ACTION=="add|change", KERNEL=="nvme[0-9]*", ATTR{queue/rotational}=="0", \
+    ATTR{queue/scheduler}="none"
+```
+- `/usr/lib/udev/rules.d/69-hdparm.rules`
+```
+ACTION=="add|change", KERNEL=="sd[a-z]", ATTR{queue/rotational}=="1", \
+    RUN+="/usr/bin/hdparm -B 254 -S 0 /dev/%k"
+```
+- `/usr/lib/sysctl.d/99-cachyos-settings.conf`
+```
+vm.swappiness = 100
+vm.vfs_cache_pressure = 50
+vm.dirty_bytes = 268435456
+vm.page-cluster = 0
+vm.dirty_background_bytes = 67108864
+vm.dirty_writeback_centisecs = 1500
+kernel.nmi_watchdog = 0
+kernel.unprivileged_userns_clone = 1
+kernel.printk = 3 3 3 3
+kernel.kptr_restrict = 2
+kernel.kexec_load_disabled = 1
+net.core.netdev_max_backlog = 4096
+fs.file-max = 2097152
+```
+- `/usr/lib/udev/rules.d/99-cpu-dma-latency.rules`
+```
+DEVPATH=="/devices/virtual/misc/cpu_dma_latency", OWNER="root", GROUP="audio", MODE="0660"
+```
+- `/usr/lib/modprobe.d/amdgpu.conf`
+```
+options amdgpu si_support=1 cik_support=1
+options radeon si_support=0 cik_support=0
+```
+- `/usr/lib/modprobe.d/blacklist.conf`
+```
+# Intel TCO Watchdog/Timer モジュールをブラックリスト
+blacklist iTCO_wdt
+
+# AMD SP5100 TCO Watchdog/Timer モジュールをブラックリスト (Ryzen CPU 用に必要)
+blacklist sp5100_tco
+```
+- `/usr/lib/tmpfiles.d/coredump.conf` - Universal Blue システムには含まれず、それには独自の設定があります
+```
+d /var/lib/systemd/coredump 0755 root root 3d
+```
+- `/usr/lib/modprobe.d/nvidia.conf`
+```
+options nvidia NVreg_UsePageAttributeTable=1 \
+    NVreg_InitializeSystemMemoryAllocations=0 \
+    NVreg_DynamicPowerManagement=0x02 \
+    NVreg_RegistryDwords=RMIntrLockingMode=1
+```
+- `/usr/lib/tmpfiles.d/thp.conf`
+```
+w! /sys/kernel/mm/transparent_hugepage/defrag - - - - defer+madvise
+```
+- `/usr/lib/tmpfiles.d/thp-shrinker.conf`
+```
+w! /sys/kernel/mm/transparent_hugepage/khugepaged/max_ptes_none - - - - 4091
+```
+
+### SDKMAN
+公式スクリプトを通じてインストールされます。LinuxToysからインストーラーを再度実行することで削除できます。
+
+### Acer Manager
+適切な依存関係をインストールした後、[公式GitHubリポジトリ](https://github.com/PXDiv/Div-Acer-Manager-Max)で提供されているスクリプトを使用してインストールされます。
+
+**インストールまたは更新されたパッケージ**
+- Arch: `base-devel linux${_k:+-${_k}}-headers`
+- Fedora/OpenSUSE: `make gcc kernel-headers kernel-devel`
+- Debian/Ubuntu: `make build-essential`
+
+### GPU Screen Recorder
+*QuickSync*が正常に動作するようにIntel GPU(ディスクリートまたは統合型)がシステムで検出された場合、[Pacstall](https://pacstall.dev)、[COPR](https://copr.fedorainfracloud.org/coprs/brycensranch/gpu-screen-recorder-git)、または[AUR](https://aur.archlinux.org/packages/gpu-screen-recorder)からインストールされます。それ以外の場合は、Flathubからシステムレベルのflatpakとしてインストールされます。
+
+**インストールまたは更新されたパッケージ**
+- Arch/Debian/Ubuntu/OpenSUSE: `intel-media-driver gpu-screen-recorder`
+- Fedora: `libva-intel-media-driver gpu-screen-recorder-ui`
+
+**追加の手順が必要です!**
+インストール後、ターミナルで次を実行します:
+```
+gsr-ui
+```
+設定(歯車アイコン)からシステム起動時に起動するように設定し、Alt+Zを押してUIを終了し、ターミナルウィンドウを閉じて再起動します。再起動後、プログラムの設定を好みに合わせて調整し、お好きなように使用できます。
+
+### GTKレンダラー修正
+Intel Arc Bシリーズ（*Battlemage*）およびNvidia GPUでGTKアプリケーションのレンダリングに問題がある場合、OpenGLモードに切り替えることで修正します。`nano`などのテキストエディタを使用して追加された行を削除するだけで元に戻すことができます。
+
+**適用されるカスタム設定**
+- `/etc/environment`に追加：
+```
+GSK_RENDERER=ngl
+```
+
+### Intel Xeドライバー
+カーネルから新しいIntel `xe`ドライバーを有効にします。バージョン6.8以降存在していますが、デフォルトでは有効になっていないため、新しいIntelグラフィックスプロセッサ、特にディスクリート（Arc）GPUでは、全体的に、特に特定のコンピューティングタスクにおいて、かなりのパフォーマンスが不足しています。Fedora Atomicの場合は`rpm-ostree kargs --delete`を使用してパラメータを削除するか、他のシステムの場合は`/etc/grub.d/01_intel_xe_enable`ファイルを削除することで元に戻すことができます。これにより、ハードウェアビデオデコーディングもインストールされます。
+
+**インストールまたは更新されたパッケージ**
+- すべてのシステム：`libvdpau-va-gl`
+
+**適用されるカスタム設定**
+- まず、次のコマンドで`$DEVID`変数を取得します：
+```
+lspci -nnd ::03xx | grep -Ei 'battlemage|alchemist' | sed -n 's/.*\[8086:\([0-9a-f]\+\)\].*/\1/p'
+```
+- 次に、Fedora Atomic（`rpm-ostree`ベースのシステム）の場合：
+```
+rpm-ostree kargs --append='i915.force_probe=!'"$DEVID" --append="xe.force_probe=$DEVID"
+```
+- または他のシステム：`/etc/grub.d/01_intel_xe_enable`を作成
+```
+GRUB_CMDLINE_LINUX="\${GRUB_CMDLINE_LINUX} i915.force_probe=!$DEVID xe.force_probe=$DEVID"
+```
+- 最後に、ハードウェアビデオデコーディングを有効にするために、`/etc/environment`に追加：
+```
+VDPAU_DRIVER=va_gl
+```
+
+### DNSMasq
+`dnsmasq`をインストールし、`systemd-resolved`を実行しているシステムでも、ローカルDNSキャッシュとして最適な動作と互換性のためにいくつかの設定を有効にします。インターネットブラウジング速度の向上や、Steamのダウンロード速度低下の一般的な問題の修正に役立ちます。
+
+**インストールまたは更新されたパッケージ**
+- Debian：`dnsmasq resolvconf`
+- 他のシステム：`dnsmasq`
+
+**適用されるカスタム設定**
+- `/etc/dnsmasq.conf`で`domain-needed`、`bogus-priv`、`bind-interfaces`を有効化（コメント解除）
+
+### ArchのSecure Boot
+Arch LinuxをSecure Bootが有効な状態で動作できるようにし、カーネルアンチチートを使用したゲームを実行しながらWindowsとのデュアルブートを可能にし、追加のセキュリティ層を提供します。この目的のために、LinuxToysは`sbctl`を使用しており、一部のマザーボードで問題が発生する可能性があります。この機能を使用する前に、お使いのマザーボードの問題についてインターネットで検索してください。
+
+**インストールまたは更新されたパッケージ**
+- Arch：`sbctl efibootmgr`
+
+**適用されるカスタム設定**
+- まず、GRUBが存在する場合は準備する必要があります：
+```
+grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB --modules="tpm" --disable-shim-lock
+```
+- 次に、`sbctl`を通じてキーが作成され、次のように登録されます：
+```
+sbctl create-keys
+sbctl enroll-keys -m -f
+```
+- 最後に、`sbctl verify`を通じてSecure Bootの署名が必要であることが判明したすべてのファイルは、`sbctl sign -s`を使用して署名されます。
+
+### DebianおよびArch LinuxのAppArmorセットアップ
+基本的なAppArmorセットアップをインストールして有効化します - Ubuntuと同じデフォルト設定です。より堅牢化されたMACの場合は、[apparmor.d](https://github.com/roddhjav/apparmor.d)を検討してください。様々な理由により自動化された方法でインストールすることはできず、使用するには慎重にドキュメンテーションを読む必要があります。
+
+**インストールまたは更新されたパッケージ**
+- Arch：`apparmor`
+- Debian：`apparmor apparmor-utils`
+
+**適用されるカスタム設定**
+- AppArmorをシステムのMACとしてカーネルCMDLINEを通じて呼び出す必要があります。これはGRUBユーザーの場合は`/etc/default/grub.d/99-apparmor.cfg`を通じて行われます：
+```
+GRUB_CMDLINE_LINUX_DEFAULT="${GRUB_CMDLINE_LINUX_DEFAULT} apparmor=1 security=apparmor"
+```
+- またはsystemd-bootユーザーの場合は`/etc/kernel/cmdline.d/99-apparmor.conf`：
+```
+apparmor=1 security=apparmor
+```
+- `apparmor.service`も有効化されます。
+
+### Bubblewrap の修正
+一部の Ubuntu バージョンで AppArmor が Bubblewrap をブロックし、flatpak アプリケーションや Steam が動作しなくなる問題を解決します。 
+
+**適用されたカスタム設定**
+- `/etc/apparmor.d/bwrap` にて：
+```
+abi <abi/4.0>,
+include <tunables/global>
+
+profile bwrap /usr/bin/bwrap flags=(unconfined) {
+  userns,
+  include if exists <local/bwrap>
+}
+```
+
+### KDE Connect の修正
+ネットワーク内のデバイスを KDE Connect や GSConnect が検出できないという一般的な問題を解決します。これは、デバイス同士を接続するために必要なポートがファイアウォールによってブロックされていることが原因です。
+
+**適用されたカスタム設定**
+- 現在アクティブなファイアウォール（`firewalld`、`ufw`、または `iptables`）に応じて、ポート 1714-1764（TCP および UDP）をローカルネットワークトラフィックに対して適応的に開放します。
+
+### 動的な最小空きメモリ
+利用可能な総 RAM 容量に応じてカーネル設定値 `vm.min_free_kbytes` を動的に設定し、メモリ制限のあるデバイスで他のタスクに利用できる RAM を増やします。また、起動時にも適応するため、ハードウェアを変更しても再インストールの必要はありません。
+
+**適用されたカスタム設定**
+- systemd サービス `/etc/systemd/system/set-min-free-mem.service` を作成します：
+```
+[Unit]
+Description=Set vm.min_free_kbytes dynamically
+DefaultDependencies=no
+After=local-fs.target
+Before=sysinit.target
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh -c "sysctl -w vm.min_free_kbytes=$(awk '/MemTotal/ {printf \"%.0f\", $2 * 0.01}' /proc/meminfo)"
+
+[Install]
+WantedBy=sysinit.target
+```
+
+## リポジトリインストーラー
+
+### Brew
+公式インストールスクリプトを通じてインストールされます。
+
+### Cargo
+RustUpによる公式インストールスクリプトを通じてインストールされます。
+
+### Chaotic-AUR
+ドキュメントに従ってインストールされ、pacmanにコマンドを早く送りすぎることによるエラーを避けるためのタイミング調整が行われます。
+
+### Flathub
+`flatpak`をインストールし、システムレベルとユーザーレベルの両方でFlathubリポジトリを追加します。
+
+**インストールまたは更新されたパッケージ**
+- すべてのシステム：`flatpak`
+
+### Pip
+デフォルトリポジトリから`python-pip`（Arch）または`python3-pip`（他のシステム）パッケージを通じてインストールされます。ドキュメントで推奨されているように、PyPI パッケージを仮想環境で自動的にセットアップするための `pipx` を含みます。
+
+### RPMFusion
+ドキュメントに従ってインストールされ、Fedora Atomic（`rpm-ostree`ベース）システム用の特定の反復があります。
+
+### Pacstall
+公式スクリプトでインストールされます。Debian/Ubuntuでのみ利用可能です。
+
+### Terra
+ドキュメントに従ってインストールされます。Fedora および派生システムでのみ利用可能です。
+
+## LSW-WinBoat
+
+**WinBoat**で使用するための適切な設定とパッチで*Docker*インストールを設定します - DockerコンテナにWindowsをインストールし、そのアプリと対話し、それらをホストシステムに統合できます。次に、*WinBoat*自体をその[公式GitHubリポジトリ](https://github.com/TibixDev/winboat)からインストールし、Flathubから*FreeRDP*をインストールして使用します。
+
+**インストールまたは更新されたパッケージ**
+- Arch：`docker docker-compose winboat-bin`
+- Fedora：`docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin winboat`
+- OpenSUSE：`docker docker-compose winboat`
+- Debian/Ubuntu：`docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin winboat`
+
+- Flathub：`com.freerdp.FreeRDP`
+
+**適用されたカスタム設定**
+- `docker`および`docker.socket` systemdサービスを有効化
+- `/etc/modules-load.d/iptables.conf`で適切な設定で`iptables`カーネルモジュールを有効化：
+```
+ip_tables
+niptable_nat
+```
+- ユーザーを`docker`ユーザーグループに追加することでrootless Docker使用を有効化、`rpm-ostree`ベースのシステムにはカスタムパッチが必要：
+```
+echo "$(getent group docker)" >> /etc/group
+```
+- WinBoatがそのコンテナに到達できるように`firewalld`で内部Dockerポート8006と3389を開く、Fedoraおよびその派生で問題を修正（他のオペレーティングシステムには適用されない）：
+```
+firewall-cmd --zone=docker --change-interface=docker0
+firewall-cmd --zone=docker --add-port=8006/tcp --permanent
+firewall-cmd --zone=docker --add-port=3389/tcp --permanent
+```
+
+## 最適化されたデフォルト
+
+システム用の厳選された安定した最適化の選択をインストールするワンクリックセットアップ。マシンに関連性がないか、すでに存在する機能はインストールしません。
+
+#### 含まれる機能
+
+**パフォーマンス**
+- EarlyOOM
+- Shader Booster
+- Split-lockミティゲーション無効化
+- *CachyOS* systemd設定ファイル - 安定性のためにテストされフィルタリングされているため、パフォーマンスが妥協を伴いません
+
+**生活の質**
+- FFMPEGThumbnailer
+- Fedora/OpenSUSEストリーミングコーデック
+- Debian用`/etc/sudoers`ファイル修正 - デフォルトインストールイメージからインストール後にユーザーが`sudo`を使用できない問題を修正
+- Gnomeタイムアウト修正 - 過度な'プログラムが応答していません'プロンプトを停止するためタイムアウト許容度を増加
+- RPM-OSTree用カーネルモジュール署名
+- `rpm-ostree`用自動更新有効化 - ステージモードで作業が中断されることはありません
+- （オプション）Flatpak用ハードウェアアクセラレーション
+
+**電源プロファイル**
+- *ラップトップ*：Power Optimizer
+- *デスクトップ*：CPU ondemand

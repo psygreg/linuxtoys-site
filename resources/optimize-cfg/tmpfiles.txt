@@ -1,2 +1,0 @@
-https://raw.githubusercontent.com/CachyOS/CachyOS-Settings/master/usr/lib/tmpfiles.d/thp-shrinker.conf
-https://raw.githubusercontent.com/CachyOS/CachyOS-Settings/master/usr/lib/tmpfiles.d/thp.conf

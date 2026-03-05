@@ -1,2 +1,0 @@
-ICON: utils.svg
-description: utils_desc
