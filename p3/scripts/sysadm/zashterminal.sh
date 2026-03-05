@@ -1,7 +1,7 @@
 #!/bin/bash
 # name: Zash Terminal
 # version: 1.0
-# description: Modern GTK4 terminal with advanced session management and SSH workflows.
+# description: zash_desc
 # icon: zashterminal.svg
 # compat: ubuntu, debian, fedora, suse, arch, cachy
 # repo: https://github.com/leoberbert/zashterminal

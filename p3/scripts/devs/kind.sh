@@ -1,7 +1,7 @@
 #!/bin/bash
 # name: Kind (Kubernetes)
 # version: 1.0
-# description: Install kind and kubectl for local Kubernetes development.
+# description: kind_desc
 # icon: kind.svg
 # compat: ubuntu, debian, fedora, suse, arch, cachy, ostree, ublue
 # repo: https://kind.sigs.k8s.io/

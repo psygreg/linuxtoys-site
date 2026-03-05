@@ -345,5 +345,9 @@
   "needed_requirements_title": "მოთხოვნები",
   "needed_requirements_message": "შემდეგი ფუნქციები აუცილებელია {script_name}-ით გაგრძელებამდე:",
   "needed_requirements_footer": "ეს საჭირო ფუნქციები ჯერ დაინსტალირდება, შემდეგ მთავარი სკრიპტი გაგრძელდება.",
-  "libvirt_desc": "დაიდეგე და გააკონფიგურე virt-manager, libvirt და qemu."
+  "libvirt_desc": "დაიდეგე და გააკონფიგურე virt-manager, libvirt და qemu.",
+  "zash_desc": "თანამედროვე GTK4 ტერმინალი მოწინავე სესიის მართვა და SSH სამუშაო ნაკადებით.",
+  "kind_desc": "საწყის kind და kubectl დაყენება ადგილობრივი Kubernetes განვითარებისთვის.",
+  "hiddify_desc": "Hiddify VPN კლიენტი.",
+  "term_view_copy": "გამოსახვის ჟურნალის კოპირება"
 }

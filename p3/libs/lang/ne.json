@@ -345,5 +345,9 @@
   "needed_requirements_title": "आवश्यकताहरू",
   "needed_requirements_message": "{script_name} सँग अगाडि बढ्नु अघि निम्नलिखित सुविधाहरू आवश्यक छन्:",
   "needed_requirements_footer": "यी आवश्यक सुविधाहरू पहिले स्थापन गरिनेछन्, त्यसपछि मुख्य स्क्रिप्ट जारी रहनेछ।",
-  "libvirt_desc": "virt-manager, libvirt र qemu स्थापना र कन्फिगर गर्नुहोस्।"
+  "libvirt_desc": "virt-manager, libvirt र qemu स्थापना र कन्फिगर गर्नुहोस्।",
+  "zash_desc": "उन्नत सेशन प्रबन्धन र SSH कार्यप्रवाहको साथ आधुनिक GTK4 टर्मिनल।",
+  "kind_desc": "स्थानीय Kubernetes विकास को लागि स्टार्टर kind र kubectl सेटअप।",
+  "hiddify_desc": "Hiddify VPN क्लायन्ट।",
+  "term_view_copy": "आउटपुट लग प्रतिलिपि गर्नुहोस्"
 }

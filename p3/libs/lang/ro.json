@@ -345,5 +345,9 @@
   "needed_requirements_title": "Cerințe",
   "needed_requirements_message": "Următoarele funcții sunt necesare înainte de a continua cu {script_name}:",
   "needed_requirements_footer": "Aceste funcții necesare vor fi instalate mai întâi, apoi scriptul principal va continua.",
-  "libvirt_desc": "Instalați și configurați virt-manager, libvirt și qemu."
+  "libvirt_desc": "Instalați și configurați virt-manager, libvirt și qemu.",
+  "zash_desc": "Terminal GTK4 modern cu gestionare avansată a sesiunilor și fluxuri de lucru SSH.",
+  "kind_desc": "Configurație de început kind și kubectl pentru dezvoltarea locală Kubernetes.",
+  "hiddify_desc": "Client Hiddify VPN.",
+  "term_view_copy": "Copiare jurnal de ieșire"
 }

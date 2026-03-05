@@ -345,5 +345,9 @@
   "needed_requirements_title": "Gereksinimler",
   "needed_requirements_message": "{script_name} ile devam etmeden önce aşağıdaki özellikler gereklidir:",
   "needed_requirements_footer": "Bu gerekli özellikler önce yüklenecek, sonra ana betiği devam edecektir.",
-  "libvirt_desc": "virt-manager, libvirt ve qemu yükleyin ve yapılandırın."
+  "libvirt_desc": "virt-manager, libvirt ve qemu yükleyin ve yapılandırın.",
+  "zash_desc": "Gelişmiş oturum yönetimi ve SSH iş akışları ile modern GTK4 terminali.",
+  "kind_desc": "Yerel Kubernetes geliştirme için başlatıcı kind ve kubectl kurulumu.",
+  "hiddify_desc": "Hiddify VPN istemcisi.",
+  "term_view_copy": "Çıktı Günlüğünü Kopyala"
 }

@@ -345,5 +345,9 @@
   "needed_requirements_title": "តម្រូវការ",
   "needed_requirements_message": "មុខងារខាងក្រោមគឺត្រូវការ មុនពេលលេងបន្តទៅ {script_name}:",
   "needed_requirements_footer": "មុខងារដែលចាំបាច់ទាំងនេះនឹងត្រូវបានដំឡើងដំបូង បន្ទាប់មក ស្គ្រីបបន្ថែមនឹងបន្ត។",
-  "libvirt_desc": "ដំឡើង និងកំណត់ virt-manager, libvirt និង qemu។"
+  "libvirt_desc": "ដំឡើង និងកំណត់ virt-manager, libvirt និង qemu។",
+  "zash_desc": "ឧបករណ៍គាត់សន្ទស្ទង់ GTK4 ទំនើបដែលមាន ការគ្រប់គ្រងវិទ្យាសាលប៉ាន់ប្រមាណ និងលំហូរការងារSSH។",
+  "kind_desc": "ការដំឡើងដំបូង kind និង kubectl សម្រាប់ការអភិវឌ្ឍន៍ Kubernetes ក្នុងស្រុក។",
+  "hiddify_desc": "ក្រុមហ៊ុន Hiddify VPN.",
+  "term_view_copy": "ចម្លងកាលបរិច្ឆេទលទ្ធផល"
 }

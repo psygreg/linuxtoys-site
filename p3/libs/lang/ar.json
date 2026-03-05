@@ -345,5 +345,9 @@
   "needed_requirements_title": "المتطلبات",
   "needed_requirements_message": "المميزات التالية مطلوبة قبل المتابعة مع {script_name}:",
   "needed_requirements_footer": "سيتم تثبيت هذه الميزات المطلوبة أولاً، ثم سيستمر البرنامج الرئيسي.",
-  "libvirt_desc": "تثبيت وتكوين virt-manager و libvirt و qemu."
+  "libvirt_desc": "تثبيت وتكوين virt-manager و libvirt و qemu.",
+  "zash_desc": "طرفية GTK4 حديثة مع إدارة جلسات متقدمة وسير عمل SSH.",
+  "kind_desc": "إعداد البداية مع kind و kubectl لتطوير Kubernetes المحلي.",
+  "hiddify_desc": "عميل Hiddify VPN.",
+  "term_view_copy": "نسخ سجل الإخراج"
 }

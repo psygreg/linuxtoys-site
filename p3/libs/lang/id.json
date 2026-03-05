@@ -345,5 +345,9 @@
   "needed_requirements_title": "Persyaratan",
   "needed_requirements_message": "Fitur-fitur berikut diperlukan sebelum melanjutkan dengan {script_name}:",
   "needed_requirements_footer": "Fitur-fitur yang diperlukan ini akan diinstal terlebih dahulu, kemudian skrip utama akan berlanjut.",
-  "libvirt_desc": "Pasang dan konfigurasikan virt-manager, libvirt, dan qemu."
+  "libvirt_desc": "Pasang dan konfigurasikan virt-manager, libvirt, dan qemu.",
+  "zash_desc": "Terminal GTK4 modern dengan manajemen sesi lanjutan dan alur kerja SSH.",
+  "kind_desc": "Pengaturan pemula kind dan kubectl untuk pengembangan Kubernetes lokal.",
+  "hiddify_desc": "Klien Hiddify VPN.",
+  "term_view_copy": "Salin Log Output"
 }

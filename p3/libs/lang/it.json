@@ -344,6 +344,10 @@
   "stoat_desc": "Client di chat gratuito e open-source, alternativa a Discord.",
   "needed_requirements_title": "Requisiti",
   "needed_requirements_message": "Le seguenti funzioni sono necessarie prima di continuare con {script_name}:",
-  "needed_requirements_footer": "Queste funzioni necessarie verranno installate prima, quindi lo script principale continuerà.",
-  "libvirt_desc": "Installa e configura virt-manager, libvirt e qemu."
+  "needed_requirements_footer": "Queste funzioni necessarie verrano installate prima, quindi lo script principale continuerà.",
+  "libvirt_desc": "Installa e configura virt-manager, libvirt e qemu.",
+  "zash_desc": "Terminale GTK4 moderno con gestione avanzata delle sessioni e flussi di lavoro SSH.",
+  "kind_desc": "Impostazione iniziale di kind e kubectl per lo sviluppo Kubernetes locale.",
+  "hiddify_desc": "Client Hiddify VPN.",
+  "term_view_copy": "Copia registro di output"
 }

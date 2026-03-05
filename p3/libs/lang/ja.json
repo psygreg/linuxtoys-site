@@ -345,5 +345,9 @@
   "needed_requirements_title": "要件",
   "needed_requirements_message": "{script_name} を続行する前に、次の機能が必要です:",
   "needed_requirements_footer": "これらの必要な機能がまずインストールされ、その後、メインスクリプトが続行されます。",
-  "libvirt_desc": "virt-manager、libvirt、qemuをインストールおよび構成します。"
+  "libvirt_desc": "virt-manager、libvirt、qemuをインストールおよび構成します。",
+  "zash_desc": "高度なセッション管理とSSHワークフロー備えた最新のGTK4ターミナル。",
+  "kind_desc": "ローカルKubernetes開発用のスターターkindとkubectlセットアップ。",
+  "hiddify_desc": "Hiddify VPNクライアント。",
+  "term_view_copy": "出力ログをコピー"
 }

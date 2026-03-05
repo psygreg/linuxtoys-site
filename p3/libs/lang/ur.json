@@ -345,5 +345,9 @@
   "needed_requirements_title": "ضروریات",
   "needed_requirements_message": "{script_name} کے ساتھ آگے بڑھنے سے پہلے درج ذیل خصوصیات ضروری ہیں:",
   "needed_requirements_footer": "یہ ضروری خصوصیات پہلے انسٹال کی جائیں گی، پھر اہم اسکرپٹ جاری رہے گی۔",
-  "libvirt_desc": "virt-manager, libvirt اور qemu کو انسٹال اور کنفیگر کریں۔"
+  "libvirt_desc": "virt-manager, libvirt اور qemu کو انسٹال اور کنفیگر کریں۔",
+  "zash_desc": "ترقی یافتہ سیشن مینجمنٹ اور SSH ورک فلو کے ساتھ جدید GTK4 ٹرمینل۔",
+  "kind_desc": "مقامی Kubernetes ترقی کے لیے سٹارٹر kind اور kubectl سیٹ اپ۔",
+  "hiddify_desc": "Hiddify VPN کلائنٹ۔",
+  "term_view_copy": "آؤٹ پٹ لاگ کاپی کریں"
 }

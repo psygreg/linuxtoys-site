@@ -345,5 +345,9 @@
   "needed_requirements_title": "الدرجات المطلوبة",
   "needed_requirements_message": "ویژگی های زیر قبل از ادامه با {script_name} مورد نیاز است:",
   "needed_requirements_footer": "این ویژگی های مورد نیاز ابتدا نصب خواهند شد، سپس اسکریپت اصلی ادامه خواهد یافت.",
-  "libvirt_desc": "virt-manager، libvirt و qemu را نصب و پیکربندی کنید."
+  "libvirt_desc": "virt-manager، libvirt و qemu را نصب و پیکربندی کنید.",
+  "zash_desc": "ترمینال GTK4 مدرن با مدیریت جلسات پیشرفته و گردش کار SSH.",
+  "kind_desc": "تنظیم kind و kubectl برای توسعه محلی Kubernetes.",
+  "hiddify_desc": "کلاینت Hiddify VPN.",
+  "term_view_copy": "کپی کردن سیاق خروجی"
 }

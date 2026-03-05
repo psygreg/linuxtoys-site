@@ -345,5 +345,9 @@
   "needed_requirements_title": "Изисквания",
   "needed_requirements_message": "Следните функции са необходими преди да продължите с {script_name}:",
   "needed_requirements_footer": "Тези необходими функции ще бъдат инсталирани първо, след което основният скрипт ще продължи.",
-  "libvirt_desc": "Инсталирайте и конфигурирайте virt-manager, libvirt и qemu."
+  "libvirt_desc": "Инсталирайте и конфигурирайте virt-manager, libvirt и qemu.",
+  "zash_desc": "Модерен терминал GTK4 с напредно управление на сесии и SSH работни потоци.",
+  "kind_desc": "Начално конфигуриране на kind и kubectl за локална разработка на Kubernetes.",
+  "hiddify_desc": "Клиент Hiddify VPN.",
+  "term_view_copy": "Копиране на журнала на изхода"
 }

@@ -345,5 +345,9 @@
   "needed_requirements_title": "ข้อกำหนด",
   "needed_requirements_message": "จำเป็นต้องมีฟีเจอร์ต่อไปนี้ก่อนที่จะดำเนินการต่อด้วย {script_name}:",
   "needed_requirements_footer": "ฟีเจอร์ที่จำเป็นเหล่านี้จะถูกติดตั้งก่อน จากนั้นสคริปต์หลักจะดำเนินการต่อ",
-  "libvirt_desc": "ติดตั้งและตั้งค่า virt-manager, libvirt และ qemu"
+  "libvirt_desc": "ติดตั้งและตั้งค่า virt-manager, libvirt และ qemu",
+  "zash_desc": "เทอร์มินัล GTK4 ที่ทันสมัยพร้อมการจัดการเซッชันขั้นสูงและเวิร์กโฟลว์ SSH",
+  "kind_desc": "การตั้งค่าเริ่มต้น kind และ kubectl สำหรับการพัฒนา Kubernetes ในท้องถิ่น",
+  "hiddify_desc": "ไคลเอนต์ Hiddify VPN",
+  "term_view_copy": "คัดลอกบันทึกผลลัพธ์"
 }

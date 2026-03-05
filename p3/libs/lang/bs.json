@@ -344,5 +344,9 @@
   "needed_requirements_title": "Zahtjevi",
   "needed_requirements_message": "Sljedeće osobine su obavezne prije nastavka s {script_name}:",
   "needed_requirements_footer": "Ove obavezne osobine će biti instalirane prvo, a zatim će glavni skript nastaviti.",
-  "libvirt_desc": "Instalirajte i konfigurujte virt-manager, libvirt i qemu."
+  "libvirt_desc": "Instalirajte i konfigurujte virt-manager, libvirt i qemu.",
+  "zash_desc": "Moderan GTK4 terminal s naprednim upravljanjem sesije i SSH radnim tokovima.",
+  "kind_desc": "Početna vrsta i kubectl postavka za lokalnu Kubernetes razvoj.",
+  "hiddify_desc": "Hiddify VPN klijent.",
+  "term_view_copy": "Kopiraj izlazni dnevnik"
 }

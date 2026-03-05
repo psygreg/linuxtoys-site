@@ -345,5 +345,9 @@
   "needed_requirements_title": "Vaatimukset",
   "needed_requirements_message": "Seuraavat ominaisuudet vaaditaan ennen kuin jatkat {script_name}:",
   "needed_requirements_footer": "Nämä vaaditut ominaisuudet asennetaan ensin, minkä jälkeen pääskripti jatkuu.",
-  "libvirt_desc": "Asenna ja määritä virt-manager, libvirt ja qemu."
+  "libvirt_desc": "Asenna ja määritä virt-manager, libvirt ja qemu.",
+  "zash_desc": "Moderni GTK4-pääte, jossa on kehittynyt istunnonhallinta ja SSH-työvälineet.",
+  "kind_desc": "Perustava kind- ja kubectl-määritys paikalliselle Kubernetes-kehitykselle.",
+  "hiddify_desc": "Hiddify VPN-asiakas.",
+  "term_view_copy": "Kopioi tulostuslokin"
 }

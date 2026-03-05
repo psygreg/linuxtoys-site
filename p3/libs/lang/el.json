@@ -345,5 +345,9 @@
   "needed_requirements_title": "Απαιτήσεις",
   "needed_requirements_message": "Τα ακόλουθα χαρακτηριστικά απαιτούνται πριν προχωρήσετε με {script_name}:",
   "needed_requirements_footer": "Αυτές οι απαιτούμενες λειτουργίες θα εγκατασταθούν πρώτα, στη συνέχεια το κύριο σενάριο θα συνεχιστεί.",
-  "libvirt_desc": "Εγκαταστήστε και διαμορφώστε virt-manager, libvirt και qemu."
+  "libvirt_desc": "Εγκαταστήστε και διαμορφώστε virt-manager, libvirt και qemu.",
+  "zash_desc": "Σύγχρονο τερματικό GTK4 με προηγμένη διαχείριση συνεδρίας και ροές εργασίας SSH.",
+  "kind_desc": "Ρύθμιση εκκίνησης kind και kubectl για τοπική ανάπτυξη Kubernetes.",
+  "hiddify_desc": "Πελάτης Hiddify VPN.",
+  "term_view_copy": "Αντιγραφή αρχείου καταγραφής εξόδου"
 }

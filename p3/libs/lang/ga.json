@@ -345,5 +345,9 @@
   "needed_requirements_title": "Riachtanais",
   "needed_requirements_message": "Tá gá do na gné agus a leanas roimh bhraistint ar aghaidh le {script_name}:",
   "needed_requirements_footer": "Suiteofar na gné riachtanacha seo ar dtús, ansin leanfaidh an príomhscript ar aghaidh.",
-  "libvirt_desc": "Suiteáil agus cumraigh virt-manager, libvirt agus qemu."
+  "libvirt_desc": "Suiteáil agus cumraigh virt-manager, libvirt agus qemu.",
+  "zash_desc": "Teirminéal GTK4 nua-aimseartha le bainistiú socruithe ardleibhéal agus sreafaí oibre SSH.",
+  "kind_desc": "Socrú tosaigh kind agus kubectl do fhorbairt Kubernetes áitiúil.",
+  "hiddify_desc": "Cliant Hiddify VPN.",
+  "term_view_copy": "Cóipeáil an logchomhad aschuir"
 }

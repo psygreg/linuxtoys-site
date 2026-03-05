@@ -345,5 +345,9 @@
   "needed_requirements_title": "ຄວາມຕ້ອງການ",
   "needed_requirements_message": "ຄຸນສົມບັດດັ່ງຕໍ່ໄປນີ້ແມ່ນຈໍາເປັນກ່ອນທີ່ຈະດໍາເນີນການກັບ {script_name}:",
   "needed_requirements_footer": "ຄຸນສົມບັດທີ່ຈໍາເປັນເຫຼົ່ານີ້ຈະຖືກຕິດຕັ້ງກ່ອນ, ຫຼັງຈາກນັ້ນ ສະຄິບທີ່ຕົ້ນຕໍຈະສືບຕໍ່ໄປ.",
-  "libvirt_desc": "ຕິດຕັ້ງ ແລະ ກຳນົດຄ່າ virt-manager, libvirt ແລະ qemu."
+  "libvirt_desc": "ຕິດຕັ້ງ ແລະ ກຳນົດຄ່າ virt-manager, libvirt ແລະ qemu.",
+  "zash_desc": "ປ້າຕົ້ນຕໍ GTK4 ທີ່ທັນສະ ໄວ້ຕໍ່ກັບຄຸນສົມບັດ ການຈັດການສິ່ງທີ່ກ່າວມາ ແລະ ວຽກກຳຈາກ SSH.",
+  "kind_desc": "ການຕິດຕັ້ງ kind ແລະ kubectl ສຳລັບການພັດທະນາ Kubernetes ທ້ອງຖິ່ນ.",
+  "hiddify_desc": "ລູກຄ້າ Hiddify VPN.",
+  "term_view_copy": "ສໍາເນົາ ບັນທຶກວຽກ"
 }

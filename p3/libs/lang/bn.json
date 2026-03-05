@@ -344,5 +344,9 @@
   "needed_requirements_title": "প্রয়োজনীয়তা",
   "needed_requirements_message": "{script_name} এর সাথে এগিয়ে যাওয়ার আগে নিম্নলিখিত বৈশিষ্ট্যগুলি প্রয়োজন:",
   "needed_requirements_footer": "এই প্রয়োজনীয় বৈশিষ্ট্যগুলি প্রথমে ইনস্টল করা হবে, তারপর প্রধান স্ক্রিপ্ট চলতে থাকবে।",
-  "libvirt_desc": "virt-manager, libvirt এবং qemu ইনস্টল এবং কনফিগার করুন।"
+  "libvirt_desc": "virt-manager, libvirt এবং qemu ইনস্টল এবং কনফিগার করুন।",
+  "zash_desc": "উন্নত সেশন ব্যবস্থাপনা এবং SSH ওয়ার্কফ্লো সহ আধুনিক GTK4 টার্মিনাল।",
+  "kind_desc": "স্থানীয় Kubernetes উন্নয়নের জন্য স্টার্টার kind এবং kubectl সেটআপ।",
+  "hiddify_desc": "Hiddify VPN ক্লায়েন্ট।",
+  "term_view_copy": "আউটপুট লগ অনুলিপি করুন"
 }

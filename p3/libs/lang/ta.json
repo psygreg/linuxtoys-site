@@ -343,5 +343,9 @@
   "needed_requirements_title": "தேவைகள்",
   "needed_requirements_message": "{script_name} உடன் தொடர்வதற்கு முன் பின்வரும் அம்சங்கள் தேவை:",
   "needed_requirements_footer": "இந்த தேவையான அம்சங்கள் முதலில் நிறுவப்படும், பிறகு முக்கிய திரைப்பதிவு தொடரும்.",
-  "libvirt_desc": "virt-manager, libvirt மற்றும் qemu ஐ நிறுவுங்கள் மற்றும் கட்டமைக்கவும்."
+  "libvirt_desc": "virt-manager, libvirt மற்றும் qemu ஐ நிறுவுங்கள் மற்றும் கட்டமைக்கவும்.",
+  "zash_desc": "மேம்பட்ட அமர்வு மேலாண்மை மற்றும் SSH பணிப்பாய்களைக் கொண்ட நவீன GTK4 டெர்மினல்.",
+  "kind_desc": "உள்ளூர் Kubernetes வளர்ச்சிக்கான ஸ்டார்டர் kind மற்றும் kubectl அமைப்பு।",
+  "hiddify_desc": "Hiddify VPN கிளையன்ட்.",
+  "term_view_copy": "வெளியீட்டு பதிவைப் பிரতிலிபி செய்யுங்கள்"
 }

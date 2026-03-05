@@ -345,5 +345,9 @@
   "needed_requirements_title": "דרישות",
   "needed_requirements_message": "התכונות הבאות נדרשות לפני שתמשיכו עם {script_name}:",
   "needed_requirements_footer": "תכונות נדרשות אלה יותקנו תחילה, ואז הסקריפט הראשי יימשך.",
-  "libvirt_desc": "התקן והגדר את virt-manager, libvirt ו-qemu."
+  "libvirt_desc": "התקן והגדר את virt-manager, libvirt ו-qemu.",
+  "zash_desc": "טרמינל GTK4 מודרני עם ניהול הפעלות מתקדם וזרימות עבודה SSH.",
+  "kind_desc": "הגדרת התחלה של kind ו-kubectl לפיתוח Kubernetes מקומי.",
+  "hiddify_desc": "לקוח Hiddify VPN.",
+  "term_view_copy": "העתק את ההתחברות למוצא"
 }

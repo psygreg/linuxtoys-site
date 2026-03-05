@@ -345,5 +345,9 @@
   "needed_requirements_title": "Anforderungen",
   "needed_requirements_message": "Die folgenden Funktionen sind erforderlich, bevor Sie {script_name} fortsetzen:",
   "needed_requirements_footer": "Diese erforderlichen Funktionen werden zuerst installiert, dann wird das Hauptskript fortgesetzt.",
-  "libvirt_desc": "Installieren und konfigurieren Sie virt-manager, libvirt und qemu."
+  "libvirt_desc": "Installieren und konfigurieren Sie virt-manager, libvirt und qemu.",
+  "zash_desc": "Modernes GTK4-Terminal mit fortschrittlicher Sitzungsverwaltung und SSH-Workflows.",
+  "kind_desc": "Starter-Setup für kind und kubectl für die lokale Kubernetes-Entwicklung.",
+  "hiddify_desc": "Hiddify VPN-Client.",
+  "term_view_copy": "Ausgabeprotokoll kopieren"
 }

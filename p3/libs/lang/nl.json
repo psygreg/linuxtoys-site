@@ -345,5 +345,9 @@
   "needed_requirements_title": "Vereisten",
   "needed_requirements_message": "De volgende functies zijn vereist voordat u doorgaat met {script_name}:",
   "needed_requirements_footer": "Deze vereiste functies worden eerst geïnstalleerd, waarna het hoofdscript wordt voortgezet.",
-  "libvirt_desc": "Installeer en configureer virt-manager, libvirt en qemu."
+  "libvirt_desc": "Installeer en configureer virt-manager, libvirt en qemu.",
+  "zash_desc": "Moderne GTK4-terminal met geavanceerd sessiebeheer en SSH-workflows.",
+  "kind_desc": "Starter kind en kubectl instelling voor lokale Kubernetes-ontwikkeling.",
+  "hiddify_desc": "Hiddify VPN-client.",
+  "term_view_copy": "Uitvoerlogboek kopiëren"
 }

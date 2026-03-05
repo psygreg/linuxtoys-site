@@ -1,7 +1,7 @@
 #!/bin/bash
 # name: Hiddify
 # version: 1.0
-# description: Hiddify VPN client
+# description: hiddify_desc
 # icon: hiddify.png
 # compat: ubuntu, debian, fedora, arch, cachy, suse, ostree, ublue
 # repo: https://github.com/hiddify/hiddify-app

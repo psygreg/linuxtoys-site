@@ -345,5 +345,9 @@
   "needed_requirements_title": "Kërkesa",
   "needed_requirements_message": "Veçoritë e mëposhtme janë të nevojshme para se të vazhdohet me {script_name}:",
   "needed_requirements_footer": "Këto veçori të nevojshme do të instalohen fillimisht, pastaj skripti kryesor do të vazhdojë.",
-  "libvirt_desc": "Instaloni dhe konfigurojini virt-manager, libvirt dhe qemu."
+  "libvirt_desc": "Instaloni dhe konfigurojini virt-manager, libvirt dhe qemu.",
+  "zash_desc": "Terminal GTK4 modern me menaxhim të avancuar të seancës dhe fluxe pune SSH.",
+  "kind_desc": "Vendosja e fillimit të kind dhe kubectl për zhvillimin lokal të Kubernetes.",
+  "hiddify_desc": "Klient Hiddify VPN.",
+  "term_view_copy": "Kopjo regjistrin e daljes"
 }

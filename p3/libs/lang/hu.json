@@ -345,5 +345,9 @@
   "needed_requirements_title": "Követelmények",
   "needed_requirements_message": "A következő funkciók szükségesek, mielőtt folytatna a {script_name} verzióval:",
   "needed_requirements_footer": "Ezek a szükséges funkciók először telepítésre kerülnek, majd a fő szkript folytatódik.",
-  "libvirt_desc": "Telepítse és konfigurálja a virt-manager, libvirt és qemu alkalmazást."
+  "libvirt_desc": "Telepítse és konfigurálja a virt-manager, libvirt és qemu alkalmazást.",
+  "zash_desc": "Korszerű GTK4 terminál fejlett munkamenet-kezeléssel és SSH-munkafolyamatokkal.",
+  "kind_desc": "Startercél és kubectl beállítás a helyi Kubernetes fejlesztéshez.",
+  "hiddify_desc": "Hiddify VPN kliens.",
+  "term_view_copy": "Kimeneti napló másolása"
 }

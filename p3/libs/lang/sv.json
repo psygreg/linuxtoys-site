@@ -345,5 +345,9 @@
   "needed_requirements_title": "Krav",
   "needed_requirements_message": "Följande funktioner krävs innan du fortsätter med {script_name}:",
   "needed_requirements_footer": "Dessa obligatoriska funktioner kommer att installeras först, sedan fortsätter huvudskriptet.",
-  "libvirt_desc": "Installera och konfigurera virt-manager, libvirt och qemu."
+  "libvirt_desc": "Installera och konfigurera virt-manager, libvirt och qemu.",
+  "zash_desc": "Modernt GTK4-terminal med avancerad sessionshantering och SSH-arbetsflöden.",
+  "kind_desc": "Starterkonfiguration av kind och kubectl för lokal Kubernetes-utveckling.",
+  "hiddify_desc": "Hiddify VPN-klient.",
+  "term_view_copy": "Kopiera utdatalogg"
 }

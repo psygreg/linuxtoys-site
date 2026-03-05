@@ -345,5 +345,9 @@
   "needed_requirements_title": "လိုအပ်ချက်များ",
   "needed_requirements_message": "{script_name} ကို ဆက်လက်လုပ်ဆောင်မီ အောက်ပါ အင်္ဂါရပ်များ လိုအပ်ပါသည်:",
   "needed_requirements_footer": "ဤလိုအပ်သည့် အင်္ဂါရပ်များ ကို ဦးစွာ ထည့်သွင်းမည်ဖြစ်ပြီး၊ ထို့နောက် အဓိက စာသားများ သည် ဆက်လက်မည်ဖြစ်သည်။",
-  "libvirt_desc": "virt-manager, libvirt နှင့် qemu ကို ထည့်သွင်းပြီး ပြင်ဆင်သည်။"
+  "libvirt_desc": "virt-manager, libvirt နှင့် qemu ကို ထည့်သွင်းပြီး ပြင်ဆင်သည်။",
+  "zash_desc": "အဆင့်မြင့် အစုအဝေးစီမံခန့်ခွဲမှု နှင့် SSH အလုပ်သင်္ဘောတွေ ရှိသော ခေတ်စားသည့် GTK4 အဆုံးအဖြတ်။",
+  "kind_desc": "ဒေသည Kubernetes တီထွင်မှုအတွက် စတင်သည့် kind နှင့် kubectl သတ်မှတ်ချက်။",
+  "hiddify_desc": "Hiddify VPN အကောင်အထည်။",
+  "term_view_copy": "အထွက်လုံးချင်းယူခြင်း"
 }

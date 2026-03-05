@@ -345,5 +345,9 @@
   "needed_requirements_title": "Reikalavimai",
   "needed_requirements_message": "Toliau nurodytai funkcijos reikalingos prieš tęsiant {script_name}:",
   "needed_requirements_footer": "Šios reikalingos funkcijos bus sumontuotos pirmiausia, tada tęsis pagrindinė skripta.",
-  "libvirt_desc": "Įdiekite ir sukonfigūruokite virt-manager, libvirt ir qemu."
+  "libvirt_desc": "Įdiekite ir sukonfigūruokite virt-manager, libvirt ir qemu.",
+  "zash_desc": "Šiuolaikinis GTK4 terminalas su pažangiu sesijų valdymu ir SSH darbo eigomis.",
+  "kind_desc": "Pradinio kind ir kubectl nustatymo skirtas vietiniam Kubernetes kūrimui.",
+  "hiddify_desc": "Hiddify VPN klientas.",
+  "term_view_copy": "Kopijuoti išvesties žurnalą"
 }

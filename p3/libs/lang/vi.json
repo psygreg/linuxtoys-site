@@ -345,5 +345,9 @@
   "needed_requirements_title": "Yêu cầu",
   "needed_requirements_message": "Các tính năng sau đây cần thiết trước khi tiếp tục với {script_name}:",
   "needed_requirements_footer": "Các tính năng cần thiết này sẽ được cài đặt trước, sau đó tập lệnh chính sẽ tiếp tục.",
-  "libvirt_desc": "Cài đặt và cấu hình virt-manager, libvirt và qemu."
+  "libvirt_desc": "Cài đặt và cấu hình virt-manager, libvirt và qemu.",
+  "zash_desc": "Terminal GTK4 hiện đại với quản lý phiên nâng cao và quy trình công việc SSH.",
+  "kind_desc": "Cài đặt kind và kubectl bắt đầu cho phát triển Kubernetes cục bộ.",
+  "hiddify_desc": "Máy khách Hiddify VPN.",
+  "term_view_copy": "Sao chép nhật ký đầu ra"
 }

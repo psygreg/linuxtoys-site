@@ -345,5 +345,9 @@
   "needed_requirements_title": "Zahteve",
   "needed_requirements_message": "Naslednje funkcije so potrebne pred nadaljevanjem s {script_name}:",
   "needed_requirements_footer": "Te potrebne funkcije bodo najprej nameščene, nato pa se bo glavni skript nadaljeval.",
-  "libvirt_desc": "Namestite in nastavite virt-manager, libvirt in qemu."
+  "libvirt_desc": "Namestite in nastavite virt-manager, libvirt in qemu.",
+  "zash_desc": "Sodoben terminal GTK4 s naprednim upravljanjem sej in delovnimi tokovi SSH.",
+  "kind_desc": "Začetni kind in kubectl nastavi za lokalni razvoj Kubernetes.",
+  "hiddify_desc": "Odjemalec Hiddify VPN.",
+  "term_view_copy": "Kopiraj izhodny dnevnik"
 }

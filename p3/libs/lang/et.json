@@ -345,5 +345,9 @@
   "needed_requirements_title": "Nõuded",
   "needed_requirements_message": "Järgmised funktsioonid on nõutavad enne {script_name} jätkamist:",
   "needed_requirements_footer": "Need nõutavad funktsioonid paigaldatakse esmalt, seejärel jätkub peamine skript.",
-  "libvirt_desc": "Paigaldage ja konfigureerige virt-manager, libvirt ja qemu."
+  "libvirt_desc": "Paigaldage ja konfigureerige virt-manager, libvirt ja qemu.",
+  "zash_desc": "Kaasaegne GTK4 terminal koos täpsema istungi hallimise ja SSH töövoogudega.",
+  "kind_desc": "Algse kind ja kubectl seadistus kohalikule Kubernetes arendusele.",
+  "hiddify_desc": "Hiddify VPN klient.",
+  "term_view_copy": "Väljund logi kopeerimine"
 }

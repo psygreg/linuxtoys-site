@@ -345,5 +345,9 @@
   "needed_requirements_title": "Mga Kinakailangan",
   "needed_requirements_message": "Ang mga sumusunod na feature ay kinakailangan bago magpatuloy sa {script_name}:",
   "needed_requirements_footer": "Ang mga kinakailangang feature na ito ay ilalagay muna, pagkatapos ang pangunahing script ay magpapatuloy.",
-  "libvirt_desc": "Mag-install at i-configure ang virt-manager, libvirt at qemu."
+  "libvirt_desc": "Mag-install at i-configure ang virt-manager, libvirt at qemu.",
+  "zash_desc": "Modernong terminal GTK4 na may advanced na pagsasaayos ng sesyon at SSH workflows.",
+  "kind_desc": "Starter kind at kubectl setup para sa lokal na pag-unlad ng Kubernetes.",
+  "hiddify_desc": "Kliyente ng Hiddify VPN.",
+  "term_view_copy": "Kopyahin ang Output Log"
 }

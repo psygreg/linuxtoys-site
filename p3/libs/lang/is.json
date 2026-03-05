@@ -345,5 +345,9 @@
   "needed_requirements_title": "Kröfur",
   "needed_requirements_message": "Eftirfarandi eiginleikar eru nauðsynlegir áður en haldið er áfram með {script_name}:",
   "needed_requirements_footer": "Þessir nauðsynlegu eiginleikar verða settir upp fyrst, síðan mun aðalskriftið halda áfram.",
-  "libvirt_desc": "Settu upp og stilltu virt-manager, libvirt og qemu."
+  "libvirt_desc": "Settu upp og stilltu virt-manager, libvirt og qemu.",
+  "zash_desc": "Nútímalegur GTK4 skjáherramatur með háþróaðri lotastjórnun og SSH-verkum.",
+  "kind_desc": "Hafta kind og kubectl uppsetning fyrir staðbundna Kubernetes þróun.",
+  "hiddify_desc": "Hiddify VPN biðlari.",
+  "term_view_copy": "Afrita útfærslu annál"
 }

@@ -347,5 +347,9 @@
   "needed_requirements_title": "要求",
   "needed_requirements_message": "继续使用 {script_name} 之前需要以下功能:",
   "needed_requirements_footer": "这些必需的功能将首先安装，然后主脚本将继续进行。",
-  "libvirt_desc": "安装并配置 virt-manager、libvirt 和 qemu。"
+  "libvirt_desc": "安装并配置 virt-manager、libvirt 和 qemu。",
+  "zash_desc": "具有高级会话管理和 SSH 工作流的现代 GTK4 终端。",
+  "kind_desc": "本地 Kubernetes 开发的启动 kind 和 kubectl 设置。",
+  "hiddify_desc": "Hiddify VPN 客户端。",
+  "term_view_copy": "复制输出日志"
 }

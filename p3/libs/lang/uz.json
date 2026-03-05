@@ -344,5 +344,9 @@
   "needed_requirements_title": "Talablar",
   "needed_requirements_message": "{script_name} bilan davom etishdan oldin quyidagi xususiyatlar talab qilinadi:",
   "needed_requirements_footer": "Bu kerakli xususiyatlar avval o'rnatiladi, so'ng asosiy skript davom etadi.",
-  "libvirt_desc": "virt-manager, libvirt va qemuни o'rnating va sozlang."
+  "libvirt_desc": "virt-manager, libvirt va qemuни o'rnating va sozlang.",
+  "zash_desc": "Peshqadamiy seans boshqaruvi va SSH ish oqimlari bilan zamonaviy GTK4 terminali.",
+  "kind_desc": "Mahalliy Kubernetes ishlab chiqish uchun starter kind va kubectl sozlamasi.",
+  "hiddify_desc": "Hiddify VPN mijozi.",
+  "term_view_copy": "Chiqish jurnalini nusxa qiling"
 }

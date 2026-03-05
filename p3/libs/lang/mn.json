@@ -344,5 +344,9 @@
   "needed_requirements_title": "Шаардлага",
   "needed_requirements_message": "Дараа дх бүтээлүүд {script_name}-тай үргэлжлүүлэхээс өмнө шаардлагатай:",
   "needed_requirements_footer": "Эдгээр шаардлагатай функцууд эхлээд суулгагдаж, дараа нь үндсэн скрипт үргэлжлүүлнэ.",
-  "libvirt_desc": "virt-manager, libvirt болон qemu-г суулгаж, тохируулна."
+  "libvirt_desc": "virt-manager, libvirt болон qemu-г суулгаж, тохируулна.",
+  "zash_desc": "Сесийн мэргэжлийн удирдлага болон SSH ажлын урсгалтай орчин үеийн GTK4 терминал.",
+  "kind_desc": "Үндэсний Kubernetes хөгжүүлэлтийн төлөөлөл kind болон kubectl байрлалын тохирол.",
+  "hiddify_desc": "Hiddify VPN үйлчлүүлэгч.",
+  "term_view_copy": "Гамма гадсын логыг хуулах"
 }

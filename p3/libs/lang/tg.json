@@ -345,5 +345,9 @@
   "needed_requirements_title": "Талаботҳо",
   "needed_requirements_message": "Хусусиятҳои зеринро пеш аз идома бо {script_name} талаб мекунанд:",
   "needed_requirements_footer": "Ин хусусиятҳои талаботӣ аввал насб шудаанд, баъди он раёи асосӣ идома хоҳад ёфт.",
-  "libvirt_desc": "virt-manager, libvirt ва qemuро насб ва танзим кунед."
+  "libvirt_desc": "virt-manager, libvirt ва qemuро насб ва танзим кунед.",
+  "zash_desc": "Терминали GTK4 муосири бо раҳборӣ пешрафтаи сеанс ва қатъҳои кор SSH.",
+  "kind_desc": "Қарор kind ва kubectl барои рушди Kubernetes маҳаллӣ.",
+  "hiddify_desc": "Мизоҷи Hiddify VPN.",
+  "term_view_copy": "Қайд ҳуҷҷаа даромади"
 }

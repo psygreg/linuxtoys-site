@@ -343,5 +343,9 @@
   "needed_requirements_title": "Mahitaji",
   "needed_requirements_message": "Sifa zifuatazo zinahitajika kabla ya kuendelea na {script_name}:",
   "needed_requirements_footer": "Vipengele hivi vya mahitaji vitakamatia kwanza, kisha hati kuu itaendelea.",
-  "libvirt_desc": "Sakinisha na kuandika virt-manager, libvirt na qemu."
+  "libvirt_desc": "Sakinisha na kuandika virt-manager, libvirt na qemu.",
+  "zash_desc": "Kituo cha haraka cha GTK4 cha kisasa kilicho na usimamizi wa jukwaa linalotumia na mtiririko wa kazi wa SSH.",
+  "kind_desc": "Mpango wa kuanza kwa kind na kubectl kwa maendeleo ya Kubernetes ya ndani.",
+  "hiddify_desc": "Mteja wa Hiddify VPN.",
+  "term_view_copy": "Nakili Kumbukumbu ya Matokeo"
 }

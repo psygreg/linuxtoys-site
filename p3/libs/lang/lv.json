@@ -345,5 +345,9 @@
   "needed_requirements_title": "Prasības",
   "needed_requirements_message": "Šādas funkcijas ir nepieciešamas pirms turpināšanas ar {script_name}:",
   "needed_requirements_footer": "Šīs nepieciešamās funkcijas tiks instalētas vispirms, tad turpināsies galvenais skripts.",
-  "libvirt_desc": "Instalējiet un konfigurējiet virt-manager, libvirt un qemu."
+  "libvirt_desc": "Instalējiet un konfigurējiet virt-manager, libvirt un qemu.",
+  "zash_desc": "Moderns GTK4 terminālis ar uzlabotu sesiju pārvaldību un SSH darbplūsmām.",
+  "kind_desc": "Starta kind un kubectl iestatīšana lokālai Kubernetes izstrādei.",
+  "hiddify_desc": "Hiddify VPN klients.",
+  "term_view_copy": "Kopēt izslēgšanas žurnālu"
 }

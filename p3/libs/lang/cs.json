@@ -345,5 +345,9 @@
   "needed_requirements_title": "Požadavky",
   "needed_requirements_message": "Následující funkce jsou vyžadovány před pokračováním v {script_name}:",
   "needed_requirements_footer": "Tyto požadované funkce budou nainstalovány jako první, poté bude pokračovat hlavní skript.",
-  "libvirt_desc": "Nainstalujte a nakonfigurujte virt-manager, libvirt a qemu."
+  "libvirt_desc": "Nainstalujte a nakonfigurujte virt-manager, libvirt a qemu.",
+  "zash_desc": "Moderní GTK4 terminál s pokročilou správou relací a pracovními postupy SSH.",
+  "kind_desc": "Úvodní nastavení kind a kubectl pro lokální vývoj Kubernetes.",
+  "hiddify_desc": "Klient Hiddify VPN.",
+  "term_view_copy": "Kopírovat výstupní protokol"
 }

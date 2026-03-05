@@ -345,5 +345,9 @@
   "needed_requirements_title": "Захтеви",
   "needed_requirements_message": "Следеће функције су потребне пре него што наставите са {script_name}:",
   "needed_requirements_footer": "Ове потребне функције ће бити инсталиране прво, а затим ће главна скрипта наставити.",
-  "libvirt_desc": "Инсталирајте и конфигурирајте virt-manager, libvirt и qemu."
+  "libvirt_desc": "Инсталирајте и конфигурирајте virt-manager, libvirt и qemu.",
+  "zash_desc": "Савремени GTK4 терминал с напредним управљањем сеансом и SSH радним токовима.",
+  "kind_desc": "Почетна врста и kubectl постава за локални развој Kubernetes.",
+  "hiddify_desc": "Хиддифи ВПН клијент.",
+  "term_view_copy": "Копирај излазни дневник"
 }

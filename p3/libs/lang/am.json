@@ -345,5 +345,9 @@
   "needed_requirements_title": "መስፈርቶች",
   "needed_requirements_message": "ከ{script_name} ጋር ወደ ፊት ከመስፈር በፊት የሚከተሉት ባህሪዎች ያስፈልጋሉ:",
   "needed_requirements_footer": "እነዚህ አስፈላጊ ባህሪዎች መጀመሪያ ይገጠሙታል፣ ከዚያ ዋናው ስክሪፕት ይቀጥላል።",
-  "libvirt_desc": "virt-manager፣ libvirt እና qemu ይጭኑ እና ይዋቅሩ።"
+  "libvirt_desc": "virt-manager፣ libvirt እና qemu ይጭኑ እና ይዋቅሩ።",
+  "zash_desc": "ዘመናዊ GTK4 ተርሚናል ከላቀ ክፍለ-ጊዜ 리리ንግ እና SSH ሥራዎች ጋር።",
+  "kind_desc": "ለአካባቢ Kubernetes ልማት ጅምር kind እና kubectl ማዋቀር።",
+  "hiddify_desc": "Hiddify VPN ক্লায়েন্ট।",
+  "term_view_copy": "አউትपুට ሎግ ቅጂ"
 }

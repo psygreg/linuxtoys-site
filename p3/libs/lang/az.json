@@ -344,5 +344,9 @@
   "needed_requirements_title": "Tələblər",
   "needed_requirements_message": "{script_name} ilə davam etməzdən əvvəl aşağıdakı xüsusiyyətlər tələb olunur:",
   "needed_requirements_footer": "Bu tələb olunan xüsusiyyətlər əvvəlcə quraşdırılacaq, sonra əsas skript davam edəcəkdir.",
-  "libvirt_desc": "virt-manager, libvirt və qemu quraşdırın və konfiqurasiya edin."
+  "libvirt_desc": "virt-manager, libvirt və qemu quraşdırın və konfiqurasiya edin.",
+  "zash_desc": "Təkmilləşdirilmiş sesiya idarəçiliyi və SSH iş axını ilə müasır GTK4 terminalı.",
+  "kind_desc": "Yerli Kubernetes inkişafı üçün başlanğıc kind və kubectl quraşdırması.",
+  "hiddify_desc": "Hiddify VPN müştərisi.",
+  "term_view_copy": "Çıxış Jurnalını Kopyala"
 }

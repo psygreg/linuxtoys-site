@@ -345,5 +345,9 @@
   "needed_requirements_title": "Պահանջներ",
   "needed_requirements_message": "Հետևյալ գործառույթները անհրաժեշտ են {script_name}-ի հետ շարունակելուց առաջ:",
   "needed_requirements_footer": "Այս անհրաժեշտ գործառույթները կտեղադրվեն առաջին հերթին, ապա հիմնական սկրիպտը կշարունակվի:",
-  "libvirt_desc": "Տեղադրեք և կազմավորեք virt-manager, libvirt և qemu:"
+  "libvirt_desc": "Տեղադրեք և կազմավորեք virt-manager, libvirt և qemu:",
+  "zash_desc": "Ժամանակակա GTK4 տերմինալ՝ առաջադեմ նստեցի կառավարմամբ և SSH հոսքերով:",
+  "kind_desc": "Starter kind և kubectl կազմավորում տեղական Kubernetes զարգացման համար:",
+  "hiddify_desc": "Hiddify VPN հաճախորդ:",
+  "term_view_copy": "Պատճենել արտադրանքի տեղեկամատյան:"
 }

@@ -345,5 +345,9 @@
   "needed_requirements_title": "요구 사항",
   "needed_requirements_message": "{script_name}을(를) 계속하기 전에 다음 기능이 필요합니다:",
   "needed_requirements_footer": "이러한 필수 기능이 먼저 설치되고 메인 스크립트가 계속됩니다.",
-  "libvirt_desc": "virt-manager, libvirt 및 qemu를 설치하고 구성합니다."
+  "libvirt_desc": "virt-manager, libvirt 및 qemu를 설치하고 구성합니다.",
+  "zash_desc": "고급 세션 관리 및 SSH 워크플로우가 포함된 최신 GTK4 터미널입니다.",
+  "kind_desc": "로컬 Kubernetes 개발을 위한 스타터 kind 및 kubectl 설정입니다.",
+  "hiddify_desc": "Hiddify VPN 클라이언트입니다.",
+  "term_view_copy": "출력 로그 복사"
 }
