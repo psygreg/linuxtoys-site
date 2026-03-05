@@ -1,16 +1,20 @@
-import json, subprocess, os, json, re
-from . import __version__
-import urllib.request
+import json
+import os
+import re
+import subprocess
 import urllib.error
+import urllib.request
+
+from . import __version__
 
 
-class UpdateHelper():
+class UpdateHelper:
     def __init__(self):
         self._current_ver = __version__
         self._latest_ver = {}
 
     def _update_available(self) -> bool:
-        if not os.environ.get('DEV_MODE') == '1':
+        if not os.environ.get("DEV_MODE") == "1":
             if not self._is_from_repository():
                 return self._check_for_updates()
 
@@ -19,7 +23,9 @@ class UpdateHelper():
     def _check_for_updates(self) -> bool:
         self._latest_ver = self._get_latest_version()
 
-        if self._compare_versions(self._current_ver, self._latest_ver.get("tag_name", "")):
+        if self._compare_versions(
+            self._current_ver, self._latest_ver.get("tag_name", "")
+        ):
             return True
         else:
             return False
@@ -32,10 +38,11 @@ class UpdateHelper():
         - 0 if latest == current (up to date)
         - -1 if latest < current (current is newer)
         """
+
         def version_tuple(v):
             # Convert version string to tuple of integers for comparison
             # e.g., "4.3.1" -> (4, 3, 1), "4.3" -> (4, 3, 0)
-            parts = v.split('.')
+            parts = v.split(".")
             return tuple(int(part) for part in parts) + (0,) * (3 - len(parts))
 
         try:
@@ -54,26 +61,61 @@ class UpdateHelper():
 
     def _get_latest_version(self, repo_owner="psygreg", repo_name="linuxtoys") -> dict:
         """
-        Fetch the latest release info from Codeberg API.
+        Fetch the latest release info from GitHub API first, with fallback to Gitea.
+        Returns dict with tag_name and body if successful, empty dict otherwise.
+        """
+        # Try GitHub first
+        github_url = (
+            f"https://api.github.com/repos/{repo_owner}/{repo_name}/releases/latest"
+        )
+        result = self._fetch_from_api(github_url, "GitHub")
+
+        if result and result.get("tag_name"):
+            return result
+
+        # Fallback to Gitea server
+        gitea_url = f"https://git.linux.toys/api/v1/repos/{repo_owner}/{repo_name}/releases/latest"
+        result = self._fetch_from_api(gitea_url, "Gitea")
+
+        if result and result.get("tag_name"):
+            return result
+
+        # If both fail, return empty dict
+        return {"tag_name": "", "body": ""}
+
+    def _fetch_from_api(self, api_url: str, source_name: str) -> dict:
+        """
+        Fetch release information from the given API URL.
         Returns dict with tag_name and body if successful, None otherwise.
         """
         try:
-            api_url = f"https://codeberg.org/api/v1/repos/{repo_owner}/{repo_name}/releases/latest"
             request = urllib.request.Request(api_url)
-            request.add_header('User-Agent', 'LinuxToys-UpdateChecker/1.0')
+            request.add_header("User-Agent", "LinuxToys-UpdateChecker/1.0")
 
             with urllib.request.urlopen(request, timeout=10) as response:
                 if response.status == 200:
-                    data = json.loads(response.read().decode('utf-8'))
+                    data = json.loads(response.read().decode("utf-8"))
                     return {
-                        "tag_name": data.get('tag_name', '').lstrip('v'),
-                        "body": data.get('body', '')
+                        "tag_name": data.get("tag_name", "").lstrip("v"),
+                        "body": data.get("body", ""),
                     }
+        except urllib.error.HTTPError as e:
+            if e.code == 404:
+                print(f"Release not found on {source_name} (404)")
+            else:
+                print(f"HTTP error from {source_name}: {e.code}")
+            return None
+        except urllib.error.URLError as e:
+            print(f"Connection error to {source_name}: {e.reason}")
+            return None
+        except json.JSONDecodeError:
+            print(f"Invalid JSON response from {source_name}")
+            return None
         except Exception as e:
-            print(f"Error fetching latest release: {e}")
-            return {"tag_name": "", "body": ""}
+            print(f"Error fetching from {source_name}: {e}")
+            return None
 
-    def __is_from_git(self, path='.') -> bool:
+    def __is_from_git(self, path=".") -> bool:
         try:
             return (
                 subprocess.call(
@@ -85,7 +127,6 @@ class UpdateHelper():
             )
         except (FileNotFoundError, subprocess.CalledProcessError):
             return False
-
 
     def __is_from_ppa(self) -> bool:
         try:
@@ -102,7 +143,7 @@ class UpdateHelper():
 
     def __is_from_copr(self) -> bool:
         try:
-           return any(
+            return any(
                 list(
                     filter(
                         lambda f: "linuxtoys" in f,
@@ -114,4 +155,8 @@ class UpdateHelper():
             return False
 
     def _is_from_repository(self):
-        return self.__is_from_ppa() or self.__is_from_copr() or self.__is_from_git(os.path.dirname(__file__))
+        return (
+            self.__is_from_ppa()
+            or self.__is_from_copr()
+            or self.__is_from_git(os.path.dirname(__file__))
+        )
