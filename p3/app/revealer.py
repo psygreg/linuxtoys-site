@@ -1,5 +1,5 @@
-from .gtk_common import Gtk
 from . import get_icon_path
+from .gtk_common import Gtk
 
 
 class SupportFooter(Gtk.Box):
@@ -12,9 +12,21 @@ class SupportFooter(Gtk.Box):
 
         self.urls_labels = [
             ("https://linux.toys/knowledgebase.html", "Wiki", "wiki.svg"),
-            ("https://codeberg.org/psygreg/linuxtoys/issues/new", self.translations.get('report_label', 'Report Bug'), "report.svg"),
-            ("https://linux.toys/credits.html", self.translations.get('credits_label', 'Credits'), "credits.svg"),
-            ("https://ko-fi.com/psygreg", self.translations.get('support_footer', 'Support this project'), "sponsor.svg")
+            (
+                "https://git.linux.toys/psygreg/linuxtoys/issues/new",
+                self.translations.get("report_label", "Report Bug"),
+                "report.svg",
+            ),
+            (
+                "https://linux.toys/credits.html",
+                self.translations.get("credits_label", "Credits"),
+                "credits.svg",
+            ),
+            (
+                "https://ko-fi.com/psygreg",
+                self.translations.get("support_footer", "Support this project"),
+                "sponsor.svg",
+            ),
         ]
 
         for i, (url, label, icon) in enumerate(self.urls_labels):
@@ -39,22 +51,36 @@ class RevealerFooter(Gtk.Revealer):
 
         container = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=0)
 
-        self.button_box = Gtk.ButtonBox(orientation=Gtk.Orientation.HORIZONTAL, spacing=10)
+        self.button_box = Gtk.ButtonBox(
+            orientation=Gtk.Orientation.HORIZONTAL, spacing=10
+        )
         self.button_box.set_layout(Gtk.ButtonBoxStyle.CENTER)
         self.button_box.set_margin_top(5)
         self.button_box.set_margin_bottom(5)
 
-        self.button_next = Gtk.Button(label=self.parent.translations.get("next_label", "Next"))
-        self.button_next.set_image(Gtk.Image.new_from_icon_name("go-next", Gtk.IconSize.BUTTON))
+        self.button_next = Gtk.Button(
+            label=self.parent.translations.get("next_label", "Next")
+        )
+        self.button_next.set_image(
+            Gtk.Image.new_from_icon_name("go-next", Gtk.IconSize.BUTTON)
+        )
         self.button_next.set_always_show_image(True)
-        self.button_next.set_tooltip_text(self.parent.translations.get("next_label", "Next"))
+        self.button_next.set_tooltip_text(
+            self.parent.translations.get("next_label", "Next")
+        )
         self.button_next.set_size_request(125, 35)
         self.button_next.connect("clicked", self._on_next_clicked)
 
-        self.button_cancel = Gtk.Button(label=self.parent.translations.get("cancel_label", "Cancel"))
-        self.button_cancel.set_image(Gtk.Image.new_from_icon_name("window-close", Gtk.IconSize.BUTTON))
+        self.button_cancel = Gtk.Button(
+            label=self.parent.translations.get("cancel_label", "Cancel")
+        )
+        self.button_cancel.set_image(
+            Gtk.Image.new_from_icon_name("window-close", Gtk.IconSize.BUTTON)
+        )
         self.button_cancel.set_always_show_image(True)
-        self.button_cancel.set_tooltip_text(self.parent.translations.get("cancel_label", "Cancel"))
+        self.button_cancel.set_tooltip_text(
+            self.parent.translations.get("cancel_label", "Cancel")
+        )
         self.button_cancel.set_size_request(125, 35)
         self.button_cancel.connect("clicked", self._on_cancel_clicked)
 
