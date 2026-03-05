@@ -1,8 +1,16 @@
 import gi
 
 gi.require_version("Gtk", "3.0")
-from gi.repository import Gtk, Pango, Gdk, GLib
-import webbrowser, json, re, subprocess, threading, sys, os
+import json
+import os
+import re
+import subprocess
+import sys
+import threading
+import webbrowser
+
+from gi.repository import Gdk, GLib, Gtk, Pango
+
 from . import __version__
 
 
@@ -14,7 +22,7 @@ class DialogBase(Gtk.MessageDialog):
             flags=0,
             buttons=Gtk.ButtonsType.NONE,
             message_type=message_type,
-            modal=True
+            modal=True,
         )
         self.set_markup(message)
         self.add_buttons(buttons)
@@ -34,10 +42,11 @@ class DialogBase(Gtk.MessageDialog):
 class DialogRestart(DialogBase):
     def __init__(self, parent):
         super().__init__(
-            parent, "Update complete!",
+            parent,
+            "Update complete!",
             "<b>Restart the app to access the newest features and improvements.</b>",
             [("Restart", Gtk.ResponseType.OK), ("Cancel", Gtk.ResponseType.CANCEL)],
-            Gtk.MessageType.OTHER
+            Gtk.MessageType.OTHER,
         )
 
     def _on_response(self, dialog, response_id):
@@ -51,10 +60,11 @@ class DialogRestart(DialogBase):
 class DialogError(DialogBase):
     def __init__(self, parent, error_message):
         super().__init__(
-            parent, "Error",
+            parent,
+            "Error",
             f"<b>An error occurred during the update process.</b>\n{error_message}",
             [("OK", Gtk.ResponseType.OK)],
-            Gtk.MessageType.ERROR
+            Gtk.MessageType.ERROR,
         )
 
     def _on_response(self, dialog, response_id):
@@ -71,14 +81,16 @@ class UpdateDialog(Gtk.Dialog):
         self.changelog = changelog or "{'tag_name': '', 'body': ''}"
         self.parent = parent
 
-        self.add_button("Install Update", Gtk.ResponseType.OK).get_style_context().add_class("suggested-action")
+        self.add_button(
+            "Install Update", Gtk.ResponseType.OK
+        ).get_style_context().add_class("suggested-action")
         self.add_button("Ignore", Gtk.ResponseType.NO)
 
         vbox = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=0)
 
         self._labels = [
             f"<b>A new version {self.changelog.get('tag_name', '0.0.0')} of LinuxToys is available.</b>",
-            f"Current version: <b>{__version__}</b>"
+            f"Current version: <b>{__version__}</b>",
         ]
 
         for _l in self._labels:
@@ -121,23 +133,27 @@ class UpdateDialog(Gtk.Dialog):
     def _run_process(self):
         self.destroy()
         try:
-            with open("/tmp/.self_update_lt", 'w') as f:
-                script_content = '''#!/bin/bash
+            with open("/tmp/.self_update_lt", "w") as f:
+                script_content = """#!/bin/bash
 source "$SCRIPT_DIR/libs/linuxtoys.lib"
 sudo_rq
 curl -fsSL https://linux.toys/install.sh | bash
-'''
+"""
                 f.write(script_content)
 
-            self.parent.open_term_view([{
-                'icon': "linuxtoys.svg",
-                'name': "Update LinuxToys",
-                'description': "Update to new version of LinuxToys.",
-                'repo': "https://codeberg.org/psygreg/linuxtoys/releases",
-                'path': "/tmp/.self_update_lt",
-                'self_update': True,
-                'is_script': True
-            }])
+            self.parent.open_term_view(
+                [
+                    {
+                        "icon": "linuxtoys.svg",
+                        "name": "Update LinuxToys",
+                        "description": "Update to new version of LinuxToys.",
+                        "repo": "https://git.linux.toys/psygreg/linuxtoys/releases",
+                        "path": "/tmp/.self_update_lt",
+                        "self_update": True,
+                        "is_script": True,
+                    }
+                ]
+            )
         except Exception as e:
             DialogError(self.parent, str(e)).show()
 
@@ -160,9 +176,7 @@ curl -fsSL https://linux.toys/install.sh | bash
 
         tags = iter_at_location.get_tags()
         over_link = any(
-            "link" in t.get_property("name")
-            for t in tags
-            if t.get_property("name")
+            "link" in t.get_property("name") for t in tags if t.get_property("name")
         )
 
         window = textview.get_window(Gtk.TextWindowType.TEXT)
