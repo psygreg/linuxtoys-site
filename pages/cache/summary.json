@@ -1,0 +1,27 @@
+{
+  "lastUpdated": "2026-04-15T19:02:16.104Z",
+  "categoryCount": 10,
+  "totalTools": 227,
+  "supportedLanguages": [
+    "en",
+    "pt",
+    "es",
+    "fr",
+    "de",
+    "zh",
+    "ja",
+    "ru"
+  ],
+  "categories": [
+    "chat",
+    "devs",
+    "drivers",
+    "extra",
+    "game",
+    "office",
+    "repos",
+    "sysadm",
+    "utils",
+    "privacy"
+  ]
+}

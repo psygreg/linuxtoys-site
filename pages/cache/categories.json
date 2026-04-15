@@ -1,0 +1,1681 @@
+{
+  "chat": {
+    "name": "chat",
+    "icon": "chat.svg",
+    "description": "chat_desc",
+    "mode": "menu",
+    "tools": [
+      {
+        "name": "Discord",
+        "description": "discord_desc",
+        "icon": "discord.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/chat/discord.sh"
+      },
+      {
+        "name": "Microsoft Teams",
+        "description": "msteams_desc",
+        "icon": "teams.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/chat/msteams.sh"
+      },
+      {
+        "name": "Signal Desktop",
+        "description": "signal_desc",
+        "icon": "signal.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/chat/signal_desktop.sh"
+      },
+      {
+        "name": "Slack",
+        "description": "slack_desc",
+        "icon": "slack.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/chat/slack.sh"
+      },
+      {
+        "name": "Stoat",
+        "description": "stoat_desc",
+        "icon": "stoat.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/chat/stoat.sh"
+      },
+      {
+        "name": "Telegram",
+        "description": "telegram_desc",
+        "icon": "telegram.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/chat/telegram.sh"
+      },
+      {
+        "name": "ZapZap",
+        "description": "zap_desc",
+        "icon": "zapzap.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/chat/zapzap.sh"
+      }
+    ],
+    "subcategories": {}
+  },
+  "devs": {
+    "name": "devs",
+    "icon": "ide.png",
+    "description": "devs_desc",
+    "mode": "menu",
+    "tools": [
+      {
+        "name": "Adoptium Temurin® JDK",
+        "description": "adoptium_desc",
+        "icon": "adoptium.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/devs/adoptium-jdk.sh"
+      },
+      {
+        "name": "Astah Pro",
+        "description": "astapro_desc",
+        "icon": "astahpro.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/devs/astahpro.sh"
+      },
+      {
+        "name": "Docker",
+        "description": "docker_desc",
+        "icon": "docker.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/devs/docker.sh"
+      },
+      {
+        "name": ".NET SDK",
+        "description": "dotnet_desc",
+        "icon": "dotnet.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/devs/dotnet.sh"
+      },
+      {
+        "name": "Fisher",
+        "description": "fisher_desc",
+        "icon": "fish.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/devs/fisher.sh"
+      },
+      {
+        "name": "Godot Engine 4",
+        "description": "godot_desc",
+        "icon": "godot.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/devs/godot.sh"
+      },
+      {
+        "name": "Godot Engine 4 Sharp",
+        "description": "godotsharp_desc",
+        "icon": "godotsh.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/devs/godotsharp.sh"
+      },
+      {
+        "name": "HTTPie",
+        "description": "httpie_desc",
+        "icon": "httpie.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/devs/httpie.sh"
+      },
+      {
+        "name": "Android Studio",
+        "description": "droidstd_desc",
+        "icon": "android-studio.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/devs/ides/androidstd.sh"
+      },
+      {
+        "name": "Visual Studio Code",
+        "description": "code_desc",
+        "icon": "code.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/devs/ides/code.sh"
+      },
+      {
+        "name": "VSCodium",
+        "description": "codium_desc",
+        "icon": "vscodium.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/devs/ides/codium.sh"
+      },
+      {
+        "name": "JetBrains Toolbox",
+        "description": "jbtb_desc",
+        "icon": "jetbrains-toolbox.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/devs/ides/jetbrains-toolbox.sh"
+      },
+      {
+        "name": "Lazyman",
+        "description": "lazyman_desc",
+        "icon": "lazyman.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/devs/ides/lazyman.sh"
+      },
+      {
+        "name": "NeoVim",
+        "description": "nvim_desc",
+        "icon": "neovim.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/devs/ides/neovim.sh"
+      },
+      {
+        "name": "Positron",
+        "description": "positron_desc",
+        "icon": "positron.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/devs/ides/positron.sh"
+      },
+      {
+        "name": "RStudio",
+        "description": "rstudio_desc",
+        "icon": "rstudio.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/devs/ides/rstudio.sh"
+      },
+      {
+        "name": "Sublime Text",
+        "description": "sublime_desc",
+        "icon": "sublime.png",
+        "version": "4",
+        "scriptPath": "p3/scripts/devs/ides/sublimetext.sh"
+      },
+      {
+        "name": "Zed",
+        "description": "zed_desc",
+        "icon": "zed.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/devs/ides/zed.sh"
+      },
+      {
+        "name": "Insomnia",
+        "description": "insomnia_desc",
+        "icon": "insomnia.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/devs/insomnia.sh"
+      },
+      {
+        "name": "Java OpenJDK",
+        "description": "java_desc",
+        "icon": "java.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/devs/java.sh"
+      },
+      {
+        "name": "k6",
+        "description": "k6_desc",
+        "icon": "k6.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/devs/k6.sh"
+      },
+      {
+        "name": "Kind (Kubernetes)",
+        "description": "kind_desc",
+        "icon": "kind.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/devs/kind.sh"
+      },
+      {
+        "name": "Virt-Manager",
+        "description": "libvirt_desc",
+        "icon": "virt-manager.png",
+        "version": "1.1",
+        "scriptPath": "p3/scripts/devs/libvirt-config.sh"
+      },
+      {
+        "name": "Maven",
+        "description": "mvn_desc",
+        "icon": "maven.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/devs/maven.sh"
+      },
+      {
+        "name": "Mise",
+        "description": "mise_desc",
+        "icon": "mise.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/devs/mise.sh"
+      },
+      {
+        "name": "Nala",
+        "description": "nala_desc",
+        "icon": "terminal.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/devs/nala.sh"
+      },
+      {
+        "name": "Node Version Manager",
+        "description": "nvm_desc",
+        "icon": "nvm.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/devs/nvm.sh"
+      },
+      {
+        "name": "Oh My Bash",
+        "description": "omb_desc",
+        "icon": "ohmybash.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/devs/ohmyba.sh"
+      },
+      {
+        "name": "Oh My Zsh",
+        "description": "omz_desc",
+        "icon": "zsh.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/devs/ohmyz.sh"
+      },
+      {
+        "name": "pNPm",
+        "description": "pnpm_desc",
+        "icon": "pnpm.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/devs/pnpm.sh"
+      },
+      {
+        "name": "Portainer CE",
+        "description": "portainer_desc",
+        "icon": "portainer.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/devs/portainer.sh"
+      },
+      {
+        "name": "Postman",
+        "description": "postman_desc",
+        "icon": "postman.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/devs/postman.sh"
+      },
+      {
+        "name": "PyEnv",
+        "description": "pyenv_desc",
+        "icon": "python.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/devs/pyenv.sh"
+      },
+      {
+        "name": "SDKMAN",
+        "description": "sdkman_desc",
+        "icon": "sdkman.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/devs/sdkman.sh"
+      },
+      {
+        "name": "Starship",
+        "description": "starship_desc",
+        "icon": "starship.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/devs/starship.sh"
+      },
+      {
+        "name": "Tailscale",
+        "description": "tailscale_desc",
+        "icon": "tailscale.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/devs/tailscale.sh"
+      },
+      {
+        "name": "Unity Hub",
+        "description": "unityhub_desc",
+        "icon": "unityhub.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/devs/unity.sh"
+      },
+      {
+        "name": "ZeroTier",
+        "description": "zerotier_desc",
+        "icon": "zerotier.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/devs/zerotier.sh"
+      }
+    ],
+    "subcategories": {}
+  },
+  "drivers": {
+    "name": "drivers",
+    "icon": "device.svg",
+    "description": "drivers_desc",
+    "mode": "menu",
+    "tools": [
+      {
+        "name": "Broadcom WiFi",
+        "description": "bcm_desc",
+        "icon": "bcm.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/drivers/bcm.sh"
+      },
+      {
+        "name": "Acer Manager",
+        "description": "damx_desc",
+        "icon": "damx.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/drivers/damx.sh"
+      },
+      {
+        "name": "Intel Compute Runtime",
+        "description": "icr_desc",
+        "icon": "intel.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/drivers/icr.sh"
+      },
+      {
+        "name": "Intel Xe Driver",
+        "description": "intelxe_desc",
+        "icon": "intel.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/drivers/intelxe.sh"
+      },
+      {
+        "name": "Kisak-Mesa",
+        "description": "kisak_desc",
+        "icon": "kisak.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/drivers/kisak-mesa.sh"
+      },
+      {
+        "name": "modsign",
+        "description": "modsign_desc",
+        "icon": "sign.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/drivers/modsign.sh"
+      },
+      {
+        "name": "Nvidia Drivers (v580)",
+        "description": "nv580_desc",
+        "icon": "nvidia.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/drivers/nv-580.sh"
+      },
+      {
+        "name": "Nvidia Drivers",
+        "description": "nv_desc",
+        "icon": "nvidia.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/drivers/nv-deb.sh"
+      },
+      {
+        "name": "Nvidia Drivers (v470)",
+        "description": "nv_desc_470",
+        "icon": "nvidia.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/drivers/nv-ostree-470.sh"
+      },
+      {
+        "name": "Nvidia Drivers",
+        "description": "nv_desc",
+        "icon": "nvidia.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/drivers/nv-ostree.sh"
+      },
+      {
+        "name": "Nvidia Drivers (v470)",
+        "description": "nv_desc_470",
+        "icon": "nvidia.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/drivers/nv-pacman-470.sh"
+      },
+      {
+        "name": "Nvidia Drivers (Open Modules)",
+        "description": "nv_rtx_desc",
+        "icon": "nvidia.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/drivers/nv-pacman.sh"
+      },
+      {
+        "name": "Nvidia Drivers (v470)",
+        "description": "nv_desc_470",
+        "icon": "nvidia.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/drivers/nv-rpm-470.sh"
+      },
+      {
+        "name": "Nvidia Drivers",
+        "description": "nv_desc",
+        "icon": "nvidia.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/drivers/nv-rpm.sh"
+      },
+      {
+        "name": "Nvidia Drivers (v470)",
+        "description": "nv_desc_470",
+        "icon": "nvidia.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/drivers/nv-suse-470.sh"
+      },
+      {
+        "name": "Nvidia Drivers",
+        "description": "nv_desc",
+        "icon": "nvidia.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/drivers/nv-suse.sh"
+      },
+      {
+        "name": "Solus OS Nvidia Fix",
+        "description": "nvfixsolus_desc",
+        "icon": "nvidia.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/drivers/nvfixsolus.sh"
+      },
+      {
+        "name": "OptimusUI",
+        "description": "optimusui_desc",
+        "icon": "optimusui.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/drivers/optimusui.sh"
+      },
+      {
+        "name": "ROCm",
+        "description": "rocm_desc",
+        "icon": "amd.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/drivers/rocm.sh"
+      },
+      {
+        "name": "Realtek WiFi 8821CE",
+        "description": "rtl8821ce_desc",
+        "icon": "rtl.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/drivers/rtl8821ce-arch.sh"
+      },
+      {
+        "name": "Realtek WiFi 8821CE",
+        "description": "rtl8821ce_desc",
+        "icon": "rtl.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/drivers/rtl8821ce-deb.sh"
+      },
+      {
+        "name": "Realtek WiFi 8821CE",
+        "description": "rtl8821ce_desc",
+        "icon": "rtl.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/drivers/rtl8821ce-rpm.sh"
+      },
+      {
+        "name": "RustiCL",
+        "description": "rusticl_desc",
+        "icon": "device.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/drivers/rusticl.sh"
+      },
+      {
+        "name": "Xpadneo",
+        "description": "xneo_desc",
+        "icon": "gaming.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/drivers/xpadneo.sh"
+      }
+    ],
+    "subcategories": {}
+  },
+  "extra": {
+    "name": "extra",
+    "icon": "extras.svg",
+    "description": "extra_desc",
+    "mode": "menu",
+    "tools": [
+      {
+        "name": "Ananicy-cpp",
+        "description": "ananicy_desc",
+        "icon": "optimizer.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/ananicy.sh"
+      },
+      {
+        "name": "AppArmor",
+        "description": "aa_desc",
+        "icon": "apparmor.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/apparmor.sh"
+      },
+      {
+        "name": "archsb",
+        "description": "archsb_desc",
+        "icon": "sirikali.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/archsb.sh"
+      },
+      {
+        "name": "btrfs-Assistant",
+        "description": "btassist_desc",
+        "icon": "btassist.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/btassist.sh"
+      },
+      {
+        "name": "Bubblewrap Fix",
+        "description": "bwrapfix_desc",
+        "icon": "apparmor.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/bwrapfix.sh"
+      },
+      {
+        "name": "cachyconfs",
+        "description": "cachyconfs_desc",
+        "icon": "cachyos.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/cachyconfs.sh"
+      },
+      {
+        "name": "Distrobox Command Handler",
+        "description": "dch_desc",
+        "icon": "cnfh.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/cnfh.sh"
+      },
+      {
+        "name": "codecfix-hw",
+        "description": "codecfix-hw_desc",
+        "icon": "codec.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/codecfix-hw.sh"
+      },
+      {
+        "name": "codecfix",
+        "description": "codecfix_desc",
+        "icon": "codec.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/codecfix.sh"
+      },
+      {
+        "name": "Microsoft CoreFonts",
+        "description": "mscf_desc",
+        "icon": "mscf.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/corefonts.sh"
+      },
+      {
+        "name": "DNSMasq",
+        "description": "dnsmasq_desc",
+        "icon": "dnsmasq.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/dnsmasq.sh"
+      },
+      {
+        "name": "dsplitm",
+        "description": "dsplitm_desc",
+        "icon": "utils.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/dsplitm.sh"
+      },
+      {
+        "name": "EarlyOOM",
+        "description": "earlyoom_desc",
+        "icon": "preload.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/earlyoom.sh"
+      },
+      {
+        "name": "Firefox (no-Snap)",
+        "description": "firefoxsnap_desc",
+        "icon": "firefox.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/firefox-antisnap.sh"
+      },
+      {
+        "name": "GRUB-btrfs",
+        "description": "grubtrfs_desc",
+        "icon": "grubtrfs.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/grubtrfs.sh"
+      },
+      {
+        "name": "gtk_bmg_fix",
+        "description": "gtk_bmg_fix_desc",
+        "icon": "intel.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/gtk-bmg-fix.sh"
+      },
+      {
+        "name": "iNet Wireless Daemon",
+        "description": "iwd_desc",
+        "icon": "iwd.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/iwd.sh"
+      },
+      {
+        "name": "KDE Connect / GSConnect Fix",
+        "description": "kconnect_desc",
+        "icon": "kconnect.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/kconnect.sh"
+      },
+      {
+        "name": "LSW-WinBoat",
+        "description": "lsw_desc",
+        "icon": "lsw.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/lsw.sh"
+      },
+      {
+        "name": "LucidGlyph",
+        "description": "lg_desc",
+        "icon": "lucidglyph.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/lucidglyph.sh"
+      },
+      {
+        "name": "minfreefix",
+        "description": "minfreefix_desc",
+        "icon": "preload.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/minfreefix.sh"
+      },
+      {
+        "name": "CPU ondemand",
+        "description": "ondemand_desc",
+        "icon": "optimizer.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/ondemand.sh"
+      },
+      {
+        "name": "ostree-autoupd",
+        "description": "ostree-autoupd_desc",
+        "icon": "grubtrfs.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/ostree-autoupd.sh"
+      },
+      {
+        "name": "preemptfedora",
+        "description": "preempt_desc",
+        "icon": "cpu-x.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/preemptfedora.sh"
+      },
+      {
+        "name": "Preload",
+        "description": "preload_desc",
+        "icon": "preload.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/preload.sh"
+      },
+      {
+        "name": "psaver",
+        "description": "psaver_desc",
+        "icon": "psaver.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/psaver.sh"
+      },
+      {
+        "name": "psycachy",
+        "description": "psycachy_desc",
+        "icon": "psycachy.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/psycachy.sh"
+      },
+      {
+        "name": "resolvehw",
+        "description": "resolvehw_desc",
+        "icon": "resolve.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/resolvehw.sh"
+      },
+      {
+        "name": "Shader Booster",
+        "description": "sboost_desc",
+        "icon": "gaming.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/sboost.sh"
+      },
+      {
+        "name": "susefix",
+        "description": "susefix_desc",
+        "icon": "suse.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/susefix.sh"
+      },
+      {
+        "name": "swapfile",
+        "description": "swapfile_desc",
+        "icon": "swapfile.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/swapfile.sh"
+      },
+      {
+        "name": "Thumbnailer",
+        "description": "thumb_desc",
+        "icon": "handbrake.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/thumb.sh"
+      },
+      {
+        "name": "Touchégg",
+        "description": "touchegg_desc",
+        "icon": "touchegg.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/touchegg.sh"
+      },
+      {
+        "name": "ufw",
+        "description": "ufw_desc",
+        "icon": "firewall.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/ufw.sh"
+      },
+      {
+        "name": "wayproton",
+        "description": "wayproton_desc",
+        "icon": "proton.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/wayproton.sh"
+      },
+      {
+        "name": "ZRAM-Config",
+        "description": "zram_desc",
+        "icon": "preload.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/zram.sh"
+      }
+    ],
+    "subcategories": {}
+  },
+  "game": {
+    "name": "game",
+    "icon": "gaming.svg",
+    "description": "game_desc",
+    "mode": "checklist",
+    "tools": [
+      {
+        "name": "Faugus Launcher",
+        "description": "faugus_desc",
+        "icon": "faugus-launcher.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/game/faugus.sh"
+      },
+      {
+        "name": "Gamemode",
+        "description": "gamemode_desc",
+        "icon": "gaming.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/game/gamemode.sh"
+      },
+      {
+        "name": "GeForce NOW",
+        "description": "gfn_desc",
+        "icon": "nvidia.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/game/gfn.sh"
+      },
+      {
+        "name": "Greenlight",
+        "description": "glight_desc",
+        "icon": "greenlight.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/game/glight.sh"
+      },
+      {
+        "name": "GOverlay",
+        "description": "goverlay_desc",
+        "icon": "goverlay.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/game/goverlay.sh"
+      },
+      {
+        "name": "Gamescope",
+        "description": "gscope_desc",
+        "icon": "gaming.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/game/gscope.sh"
+      },
+      {
+        "name": "GPU Screen Recorder",
+        "description": "gsr_desc",
+        "icon": "gsr.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/game/gsr.sh"
+      },
+      {
+        "name": "Heroic Games Launcher",
+        "description": "hgl_desc",
+        "icon": "heroic.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/game/hgl.sh"
+      },
+      {
+        "name": "Lossless Scaling",
+        "description": "lsfg_desc",
+        "icon": "lsfgvk.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/game/lsfg.sh"
+      },
+      {
+        "name": "Lutris",
+        "description": "lutris_desc",
+        "icon": "lutris.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/game/lutris.sh"
+      },
+      {
+        "name": "Minecraft Bedrock Launcher",
+        "description": "mcbe_desc",
+        "icon": "minecraft.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/game/mcbe.sh"
+      },
+      {
+        "name": "MangoJuice",
+        "description": "mgjuice_desc",
+        "icon": "mangojuice.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/game/mgjuice.sh"
+      },
+      {
+        "name": "Moonlight",
+        "description": "mlight_desc",
+        "icon": "moonlight.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/game/moonlight.sh"
+      },
+      {
+        "name": "Osu!",
+        "description": "osu_desc",
+        "icon": "osu.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/game/osu.sh"
+      },
+      {
+        "name": "Prism Launcher",
+        "description": "prism_desc",
+        "icon": "prism.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/game/prism.sh"
+      },
+      {
+        "name": "ProtonPlus",
+        "description": "pp_desc",
+        "icon": "protonplus.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/game/protonplus.sh"
+      },
+      {
+        "name": "Protontricks",
+        "description": "ptricks_desc",
+        "icon": "proton.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/game/ptricks.sh"
+      },
+      {
+        "name": "ProtonUp",
+        "description": "pup_desc",
+        "icon": "pupgui.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/game/pup.sh"
+      },
+      {
+        "name": "Sober",
+        "description": "sober_desc",
+        "icon": "sober.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/game/sober.sh"
+      },
+      {
+        "name": "Steam",
+        "description": "steam_desc",
+        "icon": "steam.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/game/steam.sh"
+      },
+      {
+        "name": "Sunshine",
+        "description": "sunshine_desc",
+        "icon": "sunshine.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/game/sunshine.sh"
+      },
+      {
+        "name": "Vinegar",
+        "description": "vinegar_desc",
+        "icon": "vinegar.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/game/vinegar.sh"
+      },
+      {
+        "name": "WiVRn",
+        "description": "wivrn_desc",
+        "icon": "wivrn.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/game/wivrn.sh"
+      }
+    ],
+    "subcategories": {}
+  },
+  "office": {
+    "name": "office",
+    "icon": "office.svg",
+    "description": "office_desc",
+    "mode": "checklist",
+    "tools": [
+      {
+        "name": "AnyDesk",
+        "description": "anydesk_desc",
+        "icon": "anydesk.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/office/anydesk.sh"
+      },
+      {
+        "name": "Audacity",
+        "description": "audacity_desc",
+        "icon": "audacity.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/office/audacity.sh"
+      },
+      {
+        "name": "Blender",
+        "description": "blender_desc",
+        "icon": "blender.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/office/blender.sh"
+      },
+      {
+        "name": "Google Chrome",
+        "description": "chrome_desc",
+        "icon": "chrome.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/office/chrome.sh"
+      },
+      {
+        "name": "Cohesion",
+        "description": "cohesion_desc",
+        "icon": "cohesion.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/office/cohesion.sh"
+      },
+      {
+        "name": "Darktable",
+        "description": "darktable_desc",
+        "icon": "darktable.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/office/darktable.sh"
+      },
+      {
+        "name": "DaVinci Resolve",
+        "description": "davinci_desc",
+        "icon": "resolve.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/office/davinci.sh"
+      },
+      {
+        "name": "Figma",
+        "description": "figma_desc",
+        "icon": "figma.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/office/figma.sh"
+      },
+      {
+        "name": "Foliate",
+        "description": "foliate_desc",
+        "icon": "foliate.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/office/foliate.sh"
+      },
+      {
+        "name": "FreeCAD",
+        "description": "freecad_desc",
+        "icon": "freecad.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/office/freecad.sh"
+      },
+      {
+        "name": "GIMP (& PhotoGIMP)",
+        "description": "gimp_desc",
+        "icon": "gimp.svg",
+        "version": "3.0",
+        "scriptPath": "p3/scripts/office/gimp.sh"
+      },
+      {
+        "name": "Inkscape",
+        "description": "inkscape_desc",
+        "icon": "inkscape.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/office/inkscape.sh"
+      },
+      {
+        "name": "Kdenlive",
+        "description": "kdenlive_desc",
+        "icon": "kdenlive.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/office/kdenlive.sh"
+      },
+      {
+        "name": "KiCad",
+        "description": "kicad_desc",
+        "icon": "kicad.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/office/kicad.sh"
+      },
+      {
+        "name": "Krita",
+        "description": "krita_desc",
+        "icon": "krita.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/office/krita.sh"
+      },
+      {
+        "name": "LibreOffice",
+        "description": "libreoffice_desc",
+        "icon": "libreoffice.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/office/libreoffice.sh"
+      },
+      {
+        "name": "Obsidian",
+        "description": "obsidian_desc",
+        "icon": "obsidian.svg",
+        "version": "1.9.10",
+        "scriptPath": "p3/scripts/office/obsidian.sh"
+      },
+      {
+        "name": "OnlyOffice",
+        "description": "onlyoffice_desc",
+        "icon": "onlyoffice.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/office/onlyoffice.sh"
+      },
+      {
+        "name": "Pinta",
+        "description": "pinta_desc",
+        "icon": "pinta.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/office/pinta.sh"
+      },
+      {
+        "name": "PJeOffice Pro",
+        "description": "Um software disponibilizado gratuitamente pelo Conselho Nacional de Justiça (CNJ) do Brasil para acesso ao PJE via certificado digital e assinatura eletrônica de documentos.",
+        "icon": "pjeoffice-pro.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/office/pjeoffice.sh"
+      },
+      {
+        "name": "Zen Browser",
+        "description": "zen_desc",
+        "icon": "zen.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/office/zen.sh"
+      }
+    ],
+    "subcategories": {}
+  },
+  "repos": {
+    "name": "repos",
+    "icon": "repos.svg",
+    "description": "repos_desc",
+    "mode": "menu",
+    "tools": [
+      {
+        "name": "Homebrew",
+        "description": "brew_desc",
+        "icon": "brew.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/repos/brew.sh"
+      },
+      {
+        "name": "Cargo",
+        "description": "cargo_desc",
+        "icon": "cargo.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/repos/cargo.sh"
+      },
+      {
+        "name": "Chaotic AUR",
+        "description": "chaotic_desc",
+        "icon": "aur.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/repos/chaotic.sh"
+      },
+      {
+        "name": "Flathub",
+        "description": "flat_desc",
+        "icon": "flathub.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/repos/flathub.sh"
+      },
+      {
+        "name": "Nix Packages",
+        "description": "nixpkgs_desc",
+        "icon": "nix.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/repos/nix.sh"
+      },
+      {
+        "name": "Pacstall",
+        "description": "pacstall_desc",
+        "icon": "pacstall.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/repos/pacstall.sh"
+      },
+      {
+        "name": "Paru",
+        "description": "paru_desc",
+        "icon": "archpkg.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/repos/paru.sh"
+      },
+      {
+        "name": "Pip",
+        "description": "pip_desc",
+        "icon": "pip.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/repos/pip.sh"
+      },
+      {
+        "name": "RPM Fusion",
+        "description": "rpmfusion_desc",
+        "icon": "rpmfusion.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/repos/rpmfusion.sh"
+      },
+      {
+        "name": "Shelly",
+        "description": "shelly_desc",
+        "icon": "shelly.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/repos/shelly.sh"
+      },
+      {
+        "name": "Solseek",
+        "description": "solseek_desc",
+        "icon": "solseek.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/repos/solseek.sh"
+      },
+      {
+        "name": "Terra",
+        "description": "terra_desc",
+        "icon": "terra.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/repos/terra.sh"
+      },
+      {
+        "name": "Yay",
+        "description": "yay_desc",
+        "icon": "archpkg.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/repos/yay.sh"
+      }
+    ],
+    "subcategories": {}
+  },
+  "sysadm": {
+    "name": "sysadm",
+    "icon": "sysadm.svg",
+    "description": "sysadm_desc",
+    "mode": "menu",
+    "tools": [
+      {
+        "name": "Active Directory",
+        "description": "adir_desc",
+        "icon": "adir.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/sysadm/activedirectory.sh"
+      },
+      {
+        "name": "Cockpit Client",
+        "description": "cockpitclient_desc",
+        "icon": "cockpit.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/sysadm/cockpit-client.sh"
+      },
+      {
+        "name": "Cockpit Server",
+        "description": "cockpit_desc",
+        "icon": "cockpit.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/sysadm/cockpit.sh"
+      },
+      {
+        "name": "CPU-X",
+        "description": "cpux_desc",
+        "icon": "cpu-x.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/sysadm/cpu-x.sh"
+      },
+      {
+        "name": "Sloth-Bash",
+        "description": "sloth_desc",
+        "icon": "sloth.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/sysadm/slothbash.sh"
+      },
+      {
+        "name": "Termius",
+        "description": "termius_desc",
+        "icon": "termius.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/sysadm/termius.sh"
+      },
+      {
+        "name": "Topgrade",
+        "description": "topgrade_desc",
+        "icon": "topgrade.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/sysadm/topgrade.sh"
+      },
+      {
+        "name": "autosysup",
+        "description": "autosysup_desc",
+        "icon": "linuxtoys.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/sysadm/updater.sh"
+      },
+      {
+        "name": "Webmin",
+        "description": "webmin_desc",
+        "icon": "webmin.png",
+        "version": "1.1",
+        "scriptPath": "p3/scripts/sysadm/webmin.sh"
+      },
+      {
+        "name": "Zash Terminal",
+        "description": "zash_desc",
+        "icon": "zashterminal.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/sysadm/zashterminal.sh"
+      }
+    ],
+    "subcategories": {}
+  },
+  "utils": {
+    "name": "utils",
+    "icon": "utils.svg",
+    "description": "utils_desc",
+    "mode": "menu",
+    "tools": [
+      {
+        "name": "Arch-Update",
+        "description": "archupd_desc",
+        "icon": "archup.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/archupd.sh"
+      },
+      {
+        "name": "Bazaar",
+        "description": "bazaar_desc",
+        "icon": "bazaar.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/bazaar.sh"
+      },
+      {
+        "name": "Bottles",
+        "description": "bottles_desc",
+        "icon": "bottles.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/bottles.sh"
+      },
+      {
+        "name": "Distrobox-Adv",
+        "description": "Container do Debian via distrobox com pacotes que fornecem ambiente para uso de certificado digital por advogados no Brasil. Também inclui o Distroshelf.",
+        "icon": "boxadv.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/boxadv.sh"
+      },
+      {
+        "name": "Cloudflare WARP",
+        "description": "cloudflare_warp_desc",
+        "icon": "cloudflare-warp.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/cloudflare-warp.sh"
+      },
+      {
+        "name": "Distroshelf",
+        "description": "distroshelf_desc",
+        "icon": "distroshelf.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/distroshelf.sh"
+      },
+      {
+        "name": "EasyEffects",
+        "description": "efx_desc",
+        "icon": "efx.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/efx.sh"
+      },
+      {
+        "name": "Extension Manager",
+        "description": "extman_desc",
+        "icon": "extensions.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/extman.sh"
+      },
+      {
+        "name": "F3 (Fight Flash Fraud)",
+        "description": "f3_desc",
+        "icon": "utils.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/f3.sh"
+      },
+      {
+        "name": "Flatseal",
+        "description": "fseal_desc",
+        "icon": "flatseal.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/flatseal.sh"
+      },
+      {
+        "name": "Gear Lever",
+        "description": "glever_desc",
+        "icon": "gearlever.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/gearlever.sh"
+      },
+      {
+        "name": "Haguichi",
+        "description": "haguichi_desc",
+        "icon": "haguichi.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/haguichi.sh"
+      },
+      {
+        "name": "HandBrake",
+        "description": "hndbrk_desc",
+        "icon": "handbrake.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/handbrake.sh"
+      },
+      {
+        "name": "LACT",
+        "description": "lact_desc",
+        "icon": "device.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/lact.sh"
+      },
+      {
+        "name": "Mission Center",
+        "description": "mctl_desc",
+        "icon": "mctl.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/mctl.sh"
+      },
+      {
+        "name": "Nerd Fonts",
+        "description": "nerdfonts_desc",
+        "icon": "nerdfonts.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/nerdfonts.sh"
+      },
+      {
+        "name": "OBS Studio",
+        "description": "obs_desc",
+        "icon": "obs.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/obs.sh"
+      },
+      {
+        "name": "PeaZip",
+        "description": "peazip_desc",
+        "icon": "peazip.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/peazip.sh"
+      },
+      {
+        "name": "OpenLinkHub",
+        "description": "openlinkhub_desc",
+        "icon": "corsair.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/peripherals/openlinkhub.sh"
+      },
+      {
+        "name": "OpenRGB",
+        "description": "oprgb_desc",
+        "icon": "openrgb.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/peripherals/oprgb.sh"
+      },
+      {
+        "name": "OpenRazer",
+        "description": "oprzr_desc",
+        "icon": "gaming.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/peripherals/oprzr-ublue.sh"
+      },
+      {
+        "name": "OpenRazer",
+        "description": "oprzr_desc",
+        "icon": "gaming.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/peripherals/oprzr.sh"
+      },
+      {
+        "name": "Piper",
+        "description": "piper_desc",
+        "icon": "piper.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/peripherals/piper.sh"
+      },
+      {
+        "name": "Input Remapper",
+        "description": "remapper_desc",
+        "icon": "input-remapper.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/peripherals/remapper.sh"
+      },
+      {
+        "name": "StreamController",
+        "description": "sc_desc",
+        "icon": "streamcontroller.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/peripherals/sc.sh"
+      },
+      {
+        "name": "Solaar",
+        "description": "slar_desc",
+        "icon": "solaar.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/peripherals/solaar.sh"
+      },
+      {
+        "name": "Oversteer",
+        "description": "oversteer_desc",
+        "icon": "oversteer.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/peripherals/steer.sh"
+      },
+      {
+        "name": "udevpass",
+        "description": "udevpass_desc",
+        "icon": "peripherals.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/peripherals/udevpass.sh"
+      },
+      {
+        "name": "Pika Backup",
+        "description": "pika_desc",
+        "icon": "pika.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/pika.sh"
+      },
+      {
+        "name": "QPWGraph",
+        "description": "qpw_desc",
+        "icon": "qpwgraph.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/qpw.sh"
+      },
+      {
+        "name": "Rclone UI",
+        "description": "rcloneui_desc",
+        "icon": "rcloneui.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/rclone_ui.sh"
+      },
+      {
+        "name": "S3Drive",
+        "description": "s3d_desc",
+        "icon": "s3drive.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/s3drive.sh"
+      },
+      {
+        "name": "Gnome Tweaks",
+        "description": "tweaks_desc",
+        "icon": "tweaks.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/tweaks.sh"
+      },
+      {
+        "name": "VLC",
+        "description": "vlc_desc",
+        "icon": "vlc.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/vlc.sh"
+      },
+      {
+        "name": "Warehouse",
+        "description": "wrhs_desc",
+        "icon": "warehouse.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/warehouse.sh"
+      },
+      {
+        "name": "Waydroid",
+        "description": "waydroid_desc",
+        "icon": "waydroid.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/waydroid.sh"
+      },
+      {
+        "name": "WayLume",
+        "description": "waylume_desc",
+        "icon": "waylume.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/waylume.sh"
+      }
+    ],
+    "subcategories": {}
+  },
+  "privacy": {
+    "name": "privacy",
+    "icon": "privacy.svg",
+    "description": "privacy_desc",
+    "mode": "menu",
+    "tools": [
+      {
+        "name": "Bitwarden",
+        "description": "bitwarden_desc",
+        "icon": "bitwarden.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/privacy/bitwarden.sh"
+      },
+      {
+        "name": "Brave Browser",
+        "description": "brave_desc",
+        "icon": "brave.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/privacy/brave.sh"
+      },
+      {
+        "name": "Cryptomator",
+        "description": "cryptomator_desc",
+        "icon": "cryptomator.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/privacy/cryptomator.sh"
+      },
+      {
+        "name": "Express VPN",
+        "description": "Express VPN",
+        "icon": "expressvpn.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/privacy/express-vpn.sh"
+      },
+      {
+        "name": "Hiddify",
+        "description": "hiddify_desc",
+        "icon": "hiddify.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/privacy/hiddify.sh"
+      },
+      {
+        "name": "IVPN",
+        "description": "IVPN",
+        "icon": "ivpn.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/privacy/ivpn.sh"
+      },
+      {
+        "name": "KeePassXC",
+        "description": "keepassxc_desc",
+        "icon": "keepassxc.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/privacy/keepassxc.sh"
+      },
+      {
+        "name": "LibreWolf",
+        "description": "LibreWolf",
+        "icon": "librewolf.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/privacy/librewolf.sh"
+      },
+      {
+        "name": "LogSEQ",
+        "description": "logseq_desc",
+        "icon": "logseq.svg",
+        "version": "0.10.13",
+        "scriptPath": "p3/scripts/utils/privacy/logseq.sh"
+      },
+      {
+        "name": "Mullvad Browser",
+        "description": "Mullvad Browser",
+        "icon": "mullvad_browser.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/privacy/mullvad-browser.sh"
+      },
+      {
+        "name": "Mullvad VPN",
+        "description": "Mullvad VPN",
+        "icon": "mullvadvpn.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/privacy/mullvad-vpn.sh"
+      },
+      {
+        "name": "Nord VPN",
+        "description": "Nord VPN",
+        "icon": "nordvpn.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/privacy/nord-vpn.sh"
+      },
+      {
+        "name": "Proton VPN",
+        "description": "Proton VPN",
+        "icon": "protonvpn.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/privacy/proton-vpn.sh"
+      },
+      {
+        "name": "SiriKali",
+        "description": "sirikali_desc",
+        "icon": "sirikali.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/privacy/sirikali.sh"
+      },
+      {
+        "name": "Surfshark VPN",
+        "description": "Surfshark VPN",
+        "icon": "surfsharkvpn.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/privacy/surfshark-vpn.sh"
+      },
+      {
+        "name": "Ungoogled Chromium",
+        "description": "Ungoogled Chromium",
+        "icon": "ungoogled_chromium.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/privacy/ungoogled-chromium.sh"
+      },
+      {
+        "name": "Windscribe VPN",
+        "description": "Windscribe VPN",
+        "icon": "windscribe.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/privacy/windscribe-vpn.sh"
+      },
+      {
+        "name": "WireGuard",
+        "description": "WireGuard",
+        "icon": "wireguard.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/privacy/wireguard.sh"
+      }
+    ],
+    "subcategories": {}
+  }
+}
