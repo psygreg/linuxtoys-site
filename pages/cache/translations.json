@@ -316,7 +316,7 @@
     "aa_desc": "Strengthens the security of your Linux system by limiting what each application can access and do on the system.",
     "positron_desc": "Unifies exploration and production work in one free, AI-assisted environment, empowering the full spectrum of data science in Python and R.",
     "rstudio_desc": "A set of tools built to help you be more productive with R and Python.",
-    "ananicy_desc": "A daemon that automatically adjusts the 'niceness' of running processes based on their behavior to improve system responsiveness, and makes 'gamemoderun' unnecessary for games.",
+    "ananicy_desc": "A daemon that automatically adjusts the 'niceness' of running processes based on their behavior to improve system responsiveness. Requires the CachyOS Kernel on Fedora.",
     "kdememfix_desc": "Switches KDE Plasma's rendering backend to OpenGL, which uses significantly less VRAM.",
     "openlinkhub_desc": "Control Corsair iCUE devices on Linux.",
     "minfreefix_desc": "Dynamically adjusts the vm.min_free_kbytes setting based on total system RAM to improve performance and responsiveness.",
@@ -354,7 +354,7 @@
     "wayproton": "Proton on Wayland Mode",
     "wayproton_desc": "Sets Proton to run on wine-wayland mode by default. You can selectively set the environment variable PROTON_USE_WINE_WAYLAND=0 for games that may not work properly with this mode in their launch options in Steam or your game launcher of choice.",
     "nv580_desc": "Nvidia 580xx legacy drivers for Maxwell (GTX 9xx), Pascal (GTX 10xx) and some Kepler (GTX 750/750Ti) and Turing (GTX 16xx) series GPUs.",
-    "zram_desc": "A zstd-compressed RAM block device that can be used for swap instead of a conventional swap file or partition, improving performance especially under memory pressure.",
+    "zram_desc": "Set up the optimal RAM pressure management tool for your system capabilities: ZSWAP for systems with 16GB or lower RAM, ZRAM for systems with more than 16GB RAM. ZSWAP requires a swap file or partition.",
     "preempt_desc": "Enable full kernel preemption on Fedora and related systems, which is desirable for desktops and supported by default kernel, despite being disabled by default due to usage in server environments, where responsiveness and latency are not critical.",
     "preemptfedora": "Kernel Full Preemption",
     "udevpass": "Enable Web-based Software",
@@ -423,7 +423,10 @@
     "sysup": "Update System",
     "sysup_desc": "Performs a cleanup of orphaned packages and a full system update for both your distribution's packages and Flatpaks.",
     "autosysup": "Automatic Updates",
-    "autosysup_desc": "Enables the LinuxToys automatic system update services for systemd. This will perform a cleanup of orphaned packages and a full system update for both your distribution's packages and Flatpaks on a regular basis without you having to worry about it. REMINDER: it will only update the current release version of your system, but not upgrade it - for that, you should run a manual update from the main menu when there is a new release available."
+    "autosysup_desc": "Enables the LinuxToys automatic system update services for systemd. This will perform a cleanup of orphaned packages and a full system update for both your distribution's packages and Flatpaks on a regular basis without you having to worry about it. REMINDER: it will only update the current release version of your system, but not upgrade it - for that, you should run a manual update from the main menu when there is a new release available.",
+    "cachykrn_desc": "CachyOS's custom-tuned kernel. Required to use ananicy-cpp and SteamOS VRAM Optimization on Fedora. Includes steps to sign it for usage with Secure Boot if that feature is enabled or in setup mode.",
+    "optivram": "SteamOS VRAM Optimization",
+    "optivram_desc": "Originally from SteamOS, this optimization significantly improves performance in games, especially on systems with 6GB of VRAM or less, by sending cold VRAM pages into RAM. Requires the CachyOS Kernel on Fedora."
   },
   "pt": {
     "subtitle": "Uma coleção amigável de ferramentas para Linux.",
@@ -747,7 +750,7 @@
     "astapro_desc": "Ferramenta completa de design de software com UML, ERD, flowchart, DFD e mais",
     "positron_desc": "Unifica trabalho de exploração e produção em um ambiente gratuito assistido por IA",
     "rstudio_desc": "Um conjunto de ferramentas construído para ajudar você a ser mais produtivo com R e Python.",
-    "ananicy_desc": "Um daemon que ajusta automaticamente a \"niceness\" de processos em execução com base no seu comportamento",
+    "ananicy_desc": "Um daemon que ajusta automaticamente o 'niceness' dos processos em execução com base em seu comportamento para melhorar a responsividade do sistema. Requer CachyOS Kernel no Fedora.",
     "kdememfix_desc": "Alterna o backend de renderização do KDE Plasma para OpenGL, que usa significativamente menos VRAM",
     "zerotier_desc": "Cria redes Ethernet virtuais de tamanho quase ilimitado.",
     "faugus_desc": "Um aplicativo mais novo, leve e simplificado para gerenciar seus jogos e seus prefixos WINE no Linux, semelhante ao Lutris.",
@@ -780,7 +783,7 @@
     "wayproton": "Proton no modo Wayland",
     "wayproton_desc": "Define Proton para ser executado em modo wine-wayland por padrão. Você pode definir seletivamente a variável de ambiente PROTON_USE_WINE_WAYLAND=0 para jogos que podem não funcionar corretamente com este modo nas opções de inicialização no Steam ou seu inicializador de jogos preferido.",
     "nv580_desc": "Drivers herdados do Nvidia 580xx para Maxwell (GTX 9xx), Pascal (GTX 10xx) e algumas séries Kepler (GTX 750/750Ti) e Turing (GTX 16xx) GPU.",
-    "zram_desc": "Dispositivo de bloco RAM comprimido com zstd que pode ser usado para swap em vez de um arquivo ou partição de swap convencional, melhora o desempenho especialmente sob pressão de memória.",
+    "zram_desc": "Configure a ferramenta de gerenciamento ideal de pressão de RAM para os recursos do seu sistema: ZSWAP para sistemas com 16GB ou menos de RAM, ZRAM para sistemas com mais de 16GB de RAM. ZSWAP requer um arquivo ou partição de troca.",
     "preempt_desc": "Habilite a preempção completa do kernel no Fedora e sistemas relacionados, desejável para desktops e suportado pelo kernel padrão, embora desabilitado por padrão devido ao uso em ambientes de servidor, onde responsividade e latência não são críticas.",
     "preemptfedora": "Preempção completa do kernel",
     "udevpass": "Ativar software baseado na web",
@@ -849,7 +852,10 @@
     "sysup": "Atualizar Sistema",
     "sysup_desc": "Executa limpeza de pacotes órfãos e atualização completa do sistema para os pacotes de sua distribuição e Flatpaks.",
     "autosysup": "Atualizações Automáticas",
-    "autosysup_desc": "Ative os serviços de atualização automática do sistema de LinuxToys para systemd. Isso executará limpeza de pacotes órfãos e atualização completa do sistema para os pacotes de sua distribuição e Flatpaks regularmente sem precisar se preocupar. LEMBRETE: apenas atualizará a versão de lançamento atual do seu sistema, mas não a atualizará - para isso, você deve executar uma atualização manual pelo menu principal quando uma nova versão estiver disponível."
+    "autosysup_desc": "Ative os serviços de atualização automática do sistema de LinuxToys para systemd. Isso executará limpeza de pacotes órfãos e atualização completa do sistema para os pacotes de sua distribuição e Flatpaks regularmente sem precisar se preocupar. LEMBRETE: apenas atualizará a versão de lançamento atual do seu sistema, mas não a atualizará - para isso, você deve executar uma atualização manual pelo menu principal quando uma nova versão estiver disponível.",
+    "cachykrn_desc": "O kernel personalizado de CachyOS. Necessário para usar ananicy-cpp e Otimização de VRAM no Fedora. Inclui etapas para assiná-lo para uso com Secure Boot se esse recurso estiver habilitado ou no modo de configuração.",
+    "optivram": "Otimização de VRAM",
+    "optivram_desc": "Originalmente do SteamOS, esta otimização melhora significativamente o desempenho de jogos, especialmente em sistemas com 6GB de VRAM ou menos, enviando páginas VRAM frias para RAM. Requer CachyOS Kernel no Fedora."
   },
   "es": {
     "subtitle": "Una colección amigable de herramientas para Linux.",
@@ -1173,7 +1179,7 @@
     "astapro_desc": "Herramienta completa de diseño de software con UML, ERD, diagrama de flujo, DFD y más",
     "positron_desc": "Unifica el trabajo de exploración y producción en un entorno gratuito asistido por IA",
     "rstudio_desc": "Un conjunto de herramientas diseñadas para ayudarte a ser más productivo con R y Python.",
-    "ananicy_desc": "Un daemon que ajusta automáticamente la \"niceness\" de los procesos en ejecución según su comportamiento",
+    "ananicy_desc": "Un daemon que ajusta automáticamente la 'niceness' de los procesos en ejecución según su comportamiento para mejorar la capacidad de respuesta del sistema. Requiere CachyOS Kernel en Fedora.",
     "kdememfix_desc": "Cambia el backend de renderización de KDE Plasma a OpenGL, que usa significativamente menos VRAM",
     "zerotier_desc": "Crea redes Ethernet virtuales de tamaño casi ilimitado.",
     "faugus_desc": "Una aplicación más nueva, ligera y simplificada para administrar tus juegos y sus prefijos de WINE en Linux, de manera similar a Lutris.",
@@ -1206,7 +1212,7 @@
     "wayproton": "Proton en modo Wayland",
     "wayproton_desc": "Configura Proton para que se ejecute en modo wine-wayland de forma predeterminada. Puedes establecer selectivamente la variable de entorno PROTON_USE_WINE_WAYLAND=0 para juegos que podrían no funcionar correctamente con este modo en las opciones de inicio en Steam o tu lanzador de juegos preferido.",
     "nv580_desc": "Controladores heredados de Nvidia 580xx para Maxwell (GTX 9xx), Pascal (GTX 10xx) y algunas series Kepler (GTX 750/750Ti) y Turing (GTX 16xx) GPU.",
-    "zram_desc": "Dispositivo de bloque RAM comprimido con zstd que se puede usar para intercambio en lugar of archivo o partición de intercambio convencional, mejorando el rendimiento especialmente bajo presión de memoria.",
+    "zram_desc": "Configura la herramienta óptima de gestión de presión de RAM según las capacidades de tu sistema: ZSWAP para sistemas con 16GB o menos RAM, ZRAM para sistemas con más de 16GB RAM. ZSWAP requiere un archivo o partición de intercambio.",
     "preempt_desc": "Habilitar preemción completa del kernel en Fedora y sistemas relacionados, que es deseable para escritorios y compatible con el kernel predeterminado, aunque está deshabilitado por defecto debido al uso en entornos de servidor, donde la reactividad y la latencia no son críticas.",
     "preemptfedora": "Preemción completa del kernel",
     "udevpass": "Habilitar software basado en web",
@@ -1275,7 +1281,10 @@
     "sysup": "Actualizar Sistema",
     "sysup_desc": "Realiza una limpieza de paquetes huérfanos y una actualización completa del sistema para los paquetes de tu distribución y Flatpaks.",
     "autosysup": "Actualizaciones Automáticas",
-    "autosysup_desc": "Habilita los servicios de actualización automática del sistema de LinuxToys para systemd. Esto realizará una limpieza de paquetes huérfanos y una actualización completa del sistema para los paquetes de tu distribución y Flatpaks de forma regular sin que tengas que preocuparte. RECORDATORIO: solo actualizará la versión de lanzamiento actual de tu sistema, pero no la actualizará - para eso, debes ejecutar una actualización manual desde el menú principal cuando haya una nueva versión disponible."
+    "autosysup_desc": "Habilita los servicios de actualización automática del sistema de LinuxToys para systemd. Esto realizará una limpieza de paquetes huérfanos y una actualización completa del sistema para los paquetes de tu distribución y Flatpaks de forma regular sin que tengas que preocuparte. RECORDATORIO: solo actualizará la versión de lanzamiento actual de tu sistema, pero no la actualizará - para eso, debes ejecutar una actualización manual desde el menú principal cuando haya una nueva versión disponible.",
+    "cachykrn_desc": "El kernel personalizado de CachyOS. Necesario para usar ananicy-cpp y SteamOS VRAM Optimization en Fedora. Incluye pasos para firmarlo para su uso con Secure Boot si esa función está habilitada o en modo de configuración.",
+    "optivram": "Optimización de SteamOS VRAM",
+    "optivram_desc": "Originalmente de SteamOS, esta optimización mejora significativamente el rendimiento en juegos, especialmente en sistemas con 6GB de VRAM o menos, enviando páginas VRAM frías a la RAM. Requiere CachyOS Kernel en Fedora."
   },
   "fr": {
     "subtitle": "Une collection d'outils pour Linux de manière conviviale.",
@@ -1599,7 +1608,7 @@
     "astapro_desc": "Outil de conception logicielle complet avec UML, ERD, diagramme de flux, DFD et plus",
     "positron_desc": "Unifie l'exploration et la production dans un environnement gratuit assisté par l'IA",
     "rstudio_desc": "Un ensemble d'outils conçus pour vous aider à être plus productif avec R et Python.",
-    "ananicy_desc": "Un démon qui ajuste automatiquement la \"niceness\" des processus en cours en fonction de leur comportement",
+    "ananicy_desc": "Un daemon qui ajuste automatiquement la 'niceness' des processus en cours d'exécution en fonction de leur comportement pour améliorer la réactivité du système. Nécessite CachyOS Kernel sur Fedora.",
     "kdememfix_desc": "Bascule le backend de rendu de KDE Plasma vers OpenGL, qui utilise beaucoup moins de VRAM",
     "zerotier_desc": "Crée des réseaux Ethernet virtuels de taille quasi illimitée.",
     "faugus_desc": "Une application plus récente, plus légère et simplifiée pour gérer vos jeux et leurs préfixes WINE sur Linux, similaire à Lutris.",
@@ -1632,7 +1641,7 @@
     "wayproton": "Proton en mode Wayland",
     "wayproton_desc": "Configure Proton pour qu'il s'exécute en mode wine-wayland par défaut. Vous pouvez définir sélectivement la variable d'environnement PROTON_USE_WINE_WAYLAND=0 pour les jeux qui pourraient ne pas fonctionner correctement avec ce mode dans les options de lancement dans Steam ou votre lanceur de jeu préféré.",
     "nv580_desc": "Pilotes hérités Nvidia 580xx pour Maxwell (GTX 9xx), Pascal (GTX 10xx) et certaines séries Kepler (GTX 750/750Ti) et Turing (GTX 16xx) GPU.",
-    "zram_desc": "Dispositif de bloc RAM compressé avec zstd qui peut être utilisé pour l'échange au lieu d'un fichier ou d'une partition d'échange conventionnel, améliore les performances en particulier sous pression mémoire.",
+    "zram_desc": "Configurez l'outil optimal de gestion de la pression RAM pour les capacités de votre système : ZSWAP pour les systèmes avec 16 Go ou moins de RAM, ZRAM pour les systèmes avec plus de 16 Go de RAM. ZSWAP nécessite un fichier d'échange ou une partition.",
     "preempt_desc": "Activez la préemption complète du noyau sur Fedora et les systèmes connexes, souhaitable pour les postes de travail et prise en charge par le noyau par défaut, bien qu'elle soit désactivée par défaut du fait de son utilisation dans les environnements de serveur, où la réactivité et la latence ne sont pas critiques.",
     "preemptfedora": "Préemption complète du noyau",
     "udevpass": "Activer les logiciels basés sur le Web",
@@ -1701,7 +1710,10 @@
     "sysup": "Mettre à Jour le Système",
     "sysup_desc": "Effectue un nettoyage des paquets orphelins et une mise à jour complète du système pour les paquets de votre distribution et Flatpaks.",
     "autosysup": "Mises à Jour Automatiques",
-    "autosysup_desc": "Activez les services de mise à jour automatique du système de LinuxToys pour systemd. Cela effectuera un nettoyage des paquets orphelins et une mise à jour complète du système pour les paquets de votre distribution et Flatpaks régulièrement sans avoir à vous inquiéter. RAPPEL : cela mettra uniquement à jour la version de publication actuelle de votre système, mais ne la mettrait pas à niveau - pour cela, vous devriez exécuter une mise à jour manuelle à partir du menu principal lorsqu'une nouvelle version est disponible."
+    "autosysup_desc": "Activez les services de mise à jour automatique du système de LinuxToys pour systemd. Cela effectuera un nettoyage des paquets orphelins et une mise à jour complète du système pour les paquets de votre distribution et Flatpaks régulièrement sans avoir à vous inquiéter. RAPPEL : cela mettra uniquement à jour la version de publication actuelle de votre système, mais ne la mettrait pas à niveau - pour cela, vous devriez exécuter une mise à jour manuelle à partir du menu principal lorsqu'une nouvelle version est disponible.",
+    "cachykrn_desc": "Le noyau personnalisé de CachyOS. Requis pour utiliser ananicy-cpp et SteamOS VRAM Optimization sur Fedora. Comprend des étapes pour le signer pour une utilisation avec Secure Boot si cette fonctionnalité est activée ou en mode de configuration.",
+    "optivram": "Optimisation SteamOS VRAM",
+    "optivram_desc": "Originellement de SteamOS, cette optimisation améliore considérablement les performances dans les jeux, en particulier sur les systèmes avec 6 Go de VRAM ou moins, en envoyant des pages VRAM froides à la RAM. Nécessite CachyOS Kernel sur Fedora."
   },
   "de": {
     "subtitle": "Eine freundliche Sammlung von Tools für Linux.",
@@ -2025,7 +2037,7 @@
     "astapro_desc": "Umfassendes Software-Design-Tool mit UML, ERD, Flowchart, DFD und mehr",
     "positron_desc": "Vereinigt Erkennungs- und Produktionsarbeit in einer kostenlosen KI-gestützten Umgebung",
     "rstudio_desc": "Ein Satz von Tools, die dir helfen, produktiver mit R und Python zu sein.",
-    "ananicy_desc": "Ein Daemon, das automatisch die \"Priorität\" laufender Prozesse basierend auf deren Verhalten anpasst",
+    "ananicy_desc": "Ein Daemon, der die 'Niceness' laufender Prozesse automatisch basierend auf ihrem Verhalten anpasst, um die Reaktionsfähigkeit des Systems zu verbessern. Erfordert CachyOS Kernel unter Fedora.",
     "kdememfix_desc": "Schaltet das Rendering-Backend von KDE Plasma auf OpenGL um, das erheblich weniger VRAM nutzt",
     "zerotier_desc": "Erstellt virtuelle Ethernet-Netzwerke fast unbegrenzter Größe.",
     "faugus_desc": "Eine neuere, leichtere und vereinfachte Anwendung zur Verwaltung Ihrer Spiele und ihrer WINE-Präfixe unter Linux, ähnlich wie Lutris.",
@@ -2058,7 +2070,7 @@
     "wayproton": "Proton im Wayland-Modus",
     "wayproton_desc": "Setzt Proton so ein, dass es standardmäßig im Wine-Wayland-Modus ausgeführt wird. Sie können die Umgebungsvariable PROTON_USE_WINE_WAYLAND=0 selektiv für Spiele festlegen, die möglicherweise nicht ordnungsgemäß mit diesem Modus funktionieren, in den Startoptionen in Steam oder Ihrem bevorzugten Spiel-Launcher.",
     "nv580_desc": "Nvidia 580xx Legacy-Treiber für Maxwell (GTX 9xx), Pascal (GTX 10xx) und einige Kepler (GTX 750/750Ti) und Turing (GTX 16xx) GPU-Serien.",
-    "zram_desc": "RAM-Blockgerät, komprimiert mit zstd, das anstelle einer konventionellen Swap-Datei oder Partition für Swap verwendet werden kann, verbessert die Leistung besonders unter Speicherdruck.",
+    "zram_desc": "Richten Sie das optimale RAM-Druckverwaltungstool für Ihre Systemfähigkeiten ein: ZSWAP für Systeme mit 16GB oder weniger RAM, ZRAM für Systeme mit mehr als 16GB RAM. ZSWAP erfordert eine Auslagerungsdatei oder Partition.",
     "preempt_desc": "Aktivieren Sie die vollständige Kernel-Präemption auf Fedora und verwandten Systemen, was für Desktops wünschenswert ist und vom Standard-Kernel unterstützt wird, obwohl es standardmäßig deaktiviert ist, da es in Serverumgebungen verwendet wird, wo Reaktionsfähigkeit und Latenz nicht kritisch sind.",
     "preemptfedora": "Vollständige Kernel-Präemption",
     "udevpass": "Webbasierte Software aktivieren",
@@ -2127,7 +2139,10 @@
     "sysup": "System Aktualisieren",
     "sysup_desc": "Führt eine Bereinigung verwaister Pakete und ein vollständiges Systemupdate für Ihre Distributionspakete und Flatpaks durch.",
     "autosysup": "Automatische Systemupdates",
-    "autosysup_desc": "Aktivieren Sie die automatischen Systemupdatedienste von LinuxToys für systemd. Dies führt eine Bereinigung verwaister Pakete und ein vollständiges Systemupdate für Ihre Distributionspakete und Flatpaks regelmäßig aus, ohne sich Sorgen machen zu müssen. ERINNERUNG: Es wird nur die aktuelle Veröffentlichungsversion Ihres Systems aktualisiert, aber nicht aktualisiert - dafür sollten Sie ein manuelles Update aus dem Hauptmenü ausführen, wenn eine neue Version verfügbar ist."
+    "autosysup_desc": "Aktivieren Sie die automatischen Systemupdatedienste von LinuxToys für systemd. Dies führt eine Bereinigung verwaister Pakete und ein vollständiges Systemupdate für Ihre Distributionspakete und Flatpaks regelmäßig aus, ohne sich Sorgen machen zu müssen. ERINNERUNG: Es wird nur die aktuelle Veröffentlichungsversion Ihres Systems aktualisiert, aber nicht aktualisiert - dafür sollten Sie ein manuelles Update aus dem Hauptmenü ausführen, wenn eine neue Version verfügbar ist.",
+    "cachykrn_desc": "Der benutzerdefinierte Kernel von CachyOS. Erforderlich zur Verwendung von ananicy-cpp und SteamOS VRAM Optimization auf Fedora. Enthält Schritte zum Signieren für die Verwendung mit Secure Boot, wenn dieses Feature aktiviert ist oder sich im Setup-Modus befindet.",
+    "optivram": "SteamOS VRAM-Optimierung",
+    "optivram_desc": "Ursprünglich von SteamOS verbessert diese Optimierung die Spielleistung erheblich, besonders auf Systemen mit 6 GB VRAM oder weniger, indem kalte VRAM-Seiten in den RAM gesendet werden. Erfordert CachyOS Kernel unter Fedora."
   },
   "zh": {
     "subtitle": "适用于Linux的用户友好工具集合。",
@@ -2453,7 +2468,7 @@
     "astapro_desc": "具有UML、ERD、流程图、DFD等的总体软件设计工具",
     "positron_desc": "在AI辅助的免费环境中统一探索和生产工作",
     "rstudio_desc": "为帮助您使用R和Python提高工作效率而构建的工具集。",
-    "ananicy_desc": "一个守护进程，根据进程的行为自动调整正在运行的进程的\"nice\"值",
+    "ananicy_desc": "一个daemon，根据运行进程的行为自动调整其'niceness'以改善系统响应能力。 在Fedora上需要CachyOS Kernel。",
     "kdememfix_desc": "将KDE Plasma的渲染后端切换到OpenGL，其使用的VRAM明显要少得多",
     "zerotier_desc": "创建几乎无限大小的虚拟以太网网络。",
     "faugus_desc": "在Linux上管理您的游戏及其WINE前缀的一个更新、更轻量级和简化的应用程序，类似于Lutris。",
@@ -2486,7 +2501,7 @@
     "wayproton": "Wayland 模式中的 Proton",
     "wayproton_desc": "将Proton设置为默认在wine-wayland模式下运行。您可以在Steam或首选的游戏启动器中的启动选项中为可能无法正确使用此模式的游戏选择性地设置环境变量PROTON_USE_WINE_WAYLAND=0。",
     "nv580_desc": "Nvidia 580xx 旧版驱动程序，适用于Maxwell (GTX 9xx)、Pascal (GTX 10xx)以及部分Kepler (GTX 750/750Ti)和Turing (GTX 16xx)系列GPU。",
-    "zram_desc": "zstd压缩的RAM块设备，可用于交换，而不是传统的交换文件或分区，特别在内存压力下改进性能。",
+    "zram_desc": "为您的系统功能设置最佳RAM压力管理工具: 16GB或更少RAM的系统使用ZSWAP,超过16GB RAM的系统使用ZRAM。 ZSWAP需要交换文件或分区。",
     "preempt_desc": "在 Fedora 和相关系统上启用完整的内核抢占，这对桌面来说是可取的，并由默认内核支持，尽管由于在服务器环境中使用而默认禁用，在那里响应性和延迟并不重要。",
     "preemptfedora": "完整内核抢占",
     "udevpass": "启用基于Web的软件",
@@ -2555,7 +2570,10 @@
     "sysup": "更新系统",
     "sysup_desc": "清理孤立的包并为您的发行版包和 Flatpaks 执行完整的系统更新。",
     "autosysup": "自动系统更新",
-    "autosysup_desc": "为 systemd 启用 LinuxToys 的自动系统更新服务。这将定期为您的发行版包和 Flatpaks 执行孤立包清理和完整系统更新，而无需担心。提醒：它只会更新系统的当前发行版本，但不会升级 - 为此，当有新版本可用时，应从主菜单运行手动更新。"
+    "autosysup_desc": "为 systemd 启用 LinuxToys 的自动系统更新服务。这将定期为您的发行版包和 Flatpaks 执行孤立包清理和完整系统更新，而无需担心。提醒：它只会更新系统的当前发行版本，但不会升级 - 为此，当有新版本可用时，应从主菜单运行手动更新。",
+    "cachykrn_desc": "CachyOS的自定义调整内核。 在Fedora上使用ananicy-cpp和SteamOS VRAM优化所需的。 包括对其进行签名以与Secure Boot一起使用的步骤（如果启用了该功能或处于设置模式）。",
+    "optivram": "SteamOS VRAM优化",
+    "optivram_desc": "最初来自SteamOS，这个优化显著提高了游戏性能，特别是在6GB VRAM或更少的系统上，通过将冷VRAM页面发送到RAM。 在Fedora上需要CachyOS Kernel。"
   },
   "ja": {
     "subtitle": "Linuxのためのユーザーフレンドリーなツール集。",
@@ -2879,7 +2897,7 @@
     "astapro_desc": "UML、ERD、フローチャート、DFDなどを備えた総合的なソフトウェア設計ツール",
     "positron_desc": "探索と本番業務を、AIが支援する無料の統合環境で統一",
     "rstudio_desc": "RおよびPythonを使用してより生産性の高い作業を支援するためのツールセット。",
-    "ananicy_desc": "実行中のプロセスの動作に基づいて、それらの\"nice\"値を自動的に調整するデーモン",
+    "ananicy_desc": "実行中のプロセスの'niceness'を動作に基づいて自動的に調整し、システムの応答性を向上させるデーモン。 Fedoraで CachyOS Kernel が必要です。",
     "kdememfix_desc": "KDE PlasmaのレンダリングバックエンドをOpenGLに切り替え、大幅に少ないVRAMを使用します",
     "zerotier_desc": "ほぼ無制限のサイズの仮想イーサネットネットワークを作成します。",
     "faugus_desc": "Linuxでゲームとそのワインプレフィックスを管理するための、より新しく、軽量で簡潔なアプリケーション、Lutrisに似ています。",
@@ -2912,7 +2930,7 @@
     "wayproton": "Wayland モードの Proton",
     "wayproton_desc": "Proton をデフォルトで wine-wayland モードで実行するように設定します。Steam または選択したゲーム ランチャーの起動オプションで、このモードで適切に機能しない可能性があるゲームの環境変数 PROTON_USE_WINE_WAYLAND=0 を選択的に設定できます。",
     "nv580_desc": "Maxwell (GTX 9xx)、Pascal (GTX 10xx)、および一部のKepler (GTX 750/750Ti) および Turing (GTX 16xx) シリーズ GPU用のNvidia 580xxレガシードライバー。",
-    "zram_desc": "zstdで圧縮されたRAMブロックデバイスで、従来のスワップファイルまたはパーティションの代わりにスワップに使用でき、特にメモリ圧力下でのパフォーマンスが向上します。",
+    "zram_desc": "システム機能に最適なRAM圧力管理ツールをセットアップします: 16GB以下のRAMを搭載したシステムの場合はZSWAP、16GBを超えるRAMを搭載したシステムの場合はZRAM。 ZSWAPにはスワップファイルまたはパーティションが必要です。",
     "preempt_desc": "Fedoraおよび関連システムで完全なカーネルプリエンプションを有効にします。これはデスクトップに望ましく、デフォルトカーネルによってサポートされていますが、サーバー環境での使用のため、デフォルトでは無効になっています。応答性とレイテンシが重要でない場所では。",
     "preemptfedora": "完全なカーネルプリエンプション",
     "udevpass": "ウェブベースのソフトウェアを有効にする",
@@ -2981,7 +2999,10 @@
     "sysup": "システムを更新",
     "sysup_desc": "孤立したパッケージをクリーンアップし、ディストリビューションパッケージとFlatpaksの両方の完全なシステムアップデートを実行します。",
     "autosysup": "自動システム更新",
-    "autosysup_desc": "LinuxToys の systemd 用自動システム更新サービスを有効にします。これにより、配布パッケージと Flatpaks の両方の孤立したパッケージのクリーンアップと完全なシステム更新を定期的に実行できます。リマインダー: これはシステムの現在のリリース バージョンのみを更新し、アップグレードしません。そのため、新しいリリースが利用可能になったときは、メイン メニューから手動更新を実行する必要があります。"
+    "autosysup_desc": "LinuxToys の systemd 用自動システム更新サービスを有効にします。これにより、配布パッケージと Flatpaks の両方の孤立したパッケージのクリーンアップと完全なシステム更新を定期的に実行できます。リマインダー: これはシステムの現在のリリース バージョンのみを更新し、アップグレードしません。そのため、新しいリリースが利用可能になったときは、メイン メニューから手動更新を実行する必要があります。",
+    "cachykrn_desc": "CachyOSのカスタムチューンカーネル。 Fedora上のananicy-cppおよびSteamOS VRAM最適化を使用するために必要です。 その機能が有効になっているか、セットアップモードの場合、Secure Bootで使用するために署名するための手順が含まれています。",
+    "optivram": "SteamOS VRAM最適化",
+    "optivram_desc": "元々SteamOSから、この最適化はゲームのパフォーマンスを大幅に改善します。特に6GB VRAM以下のシステムでは、冷たいVRAMページをRAMに送信することによって。FedoraではCachyOS Kernelが必要です。"
   },
   "ru": {
     "subtitle": "Коллекция инструментов для Linux в удобном формате.",
@@ -3305,7 +3326,7 @@
     "astapro_desc": "Полный инструмент проектирования ПО с UML, ERD, блок-схемой, DFD и другим",
     "positron_desc": "Объединяет исследовательскую и производственную работу в одной бесплатной среде с поддержкой ИИ",
     "rstudio_desc": "Набор инструментов, предназначенный для повышения продуктивности работы с R и Python.",
-    "ananicy_desc": "Демон, который автоматически регулирует \"nice\" значение запущенных процессов на основе их поведения",
+    "ananicy_desc": "Демон, который автоматически регулирует 'niceness' запущенных процессов на основе их поведения для улучшения отзывчивости системы. Требуется CachyOS Kernel на Fedora.",
     "kdememfix_desc": "Переключает бэкэнд рендеринга KDE Plasma на OpenGL, который использует значительно меньше VRAM",
     "zerotier_desc": "Создает виртуальные сети Ethernet практически неограниченного размера.",
     "faugus_desc": "Более новое, легкое и упрощенное приложение для управления вашими играми и их префиксами WINE в Linux, подобно Lutris.",
@@ -3338,7 +3359,7 @@
     "wayproton": "Proton в режиме Wayland",
     "wayproton_desc": "Устанавливает Proton для запуска в режиме wine-wayland по умолчанию. Вы можете выборочно установить переменную окружения PROTON_USE_WINE_WAYLAND=0 для игр, которые могут работать неправильно в этом режиме, в параметрах запуска в Steam или в предпочитаемом вами игровом лаунчере.",
     "nv580_desc": "Унаследованные драйверы Nvidia 580xx для Maxwell (GTX 9xx), Pascal (GTX 10xx) и некоторых GPU серии Kepler (GTX 750/750Ti) и Turing (GTX 16xx).",
-    "zram_desc": "Устройство блока RAM, сжатое с помощью zstd, которое может использоваться для свопа вместо обычного файла или раздела свопа, улучшает производительность, особенно под давлением память.",
+    "zram_desc": "Установите оптимальный инструмент управления давлением RAM для возможностей вашей системы: ZSWAP для систем с 16GB или меньше ОЗУ, ZRAM для систем с более чем 16GB ОЗУ. ZSWAP требует файл подкачки или раздел.",
     "preempt_desc": "Включите полное вытеснение ядра на Fedora и связанных системах, желательно для рабочих столов и поддерживается ядром по умолчанию, хотя отключено по умолчанию из-за использования в серверных средах, где отзывчивость и задержка не являются критическими.",
     "preemptfedora": "Полное вытеснение ядра",
     "udevpass": "Включить веб-программное обеспечение",
@@ -3407,6 +3428,9 @@
     "sysup": "Обновить Систему",
     "sysup_desc": "Выполняет очистку сиротских пакетов и полное обновление системы для пакетов распределения и Flatpaks.",
     "autosysup": "Автоматические Обновления",
-    "autosysup_desc": "Включите услуги автоматического обновления системы LinuxToys для systemd. Это будет выполнять очистку сиротских пакетов и полное обновление системы для пакетов распределения и Flatpaks на регулярной основе без необходимости беспокоиться. НАПОМИНАНИЕ: оно будет только обновлять текущую версию выпуска вашей системы, но не обновлять ее - для этого вы должны запустить ручное обновление из главного меню при наличии новой версии."
+    "autosysup_desc": "Включите услуги автоматического обновления системы LinuxToys для systemd. Это будет выполнять очистку сиротских пакетов и полное обновление системы для пакетов распределения и Flatpaks на регулярной основе без необходимости беспокоиться. НАПОМИНАНИЕ: оно будет только обновлять текущую версию выпуска вашей системы, но не обновлять ее - для этого вы должны запустить ручное обновление из главного меню при наличии новой версии.",
+    "cachykrn_desc": "Специально настроенное ядро CachyOS. Требуется для использования ananicy-cpp и SteamOS VRAM Optimization на Fedora. Содержит шаги для его подписания для использования с Secure Boot, если эта функция включена или находится в режиме настройки.",
+    "optivram": "Оптимизация SteamOS VRAM",
+    "optivram_desc": "Первоначально из SteamOS эта оптимизация значительно улучшает производительность игр, особенно на системах с 6 GB VRAM или меньше, отправляя холодные страницы VRAM в RAM. Требуется CachyOS Kernel на Fedora."
   }
 }

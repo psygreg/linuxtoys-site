@@ -521,7 +521,7 @@
       "tools": [
         {
           "name": "Ananicy-cpp",
-          "description": "A daemon that automatically adjusts the 'niceness' of running processes based on their behavior to improve system responsiveness, and makes 'gamemoderun' unnecessary for games.",
+          "description": "A daemon that automatically adjusts the 'niceness' of running processes based on their behavior to improve system responsiveness. Requires the CachyOS Kernel on Fedora.",
           "icon": "optimizer.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/ananicy.sh"
@@ -766,7 +766,7 @@
         },
         {
           "name": "ZRAM-Config",
-          "description": "A zstd-compressed RAM block device that can be used for swap instead of a conventional swap file or partition, improving performance especially under memory pressure.",
+          "description": "Set up the optimal RAM pressure management tool for your system capabilities: ZSWAP for systems with 16GB or lower RAM, ZRAM for systems with more than 16GB RAM. ZSWAP requires a swap file or partition.",
           "icon": "preload.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/zram.sh"
@@ -2212,7 +2212,7 @@
       "tools": [
         {
           "name": "Ananicy-cpp",
-          "description": "Um daemon que ajusta automaticamente a \"niceness\" de processos em execução com base no seu comportamento",
+          "description": "Um daemon que ajusta automaticamente o 'niceness' dos processos em execução com base em seu comportamento para melhorar a responsividade do sistema. Requer CachyOS Kernel no Fedora.",
           "icon": "optimizer.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/ananicy.sh"
@@ -2457,7 +2457,7 @@
         },
         {
           "name": "ZRAM-Config",
-          "description": "Dispositivo de bloco RAM comprimido com zstd que pode ser usado para swap em vez de um arquivo ou partição de swap convencional, melhora o desempenho especialmente sob pressão de memória.",
+          "description": "Configure a ferramenta de gerenciamento ideal de pressão de RAM para os recursos do seu sistema: ZSWAP para sistemas com 16GB ou menos de RAM, ZRAM para sistemas com mais de 16GB de RAM. ZSWAP requer um arquivo ou partição de troca.",
           "icon": "preload.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/zram.sh"
@@ -3903,7 +3903,7 @@
       "tools": [
         {
           "name": "Ananicy-cpp",
-          "description": "Un daemon que ajusta automáticamente la \"niceness\" de los procesos en ejecución según su comportamiento",
+          "description": "Un daemon que ajusta automáticamente la 'niceness' de los procesos en ejecución según su comportamiento para mejorar la capacidad de respuesta del sistema. Requiere CachyOS Kernel en Fedora.",
           "icon": "optimizer.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/ananicy.sh"
@@ -4148,7 +4148,7 @@
         },
         {
           "name": "ZRAM-Config",
-          "description": "Dispositivo de bloque RAM comprimido con zstd que se puede usar para intercambio en lugar of archivo o partición de intercambio convencional, mejorando el rendimiento especialmente bajo presión de memoria.",
+          "description": "Configura la herramienta óptima de gestión de presión de RAM según las capacidades de tu sistema: ZSWAP para sistemas con 16GB o menos RAM, ZRAM para sistemas con más de 16GB RAM. ZSWAP requiere un archivo o partición de intercambio.",
           "icon": "preload.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/zram.sh"
@@ -5594,7 +5594,7 @@
       "tools": [
         {
           "name": "Ananicy-cpp",
-          "description": "Un démon qui ajuste automatiquement la \"niceness\" des processus en cours en fonction de leur comportement",
+          "description": "Un daemon qui ajuste automatiquement la 'niceness' des processus en cours d'exécution en fonction de leur comportement pour améliorer la réactivité du système. Nécessite CachyOS Kernel sur Fedora.",
           "icon": "optimizer.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/ananicy.sh"
@@ -5839,7 +5839,7 @@
         },
         {
           "name": "ZRAM-Config",
-          "description": "Dispositif de bloc RAM compressé avec zstd qui peut être utilisé pour l'échange au lieu d'un fichier ou d'une partition d'échange conventionnel, améliore les performances en particulier sous pression mémoire.",
+          "description": "Configurez l'outil optimal de gestion de la pression RAM pour les capacités de votre système : ZSWAP pour les systèmes avec 16 Go ou moins de RAM, ZRAM pour les systèmes avec plus de 16 Go de RAM. ZSWAP nécessite un fichier d'échange ou une partition.",
           "icon": "preload.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/zram.sh"
@@ -7285,7 +7285,7 @@
       "tools": [
         {
           "name": "Ananicy-cpp",
-          "description": "Ein Daemon, das automatisch die \"Priorität\" laufender Prozesse basierend auf deren Verhalten anpasst",
+          "description": "Ein Daemon, der die 'Niceness' laufender Prozesse automatisch basierend auf ihrem Verhalten anpasst, um die Reaktionsfähigkeit des Systems zu verbessern. Erfordert CachyOS Kernel unter Fedora.",
           "icon": "optimizer.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/ananicy.sh"
@@ -7530,7 +7530,7 @@
         },
         {
           "name": "ZRAM-Config",
-          "description": "RAM-Blockgerät, komprimiert mit zstd, das anstelle einer konventionellen Swap-Datei oder Partition für Swap verwendet werden kann, verbessert die Leistung besonders unter Speicherdruck.",
+          "description": "Richten Sie das optimale RAM-Druckverwaltungstool für Ihre Systemfähigkeiten ein: ZSWAP für Systeme mit 16GB oder weniger RAM, ZRAM für Systeme mit mehr als 16GB RAM. ZSWAP erfordert eine Auslagerungsdatei oder Partition.",
           "icon": "preload.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/zram.sh"
@@ -8976,7 +8976,7 @@
       "tools": [
         {
           "name": "Ananicy-cpp",
-          "description": "一个守护进程，根据进程的行为自动调整正在运行的进程的\"nice\"值",
+          "description": "一个daemon，根据运行进程的行为自动调整其'niceness'以改善系统响应能力。 在Fedora上需要CachyOS Kernel。",
           "icon": "optimizer.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/ananicy.sh"
@@ -9221,7 +9221,7 @@
         },
         {
           "name": "ZRAM-Config",
-          "description": "zstd压缩的RAM块设备，可用于交换，而不是传统的交换文件或分区，特别在内存压力下改进性能。",
+          "description": "为您的系统功能设置最佳RAM压力管理工具: 16GB或更少RAM的系统使用ZSWAP,超过16GB RAM的系统使用ZRAM。 ZSWAP需要交换文件或分区。",
           "icon": "preload.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/zram.sh"
@@ -10667,7 +10667,7 @@
       "tools": [
         {
           "name": "Ananicy-cpp",
-          "description": "実行中のプロセスの動作に基づいて、それらの\"nice\"値を自動的に調整するデーモン",
+          "description": "実行中のプロセスの'niceness'を動作に基づいて自動的に調整し、システムの応答性を向上させるデーモン。 Fedoraで CachyOS Kernel が必要です。",
           "icon": "optimizer.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/ananicy.sh"
@@ -10912,7 +10912,7 @@
         },
         {
           "name": "ZRAM-Config",
-          "description": "zstdで圧縮されたRAMブロックデバイスで、従来のスワップファイルまたはパーティションの代わりにスワップに使用でき、特にメモリ圧力下でのパフォーマンスが向上します。",
+          "description": "システム機能に最適なRAM圧力管理ツールをセットアップします: 16GB以下のRAMを搭載したシステムの場合はZSWAP、16GBを超えるRAMを搭載したシステムの場合はZRAM。 ZSWAPにはスワップファイルまたはパーティションが必要です。",
           "icon": "preload.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/zram.sh"
@@ -12358,7 +12358,7 @@
       "tools": [
         {
           "name": "Ananicy-cpp",
-          "description": "Демон, который автоматически регулирует \"nice\" значение запущенных процессов на основе их поведения",
+          "description": "Демон, который автоматически регулирует 'niceness' запущенных процессов на основе их поведения для улучшения отзывчивости системы. Требуется CachyOS Kernel на Fedora.",
           "icon": "optimizer.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/ananicy.sh"
@@ -12603,7 +12603,7 @@
         },
         {
           "name": "ZRAM-Config",
-          "description": "Устройство блока RAM, сжатое с помощью zstd, которое может использоваться для свопа вместо обычного файла или раздела свопа, улучшает производительность, особенно под давлением память.",
+          "description": "Установите оптимальный инструмент управления давлением RAM для возможностей вашей системы: ZSWAP для систем с 16GB или меньше ОЗУ, ZRAM для систем с более чем 16GB ОЗУ. ZSWAP требует файл подкачки или раздел.",
           "icon": "preload.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/zram.sh"
