@@ -496,6 +496,27 @@
           "scriptPath": "p3/scripts/drivers/rtl8821ce-rpm.sh"
         },
         {
+          "name": "Realtek WiFi RTL88x2BU",
+          "description": "External RTL88x2BU/RTL8822BU USB WiFi driver with DKMS",
+          "icon": "rtl.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/rtl88x2bu-arch.sh"
+        },
+        {
+          "name": "Realtek WiFi RTL88x2BU",
+          "description": "External RTL88x2BU/RTL8822BU USB WiFi driver with DKMS",
+          "icon": "rtl.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/rtl88x2bu-deb.sh"
+        },
+        {
+          "name": "Realtek WiFi RTL88x2BU",
+          "description": "External RTL88x2BU/RTL8822BU USB WiFi driver with DKMS",
+          "icon": "rtl.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/rtl88x2bu-rpm.sh"
+        },
+        {
           "name": "RustiCL",
           "description": "A community-driven implementation of the OpenCL standard based in Rust, providing better performance and compatibility. Should only be used if your GPU is not supported by ROCm, CUDA or Intel Compute Runtime.",
           "icon": "device.svg",
@@ -560,6 +581,13 @@
           "icon": "cachyos.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/cachyconfs.sh"
+        },
+        {
+          "name": "CachyOS Kernel",
+          "description": "CachyOS's custom-tuned kernel. Required to use ananicy-cpp and SteamOS VRAM Optimization on Fedora. Includes steps to sign it for usage with Secure Boot if that feature is enabled or in setup mode.",
+          "icon": "cachyos.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/cachykrn.sh"
         },
         {
           "name": "Distrobox Command Handler",
@@ -674,6 +702,13 @@
           "scriptPath": "p3/scripts/extra/ondemand.sh"
         },
         {
+          "name": "SteamOS VRAM Optimization",
+          "description": "Originally from SteamOS, this optimization significantly improves performance in games, especially on systems with 6GB of VRAM or less, by sending cold VRAM pages into RAM. Requires the CachyOS Kernel on Fedora.",
+          "icon": "device.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/optivram.sh"
+        },
+        {
           "name": "Automatic Updates for RPM-OSTree",
           "description": "Enables rpm-ostree's automatic updating feature in stage mode (silent). Updates will only be applied on reboot, and you will not be prompted to reboot.",
           "icon": "grubtrfs.svg",
@@ -765,7 +800,7 @@
           "scriptPath": "p3/scripts/extra/wayproton.sh"
         },
         {
-          "name": "ZRAM-Config",
+          "name": "ZRAM/ZSWAP",
           "description": "Set up the optimal RAM pressure management tool for your system capabilities: ZSWAP for systems with 16GB or lower RAM, ZRAM for systems with more than 16GB RAM. ZSWAP requires a swap file or partition.",
           "icon": "preload.svg",
           "version": "1.0",
@@ -1508,6 +1543,20 @@
           "scriptPath": "p3/scripts/utils/rclone_ui.sh"
         },
         {
+          "name": "RClone Google Drive",
+          "description": "Add your Google Drive as a mount in your home directory, synchronized with rclone, allowing you to easily access and manage your cloud files from your file manager and terminal.",
+          "icon": "rgdrive.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/rgdrive.sh"
+        },
+        {
+          "name": "RClone OneDrive",
+          "description": "Add your OneDrive as a mount in your home directory, synchronized with rclone, allowing you to easily access your cloud files from your file manager and terminal.",
+          "icon": "rodrive.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/rodrive.sh"
+        },
+        {
           "name": "S3Drive",
           "description": "Convert S3, SFTP, WebDAV or Rclone back-end into your encrypted storage.",
           "icon": "s3drive.png",
@@ -2187,6 +2236,27 @@
           "scriptPath": "p3/scripts/drivers/rtl8821ce-rpm.sh"
         },
         {
+          "name": "Realtek WiFi RTL88x2BU",
+          "description": "External RTL88x2BU/RTL8822BU USB WiFi driver with DKMS",
+          "icon": "rtl.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/rtl88x2bu-arch.sh"
+        },
+        {
+          "name": "Realtek WiFi RTL88x2BU",
+          "description": "External RTL88x2BU/RTL8822BU USB WiFi driver with DKMS",
+          "icon": "rtl.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/rtl88x2bu-deb.sh"
+        },
+        {
+          "name": "Realtek WiFi RTL88x2BU",
+          "description": "External RTL88x2BU/RTL8822BU USB WiFi driver with DKMS",
+          "icon": "rtl.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/rtl88x2bu-rpm.sh"
+        },
+        {
           "name": "RustiCL",
           "description": "Uma implementação da comunidade baseada em Rust do padrão OpenCL, proporcionando melhor desempenho e compatibilidade. Deve ser usada apenas se sua GPU não for suportada pelo ROCm, CUDA ou Intel Compute Runtime.",
           "icon": "device.svg",
@@ -2251,6 +2321,13 @@
           "icon": "cachyos.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/cachyconfs.sh"
+        },
+        {
+          "name": "CachyOS Kernel",
+          "description": "O kernel personalizado de CachyOS. Necessário para usar ananicy-cpp e Otimização de VRAM no Fedora. Inclui etapas para assiná-lo para uso com Secure Boot se esse recurso estiver habilitado ou no modo de configuração.",
+          "icon": "cachyos.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/cachykrn.sh"
         },
         {
           "name": "Distrobox Command Handler",
@@ -2365,6 +2442,13 @@
           "scriptPath": "p3/scripts/extra/ondemand.sh"
         },
         {
+          "name": "Otimização de VRAM",
+          "description": "Originalmente do SteamOS, esta otimização melhora significativamente o desempenho de jogos, especialmente em sistemas com 6GB de VRAM ou menos, enviando páginas VRAM frias para RAM. Requer CachyOS Kernel no Fedora.",
+          "icon": "device.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/optivram.sh"
+        },
+        {
           "name": "Atualizações Automáticas para RPM-OSTree",
           "description": "Habilita o recurso de atualização automática do rpm-ostree no modo stage (silencioso). As atualizações só serão aplicadas na reinicialização, e você não será solicitado a reiniciar.",
           "icon": "grubtrfs.svg",
@@ -2456,7 +2540,7 @@
           "scriptPath": "p3/scripts/extra/wayproton.sh"
         },
         {
-          "name": "ZRAM-Config",
+          "name": "ZRAM/ZSWAP",
           "description": "Configure a ferramenta de gerenciamento ideal de pressão de RAM para os recursos do seu sistema: ZSWAP para sistemas com 16GB ou menos de RAM, ZRAM para sistemas com mais de 16GB de RAM. ZSWAP requer um arquivo ou partição de troca.",
           "icon": "preload.svg",
           "version": "1.0",
@@ -3199,6 +3283,20 @@
           "scriptPath": "p3/scripts/utils/rclone_ui.sh"
         },
         {
+          "name": "RClone Google Drive",
+          "description": "Adicione Google Drive como um ponto de montagem no seu diretório inicial, sincronizado com rclone, permitindo que você acesse facilmente seus arquivos na nuvem e os gerencie pelo gerenciador de arquivos e terminal.",
+          "icon": "rgdrive.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/rgdrive.sh"
+        },
+        {
+          "name": "RClone OneDrive",
+          "description": "Adicione OneDrive como um ponto de montagem no seu diretório inicial, sincronizado com rclone, permitindo que você acesse facilmente seus arquivos na nuvem e os gerencie pelo gerenciador de arquivos e terminal.",
+          "icon": "rodrive.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/rodrive.sh"
+        },
+        {
           "name": "S3Drive",
           "description": "Converta o back-end S3, SFTP, WebDAV ou Rclone em seu armazenamento criptografado.",
           "icon": "s3drive.png",
@@ -3878,6 +3976,27 @@
           "scriptPath": "p3/scripts/drivers/rtl8821ce-rpm.sh"
         },
         {
+          "name": "Realtek WiFi RTL88x2BU",
+          "description": "External RTL88x2BU/RTL8822BU USB WiFi driver with DKMS",
+          "icon": "rtl.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/rtl88x2bu-arch.sh"
+        },
+        {
+          "name": "Realtek WiFi RTL88x2BU",
+          "description": "External RTL88x2BU/RTL8822BU USB WiFi driver with DKMS",
+          "icon": "rtl.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/rtl88x2bu-deb.sh"
+        },
+        {
+          "name": "Realtek WiFi RTL88x2BU",
+          "description": "External RTL88x2BU/RTL8822BU USB WiFi driver with DKMS",
+          "icon": "rtl.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/rtl88x2bu-rpm.sh"
+        },
+        {
           "name": "RustiCL",
           "description": "Una implementación impulsada por la comunidad del estándar OpenCL basada en Rust, proporcionando mejor rendimiento y compatibilidad. Solo debe usarse si su GPU no es soportada por ROCm, CUDA o Intel Compute Runtime.",
           "icon": "device.svg",
@@ -3942,6 +4061,13 @@
           "icon": "cachyos.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/cachyconfs.sh"
+        },
+        {
+          "name": "CachyOS Kernel",
+          "description": "El kernel personalizado de CachyOS. Necesario para usar ananicy-cpp y SteamOS VRAM Optimization en Fedora. Incluye pasos para firmarlo para su uso con Secure Boot si esa función está habilitada o en modo de configuración.",
+          "icon": "cachyos.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/cachykrn.sh"
         },
         {
           "name": "Distrobox Command Handler",
@@ -4056,6 +4182,13 @@
           "scriptPath": "p3/scripts/extra/ondemand.sh"
         },
         {
+          "name": "Optimización de SteamOS VRAM",
+          "description": "Originalmente de SteamOS, esta optimización mejora significativamente el rendimiento en juegos, especialmente en sistemas con 6GB de VRAM o menos, enviando páginas VRAM frías a la RAM. Requiere CachyOS Kernel en Fedora.",
+          "icon": "device.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/optivram.sh"
+        },
+        {
           "name": "Actualizaciones Automáticas para RPM-OSTree",
           "description": "Habilita la función de actualización automática de rpm-ostree en modo stage (silencioso). Las actualizaciones solo se aplicarán al reiniciar, y no se le solicitará reiniciar.",
           "icon": "grubtrfs.svg",
@@ -4147,7 +4280,7 @@
           "scriptPath": "p3/scripts/extra/wayproton.sh"
         },
         {
-          "name": "ZRAM-Config",
+          "name": "ZRAM/ZSWAP",
           "description": "Configura la herramienta óptima de gestión de presión de RAM según las capacidades de tu sistema: ZSWAP para sistemas con 16GB o menos RAM, ZRAM para sistemas con más de 16GB RAM. ZSWAP requiere un archivo o partición de intercambio.",
           "icon": "preload.svg",
           "version": "1.0",
@@ -4890,6 +5023,20 @@
           "scriptPath": "p3/scripts/utils/rclone_ui.sh"
         },
         {
+          "name": "RClone Google Drive",
+          "description": "Agrega tu Google Drive como un punto de montaje en tu directorio de inicio, sincronizado con rclone, permitiéndote acceder fácilmente y administrar tus archivos en la nube desde el administrador de archivos y la terminal.",
+          "icon": "rgdrive.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/rgdrive.sh"
+        },
+        {
+          "name": "RClone OneDrive",
+          "description": "Agrega tu OneDrive como punto de montaje en tu directorio de inicio, sincronizado con rclone, permitiéndote acceder fácilmente a tus archivos en la nube desde el administrador de archivos y la terminal.",
+          "icon": "rodrive.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/rodrive.sh"
+        },
+        {
           "name": "S3Drive",
           "description": "Convierte el back-end de S3, SFTP, WebDAV o Rclone en tu almacenamiento cifrado.",
           "icon": "s3drive.png",
@@ -5569,6 +5716,27 @@
           "scriptPath": "p3/scripts/drivers/rtl8821ce-rpm.sh"
         },
         {
+          "name": "Realtek WiFi RTL88x2BU",
+          "description": "External RTL88x2BU/RTL8822BU USB WiFi driver with DKMS",
+          "icon": "rtl.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/rtl88x2bu-arch.sh"
+        },
+        {
+          "name": "Realtek WiFi RTL88x2BU",
+          "description": "External RTL88x2BU/RTL8822BU USB WiFi driver with DKMS",
+          "icon": "rtl.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/rtl88x2bu-deb.sh"
+        },
+        {
+          "name": "Realtek WiFi RTL88x2BU",
+          "description": "External RTL88x2BU/RTL8822BU USB WiFi driver with DKMS",
+          "icon": "rtl.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/rtl88x2bu-rpm.sh"
+        },
+        {
           "name": "RustiCL",
           "description": "Une implémentation communautaire du standard OpenCL basée sur Rust, offrant de meilleures performances et compatibilité. Ne devrait être utilisé que si votre GPU n'est pas supporté par ROCm, CUDA ou Intel Compute Runtime.",
           "icon": "device.svg",
@@ -5633,6 +5801,13 @@
           "icon": "cachyos.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/cachyconfs.sh"
+        },
+        {
+          "name": "CachyOS Kernel",
+          "description": "Le noyau personnalisé de CachyOS. Requis pour utiliser ananicy-cpp et SteamOS VRAM Optimization sur Fedora. Comprend des étapes pour le signer pour une utilisation avec Secure Boot si cette fonctionnalité est activée ou en mode de configuration.",
+          "icon": "cachyos.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/cachykrn.sh"
         },
         {
           "name": "Distrobox Command Handler",
@@ -5747,6 +5922,13 @@
           "scriptPath": "p3/scripts/extra/ondemand.sh"
         },
         {
+          "name": "Optimisation SteamOS VRAM",
+          "description": "Originellement de SteamOS, cette optimisation améliore considérablement les performances dans les jeux, en particulier sur les systèmes avec 6 Go de VRAM ou moins, en envoyant des pages VRAM froides à la RAM. Nécessite CachyOS Kernel sur Fedora.",
+          "icon": "device.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/optivram.sh"
+        },
+        {
           "name": "Mises à Jour Automatiques pour RPM-OSTree",
           "description": "Active la fonction de mise à jour automatique de rpm-ostree en mode stage (silencieux). Les mises à jour ne seront appliquées qu'au redémarrage, et vous ne serez pas invité à redémarrer.",
           "icon": "grubtrfs.svg",
@@ -5838,7 +6020,7 @@
           "scriptPath": "p3/scripts/extra/wayproton.sh"
         },
         {
-          "name": "ZRAM-Config",
+          "name": "ZRAM/ZSWAP",
           "description": "Configurez l'outil optimal de gestion de la pression RAM pour les capacités de votre système : ZSWAP pour les systèmes avec 16 Go ou moins de RAM, ZRAM pour les systèmes avec plus de 16 Go de RAM. ZSWAP nécessite un fichier d'échange ou une partition.",
           "icon": "preload.svg",
           "version": "1.0",
@@ -6581,6 +6763,20 @@
           "scriptPath": "p3/scripts/utils/rclone_ui.sh"
         },
         {
+          "name": "RClone Google Drive",
+          "description": "Ajoutez votre Google Drive comme point de montage dans votre répertoire personnel, synchronisé avec rclone, ce qui vous permet d'accéder facilement à vos fichiers cloud et de les gérer à partir du gestionnaire de fichiers et du terminal.",
+          "icon": "rgdrive.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/rgdrive.sh"
+        },
+        {
+          "name": "RClone OneDrive",
+          "description": "Ajoutez votre OneDrive comme point de montage dans votre répertoire personnel, synchronisé avec rclone, ce qui vous permet d'accéder facilement à vos fichiers cloud et de les gérer à partir du gestionnaire de fichiers et du terminal.",
+          "icon": "rodrive.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/rodrive.sh"
+        },
+        {
           "name": "S3Drive",
           "description": "Convertissez le back-end S3, SFTP, WebDAV ou Rclone en votre stockage chiffré.",
           "icon": "s3drive.png",
@@ -7260,6 +7456,27 @@
           "scriptPath": "p3/scripts/drivers/rtl8821ce-rpm.sh"
         },
         {
+          "name": "Realtek WiFi RTL88x2BU",
+          "description": "External RTL88x2BU/RTL8822BU USB WiFi driver with DKMS",
+          "icon": "rtl.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/rtl88x2bu-arch.sh"
+        },
+        {
+          "name": "Realtek WiFi RTL88x2BU",
+          "description": "External RTL88x2BU/RTL8822BU USB WiFi driver with DKMS",
+          "icon": "rtl.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/rtl88x2bu-deb.sh"
+        },
+        {
+          "name": "Realtek WiFi RTL88x2BU",
+          "description": "External RTL88x2BU/RTL8822BU USB WiFi driver with DKMS",
+          "icon": "rtl.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/rtl88x2bu-rpm.sh"
+        },
+        {
           "name": "RustiCL",
           "description": "Eine Community-getriebene Implementierung des OpenCL-Standards basierend auf Rust, die bessere Leistung und Kompatibilität bietet. Sollte nur verwendet werden, wenn Ihre GPU nicht von ROCm, CUDA oder Intel Compute Runtime unterstützt wird.",
           "icon": "device.svg",
@@ -7324,6 +7541,13 @@
           "icon": "cachyos.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/cachyconfs.sh"
+        },
+        {
+          "name": "CachyOS Kernel",
+          "description": "Der benutzerdefinierte Kernel von CachyOS. Erforderlich zur Verwendung von ananicy-cpp und SteamOS VRAM Optimization auf Fedora. Enthält Schritte zum Signieren für die Verwendung mit Secure Boot, wenn dieses Feature aktiviert ist oder sich im Setup-Modus befindet.",
+          "icon": "cachyos.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/cachykrn.sh"
         },
         {
           "name": "Distrobox Command Handler",
@@ -7438,6 +7662,13 @@
           "scriptPath": "p3/scripts/extra/ondemand.sh"
         },
         {
+          "name": "SteamOS VRAM-Optimierung",
+          "description": "Ursprünglich von SteamOS verbessert diese Optimierung die Spielleistung erheblich, besonders auf Systemen mit 6 GB VRAM oder weniger, indem kalte VRAM-Seiten in den RAM gesendet werden. Erfordert CachyOS Kernel unter Fedora.",
+          "icon": "device.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/optivram.sh"
+        },
+        {
           "name": "Automatische Updates für RPM-OSTree",
           "description": "Aktiviert rpm-ostree's automatische Update-Funktion im Stage-Modus (stumm). Updates werden nur beim Neustart angewendet, und Sie werden nicht zum Neustart aufgefordert.",
           "icon": "grubtrfs.svg",
@@ -7529,7 +7760,7 @@
           "scriptPath": "p3/scripts/extra/wayproton.sh"
         },
         {
-          "name": "ZRAM-Config",
+          "name": "ZRAM/ZSWAP",
           "description": "Richten Sie das optimale RAM-Druckverwaltungstool für Ihre Systemfähigkeiten ein: ZSWAP für Systeme mit 16GB oder weniger RAM, ZRAM für Systeme mit mehr als 16GB RAM. ZSWAP erfordert eine Auslagerungsdatei oder Partition.",
           "icon": "preload.svg",
           "version": "1.0",
@@ -8272,6 +8503,20 @@
           "scriptPath": "p3/scripts/utils/rclone_ui.sh"
         },
         {
+          "name": "RClone Google Drive",
+          "description": "Fügen Sie Google Drive als Bereitstellungspunkt in Ihr Home-Verzeichnis ein, synchronisiert mit rclone, wodurch Sie problemlos auf Ihre Cloud-Dateien zugreifen und diese über den Datei-Manager und das Terminal verwalten können.",
+          "icon": "rgdrive.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/rgdrive.sh"
+        },
+        {
+          "name": "RClone OneDrive",
+          "description": "Fügen Sie Ihr OneDrive als Bereitstellungspunkt in Ihr Home-Verzeichnis ein, synchronisiert mit rclone, wodurch Sie problemlos auf Ihre Cloud-Dateien zugreifen können und diese über den Datei-Manager und das Terminal verwalten.",
+          "icon": "rodrive.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/rodrive.sh"
+        },
+        {
           "name": "S3Drive",
           "description": "Konvertieren Sie S3, SFTP, WebDAV oder Rclone-Backend in Ihren verschlüsselten Speicher.",
           "icon": "s3drive.png",
@@ -8951,6 +9196,27 @@
           "scriptPath": "p3/scripts/drivers/rtl8821ce-rpm.sh"
         },
         {
+          "name": "Realtek WiFi RTL88x2BU",
+          "description": "External RTL88x2BU/RTL8822BU USB WiFi driver with DKMS",
+          "icon": "rtl.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/rtl88x2bu-arch.sh"
+        },
+        {
+          "name": "Realtek WiFi RTL88x2BU",
+          "description": "External RTL88x2BU/RTL8822BU USB WiFi driver with DKMS",
+          "icon": "rtl.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/rtl88x2bu-deb.sh"
+        },
+        {
+          "name": "Realtek WiFi RTL88x2BU",
+          "description": "External RTL88x2BU/RTL8822BU USB WiFi driver with DKMS",
+          "icon": "rtl.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/rtl88x2bu-rpm.sh"
+        },
+        {
           "name": "RustiCL",
           "description": "基于Rust的OpenCL标准的社区驱动实现，提供更好的性能和兼容性。仅在您的GPU不被ROCm、CUDA或Intel Compute Runtime支持时使用。",
           "icon": "device.svg",
@@ -9015,6 +9281,13 @@
           "icon": "cachyos.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/cachyconfs.sh"
+        },
+        {
+          "name": "CachyOS Kernel",
+          "description": "CachyOS的自定义调整内核。 在Fedora上使用ananicy-cpp和SteamOS VRAM优化所需的。 包括对其进行签名以与Secure Boot一起使用的步骤（如果启用了该功能或处于设置模式）。",
+          "icon": "cachyos.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/cachykrn.sh"
         },
         {
           "name": "Distrobox Command Handler",
@@ -9129,6 +9402,13 @@
           "scriptPath": "p3/scripts/extra/ondemand.sh"
         },
         {
+          "name": "SteamOS VRAM优化",
+          "description": "最初来自SteamOS，这个优化显著提高了游戏性能，特别是在6GB VRAM或更少的系统上，通过将冷VRAM页面发送到RAM。 在Fedora上需要CachyOS Kernel。",
+          "icon": "device.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/optivram.sh"
+        },
+        {
           "name": "RPM-OSTree自动更新",
           "description": "启用rpm-ostree在暂存模式（静默）下的自动更新功能。更新只会在重启时应用，您不会被提示重启。",
           "icon": "grubtrfs.svg",
@@ -9220,7 +9500,7 @@
           "scriptPath": "p3/scripts/extra/wayproton.sh"
         },
         {
-          "name": "ZRAM-Config",
+          "name": "ZRAM/ZSWAP",
           "description": "为您的系统功能设置最佳RAM压力管理工具: 16GB或更少RAM的系统使用ZSWAP,超过16GB RAM的系统使用ZRAM。 ZSWAP需要交换文件或分区。",
           "icon": "preload.svg",
           "version": "1.0",
@@ -9963,6 +10243,20 @@
           "scriptPath": "p3/scripts/utils/rclone_ui.sh"
         },
         {
+          "name": "RClone Google Drive",
+          "description": "将您的 Google Drive 添加为主目录中的挂载点，与 rclone 同步，使您可以从文件管理器和终端轻松访问和管理您的云文件。",
+          "icon": "rgdrive.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/rgdrive.sh"
+        },
+        {
+          "name": "RClone OneDrive",
+          "description": "将您的 OneDrive 添加为主目录中的挂载点，与 rclone 同步，使您可以从文件管理器和终端轻松访问和管理您的云文件。",
+          "icon": "rodrive.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/rodrive.sh"
+        },
+        {
           "name": "S3Drive",
           "description": "将 S3、SFTP、WebDAV 或 Rclone 后端转换为您的加密存储。",
           "icon": "s3drive.png",
@@ -10642,6 +10936,27 @@
           "scriptPath": "p3/scripts/drivers/rtl8821ce-rpm.sh"
         },
         {
+          "name": "Realtek WiFi RTL88x2BU",
+          "description": "External RTL88x2BU/RTL8822BU USB WiFi driver with DKMS",
+          "icon": "rtl.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/rtl88x2bu-arch.sh"
+        },
+        {
+          "name": "Realtek WiFi RTL88x2BU",
+          "description": "External RTL88x2BU/RTL8822BU USB WiFi driver with DKMS",
+          "icon": "rtl.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/rtl88x2bu-deb.sh"
+        },
+        {
+          "name": "Realtek WiFi RTL88x2BU",
+          "description": "External RTL88x2BU/RTL8822BU USB WiFi driver with DKMS",
+          "icon": "rtl.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/rtl88x2bu-rpm.sh"
+        },
+        {
           "name": "RustiCL",
           "description": "より良いパフォーマンスと互換性を提供するRustベースのOpenCL標準のコミュニティ駆動実装。GPUがROCm、CUDA、Intel Compute Runtimeでサポートされていない場合のみ使用。",
           "icon": "device.svg",
@@ -10706,6 +11021,13 @@
           "icon": "cachyos.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/cachyconfs.sh"
+        },
+        {
+          "name": "CachyOS Kernel",
+          "description": "CachyOSのカスタムチューンカーネル。 Fedora上のananicy-cppおよびSteamOS VRAM最適化を使用するために必要です。 その機能が有効になっているか、セットアップモードの場合、Secure Bootで使用するために署名するための手順が含まれています。",
+          "icon": "cachyos.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/cachykrn.sh"
         },
         {
           "name": "Distrobox Command Handler",
@@ -10820,6 +11142,13 @@
           "scriptPath": "p3/scripts/extra/ondemand.sh"
         },
         {
+          "name": "SteamOS VRAM最適化",
+          "description": "元々SteamOSから、この最適化はゲームのパフォーマンスを大幅に改善します。特に6GB VRAM以下のシステムでは、冷たいVRAMページをRAMに送信することによって。FedoraではCachyOS Kernelが必要です。",
+          "icon": "device.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/optivram.sh"
+        },
+        {
           "name": "RPM-OSTree自動更新",
           "description": "rpm-ostreeのステージモード（サイレント）での自動更新機能を有効にします。更新は再起動時にのみ適用され、再起動を求められることはありません。",
           "icon": "grubtrfs.svg",
@@ -10911,7 +11240,7 @@
           "scriptPath": "p3/scripts/extra/wayproton.sh"
         },
         {
-          "name": "ZRAM-Config",
+          "name": "ZRAM/ZSWAP",
           "description": "システム機能に最適なRAM圧力管理ツールをセットアップします: 16GB以下のRAMを搭載したシステムの場合はZSWAP、16GBを超えるRAMを搭載したシステムの場合はZRAM。 ZSWAPにはスワップファイルまたはパーティションが必要です。",
           "icon": "preload.svg",
           "version": "1.0",
@@ -11654,6 +11983,20 @@
           "scriptPath": "p3/scripts/utils/rclone_ui.sh"
         },
         {
+          "name": "RClone Google Drive",
+          "description": "Google Drive をホームディレクトリのマウントポイントとして追加し、rclone と同期させることで、ファイルマネージャーとターミナルからクラウドファイルに簡単にアクセスして管理できます。",
+          "icon": "rgdrive.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/rgdrive.sh"
+        },
+        {
+          "name": "RClone OneDrive",
+          "description": "OneDrive をホームディレクトリのマウントポイントとして追加し、rclone と同期させることで、ファイルマネージャーとターミナルからクラウドファイルに簡単にアクセスして管理できます。",
+          "icon": "rodrive.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/rodrive.sh"
+        },
+        {
           "name": "S3Drive",
           "description": "S3、SFTP、WebDAV、またはRcloneのバックエンドを暗号化されたストレージに変換します。",
           "icon": "s3drive.png",
@@ -12333,6 +12676,27 @@
           "scriptPath": "p3/scripts/drivers/rtl8821ce-rpm.sh"
         },
         {
+          "name": "Realtek WiFi RTL88x2BU",
+          "description": "External RTL88x2BU/RTL8822BU USB WiFi driver with DKMS",
+          "icon": "rtl.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/rtl88x2bu-arch.sh"
+        },
+        {
+          "name": "Realtek WiFi RTL88x2BU",
+          "description": "External RTL88x2BU/RTL8822BU USB WiFi driver with DKMS",
+          "icon": "rtl.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/rtl88x2bu-deb.sh"
+        },
+        {
+          "name": "Realtek WiFi RTL88x2BU",
+          "description": "External RTL88x2BU/RTL8822BU USB WiFi driver with DKMS",
+          "icon": "rtl.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/rtl88x2bu-rpm.sh"
+        },
+        {
           "name": "RustiCL",
           "description": "Управляемая сообществом реализация стандарта OpenCL на основе Rust, обеспечивающая лучшую производительность и совместимость. Следует использовать только если ваш GPU не поддерживается ROCm, CUDA или Intel Compute Runtime.",
           "icon": "device.svg",
@@ -12397,6 +12761,13 @@
           "icon": "cachyos.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/cachyconfs.sh"
+        },
+        {
+          "name": "CachyOS Kernel",
+          "description": "Специально настроенное ядро CachyOS. Требуется для использования ananicy-cpp и SteamOS VRAM Optimization на Fedora. Содержит шаги для его подписания для использования с Secure Boot, если эта функция включена или находится в режиме настройки.",
+          "icon": "cachyos.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/cachykrn.sh"
         },
         {
           "name": "Distrobox Command Handler",
@@ -12511,6 +12882,13 @@
           "scriptPath": "p3/scripts/extra/ondemand.sh"
         },
         {
+          "name": "Оптимизация SteamOS VRAM",
+          "description": "Первоначально из SteamOS эта оптимизация значительно улучшает производительность игр, особенно на системах с 6 GB VRAM или меньше, отправляя холодные страницы VRAM в RAM. Требуется CachyOS Kernel на Fedora.",
+          "icon": "device.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/optivram.sh"
+        },
+        {
           "name": "Автоматические обновления для RPM-OSTree",
           "description": "Включает функцию автоматического обновления rpm-ostree в режиме stage (тихий). Обновления будут применены только при перезагрузке, и вас не будут просить перезагрузиться.",
           "icon": "grubtrfs.svg",
@@ -12602,7 +12980,7 @@
           "scriptPath": "p3/scripts/extra/wayproton.sh"
         },
         {
-          "name": "ZRAM-Config",
+          "name": "ZRAM/ZSWAP",
           "description": "Установите оптимальный инструмент управления давлением RAM для возможностей вашей системы: ZSWAP для систем с 16GB или меньше ОЗУ, ZRAM для систем с более чем 16GB ОЗУ. ZSWAP требует файл подкачки или раздел.",
           "icon": "preload.svg",
           "version": "1.0",
@@ -13343,6 +13721,20 @@
           "icon": "rcloneui.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/rclone_ui.sh"
+        },
+        {
+          "name": "RClone Google Drive",
+          "description": "Добавьте Google Drive как точку монтирования в домашний каталог, синхронизированный с rclone, позволяя вам легко получать доступ к облачным файлам и управлять ими из файлового менеджера и терминала.",
+          "icon": "rgdrive.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/rgdrive.sh"
+        },
+        {
+          "name": "RClone OneDrive",
+          "description": "Добавьте OneDrive как точку монтирования в домашний каталог, синхронизированный с rclone, позволяя вам легко получать доступ к облачным файлам и управлять ими из файлового менеджера и терминала.",
+          "icon": "rodrive.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/rodrive.sh"
         },
         {
           "name": "S3Drive",

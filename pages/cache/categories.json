@@ -493,6 +493,27 @@
         "scriptPath": "p3/scripts/drivers/rtl8821ce-rpm.sh"
       },
       {
+        "name": "Realtek WiFi RTL88x2BU",
+        "description": "External RTL88x2BU/RTL8822BU USB WiFi driver with DKMS",
+        "icon": "rtl.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/drivers/rtl88x2bu-arch.sh"
+      },
+      {
+        "name": "Realtek WiFi RTL88x2BU",
+        "description": "External RTL88x2BU/RTL8822BU USB WiFi driver with DKMS",
+        "icon": "rtl.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/drivers/rtl88x2bu-deb.sh"
+      },
+      {
+        "name": "Realtek WiFi RTL88x2BU",
+        "description": "External RTL88x2BU/RTL8822BU USB WiFi driver with DKMS",
+        "icon": "rtl.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/drivers/rtl88x2bu-rpm.sh"
+      },
+      {
         "name": "RustiCL",
         "description": "rusticl_desc",
         "icon": "device.svg",
@@ -556,6 +577,13 @@
         "icon": "cachyos.svg",
         "version": "1.0",
         "scriptPath": "p3/scripts/extra/cachyconfs.sh"
+      },
+      {
+        "name": "CachyOS Kernel",
+        "description": "cachykrn_desc",
+        "icon": "cachyos.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/cachykrn.sh"
       },
       {
         "name": "Distrobox Command Handler",
@@ -670,6 +698,13 @@
         "scriptPath": "p3/scripts/extra/ondemand.sh"
       },
       {
+        "name": "optivram",
+        "description": "optivram_desc",
+        "icon": "device.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/optivram.sh"
+      },
+      {
         "name": "ostree-autoupd",
         "description": "ostree-autoupd_desc",
         "icon": "grubtrfs.svg",
@@ -761,7 +796,7 @@
         "scriptPath": "p3/scripts/extra/wayproton.sh"
       },
       {
-        "name": "ZRAM-Config",
+        "name": "ZRAM/ZSWAP",
         "description": "zram_desc",
         "icon": "preload.svg",
         "version": "1.0",
@@ -1497,6 +1532,20 @@
         "icon": "rcloneui.png",
         "version": "1.0",
         "scriptPath": "p3/scripts/utils/rclone_ui.sh"
+      },
+      {
+        "name": "RClone Google Drive",
+        "description": "rgdrive_desc",
+        "icon": "rgdrive.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/rgdrive.sh"
+      },
+      {
+        "name": "RClone OneDrive",
+        "description": "rodrive_desc",
+        "icon": "rodrive.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/rodrive.sh"
       },
       {
         "name": "S3Drive",
