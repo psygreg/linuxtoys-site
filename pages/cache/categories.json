@@ -385,6 +385,13 @@
         "description": "nv580_desc",
         "icon": "nvidia.svg",
         "version": "1.0",
+        "scriptPath": "p3/scripts/drivers/nv-580-ostree.sh"
+      },
+      {
+        "name": "Nvidia Drivers (v580)",
+        "description": "nv580_desc",
+        "icon": "nvidia.svg",
+        "version": "1.0",
         "scriptPath": "p3/scripts/drivers/nv-580.sh"
       },
       {
@@ -1625,6 +1632,13 @@
         "icon": "expressvpn.svg",
         "version": "1.0",
         "scriptPath": "p3/scripts/utils/privacy/express-vpn.sh"
+      },
+      {
+        "name": "Helium Browser",
+        "description": "helium_desc",
+        "icon": "helium.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/privacy/helium.sh"
       },
       {
         "name": "Hiddify",

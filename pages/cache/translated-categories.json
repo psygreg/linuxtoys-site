@@ -388,6 +388,13 @@
           "description": "Nvidia 580xx legacy drivers for Maxwell (GTX 9xx), Pascal (GTX 10xx) and some Kepler (GTX 750/750Ti) and Turing (GTX 16xx) series GPUs.",
           "icon": "nvidia.svg",
           "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/nv-580-ostree.sh"
+        },
+        {
+          "name": "Nvidia Drivers (v580)",
+          "description": "Nvidia 580xx legacy drivers for Maxwell (GTX 9xx), Pascal (GTX 10xx) and some Kepler (GTX 750/750Ti) and Turing (GTX 16xx) series GPUs.",
+          "icon": "nvidia.svg",
+          "version": "1.0",
           "scriptPath": "p3/scripts/drivers/nv-580.sh"
         },
         {
@@ -1637,6 +1644,13 @@
           "scriptPath": "p3/scripts/utils/privacy/express-vpn.sh"
         },
         {
+          "name": "Helium Browser",
+          "description": "Chromium-based minimalist web browser that takes a privacy-first approach with unbiased ad-blocking.",
+          "icon": "helium.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/privacy/helium.sh"
+        },
+        {
           "name": "Hiddify",
           "description": "Hiddify VPN client.",
           "icon": "hiddify.png",
@@ -2122,6 +2136,13 @@
           "icon": "sign.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/modsign.sh"
+        },
+        {
+          "name": "Nvidia Drivers (v580)",
+          "description": "Drivers herdados do Nvidia 580xx para Maxwell (GTX 9xx), Pascal (GTX 10xx) e algumas séries Kepler (GTX 750/750Ti) e Turing (GTX 16xx) GPU.",
+          "icon": "nvidia.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/nv-580-ostree.sh"
         },
         {
           "name": "Nvidia Drivers (v580)",
@@ -3377,6 +3398,13 @@
           "scriptPath": "p3/scripts/utils/privacy/express-vpn.sh"
         },
         {
+          "name": "Helium Browser",
+          "description": "Navegador web minimalista baseado em Chromium que adota uma abordagem centrada na privacidade com bloqueio de anúncios imparcial.",
+          "icon": "helium.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/privacy/helium.sh"
+        },
+        {
           "name": "Hiddify",
           "description": "Cliente Hiddify VPN.",
           "icon": "hiddify.png",
@@ -3862,6 +3890,13 @@
           "icon": "sign.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/modsign.sh"
+        },
+        {
+          "name": "Nvidia Drivers (v580)",
+          "description": "Controladores heredados de Nvidia 580xx para Maxwell (GTX 9xx), Pascal (GTX 10xx) y algunas series Kepler (GTX 750/750Ti) y Turing (GTX 16xx) GPU.",
+          "icon": "nvidia.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/nv-580-ostree.sh"
         },
         {
           "name": "Nvidia Drivers (v580)",
@@ -5117,6 +5152,13 @@
           "scriptPath": "p3/scripts/utils/privacy/express-vpn.sh"
         },
         {
+          "name": "Helium Browser",
+          "description": "Navegador web minimalista basado en Chromium que adopta un enfoque centrado en la privacidad con bloqueo de anuncios imparcial.",
+          "icon": "helium.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/privacy/helium.sh"
+        },
+        {
           "name": "Hiddify",
           "description": "Cliente Hiddify VPN.",
           "icon": "hiddify.png",
@@ -5602,6 +5644,13 @@
           "icon": "sign.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/modsign.sh"
+        },
+        {
+          "name": "Nvidia Drivers (v580)",
+          "description": "Pilotes hérités Nvidia 580xx pour Maxwell (GTX 9xx), Pascal (GTX 10xx) et certaines séries Kepler (GTX 750/750Ti) et Turing (GTX 16xx) GPU.",
+          "icon": "nvidia.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/nv-580-ostree.sh"
         },
         {
           "name": "Nvidia Drivers (v580)",
@@ -6857,6 +6906,13 @@
           "scriptPath": "p3/scripts/utils/privacy/express-vpn.sh"
         },
         {
+          "name": "Helium Browser",
+          "description": "Navigateur web minimaliste basé sur Chromium avec une approche axée sur la confidentialité et un blocage impartial des publicités.",
+          "icon": "helium.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/privacy/helium.sh"
+        },
+        {
           "name": "Hiddify",
           "description": "Client Hiddify VPN.",
           "icon": "hiddify.png",
@@ -7342,6 +7398,13 @@
           "icon": "sign.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/modsign.sh"
+        },
+        {
+          "name": "Nvidia Drivers (v580)",
+          "description": "Nvidia 580xx Legacy-Treiber für Maxwell (GTX 9xx), Pascal (GTX 10xx) und einige Kepler (GTX 750/750Ti) und Turing (GTX 16xx) GPU-Serien.",
+          "icon": "nvidia.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/nv-580-ostree.sh"
         },
         {
           "name": "Nvidia Drivers (v580)",
@@ -8597,6 +8660,13 @@
           "scriptPath": "p3/scripts/utils/privacy/express-vpn.sh"
         },
         {
+          "name": "Helium Browser",
+          "description": "Minimalistischer auf Chromium basierender Webbrowser mit Privacy-First-Ansatz und unvoreingenommener Werbeblocker.",
+          "icon": "helium.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/privacy/helium.sh"
+        },
+        {
           "name": "Hiddify",
           "description": "Hiddify VPN-Client.",
           "icon": "hiddify.png",
@@ -9082,6 +9152,13 @@
           "icon": "sign.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/modsign.sh"
+        },
+        {
+          "name": "Nvidia Drivers (v580)",
+          "description": "Nvidia 580xx 旧版驱动程序，适用于Maxwell (GTX 9xx)、Pascal (GTX 10xx)以及部分Kepler (GTX 750/750Ti)和Turing (GTX 16xx)系列GPU。",
+          "icon": "nvidia.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/nv-580-ostree.sh"
         },
         {
           "name": "Nvidia Drivers (v580)",
@@ -10337,6 +10414,13 @@
           "scriptPath": "p3/scripts/utils/privacy/express-vpn.sh"
         },
         {
+          "name": "Helium Browser",
+          "description": "基于Chromium的极简网络浏览器，采用隐私优先的方法和公正的广告拦截。",
+          "icon": "helium.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/privacy/helium.sh"
+        },
+        {
           "name": "Hiddify",
           "description": "Hiddify VPN 客户端。",
           "icon": "hiddify.png",
@@ -10822,6 +10906,13 @@
           "icon": "sign.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/modsign.sh"
+        },
+        {
+          "name": "Nvidia Drivers (v580)",
+          "description": "Maxwell (GTX 9xx)、Pascal (GTX 10xx)、および一部のKepler (GTX 750/750Ti) および Turing (GTX 16xx) シリーズ GPU用のNvidia 580xxレガシードライバー。",
+          "icon": "nvidia.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/nv-580-ostree.sh"
         },
         {
           "name": "Nvidia Drivers (v580)",
@@ -12077,6 +12168,13 @@
           "scriptPath": "p3/scripts/utils/privacy/express-vpn.sh"
         },
         {
+          "name": "Helium Browser",
+          "description": "Chromiumベースの最小限のウェブブラウザであり、プライバシー優先のアプローチと公平な広告ブロッキングを備えています。",
+          "icon": "helium.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/privacy/helium.sh"
+        },
+        {
           "name": "Hiddify",
           "description": "Hiddify VPNクライアント。",
           "icon": "hiddify.png",
@@ -12562,6 +12660,13 @@
           "icon": "sign.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/modsign.sh"
+        },
+        {
+          "name": "Nvidia Drivers (v580)",
+          "description": "Унаследованные драйверы Nvidia 580xx для Maxwell (GTX 9xx), Pascal (GTX 10xx) и некоторых GPU серии Kepler (GTX 750/750Ti) и Turing (GTX 16xx).",
+          "icon": "nvidia.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/nv-580-ostree.sh"
         },
         {
           "name": "Nvidia Drivers (v580)",
@@ -13815,6 +13920,13 @@
           "icon": "expressvpn.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/privacy/express-vpn.sh"
+        },
+        {
+          "name": "Helium Browser",
+          "description": "Минималистичный веб-браузер на основе Chromium с подходом, приоритизирующим конфиденциальность, и беспристрастной блокировкой объявлений.",
+          "icon": "helium.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/privacy/helium.sh"
         },
         {
           "name": "Hiddify",

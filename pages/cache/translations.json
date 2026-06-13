@@ -431,7 +431,8 @@
     "ostree_info_message": "This system uses rpm-ostree for atomic updates. Any newly installed packages that are not flatpaks will only be deployed and available after a system reboot.",
     "flatpak_installed_title": "Flatpak Installed",
     "flatpak_installed_message": "The Flatpak capability has just been installed on your system. A system reboot is required for the app menu to start including flatpak applications.",
-    "featured_scripts": "You may want to try..."
+    "featured_scripts": "You may want to try...",
+    "helium_desc": "Chromium-based minimalist web browser that takes a privacy-first approach with unbiased ad-blocking."
   },
   "pt": {
     "subtitle": "Uma coleção amigável de ferramentas para Linux.",
@@ -865,7 +866,8 @@
     "ostree_info_message": "Este sistema usa rpm-ostree para atualizações atômicas. Todos os pacotes recém-instalados que não sejam flatpaks serão implantados e disponibilizados apenas após uma reinicialização do sistema.",
     "flatpak_installed_title": "Flatpak instalado",
     "flatpak_installed_message": "A capacidade Flatpak foi instalada no seu sistema. Uma reinicialização do sistema é necessária para que o menu de aplicativos comece a incluir aplicativos flatpak.",
-    "featured_scripts": "Você pode querer experimentar..."
+    "featured_scripts": "Você pode querer tentar...",
+    "helium_desc": "Navegador web minimalista baseado em Chromium que adota uma abordagem centrada na privacidade com bloqueio de anúncios imparcial."
   },
   "es": {
     "subtitle": "Una colección amigable de herramientas para Linux.",
@@ -1299,7 +1301,8 @@
     "ostree_info_message": "Este sistema utiliza rpm-ostree para actualizaciones atómicas. Todos los paquetes recién instalados que no sean flatpaks se implementarán y estarán disponibles solo después de reiniciar el sistema.",
     "flatpak_installed_title": "Flatpak instalado",
     "flatpak_installed_message": "La capacidad de Flatpak se acaba de instalar en su sistema. Se requiere un reinicio del sistema para que el menú de aplicaciones comience a incluir aplicaciones flatpak.",
-    "featured_scripts": "Quizás quieras probar..."
+    "featured_scripts": "Quizás quieras probar...",
+    "helium_desc": "Navegador web minimalista basado en Chromium que adopta un enfoque centrado en la privacidad con bloqueo de anuncios imparcial."
   },
   "fr": {
     "subtitle": "Une collection d'outils pour Linux de manière conviviale.",
@@ -1733,7 +1736,8 @@
     "ostree_info_message": "Ce système utilise rpm-ostree pour les mises à jour atomiques. Tous les paquets nouvellement installés qui ne sont pas des flatpaks ne seront déployés et disponibles qu'après un redémarrage du système.",
     "flatpak_installed_title": "Flatpak installé",
     "flatpak_installed_message": "La capacité Flatpak vient d'être installée sur votre système. Un redémarrage du système est nécessaire pour que le menu des applications commence à inclure les applications flatpak.",
-    "featured_scripts": "Vous voudrez peut-être essayer..."
+    "featured_scripts": "Vous voudrez peut-être essayer...",
+    "helium_desc": "Navigateur web minimaliste basé sur Chromium avec une approche axée sur la confidentialité et un blocage impartial des publicités."
   },
   "de": {
     "subtitle": "Eine freundliche Sammlung von Tools für Linux.",
@@ -2167,7 +2171,8 @@
     "ostree_info_message": "Dieses System verwendet rpm-ostree für atomare Updates. Alle neu installierten Pakete, die keine Flatpaks sind, werden erst nach einem Systemneustart bereitgestellt und verfügbar sein.",
     "flatpak_installed_title": "Flatpak installiert",
     "flatpak_installed_message": "Die Flatpak-Funktionalität wurde gerade auf Ihrem System installiert. Ein Systemneustart ist erforderlich, damit das App-Menü Flatpak-Anwendungen einzuschließen beginnt.",
-    "featured_scripts": "Möglicherweise möchten Sie versuchen..."
+    "featured_scripts": "Möglicherweise möchten Sie versuchen...",
+    "helium_desc": "Minimalistischer auf Chromium basierender Webbrowser mit Privacy-First-Ansatz und unvoreingenommener Werbeblocker."
   },
   "zh": {
     "subtitle": "适用于Linux的用户友好工具集合。",
@@ -2603,7 +2608,8 @@
     "ostree_info_message": "此系统使用rpm-ostree进行原子更新。任何新安装的不是flatpaks的软件包只有在系统重新启动后才会部署并可用。",
     "flatpak_installed_title": "Flatpak已安装",
     "flatpak_installed_message": "Flatpak功能已安装在您的系统上。需要重新启动系统以使应用菜单开始包含flatpak应用程序。",
-    "featured_scripts": "您可能想尝试..."
+    "featured_scripts": "您可能想尝试...",
+    "helium_desc": "基于Chromium的极简网络浏览器，采用隐私优先的方法和公正的广告拦截。"
   },
   "ja": {
     "subtitle": "Linuxのためのユーザーフレンドリーなツール集。",
@@ -3037,7 +3043,8 @@
     "ostree_info_message": "このシステムはアトミック更新にrpm-ostreeを使用します。 flatpaksではない新しくインストールされたパッケージは、システムの再起動後にのみデプロイされ、利用可能になります。",
     "flatpak_installed_title": "Flatpakをインストール",
     "flatpak_installed_message": "Flatpak機能がシステムにインストールされました。アプリメニューがflatpakアプリケーションを含めるようにするには、システムを再起動する必要があります。",
-    "featured_scripts": "試してみたいかもしれません..."
+    "featured_scripts": "試してみたいかもしれません...",
+    "helium_desc": "Chromiumベースの最小限のウェブブラウザであり、プライバシー優先のアプローチと公平な広告ブロッキングを備えています。"
   },
   "ru": {
     "subtitle": "Коллекция инструментов для Linux в удобном формате.",
@@ -3471,6 +3478,7 @@
     "ostree_info_message": "Эта система использует rpm-ostree для атомных обновлений. Все недавно установленные пакеты, которые не являются flatpaks, будут развернуты и доступны только после перезагрузки системы.",
     "flatpak_installed_title": "Flatpak установлен",
     "flatpak_installed_message": "Возможность Flatpak была только что установлена в вашей системе. Требуется перезагрузка системы, чтобы меню приложений начало включать приложения flatpak.",
-    "featured_scripts": "Вы можете попробовать..."
+    "featured_scripts": "Вы можете попробовать...",
+    "helium_desc": "Минималистичный веб-браузер на основе Chromium с подходом, приоритизирующим конфиденциальность, и беспристрастной блокировкой объявлений."
   }
 }
