@@ -35,13 +35,6 @@
           "scriptPath": "p3/scripts/chat/slack.sh"
         },
         {
-          "name": "Stoat",
-          "description": "Free and open-source chat client, alternative to Discord.",
-          "icon": "stoat.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/chat/stoat.sh"
-        },
-        {
           "name": "Telegram",
           "description": "Messaging app with better social features and bigger group limits.",
           "icon": "telegram.png",
@@ -332,7 +325,52 @@
           "scriptPath": "p3/scripts/devs/zerotier.sh"
         }
       ],
-      "subcategories": {},
+      "subcategories": {
+        "ai_agents": {
+          "name": "ai_agents",
+          "icon": "claude-code.svg",
+          "description": "AI coding assistants and agents for development.",
+          "mode": "menu",
+          "tools": [
+            {
+              "name": "Claude Code",
+              "description": "Claude Code is an AI coding agent by Anthropic. Requires a paid Claude plan (Pro, Max, Team, or Enterprise).\n\n⚠️ Disclaimer: We are not responsible for any system damage caused by misuse of this AI agent. Use at your own risk.",
+              "icon": "claude-code.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/claude-code.sh"
+            },
+            {
+              "name": "Codex",
+              "description": "AI coding agent by OpenAI. Automates coding tasks in your terminal.\n\n⚠️ Disclaimer: We are not responsible for any system damage caused by misuse of this AI agent. Use at your own risk.",
+              "icon": "codex.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/codex.sh"
+            },
+            {
+              "name": "OMP",
+              "description": "Fork of Pi with more tools and multi-model support. AI coding agent for your terminal.\n\n⚠️ Disclaimer: We are not responsible for any system damage caused by misuse of this AI agent. Use at your own risk.",
+              "icon": "omp.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/omp.sh"
+            },
+            {
+              "name": "OpenCode",
+              "description": "Open source AI coding agent. Free models included or connect any model from any provider.\n\n⚠️ Disclaimer: We are not responsible for any system damage caused by misuse of this AI agent. Use at your own risk.",
+              "icon": "opencode.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/opencode.sh"
+            },
+            {
+              "name": "Pi",
+              "description": "AI coding agent. Lightweight and fast coding assistant for your terminal.\n\n⚠️ Disclaimer: We are not responsible for any system damage caused by misuse of this AI agent. Use at your own risk.",
+              "icon": "pi-coding-agent.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/pi.sh"
+            }
+          ],
+          "displayName": "AI Agents"
+        }
+      },
       "displayName": "Developers"
     },
     "drivers": {
@@ -405,13 +443,6 @@
           "scriptPath": "p3/scripts/drivers/nv-deb.sh"
         },
         {
-          "name": "Nvidia Drivers (v470)",
-          "description": "Legacy Nvidia drivers. Supported GPUs: Kepler (GT 6xx) and Fermi (GT 7xx).",
-          "icon": "nvidia.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/drivers/nv-ostree-470.sh"
-        },
-        {
           "name": "Nvidia Drivers",
           "description": "Current Nvidia drivers. Supported GPUs: Maxwell (GT 9xx) and newer.",
           "icon": "nvidia.svg",
@@ -431,13 +462,6 @@
           "icon": "nvidia.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/nv-pacman.sh"
-        },
-        {
-          "name": "Nvidia Drivers (v470)",
-          "description": "Legacy Nvidia drivers. Supported GPUs: Kepler (GT 6xx) and Fermi (GT 7xx).",
-          "icon": "nvidia.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/drivers/nv-rpm-470.sh"
         },
         {
           "name": "Nvidia Drivers",
@@ -1135,6 +1159,13 @@
           "scriptPath": "p3/scripts/office/pjeoffice.sh"
         },
         {
+          "name": "Recordly",
+          "description": "Open-source screen recorder and editor for walkthroughs, demos, product videos, and more, with motion-driven presentation tools built in.",
+          "icon": "recordly.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/office/recordly.sh"
+        },
+        {
           "name": "Zen Browser",
           "description": "A minimalist web browser designed for distraction-free browsing.",
           "icon": "zen.svg",
@@ -1789,13 +1820,6 @@
           "scriptPath": "p3/scripts/chat/slack.sh"
         },
         {
-          "name": "Stoat",
-          "description": "Cliente de chat gratuito e de código aberto, alternativa ao Discord.",
-          "icon": "stoat.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/chat/stoat.sh"
-        },
-        {
           "name": "Telegram",
           "description": "Aplicativo de mensagens com melhores recursos sociais e limites de grupo maiores.",
           "icon": "telegram.png",
@@ -2086,7 +2110,52 @@
           "scriptPath": "p3/scripts/devs/zerotier.sh"
         }
       ],
-      "subcategories": {},
+      "subcategories": {
+        "ai_agents": {
+          "name": "ai_agents",
+          "icon": "claude-code.svg",
+          "description": "Assistentes de codificação IA e agentes para desenvolvimento.",
+          "mode": "menu",
+          "tools": [
+            {
+              "name": "Claude Code",
+              "description": "Claude Code é um agente de codificação IA da Anthropic. Requer um plano Claude pago (Pro, Max, Team ou Enterprise).\n\n⚠️ Aviso: Não nos responsabilizamos por danos ao sistema resultantes do mau uso deste agente de IA. Use por sua conta e risco.",
+              "icon": "claude-code.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/claude-code.sh"
+            },
+            {
+              "name": "Codex",
+              "description": "Agente de codificação IA da OpenAI. Automatiza tarefas de codificação no seu terminal.\n\n⚠️ Aviso: Não nos responsabilizamos por danos ao sistema resultantes do mau uso deste agente de IA. Use por sua conta e risco.",
+              "icon": "codex.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/codex.sh"
+            },
+            {
+              "name": "OMP",
+              "description": "Fork do Pi com mais ferramentas e suporte multimodelo. Agente de codificação IA para o seu terminal.\n\n⚠️ Aviso: Não nos responsabilizamos por danos ao sistema resultantes do mau uso deste agente de IA. Use por sua conta e risco.",
+              "icon": "omp.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/omp.sh"
+            },
+            {
+              "name": "OpenCode",
+              "description": "Agente de codificação IA de código aberto. Modelos grátis incluídos ou conecte qualquer modelo de qualquer provedor.\n\n⚠️ Aviso: Não nos responsabilizamos por danos ao sistema resultantes do mau uso deste agente de IA. Use por sua conta e risco.",
+              "icon": "opencode.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/opencode.sh"
+            },
+            {
+              "name": "Pi",
+              "description": "Agente de codificação IA. Assistente de codificação leve e rápido para o seu terminal.\n\n⚠️ Aviso: Não nos responsabilizamos por danos ao sistema resultantes do mau uso deste agente de IA. Use por sua conta e risco.",
+              "icon": "pi-coding-agent.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/pi.sh"
+            }
+          ],
+          "displayName": "Agentes de IA"
+        }
+      },
       "displayName": "Desenvolvedores"
     },
     "drivers": {
@@ -2159,13 +2228,6 @@
           "scriptPath": "p3/scripts/drivers/nv-deb.sh"
         },
         {
-          "name": "Nvidia Drivers (v470)",
-          "description": "Drivers Nvidia legados. GPUs suportadas: Kepler (GT 6xx) e Fermi (GT 7xx).",
-          "icon": "nvidia.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/drivers/nv-ostree-470.sh"
-        },
-        {
           "name": "Nvidia Drivers",
           "description": "Drivers Nvidia atuais. GPUs suportadas: Maxwell (GT 9xx) em diante.",
           "icon": "nvidia.svg",
@@ -2185,13 +2247,6 @@
           "icon": "nvidia.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/nv-pacman.sh"
-        },
-        {
-          "name": "Nvidia Drivers (v470)",
-          "description": "Drivers Nvidia legados. GPUs suportadas: Kepler (GT 6xx) e Fermi (GT 7xx).",
-          "icon": "nvidia.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/drivers/nv-rpm-470.sh"
         },
         {
           "name": "Nvidia Drivers",
@@ -2889,6 +2944,13 @@
           "scriptPath": "p3/scripts/office/pjeoffice.sh"
         },
         {
+          "name": "Recordly",
+          "description": "Gravador de tela e editor de código aberto para tutoriais, demonstrações, vídeos de produtos e muito mais, com ferramentas de apresentação orientadas por movimento integradas.",
+          "icon": "recordly.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/office/recordly.sh"
+        },
+        {
           "name": "Zen Browser",
           "description": "Um navegador minimalista projetado para navegação sem distrações.",
           "icon": "zen.svg",
@@ -3543,13 +3605,6 @@
           "scriptPath": "p3/scripts/chat/slack.sh"
         },
         {
-          "name": "Stoat",
-          "description": "Cliente de chat gratuito y de código abierto, alternativa a Discord.",
-          "icon": "stoat.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/chat/stoat.sh"
-        },
-        {
           "name": "Telegram",
           "description": "Aplicación de mensajería con mejores funciones sociales y límites de grupo más grandes.",
           "icon": "telegram.png",
@@ -3840,7 +3895,52 @@
           "scriptPath": "p3/scripts/devs/zerotier.sh"
         }
       ],
-      "subcategories": {},
+      "subcategories": {
+        "ai_agents": {
+          "name": "ai_agents",
+          "icon": "claude-code.svg",
+          "description": "Asistentes de codificación de IA y agentes para desarrollo.",
+          "mode": "menu",
+          "tools": [
+            {
+              "name": "Claude Code",
+              "description": "Claude Code es un agente de codificación AI de Anthropic. Requiere un plan de Claude de pago (Pro, Max, Team o Enterprise).\n\n⚠️ Descargo de responsabilidad: No somos responsables de ningún daño del sistema causado por el uso indebido de este agente de IA. Úsalo bajo tu propio riesgo.",
+              "icon": "claude-code.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/claude-code.sh"
+            },
+            {
+              "name": "Codex",
+              "description": "Agente de codificación AI de OpenAI. Automatiza tareas de codificación en tu terminal.\n\n⚠️ Descargo de responsabilidad: No somos responsables de ningún daño del sistema causado por el uso indebido de este agente de IA. Úsalo bajo tu propio riesgo.",
+              "icon": "codex.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/codex.sh"
+            },
+            {
+              "name": "OMP",
+              "description": "Fork de Pi con más herramientas y soporte multimodelo. Agente de codificación AI para tu terminal.\n\n⚠️ Descargo de responsabilidad: No somos responsables de ningún daño del sistema causado por el uso indebido de este agente de IA. Úsalo bajo tu propio riesgo.",
+              "icon": "omp.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/omp.sh"
+            },
+            {
+              "name": "OpenCode",
+              "description": "Agente de codificación AI de código abierto. Modelos gratuitos incluidos o conecte cualquier modelo de cualquier proveedor.\n\n⚠️ Descargo de responsabilidad: No somos responsables de ningún daño del sistema causado por el uso indebido de este agente de IA. Úsalo bajo tu propio riesgo.",
+              "icon": "opencode.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/opencode.sh"
+            },
+            {
+              "name": "Pi",
+              "description": "Agente de codificación AI. Asistente de codificación ligero y rápido para tu terminal.\n\n⚠️ Descargo de responsabilidad: No somos responsables de ningún daño del sistema causado por el uso indebido de este agente de IA. Úsalo bajo tu propio riesgo.",
+              "icon": "pi-coding-agent.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/pi.sh"
+            }
+          ],
+          "displayName": "Agentes de IA"
+        }
+      },
       "displayName": "Desarrolladores"
     },
     "drivers": {
@@ -3913,13 +4013,6 @@
           "scriptPath": "p3/scripts/drivers/nv-deb.sh"
         },
         {
-          "name": "Nvidia Drivers (v470)",
-          "description": "Controladores legacy de Nvidia. GPUs soportadas: Kepler (GT 6xx) y Fermi (GT 7xx).",
-          "icon": "nvidia.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/drivers/nv-ostree-470.sh"
-        },
-        {
           "name": "Nvidia Drivers",
           "description": "Controladores actuales de Nvidia. GPUs soportadas: Maxwell (GT 9xx) y más nuevas.",
           "icon": "nvidia.svg",
@@ -3939,13 +4032,6 @@
           "icon": "nvidia.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/nv-pacman.sh"
-        },
-        {
-          "name": "Nvidia Drivers (v470)",
-          "description": "Controladores legacy de Nvidia. GPUs soportadas: Kepler (GT 6xx) y Fermi (GT 7xx).",
-          "icon": "nvidia.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/drivers/nv-rpm-470.sh"
         },
         {
           "name": "Nvidia Drivers",
@@ -4643,6 +4729,13 @@
           "scriptPath": "p3/scripts/office/pjeoffice.sh"
         },
         {
+          "name": "Recordly",
+          "description": "Grabador de pantalla y editor de código abierto para tutoriales, demostraciones, videos de productos y más, con herramientas de presentación impulsadas por movimiento integradas.",
+          "icon": "recordly.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/office/recordly.sh"
+        },
+        {
           "name": "Zen Browser",
           "description": "Un navegador minimalista diseñado para una navegación sin distracciones.",
           "icon": "zen.svg",
@@ -5297,13 +5390,6 @@
           "scriptPath": "p3/scripts/chat/slack.sh"
         },
         {
-          "name": "Stoat",
-          "description": "Client de chat gratuito e open-source, alternative à Discord.",
-          "icon": "stoat.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/chat/stoat.sh"
-        },
-        {
           "name": "Telegram",
           "description": "Application de messagerie avec de meilleures fonctionnalités sociales et des limites de groupe plus grandes.",
           "icon": "telegram.png",
@@ -5594,7 +5680,52 @@
           "scriptPath": "p3/scripts/devs/zerotier.sh"
         }
       ],
-      "subcategories": {},
+      "subcategories": {
+        "ai_agents": {
+          "name": "ai_agents",
+          "icon": "claude-code.svg",
+          "description": "Assistants de codage IA et agents pour le développement.",
+          "mode": "menu",
+          "tools": [
+            {
+              "name": "Claude Code",
+              "description": "Claude Code est un agent de codage IA d'Anthropic. Nécessite un plan Claude payant (Pro, Max, Team ou Enterprise).\n\n⚠️ Avertissement : Nous ne sommes pas responsables des dommages au système causés par une mauvaise utilisation de cet agent IA. À utiliser à vos propres risques.",
+              "icon": "claude-code.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/claude-code.sh"
+            },
+            {
+              "name": "Codex",
+              "description": "Agent de codage IA d'OpenAI. Automatise les tâches de codage dans votre terminal.\n\n⚠️ Avertissement : Nous ne sommes pas responsables des dommages au système causés par une mauvaise utilisation de cet agent IA. À utiliser à vos propres risques.",
+              "icon": "codex.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/codex.sh"
+            },
+            {
+              "name": "OMP",
+              "description": "Fork de Pi avec plus d'outils et support multi-modèle. Agent de codage IA pour votre terminal.\n\n⚠️ Avertissement : Nous ne sommes pas responsables des dommages au système causés par une mauvaise utilisation de cet agent IA. À utiliser à vos propres risques.",
+              "icon": "omp.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/omp.sh"
+            },
+            {
+              "name": "OpenCode",
+              "description": "Agent de codage IA open source. Modèles gratuits inclus ou connectez n'importe quel modèle à partir de n'importe quel fournisseur.\n\n⚠️ Avertissement : Nous ne sommes pas responsables des dommages au système causés par une mauvaise utilisation de cet agent IA. À utiliser à vos propres risques.",
+              "icon": "opencode.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/opencode.sh"
+            },
+            {
+              "name": "Pi",
+              "description": "Agent de codage IA. Assistant de codage léger et rapide pour votre terminal.\n\n⚠️ Avertissement : Nous ne sommes pas responsables des dommages au système causés par une mauvaise utilisation de cet agent IA. À utiliser à vos propres risques.",
+              "icon": "pi-coding-agent.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/pi.sh"
+            }
+          ],
+          "displayName": "Agents IA"
+        }
+      },
       "displayName": "Développeurs"
     },
     "drivers": {
@@ -5667,13 +5798,6 @@
           "scriptPath": "p3/scripts/drivers/nv-deb.sh"
         },
         {
-          "name": "Nvidia Drivers (v470)",
-          "description": "Pilotes Nvidia legacy. GPUs supportées : Kepler (GT 6xx) et Fermi (GT 7xx).",
-          "icon": "nvidia.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/drivers/nv-ostree-470.sh"
-        },
-        {
           "name": "Nvidia Drivers",
           "description": "Pilotes Nvidia actuels. GPUs supportées : Maxwell (GT 9xx) et plus récentes.",
           "icon": "nvidia.svg",
@@ -5693,13 +5817,6 @@
           "icon": "nvidia.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/nv-pacman.sh"
-        },
-        {
-          "name": "Nvidia Drivers (v470)",
-          "description": "Pilotes Nvidia legacy. GPUs supportées : Kepler (GT 6xx) et Fermi (GT 7xx).",
-          "icon": "nvidia.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/drivers/nv-rpm-470.sh"
         },
         {
           "name": "Nvidia Drivers",
@@ -6397,6 +6514,13 @@
           "scriptPath": "p3/scripts/office/pjeoffice.sh"
         },
         {
+          "name": "Recordly",
+          "description": "Enregistreur d'écran et éditeur open source pour les tutoriels, démonstrations, vidéos de produits et bien plus encore, avec des outils de présentation pilotés par le mouvement intégrés.",
+          "icon": "recordly.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/office/recordly.sh"
+        },
+        {
           "name": "Zen Browser",
           "description": "Un navigateur web minimaliste conçu pour une navigation sans distraction.",
           "icon": "zen.svg",
@@ -7051,13 +7175,6 @@
           "scriptPath": "p3/scripts/chat/slack.sh"
         },
         {
-          "name": "Stoat",
-          "description": "Kostenloser und quelloffener Chat-Client, Alternative zu Discord.",
-          "icon": "stoat.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/chat/stoat.sh"
-        },
-        {
           "name": "Telegram",
           "description": "Messaging-App mit besseren sozialen Funktionen und größeren Gruppenlimits.",
           "icon": "telegram.png",
@@ -7348,7 +7465,52 @@
           "scriptPath": "p3/scripts/devs/zerotier.sh"
         }
       ],
-      "subcategories": {},
+      "subcategories": {
+        "ai_agents": {
+          "name": "ai_agents",
+          "icon": "claude-code.svg",
+          "description": "KI-Codierungsassistenten und Agenten für die Entwicklung.",
+          "mode": "menu",
+          "tools": [
+            {
+              "name": "Claude Code",
+              "description": "Claude Code ist ein KI-Codierungsagent von Anthropic. Erfordert einen bezahlten Claude-Plan (Pro, Max, Team oder Enterprise).\n\n⚠️ Haftungsausschluss: Wir sind nicht verantwortlich für Systemschäden, die durch Missbrauch dieses KI-Agenten verursacht werden. Verwendung auf eigenes Risiko.",
+              "icon": "claude-code.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/claude-code.sh"
+            },
+            {
+              "name": "Codex",
+              "description": "KI-Codierungsagent von OpenAI. Automatisiert Codierungsaufgaben in Ihrem Terminal.\n\n⚠️ Haftungsausschluss: Wir sind nicht verantwortlich für Systemschäden, die durch Missbrauch dieses KI-Agenten verursacht werden. Verwendung auf eigenes Risiko.",
+              "icon": "codex.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/codex.sh"
+            },
+            {
+              "name": "OMP",
+              "description": "Abzweigung von Pi mit mehr Werkzeugen und Unterstützung für mehrere Modelle. KI-Codierungsagent für Ihr Terminal.\n\n⚠️ Haftungsausschluss: Wir sind nicht verantwortlich für Systemschäden, die durch Missbrauch dieses KI-Agenten verursacht werden. Verwendung auf eigenes Risiko.",
+              "icon": "omp.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/omp.sh"
+            },
+            {
+              "name": "OpenCode",
+              "description": "KI-Codierungsagent mit offener Quelle. Kostenlose Modelle enthalten oder verbinden Sie jedes Modell von jedem Anbieter.\n\n⚠️ Haftungsausschluss: Wir sind nicht verantwortlich für Systemschäden, die durch Missbrauch dieses KI-Agenten verursacht werden. Verwendung auf eigenes Risiko.",
+              "icon": "opencode.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/opencode.sh"
+            },
+            {
+              "name": "Pi",
+              "description": "KI-Codierungsagent. Leichter und schneller Codierungsassistent für Ihren Terminal.\n\n⚠️ Haftungsausschluss: Wir sind nicht verantwortlich für Systemschäden, die durch Missbrauch dieses KI-Agenten verursacht werden. Verwendung auf eigenes Risiko.",
+              "icon": "pi-coding-agent.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/pi.sh"
+            }
+          ],
+          "displayName": "KI-Agenten"
+        }
+      },
       "displayName": "Entwickler"
     },
     "drivers": {
@@ -7421,13 +7583,6 @@
           "scriptPath": "p3/scripts/drivers/nv-deb.sh"
         },
         {
-          "name": "Nvidia Drivers (v470)",
-          "description": "Legacy Nvidia-Treiber. Unterstützte GPUs: Kepler (GT 6xx) und Fermi (GT 7xx).",
-          "icon": "nvidia.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/drivers/nv-ostree-470.sh"
-        },
-        {
           "name": "Nvidia Drivers",
           "description": "Aktuelle Nvidia-Treiber. Unterstützte GPUs: Maxwell (GT 9xx) und neuer.",
           "icon": "nvidia.svg",
@@ -7447,13 +7602,6 @@
           "icon": "nvidia.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/nv-pacman.sh"
-        },
-        {
-          "name": "Nvidia Drivers (v470)",
-          "description": "Legacy Nvidia-Treiber. Unterstützte GPUs: Kepler (GT 6xx) und Fermi (GT 7xx).",
-          "icon": "nvidia.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/drivers/nv-rpm-470.sh"
         },
         {
           "name": "Nvidia Drivers",
@@ -8151,6 +8299,13 @@
           "scriptPath": "p3/scripts/office/pjeoffice.sh"
         },
         {
+          "name": "Recordly",
+          "description": "Open-Source-Bildschirmrecorder und Editor für Anleitungen, Demonstrationen, Produktvideos und mehr mit integrierten bewegungsgesteuerten Präsentationswerkzeugen.",
+          "icon": "recordly.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/office/recordly.sh"
+        },
+        {
           "name": "Zen Browser",
           "description": "Ein minimalistischer Webbrowser für ablenkungsfreies Surfen.",
           "icon": "zen.svg",
@@ -8805,13 +8960,6 @@
           "scriptPath": "p3/scripts/chat/slack.sh"
         },
         {
-          "name": "Stoat",
-          "description": "免费开源的聊天客户端，Discord 的替代品。",
-          "icon": "stoat.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/chat/stoat.sh"
-        },
-        {
           "name": "Telegram",
           "description": "具有更好社交功能和更大群组限制的消息应用。",
           "icon": "telegram.png",
@@ -9102,7 +9250,52 @@
           "scriptPath": "p3/scripts/devs/zerotier.sh"
         }
       ],
-      "subcategories": {},
+      "subcategories": {
+        "ai_agents": {
+          "name": "ai_agents",
+          "icon": "claude-code.svg",
+          "description": "用于开发的 AI 编码助手和代理。",
+          "mode": "menu",
+          "tools": [
+            {
+              "name": "Claude Code",
+              "description": "Claude Code 是 Anthropic 的 AI 编码代理。需要付费的 Claude 计划（Pro、Max、Team 或 Enterprise）。\n\n⚠️ 免责声明：我们对因误用此 AI 代理而导致的任何系统损害不负责。使用风险自负。",
+              "icon": "claude-code.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/claude-code.sh"
+            },
+            {
+              "name": "Codex",
+              "description": "来自 OpenAI 的 AI 编码代理。在终端中自动化编码任务。\n\n⚠️ 免责声明：我们对因误用此 AI 代理而导致的任何系统损害不负责。使用风险自负。",
+              "icon": "codex.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/codex.sh"
+            },
+            {
+              "name": "OMP",
+              "description": "具有更多工具和多模型支持的 Pi 分支。终端的 AI 编码代理。\n\n⚠️ 免责声明：我们对因误用此 AI 代理而导致的任何系统损害不负责。使用风险自负。",
+              "icon": "omp.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/omp.sh"
+            },
+            {
+              "name": "OpenCode",
+              "description": "开源 AI 编码代理。包含免费模型或从任何提供商连接任何模型。\n\n⚠️ 免责声明：我们对因误用此 AI 代理而导致的任何系统损害不负责。使用风险自负。",
+              "icon": "opencode.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/opencode.sh"
+            },
+            {
+              "name": "Pi",
+              "description": "AI 编码代理。终端的轻量级和快速编码助手。\n\n⚠️ 免责声明：我们对因误用此 AI 代理而导致的任何系统损害不负责。使用风险自负。",
+              "icon": "pi-coding-agent.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/pi.sh"
+            }
+          ],
+          "displayName": "AI 代理"
+        }
+      },
       "displayName": "开发者"
     },
     "drivers": {
@@ -9175,13 +9368,6 @@
           "scriptPath": "p3/scripts/drivers/nv-deb.sh"
         },
         {
-          "name": "Nvidia Drivers (v470)",
-          "description": "旧版Nvidia驱动程序。支持的GPU：Kepler（GT 6xx）和Fermi（GT 7xx）。",
-          "icon": "nvidia.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/drivers/nv-ostree-470.sh"
-        },
-        {
           "name": "Nvidia Drivers",
           "description": "当前Nvidia驱动程序。支持的GPU：Maxwell（GT 9xx）及更新。",
           "icon": "nvidia.svg",
@@ -9201,13 +9387,6 @@
           "icon": "nvidia.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/nv-pacman.sh"
-        },
-        {
-          "name": "Nvidia Drivers (v470)",
-          "description": "旧版Nvidia驱动程序。支持的GPU：Kepler（GT 6xx）和Fermi（GT 7xx）。",
-          "icon": "nvidia.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/drivers/nv-rpm-470.sh"
         },
         {
           "name": "Nvidia Drivers",
@@ -9905,6 +10084,13 @@
           "scriptPath": "p3/scripts/office/pjeoffice.sh"
         },
         {
+          "name": "Recordly",
+          "description": "用于教程、演示、产品视频等的开源屏幕录像机和编辑器，具有内置的运动驱动演示工具。",
+          "icon": "recordly.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/office/recordly.sh"
+        },
+        {
           "name": "Zen Browser",
           "description": "专为无干扰浏览而设计的极简网络浏览器。",
           "icon": "zen.svg",
@@ -10559,13 +10745,6 @@
           "scriptPath": "p3/scripts/chat/slack.sh"
         },
         {
-          "name": "Stoat",
-          "description": "無料でオープンソースのチャットクライアント、Discordの代替品。",
-          "icon": "stoat.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/chat/stoat.sh"
-        },
-        {
           "name": "Telegram",
           "description": "より良いソーシャル機能と大きなグループ制限を持つメッセージングアプリ。",
           "icon": "telegram.png",
@@ -10856,7 +11035,52 @@
           "scriptPath": "p3/scripts/devs/zerotier.sh"
         }
       ],
-      "subcategories": {},
+      "subcategories": {
+        "ai_agents": {
+          "name": "ai_agents",
+          "icon": "claude-code.svg",
+          "description": "開発用のAIコーディングアシスタントとエージェント。",
+          "mode": "menu",
+          "tools": [
+            {
+              "name": "Claude Code",
+              "description": "Claude CodeはAnthropicの AI コーディングエージェントです。有料の Claude プラン (Pro、Max、Team、または Enterprise) が必要です。\n\n⚠️ 免責事項: このAIエージェントの悪用によって生じたシステムの損害について、当社は責任を負いません。自己の責任で使用してください。",
+              "icon": "claude-code.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/claude-code.sh"
+            },
+            {
+              "name": "Codex",
+              "description": "OpenAI の AI コーディングエージェント。ターミナルでコーディングタスクを自動化します。\n\n⚠️ 免責事項: このAIエージェントの悪用によって生じたシステムの損害について、当社は責任を負いません。自己の責任で使用してください。",
+              "icon": "codex.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/codex.sh"
+            },
+            {
+              "name": "OMP",
+              "description": "より多くのツールとマルチモデルサポートを備えたPiのフォーク。ターミナルのAIコーディングエージェント。\n\n⚠️ 免責事項: このAIエージェントの悪用によって生じたシステムの損害について、当社は責任を負いません。自己の責任で使用してください。",
+              "icon": "omp.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/omp.sh"
+            },
+            {
+              "name": "OpenCode",
+              "description": "オープンソースの AI コーディングエージェント。無料モデルが含まれているか、任意のプロバイダーから任意のモデルを接続してください。\n\n⚠️ 免責事項: このAIエージェントの悪用によって生じたシステムの損害について、当社は責任を負いません。自己の責任で使用してください。",
+              "icon": "opencode.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/opencode.sh"
+            },
+            {
+              "name": "Pi",
+              "description": "AI コーディングエージェント。ターミナルの軽量で高速なコーディングアシスタント。\n\n⚠️ 免責事項: このAIエージェントの悪用によって生じたシステムの損害について、当社は責任を負いません。自己の責任で使用してください。",
+              "icon": "pi-coding-agent.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/pi.sh"
+            }
+          ],
+          "displayName": "AIエージェント"
+        }
+      },
       "displayName": "開発者"
     },
     "drivers": {
@@ -10929,13 +11153,6 @@
           "scriptPath": "p3/scripts/drivers/nv-deb.sh"
         },
         {
-          "name": "Nvidia Drivers (v470)",
-          "description": "レガシーNvidiaドライバー。サポートGPU：Kepler（GT 6xx）とFermi（GT 7xx）。",
-          "icon": "nvidia.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/drivers/nv-ostree-470.sh"
-        },
-        {
           "name": "Nvidia Drivers",
           "description": "現在のNvidiaドライバー。サポートGPU：Maxwell（GT 9xx）以降。",
           "icon": "nvidia.svg",
@@ -10955,13 +11172,6 @@
           "icon": "nvidia.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/nv-pacman.sh"
-        },
-        {
-          "name": "Nvidia Drivers (v470)",
-          "description": "レガシーNvidiaドライバー。サポートGPU：Kepler（GT 6xx）とFermi（GT 7xx）。",
-          "icon": "nvidia.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/drivers/nv-rpm-470.sh"
         },
         {
           "name": "Nvidia Drivers",
@@ -11659,6 +11869,13 @@
           "scriptPath": "p3/scripts/office/pjeoffice.sh"
         },
         {
+          "name": "Recordly",
+          "description": "チュートリアル、デモ、製品ビデオなど向けのオープンソースの画面レコーダーおよびエディター、モーション駆動の組み込みプレゼンテーションツール付き。",
+          "icon": "recordly.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/office/recordly.sh"
+        },
+        {
           "name": "Zen Browser",
           "description": "集中できるブラウジングのために設計されたミニマリストなウェブブラウザー。",
           "icon": "zen.svg",
@@ -12313,13 +12530,6 @@
           "scriptPath": "p3/scripts/chat/slack.sh"
         },
         {
-          "name": "Stoat",
-          "description": "Бесплатный чат-клиент с открытым исходным кодом, альтернатива Discord.",
-          "icon": "stoat.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/chat/stoat.sh"
-        },
-        {
           "name": "Telegram",
           "description": "Приложение для обмена сообщениями с лучшими социальными функциями и большими лимитами групп.",
           "icon": "telegram.png",
@@ -12610,7 +12820,52 @@
           "scriptPath": "p3/scripts/devs/zerotier.sh"
         }
       ],
-      "subcategories": {},
+      "subcategories": {
+        "ai_agents": {
+          "name": "ai_agents",
+          "icon": "claude-code.svg",
+          "description": "AI помощники для кодирования и агенты для разработки.",
+          "mode": "menu",
+          "tools": [
+            {
+              "name": "Claude Code",
+              "description": "Claude Code — это агент кодирования AI от Anthropic. Требуется платный план Claude (Pro, Max, Team или Enterprise).\n\n⚠️ Отказ от ответственности: Мы не несем ответственности за какой-либо ущерб системе, вызванный неправильным использованием этого агента AI. Используйте на свой риск.",
+              "icon": "claude-code.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/claude-code.sh"
+            },
+            {
+              "name": "Codex",
+              "description": "Агент кодирования AI от OpenAI. Автоматизирует задачи кодирования в терминале.\n\n⚠️ Отказ от ответственности: Мы не несем ответственности за какой-либо ущерб системе, вызванный неправильным использованием этого агента AI. Используйте на свой риск.",
+              "icon": "codex.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/codex.sh"
+            },
+            {
+              "name": "OMP",
+              "description": "Ветвь Pi с большим количеством инструментов и поддержкой нескольких моделей. Агент кодирования AI для терминала.\n\n⚠️ Отказ от ответственности: Мы не несем ответственности за какой-либо ущерб системе, вызванный неправильным использованием этого агента AI. Используйте на свой риск.",
+              "icon": "omp.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/omp.sh"
+            },
+            {
+              "name": "OpenCode",
+              "description": "Агент кодирования AI с открытым кодом. Бесплатные модели включены или подключите любую модель от любого поставщика.\n\n⚠️ Отказ от ответственности: Мы не несем ответственности за какой-либо ущерб системе, вызванный неправильным использованием этого агента AI. Используйте на свой риск.",
+              "icon": "opencode.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/opencode.sh"
+            },
+            {
+              "name": "Pi",
+              "description": "Агент кодирования AI. Легкий и быстрый помощник кодирования в терминале.\n\n⚠️ Отказ от ответственности: Мы не несем ответственности за какой-либо ущерб системе, вызванный неправильным использованием этого агента AI. Используйте на свой риск.",
+              "icon": "pi-coding-agent.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/pi.sh"
+            }
+          ],
+          "displayName": "AI Агенты"
+        }
+      },
       "displayName": "Разработчики"
     },
     "drivers": {
@@ -12683,13 +12938,6 @@
           "scriptPath": "p3/scripts/drivers/nv-deb.sh"
         },
         {
-          "name": "Nvidia Drivers (v470)",
-          "description": "Устаревшие драйверы Nvidia. Поддерживаемые GPU: Kepler (GT 6xx) и Fermi (GT 7xx).",
-          "icon": "nvidia.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/drivers/nv-ostree-470.sh"
-        },
-        {
           "name": "Nvidia Drivers",
           "description": "Текущие драйверы Nvidia. Поддерживаемые GPU: Maxwell (GT 9xx) и новее.",
           "icon": "nvidia.svg",
@@ -12709,13 +12957,6 @@
           "icon": "nvidia.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/nv-pacman.sh"
-        },
-        {
-          "name": "Nvidia Drivers (v470)",
-          "description": "Устаревшие драйверы Nvidia. Поддерживаемые GPU: Kepler (GT 6xx) и Fermi (GT 7xx).",
-          "icon": "nvidia.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/drivers/nv-rpm-470.sh"
         },
         {
           "name": "Nvidia Drivers",
@@ -13411,6 +13652,13 @@
           "icon": "pjeoffice-pro.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/pjeoffice.sh"
+        },
+        {
+          "name": "Recordly",
+          "description": "Открытый рекордер экрана и редактор для пошаговых инструкций, демонстраций, видео продуктов и многого другого, со встроенными инструментами презентации, управляемыми движением.",
+          "icon": "recordly.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/office/recordly.sh"
         },
         {
           "name": "Zen Browser",
