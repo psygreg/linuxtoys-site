@@ -805,13 +805,6 @@
         "scriptPath": "p3/scripts/extra/thumb.sh"
       },
       {
-        "name": "Touchégg",
-        "description": "touchegg_desc",
-        "icon": "touchegg.svg",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/extra/touchegg.sh"
-      },
-      {
         "name": "ufw",
         "description": "ufw_desc",
         "icon": "firewall.svg",
@@ -1541,6 +1534,13 @@
         "icon": "oversteer.png",
         "version": "1.0",
         "scriptPath": "p3/scripts/utils/peripherals/steer.sh"
+      },
+      {
+        "name": "Touchégg",
+        "description": "touchegg_desc",
+        "icon": "touchegg.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/peripherals/touchegg.sh"
       },
       {
         "name": "udevpass",

@@ -334,35 +334,35 @@
           "tools": [
             {
               "name": "Claude Code",
-              "description": "Claude Code is an AI coding agent by Anthropic. Requires a paid Claude plan (Pro, Max, Team, or Enterprise).\n\n⚠️ Disclaimer: We are not responsible for any system damage caused by misuse of this AI agent. Use at your own risk.",
+              "description": "Claude Code is an AI coding agent by Anthropic. Requires a paid Claude plan (Pro, Max, Team, or Enterprise).\n\n{ai_agent_disclaimer}",
               "icon": "claude-code.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/claude-code.sh"
             },
             {
               "name": "Codex",
-              "description": "AI coding agent by OpenAI. Automates coding tasks in your terminal.\n\n⚠️ Disclaimer: We are not responsible for any system damage caused by misuse of this AI agent. Use at your own risk.",
+              "description": "AI coding agent by OpenAI. Automates coding tasks in your terminal.\n\n{ai_agent_disclaimer}",
               "icon": "codex.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/codex.sh"
             },
             {
               "name": "OMP",
-              "description": "Fork of Pi with more tools and multi-model support. AI coding agent for your terminal.\n\n⚠️ Disclaimer: We are not responsible for any system damage caused by misuse of this AI agent. Use at your own risk.",
+              "description": "Fork of Pi with more tools and multi-model support. AI coding agent for your terminal.\n\n{ai_agent_disclaimer}",
               "icon": "omp.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/omp.sh"
             },
             {
               "name": "OpenCode",
-              "description": "Open source AI coding agent. Free models included or connect any model from any provider.\n\n⚠️ Disclaimer: We are not responsible for any system damage caused by misuse of this AI agent. Use at your own risk.",
+              "description": "Open source AI coding agent. Free models included or connect any model from any provider.\n\n{ai_agent_disclaimer}",
               "icon": "opencode.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/opencode.sh"
             },
             {
               "name": "Pi",
-              "description": "AI coding agent. Lightweight and fast coding assistant for your terminal.\n\n⚠️ Disclaimer: We are not responsible for any system damage caused by misuse of this AI agent. Use at your own risk.",
+              "description": "AI coding agent. Lightweight and fast coding assistant for your terminal.\n\n{ai_agent_disclaimer}",
               "icon": "pi-coding-agent.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/pi.sh"
@@ -808,13 +808,6 @@
           "icon": "handbrake.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/thumb.sh"
-        },
-        {
-          "name": "Touchégg",
-          "description": "A multi-touch gesture recognizer allowing you to configure gestures for various actions on Xorg desktops.",
-          "icon": "touchegg.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/extra/touchegg.sh"
         },
         {
           "name": "Configure Firewall",
@@ -1553,6 +1546,13 @@
           "scriptPath": "p3/scripts/utils/peripherals/steer.sh"
         },
         {
+          "name": "Touchégg",
+          "description": "A multi-touch gesture recognizer allowing you to configure gestures for various actions on Xorg desktops.",
+          "icon": "touchegg.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/peripherals/touchegg.sh"
+        },
+        {
           "name": "Enable Web-based Software",
           "description": "Allows you to use web-based software like ATK HUB for peripherals that have those. A Chromium-based browser is still required for such software to work as well.",
           "icon": "peripherals.svg",
@@ -2119,35 +2119,35 @@
           "tools": [
             {
               "name": "Claude Code",
-              "description": "Claude Code é um agente de codificação IA da Anthropic. Requer um plano Claude pago (Pro, Max, Team ou Enterprise).\n\n⚠️ Aviso: Não nos responsabilizamos por danos ao sistema resultantes do mau uso deste agente de IA. Use por sua conta e risco.",
+              "description": "Claude Code é um agente de codificação IA da Anthropic. Requer um plano Claude pago (Pro, Max, Team ou Enterprise).\n\n{ai_agent_disclaimer}",
               "icon": "claude-code.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/claude-code.sh"
             },
             {
               "name": "Codex",
-              "description": "Agente de codificação IA da OpenAI. Automatiza tarefas de codificação no seu terminal.\n\n⚠️ Aviso: Não nos responsabilizamos por danos ao sistema resultantes do mau uso deste agente de IA. Use por sua conta e risco.",
+              "description": "Agente de codificação IA da OpenAI. Automatiza tarefas de codificação no seu terminal.\n\n{ai_agent_disclaimer}",
               "icon": "codex.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/codex.sh"
             },
             {
               "name": "OMP",
-              "description": "Fork do Pi com mais ferramentas e suporte multimodelo. Agente de codificação IA para o seu terminal.\n\n⚠️ Aviso: Não nos responsabilizamos por danos ao sistema resultantes do mau uso deste agente de IA. Use por sua conta e risco.",
+              "description": "Fork do Pi com mais ferramentas e suporte multimodelo. Agente de codificação IA para o seu terminal.\n\n{ai_agent_disclaimer}",
               "icon": "omp.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/omp.sh"
             },
             {
               "name": "OpenCode",
-              "description": "Agente de codificação IA de código aberto. Modelos grátis incluídos ou conecte qualquer modelo de qualquer provedor.\n\n⚠️ Aviso: Não nos responsabilizamos por danos ao sistema resultantes do mau uso deste agente de IA. Use por sua conta e risco.",
+              "description": "Agente de codificação IA de código aberto. Modelos grátis incluídos ou conecte qualquer modelo de qualquer provedor.\n\n{ai_agent_disclaimer}",
               "icon": "opencode.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/opencode.sh"
             },
             {
               "name": "Pi",
-              "description": "Agente de codificação IA. Assistente de codificação leve e rápido para o seu terminal.\n\n⚠️ Aviso: Não nos responsabilizamos por danos ao sistema resultantes do mau uso deste agente de IA. Use por sua conta e risco.",
+              "description": "Agente de codificação IA. Assistente de codificação leve e rápido para o seu terminal.\n\n{ai_agent_disclaimer}",
               "icon": "pi-coding-agent.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/pi.sh"
@@ -2593,13 +2593,6 @@
           "icon": "handbrake.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/thumb.sh"
-        },
-        {
-          "name": "Touchégg",
-          "description": "Um reconhecedor de gestos multi-toque que permite configurar gestos para várias ações em desktops Xorg.",
-          "icon": "touchegg.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/extra/touchegg.sh"
         },
         {
           "name": "Configurar Firewall",
@@ -3338,6 +3331,13 @@
           "scriptPath": "p3/scripts/utils/peripherals/steer.sh"
         },
         {
+          "name": "Touchégg",
+          "description": "Um reconhecedor de gestos multi-toque que permite configurar gestos para várias ações em desktops Xorg.",
+          "icon": "touchegg.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/peripherals/touchegg.sh"
+        },
+        {
           "name": "Ativar software baseado na web",
           "description": "Permite que você use software baseado na web como ATK HUB para periféricos que os possuem. Um navegador baseado em Chromium ainda é necessário para que esse software funcione.",
           "icon": "peripherals.svg",
@@ -3904,35 +3904,35 @@
           "tools": [
             {
               "name": "Claude Code",
-              "description": "Claude Code es un agente de codificación AI de Anthropic. Requiere un plan de Claude de pago (Pro, Max, Team o Enterprise).\n\n⚠️ Descargo de responsabilidad: No somos responsables de ningún daño del sistema causado por el uso indebido de este agente de IA. Úsalo bajo tu propio riesgo.",
+              "description": "Claude Code es un agente de codificación AI de Anthropic. Requiere un plan de Claude de pago (Pro, Max, Team o Enterprise).\n\n{ai_agent_disclaimer}",
               "icon": "claude-code.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/claude-code.sh"
             },
             {
               "name": "Codex",
-              "description": "Agente de codificación AI de OpenAI. Automatiza tareas de codificación en tu terminal.\n\n⚠️ Descargo de responsabilidad: No somos responsables de ningún daño del sistema causado por el uso indebido de este agente de IA. Úsalo bajo tu propio riesgo.",
+              "description": "Agente de codificación AI de OpenAI. Automatiza tareas de codificación en tu terminal.\n\n{ai_agent_disclaimer}",
               "icon": "codex.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/codex.sh"
             },
             {
               "name": "OMP",
-              "description": "Fork de Pi con más herramientas y soporte multimodelo. Agente de codificación AI para tu terminal.\n\n⚠️ Descargo de responsabilidad: No somos responsables de ningún daño del sistema causado por el uso indebido de este agente de IA. Úsalo bajo tu propio riesgo.",
+              "description": "Fork de Pi con más herramientas y soporte multimodelo. Agente de codificación AI para tu terminal.\n\n{ai_agent_disclaimer}",
               "icon": "omp.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/omp.sh"
             },
             {
               "name": "OpenCode",
-              "description": "Agente de codificación AI de código abierto. Modelos gratuitos incluidos o conecte cualquier modelo de cualquier proveedor.\n\n⚠️ Descargo de responsabilidad: No somos responsables de ningún daño del sistema causado por el uso indebido de este agente de IA. Úsalo bajo tu propio riesgo.",
+              "description": "Agente de codificación AI de código abierto. Modelos gratuitos incluidos o conecte cualquier modelo de cualquier proveedor.\n\n{ai_agent_disclaimer}",
               "icon": "opencode.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/opencode.sh"
             },
             {
               "name": "Pi",
-              "description": "Agente de codificación AI. Asistente de codificación ligero y rápido para tu terminal.\n\n⚠️ Descargo de responsabilidad: No somos responsables de ningún daño del sistema causado por el uso indebido de este agente de IA. Úsalo bajo tu propio riesgo.",
+              "description": "Agente de codificación AI. Asistente de codificación ligero y rápido para tu terminal.\n\n{ai_agent_disclaimer}",
               "icon": "pi-coding-agent.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/pi.sh"
@@ -4378,13 +4378,6 @@
           "icon": "handbrake.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/thumb.sh"
-        },
-        {
-          "name": "Touchégg",
-          "description": "Un reconocedor de gestos multitáctil que permite configurar gestos para varias acciones en escritorios Xorg.",
-          "icon": "touchegg.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/extra/touchegg.sh"
         },
         {
           "name": "Configurar Firewall",
@@ -5123,6 +5116,13 @@
           "scriptPath": "p3/scripts/utils/peripherals/steer.sh"
         },
         {
+          "name": "Touchégg",
+          "description": "Un reconocedor de gestos multitáctil que permite configurar gestos para varias acciones en escritorios Xorg.",
+          "icon": "touchegg.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/peripherals/touchegg.sh"
+        },
+        {
           "name": "Habilitar software basado en web",
           "description": "Te permite usar software basado en web como ATK HUB para periféricos que tienen estos. Aún se requiere un navegador basado en Chromium para que funcione tal software.",
           "icon": "peripherals.svg",
@@ -5689,35 +5689,35 @@
           "tools": [
             {
               "name": "Claude Code",
-              "description": "Claude Code est un agent de codage IA d'Anthropic. Nécessite un plan Claude payant (Pro, Max, Team ou Enterprise).\n\n⚠️ Avertissement : Nous ne sommes pas responsables des dommages au système causés par une mauvaise utilisation de cet agent IA. À utiliser à vos propres risques.",
+              "description": "Claude Code est un agent de codage IA d'Anthropic. Nécessite un plan Claude payant (Pro, Max, Team ou Enterprise).\n\n{ai_agent_disclaimer}",
               "icon": "claude-code.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/claude-code.sh"
             },
             {
               "name": "Codex",
-              "description": "Agent de codage IA d'OpenAI. Automatise les tâches de codage dans votre terminal.\n\n⚠️ Avertissement : Nous ne sommes pas responsables des dommages au système causés par une mauvaise utilisation de cet agent IA. À utiliser à vos propres risques.",
+              "description": "Agent de codage IA d'OpenAI. Automatise les tâches de codage dans votre terminal.\n\n{ai_agent_disclaimer}",
               "icon": "codex.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/codex.sh"
             },
             {
               "name": "OMP",
-              "description": "Fork de Pi avec plus d'outils et support multi-modèle. Agent de codage IA pour votre terminal.\n\n⚠️ Avertissement : Nous ne sommes pas responsables des dommages au système causés par une mauvaise utilisation de cet agent IA. À utiliser à vos propres risques.",
+              "description": "Fork de Pi avec plus d'outils et support multi-modèle. Agent de codage IA pour votre terminal.\n\n{ai_agent_disclaimer}",
               "icon": "omp.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/omp.sh"
             },
             {
               "name": "OpenCode",
-              "description": "Agent de codage IA open source. Modèles gratuits inclus ou connectez n'importe quel modèle à partir de n'importe quel fournisseur.\n\n⚠️ Avertissement : Nous ne sommes pas responsables des dommages au système causés par une mauvaise utilisation de cet agent IA. À utiliser à vos propres risques.",
+              "description": "Agent de codage IA open source. Modèles gratuits inclus ou connectez n'importe quel modèle à partir de n'importe quel fournisseur.\n\n{ai_agent_disclaimer}",
               "icon": "opencode.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/opencode.sh"
             },
             {
               "name": "Pi",
-              "description": "Agent de codage IA. Assistant de codage léger et rapide pour votre terminal.\n\n⚠️ Avertissement : Nous ne sommes pas responsables des dommages au système causés par une mauvaise utilisation de cet agent IA. À utiliser à vos propres risques.",
+              "description": "Agent de codage IA. Assistant de codage léger et rapide pour votre terminal.\n\n{ai_agent_disclaimer}",
               "icon": "pi-coding-agent.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/pi.sh"
@@ -6163,13 +6163,6 @@
           "icon": "handbrake.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/thumb.sh"
-        },
-        {
-          "name": "Touchégg",
-          "description": "Un reconnaisseur de gestes multi-tactiles vous permettant de configurer des gestes pour diverses actions sur les bureaux Xorg.",
-          "icon": "touchegg.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/extra/touchegg.sh"
         },
         {
           "name": "Configurer le pare-feu",
@@ -6908,6 +6901,13 @@
           "scriptPath": "p3/scripts/utils/peripherals/steer.sh"
         },
         {
+          "name": "Touchégg",
+          "description": "Un reconnaisseur de gestes multi-tactiles vous permettant de configurer des gestes pour diverses actions sur les bureaux Xorg.",
+          "icon": "touchegg.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/peripherals/touchegg.sh"
+        },
+        {
           "name": "Activer les logiciels basés sur le Web",
           "description": "Vous permet d'utiliser des logiciels basés sur le Web comme ATK HUB pour les appareils périphériques qui les possèdent. Un navigateur basé sur Chromium est toujours nécessaire pour que ce logiciel fonctionne.",
           "icon": "peripherals.svg",
@@ -7474,35 +7474,35 @@
           "tools": [
             {
               "name": "Claude Code",
-              "description": "Claude Code ist ein KI-Codierungsagent von Anthropic. Erfordert einen bezahlten Claude-Plan (Pro, Max, Team oder Enterprise).\n\n⚠️ Haftungsausschluss: Wir sind nicht verantwortlich für Systemschäden, die durch Missbrauch dieses KI-Agenten verursacht werden. Verwendung auf eigenes Risiko.",
+              "description": "Claude Code ist ein KI-Codierungsagent von Anthropic. Erfordert einen bezahlten Claude-Plan (Pro, Max, Team oder Enterprise).\n\n{ai_agent_disclaimer}",
               "icon": "claude-code.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/claude-code.sh"
             },
             {
               "name": "Codex",
-              "description": "KI-Codierungsagent von OpenAI. Automatisiert Codierungsaufgaben in Ihrem Terminal.\n\n⚠️ Haftungsausschluss: Wir sind nicht verantwortlich für Systemschäden, die durch Missbrauch dieses KI-Agenten verursacht werden. Verwendung auf eigenes Risiko.",
+              "description": "KI-Codierungsagent von OpenAI. Automatisiert Codierungsaufgaben in Ihrem Terminal.\n\n{ai_agent_disclaimer}",
               "icon": "codex.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/codex.sh"
             },
             {
               "name": "OMP",
-              "description": "Abzweigung von Pi mit mehr Werkzeugen und Unterstützung für mehrere Modelle. KI-Codierungsagent für Ihr Terminal.\n\n⚠️ Haftungsausschluss: Wir sind nicht verantwortlich für Systemschäden, die durch Missbrauch dieses KI-Agenten verursacht werden. Verwendung auf eigenes Risiko.",
+              "description": "Abzweigung von Pi mit mehr Werkzeugen und Unterstützung für mehrere Modelle. KI-Codierungsagent für Ihr Terminal.\n\n{ai_agent_disclaimer}",
               "icon": "omp.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/omp.sh"
             },
             {
               "name": "OpenCode",
-              "description": "KI-Codierungsagent mit offener Quelle. Kostenlose Modelle enthalten oder verbinden Sie jedes Modell von jedem Anbieter.\n\n⚠️ Haftungsausschluss: Wir sind nicht verantwortlich für Systemschäden, die durch Missbrauch dieses KI-Agenten verursacht werden. Verwendung auf eigenes Risiko.",
+              "description": "KI-Codierungsagent mit offener Quelle. Kostenlose Modelle enthalten oder verbinden Sie jedes Modell von jedem Anbieter.\n\n{ai_agent_disclaimer}",
               "icon": "opencode.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/opencode.sh"
             },
             {
               "name": "Pi",
-              "description": "KI-Codierungsagent. Leichter und schneller Codierungsassistent für Ihren Terminal.\n\n⚠️ Haftungsausschluss: Wir sind nicht verantwortlich für Systemschäden, die durch Missbrauch dieses KI-Agenten verursacht werden. Verwendung auf eigenes Risiko.",
+              "description": "KI-Codierungsagent. Leichter und schneller Codierungsassistent für Ihren Terminal.\n\n{ai_agent_disclaimer}",
               "icon": "pi-coding-agent.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/pi.sh"
@@ -7948,13 +7948,6 @@
           "icon": "handbrake.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/thumb.sh"
-        },
-        {
-          "name": "Touchégg",
-          "description": "Ein Multi-Touch-Gestenerkenner, mit dem Sie Gesten für verschiedene Aktionen auf Xorg-Desktops konfigurieren können.",
-          "icon": "touchegg.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/extra/touchegg.sh"
         },
         {
           "name": "Firewall konfigurieren",
@@ -8693,6 +8686,13 @@
           "scriptPath": "p3/scripts/utils/peripherals/steer.sh"
         },
         {
+          "name": "Touchégg",
+          "description": "Ein Multi-Touch-Gestenerkenner, mit dem Sie Gesten für verschiedene Aktionen auf Xorg-Desktops konfigurieren können.",
+          "icon": "touchegg.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/peripherals/touchegg.sh"
+        },
+        {
           "name": "Webbasierte Software aktivieren",
           "description": "Ermöglicht die Verwendung von webbasierter Software wie ATK HUB für Peripheriegeräte, die diese haben. Ein Chromium-basierter Browser ist weiterhin erforderlich, damit solche Software funktioniert.",
           "icon": "peripherals.svg",
@@ -9259,35 +9259,35 @@
           "tools": [
             {
               "name": "Claude Code",
-              "description": "Claude Code 是 Anthropic 的 AI 编码代理。需要付费的 Claude 计划（Pro、Max、Team 或 Enterprise）。\n\n⚠️ 免责声明：我们对因误用此 AI 代理而导致的任何系统损害不负责。使用风险自负。",
+              "description": "Claude Code 是 Anthropic 的 AI 编码代理。需要付费的 Claude 计划（Pro、Max、Team 或 Enterprise）。\n\n{ai_agent_disclaimer}",
               "icon": "claude-code.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/claude-code.sh"
             },
             {
               "name": "Codex",
-              "description": "来自 OpenAI 的 AI 编码代理。在终端中自动化编码任务。\n\n⚠️ 免责声明：我们对因误用此 AI 代理而导致的任何系统损害不负责。使用风险自负。",
+              "description": "来自 OpenAI 的 AI 编码代理。在终端中自动化编码任务。\n\n{ai_agent_disclaimer}",
               "icon": "codex.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/codex.sh"
             },
             {
               "name": "OMP",
-              "description": "具有更多工具和多模型支持的 Pi 分支。终端的 AI 编码代理。\n\n⚠️ 免责声明：我们对因误用此 AI 代理而导致的任何系统损害不负责。使用风险自负。",
+              "description": "具有更多工具和多模型支持的 Pi 分支。终端的 AI 编码代理。\n\n{ai_agent_disclaimer}",
               "icon": "omp.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/omp.sh"
             },
             {
               "name": "OpenCode",
-              "description": "开源 AI 编码代理。包含免费模型或从任何提供商连接任何模型。\n\n⚠️ 免责声明：我们对因误用此 AI 代理而导致的任何系统损害不负责。使用风险自负。",
+              "description": "开源 AI 编码代理。包含免费模型或从任何提供商连接任何模型。\n\n{ai_agent_disclaimer}",
               "icon": "opencode.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/opencode.sh"
             },
             {
               "name": "Pi",
-              "description": "AI 编码代理。终端的轻量级和快速编码助手。\n\n⚠️ 免责声明：我们对因误用此 AI 代理而导致的任何系统损害不负责。使用风险自负。",
+              "description": "AI 编码代理。终端的轻量级和快速编码助手。\n\n{ai_agent_disclaimer}",
               "icon": "pi-coding-agent.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/pi.sh"
@@ -9733,13 +9733,6 @@
           "icon": "handbrake.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/thumb.sh"
-        },
-        {
-          "name": "Touchégg",
-          "description": "多点触控手势识别器，允许您为Xorg桌面上的各种操作配置手势。",
-          "icon": "touchegg.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/extra/touchegg.sh"
         },
         {
           "name": "配置防火墙",
@@ -10478,6 +10471,13 @@
           "scriptPath": "p3/scripts/utils/peripherals/steer.sh"
         },
         {
+          "name": "Touchégg",
+          "description": "多点触控手势识别器，允许您为Xorg桌面上的各种操作配置手势。",
+          "icon": "touchegg.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/peripherals/touchegg.sh"
+        },
+        {
           "name": "启用基于Web的软件",
           "description": "允许您使用基于Web的软件，如ATK HUB，用于拥有这些功能的外设。仍然需要基于Chromium的浏览器使得此类软件能够正常运行。",
           "icon": "peripherals.svg",
@@ -11044,35 +11044,35 @@
           "tools": [
             {
               "name": "Claude Code",
-              "description": "Claude CodeはAnthropicの AI コーディングエージェントです。有料の Claude プラン (Pro、Max、Team、または Enterprise) が必要です。\n\n⚠️ 免責事項: このAIエージェントの悪用によって生じたシステムの損害について、当社は責任を負いません。自己の責任で使用してください。",
+              "description": "Claude CodeはAnthropicの AI コーディングエージェントです。有料の Claude プラン (Pro、Max、Team、または Enterprise) が必要です。\n\n{ai_agent_disclaimer}",
               "icon": "claude-code.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/claude-code.sh"
             },
             {
               "name": "Codex",
-              "description": "OpenAI の AI コーディングエージェント。ターミナルでコーディングタスクを自動化します。\n\n⚠️ 免責事項: このAIエージェントの悪用によって生じたシステムの損害について、当社は責任を負いません。自己の責任で使用してください。",
+              "description": "OpenAI の AI コーディングエージェント。ターミナルでコーディングタスクを自動化します。\n\n{ai_agent_disclaimer}",
               "icon": "codex.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/codex.sh"
             },
             {
               "name": "OMP",
-              "description": "より多くのツールとマルチモデルサポートを備えたPiのフォーク。ターミナルのAIコーディングエージェント。\n\n⚠️ 免責事項: このAIエージェントの悪用によって生じたシステムの損害について、当社は責任を負いません。自己の責任で使用してください。",
+              "description": "より多くのツールとマルチモデルサポートを備えたPiのフォーク。ターミナルのAIコーディングエージェント。\n\n{ai_agent_disclaimer}",
               "icon": "omp.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/omp.sh"
             },
             {
               "name": "OpenCode",
-              "description": "オープンソースの AI コーディングエージェント。無料モデルが含まれているか、任意のプロバイダーから任意のモデルを接続してください。\n\n⚠️ 免責事項: このAIエージェントの悪用によって生じたシステムの損害について、当社は責任を負いません。自己の責任で使用してください。",
+              "description": "オープンソースの AI コーディングエージェント。無料モデルが含まれているか、任意のプロバイダーから任意のモデルを接続してください。\n\n{ai_agent_disclaimer}",
               "icon": "opencode.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/opencode.sh"
             },
             {
               "name": "Pi",
-              "description": "AI コーディングエージェント。ターミナルの軽量で高速なコーディングアシスタント。\n\n⚠️ 免責事項: このAIエージェントの悪用によって生じたシステムの損害について、当社は責任を負いません。自己の責任で使用してください。",
+              "description": "AI コーディングエージェント。ターミナルの軽量で高速なコーディングアシスタント。\n\n{ai_agent_disclaimer}",
               "icon": "pi-coding-agent.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/pi.sh"
@@ -11518,13 +11518,6 @@
           "icon": "handbrake.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/thumb.sh"
-        },
-        {
-          "name": "Touchégg",
-          "description": "Xorgデスクトップでさまざまなアクションのジェスチャーを設定できるマルチタッチジェスチャー認識器。",
-          "icon": "touchegg.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/extra/touchegg.sh"
         },
         {
           "name": "ファイアウォールを設定",
@@ -12263,6 +12256,13 @@
           "scriptPath": "p3/scripts/utils/peripherals/steer.sh"
         },
         {
+          "name": "Touchégg",
+          "description": "Xorgデスクトップでさまざまなアクションのジェスチャーを設定できるマルチタッチジェスチャー認識器。",
+          "icon": "touchegg.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/peripherals/touchegg.sh"
+        },
+        {
           "name": "ウェブベースのソフトウェアを有効にする",
           "description": "ATK HUBのようなウェブベースのソフトウェアを、それらを持つ周辺機器に使用することができます。このようなソフトウェアが動作するにはChromiumベースのブラウザが必要です。",
           "icon": "peripherals.svg",
@@ -12829,35 +12829,35 @@
           "tools": [
             {
               "name": "Claude Code",
-              "description": "Claude Code — это агент кодирования AI от Anthropic. Требуется платный план Claude (Pro, Max, Team или Enterprise).\n\n⚠️ Отказ от ответственности: Мы не несем ответственности за какой-либо ущерб системе, вызванный неправильным использованием этого агента AI. Используйте на свой риск.",
+              "description": "Claude Code — это агент кодирования AI от Anthropic. Требуется платный план Claude (Pro, Max, Team или Enterprise).\n\n{ai_agent_disclaimer}",
               "icon": "claude-code.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/claude-code.sh"
             },
             {
               "name": "Codex",
-              "description": "Агент кодирования AI от OpenAI. Автоматизирует задачи кодирования в терминале.\n\n⚠️ Отказ от ответственности: Мы не несем ответственности за какой-либо ущерб системе, вызванный неправильным использованием этого агента AI. Используйте на свой риск.",
+              "description": "Агент кодирования AI от OpenAI. Автоматизирует задачи кодирования в терминале.\n\n{ai_agent_disclaimer}",
               "icon": "codex.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/codex.sh"
             },
             {
               "name": "OMP",
-              "description": "Ветвь Pi с большим количеством инструментов и поддержкой нескольких моделей. Агент кодирования AI для терминала.\n\n⚠️ Отказ от ответственности: Мы не несем ответственности за какой-либо ущерб системе, вызванный неправильным использованием этого агента AI. Используйте на свой риск.",
+              "description": "Ветвь Pi с большим количеством инструментов и поддержкой нескольких моделей. Агент кодирования AI для терминала.\n\n{ai_agent_disclaimer}",
               "icon": "omp.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/omp.sh"
             },
             {
               "name": "OpenCode",
-              "description": "Агент кодирования AI с открытым кодом. Бесплатные модели включены или подключите любую модель от любого поставщика.\n\n⚠️ Отказ от ответственности: Мы не несем ответственности за какой-либо ущерб системе, вызванный неправильным использованием этого агента AI. Используйте на свой риск.",
+              "description": "Агент кодирования AI с открытым кодом. Бесплатные модели включены или подключите любую модель от любого поставщика.\n\n{ai_agent_disclaimer}",
               "icon": "opencode.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/opencode.sh"
             },
             {
               "name": "Pi",
-              "description": "Агент кодирования AI. Легкий и быстрый помощник кодирования в терминале.\n\n⚠️ Отказ от ответственности: Мы не несем ответственности за какой-либо ущерб системе, вызванный неправильным использованием этого агента AI. Используйте на свой риск.",
+              "description": "Агент кодирования AI. Легкий и быстрый помощник кодирования в терминале.\n\n{ai_agent_disclaimer}",
               "icon": "pi-coding-agent.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/pi.sh"
@@ -13303,13 +13303,6 @@
           "icon": "handbrake.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/thumb.sh"
-        },
-        {
-          "name": "Touchégg",
-          "description": "Распознаватель мультитач-жестов, позволяющий настраивать жесты для различных действий на рабочих столах Xorg.",
-          "icon": "touchegg.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/extra/touchegg.sh"
         },
         {
           "name": "Настроить брандмауэр",
@@ -14046,6 +14039,13 @@
           "icon": "oversteer.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/peripherals/steer.sh"
+        },
+        {
+          "name": "Touchégg",
+          "description": "Распознаватель мультитач-жестов, позволяющий настраивать жесты для различных действий на рабочих столах Xorg.",
+          "icon": "touchegg.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/peripherals/touchegg.sh"
         },
         {
           "name": "Включить веб-программное обеспечение",
