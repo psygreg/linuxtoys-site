@@ -364,6 +364,13 @@
             "icon": "pi-coding-agent.svg",
             "version": "1.0",
             "scriptPath": "p3/scripts/devs/ai_agents/pi.sh"
+          },
+          {
+            "name": "Skills Seeker",
+            "description": "skills_seeker_desc",
+            "icon": "skills-seeker.svg",
+            "version": "1.0",
+            "scriptPath": "p3/scripts/devs/ai_agents/skills-seeker.sh"
           }
         ]
       }

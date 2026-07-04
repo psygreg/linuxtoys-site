@@ -366,6 +366,13 @@
               "icon": "pi-coding-agent.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/pi.sh"
+            },
+            {
+              "name": "Skills Seeker",
+              "description": "Browse, search and install AI agent skills from the catalog.",
+              "icon": "skills-seeker.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/skills-seeker.sh"
             }
           ],
           "displayName": "AI Agents"
@@ -2151,6 +2158,13 @@
               "icon": "pi-coding-agent.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/pi.sh"
+            },
+            {
+              "name": "Skills Seeker",
+              "description": "Navegue, pesquise e instale skills de agentes IA do catálogo.",
+              "icon": "skills-seeker.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/skills-seeker.sh"
             }
           ],
           "displayName": "Agentes de IA"
@@ -3936,6 +3950,13 @@
               "icon": "pi-coding-agent.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/pi.sh"
+            },
+            {
+              "name": "Skills Seeker",
+              "description": "skills_seeker_desc",
+              "icon": "skills-seeker.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/skills-seeker.sh"
             }
           ],
           "displayName": "Agentes de IA"
@@ -5721,6 +5742,13 @@
               "icon": "pi-coding-agent.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/pi.sh"
+            },
+            {
+              "name": "Skills Seeker",
+              "description": "skills_seeker_desc",
+              "icon": "skills-seeker.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/skills-seeker.sh"
             }
           ],
           "displayName": "Agents IA"
@@ -7506,6 +7534,13 @@
               "icon": "pi-coding-agent.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/pi.sh"
+            },
+            {
+              "name": "Skills Seeker",
+              "description": "skills_seeker_desc",
+              "icon": "skills-seeker.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/skills-seeker.sh"
             }
           ],
           "displayName": "KI-Agenten"
@@ -9291,6 +9326,13 @@
               "icon": "pi-coding-agent.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/pi.sh"
+            },
+            {
+              "name": "Skills Seeker",
+              "description": "skills_seeker_desc",
+              "icon": "skills-seeker.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/skills-seeker.sh"
             }
           ],
           "displayName": "AI 代理"
@@ -11076,6 +11118,13 @@
               "icon": "pi-coding-agent.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/pi.sh"
+            },
+            {
+              "name": "Skills Seeker",
+              "description": "skills_seeker_desc",
+              "icon": "skills-seeker.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/skills-seeker.sh"
             }
           ],
           "displayName": "AIエージェント"
@@ -12861,6 +12910,13 @@
               "icon": "pi-coding-agent.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/pi.sh"
+            },
+            {
+              "name": "Skills Seeker",
+              "description": "skills_seeker_desc",
+              "icon": "skills-seeker.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/skills-seeker.sh"
             }
           ],
           "displayName": "AI Агенты"
