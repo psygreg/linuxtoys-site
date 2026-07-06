@@ -73,7 +73,7 @@ osrpm() {
 
 ossuse() {
 	if curl -fsSL "${_rpm}" -o "/tmp/${_rpm_name}"; then
-		if sudo rpm -i --nodeps "/tmp/${_rpm_name}"; then
+		if ! { rpm -qi linuxtoys >/dev/null 2>&1 && sudo rpm -i --nodeps "/tmp/${_rpm_name}"; } || sudo rpm -U --nodeps --replacefiles --replacepkgs "/tmp/${_rpm_name}"; then
 			dependencies=(bash git curl wget zenity python3 python3-gobject gtk3 python3-requests python3-urllib3 python3-certifi libvte-2_91-0 typelib-1_0-Vte-2.91)
 			for pkg in "${dependencies[@]}"; do
 				sudo zypper --non-interactive install "${pkg}"
@@ -89,6 +89,9 @@ ossuse() {
 
 osarch() {
 	_pkg_dir="/tmp/linuxtoys/"
+	if pacman -Qi linuxtoys-bin &>/dev/null; then
+		sudo pacman -R --noconfirm linuxtoys-bin || error "Failed to remove existing linuxtoys-bin package."
+	fi
 	mkdir -p ${_pkg_dir}
 	if curl -fsSL "${_pkg}" -o "${_pkg_dir}${_pkg_name}"; then
 		cd "${_pkg_dir}"
