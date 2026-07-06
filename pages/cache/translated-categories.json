@@ -35,13 +35,6 @@
           "scriptPath": "p3/scripts/chat/slack.sh"
         },
         {
-          "name": "Stoat",
-          "description": "Free and open-source chat client, alternative to Discord.",
-          "icon": "stoat.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/chat/stoat.sh"
-        },
-        {
           "name": "Telegram",
           "description": "Messaging app with better social features and bigger group limits.",
           "icon": "telegram.png",
@@ -332,7 +325,59 @@
           "scriptPath": "p3/scripts/devs/zerotier.sh"
         }
       ],
-      "subcategories": {},
+      "subcategories": {
+        "ai_agents": {
+          "name": "ai_agents",
+          "icon": "claude-code.svg",
+          "description": "AI coding assistants and agents for development.",
+          "mode": "menu",
+          "tools": [
+            {
+              "name": "Claude Code",
+              "description": "Claude Code is an AI coding agent by Anthropic. Requires a paid Claude plan (Pro, Max, Team, or Enterprise).\n\n{ai_agent_disclaimer}",
+              "icon": "claude-code.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/claude-code.sh"
+            },
+            {
+              "name": "Codex",
+              "description": "AI coding agent by OpenAI. Automates coding tasks in your terminal.\n\n{ai_agent_disclaimer}",
+              "icon": "codex.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/codex.sh"
+            },
+            {
+              "name": "OMP",
+              "description": "Fork of Pi with more tools and multi-model support. AI coding agent for your terminal.\n\n{ai_agent_disclaimer}",
+              "icon": "omp.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/omp.sh"
+            },
+            {
+              "name": "OpenCode",
+              "description": "Open source AI coding agent. Free models included or connect any model from any provider.\n\n{ai_agent_disclaimer}",
+              "icon": "opencode.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/opencode.sh"
+            },
+            {
+              "name": "Pi",
+              "description": "AI coding agent. Lightweight and fast coding assistant for your terminal.\n\n{ai_agent_disclaimer}",
+              "icon": "pi-coding-agent.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/pi.sh"
+            },
+            {
+              "name": "Skills Seeker",
+              "description": "Browse, search and install AI agent skills from the catalog.",
+              "icon": "skills-seeker.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/skills-seeker.sh"
+            }
+          ],
+          "displayName": "AI Agents"
+        }
+      },
       "displayName": "Developers"
     },
     "drivers": {
@@ -388,6 +433,13 @@
           "description": "Nvidia 580xx legacy drivers for Maxwell (GTX 9xx), Pascal (GTX 10xx) and some Kepler (GTX 750/750Ti) and Turing (GTX 16xx) series GPUs.",
           "icon": "nvidia.svg",
           "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/nv-580-ostree.sh"
+        },
+        {
+          "name": "Nvidia Drivers (v580)",
+          "description": "Nvidia 580xx legacy drivers for Maxwell (GTX 9xx), Pascal (GTX 10xx) and some Kepler (GTX 750/750Ti) and Turing (GTX 16xx) series GPUs.",
+          "icon": "nvidia.svg",
+          "version": "1.0",
           "scriptPath": "p3/scripts/drivers/nv-580.sh"
         },
         {
@@ -396,13 +448,6 @@
           "icon": "nvidia.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/nv-deb.sh"
-        },
-        {
-          "name": "Nvidia Drivers (v470)",
-          "description": "Legacy Nvidia drivers. Supported GPUs: Kepler (GT 6xx) and Fermi (GT 7xx).",
-          "icon": "nvidia.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/drivers/nv-ostree-470.sh"
         },
         {
           "name": "Nvidia Drivers",
@@ -424,13 +469,6 @@
           "icon": "nvidia.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/nv-pacman.sh"
-        },
-        {
-          "name": "Nvidia Drivers (v470)",
-          "description": "Legacy Nvidia drivers. Supported GPUs: Kepler (GT 6xx) and Fermi (GT 7xx).",
-          "icon": "nvidia.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/drivers/nv-rpm-470.sh"
         },
         {
           "name": "Nvidia Drivers",
@@ -779,13 +817,6 @@
           "scriptPath": "p3/scripts/extra/thumb.sh"
         },
         {
-          "name": "Touchégg",
-          "description": "A multi-touch gesture recognizer allowing you to configure gestures for various actions on Xorg desktops.",
-          "icon": "touchegg.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/extra/touchegg.sh"
-        },
-        {
           "name": "Configure Firewall",
           "description": "Installs and applies a default setting ideal for most users for the Uncomplicated Firewall (UFW).",
           "icon": "firewall.svg",
@@ -1126,6 +1157,13 @@
           "icon": "pjeoffice-pro.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/pjeoffice.sh"
+        },
+        {
+          "name": "Recordly",
+          "description": "Open-source screen recorder and editor for walkthroughs, demos, product videos, and more, with motion-driven presentation tools built in.",
+          "icon": "recordly.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/office/recordly.sh"
         },
         {
           "name": "Zen Browser",
@@ -1515,6 +1553,13 @@
           "scriptPath": "p3/scripts/utils/peripherals/steer.sh"
         },
         {
+          "name": "Touchégg",
+          "description": "A multi-touch gesture recognizer allowing you to configure gestures for various actions on Xorg desktops.",
+          "icon": "touchegg.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/peripherals/touchegg.sh"
+        },
+        {
           "name": "Enable Web-based Software",
           "description": "Allows you to use web-based software like ATK HUB for peripherals that have those. A Chromium-based browser is still required for such software to work as well.",
           "icon": "peripherals.svg",
@@ -1635,6 +1680,13 @@
           "icon": "expressvpn.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/privacy/express-vpn.sh"
+        },
+        {
+          "name": "Helium Browser",
+          "description": "Chromium-based minimalist web browser that takes a privacy-first approach with unbiased ad-blocking.",
+          "icon": "helium.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/privacy/helium.sh"
         },
         {
           "name": "Hiddify",
@@ -1773,13 +1825,6 @@
           "icon": "slack.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/chat/slack.sh"
-        },
-        {
-          "name": "Stoat",
-          "description": "Cliente de chat gratuito e de código aberto, alternativa ao Discord.",
-          "icon": "stoat.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/chat/stoat.sh"
         },
         {
           "name": "Telegram",
@@ -2072,7 +2117,59 @@
           "scriptPath": "p3/scripts/devs/zerotier.sh"
         }
       ],
-      "subcategories": {},
+      "subcategories": {
+        "ai_agents": {
+          "name": "ai_agents",
+          "icon": "claude-code.svg",
+          "description": "Assistentes de codificação IA e agentes para desenvolvimento.",
+          "mode": "menu",
+          "tools": [
+            {
+              "name": "Claude Code",
+              "description": "Claude Code é um agente de codificação IA da Anthropic. Requer um plano Claude pago (Pro, Max, Team ou Enterprise).\n\n{ai_agent_disclaimer}",
+              "icon": "claude-code.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/claude-code.sh"
+            },
+            {
+              "name": "Codex",
+              "description": "Agente de codificação IA da OpenAI. Automatiza tarefas de codificação no seu terminal.\n\n{ai_agent_disclaimer}",
+              "icon": "codex.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/codex.sh"
+            },
+            {
+              "name": "OMP",
+              "description": "Fork do Pi com mais ferramentas e suporte multimodelo. Agente de codificação IA para o seu terminal.\n\n{ai_agent_disclaimer}",
+              "icon": "omp.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/omp.sh"
+            },
+            {
+              "name": "OpenCode",
+              "description": "Agente de codificação IA de código aberto. Modelos grátis incluídos ou conecte qualquer modelo de qualquer provedor.\n\n{ai_agent_disclaimer}",
+              "icon": "opencode.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/opencode.sh"
+            },
+            {
+              "name": "Pi",
+              "description": "Agente de codificação IA. Assistente de codificação leve e rápido para o seu terminal.\n\n{ai_agent_disclaimer}",
+              "icon": "pi-coding-agent.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/pi.sh"
+            },
+            {
+              "name": "Skills Seeker",
+              "description": "Navegue, pesquise e instale skills de agentes IA do catálogo.",
+              "icon": "skills-seeker.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/skills-seeker.sh"
+            }
+          ],
+          "displayName": "Agentes de IA"
+        }
+      },
       "displayName": "Desenvolvedores"
     },
     "drivers": {
@@ -2128,6 +2225,13 @@
           "description": "Drivers herdados do Nvidia 580xx para Maxwell (GTX 9xx), Pascal (GTX 10xx) e algumas séries Kepler (GTX 750/750Ti) e Turing (GTX 16xx) GPU.",
           "icon": "nvidia.svg",
           "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/nv-580-ostree.sh"
+        },
+        {
+          "name": "Nvidia Drivers (v580)",
+          "description": "Drivers herdados do Nvidia 580xx para Maxwell (GTX 9xx), Pascal (GTX 10xx) e algumas séries Kepler (GTX 750/750Ti) e Turing (GTX 16xx) GPU.",
+          "icon": "nvidia.svg",
+          "version": "1.0",
           "scriptPath": "p3/scripts/drivers/nv-580.sh"
         },
         {
@@ -2136,13 +2240,6 @@
           "icon": "nvidia.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/nv-deb.sh"
-        },
-        {
-          "name": "Nvidia Drivers (v470)",
-          "description": "Drivers Nvidia legados. GPUs suportadas: Kepler (GT 6xx) e Fermi (GT 7xx).",
-          "icon": "nvidia.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/drivers/nv-ostree-470.sh"
         },
         {
           "name": "Nvidia Drivers",
@@ -2164,13 +2261,6 @@
           "icon": "nvidia.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/nv-pacman.sh"
-        },
-        {
-          "name": "Nvidia Drivers (v470)",
-          "description": "Drivers Nvidia legados. GPUs suportadas: Kepler (GT 6xx) e Fermi (GT 7xx).",
-          "icon": "nvidia.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/drivers/nv-rpm-470.sh"
         },
         {
           "name": "Nvidia Drivers",
@@ -2519,13 +2609,6 @@
           "scriptPath": "p3/scripts/extra/thumb.sh"
         },
         {
-          "name": "Touchégg",
-          "description": "Um reconhecedor de gestos multi-toque que permite configurar gestos para várias ações em desktops Xorg.",
-          "icon": "touchegg.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/extra/touchegg.sh"
-        },
-        {
           "name": "Configurar Firewall",
           "description": "Instala e aplica uma configuração padrão ideal para a maioria dos usuários para o Uncomplicated Firewall (UFW).",
           "icon": "firewall.svg",
@@ -2866,6 +2949,13 @@
           "icon": "pjeoffice-pro.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/pjeoffice.sh"
+        },
+        {
+          "name": "Recordly",
+          "description": "Gravador de tela e editor de código aberto para tutoriais, demonstrações, vídeos de produtos e muito mais, com ferramentas de apresentação orientadas por movimento integradas.",
+          "icon": "recordly.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/office/recordly.sh"
         },
         {
           "name": "Zen Browser",
@@ -3255,6 +3345,13 @@
           "scriptPath": "p3/scripts/utils/peripherals/steer.sh"
         },
         {
+          "name": "Touchégg",
+          "description": "Um reconhecedor de gestos multi-toque que permite configurar gestos para várias ações em desktops Xorg.",
+          "icon": "touchegg.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/peripherals/touchegg.sh"
+        },
+        {
           "name": "Ativar software baseado na web",
           "description": "Permite que você use software baseado na web como ATK HUB para periféricos que os possuem. Um navegador baseado em Chromium ainda é necessário para que esse software funcione.",
           "icon": "peripherals.svg",
@@ -3375,6 +3472,13 @@
           "icon": "expressvpn.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/privacy/express-vpn.sh"
+        },
+        {
+          "name": "Helium Browser",
+          "description": "Navegador web minimalista baseado em Chromium que adota uma abordagem centrada na privacidade com bloqueio de anúncios imparcial.",
+          "icon": "helium.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/privacy/helium.sh"
         },
         {
           "name": "Hiddify",
@@ -3513,13 +3617,6 @@
           "icon": "slack.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/chat/slack.sh"
-        },
-        {
-          "name": "Stoat",
-          "description": "Cliente de chat gratuito y de código abierto, alternativa a Discord.",
-          "icon": "stoat.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/chat/stoat.sh"
         },
         {
           "name": "Telegram",
@@ -3812,7 +3909,59 @@
           "scriptPath": "p3/scripts/devs/zerotier.sh"
         }
       ],
-      "subcategories": {},
+      "subcategories": {
+        "ai_agents": {
+          "name": "ai_agents",
+          "icon": "claude-code.svg",
+          "description": "Asistentes de codificación de IA y agentes para desarrollo.",
+          "mode": "menu",
+          "tools": [
+            {
+              "name": "Claude Code",
+              "description": "Claude Code es un agente de codificación AI de Anthropic. Requiere un plan de Claude de pago (Pro, Max, Team o Enterprise).\n\n{ai_agent_disclaimer}",
+              "icon": "claude-code.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/claude-code.sh"
+            },
+            {
+              "name": "Codex",
+              "description": "Agente de codificación AI de OpenAI. Automatiza tareas de codificación en tu terminal.\n\n{ai_agent_disclaimer}",
+              "icon": "codex.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/codex.sh"
+            },
+            {
+              "name": "OMP",
+              "description": "Fork de Pi con más herramientas y soporte multimodelo. Agente de codificación AI para tu terminal.\n\n{ai_agent_disclaimer}",
+              "icon": "omp.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/omp.sh"
+            },
+            {
+              "name": "OpenCode",
+              "description": "Agente de codificación AI de código abierto. Modelos gratuitos incluidos o conecte cualquier modelo de cualquier proveedor.\n\n{ai_agent_disclaimer}",
+              "icon": "opencode.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/opencode.sh"
+            },
+            {
+              "name": "Pi",
+              "description": "Agente de codificación AI. Asistente de codificación ligero y rápido para tu terminal.\n\n{ai_agent_disclaimer}",
+              "icon": "pi-coding-agent.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/pi.sh"
+            },
+            {
+              "name": "Skills Seeker",
+              "description": "skills_seeker_desc",
+              "icon": "skills-seeker.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/skills-seeker.sh"
+            }
+          ],
+          "displayName": "Agentes de IA"
+        }
+      },
       "displayName": "Desarrolladores"
     },
     "drivers": {
@@ -3868,6 +4017,13 @@
           "description": "Controladores heredados de Nvidia 580xx para Maxwell (GTX 9xx), Pascal (GTX 10xx) y algunas series Kepler (GTX 750/750Ti) y Turing (GTX 16xx) GPU.",
           "icon": "nvidia.svg",
           "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/nv-580-ostree.sh"
+        },
+        {
+          "name": "Nvidia Drivers (v580)",
+          "description": "Controladores heredados de Nvidia 580xx para Maxwell (GTX 9xx), Pascal (GTX 10xx) y algunas series Kepler (GTX 750/750Ti) y Turing (GTX 16xx) GPU.",
+          "icon": "nvidia.svg",
+          "version": "1.0",
           "scriptPath": "p3/scripts/drivers/nv-580.sh"
         },
         {
@@ -3876,13 +4032,6 @@
           "icon": "nvidia.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/nv-deb.sh"
-        },
-        {
-          "name": "Nvidia Drivers (v470)",
-          "description": "Controladores legacy de Nvidia. GPUs soportadas: Kepler (GT 6xx) y Fermi (GT 7xx).",
-          "icon": "nvidia.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/drivers/nv-ostree-470.sh"
         },
         {
           "name": "Nvidia Drivers",
@@ -3904,13 +4053,6 @@
           "icon": "nvidia.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/nv-pacman.sh"
-        },
-        {
-          "name": "Nvidia Drivers (v470)",
-          "description": "Controladores legacy de Nvidia. GPUs soportadas: Kepler (GT 6xx) y Fermi (GT 7xx).",
-          "icon": "nvidia.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/drivers/nv-rpm-470.sh"
         },
         {
           "name": "Nvidia Drivers",
@@ -4259,13 +4401,6 @@
           "scriptPath": "p3/scripts/extra/thumb.sh"
         },
         {
-          "name": "Touchégg",
-          "description": "Un reconocedor de gestos multitáctil que permite configurar gestos para varias acciones en escritorios Xorg.",
-          "icon": "touchegg.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/extra/touchegg.sh"
-        },
-        {
           "name": "Configurar Firewall",
           "description": "Instala y aplica una configuración predeterminada ideal para la mayoría de usuarios del Uncomplicated Firewall (UFW).",
           "icon": "firewall.svg",
@@ -4606,6 +4741,13 @@
           "icon": "pjeoffice-pro.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/pjeoffice.sh"
+        },
+        {
+          "name": "Recordly",
+          "description": "Grabador de pantalla y editor de código abierto para tutoriales, demostraciones, videos de productos y más, con herramientas de presentación impulsadas por movimiento integradas.",
+          "icon": "recordly.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/office/recordly.sh"
         },
         {
           "name": "Zen Browser",
@@ -4995,6 +5137,13 @@
           "scriptPath": "p3/scripts/utils/peripherals/steer.sh"
         },
         {
+          "name": "Touchégg",
+          "description": "Un reconocedor de gestos multitáctil que permite configurar gestos para varias acciones en escritorios Xorg.",
+          "icon": "touchegg.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/peripherals/touchegg.sh"
+        },
+        {
           "name": "Habilitar software basado en web",
           "description": "Te permite usar software basado en web como ATK HUB para periféricos que tienen estos. Aún se requiere un navegador basado en Chromium para que funcione tal software.",
           "icon": "peripherals.svg",
@@ -5115,6 +5264,13 @@
           "icon": "expressvpn.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/privacy/express-vpn.sh"
+        },
+        {
+          "name": "Helium Browser",
+          "description": "Navegador web minimalista basado en Chromium que adopta un enfoque centrado en la privacidad con bloqueo de anuncios imparcial.",
+          "icon": "helium.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/privacy/helium.sh"
         },
         {
           "name": "Hiddify",
@@ -5253,13 +5409,6 @@
           "icon": "slack.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/chat/slack.sh"
-        },
-        {
-          "name": "Stoat",
-          "description": "Client de chat gratuito e open-source, alternative à Discord.",
-          "icon": "stoat.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/chat/stoat.sh"
         },
         {
           "name": "Telegram",
@@ -5552,7 +5701,59 @@
           "scriptPath": "p3/scripts/devs/zerotier.sh"
         }
       ],
-      "subcategories": {},
+      "subcategories": {
+        "ai_agents": {
+          "name": "ai_agents",
+          "icon": "claude-code.svg",
+          "description": "Assistants de codage IA et agents pour le développement.",
+          "mode": "menu",
+          "tools": [
+            {
+              "name": "Claude Code",
+              "description": "Claude Code est un agent de codage IA d'Anthropic. Nécessite un plan Claude payant (Pro, Max, Team ou Enterprise).\n\n{ai_agent_disclaimer}",
+              "icon": "claude-code.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/claude-code.sh"
+            },
+            {
+              "name": "Codex",
+              "description": "Agent de codage IA d'OpenAI. Automatise les tâches de codage dans votre terminal.\n\n{ai_agent_disclaimer}",
+              "icon": "codex.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/codex.sh"
+            },
+            {
+              "name": "OMP",
+              "description": "Fork de Pi avec plus d'outils et support multi-modèle. Agent de codage IA pour votre terminal.\n\n{ai_agent_disclaimer}",
+              "icon": "omp.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/omp.sh"
+            },
+            {
+              "name": "OpenCode",
+              "description": "Agent de codage IA open source. Modèles gratuits inclus ou connectez n'importe quel modèle à partir de n'importe quel fournisseur.\n\n{ai_agent_disclaimer}",
+              "icon": "opencode.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/opencode.sh"
+            },
+            {
+              "name": "Pi",
+              "description": "Agent de codage IA. Assistant de codage léger et rapide pour votre terminal.\n\n{ai_agent_disclaimer}",
+              "icon": "pi-coding-agent.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/pi.sh"
+            },
+            {
+              "name": "Skills Seeker",
+              "description": "skills_seeker_desc",
+              "icon": "skills-seeker.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/skills-seeker.sh"
+            }
+          ],
+          "displayName": "Agents IA"
+        }
+      },
       "displayName": "Développeurs"
     },
     "drivers": {
@@ -5608,6 +5809,13 @@
           "description": "Pilotes hérités Nvidia 580xx pour Maxwell (GTX 9xx), Pascal (GTX 10xx) et certaines séries Kepler (GTX 750/750Ti) et Turing (GTX 16xx) GPU.",
           "icon": "nvidia.svg",
           "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/nv-580-ostree.sh"
+        },
+        {
+          "name": "Nvidia Drivers (v580)",
+          "description": "Pilotes hérités Nvidia 580xx pour Maxwell (GTX 9xx), Pascal (GTX 10xx) et certaines séries Kepler (GTX 750/750Ti) et Turing (GTX 16xx) GPU.",
+          "icon": "nvidia.svg",
+          "version": "1.0",
           "scriptPath": "p3/scripts/drivers/nv-580.sh"
         },
         {
@@ -5616,13 +5824,6 @@
           "icon": "nvidia.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/nv-deb.sh"
-        },
-        {
-          "name": "Nvidia Drivers (v470)",
-          "description": "Pilotes Nvidia legacy. GPUs supportées : Kepler (GT 6xx) et Fermi (GT 7xx).",
-          "icon": "nvidia.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/drivers/nv-ostree-470.sh"
         },
         {
           "name": "Nvidia Drivers",
@@ -5644,13 +5845,6 @@
           "icon": "nvidia.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/nv-pacman.sh"
-        },
-        {
-          "name": "Nvidia Drivers (v470)",
-          "description": "Pilotes Nvidia legacy. GPUs supportées : Kepler (GT 6xx) et Fermi (GT 7xx).",
-          "icon": "nvidia.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/drivers/nv-rpm-470.sh"
         },
         {
           "name": "Nvidia Drivers",
@@ -5999,13 +6193,6 @@
           "scriptPath": "p3/scripts/extra/thumb.sh"
         },
         {
-          "name": "Touchégg",
-          "description": "Un reconnaisseur de gestes multi-tactiles vous permettant de configurer des gestes pour diverses actions sur les bureaux Xorg.",
-          "icon": "touchegg.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/extra/touchegg.sh"
-        },
-        {
           "name": "Configurer le pare-feu",
           "description": "Installe et applique un paramétrage par défaut idéal pour la plupart des utilisateurs du pare-feu simple (UFW).",
           "icon": "firewall.svg",
@@ -6346,6 +6533,13 @@
           "icon": "pjeoffice-pro.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/pjeoffice.sh"
+        },
+        {
+          "name": "Recordly",
+          "description": "Enregistreur d'écran et éditeur open source pour les tutoriels, démonstrations, vidéos de produits et bien plus encore, avec des outils de présentation pilotés par le mouvement intégrés.",
+          "icon": "recordly.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/office/recordly.sh"
         },
         {
           "name": "Zen Browser",
@@ -6735,6 +6929,13 @@
           "scriptPath": "p3/scripts/utils/peripherals/steer.sh"
         },
         {
+          "name": "Touchégg",
+          "description": "Un reconnaisseur de gestes multi-tactiles vous permettant de configurer des gestes pour diverses actions sur les bureaux Xorg.",
+          "icon": "touchegg.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/peripherals/touchegg.sh"
+        },
+        {
           "name": "Activer les logiciels basés sur le Web",
           "description": "Vous permet d'utiliser des logiciels basés sur le Web comme ATK HUB pour les appareils périphériques qui les possèdent. Un navigateur basé sur Chromium est toujours nécessaire pour que ce logiciel fonctionne.",
           "icon": "peripherals.svg",
@@ -6855,6 +7056,13 @@
           "icon": "expressvpn.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/privacy/express-vpn.sh"
+        },
+        {
+          "name": "Helium Browser",
+          "description": "Navigateur web minimaliste basé sur Chromium avec une approche axée sur la confidentialité et un blocage impartial des publicités.",
+          "icon": "helium.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/privacy/helium.sh"
         },
         {
           "name": "Hiddify",
@@ -6993,13 +7201,6 @@
           "icon": "slack.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/chat/slack.sh"
-        },
-        {
-          "name": "Stoat",
-          "description": "Kostenloser und quelloffener Chat-Client, Alternative zu Discord.",
-          "icon": "stoat.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/chat/stoat.sh"
         },
         {
           "name": "Telegram",
@@ -7292,7 +7493,59 @@
           "scriptPath": "p3/scripts/devs/zerotier.sh"
         }
       ],
-      "subcategories": {},
+      "subcategories": {
+        "ai_agents": {
+          "name": "ai_agents",
+          "icon": "claude-code.svg",
+          "description": "KI-Codierungsassistenten und Agenten für die Entwicklung.",
+          "mode": "menu",
+          "tools": [
+            {
+              "name": "Claude Code",
+              "description": "Claude Code ist ein KI-Codierungsagent von Anthropic. Erfordert einen bezahlten Claude-Plan (Pro, Max, Team oder Enterprise).\n\n{ai_agent_disclaimer}",
+              "icon": "claude-code.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/claude-code.sh"
+            },
+            {
+              "name": "Codex",
+              "description": "KI-Codierungsagent von OpenAI. Automatisiert Codierungsaufgaben in Ihrem Terminal.\n\n{ai_agent_disclaimer}",
+              "icon": "codex.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/codex.sh"
+            },
+            {
+              "name": "OMP",
+              "description": "Abzweigung von Pi mit mehr Werkzeugen und Unterstützung für mehrere Modelle. KI-Codierungsagent für Ihr Terminal.\n\n{ai_agent_disclaimer}",
+              "icon": "omp.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/omp.sh"
+            },
+            {
+              "name": "OpenCode",
+              "description": "KI-Codierungsagent mit offener Quelle. Kostenlose Modelle enthalten oder verbinden Sie jedes Modell von jedem Anbieter.\n\n{ai_agent_disclaimer}",
+              "icon": "opencode.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/opencode.sh"
+            },
+            {
+              "name": "Pi",
+              "description": "KI-Codierungsagent. Leichter und schneller Codierungsassistent für Ihren Terminal.\n\n{ai_agent_disclaimer}",
+              "icon": "pi-coding-agent.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/pi.sh"
+            },
+            {
+              "name": "Skills Seeker",
+              "description": "skills_seeker_desc",
+              "icon": "skills-seeker.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/skills-seeker.sh"
+            }
+          ],
+          "displayName": "KI-Agenten"
+        }
+      },
       "displayName": "Entwickler"
     },
     "drivers": {
@@ -7348,6 +7601,13 @@
           "description": "Nvidia 580xx Legacy-Treiber für Maxwell (GTX 9xx), Pascal (GTX 10xx) und einige Kepler (GTX 750/750Ti) und Turing (GTX 16xx) GPU-Serien.",
           "icon": "nvidia.svg",
           "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/nv-580-ostree.sh"
+        },
+        {
+          "name": "Nvidia Drivers (v580)",
+          "description": "Nvidia 580xx Legacy-Treiber für Maxwell (GTX 9xx), Pascal (GTX 10xx) und einige Kepler (GTX 750/750Ti) und Turing (GTX 16xx) GPU-Serien.",
+          "icon": "nvidia.svg",
+          "version": "1.0",
           "scriptPath": "p3/scripts/drivers/nv-580.sh"
         },
         {
@@ -7356,13 +7616,6 @@
           "icon": "nvidia.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/nv-deb.sh"
-        },
-        {
-          "name": "Nvidia Drivers (v470)",
-          "description": "Legacy Nvidia-Treiber. Unterstützte GPUs: Kepler (GT 6xx) und Fermi (GT 7xx).",
-          "icon": "nvidia.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/drivers/nv-ostree-470.sh"
         },
         {
           "name": "Nvidia Drivers",
@@ -7384,13 +7637,6 @@
           "icon": "nvidia.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/nv-pacman.sh"
-        },
-        {
-          "name": "Nvidia Drivers (v470)",
-          "description": "Legacy Nvidia-Treiber. Unterstützte GPUs: Kepler (GT 6xx) und Fermi (GT 7xx).",
-          "icon": "nvidia.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/drivers/nv-rpm-470.sh"
         },
         {
           "name": "Nvidia Drivers",
@@ -7739,13 +7985,6 @@
           "scriptPath": "p3/scripts/extra/thumb.sh"
         },
         {
-          "name": "Touchégg",
-          "description": "Ein Multi-Touch-Gestenerkenner, mit dem Sie Gesten für verschiedene Aktionen auf Xorg-Desktops konfigurieren können.",
-          "icon": "touchegg.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/extra/touchegg.sh"
-        },
-        {
           "name": "Firewall konfigurieren",
           "description": "Installiert und wendet eine Standardeinstellung an, die für die meisten Benutzer der Uncomplicated Firewall (UFW) ideal ist.",
           "icon": "firewall.svg",
@@ -8086,6 +8325,13 @@
           "icon": "pjeoffice-pro.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/pjeoffice.sh"
+        },
+        {
+          "name": "Recordly",
+          "description": "Open-Source-Bildschirmrecorder und Editor für Anleitungen, Demonstrationen, Produktvideos und mehr mit integrierten bewegungsgesteuerten Präsentationswerkzeugen.",
+          "icon": "recordly.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/office/recordly.sh"
         },
         {
           "name": "Zen Browser",
@@ -8475,6 +8721,13 @@
           "scriptPath": "p3/scripts/utils/peripherals/steer.sh"
         },
         {
+          "name": "Touchégg",
+          "description": "Ein Multi-Touch-Gestenerkenner, mit dem Sie Gesten für verschiedene Aktionen auf Xorg-Desktops konfigurieren können.",
+          "icon": "touchegg.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/peripherals/touchegg.sh"
+        },
+        {
           "name": "Webbasierte Software aktivieren",
           "description": "Ermöglicht die Verwendung von webbasierter Software wie ATK HUB für Peripheriegeräte, die diese haben. Ein Chromium-basierter Browser ist weiterhin erforderlich, damit solche Software funktioniert.",
           "icon": "peripherals.svg",
@@ -8595,6 +8848,13 @@
           "icon": "expressvpn.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/privacy/express-vpn.sh"
+        },
+        {
+          "name": "Helium Browser",
+          "description": "Minimalistischer auf Chromium basierender Webbrowser mit Privacy-First-Ansatz und unvoreingenommener Werbeblocker.",
+          "icon": "helium.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/privacy/helium.sh"
         },
         {
           "name": "Hiddify",
@@ -8733,13 +8993,6 @@
           "icon": "slack.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/chat/slack.sh"
-        },
-        {
-          "name": "Stoat",
-          "description": "免费开源的聊天客户端，Discord 的替代品。",
-          "icon": "stoat.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/chat/stoat.sh"
         },
         {
           "name": "Telegram",
@@ -9032,7 +9285,59 @@
           "scriptPath": "p3/scripts/devs/zerotier.sh"
         }
       ],
-      "subcategories": {},
+      "subcategories": {
+        "ai_agents": {
+          "name": "ai_agents",
+          "icon": "claude-code.svg",
+          "description": "用于开发的 AI 编码助手和代理。",
+          "mode": "menu",
+          "tools": [
+            {
+              "name": "Claude Code",
+              "description": "Claude Code 是 Anthropic 的 AI 编码代理。需要付费的 Claude 计划（Pro、Max、Team 或 Enterprise）。\n\n{ai_agent_disclaimer}",
+              "icon": "claude-code.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/claude-code.sh"
+            },
+            {
+              "name": "Codex",
+              "description": "来自 OpenAI 的 AI 编码代理。在终端中自动化编码任务。\n\n{ai_agent_disclaimer}",
+              "icon": "codex.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/codex.sh"
+            },
+            {
+              "name": "OMP",
+              "description": "具有更多工具和多模型支持的 Pi 分支。终端的 AI 编码代理。\n\n{ai_agent_disclaimer}",
+              "icon": "omp.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/omp.sh"
+            },
+            {
+              "name": "OpenCode",
+              "description": "开源 AI 编码代理。包含免费模型或从任何提供商连接任何模型。\n\n{ai_agent_disclaimer}",
+              "icon": "opencode.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/opencode.sh"
+            },
+            {
+              "name": "Pi",
+              "description": "AI 编码代理。终端的轻量级和快速编码助手。\n\n{ai_agent_disclaimer}",
+              "icon": "pi-coding-agent.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/pi.sh"
+            },
+            {
+              "name": "Skills Seeker",
+              "description": "skills_seeker_desc",
+              "icon": "skills-seeker.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/skills-seeker.sh"
+            }
+          ],
+          "displayName": "AI 代理"
+        }
+      },
       "displayName": "开发者"
     },
     "drivers": {
@@ -9088,6 +9393,13 @@
           "description": "Nvidia 580xx 旧版驱动程序，适用于Maxwell (GTX 9xx)、Pascal (GTX 10xx)以及部分Kepler (GTX 750/750Ti)和Turing (GTX 16xx)系列GPU。",
           "icon": "nvidia.svg",
           "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/nv-580-ostree.sh"
+        },
+        {
+          "name": "Nvidia Drivers (v580)",
+          "description": "Nvidia 580xx 旧版驱动程序，适用于Maxwell (GTX 9xx)、Pascal (GTX 10xx)以及部分Kepler (GTX 750/750Ti)和Turing (GTX 16xx)系列GPU。",
+          "icon": "nvidia.svg",
+          "version": "1.0",
           "scriptPath": "p3/scripts/drivers/nv-580.sh"
         },
         {
@@ -9096,13 +9408,6 @@
           "icon": "nvidia.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/nv-deb.sh"
-        },
-        {
-          "name": "Nvidia Drivers (v470)",
-          "description": "旧版Nvidia驱动程序。支持的GPU：Kepler（GT 6xx）和Fermi（GT 7xx）。",
-          "icon": "nvidia.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/drivers/nv-ostree-470.sh"
         },
         {
           "name": "Nvidia Drivers",
@@ -9124,13 +9429,6 @@
           "icon": "nvidia.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/nv-pacman.sh"
-        },
-        {
-          "name": "Nvidia Drivers (v470)",
-          "description": "旧版Nvidia驱动程序。支持的GPU：Kepler（GT 6xx）和Fermi（GT 7xx）。",
-          "icon": "nvidia.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/drivers/nv-rpm-470.sh"
         },
         {
           "name": "Nvidia Drivers",
@@ -9479,13 +9777,6 @@
           "scriptPath": "p3/scripts/extra/thumb.sh"
         },
         {
-          "name": "Touchégg",
-          "description": "多点触控手势识别器，允许您为Xorg桌面上的各种操作配置手势。",
-          "icon": "touchegg.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/extra/touchegg.sh"
-        },
-        {
           "name": "配置防火墙",
           "description": "安装并应用适合大多数用户的Uncomplicated Firewall (UFW)默认设置。",
           "icon": "firewall.svg",
@@ -9826,6 +10117,13 @@
           "icon": "pjeoffice-pro.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/pjeoffice.sh"
+        },
+        {
+          "name": "Recordly",
+          "description": "用于教程、演示、产品视频等的开源屏幕录像机和编辑器，具有内置的运动驱动演示工具。",
+          "icon": "recordly.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/office/recordly.sh"
         },
         {
           "name": "Zen Browser",
@@ -10215,6 +10513,13 @@
           "scriptPath": "p3/scripts/utils/peripherals/steer.sh"
         },
         {
+          "name": "Touchégg",
+          "description": "多点触控手势识别器，允许您为Xorg桌面上的各种操作配置手势。",
+          "icon": "touchegg.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/peripherals/touchegg.sh"
+        },
+        {
           "name": "启用基于Web的软件",
           "description": "允许您使用基于Web的软件，如ATK HUB，用于拥有这些功能的外设。仍然需要基于Chromium的浏览器使得此类软件能够正常运行。",
           "icon": "peripherals.svg",
@@ -10335,6 +10640,13 @@
           "icon": "expressvpn.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/privacy/express-vpn.sh"
+        },
+        {
+          "name": "Helium Browser",
+          "description": "基于Chromium的极简网络浏览器，采用隐私优先的方法和公正的广告拦截。",
+          "icon": "helium.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/privacy/helium.sh"
         },
         {
           "name": "Hiddify",
@@ -10473,13 +10785,6 @@
           "icon": "slack.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/chat/slack.sh"
-        },
-        {
-          "name": "Stoat",
-          "description": "無料でオープンソースのチャットクライアント、Discordの代替品。",
-          "icon": "stoat.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/chat/stoat.sh"
         },
         {
           "name": "Telegram",
@@ -10772,7 +11077,59 @@
           "scriptPath": "p3/scripts/devs/zerotier.sh"
         }
       ],
-      "subcategories": {},
+      "subcategories": {
+        "ai_agents": {
+          "name": "ai_agents",
+          "icon": "claude-code.svg",
+          "description": "開発用のAIコーディングアシスタントとエージェント。",
+          "mode": "menu",
+          "tools": [
+            {
+              "name": "Claude Code",
+              "description": "Claude CodeはAnthropicの AI コーディングエージェントです。有料の Claude プラン (Pro、Max、Team、または Enterprise) が必要です。\n\n{ai_agent_disclaimer}",
+              "icon": "claude-code.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/claude-code.sh"
+            },
+            {
+              "name": "Codex",
+              "description": "OpenAI の AI コーディングエージェント。ターミナルでコーディングタスクを自動化します。\n\n{ai_agent_disclaimer}",
+              "icon": "codex.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/codex.sh"
+            },
+            {
+              "name": "OMP",
+              "description": "より多くのツールとマルチモデルサポートを備えたPiのフォーク。ターミナルのAIコーディングエージェント。\n\n{ai_agent_disclaimer}",
+              "icon": "omp.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/omp.sh"
+            },
+            {
+              "name": "OpenCode",
+              "description": "オープンソースの AI コーディングエージェント。無料モデルが含まれているか、任意のプロバイダーから任意のモデルを接続してください。\n\n{ai_agent_disclaimer}",
+              "icon": "opencode.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/opencode.sh"
+            },
+            {
+              "name": "Pi",
+              "description": "AI コーディングエージェント。ターミナルの軽量で高速なコーディングアシスタント。\n\n{ai_agent_disclaimer}",
+              "icon": "pi-coding-agent.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/pi.sh"
+            },
+            {
+              "name": "Skills Seeker",
+              "description": "skills_seeker_desc",
+              "icon": "skills-seeker.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/skills-seeker.sh"
+            }
+          ],
+          "displayName": "AIエージェント"
+        }
+      },
       "displayName": "開発者"
     },
     "drivers": {
@@ -10828,6 +11185,13 @@
           "description": "Maxwell (GTX 9xx)、Pascal (GTX 10xx)、および一部のKepler (GTX 750/750Ti) および Turing (GTX 16xx) シリーズ GPU用のNvidia 580xxレガシードライバー。",
           "icon": "nvidia.svg",
           "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/nv-580-ostree.sh"
+        },
+        {
+          "name": "Nvidia Drivers (v580)",
+          "description": "Maxwell (GTX 9xx)、Pascal (GTX 10xx)、および一部のKepler (GTX 750/750Ti) および Turing (GTX 16xx) シリーズ GPU用のNvidia 580xxレガシードライバー。",
+          "icon": "nvidia.svg",
+          "version": "1.0",
           "scriptPath": "p3/scripts/drivers/nv-580.sh"
         },
         {
@@ -10836,13 +11200,6 @@
           "icon": "nvidia.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/nv-deb.sh"
-        },
-        {
-          "name": "Nvidia Drivers (v470)",
-          "description": "レガシーNvidiaドライバー。サポートGPU：Kepler（GT 6xx）とFermi（GT 7xx）。",
-          "icon": "nvidia.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/drivers/nv-ostree-470.sh"
         },
         {
           "name": "Nvidia Drivers",
@@ -10864,13 +11221,6 @@
           "icon": "nvidia.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/nv-pacman.sh"
-        },
-        {
-          "name": "Nvidia Drivers (v470)",
-          "description": "レガシーNvidiaドライバー。サポートGPU：Kepler（GT 6xx）とFermi（GT 7xx）。",
-          "icon": "nvidia.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/drivers/nv-rpm-470.sh"
         },
         {
           "name": "Nvidia Drivers",
@@ -11219,13 +11569,6 @@
           "scriptPath": "p3/scripts/extra/thumb.sh"
         },
         {
-          "name": "Touchégg",
-          "description": "Xorgデスクトップでさまざまなアクションのジェスチャーを設定できるマルチタッチジェスチャー認識器。",
-          "icon": "touchegg.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/extra/touchegg.sh"
-        },
-        {
           "name": "ファイアウォールを設定",
           "description": "Uncomplicated Firewall (UFW)をインストールし、ほとんどのユーザーに最適なデフォルト設定を適用します。",
           "icon": "firewall.svg",
@@ -11566,6 +11909,13 @@
           "icon": "pjeoffice-pro.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/pjeoffice.sh"
+        },
+        {
+          "name": "Recordly",
+          "description": "チュートリアル、デモ、製品ビデオなど向けのオープンソースの画面レコーダーおよびエディター、モーション駆動の組み込みプレゼンテーションツール付き。",
+          "icon": "recordly.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/office/recordly.sh"
         },
         {
           "name": "Zen Browser",
@@ -11955,6 +12305,13 @@
           "scriptPath": "p3/scripts/utils/peripherals/steer.sh"
         },
         {
+          "name": "Touchégg",
+          "description": "Xorgデスクトップでさまざまなアクションのジェスチャーを設定できるマルチタッチジェスチャー認識器。",
+          "icon": "touchegg.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/peripherals/touchegg.sh"
+        },
+        {
           "name": "ウェブベースのソフトウェアを有効にする",
           "description": "ATK HUBのようなウェブベースのソフトウェアを、それらを持つ周辺機器に使用することができます。このようなソフトウェアが動作するにはChromiumベースのブラウザが必要です。",
           "icon": "peripherals.svg",
@@ -12075,6 +12432,13 @@
           "icon": "expressvpn.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/privacy/express-vpn.sh"
+        },
+        {
+          "name": "Helium Browser",
+          "description": "Chromiumベースの最小限のウェブブラウザであり、プライバシー優先のアプローチと公平な広告ブロッキングを備えています。",
+          "icon": "helium.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/privacy/helium.sh"
         },
         {
           "name": "Hiddify",
@@ -12213,13 +12577,6 @@
           "icon": "slack.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/chat/slack.sh"
-        },
-        {
-          "name": "Stoat",
-          "description": "Бесплатный чат-клиент с открытым исходным кодом, альтернатива Discord.",
-          "icon": "stoat.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/chat/stoat.sh"
         },
         {
           "name": "Telegram",
@@ -12512,7 +12869,59 @@
           "scriptPath": "p3/scripts/devs/zerotier.sh"
         }
       ],
-      "subcategories": {},
+      "subcategories": {
+        "ai_agents": {
+          "name": "ai_agents",
+          "icon": "claude-code.svg",
+          "description": "AI помощники для кодирования и агенты для разработки.",
+          "mode": "menu",
+          "tools": [
+            {
+              "name": "Claude Code",
+              "description": "Claude Code — это агент кодирования AI от Anthropic. Требуется платный план Claude (Pro, Max, Team или Enterprise).\n\n{ai_agent_disclaimer}",
+              "icon": "claude-code.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/claude-code.sh"
+            },
+            {
+              "name": "Codex",
+              "description": "Агент кодирования AI от OpenAI. Автоматизирует задачи кодирования в терминале.\n\n{ai_agent_disclaimer}",
+              "icon": "codex.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/codex.sh"
+            },
+            {
+              "name": "OMP",
+              "description": "Ветвь Pi с большим количеством инструментов и поддержкой нескольких моделей. Агент кодирования AI для терминала.\n\n{ai_agent_disclaimer}",
+              "icon": "omp.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/omp.sh"
+            },
+            {
+              "name": "OpenCode",
+              "description": "Агент кодирования AI с открытым кодом. Бесплатные модели включены или подключите любую модель от любого поставщика.\n\n{ai_agent_disclaimer}",
+              "icon": "opencode.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/opencode.sh"
+            },
+            {
+              "name": "Pi",
+              "description": "Агент кодирования AI. Легкий и быстрый помощник кодирования в терминале.\n\n{ai_agent_disclaimer}",
+              "icon": "pi-coding-agent.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/pi.sh"
+            },
+            {
+              "name": "Skills Seeker",
+              "description": "skills_seeker_desc",
+              "icon": "skills-seeker.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/skills-seeker.sh"
+            }
+          ],
+          "displayName": "AI Агенты"
+        }
+      },
       "displayName": "Разработчики"
     },
     "drivers": {
@@ -12568,6 +12977,13 @@
           "description": "Унаследованные драйверы Nvidia 580xx для Maxwell (GTX 9xx), Pascal (GTX 10xx) и некоторых GPU серии Kepler (GTX 750/750Ti) и Turing (GTX 16xx).",
           "icon": "nvidia.svg",
           "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/nv-580-ostree.sh"
+        },
+        {
+          "name": "Nvidia Drivers (v580)",
+          "description": "Унаследованные драйверы Nvidia 580xx для Maxwell (GTX 9xx), Pascal (GTX 10xx) и некоторых GPU серии Kepler (GTX 750/750Ti) и Turing (GTX 16xx).",
+          "icon": "nvidia.svg",
+          "version": "1.0",
           "scriptPath": "p3/scripts/drivers/nv-580.sh"
         },
         {
@@ -12576,13 +12992,6 @@
           "icon": "nvidia.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/nv-deb.sh"
-        },
-        {
-          "name": "Nvidia Drivers (v470)",
-          "description": "Устаревшие драйверы Nvidia. Поддерживаемые GPU: Kepler (GT 6xx) и Fermi (GT 7xx).",
-          "icon": "nvidia.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/drivers/nv-ostree-470.sh"
         },
         {
           "name": "Nvidia Drivers",
@@ -12604,13 +13013,6 @@
           "icon": "nvidia.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/nv-pacman.sh"
-        },
-        {
-          "name": "Nvidia Drivers (v470)",
-          "description": "Устаревшие драйверы Nvidia. Поддерживаемые GPU: Kepler (GT 6xx) и Fermi (GT 7xx).",
-          "icon": "nvidia.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/drivers/nv-rpm-470.sh"
         },
         {
           "name": "Nvidia Drivers",
@@ -12959,13 +13361,6 @@
           "scriptPath": "p3/scripts/extra/thumb.sh"
         },
         {
-          "name": "Touchégg",
-          "description": "Распознаватель мультитач-жестов, позволяющий настраивать жесты для различных действий на рабочих столах Xorg.",
-          "icon": "touchegg.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/extra/touchegg.sh"
-        },
-        {
           "name": "Настроить брандмауэр",
           "description": "Устанавливает и применяет настройки по умолчанию, идеальные для большинства пользователей Uncomplicated Firewall (UFW).",
           "icon": "firewall.svg",
@@ -13306,6 +13701,13 @@
           "icon": "pjeoffice-pro.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/pjeoffice.sh"
+        },
+        {
+          "name": "Recordly",
+          "description": "Открытый рекордер экрана и редактор для пошаговых инструкций, демонстраций, видео продуктов и многого другого, со встроенными инструментами презентации, управляемыми движением.",
+          "icon": "recordly.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/office/recordly.sh"
         },
         {
           "name": "Zen Browser",
@@ -13695,6 +14097,13 @@
           "scriptPath": "p3/scripts/utils/peripherals/steer.sh"
         },
         {
+          "name": "Touchégg",
+          "description": "Распознаватель мультитач-жестов, позволяющий настраивать жесты для различных действий на рабочих столах Xorg.",
+          "icon": "touchegg.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/peripherals/touchegg.sh"
+        },
+        {
           "name": "Включить веб-программное обеспечение",
           "description": "Позволяет использовать веб-программное обеспечение, такое как ATK HUB для периферийных устройств, которые их имеют. Браузер на основе Chromium все еще требуется для такого программного обеспечения.",
           "icon": "peripherals.svg",
@@ -13815,6 +14224,13 @@
           "icon": "expressvpn.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/privacy/express-vpn.sh"
+        },
+        {
+          "name": "Helium Browser",
+          "description": "Минималистичный веб-браузер на основе Chromium с подходом, приоритизирующим конфиденциальность, и беспристрастной блокировкой объявлений.",
+          "icon": "helium.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/privacy/helium.sh"
         },
         {
           "name": "Hiddify",

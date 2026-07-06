@@ -34,13 +34,6 @@
         "scriptPath": "p3/scripts/chat/slack.sh"
       },
       {
-        "name": "Stoat",
-        "description": "stoat_desc",
-        "icon": "stoat.png",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/chat/stoat.sh"
-      },
-      {
         "name": "Telegram",
         "description": "telegram_desc",
         "icon": "telegram.png",
@@ -330,7 +323,58 @@
         "scriptPath": "p3/scripts/devs/zerotier.sh"
       }
     ],
-    "subcategories": {}
+    "subcategories": {
+      "ai_agents": {
+        "name": "ai_agents",
+        "icon": "claude-code.svg",
+        "description": "ai_agents_desc",
+        "mode": "menu",
+        "tools": [
+          {
+            "name": "Claude Code",
+            "description": "claude_code_desc",
+            "icon": "claude-code.svg",
+            "version": "1.0",
+            "scriptPath": "p3/scripts/devs/ai_agents/claude-code.sh"
+          },
+          {
+            "name": "Codex",
+            "description": "codex_desc",
+            "icon": "codex.svg",
+            "version": "1.0",
+            "scriptPath": "p3/scripts/devs/ai_agents/codex.sh"
+          },
+          {
+            "name": "OMP",
+            "description": "omp_desc",
+            "icon": "omp.svg",
+            "version": "1.0",
+            "scriptPath": "p3/scripts/devs/ai_agents/omp.sh"
+          },
+          {
+            "name": "OpenCode",
+            "description": "opencode_desc",
+            "icon": "opencode.svg",
+            "version": "1.0",
+            "scriptPath": "p3/scripts/devs/ai_agents/opencode.sh"
+          },
+          {
+            "name": "Pi",
+            "description": "pi_desc",
+            "icon": "pi-coding-agent.svg",
+            "version": "1.0",
+            "scriptPath": "p3/scripts/devs/ai_agents/pi.sh"
+          },
+          {
+            "name": "Skills Seeker",
+            "description": "skills_seeker_desc",
+            "icon": "skills-seeker.svg",
+            "version": "1.0",
+            "scriptPath": "p3/scripts/devs/ai_agents/skills-seeker.sh"
+          }
+        ]
+      }
+    }
   },
   "drivers": {
     "name": "drivers",
@@ -385,6 +429,13 @@
         "description": "nv580_desc",
         "icon": "nvidia.svg",
         "version": "1.0",
+        "scriptPath": "p3/scripts/drivers/nv-580-ostree.sh"
+      },
+      {
+        "name": "Nvidia Drivers (v580)",
+        "description": "nv580_desc",
+        "icon": "nvidia.svg",
+        "version": "1.0",
         "scriptPath": "p3/scripts/drivers/nv-580.sh"
       },
       {
@@ -393,13 +444,6 @@
         "icon": "nvidia.svg",
         "version": "1.0",
         "scriptPath": "p3/scripts/drivers/nv-deb.sh"
-      },
-      {
-        "name": "Nvidia Drivers (v470)",
-        "description": "nv_desc_470",
-        "icon": "nvidia.svg",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/drivers/nv-ostree-470.sh"
       },
       {
         "name": "Nvidia Drivers",
@@ -421,13 +465,6 @@
         "icon": "nvidia.svg",
         "version": "1.0",
         "scriptPath": "p3/scripts/drivers/nv-pacman.sh"
-      },
-      {
-        "name": "Nvidia Drivers (v470)",
-        "description": "nv_desc_470",
-        "icon": "nvidia.svg",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/drivers/nv-rpm-470.sh"
       },
       {
         "name": "Nvidia Drivers",
@@ -775,13 +812,6 @@
         "scriptPath": "p3/scripts/extra/thumb.sh"
       },
       {
-        "name": "Touchégg",
-        "description": "touchegg_desc",
-        "icon": "touchegg.svg",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/extra/touchegg.sh"
-      },
-      {
         "name": "ufw",
         "description": "ufw_desc",
         "icon": "firewall.svg",
@@ -1120,6 +1150,13 @@
         "icon": "pjeoffice-pro.png",
         "version": "1.0",
         "scriptPath": "p3/scripts/office/pjeoffice.sh"
+      },
+      {
+        "name": "Recordly",
+        "description": "recordly_desc",
+        "icon": "recordly.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/office/recordly.sh"
       },
       {
         "name": "Zen Browser",
@@ -1506,6 +1543,13 @@
         "scriptPath": "p3/scripts/utils/peripherals/steer.sh"
       },
       {
+        "name": "Touchégg",
+        "description": "touchegg_desc",
+        "icon": "touchegg.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/peripherals/touchegg.sh"
+      },
+      {
         "name": "udevpass",
         "description": "udevpass_desc",
         "icon": "peripherals.svg",
@@ -1625,6 +1669,13 @@
         "icon": "expressvpn.svg",
         "version": "1.0",
         "scriptPath": "p3/scripts/utils/privacy/express-vpn.sh"
+      },
+      {
+        "name": "Helium Browser",
+        "description": "helium_desc",
+        "icon": "helium.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/privacy/helium.sh"
       },
       {
         "name": "Hiddify",
