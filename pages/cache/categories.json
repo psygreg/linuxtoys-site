@@ -1303,6 +1303,13 @@
         "scriptPath": "p3/scripts/sysadm/cpu-x.sh"
       },
       {
+        "name": "QDiskInfo",
+        "description": "qdi_desc",
+        "icon": "qdiskinfo.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/sysadm/qdiskinfo.sh"
+      },
+      {
         "name": "Sloth-Bash",
         "description": "sloth_desc",
         "icon": "sloth.svg",
@@ -1471,6 +1478,13 @@
         "icon": "obs.svg",
         "version": "1.0",
         "scriptPath": "p3/scripts/utils/obs.sh"
+      },
+      {
+        "name": "OCCT",
+        "description": "occt_desc",
+        "icon": "occt.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/occt.sh"
       },
       {
         "name": "PeaZip",

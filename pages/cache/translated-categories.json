@@ -334,35 +334,35 @@
           "tools": [
             {
               "name": "Claude Code",
-              "description": "Claude Code is an AI coding agent by Anthropic. Requires a paid Claude plan (Pro, Max, Team, or Enterprise).\n\n{ai_agent_disclaimer}",
+              "description": "Claude Code is an AI coding agent by Anthropic. Requires a paid Claude plan (Pro, Max, Team, or Enterprise).\n\n@{ai_agent_disclaimer}",
               "icon": "claude-code.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/claude-code.sh"
             },
             {
               "name": "Codex",
-              "description": "AI coding agent by OpenAI. Automates coding tasks in your terminal.\n\n{ai_agent_disclaimer}",
+              "description": "AI coding agent by OpenAI. Automates coding tasks in your terminal.\n\n@{ai_agent_disclaimer}",
               "icon": "codex.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/codex.sh"
             },
             {
               "name": "OMP",
-              "description": "Fork of Pi with more tools and multi-model support. AI coding agent for your terminal.\n\n{ai_agent_disclaimer}",
+              "description": "Fork of Pi with more tools and multi-model support. AI coding agent for your terminal.\n\n@{ai_agent_disclaimer}",
               "icon": "omp.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/omp.sh"
             },
             {
               "name": "OpenCode",
-              "description": "Open source AI coding agent. Free models included or connect any model from any provider.\n\n{ai_agent_disclaimer}",
+              "description": "Open source AI coding agent. Free models included or connect any model from any provider.\n\n@{ai_agent_disclaimer}",
               "icon": "opencode.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/opencode.sh"
             },
             {
               "name": "Pi",
-              "description": "AI coding agent. Lightweight and fast coding assistant for your terminal.\n\n{ai_agent_disclaimer}",
+              "description": "AI coding agent. Lightweight and fast coding assistant for your terminal.\n\n@{ai_agent_disclaimer}",
               "icon": "pi-coding-agent.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/pi.sh"
@@ -1312,6 +1312,13 @@
           "scriptPath": "p3/scripts/sysadm/cpu-x.sh"
         },
         {
+          "name": "QDiskInfo",
+          "description": "A frontend for smartctl that shows the SMART data of modern hard disk and solid state drives. Provides a user experience similar to CrystalDiskInfo.",
+          "icon": "qdiskinfo.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/sysadm/qdiskinfo.sh"
+        },
+        {
           "name": "Sloth-Bash",
           "description": "A bash library that makes terminal usage more friendly and practical for headless systems, developers and enthusiasts alike. Also developed by Psygreg.",
           "icon": "sloth.svg",
@@ -1481,6 +1488,13 @@
           "icon": "obs.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/obs.sh"
+        },
+        {
+          "name": "OCCT",
+          "description": "Stability testing and benchmark tool.",
+          "icon": "occt.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/occt.sh"
         },
         {
           "name": "PeaZip",
@@ -2126,42 +2140,42 @@
           "tools": [
             {
               "name": "Claude Code",
-              "description": "Claude Code é um agente de codificação IA da Anthropic. Requer um plano Claude pago (Pro, Max, Team ou Enterprise).\n\n{ai_agent_disclaimer}",
+              "description": "Claude Code é um agente de codificação IA da Anthropic. Requer um plano Claude pago (Pro, Max, Team ou Enterprise).\n\n@{ai_agent_disclaimer}",
               "icon": "claude-code.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/claude-code.sh"
             },
             {
               "name": "Codex",
-              "description": "Agente de codificação IA da OpenAI. Automatiza tarefas de codificação no seu terminal.\n\n{ai_agent_disclaimer}",
+              "description": "Agente de codificação IA da OpenAI. Automatiza tarefas de codificação no seu terminal.\n\n@{ai_agent_disclaimer}",
               "icon": "codex.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/codex.sh"
             },
             {
               "name": "OMP",
-              "description": "Fork do Pi com mais ferramentas e suporte multimodelo. Agente de codificação IA para o seu terminal.\n\n{ai_agent_disclaimer}",
+              "description": "Fork do Pi com mais ferramentas e suporte multimodelo. Agente de codificação IA para o seu terminal.\n\n@{ai_agent_disclaimer}",
               "icon": "omp.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/omp.sh"
             },
             {
               "name": "OpenCode",
-              "description": "Agente de codificação IA de código aberto. Modelos grátis incluídos ou conecte qualquer modelo de qualquer provedor.\n\n{ai_agent_disclaimer}",
+              "description": "Agente de codificação IA de código aberto. Modelos grátis incluídos ou conecte qualquer modelo de qualquer provedor.\n\n@{ai_agent_disclaimer}",
               "icon": "opencode.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/opencode.sh"
             },
             {
               "name": "Pi",
-              "description": "Agente de codificação IA. Assistente de codificação leve e rápido para o seu terminal.\n\n{ai_agent_disclaimer}",
+              "description": "Agente de codificação IA. Assistente de codificação leve e rápido para o seu terminal.\n\n@{ai_agent_disclaimer}",
               "icon": "pi-coding-agent.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/pi.sh"
             },
             {
               "name": "Skills Seeker",
-              "description": "Navegue, pesquise e instale skills de agentes IA do catálogo.",
+              "description": "Navegue, pesquise e instale habilidades de agentes de IA do catálogo.",
               "icon": "skills-seeker.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/skills-seeker.sh"
@@ -3104,6 +3118,13 @@
           "scriptPath": "p3/scripts/sysadm/cpu-x.sh"
         },
         {
+          "name": "QDiskInfo",
+          "description": "Uma interface para o smartctl que exibe os dados SMART de discos rígidos modernos e unidades de estado sólido. Oferece uma experiência de usuário semelhante ao CrystalDiskInfo.",
+          "icon": "qdiskinfo.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/sysadm/qdiskinfo.sh"
+        },
+        {
           "name": "Sloth-Bash",
           "description": "Uma biblioteca bash que torna o uso do terminal mais amigável e prático para sistemas headless, desenvolvedores e entusiastas. Também desenvolvido por Psygreg.",
           "icon": "sloth.svg",
@@ -3273,6 +3294,13 @@
           "icon": "obs.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/obs.sh"
+        },
+        {
+          "name": "OCCT",
+          "description": "Ferramenta de teste de estabilidade e benchmark.",
+          "icon": "occt.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/occt.sh"
         },
         {
           "name": "PeaZip",
@@ -3918,42 +3946,42 @@
           "tools": [
             {
               "name": "Claude Code",
-              "description": "Claude Code es un agente de codificación AI de Anthropic. Requiere un plan de Claude de pago (Pro, Max, Team o Enterprise).\n\n{ai_agent_disclaimer}",
+              "description": "Claude Code es un agente de codificación AI de Anthropic. Requiere un plan de Claude de pago (Pro, Max, Team o Enterprise).\n\n@{ai_agent_disclaimer}",
               "icon": "claude-code.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/claude-code.sh"
             },
             {
               "name": "Codex",
-              "description": "Agente de codificación AI de OpenAI. Automatiza tareas de codificación en tu terminal.\n\n{ai_agent_disclaimer}",
+              "description": "Agente de codificación AI de OpenAI. Automatiza tareas de codificación en tu terminal.\n\n@{ai_agent_disclaimer}",
               "icon": "codex.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/codex.sh"
             },
             {
               "name": "OMP",
-              "description": "Fork de Pi con más herramientas y soporte multimodelo. Agente de codificación AI para tu terminal.\n\n{ai_agent_disclaimer}",
+              "description": "Fork de Pi con más herramientas y soporte multimodelo. Agente de codificación AI para tu terminal.\n\n@{ai_agent_disclaimer}",
               "icon": "omp.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/omp.sh"
             },
             {
               "name": "OpenCode",
-              "description": "Agente de codificación AI de código abierto. Modelos gratuitos incluidos o conecte cualquier modelo de cualquier proveedor.\n\n{ai_agent_disclaimer}",
+              "description": "Agente de codificación AI de código abierto. Modelos gratuitos incluidos o conecte cualquier modelo de cualquier proveedor.\n\n@{ai_agent_disclaimer}",
               "icon": "opencode.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/opencode.sh"
             },
             {
               "name": "Pi",
-              "description": "Agente de codificación AI. Asistente de codificación ligero y rápido para tu terminal.\n\n{ai_agent_disclaimer}",
+              "description": "Agente de codificación AI. Asistente de codificación ligero y rápido para tu terminal.\n\n@{ai_agent_disclaimer}",
               "icon": "pi-coding-agent.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/pi.sh"
             },
             {
               "name": "Skills Seeker",
-              "description": "skills_seeker_desc",
+              "description": "Explora, busca e instala habilidades de agentes de IA desde el catálogo.",
               "icon": "skills-seeker.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/skills-seeker.sh"
@@ -4896,6 +4924,13 @@
           "scriptPath": "p3/scripts/sysadm/cpu-x.sh"
         },
         {
+          "name": "QDiskInfo",
+          "description": "Una interfaz para smartctl que muestra los datos SMART de discos duros modernos y unidades de estado sólido. Ofrece una experiencia de usuario similar a CrystalDiskInfo.",
+          "icon": "qdiskinfo.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/sysadm/qdiskinfo.sh"
+        },
+        {
           "name": "Sloth-Bash",
           "description": "Una biblioteca bash que hace que el uso de terminales sea más amigable y práctico para sistemas headless, desarrolladores y entusiastas. También desarrollado por Psygreg.",
           "icon": "sloth.svg",
@@ -5065,6 +5100,13 @@
           "icon": "obs.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/obs.sh"
+        },
+        {
+          "name": "OCCT",
+          "description": "Herramienta de pruebas de estabilidad y rendimiento.",
+          "icon": "occt.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/occt.sh"
         },
         {
           "name": "PeaZip",
@@ -5710,42 +5752,42 @@
           "tools": [
             {
               "name": "Claude Code",
-              "description": "Claude Code est un agent de codage IA d'Anthropic. Nécessite un plan Claude payant (Pro, Max, Team ou Enterprise).\n\n{ai_agent_disclaimer}",
+              "description": "Claude Code est un agent de codage IA d'Anthropic. Nécessite un plan Claude payant (Pro, Max, Team ou Enterprise).\n\n@{ai_agent_disclaimer}",
               "icon": "claude-code.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/claude-code.sh"
             },
             {
               "name": "Codex",
-              "description": "Agent de codage IA d'OpenAI. Automatise les tâches de codage dans votre terminal.\n\n{ai_agent_disclaimer}",
+              "description": "Agent de codage IA d'OpenAI. Automatise les tâches de codage dans votre terminal.\n\n@{ai_agent_disclaimer}",
               "icon": "codex.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/codex.sh"
             },
             {
               "name": "OMP",
-              "description": "Fork de Pi avec plus d'outils et support multi-modèle. Agent de codage IA pour votre terminal.\n\n{ai_agent_disclaimer}",
+              "description": "Fork de Pi avec plus d'outils et support multi-modèle. Agent de codage IA pour votre terminal.\n\n@{ai_agent_disclaimer}",
               "icon": "omp.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/omp.sh"
             },
             {
               "name": "OpenCode",
-              "description": "Agent de codage IA open source. Modèles gratuits inclus ou connectez n'importe quel modèle à partir de n'importe quel fournisseur.\n\n{ai_agent_disclaimer}",
+              "description": "Agent de codage IA open source. Modèles gratuits inclus ou connectez n'importe quel modèle à partir de n'importe quel fournisseur.\n\n@{ai_agent_disclaimer}",
               "icon": "opencode.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/opencode.sh"
             },
             {
               "name": "Pi",
-              "description": "Agent de codage IA. Assistant de codage léger et rapide pour votre terminal.\n\n{ai_agent_disclaimer}",
+              "description": "Agent de codage IA. Assistant de codage léger et rapide pour votre terminal.\n\n@{ai_agent_disclaimer}",
               "icon": "pi-coding-agent.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/pi.sh"
             },
             {
               "name": "Skills Seeker",
-              "description": "skills_seeker_desc",
+              "description": "Parcourez, recherchez et installez des compétences d'agent IA depuis le catalogue.",
               "icon": "skills-seeker.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/skills-seeker.sh"
@@ -6688,6 +6730,13 @@
           "scriptPath": "p3/scripts/sysadm/cpu-x.sh"
         },
         {
+          "name": "QDiskInfo",
+          "description": "Une interface pour smartctl qui affiche les données SMART des disques durs modernes et des SSD. Offre une expérience utilisateur similaire à CrystalDiskInfo.",
+          "icon": "qdiskinfo.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/sysadm/qdiskinfo.sh"
+        },
+        {
           "name": "Sloth-Bash",
           "description": "Une bibliothèque bash qui rend l'utilisation du terminal plus conviviale et pratique pour les systèmes sans tête, les développeurs et les enthousiastes. Également développé par Psygreg.",
           "icon": "sloth.svg",
@@ -6857,6 +6906,13 @@
           "icon": "obs.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/obs.sh"
+        },
+        {
+          "name": "OCCT",
+          "description": "Outil de test de stabilité et de benchmark.",
+          "icon": "occt.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/occt.sh"
         },
         {
           "name": "PeaZip",
@@ -7502,42 +7558,42 @@
           "tools": [
             {
               "name": "Claude Code",
-              "description": "Claude Code ist ein KI-Codierungsagent von Anthropic. Erfordert einen bezahlten Claude-Plan (Pro, Max, Team oder Enterprise).\n\n{ai_agent_disclaimer}",
+              "description": "Claude Code ist ein KI-Codierungsagent von Anthropic. Erfordert einen bezahlten Claude-Plan (Pro, Max, Team oder Enterprise).\n\n@{ai_agent_disclaimer}",
               "icon": "claude-code.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/claude-code.sh"
             },
             {
               "name": "Codex",
-              "description": "KI-Codierungsagent von OpenAI. Automatisiert Codierungsaufgaben in Ihrem Terminal.\n\n{ai_agent_disclaimer}",
+              "description": "KI-Codierungsagent von OpenAI. Automatisiert Codierungsaufgaben in Ihrem Terminal.\n\n@{ai_agent_disclaimer}",
               "icon": "codex.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/codex.sh"
             },
             {
               "name": "OMP",
-              "description": "Abzweigung von Pi mit mehr Werkzeugen und Unterstützung für mehrere Modelle. KI-Codierungsagent für Ihr Terminal.\n\n{ai_agent_disclaimer}",
+              "description": "Abzweigung von Pi mit mehr Werkzeugen und Unterstützung für mehrere Modelle. KI-Codierungsagent für Ihr Terminal.\n\n@{ai_agent_disclaimer}",
               "icon": "omp.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/omp.sh"
             },
             {
               "name": "OpenCode",
-              "description": "KI-Codierungsagent mit offener Quelle. Kostenlose Modelle enthalten oder verbinden Sie jedes Modell von jedem Anbieter.\n\n{ai_agent_disclaimer}",
+              "description": "KI-Codierungsagent mit offener Quelle. Kostenlose Modelle enthalten oder verbinden Sie jedes Modell von jedem Anbieter.\n\n@{ai_agent_disclaimer}",
               "icon": "opencode.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/opencode.sh"
             },
             {
               "name": "Pi",
-              "description": "KI-Codierungsagent. Leichter und schneller Codierungsassistent für Ihren Terminal.\n\n{ai_agent_disclaimer}",
+              "description": "KI-Codierungsagent. Leichter und schneller Codierungsassistent für Ihren Terminal.\n\n@{ai_agent_disclaimer}",
               "icon": "pi-coding-agent.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/pi.sh"
             },
             {
               "name": "Skills Seeker",
-              "description": "skills_seeker_desc",
+              "description": "Durchsuchen, suchen und installieren Sie KI-Agenten-Skills aus dem Katalog.",
               "icon": "skills-seeker.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/skills-seeker.sh"
@@ -8480,6 +8536,13 @@
           "scriptPath": "p3/scripts/sysadm/cpu-x.sh"
         },
         {
+          "name": "QDiskInfo",
+          "description": "Ein Frontend für smartctl, das die SMART-Daten moderner Festplatten und SSDs anzeigt. Bietet eine Benutzererfahrung ähnlich wie CrystalDiskInfo.",
+          "icon": "qdiskinfo.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/sysadm/qdiskinfo.sh"
+        },
+        {
           "name": "Sloth-Bash",
           "description": "Eine Bash-Bibliothek, die die Terminalnutzung für Headless-Systeme, Entwickler und Enthusiasten freundlicher und praktischer macht. Auch von Psygreg entwickelt.",
           "icon": "sloth.svg",
@@ -8649,6 +8712,13 @@
           "icon": "obs.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/obs.sh"
+        },
+        {
+          "name": "OCCT",
+          "description": "Werkzeug zum Testen der Stabilität und Benchmarken.",
+          "icon": "occt.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/occt.sh"
         },
         {
           "name": "PeaZip",
@@ -9294,42 +9364,42 @@
           "tools": [
             {
               "name": "Claude Code",
-              "description": "Claude Code 是 Anthropic 的 AI 编码代理。需要付费的 Claude 计划（Pro、Max、Team 或 Enterprise）。\n\n{ai_agent_disclaimer}",
+              "description": "Claude Code 是 Anthropic 的 AI 编码代理。需要付费的 Claude 计划（Pro、Max、Team 或 Enterprise）。\n\n@{ai_agent_disclaimer}",
               "icon": "claude-code.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/claude-code.sh"
             },
             {
               "name": "Codex",
-              "description": "来自 OpenAI 的 AI 编码代理。在终端中自动化编码任务。\n\n{ai_agent_disclaimer}",
+              "description": "来自 OpenAI 的 AI 编码代理。在终端中自动化编码任务。\n\n@{ai_agent_disclaimer}",
               "icon": "codex.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/codex.sh"
             },
             {
               "name": "OMP",
-              "description": "具有更多工具和多模型支持的 Pi 分支。终端的 AI 编码代理。\n\n{ai_agent_disclaimer}",
+              "description": "具有更多工具和多模型支持的 Pi 分支。终端的 AI 编码代理。\n\n@{ai_agent_disclaimer}",
               "icon": "omp.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/omp.sh"
             },
             {
               "name": "OpenCode",
-              "description": "开源 AI 编码代理。包含免费模型或从任何提供商连接任何模型。\n\n{ai_agent_disclaimer}",
+              "description": "开源 AI 编码代理。包含免费模型或从任何提供商连接任何模型。\n\n@{ai_agent_disclaimer}",
               "icon": "opencode.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/opencode.sh"
             },
             {
               "name": "Pi",
-              "description": "AI 编码代理。终端的轻量级和快速编码助手。\n\n{ai_agent_disclaimer}",
+              "description": "AI 编码代理。终端的轻量级和快速编码助手。\n\n@{ai_agent_disclaimer}",
               "icon": "pi-coding-agent.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/pi.sh"
             },
             {
               "name": "Skills Seeker",
-              "description": "skills_seeker_desc",
+              "description": "从目录浏览、搜索并安装 AI 代理技能。",
               "icon": "skills-seeker.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/skills-seeker.sh"
@@ -10272,6 +10342,13 @@
           "scriptPath": "p3/scripts/sysadm/cpu-x.sh"
         },
         {
+          "name": "QDiskInfo",
+          "description": "smartctl 的前端,显示现代硬盘和固态硬盘的 SMART 数据。提供类似于 CrystalDiskInfo 的用户体验。",
+          "icon": "qdiskinfo.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/sysadm/qdiskinfo.sh"
+        },
+        {
           "name": "Sloth-Bash",
           "description": "一个bash库，使得与terminal的交互对headless系统、开发人员和爱好者更加友好和实用。也由Psygreg开发。",
           "icon": "sloth.svg",
@@ -10441,6 +10518,13 @@
           "icon": "obs.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/obs.sh"
+        },
+        {
+          "name": "OCCT",
+          "description": "稳定性测试和性能基准测试工具。",
+          "icon": "occt.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/occt.sh"
         },
         {
           "name": "PeaZip",
@@ -11086,42 +11170,42 @@
           "tools": [
             {
               "name": "Claude Code",
-              "description": "Claude CodeはAnthropicの AI コーディングエージェントです。有料の Claude プラン (Pro、Max、Team、または Enterprise) が必要です。\n\n{ai_agent_disclaimer}",
+              "description": "Claude CodeはAnthropicの AI コーディングエージェントです。有料の Claude プラン (Pro、Max、Team、または Enterprise) が必要です。\n\n@{ai_agent_disclaimer}",
               "icon": "claude-code.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/claude-code.sh"
             },
             {
               "name": "Codex",
-              "description": "OpenAI の AI コーディングエージェント。ターミナルでコーディングタスクを自動化します。\n\n{ai_agent_disclaimer}",
+              "description": "OpenAI の AI コーディングエージェント。ターミナルでコーディングタスクを自動化します。\n\n@{ai_agent_disclaimer}",
               "icon": "codex.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/codex.sh"
             },
             {
               "name": "OMP",
-              "description": "より多くのツールとマルチモデルサポートを備えたPiのフォーク。ターミナルのAIコーディングエージェント。\n\n{ai_agent_disclaimer}",
+              "description": "より多くのツールとマルチモデルサポートを備えたPiのフォーク。ターミナルのAIコーディングエージェント。\n\n@{ai_agent_disclaimer}",
               "icon": "omp.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/omp.sh"
             },
             {
               "name": "OpenCode",
-              "description": "オープンソースの AI コーディングエージェント。無料モデルが含まれているか、任意のプロバイダーから任意のモデルを接続してください。\n\n{ai_agent_disclaimer}",
+              "description": "オープンソースの AI コーディングエージェント。無料モデルが含まれているか、任意のプロバイダーから任意のモデルを接続してください。\n\n@{ai_agent_disclaimer}",
               "icon": "opencode.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/opencode.sh"
             },
             {
               "name": "Pi",
-              "description": "AI コーディングエージェント。ターミナルの軽量で高速なコーディングアシスタント。\n\n{ai_agent_disclaimer}",
+              "description": "AI コーディングエージェント。ターミナルの軽量で高速なコーディングアシスタント。\n\n@{ai_agent_disclaimer}",
               "icon": "pi-coding-agent.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/pi.sh"
             },
             {
               "name": "Skills Seeker",
-              "description": "skills_seeker_desc",
+              "description": "カタログからAIエージェントのスキルを閲覧、検索、インストールします。",
               "icon": "skills-seeker.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/skills-seeker.sh"
@@ -12064,6 +12148,13 @@
           "scriptPath": "p3/scripts/sysadm/cpu-x.sh"
         },
         {
+          "name": "QDiskInfo",
+          "description": "最新のハードディスクおよびソリッドステートドライブのSMARTデータを表示するsmartctlのフロントエンド。CrystalDiskInfoに似たユーザー体験を提供します。",
+          "icon": "qdiskinfo.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/sysadm/qdiskinfo.sh"
+        },
+        {
           "name": "Sloth-Bash",
           "description": "ヘッドレスシステム、開発者、愛好家のためにターミナルの使用をより親切で実用的にするbashライブラリ。これもPsygregによって開発されました。",
           "icon": "sloth.svg",
@@ -12233,6 +12324,13 @@
           "icon": "obs.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/obs.sh"
+        },
+        {
+          "name": "OCCT",
+          "description": "安定性テストおよびベンチマークツール。",
+          "icon": "occt.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/occt.sh"
         },
         {
           "name": "PeaZip",
@@ -12878,42 +12976,42 @@
           "tools": [
             {
               "name": "Claude Code",
-              "description": "Claude Code — это агент кодирования AI от Anthropic. Требуется платный план Claude (Pro, Max, Team или Enterprise).\n\n{ai_agent_disclaimer}",
+              "description": "Claude Code — это агент кодирования AI от Anthropic. Требуется платный план Claude (Pro, Max, Team или Enterprise).\n\n@{ai_agent_disclaimer}",
               "icon": "claude-code.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/claude-code.sh"
             },
             {
               "name": "Codex",
-              "description": "Агент кодирования AI от OpenAI. Автоматизирует задачи кодирования в терминале.\n\n{ai_agent_disclaimer}",
+              "description": "Агент кодирования AI от OpenAI. Автоматизирует задачи кодирования в терминале.\n\n@{ai_agent_disclaimer}",
               "icon": "codex.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/codex.sh"
             },
             {
               "name": "OMP",
-              "description": "Ветвь Pi с большим количеством инструментов и поддержкой нескольких моделей. Агент кодирования AI для терминала.\n\n{ai_agent_disclaimer}",
+              "description": "Ветвь Pi с большим количеством инструментов и поддержкой нескольких моделей. Агент кодирования AI для терминала.\n\n@{ai_agent_disclaimer}",
               "icon": "omp.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/omp.sh"
             },
             {
               "name": "OpenCode",
-              "description": "Агент кодирования AI с открытым кодом. Бесплатные модели включены или подключите любую модель от любого поставщика.\n\n{ai_agent_disclaimer}",
+              "description": "Агент кодирования AI с открытым кодом. Бесплатные модели включены или подключите любую модель от любого поставщика.\n\n@{ai_agent_disclaimer}",
               "icon": "opencode.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/opencode.sh"
             },
             {
               "name": "Pi",
-              "description": "Агент кодирования AI. Легкий и быстрый помощник кодирования в терминале.\n\n{ai_agent_disclaimer}",
+              "description": "Агент кодирования AI. Легкий и быстрый помощник кодирования в терминале.\n\n@{ai_agent_disclaimer}",
               "icon": "pi-coding-agent.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/pi.sh"
             },
             {
               "name": "Skills Seeker",
-              "description": "skills_seeker_desc",
+              "description": "Просматривайте, ищите и устанавливайте навыки ИИ-агента из каталога.",
               "icon": "skills-seeker.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/skills-seeker.sh"
@@ -13856,6 +13954,13 @@
           "scriptPath": "p3/scripts/sysadm/cpu-x.sh"
         },
         {
+          "name": "QDiskInfo",
+          "description": "Интерфейс для smartctl, отображающий данные SMART современных жестких дисков и твердотельных накопителей. Обеспечивает пользовательский опыт, аналогичный CrystalDiskInfo.",
+          "icon": "qdiskinfo.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/sysadm/qdiskinfo.sh"
+        },
+        {
           "name": "Sloth-Bash",
           "description": "Библиотека bash, которая делает использование терминала более дружелюбным и практичным для headless-систем, разработчиков и энтузиастов. Также разработана Psygreg.",
           "icon": "sloth.svg",
@@ -14025,6 +14130,13 @@
           "icon": "obs.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/obs.sh"
+        },
+        {
+          "name": "OCCT",
+          "description": "Инструмент для тестирования стабильности и производительности.",
+          "icon": "occt.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/occt.sh"
         },
         {
           "name": "PeaZip",
