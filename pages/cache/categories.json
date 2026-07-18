@@ -345,6 +345,13 @@
             "scriptPath": "p3/scripts/devs/ai_agents/codex.sh"
           },
           {
+            "name": "LM Studio",
+            "description": "lmstudio_desc",
+            "icon": "lmstudio.png",
+            "version": "1.0",
+            "scriptPath": "p3/scripts/devs/ai_agents/lmstudio.sh"
+          },
+          {
             "name": "OMP",
             "description": "omp_desc",
             "icon": "omp.svg",
@@ -472,13 +479,6 @@
         "icon": "nvidia.svg",
         "version": "1.0",
         "scriptPath": "p3/scripts/drivers/nv-rpm.sh"
-      },
-      {
-        "name": "Nvidia Drivers (v470)",
-        "description": "nv_desc_470",
-        "icon": "nvidia.svg",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/drivers/nv-suse-470.sh"
       },
       {
         "name": "Nvidia Drivers",
@@ -819,6 +819,13 @@
         "scriptPath": "p3/scripts/extra/ufw.sh"
       },
       {
+        "name": "UMIP Patch",
+        "description": "umipp_desc",
+        "icon": "terminal.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/umip.sh"
+      },
+      {
         "name": "wayproton",
         "description": "wayproton_desc",
         "icon": "proton.svg",
@@ -1124,6 +1131,13 @@
         "scriptPath": "p3/scripts/office/libreoffice.sh"
       },
       {
+        "name": "MetaTrader 5",
+        "description": "mt5_desc",
+        "icon": "mt5.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/office/mt5.sh"
+      },
+      {
         "name": "Obsidian",
         "description": "obsidian_desc",
         "icon": "obsidian.svg",
@@ -1301,6 +1315,13 @@
         "icon": "cpu-x.png",
         "version": "1.0",
         "scriptPath": "p3/scripts/sysadm/cpu-x.sh"
+      },
+      {
+        "name": "Medicat USB",
+        "description": "medicat_desc",
+        "icon": "medicat.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/sysadm/medicat.sh"
       },
       {
         "name": "QDiskInfo",
@@ -1583,6 +1604,13 @@
         "icon": "qpwgraph.svg",
         "version": "1.0",
         "scriptPath": "p3/scripts/utils/qpw.sh"
+      },
+      {
+        "name": "QtScrcpy",
+        "description": "qtscrcpy_desc",
+        "icon": "qtscrcpy.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/qtscrcpy.sh"
       },
       {
         "name": "Rclone UI",

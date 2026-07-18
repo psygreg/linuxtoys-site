@@ -499,7 +499,12 @@
     "deepin_immutable_script_description": "Disable system immutability on Deepin Linux.",
     "deepin_immutable_message": "LinuxToys requires permission to disable system immutability so it can perform system optimization and configuration tasks.\n\nWould you like to enable writable mode on this Deepin system?",
     "qdi_desc": "A frontend for smartctl that shows the SMART data of modern hard disk and solid state drives. Provides a user experience similar to CrystalDiskInfo.",
-    "occt_desc": "Stability testing and benchmark tool."
+    "occt_desc": "Stability testing and benchmark tool.",
+    "lmstudio_desc": "Experiment with LLMs on your computer with a GUI control panel, chat interface and programmable API.",
+    "mt5_desc": "Powerful and convenient platform for trading Forex, stocks, futures and other instruments.",
+    "medicat_desc": "A selection of the latest computer diagnostic and recovery tools compiled into an easy to use, live USB toolkit.",
+    "umipp_desc": "Disables CPU UMIP through a kernel parameter. May be needed to run some specific Windows applications through WINE/Proton.",
+    "qtscrcpy_desc": "Mirror and control Android devices via USB or WiFi network."
   },
   "pt": {
     "subtitle": "Uma coleção amigável de ferramentas para Linux.",
@@ -1001,7 +1006,12 @@
     "deepin_immutable_script_description": "Desativa a imutabilidade do sistema no Deepin Linux.",
     "deepin_immutable_message": "O LinuxToys requer permissão para desativar a imutabilidade do sistema para que possa realizar tarefas de otimização e configuração do sistema.\n\nVocê gostaria de ativar o modo gravável neste sistema Deepin?",
     "qdi_desc": "Uma interface para o smartctl que exibe os dados SMART de discos rígidos modernos e unidades de estado sólido. Oferece uma experiência de usuário semelhante ao CrystalDiskInfo.",
-    "occt_desc": "Ferramenta de teste de estabilidade e benchmark."
+    "occt_desc": "Ferramenta de teste de estabilidade e benchmark.",
+    "lmstudio_desc": "Experimente LLMs no seu computador com um painel de controle gráfico, interface de chat e API programável.",
+    "mt5_desc": "Plataforma poderosa e conveniente para negociar Forex, ações, futuros e outros instrumentos.",
+    "medicat_desc": "Uma seleção das mais recentes ferramentas de diagnóstico e recuperação de computadores reunidas em um kit Live USB fácil de usar.",
+    "umipp_desc": "Desativa o UMIP da CPU por meio de um parâmetro do kernel. Pode ser necessário para executar alguns aplicativos específicos do Windows através do WINE/Proton.",
+    "qtscrcpy_desc": "Espelhe e controle dispositivos Android via USB ou rede WiFi."
   },
   "es": {
     "subtitle": "Una colección amigable de herramientas para Linux.",
@@ -1503,7 +1513,12 @@
     "deepin_immutable_script_description": "Deshabilita la inmutabilidad del sistema en Deepin Linux.",
     "deepin_immutable_message": "LinuxToys requiere permiso para deshabilitar la inmutabilidad del sistema para poder realizar tareas de optimización y configuración del sistema.\n\n¿Deseas habilitar el modo de escritura en este sistema Deepin?",
     "qdi_desc": "Una interfaz para smartctl que muestra los datos SMART de discos duros modernos y unidades de estado sólido. Ofrece una experiencia de usuario similar a CrystalDiskInfo.",
-    "occt_desc": "Herramienta de pruebas de estabilidad y rendimiento."
+    "occt_desc": "Herramienta de pruebas de estabilidad y rendimiento.",
+    "lmstudio_desc": "Experimenta con LLM en tu computadora con un panel de control gráfico, interfaz de chat y API programable.",
+    "mt5_desc": "Plataforma potente y conveniente para operar con Forex, acciones, futuros y otros instrumentos.",
+    "medicat_desc": "Una selección de las herramientas más recientes de diagnóstico y recuperación para equipos, reunidas en un práctico kit Live USB.",
+    "umipp_desc": "Desactiva UMIP de la CPU mediante un parámetro del kernel. Puede ser necesario para ejecutar determinadas aplicaciones de Windows mediante WINE/Proton.",
+    "qtscrcpy_desc": "Duplica y controla dispositivos Android mediante USB o una red WiFi."
   },
   "fr": {
     "subtitle": "Une collection d'outils pour Linux de manière conviviale.",
@@ -2005,7 +2020,12 @@
     "deepin_immutable_script_description": "Désactive l'immuabilité du système sur Deepin Linux.",
     "deepin_immutable_message": "LinuxToys nécessite une autorisation pour désactiver l'immuabilité du système afin de pouvoir effectuer des tâches d'optimisation et de configuration système.\n\nSouhaitez-vous activer le mode inscriptible sur ce système Deepin ?",
     "qdi_desc": "Une interface pour smartctl qui affiche les données SMART des disques durs modernes et des SSD. Offre une expérience utilisateur similaire à CrystalDiskInfo.",
-    "occt_desc": "Outil de test de stabilité et de benchmark."
+    "occt_desc": "Outil de test de stabilité et de benchmark.",
+    "lmstudio_desc": "Expérimentez avec des LLM sur votre ordinateur grâce à un panneau de contrôle graphique, une interface de chat et une API programmable.",
+    "mt5_desc": "Plateforme puissante et pratique pour trader le Forex, les actions, les contrats à terme et d'autres instruments.",
+    "medicat_desc": "Une sélection des derniers outils de diagnostic et de récupération pour ordinateur, regroupés dans une boîte à outils Live USB facile à utiliser.",
+    "umipp_desc": "Désactive UMIP du processeur via un paramètre du noyau. Peut être nécessaire pour exécuter certaines applications Windows avec WINE/Proton.",
+    "qtscrcpy_desc": "Mettez en miroir et contrôlez des appareils Android via USB ou un réseau WiFi."
   },
   "de": {
     "subtitle": "Eine freundliche Sammlung von Tools für Linux.",
@@ -2507,7 +2527,12 @@
     "deepin_immutable_script_description": "Deaktiviert die Systemunveränderlichkeit auf Deepin Linux.",
     "deepin_immutable_message": "LinuxToys benötigt die Berechtigung, die Systemunveränderlichkeit zu deaktivieren, um Systemoptimierungs- und Konfigurationsaufgaben durchführen zu können.\n\nMöchten Sie den beschreibbaren Modus auf diesem Deepin-System aktivieren?",
     "qdi_desc": "Ein Frontend für smartctl, das die SMART-Daten moderner Festplatten und SSDs anzeigt. Bietet eine Benutzererfahrung ähnlich wie CrystalDiskInfo.",
-    "occt_desc": "Werkzeug zum Testen der Stabilität und Benchmarken."
+    "occt_desc": "Werkzeug zum Testen der Stabilität und Benchmarken.",
+    "lmstudio_desc": "Experimentieren Sie mit LLMs auf Ihrem Computer mit einem grafischen Bedienfeld, einer Chat-Oberfläche und einer programmierbaren API.",
+    "mt5_desc": "Leistungsstarke und komfortable Plattform für den Handel mit Forex, Aktien, Futures und anderen Instrumenten.",
+    "medicat_desc": "Eine Auswahl der neuesten Diagnose- und Wiederherstellungstools für Computer, zusammengestellt in einem benutzerfreundlichen Live-USB-Toolkit.",
+    "umipp_desc": "Deaktiviert CPU-UMIP über einen Kernel-Parameter. Kann erforderlich sein, um bestimmte Windows-Anwendungen über WINE/Proton auszuführen.",
+    "qtscrcpy_desc": "Android-Geräte über USB oder WLAN spiegeln und steuern."
   },
   "zh": {
     "subtitle": "适用于Linux的用户友好工具集合。",
@@ -3011,7 +3036,12 @@
     "deepin_immutable_script_description": "在 Deepin Linux 上禁用系统不可变性。",
     "deepin_immutable_message": "LinuxToys 需要权限来禁用系统不可变性,以便执行系统优化和配置任务。\n\n您是否希望在此 Deepin 系统上启用可写模式?",
     "qdi_desc": "smartctl 的前端,显示现代硬盘和固态硬盘的 SMART 数据。提供类似于 CrystalDiskInfo 的用户体验。",
-    "occt_desc": "稳定性测试和性能基准测试工具。"
+    "occt_desc": "稳定性测试和性能基准测试工具。",
+    "lmstudio_desc": "通过图形化控制面板、聊天界面和可编程API,在您的计算机上体验LLM。",
+    "mt5_desc": "强大便捷的外汇、股票、期货及其他工具交易平台。",
+    "medicat_desc": "精选最新的计算机诊断和恢复工具，整合到一个易于使用的 Live USB 工具包中。",
+    "umipp_desc": "通过内核参数禁用 CPU UMIP。运行某些 Windows 应用程序（通过 WINE/Proton）时可能需要此选项。",
+    "qtscrcpy_desc": "通过 USB 或 WiFi 网络镜像并控制 Android 设备。"
   },
   "ja": {
     "subtitle": "Linuxのためのユーザーフレンドリーなツール集。",
@@ -3513,7 +3543,12 @@
     "deepin_immutable_script_description": "Deepin Linuxでシステムの不変性を無効にします。",
     "deepin_immutable_message": "LinuxToysはシステムの最適化と構成タスクを実行するために、システムの不変性を無効にする許可が必要です。\n\nこのDeepinシステムで書き込み可能モードを有効にしますか?",
     "qdi_desc": "最新のハードディスクおよびソリッドステートドライブのSMARTデータを表示するsmartctlのフロントエンド。CrystalDiskInfoに似たユーザー体験を提供します。",
-    "occt_desc": "安定性テストおよびベンチマークツール。"
+    "occt_desc": "安定性テストおよびベンチマークツール。",
+    "lmstudio_desc": "GUIコントロールパネル、チャットインターフェース、プログラム可能なAPIで、あなたのコンピューター上でLLMを試してみましょう。",
+    "mt5_desc": "外国為替(Forex)、株式、先物、その他の商品を取引するための強力で便利なプラットフォーム。",
+    "medicat_desc": "最新のコンピューター診断および復旧ツールを、使いやすい Live USB ツールキットとしてまとめたものです。",
+    "umipp_desc": "カーネルパラメータを使用して CPU の UMIP を無効化します。WINE/Proton 経由で一部の Windows アプリケーションを実行するために必要な場合があります。",
+    "qtscrcpy_desc": "USB または WiFi ネットワーク経由で Android デバイスをミラーリングして操作します。"
   },
   "ru": {
     "subtitle": "Коллекция инструментов для Linux в удобном формате.",
@@ -4015,6 +4050,11 @@
     "deepin_immutable_script_description": "Отключить неизменяемость системы на Deepin Linux.",
     "deepin_immutable_message": "LinuxToys требуется разрешение на отключение неизменяемости системы, чтобы выполнять задачи оптимизации и настройки системы.\n\nХотите включить режим записи в этой системе Deepin?",
     "qdi_desc": "Интерфейс для smartctl, отображающий данные SMART современных жестких дисков и твердотельных накопителей. Обеспечивает пользовательский опыт, аналогичный CrystalDiskInfo.",
-    "occt_desc": "Инструмент для тестирования стабильности и производительности."
+    "occt_desc": "Инструмент для тестирования стабильности и производительности.",
+    "lmstudio_desc": "Экспериментируйте с LLM на своём компьютере с помощью графической панели управления, чат-интерфейса и программируемого API.",
+    "mt5_desc": "Мощная и удобная платформа для торговли Forex, акциями, фьючерсами и другими инструментами.",
+    "medicat_desc": "Подборка новейших инструментов для диагностики и восстановления компьютеров, собранных в удобный Live USB-комплект.",
+    "umipp_desc": "Отключает UMIP процессора с помощью параметра ядра. Может потребоваться для запуска некоторых приложений Windows через WINE/Proton.",
+    "qtscrcpy_desc": "Отображайте экран и управляйте устройствами Android через USB или сеть WiFi."
   }
 }
