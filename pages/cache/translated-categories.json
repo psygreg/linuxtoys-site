@@ -1,5 +1,36 @@
 {
   "en": {
+    "accessibility": {
+      "name": "accessibility",
+      "icon": "accessibility.svg",
+      "description": "Adjust your system to your needs - special or not.",
+      "mode": "menu",
+      "tools": [
+        {
+          "name": "Atkinson Hyperlegible",
+          "description": "A typeface designed to improve legibility and readability for readers with low vision.",
+          "icon": "lucidglyph.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/accessibility/atkinson.sh"
+        },
+        {
+          "name": "OpenDyslexic",
+          "description": "An open source font created to help increase readability for readers with dyslexia.",
+          "icon": "lucidglyph.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/accessibility/opendyslexic.sh"
+        },
+        {
+          "name": "IBus Typing Booster",
+          "description": "A completion input method to speed up typing and help people with word spelling difficulties.",
+          "icon": "itb.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/accessibility/typeboost.sh"
+        }
+      ],
+      "subcategories": {},
+      "displayName": "Accessibility"
+    },
     "chat": {
       "name": "chat",
       "icon": "chat.svg",
@@ -1834,6 +1865,37 @@
     }
   },
   "pt": {
+    "accessibility": {
+      "name": "accessibility",
+      "icon": "accessibility.svg",
+      "description": "Ajuste o sistema às suas necessidades, especiais ou não.",
+      "mode": "menu",
+      "tools": [
+        {
+          "name": "Atkinson Hyperlegible",
+          "description": "Uma fonte projetada para melhorar a legibilidade e a facilidade de leitura para pessoas com baixa visão.",
+          "icon": "lucidglyph.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/accessibility/atkinson.sh"
+        },
+        {
+          "name": "OpenDyslexic",
+          "description": "Uma fonte de código aberto criada para ajudar a melhorar a legibilidade para pessoas com dislexia.",
+          "icon": "lucidglyph.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/accessibility/opendyslexic.sh"
+        },
+        {
+          "name": "IBus Typing Booster",
+          "description": "Um método de entrada com preenchimento de palavras para acelerar a digitação e ajudar pessoas com dificuldades de ortografia.",
+          "icon": "itb.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/accessibility/typeboost.sh"
+        }
+      ],
+      "subcategories": {},
+      "displayName": "Acessibilidade"
+    },
     "chat": {
       "name": "chat",
       "icon": "chat.svg",
@@ -3668,6 +3730,37 @@
     }
   },
   "es": {
+    "accessibility": {
+      "name": "accessibility",
+      "icon": "accessibility.svg",
+      "description": "Adapta tu sistema a tus necesidades, sean especiales o no.",
+      "mode": "menu",
+      "tools": [
+        {
+          "name": "Atkinson Hyperlegible",
+          "description": "Una tipografía diseñada para mejorar la legibilidad y la facilidad de lectura de personas con baja visión.",
+          "icon": "lucidglyph.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/accessibility/atkinson.sh"
+        },
+        {
+          "name": "OpenDyslexic",
+          "description": "Una fuente de código abierto creada para mejorar la legibilidad de las personas con dislexia.",
+          "icon": "lucidglyph.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/accessibility/opendyslexic.sh"
+        },
+        {
+          "name": "IBus Typing Booster",
+          "description": "Un método de entrada con completado de palabras que acelera la escritura y ayuda a personas con dificultades ortográficas.",
+          "icon": "itb.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/accessibility/typeboost.sh"
+        }
+      ],
+      "subcategories": {},
+      "displayName": "Accesibilidad"
+    },
     "chat": {
       "name": "chat",
       "icon": "chat.svg",
@@ -5502,6 +5595,37 @@
     }
   },
   "fr": {
+    "accessibility": {
+      "name": "accessibility",
+      "icon": "accessibility.svg",
+      "description": "Adaptez votre système à vos besoins, particuliers ou non.",
+      "mode": "menu",
+      "tools": [
+        {
+          "name": "Atkinson Hyperlegible",
+          "description": "Une police conçue pour améliorer la lisibilité des personnes malvoyantes.",
+          "icon": "lucidglyph.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/accessibility/atkinson.sh"
+        },
+        {
+          "name": "OpenDyslexic",
+          "description": "Une police open source conçue pour améliorer la lisibilité chez les personnes dyslexiques.",
+          "icon": "lucidglyph.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/accessibility/opendyslexic.sh"
+        },
+        {
+          "name": "IBus Typing Booster",
+          "description": "Une méthode de saisie avec complétion des mots pour accélérer la frappe et aider les personnes ayant des difficultés d'orthographe.",
+          "icon": "itb.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/accessibility/typeboost.sh"
+        }
+      ],
+      "subcategories": {},
+      "displayName": "Accessibilité"
+    },
     "chat": {
       "name": "chat",
       "icon": "chat.svg",
@@ -7336,6 +7460,37 @@
     }
   },
   "de": {
+    "accessibility": {
+      "name": "accessibility",
+      "icon": "accessibility.svg",
+      "description": "Passen Sie Ihr System an Ihre Bedürfnisse an – ob speziell oder nicht.",
+      "mode": "menu",
+      "tools": [
+        {
+          "name": "Atkinson Hyperlegible",
+          "description": "Eine Schriftart, die entwickelt wurde, um Lesbarkeit und Erkennbarkeit für Menschen mit Sehbehinderung zu verbessern.",
+          "icon": "lucidglyph.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/accessibility/atkinson.sh"
+        },
+        {
+          "name": "OpenDyslexic",
+          "description": "Eine quelloffene Schriftart, die die Lesbarkeit für Menschen mit Legasthenie verbessern soll.",
+          "icon": "lucidglyph.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/accessibility/opendyslexic.sh"
+        },
+        {
+          "name": "IBus Typing Booster",
+          "description": "Eine Eingabemethode mit Wortvervollständigung, die das Tippen beschleunigt und Menschen mit Rechtschreibschwierigkeiten unterstützt.",
+          "icon": "itb.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/accessibility/typeboost.sh"
+        }
+      ],
+      "subcategories": {},
+      "displayName": "Barrierefreiheit"
+    },
     "chat": {
       "name": "chat",
       "icon": "chat.svg",
@@ -9170,6 +9325,37 @@
     }
   },
   "zh": {
+    "accessibility": {
+      "name": "accessibility",
+      "icon": "accessibility.svg",
+      "description": "根据您的需求调整系统，无论是否属于特殊需求。",
+      "mode": "menu",
+      "tools": [
+        {
+          "name": "Atkinson Hyperlegible",
+          "description": "一种旨在提高低视力读者文字辨识度和可读性的字体。",
+          "icon": "lucidglyph.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/accessibility/atkinson.sh"
+        },
+        {
+          "name": "OpenDyslexic",
+          "description": "一种开源字体，旨在提高有阅读障碍人士的文字可读性。",
+          "icon": "lucidglyph.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/accessibility/opendyslexic.sh"
+        },
+        {
+          "name": "IBus Typing Booster",
+          "description": "一种带有词语补全功能的输入法，可提高打字速度，并帮助有拼写困难的人。",
+          "icon": "itb.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/accessibility/typeboost.sh"
+        }
+      ],
+      "subcategories": {},
+      "displayName": "无障碍功能"
+    },
     "chat": {
       "name": "chat",
       "icon": "chat.svg",
@@ -11004,6 +11190,37 @@
     }
   },
   "ja": {
+    "accessibility": {
+      "name": "accessibility",
+      "icon": "accessibility.svg",
+      "description": "特別なものかどうかを問わず、ニーズに合わせてシステムを調整します。",
+      "mode": "menu",
+      "tools": [
+        {
+          "name": "Atkinson Hyperlegible",
+          "description": "弱視の人の視認性と読みやすさを向上させるために設計された書体です。",
+          "icon": "lucidglyph.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/accessibility/atkinson.sh"
+        },
+        {
+          "name": "OpenDyslexic",
+          "description": "ディスレクシアのある人の読みやすさを向上させるために作られたオープンソースのフォントです。",
+          "icon": "lucidglyph.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/accessibility/opendyslexic.sh"
+        },
+        {
+          "name": "IBus Typing Booster",
+          "description": "入力を高速化し、単語の綴りが苦手な人を支援する予測入力方式です。",
+          "icon": "itb.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/accessibility/typeboost.sh"
+        }
+      ],
+      "subcategories": {},
+      "displayName": "アクセシビリティ"
+    },
     "chat": {
       "name": "chat",
       "icon": "chat.svg",
@@ -12838,6 +13055,37 @@
     }
   },
   "ru": {
+    "accessibility": {
+      "name": "accessibility",
+      "icon": "accessibility.svg",
+      "description": "Настройте систему под свои потребности, особые или обычные.",
+      "mode": "menu",
+      "tools": [
+        {
+          "name": "Atkinson Hyperlegible",
+          "description": "Шрифт, разработанный для улучшения читаемости и разборчивости текста для людей с ослабленным зрением.",
+          "icon": "lucidglyph.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/accessibility/atkinson.sh"
+        },
+        {
+          "name": "OpenDyslexic",
+          "description": "Шрифт с открытым исходным кодом, созданный для повышения удобочитаемости для людей с дислексией.",
+          "icon": "lucidglyph.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/accessibility/opendyslexic.sh"
+        },
+        {
+          "name": "IBus Typing Booster",
+          "description": "Метод ввода с дополнением слов, ускоряющий набор текста и помогающий людям, испытывающим трудности с правописанием.",
+          "icon": "itb.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/accessibility/typeboost.sh"
+        }
+      ],
+      "subcategories": {},
+      "displayName": "Специальные возможности"
+    },
     "chat": {
       "name": "chat",
       "icon": "chat.svg",

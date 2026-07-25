@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-07-18T05:24:32.698Z",
-  "categoryCount": 10,
-  "totalTools": 246,
+  "lastUpdated": "2026-07-25T05:42:10.366Z",
+  "categoryCount": 11,
+  "totalTools": 249,
   "supportedLanguages": [
     "en",
     "pt",
@@ -13,6 +13,7 @@
     "ru"
   ],
   "categories": [
+    "accessibility",
     "chat",
     "devs",
     "drivers",

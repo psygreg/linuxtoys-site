@@ -1,4 +1,34 @@
 {
+  "accessibility": {
+    "name": "accessibility",
+    "icon": "accessibility.svg",
+    "description": "accessibility_desc",
+    "mode": "menu",
+    "tools": [
+      {
+        "name": "Atkinson Hyperlegible",
+        "description": "atkinson_desc",
+        "icon": "lucidglyph.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/accessibility/atkinson.sh"
+      },
+      {
+        "name": "OpenDyslexic",
+        "description": "od_desc",
+        "icon": "lucidglyph.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/accessibility/opendyslexic.sh"
+      },
+      {
+        "name": "IBus Typing Booster",
+        "description": "itb_desc",
+        "icon": "itb.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/accessibility/typeboost.sh"
+      }
+    ],
+    "subcategories": {}
+  },
   "chat": {
     "name": "chat",
     "icon": "chat.svg",
