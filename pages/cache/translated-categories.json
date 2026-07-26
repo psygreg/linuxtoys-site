@@ -1,5 +1,36 @@
 {
   "en": {
+    "accessibility": {
+      "name": "accessibility",
+      "icon": "accessibility.svg",
+      "description": "Adjust your system to your needs - special or not.",
+      "mode": "menu",
+      "tools": [
+        {
+          "name": "Atkinson Hyperlegible",
+          "description": "A typeface designed to improve legibility and readability for readers with low vision.",
+          "icon": "lucidglyph.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/accessibility/atkinson.sh"
+        },
+        {
+          "name": "OpenDyslexic",
+          "description": "An open source font created to help increase readability for readers with dyslexia.",
+          "icon": "lucidglyph.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/accessibility/opendyslexic.sh"
+        },
+        {
+          "name": "IBus Typing Booster",
+          "description": "A completion input method to speed up typing and help people with word spelling difficulties.",
+          "icon": "itb.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/accessibility/typeboost.sh"
+        }
+      ],
+      "subcategories": {},
+      "displayName": "Accessibility"
+    },
     "chat": {
       "name": "chat",
       "icon": "chat.svg",
@@ -334,35 +365,42 @@
           "tools": [
             {
               "name": "Claude Code",
-              "description": "Claude Code is an AI coding agent by Anthropic. Requires a paid Claude plan (Pro, Max, Team, or Enterprise).\n\n{ai_agent_disclaimer}",
+              "description": "Claude Code is an AI coding agent by Anthropic. Requires a paid Claude plan (Pro, Max, Team, or Enterprise).\n\n@{ai_agent_disclaimer}",
               "icon": "claude-code.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/claude-code.sh"
             },
             {
               "name": "Codex",
-              "description": "AI coding agent by OpenAI. Automates coding tasks in your terminal.\n\n{ai_agent_disclaimer}",
+              "description": "AI coding agent by OpenAI. Automates coding tasks in your terminal.\n\n@{ai_agent_disclaimer}",
               "icon": "codex.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/codex.sh"
             },
             {
+              "name": "LM Studio",
+              "description": "Experiment with LLMs on your computer with a GUI control panel, chat interface and programmable API.",
+              "icon": "lmstudio.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/lmstudio.sh"
+            },
+            {
               "name": "OMP",
-              "description": "Fork of Pi with more tools and multi-model support. AI coding agent for your terminal.\n\n{ai_agent_disclaimer}",
+              "description": "Fork of Pi with more tools and multi-model support. AI coding agent for your terminal.\n\n@{ai_agent_disclaimer}",
               "icon": "omp.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/omp.sh"
             },
             {
               "name": "OpenCode",
-              "description": "Open source AI coding agent. Free models included or connect any model from any provider.\n\n{ai_agent_disclaimer}",
+              "description": "Open source AI coding agent. Free models included or connect any model from any provider.\n\n@{ai_agent_disclaimer}",
               "icon": "opencode.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/opencode.sh"
             },
             {
               "name": "Pi",
-              "description": "AI coding agent. Lightweight and fast coding assistant for your terminal.\n\n{ai_agent_disclaimer}",
+              "description": "AI coding agent. Lightweight and fast coding assistant for your terminal.\n\n@{ai_agent_disclaimer}",
               "icon": "pi-coding-agent.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/pi.sh"
@@ -476,13 +514,6 @@
           "icon": "nvidia.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/nv-rpm.sh"
-        },
-        {
-          "name": "Nvidia Drivers (v470)",
-          "description": "Legacy Nvidia drivers. Supported GPUs: Kepler (GT 6xx) and Fermi (GT 7xx).",
-          "icon": "nvidia.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/drivers/nv-suse-470.sh"
         },
         {
           "name": "Nvidia Drivers",
@@ -824,6 +855,13 @@
           "scriptPath": "p3/scripts/extra/ufw.sh"
         },
         {
+          "name": "UMIP Patch",
+          "description": "Disables CPU UMIP through a kernel parameter. May be needed to run some specific Windows applications through WINE/Proton.",
+          "icon": "terminal.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/umip.sh"
+        },
+        {
           "name": "Proton on Wayland Mode",
           "description": "Sets Proton to run on wine-wayland mode by default. You can selectively set the environment variable PROTON_USE_WINE_WAYLAND=0 for games that may not work properly with this mode in their launch options in Steam or your game launcher of choice.",
           "icon": "proton.svg",
@@ -1131,6 +1169,13 @@
           "scriptPath": "p3/scripts/office/libreoffice.sh"
         },
         {
+          "name": "MetaTrader 5",
+          "description": "Powerful and convenient platform for trading Forex, stocks, futures and other instruments.",
+          "icon": "mt5.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/office/mt5.sh"
+        },
+        {
           "name": "Obsidian",
           "description": "A free, flexible app for your thoughts, notes, and organization.",
           "icon": "obsidian.svg",
@@ -1312,6 +1357,20 @@
           "scriptPath": "p3/scripts/sysadm/cpu-x.sh"
         },
         {
+          "name": "Medicat USB",
+          "description": "A selection of the latest computer diagnostic and recovery tools compiled into an easy to use, live USB toolkit.",
+          "icon": "medicat.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/sysadm/medicat.sh"
+        },
+        {
+          "name": "QDiskInfo",
+          "description": "A frontend for smartctl that shows the SMART data of modern hard disk and solid state drives. Provides a user experience similar to CrystalDiskInfo.",
+          "icon": "qdiskinfo.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/sysadm/qdiskinfo.sh"
+        },
+        {
           "name": "Sloth-Bash",
           "description": "A bash library that makes terminal usage more friendly and practical for headless systems, developers and enthusiasts alike. Also developed by Psygreg.",
           "icon": "sloth.svg",
@@ -1483,6 +1542,13 @@
           "scriptPath": "p3/scripts/utils/obs.sh"
         },
         {
+          "name": "OCCT",
+          "description": "Stability testing and benchmark tool.",
+          "icon": "occt.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/occt.sh"
+        },
+        {
           "name": "PeaZip",
           "description": "Free file archiver utility supporting many formats.",
           "icon": "peazip.png",
@@ -1579,6 +1645,13 @@
           "icon": "qpwgraph.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/qpw.sh"
+        },
+        {
+          "name": "QtScrcpy",
+          "description": "Mirror and control Android devices via USB or WiFi network.",
+          "icon": "qtscrcpy.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/qtscrcpy.sh"
         },
         {
           "name": "Rclone UI",
@@ -1792,6 +1865,37 @@
     }
   },
   "pt": {
+    "accessibility": {
+      "name": "accessibility",
+      "icon": "accessibility.svg",
+      "description": "Ajuste o sistema às suas necessidades, especiais ou não.",
+      "mode": "menu",
+      "tools": [
+        {
+          "name": "Atkinson Hyperlegible",
+          "description": "Uma fonte projetada para melhorar a legibilidade e a facilidade de leitura para pessoas com baixa visão.",
+          "icon": "lucidglyph.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/accessibility/atkinson.sh"
+        },
+        {
+          "name": "OpenDyslexic",
+          "description": "Uma fonte de código aberto criada para ajudar a melhorar a legibilidade para pessoas com dislexia.",
+          "icon": "lucidglyph.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/accessibility/opendyslexic.sh"
+        },
+        {
+          "name": "IBus Typing Booster",
+          "description": "Um método de entrada com preenchimento de palavras para acelerar a digitação e ajudar pessoas com dificuldades de ortografia.",
+          "icon": "itb.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/accessibility/typeboost.sh"
+        }
+      ],
+      "subcategories": {},
+      "displayName": "Acessibilidade"
+    },
     "chat": {
       "name": "chat",
       "icon": "chat.svg",
@@ -2126,42 +2230,49 @@
           "tools": [
             {
               "name": "Claude Code",
-              "description": "Claude Code é um agente de codificação IA da Anthropic. Requer um plano Claude pago (Pro, Max, Team ou Enterprise).\n\n{ai_agent_disclaimer}",
+              "description": "Claude Code é um agente de codificação IA da Anthropic. Requer um plano Claude pago (Pro, Max, Team ou Enterprise).\n\n@{ai_agent_disclaimer}",
               "icon": "claude-code.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/claude-code.sh"
             },
             {
               "name": "Codex",
-              "description": "Agente de codificação IA da OpenAI. Automatiza tarefas de codificação no seu terminal.\n\n{ai_agent_disclaimer}",
+              "description": "Agente de codificação IA da OpenAI. Automatiza tarefas de codificação no seu terminal.\n\n@{ai_agent_disclaimer}",
               "icon": "codex.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/codex.sh"
             },
             {
+              "name": "LM Studio",
+              "description": "Experimente LLMs no seu computador com um painel de controle gráfico, interface de chat e API programável.",
+              "icon": "lmstudio.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/lmstudio.sh"
+            },
+            {
               "name": "OMP",
-              "description": "Fork do Pi com mais ferramentas e suporte multimodelo. Agente de codificação IA para o seu terminal.\n\n{ai_agent_disclaimer}",
+              "description": "Fork do Pi com mais ferramentas e suporte multimodelo. Agente de codificação IA para o seu terminal.\n\n@{ai_agent_disclaimer}",
               "icon": "omp.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/omp.sh"
             },
             {
               "name": "OpenCode",
-              "description": "Agente de codificação IA de código aberto. Modelos grátis incluídos ou conecte qualquer modelo de qualquer provedor.\n\n{ai_agent_disclaimer}",
+              "description": "Agente de codificação IA de código aberto. Modelos grátis incluídos ou conecte qualquer modelo de qualquer provedor.\n\n@{ai_agent_disclaimer}",
               "icon": "opencode.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/opencode.sh"
             },
             {
               "name": "Pi",
-              "description": "Agente de codificação IA. Assistente de codificação leve e rápido para o seu terminal.\n\n{ai_agent_disclaimer}",
+              "description": "Agente de codificação IA. Assistente de codificação leve e rápido para o seu terminal.\n\n@{ai_agent_disclaimer}",
               "icon": "pi-coding-agent.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/pi.sh"
             },
             {
               "name": "Skills Seeker",
-              "description": "Navegue, pesquise e instale skills de agentes IA do catálogo.",
+              "description": "Navegue, pesquise e instale habilidades de agentes de IA do catálogo.",
               "icon": "skills-seeker.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/skills-seeker.sh"
@@ -2268,13 +2379,6 @@
           "icon": "nvidia.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/nv-rpm.sh"
-        },
-        {
-          "name": "Nvidia Drivers (v470)",
-          "description": "Drivers Nvidia legados. GPUs suportadas: Kepler (GT 6xx) e Fermi (GT 7xx).",
-          "icon": "nvidia.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/drivers/nv-suse-470.sh"
         },
         {
           "name": "Nvidia Drivers",
@@ -2616,6 +2720,13 @@
           "scriptPath": "p3/scripts/extra/ufw.sh"
         },
         {
+          "name": "UMIP Patch",
+          "description": "Desativa o UMIP da CPU por meio de um parâmetro do kernel. Pode ser necessário para executar alguns aplicativos específicos do Windows através do WINE/Proton.",
+          "icon": "terminal.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/umip.sh"
+        },
+        {
           "name": "Proton no modo Wayland",
           "description": "Define Proton para ser executado em modo wine-wayland por padrão. Você pode definir seletivamente a variável de ambiente PROTON_USE_WINE_WAYLAND=0 para jogos que podem não funcionar corretamente com este modo nas opções de inicialização no Steam ou seu inicializador de jogos preferido.",
           "icon": "proton.svg",
@@ -2923,6 +3034,13 @@
           "scriptPath": "p3/scripts/office/libreoffice.sh"
         },
         {
+          "name": "MetaTrader 5",
+          "description": "Plataforma poderosa e conveniente para negociar Forex, ações, futuros e outros instrumentos.",
+          "icon": "mt5.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/office/mt5.sh"
+        },
+        {
           "name": "Obsidian",
           "description": "Um aplicativo gratuito e flexível para seus pensamentos, anotações e organização.",
           "icon": "obsidian.svg",
@@ -3104,6 +3222,20 @@
           "scriptPath": "p3/scripts/sysadm/cpu-x.sh"
         },
         {
+          "name": "Medicat USB",
+          "description": "Uma seleção das mais recentes ferramentas de diagnóstico e recuperação de computadores reunidas em um kit Live USB fácil de usar.",
+          "icon": "medicat.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/sysadm/medicat.sh"
+        },
+        {
+          "name": "QDiskInfo",
+          "description": "Uma interface para o smartctl que exibe os dados SMART de discos rígidos modernos e unidades de estado sólido. Oferece uma experiência de usuário semelhante ao CrystalDiskInfo.",
+          "icon": "qdiskinfo.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/sysadm/qdiskinfo.sh"
+        },
+        {
           "name": "Sloth-Bash",
           "description": "Uma biblioteca bash que torna o uso do terminal mais amigável e prático para sistemas headless, desenvolvedores e entusiastas. Também desenvolvido por Psygreg.",
           "icon": "sloth.svg",
@@ -3275,6 +3407,13 @@
           "scriptPath": "p3/scripts/utils/obs.sh"
         },
         {
+          "name": "OCCT",
+          "description": "Ferramenta de teste de estabilidade e benchmark.",
+          "icon": "occt.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/occt.sh"
+        },
+        {
           "name": "PeaZip",
           "description": "Utilitário gratuito de arquivamento de arquivos que suporta muitos formatos.",
           "icon": "peazip.png",
@@ -3371,6 +3510,13 @@
           "icon": "qpwgraph.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/qpw.sh"
+        },
+        {
+          "name": "QtScrcpy",
+          "description": "Espelhe e controle dispositivos Android via USB ou rede WiFi.",
+          "icon": "qtscrcpy.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/qtscrcpy.sh"
         },
         {
           "name": "Rclone UI",
@@ -3584,6 +3730,37 @@
     }
   },
   "es": {
+    "accessibility": {
+      "name": "accessibility",
+      "icon": "accessibility.svg",
+      "description": "Adapta tu sistema a tus necesidades, sean especiales o no.",
+      "mode": "menu",
+      "tools": [
+        {
+          "name": "Atkinson Hyperlegible",
+          "description": "Una tipografía diseñada para mejorar la legibilidad y la facilidad de lectura de personas con baja visión.",
+          "icon": "lucidglyph.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/accessibility/atkinson.sh"
+        },
+        {
+          "name": "OpenDyslexic",
+          "description": "Una fuente de código abierto creada para mejorar la legibilidad de las personas con dislexia.",
+          "icon": "lucidglyph.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/accessibility/opendyslexic.sh"
+        },
+        {
+          "name": "IBus Typing Booster",
+          "description": "Un método de entrada con completado de palabras que acelera la escritura y ayuda a personas con dificultades ortográficas.",
+          "icon": "itb.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/accessibility/typeboost.sh"
+        }
+      ],
+      "subcategories": {},
+      "displayName": "Accesibilidad"
+    },
     "chat": {
       "name": "chat",
       "icon": "chat.svg",
@@ -3918,42 +4095,49 @@
           "tools": [
             {
               "name": "Claude Code",
-              "description": "Claude Code es un agente de codificación AI de Anthropic. Requiere un plan de Claude de pago (Pro, Max, Team o Enterprise).\n\n{ai_agent_disclaimer}",
+              "description": "Claude Code es un agente de codificación AI de Anthropic. Requiere un plan de Claude de pago (Pro, Max, Team o Enterprise).\n\n@{ai_agent_disclaimer}",
               "icon": "claude-code.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/claude-code.sh"
             },
             {
               "name": "Codex",
-              "description": "Agente de codificación AI de OpenAI. Automatiza tareas de codificación en tu terminal.\n\n{ai_agent_disclaimer}",
+              "description": "Agente de codificación AI de OpenAI. Automatiza tareas de codificación en tu terminal.\n\n@{ai_agent_disclaimer}",
               "icon": "codex.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/codex.sh"
             },
             {
+              "name": "LM Studio",
+              "description": "Experimenta con LLM en tu computadora con un panel de control gráfico, interfaz de chat y API programable.",
+              "icon": "lmstudio.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/lmstudio.sh"
+            },
+            {
               "name": "OMP",
-              "description": "Fork de Pi con más herramientas y soporte multimodelo. Agente de codificación AI para tu terminal.\n\n{ai_agent_disclaimer}",
+              "description": "Fork de Pi con más herramientas y soporte multimodelo. Agente de codificación AI para tu terminal.\n\n@{ai_agent_disclaimer}",
               "icon": "omp.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/omp.sh"
             },
             {
               "name": "OpenCode",
-              "description": "Agente de codificación AI de código abierto. Modelos gratuitos incluidos o conecte cualquier modelo de cualquier proveedor.\n\n{ai_agent_disclaimer}",
+              "description": "Agente de codificación AI de código abierto. Modelos gratuitos incluidos o conecte cualquier modelo de cualquier proveedor.\n\n@{ai_agent_disclaimer}",
               "icon": "opencode.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/opencode.sh"
             },
             {
               "name": "Pi",
-              "description": "Agente de codificación AI. Asistente de codificación ligero y rápido para tu terminal.\n\n{ai_agent_disclaimer}",
+              "description": "Agente de codificación AI. Asistente de codificación ligero y rápido para tu terminal.\n\n@{ai_agent_disclaimer}",
               "icon": "pi-coding-agent.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/pi.sh"
             },
             {
               "name": "Skills Seeker",
-              "description": "skills_seeker_desc",
+              "description": "Explora, busca e instala habilidades de agentes de IA desde el catálogo.",
               "icon": "skills-seeker.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/skills-seeker.sh"
@@ -4060,13 +4244,6 @@
           "icon": "nvidia.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/nv-rpm.sh"
-        },
-        {
-          "name": "Nvidia Drivers (v470)",
-          "description": "Controladores legacy de Nvidia. GPUs soportadas: Kepler (GT 6xx) y Fermi (GT 7xx).",
-          "icon": "nvidia.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/drivers/nv-suse-470.sh"
         },
         {
           "name": "Nvidia Drivers",
@@ -4408,6 +4585,13 @@
           "scriptPath": "p3/scripts/extra/ufw.sh"
         },
         {
+          "name": "UMIP Patch",
+          "description": "Desactiva UMIP de la CPU mediante un parámetro del kernel. Puede ser necesario para ejecutar determinadas aplicaciones de Windows mediante WINE/Proton.",
+          "icon": "terminal.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/umip.sh"
+        },
+        {
           "name": "Proton en modo Wayland",
           "description": "Configura Proton para que se ejecute en modo wine-wayland de forma predeterminada. Puedes establecer selectivamente la variable de entorno PROTON_USE_WINE_WAYLAND=0 para juegos que podrían no funcionar correctamente con este modo en las opciones de inicio en Steam o tu lanzador de juegos preferido.",
           "icon": "proton.svg",
@@ -4715,6 +4899,13 @@
           "scriptPath": "p3/scripts/office/libreoffice.sh"
         },
         {
+          "name": "MetaTrader 5",
+          "description": "Plataforma potente y conveniente para operar con Forex, acciones, futuros y otros instrumentos.",
+          "icon": "mt5.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/office/mt5.sh"
+        },
+        {
           "name": "Obsidian",
           "description": "Una aplicación gratuita y flexible para sus pensamientos, notas y organización.",
           "icon": "obsidian.svg",
@@ -4896,6 +5087,20 @@
           "scriptPath": "p3/scripts/sysadm/cpu-x.sh"
         },
         {
+          "name": "Medicat USB",
+          "description": "Una selección de las herramientas más recientes de diagnóstico y recuperación para equipos, reunidas en un práctico kit Live USB.",
+          "icon": "medicat.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/sysadm/medicat.sh"
+        },
+        {
+          "name": "QDiskInfo",
+          "description": "Una interfaz para smartctl que muestra los datos SMART de discos duros modernos y unidades de estado sólido. Ofrece una experiencia de usuario similar a CrystalDiskInfo.",
+          "icon": "qdiskinfo.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/sysadm/qdiskinfo.sh"
+        },
+        {
           "name": "Sloth-Bash",
           "description": "Una biblioteca bash que hace que el uso de terminales sea más amigable y práctico para sistemas headless, desarrolladores y entusiastas. También desarrollado por Psygreg.",
           "icon": "sloth.svg",
@@ -5067,6 +5272,13 @@
           "scriptPath": "p3/scripts/utils/obs.sh"
         },
         {
+          "name": "OCCT",
+          "description": "Herramienta de pruebas de estabilidad y rendimiento.",
+          "icon": "occt.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/occt.sh"
+        },
+        {
           "name": "PeaZip",
           "description": "Utilidad gratuita de archivado de archivos que soporta muchos formatos.",
           "icon": "peazip.png",
@@ -5163,6 +5375,13 @@
           "icon": "qpwgraph.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/qpw.sh"
+        },
+        {
+          "name": "QtScrcpy",
+          "description": "Duplica y controla dispositivos Android mediante USB o una red WiFi.",
+          "icon": "qtscrcpy.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/qtscrcpy.sh"
         },
         {
           "name": "Rclone UI",
@@ -5376,6 +5595,37 @@
     }
   },
   "fr": {
+    "accessibility": {
+      "name": "accessibility",
+      "icon": "accessibility.svg",
+      "description": "Adaptez votre système à vos besoins, particuliers ou non.",
+      "mode": "menu",
+      "tools": [
+        {
+          "name": "Atkinson Hyperlegible",
+          "description": "Une police conçue pour améliorer la lisibilité des personnes malvoyantes.",
+          "icon": "lucidglyph.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/accessibility/atkinson.sh"
+        },
+        {
+          "name": "OpenDyslexic",
+          "description": "Une police open source conçue pour améliorer la lisibilité chez les personnes dyslexiques.",
+          "icon": "lucidglyph.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/accessibility/opendyslexic.sh"
+        },
+        {
+          "name": "IBus Typing Booster",
+          "description": "Une méthode de saisie avec complétion des mots pour accélérer la frappe et aider les personnes ayant des difficultés d'orthographe.",
+          "icon": "itb.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/accessibility/typeboost.sh"
+        }
+      ],
+      "subcategories": {},
+      "displayName": "Accessibilité"
+    },
     "chat": {
       "name": "chat",
       "icon": "chat.svg",
@@ -5710,42 +5960,49 @@
           "tools": [
             {
               "name": "Claude Code",
-              "description": "Claude Code est un agent de codage IA d'Anthropic. Nécessite un plan Claude payant (Pro, Max, Team ou Enterprise).\n\n{ai_agent_disclaimer}",
+              "description": "Claude Code est un agent de codage IA d'Anthropic. Nécessite un plan Claude payant (Pro, Max, Team ou Enterprise).\n\n@{ai_agent_disclaimer}",
               "icon": "claude-code.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/claude-code.sh"
             },
             {
               "name": "Codex",
-              "description": "Agent de codage IA d'OpenAI. Automatise les tâches de codage dans votre terminal.\n\n{ai_agent_disclaimer}",
+              "description": "Agent de codage IA d'OpenAI. Automatise les tâches de codage dans votre terminal.\n\n@{ai_agent_disclaimer}",
               "icon": "codex.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/codex.sh"
             },
             {
+              "name": "LM Studio",
+              "description": "Expérimentez avec des LLM sur votre ordinateur grâce à un panneau de contrôle graphique, une interface de chat et une API programmable.",
+              "icon": "lmstudio.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/lmstudio.sh"
+            },
+            {
               "name": "OMP",
-              "description": "Fork de Pi avec plus d'outils et support multi-modèle. Agent de codage IA pour votre terminal.\n\n{ai_agent_disclaimer}",
+              "description": "Fork de Pi avec plus d'outils et support multi-modèle. Agent de codage IA pour votre terminal.\n\n@{ai_agent_disclaimer}",
               "icon": "omp.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/omp.sh"
             },
             {
               "name": "OpenCode",
-              "description": "Agent de codage IA open source. Modèles gratuits inclus ou connectez n'importe quel modèle à partir de n'importe quel fournisseur.\n\n{ai_agent_disclaimer}",
+              "description": "Agent de codage IA open source. Modèles gratuits inclus ou connectez n'importe quel modèle à partir de n'importe quel fournisseur.\n\n@{ai_agent_disclaimer}",
               "icon": "opencode.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/opencode.sh"
             },
             {
               "name": "Pi",
-              "description": "Agent de codage IA. Assistant de codage léger et rapide pour votre terminal.\n\n{ai_agent_disclaimer}",
+              "description": "Agent de codage IA. Assistant de codage léger et rapide pour votre terminal.\n\n@{ai_agent_disclaimer}",
               "icon": "pi-coding-agent.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/pi.sh"
             },
             {
               "name": "Skills Seeker",
-              "description": "skills_seeker_desc",
+              "description": "Parcourez, recherchez et installez des compétences d'agent IA depuis le catalogue.",
               "icon": "skills-seeker.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/skills-seeker.sh"
@@ -5852,13 +6109,6 @@
           "icon": "nvidia.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/nv-rpm.sh"
-        },
-        {
-          "name": "Nvidia Drivers (v470)",
-          "description": "Pilotes Nvidia legacy. GPUs supportées : Kepler (GT 6xx) et Fermi (GT 7xx).",
-          "icon": "nvidia.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/drivers/nv-suse-470.sh"
         },
         {
           "name": "Nvidia Drivers",
@@ -6200,6 +6450,13 @@
           "scriptPath": "p3/scripts/extra/ufw.sh"
         },
         {
+          "name": "UMIP Patch",
+          "description": "Désactive UMIP du processeur via un paramètre du noyau. Peut être nécessaire pour exécuter certaines applications Windows avec WINE/Proton.",
+          "icon": "terminal.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/umip.sh"
+        },
+        {
           "name": "Proton en mode Wayland",
           "description": "Configure Proton pour qu'il s'exécute en mode wine-wayland par défaut. Vous pouvez définir sélectivement la variable d'environnement PROTON_USE_WINE_WAYLAND=0 pour les jeux qui pourraient ne pas fonctionner correctement avec ce mode dans les options de lancement dans Steam ou votre lanceur de jeu préféré.",
           "icon": "proton.svg",
@@ -6507,6 +6764,13 @@
           "scriptPath": "p3/scripts/office/libreoffice.sh"
         },
         {
+          "name": "MetaTrader 5",
+          "description": "Plateforme puissante et pratique pour trader le Forex, les actions, les contrats à terme et d'autres instruments.",
+          "icon": "mt5.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/office/mt5.sh"
+        },
+        {
           "name": "Obsidian",
           "description": "Une application gratuite et flexible pour vos pensées, notes et organisation.",
           "icon": "obsidian.svg",
@@ -6688,6 +6952,20 @@
           "scriptPath": "p3/scripts/sysadm/cpu-x.sh"
         },
         {
+          "name": "Medicat USB",
+          "description": "Une sélection des derniers outils de diagnostic et de récupération pour ordinateur, regroupés dans une boîte à outils Live USB facile à utiliser.",
+          "icon": "medicat.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/sysadm/medicat.sh"
+        },
+        {
+          "name": "QDiskInfo",
+          "description": "Une interface pour smartctl qui affiche les données SMART des disques durs modernes et des SSD. Offre une expérience utilisateur similaire à CrystalDiskInfo.",
+          "icon": "qdiskinfo.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/sysadm/qdiskinfo.sh"
+        },
+        {
           "name": "Sloth-Bash",
           "description": "Une bibliothèque bash qui rend l'utilisation du terminal plus conviviale et pratique pour les systèmes sans tête, les développeurs et les enthousiastes. Également développé par Psygreg.",
           "icon": "sloth.svg",
@@ -6859,6 +7137,13 @@
           "scriptPath": "p3/scripts/utils/obs.sh"
         },
         {
+          "name": "OCCT",
+          "description": "Outil de test de stabilité et de benchmark.",
+          "icon": "occt.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/occt.sh"
+        },
+        {
           "name": "PeaZip",
           "description": "Utilitaire d'archivage de fichiers gratuit prenant en charge de nombreux formats.",
           "icon": "peazip.png",
@@ -6955,6 +7240,13 @@
           "icon": "qpwgraph.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/qpw.sh"
+        },
+        {
+          "name": "QtScrcpy",
+          "description": "Mettez en miroir et contrôlez des appareils Android via USB ou un réseau WiFi.",
+          "icon": "qtscrcpy.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/qtscrcpy.sh"
         },
         {
           "name": "Rclone UI",
@@ -7168,6 +7460,37 @@
     }
   },
   "de": {
+    "accessibility": {
+      "name": "accessibility",
+      "icon": "accessibility.svg",
+      "description": "Passen Sie Ihr System an Ihre Bedürfnisse an – ob speziell oder nicht.",
+      "mode": "menu",
+      "tools": [
+        {
+          "name": "Atkinson Hyperlegible",
+          "description": "Eine Schriftart, die entwickelt wurde, um Lesbarkeit und Erkennbarkeit für Menschen mit Sehbehinderung zu verbessern.",
+          "icon": "lucidglyph.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/accessibility/atkinson.sh"
+        },
+        {
+          "name": "OpenDyslexic",
+          "description": "Eine quelloffene Schriftart, die die Lesbarkeit für Menschen mit Legasthenie verbessern soll.",
+          "icon": "lucidglyph.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/accessibility/opendyslexic.sh"
+        },
+        {
+          "name": "IBus Typing Booster",
+          "description": "Eine Eingabemethode mit Wortvervollständigung, die das Tippen beschleunigt und Menschen mit Rechtschreibschwierigkeiten unterstützt.",
+          "icon": "itb.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/accessibility/typeboost.sh"
+        }
+      ],
+      "subcategories": {},
+      "displayName": "Barrierefreiheit"
+    },
     "chat": {
       "name": "chat",
       "icon": "chat.svg",
@@ -7502,42 +7825,49 @@
           "tools": [
             {
               "name": "Claude Code",
-              "description": "Claude Code ist ein KI-Codierungsagent von Anthropic. Erfordert einen bezahlten Claude-Plan (Pro, Max, Team oder Enterprise).\n\n{ai_agent_disclaimer}",
+              "description": "Claude Code ist ein KI-Codierungsagent von Anthropic. Erfordert einen bezahlten Claude-Plan (Pro, Max, Team oder Enterprise).\n\n@{ai_agent_disclaimer}",
               "icon": "claude-code.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/claude-code.sh"
             },
             {
               "name": "Codex",
-              "description": "KI-Codierungsagent von OpenAI. Automatisiert Codierungsaufgaben in Ihrem Terminal.\n\n{ai_agent_disclaimer}",
+              "description": "KI-Codierungsagent von OpenAI. Automatisiert Codierungsaufgaben in Ihrem Terminal.\n\n@{ai_agent_disclaimer}",
               "icon": "codex.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/codex.sh"
             },
             {
+              "name": "LM Studio",
+              "description": "Experimentieren Sie mit LLMs auf Ihrem Computer mit einem grafischen Bedienfeld, einer Chat-Oberfläche und einer programmierbaren API.",
+              "icon": "lmstudio.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/lmstudio.sh"
+            },
+            {
               "name": "OMP",
-              "description": "Abzweigung von Pi mit mehr Werkzeugen und Unterstützung für mehrere Modelle. KI-Codierungsagent für Ihr Terminal.\n\n{ai_agent_disclaimer}",
+              "description": "Abzweigung von Pi mit mehr Werkzeugen und Unterstützung für mehrere Modelle. KI-Codierungsagent für Ihr Terminal.\n\n@{ai_agent_disclaimer}",
               "icon": "omp.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/omp.sh"
             },
             {
               "name": "OpenCode",
-              "description": "KI-Codierungsagent mit offener Quelle. Kostenlose Modelle enthalten oder verbinden Sie jedes Modell von jedem Anbieter.\n\n{ai_agent_disclaimer}",
+              "description": "KI-Codierungsagent mit offener Quelle. Kostenlose Modelle enthalten oder verbinden Sie jedes Modell von jedem Anbieter.\n\n@{ai_agent_disclaimer}",
               "icon": "opencode.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/opencode.sh"
             },
             {
               "name": "Pi",
-              "description": "KI-Codierungsagent. Leichter und schneller Codierungsassistent für Ihren Terminal.\n\n{ai_agent_disclaimer}",
+              "description": "KI-Codierungsagent. Leichter und schneller Codierungsassistent für Ihren Terminal.\n\n@{ai_agent_disclaimer}",
               "icon": "pi-coding-agent.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/pi.sh"
             },
             {
               "name": "Skills Seeker",
-              "description": "skills_seeker_desc",
+              "description": "Durchsuchen, suchen und installieren Sie KI-Agenten-Skills aus dem Katalog.",
               "icon": "skills-seeker.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/skills-seeker.sh"
@@ -7644,13 +7974,6 @@
           "icon": "nvidia.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/nv-rpm.sh"
-        },
-        {
-          "name": "Nvidia Drivers (v470)",
-          "description": "Legacy Nvidia-Treiber. Unterstützte GPUs: Kepler (GT 6xx) und Fermi (GT 7xx).",
-          "icon": "nvidia.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/drivers/nv-suse-470.sh"
         },
         {
           "name": "Nvidia Drivers",
@@ -7992,6 +8315,13 @@
           "scriptPath": "p3/scripts/extra/ufw.sh"
         },
         {
+          "name": "UMIP Patch",
+          "description": "Deaktiviert CPU-UMIP über einen Kernel-Parameter. Kann erforderlich sein, um bestimmte Windows-Anwendungen über WINE/Proton auszuführen.",
+          "icon": "terminal.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/umip.sh"
+        },
+        {
           "name": "Proton im Wayland-Modus",
           "description": "Setzt Proton so ein, dass es standardmäßig im Wine-Wayland-Modus ausgeführt wird. Sie können die Umgebungsvariable PROTON_USE_WINE_WAYLAND=0 selektiv für Spiele festlegen, die möglicherweise nicht ordnungsgemäß mit diesem Modus funktionieren, in den Startoptionen in Steam oder Ihrem bevorzugten Spiel-Launcher.",
           "icon": "proton.svg",
@@ -8299,6 +8629,13 @@
           "scriptPath": "p3/scripts/office/libreoffice.sh"
         },
         {
+          "name": "MetaTrader 5",
+          "description": "Leistungsstarke und komfortable Plattform für den Handel mit Forex, Aktien, Futures und anderen Instrumenten.",
+          "icon": "mt5.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/office/mt5.sh"
+        },
+        {
           "name": "Obsidian",
           "description": "Eine kostenlose, flexible App für Ihre Gedanken, Notizen und Organisation.",
           "icon": "obsidian.svg",
@@ -8480,6 +8817,20 @@
           "scriptPath": "p3/scripts/sysadm/cpu-x.sh"
         },
         {
+          "name": "Medicat USB",
+          "description": "Eine Auswahl der neuesten Diagnose- und Wiederherstellungstools für Computer, zusammengestellt in einem benutzerfreundlichen Live-USB-Toolkit.",
+          "icon": "medicat.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/sysadm/medicat.sh"
+        },
+        {
+          "name": "QDiskInfo",
+          "description": "Ein Frontend für smartctl, das die SMART-Daten moderner Festplatten und SSDs anzeigt. Bietet eine Benutzererfahrung ähnlich wie CrystalDiskInfo.",
+          "icon": "qdiskinfo.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/sysadm/qdiskinfo.sh"
+        },
+        {
           "name": "Sloth-Bash",
           "description": "Eine Bash-Bibliothek, die die Terminalnutzung für Headless-Systeme, Entwickler und Enthusiasten freundlicher und praktischer macht. Auch von Psygreg entwickelt.",
           "icon": "sloth.svg",
@@ -8651,6 +9002,13 @@
           "scriptPath": "p3/scripts/utils/obs.sh"
         },
         {
+          "name": "OCCT",
+          "description": "Werkzeug zum Testen der Stabilität und Benchmarken.",
+          "icon": "occt.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/occt.sh"
+        },
+        {
           "name": "PeaZip",
           "description": "Kostenloses Datei-Archivierungstool, das viele Formate unterstützt.",
           "icon": "peazip.png",
@@ -8747,6 +9105,13 @@
           "icon": "qpwgraph.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/qpw.sh"
+        },
+        {
+          "name": "QtScrcpy",
+          "description": "Android-Geräte über USB oder WLAN spiegeln und steuern.",
+          "icon": "qtscrcpy.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/qtscrcpy.sh"
         },
         {
           "name": "Rclone UI",
@@ -8960,6 +9325,37 @@
     }
   },
   "zh": {
+    "accessibility": {
+      "name": "accessibility",
+      "icon": "accessibility.svg",
+      "description": "根据您的需求调整系统，无论是否属于特殊需求。",
+      "mode": "menu",
+      "tools": [
+        {
+          "name": "Atkinson Hyperlegible",
+          "description": "一种旨在提高低视力读者文字辨识度和可读性的字体。",
+          "icon": "lucidglyph.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/accessibility/atkinson.sh"
+        },
+        {
+          "name": "OpenDyslexic",
+          "description": "一种开源字体，旨在提高有阅读障碍人士的文字可读性。",
+          "icon": "lucidglyph.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/accessibility/opendyslexic.sh"
+        },
+        {
+          "name": "IBus Typing Booster",
+          "description": "一种带有词语补全功能的输入法，可提高打字速度，并帮助有拼写困难的人。",
+          "icon": "itb.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/accessibility/typeboost.sh"
+        }
+      ],
+      "subcategories": {},
+      "displayName": "无障碍功能"
+    },
     "chat": {
       "name": "chat",
       "icon": "chat.svg",
@@ -9294,42 +9690,49 @@
           "tools": [
             {
               "name": "Claude Code",
-              "description": "Claude Code 是 Anthropic 的 AI 编码代理。需要付费的 Claude 计划（Pro、Max、Team 或 Enterprise）。\n\n{ai_agent_disclaimer}",
+              "description": "Claude Code 是 Anthropic 的 AI 编码代理。需要付费的 Claude 计划（Pro、Max、Team 或 Enterprise）。\n\n@{ai_agent_disclaimer}",
               "icon": "claude-code.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/claude-code.sh"
             },
             {
               "name": "Codex",
-              "description": "来自 OpenAI 的 AI 编码代理。在终端中自动化编码任务。\n\n{ai_agent_disclaimer}",
+              "description": "来自 OpenAI 的 AI 编码代理。在终端中自动化编码任务。\n\n@{ai_agent_disclaimer}",
               "icon": "codex.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/codex.sh"
             },
             {
+              "name": "LM Studio",
+              "description": "通过图形化控制面板、聊天界面和可编程API,在您的计算机上体验LLM。",
+              "icon": "lmstudio.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/lmstudio.sh"
+            },
+            {
               "name": "OMP",
-              "description": "具有更多工具和多模型支持的 Pi 分支。终端的 AI 编码代理。\n\n{ai_agent_disclaimer}",
+              "description": "具有更多工具和多模型支持的 Pi 分支。终端的 AI 编码代理。\n\n@{ai_agent_disclaimer}",
               "icon": "omp.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/omp.sh"
             },
             {
               "name": "OpenCode",
-              "description": "开源 AI 编码代理。包含免费模型或从任何提供商连接任何模型。\n\n{ai_agent_disclaimer}",
+              "description": "开源 AI 编码代理。包含免费模型或从任何提供商连接任何模型。\n\n@{ai_agent_disclaimer}",
               "icon": "opencode.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/opencode.sh"
             },
             {
               "name": "Pi",
-              "description": "AI 编码代理。终端的轻量级和快速编码助手。\n\n{ai_agent_disclaimer}",
+              "description": "AI 编码代理。终端的轻量级和快速编码助手。\n\n@{ai_agent_disclaimer}",
               "icon": "pi-coding-agent.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/pi.sh"
             },
             {
               "name": "Skills Seeker",
-              "description": "skills_seeker_desc",
+              "description": "从目录浏览、搜索并安装 AI 代理技能。",
               "icon": "skills-seeker.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/skills-seeker.sh"
@@ -9436,13 +9839,6 @@
           "icon": "nvidia.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/nv-rpm.sh"
-        },
-        {
-          "name": "Nvidia Drivers (v470)",
-          "description": "旧版Nvidia驱动程序。支持的GPU：Kepler（GT 6xx）和Fermi（GT 7xx）。",
-          "icon": "nvidia.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/drivers/nv-suse-470.sh"
         },
         {
           "name": "Nvidia Drivers",
@@ -9784,6 +10180,13 @@
           "scriptPath": "p3/scripts/extra/ufw.sh"
         },
         {
+          "name": "UMIP Patch",
+          "description": "通过内核参数禁用 CPU UMIP。运行某些 Windows 应用程序（通过 WINE/Proton）时可能需要此选项。",
+          "icon": "terminal.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/umip.sh"
+        },
+        {
           "name": "Wayland 模式中的 Proton",
           "description": "将Proton设置为默认在wine-wayland模式下运行。您可以在Steam或首选的游戏启动器中的启动选项中为可能无法正确使用此模式的游戏选择性地设置环境变量PROTON_USE_WINE_WAYLAND=0。",
           "icon": "proton.svg",
@@ -10091,6 +10494,13 @@
           "scriptPath": "p3/scripts/office/libreoffice.sh"
         },
         {
+          "name": "MetaTrader 5",
+          "description": "强大便捷的外汇、股票、期货及其他工具交易平台。",
+          "icon": "mt5.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/office/mt5.sh"
+        },
+        {
           "name": "Obsidian",
           "description": "自由灵活的思考、笔记和组织应用程序。",
           "icon": "obsidian.svg",
@@ -10272,6 +10682,20 @@
           "scriptPath": "p3/scripts/sysadm/cpu-x.sh"
         },
         {
+          "name": "Medicat USB",
+          "description": "精选最新的计算机诊断和恢复工具，整合到一个易于使用的 Live USB 工具包中。",
+          "icon": "medicat.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/sysadm/medicat.sh"
+        },
+        {
+          "name": "QDiskInfo",
+          "description": "smartctl 的前端,显示现代硬盘和固态硬盘的 SMART 数据。提供类似于 CrystalDiskInfo 的用户体验。",
+          "icon": "qdiskinfo.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/sysadm/qdiskinfo.sh"
+        },
+        {
           "name": "Sloth-Bash",
           "description": "一个bash库，使得与terminal的交互对headless系统、开发人员和爱好者更加友好和实用。也由Psygreg开发。",
           "icon": "sloth.svg",
@@ -10443,6 +10867,13 @@
           "scriptPath": "p3/scripts/utils/obs.sh"
         },
         {
+          "name": "OCCT",
+          "description": "稳定性测试和性能基准测试工具。",
+          "icon": "occt.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/occt.sh"
+        },
+        {
           "name": "PeaZip",
           "description": "支持多种格式的免费文件归档工具。",
           "icon": "peazip.png",
@@ -10539,6 +10970,13 @@
           "icon": "qpwgraph.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/qpw.sh"
+        },
+        {
+          "name": "QtScrcpy",
+          "description": "通过 USB 或 WiFi 网络镜像并控制 Android 设备。",
+          "icon": "qtscrcpy.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/qtscrcpy.sh"
         },
         {
           "name": "Rclone UI",
@@ -10752,6 +11190,37 @@
     }
   },
   "ja": {
+    "accessibility": {
+      "name": "accessibility",
+      "icon": "accessibility.svg",
+      "description": "特別なものかどうかを問わず、ニーズに合わせてシステムを調整します。",
+      "mode": "menu",
+      "tools": [
+        {
+          "name": "Atkinson Hyperlegible",
+          "description": "弱視の人の視認性と読みやすさを向上させるために設計された書体です。",
+          "icon": "lucidglyph.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/accessibility/atkinson.sh"
+        },
+        {
+          "name": "OpenDyslexic",
+          "description": "ディスレクシアのある人の読みやすさを向上させるために作られたオープンソースのフォントです。",
+          "icon": "lucidglyph.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/accessibility/opendyslexic.sh"
+        },
+        {
+          "name": "IBus Typing Booster",
+          "description": "入力を高速化し、単語の綴りが苦手な人を支援する予測入力方式です。",
+          "icon": "itb.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/accessibility/typeboost.sh"
+        }
+      ],
+      "subcategories": {},
+      "displayName": "アクセシビリティ"
+    },
     "chat": {
       "name": "chat",
       "icon": "chat.svg",
@@ -11086,42 +11555,49 @@
           "tools": [
             {
               "name": "Claude Code",
-              "description": "Claude CodeはAnthropicの AI コーディングエージェントです。有料の Claude プラン (Pro、Max、Team、または Enterprise) が必要です。\n\n{ai_agent_disclaimer}",
+              "description": "Claude CodeはAnthropicの AI コーディングエージェントです。有料の Claude プラン (Pro、Max、Team、または Enterprise) が必要です。\n\n@{ai_agent_disclaimer}",
               "icon": "claude-code.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/claude-code.sh"
             },
             {
               "name": "Codex",
-              "description": "OpenAI の AI コーディングエージェント。ターミナルでコーディングタスクを自動化します。\n\n{ai_agent_disclaimer}",
+              "description": "OpenAI の AI コーディングエージェント。ターミナルでコーディングタスクを自動化します。\n\n@{ai_agent_disclaimer}",
               "icon": "codex.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/codex.sh"
             },
             {
+              "name": "LM Studio",
+              "description": "GUIコントロールパネル、チャットインターフェース、プログラム可能なAPIで、あなたのコンピューター上でLLMを試してみましょう。",
+              "icon": "lmstudio.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/lmstudio.sh"
+            },
+            {
               "name": "OMP",
-              "description": "より多くのツールとマルチモデルサポートを備えたPiのフォーク。ターミナルのAIコーディングエージェント。\n\n{ai_agent_disclaimer}",
+              "description": "より多くのツールとマルチモデルサポートを備えたPiのフォーク。ターミナルのAIコーディングエージェント。\n\n@{ai_agent_disclaimer}",
               "icon": "omp.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/omp.sh"
             },
             {
               "name": "OpenCode",
-              "description": "オープンソースの AI コーディングエージェント。無料モデルが含まれているか、任意のプロバイダーから任意のモデルを接続してください。\n\n{ai_agent_disclaimer}",
+              "description": "オープンソースの AI コーディングエージェント。無料モデルが含まれているか、任意のプロバイダーから任意のモデルを接続してください。\n\n@{ai_agent_disclaimer}",
               "icon": "opencode.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/opencode.sh"
             },
             {
               "name": "Pi",
-              "description": "AI コーディングエージェント。ターミナルの軽量で高速なコーディングアシスタント。\n\n{ai_agent_disclaimer}",
+              "description": "AI コーディングエージェント。ターミナルの軽量で高速なコーディングアシスタント。\n\n@{ai_agent_disclaimer}",
               "icon": "pi-coding-agent.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/pi.sh"
             },
             {
               "name": "Skills Seeker",
-              "description": "skills_seeker_desc",
+              "description": "カタログからAIエージェントのスキルを閲覧、検索、インストールします。",
               "icon": "skills-seeker.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/skills-seeker.sh"
@@ -11228,13 +11704,6 @@
           "icon": "nvidia.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/nv-rpm.sh"
-        },
-        {
-          "name": "Nvidia Drivers (v470)",
-          "description": "レガシーNvidiaドライバー。サポートGPU：Kepler（GT 6xx）とFermi（GT 7xx）。",
-          "icon": "nvidia.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/drivers/nv-suse-470.sh"
         },
         {
           "name": "Nvidia Drivers",
@@ -11576,6 +12045,13 @@
           "scriptPath": "p3/scripts/extra/ufw.sh"
         },
         {
+          "name": "UMIP Patch",
+          "description": "カーネルパラメータを使用して CPU の UMIP を無効化します。WINE/Proton 経由で一部の Windows アプリケーションを実行するために必要な場合があります。",
+          "icon": "terminal.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/umip.sh"
+        },
+        {
           "name": "Wayland モードの Proton",
           "description": "Proton をデフォルトで wine-wayland モードで実行するように設定します。Steam または選択したゲーム ランチャーの起動オプションで、このモードで適切に機能しない可能性があるゲームの環境変数 PROTON_USE_WINE_WAYLAND=0 を選択的に設定できます。",
           "icon": "proton.svg",
@@ -11883,6 +12359,13 @@
           "scriptPath": "p3/scripts/office/libreoffice.sh"
         },
         {
+          "name": "MetaTrader 5",
+          "description": "外国為替(Forex)、株式、先物、その他の商品を取引するための強力で便利なプラットフォーム。",
+          "icon": "mt5.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/office/mt5.sh"
+        },
+        {
           "name": "Obsidian",
           "description": "思考、ノート、整理のための自由で柔軟なアプリ。",
           "icon": "obsidian.svg",
@@ -12064,6 +12547,20 @@
           "scriptPath": "p3/scripts/sysadm/cpu-x.sh"
         },
         {
+          "name": "Medicat USB",
+          "description": "最新のコンピューター診断および復旧ツールを、使いやすい Live USB ツールキットとしてまとめたものです。",
+          "icon": "medicat.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/sysadm/medicat.sh"
+        },
+        {
+          "name": "QDiskInfo",
+          "description": "最新のハードディスクおよびソリッドステートドライブのSMARTデータを表示するsmartctlのフロントエンド。CrystalDiskInfoに似たユーザー体験を提供します。",
+          "icon": "qdiskinfo.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/sysadm/qdiskinfo.sh"
+        },
+        {
           "name": "Sloth-Bash",
           "description": "ヘッドレスシステム、開発者、愛好家のためにターミナルの使用をより親切で実用的にするbashライブラリ。これもPsygregによって開発されました。",
           "icon": "sloth.svg",
@@ -12235,6 +12732,13 @@
           "scriptPath": "p3/scripts/utils/obs.sh"
         },
         {
+          "name": "OCCT",
+          "description": "安定性テストおよびベンチマークツール。",
+          "icon": "occt.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/occt.sh"
+        },
+        {
           "name": "PeaZip",
           "description": "多くの形式をサポートする無料のファイルアーカイバーユーティリティ。",
           "icon": "peazip.png",
@@ -12331,6 +12835,13 @@
           "icon": "qpwgraph.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/qpw.sh"
+        },
+        {
+          "name": "QtScrcpy",
+          "description": "USB または WiFi ネットワーク経由で Android デバイスをミラーリングして操作します。",
+          "icon": "qtscrcpy.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/qtscrcpy.sh"
         },
         {
           "name": "Rclone UI",
@@ -12544,6 +13055,37 @@
     }
   },
   "ru": {
+    "accessibility": {
+      "name": "accessibility",
+      "icon": "accessibility.svg",
+      "description": "Настройте систему под свои потребности, особые или обычные.",
+      "mode": "menu",
+      "tools": [
+        {
+          "name": "Atkinson Hyperlegible",
+          "description": "Шрифт, разработанный для улучшения читаемости и разборчивости текста для людей с ослабленным зрением.",
+          "icon": "lucidglyph.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/accessibility/atkinson.sh"
+        },
+        {
+          "name": "OpenDyslexic",
+          "description": "Шрифт с открытым исходным кодом, созданный для повышения удобочитаемости для людей с дислексией.",
+          "icon": "lucidglyph.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/accessibility/opendyslexic.sh"
+        },
+        {
+          "name": "IBus Typing Booster",
+          "description": "Метод ввода с дополнением слов, ускоряющий набор текста и помогающий людям, испытывающим трудности с правописанием.",
+          "icon": "itb.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/accessibility/typeboost.sh"
+        }
+      ],
+      "subcategories": {},
+      "displayName": "Специальные возможности"
+    },
     "chat": {
       "name": "chat",
       "icon": "chat.svg",
@@ -12878,42 +13420,49 @@
           "tools": [
             {
               "name": "Claude Code",
-              "description": "Claude Code — это агент кодирования AI от Anthropic. Требуется платный план Claude (Pro, Max, Team или Enterprise).\n\n{ai_agent_disclaimer}",
+              "description": "Claude Code — это агент кодирования AI от Anthropic. Требуется платный план Claude (Pro, Max, Team или Enterprise).\n\n@{ai_agent_disclaimer}",
               "icon": "claude-code.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/claude-code.sh"
             },
             {
               "name": "Codex",
-              "description": "Агент кодирования AI от OpenAI. Автоматизирует задачи кодирования в терминале.\n\n{ai_agent_disclaimer}",
+              "description": "Агент кодирования AI от OpenAI. Автоматизирует задачи кодирования в терминале.\n\n@{ai_agent_disclaimer}",
               "icon": "codex.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/codex.sh"
             },
             {
+              "name": "LM Studio",
+              "description": "Экспериментируйте с LLM на своём компьютере с помощью графической панели управления, чат-интерфейса и программируемого API.",
+              "icon": "lmstudio.png",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/devs/ai_agents/lmstudio.sh"
+            },
+            {
               "name": "OMP",
-              "description": "Ветвь Pi с большим количеством инструментов и поддержкой нескольких моделей. Агент кодирования AI для терминала.\n\n{ai_agent_disclaimer}",
+              "description": "Ветвь Pi с большим количеством инструментов и поддержкой нескольких моделей. Агент кодирования AI для терминала.\n\n@{ai_agent_disclaimer}",
               "icon": "omp.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/omp.sh"
             },
             {
               "name": "OpenCode",
-              "description": "Агент кодирования AI с открытым кодом. Бесплатные модели включены или подключите любую модель от любого поставщика.\n\n{ai_agent_disclaimer}",
+              "description": "Агент кодирования AI с открытым кодом. Бесплатные модели включены или подключите любую модель от любого поставщика.\n\n@{ai_agent_disclaimer}",
               "icon": "opencode.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/opencode.sh"
             },
             {
               "name": "Pi",
-              "description": "Агент кодирования AI. Легкий и быстрый помощник кодирования в терминале.\n\n{ai_agent_disclaimer}",
+              "description": "Агент кодирования AI. Легкий и быстрый помощник кодирования в терминале.\n\n@{ai_agent_disclaimer}",
               "icon": "pi-coding-agent.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/pi.sh"
             },
             {
               "name": "Skills Seeker",
-              "description": "skills_seeker_desc",
+              "description": "Просматривайте, ищите и устанавливайте навыки ИИ-агента из каталога.",
               "icon": "skills-seeker.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/devs/ai_agents/skills-seeker.sh"
@@ -13020,13 +13569,6 @@
           "icon": "nvidia.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/drivers/nv-rpm.sh"
-        },
-        {
-          "name": "Nvidia Drivers (v470)",
-          "description": "Устаревшие драйверы Nvidia. Поддерживаемые GPU: Kepler (GT 6xx) и Fermi (GT 7xx).",
-          "icon": "nvidia.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/drivers/nv-suse-470.sh"
         },
         {
           "name": "Nvidia Drivers",
@@ -13368,6 +13910,13 @@
           "scriptPath": "p3/scripts/extra/ufw.sh"
         },
         {
+          "name": "UMIP Patch",
+          "description": "Отключает UMIP процессора с помощью параметра ядра. Может потребоваться для запуска некоторых приложений Windows через WINE/Proton.",
+          "icon": "terminal.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/umip.sh"
+        },
+        {
           "name": "Proton в режиме Wayland",
           "description": "Устанавливает Proton для запуска в режиме wine-wayland по умолчанию. Вы можете выборочно установить переменную окружения PROTON_USE_WINE_WAYLAND=0 для игр, которые могут работать неправильно в этом режиме, в параметрах запуска в Steam или в предпочитаемом вами игровом лаунчере.",
           "icon": "proton.svg",
@@ -13675,6 +14224,13 @@
           "scriptPath": "p3/scripts/office/libreoffice.sh"
         },
         {
+          "name": "MetaTrader 5",
+          "description": "Мощная и удобная платформа для торговли Forex, акциями, фьючерсами и другими инструментами.",
+          "icon": "mt5.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/office/mt5.sh"
+        },
+        {
           "name": "Obsidian",
           "description": "Бесплатное, гибкое приложение для ваших мыслей, заметок и организации.",
           "icon": "obsidian.svg",
@@ -13856,6 +14412,20 @@
           "scriptPath": "p3/scripts/sysadm/cpu-x.sh"
         },
         {
+          "name": "Medicat USB",
+          "description": "Подборка новейших инструментов для диагностики и восстановления компьютеров, собранных в удобный Live USB-комплект.",
+          "icon": "medicat.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/sysadm/medicat.sh"
+        },
+        {
+          "name": "QDiskInfo",
+          "description": "Интерфейс для smartctl, отображающий данные SMART современных жестких дисков и твердотельных накопителей. Обеспечивает пользовательский опыт, аналогичный CrystalDiskInfo.",
+          "icon": "qdiskinfo.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/sysadm/qdiskinfo.sh"
+        },
+        {
           "name": "Sloth-Bash",
           "description": "Библиотека bash, которая делает использование терминала более дружелюбным и практичным для headless-систем, разработчиков и энтузиастов. Также разработана Psygreg.",
           "icon": "sloth.svg",
@@ -14027,6 +14597,13 @@
           "scriptPath": "p3/scripts/utils/obs.sh"
         },
         {
+          "name": "OCCT",
+          "description": "Инструмент для тестирования стабильности и производительности.",
+          "icon": "occt.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/occt.sh"
+        },
+        {
           "name": "PeaZip",
           "description": "Бесплатная утилита для архивации файлов, поддерживающая множество форматов.",
           "icon": "peazip.png",
@@ -14123,6 +14700,13 @@
           "icon": "qpwgraph.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/qpw.sh"
+        },
+        {
+          "name": "QtScrcpy",
+          "description": "Отображайте экран и управляйте устройствами Android через USB или сеть WiFi.",
+          "icon": "qtscrcpy.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/qtscrcpy.sh"
         },
         {
           "name": "Rclone UI",
