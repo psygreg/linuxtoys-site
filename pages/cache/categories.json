@@ -420,6 +420,13 @@
     "mode": "menu",
     "tools": [
       {
+        "name": "AMD GPU Driver",
+        "description": "amdgpu_desc",
+        "icon": "amd.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/drivers/amdgpu.sh"
+      },
+      {
         "name": "Broadcom WiFi",
         "description": "bcm_desc",
         "icon": "bcm.png",
@@ -1706,7 +1713,30 @@
         "scriptPath": "p3/scripts/utils/waylume.sh"
       }
     ],
-    "subcategories": {}
+    "subcategories": {
+      "theming": {
+        "name": "theming",
+        "icon": "theming.svg",
+        "description": "theming_desc",
+        "mode": "menu",
+        "tools": [
+          {
+            "name": "flattheme",
+            "description": "flattheme_desc",
+            "icon": "flathub.svg",
+            "version": "1.0",
+            "scriptPath": "p3/scripts/utils/theming/flattheme.sh"
+          },
+          {
+            "name": "Rewaita",
+            "description": "rewaita_desc",
+            "icon": "rewaita.svg",
+            "version": "1.0",
+            "scriptPath": "p3/scripts/utils/theming/rewaita.sh"
+          }
+        ]
+      }
+    }
   },
   "privacy": {
     "name": "privacy",

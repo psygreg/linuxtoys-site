@@ -509,7 +509,13 @@
     "accessibility_desc": "Adjust your system to your needs - special or not.",
     "od_desc": "An open source font created to help increase readability for readers with dyslexia.",
     "itb_desc": "A completion input method to speed up typing and help people with word spelling difficulties.",
-    "atkinson_desc": "A typeface designed to improve legibility and readability for readers with low vision."
+    "atkinson_desc": "A typeface designed to improve legibility and readability for readers with low vision.",
+    "flattheme": "Enable Flatpak Theming",
+    "flattheme_desc": "Enables Flatpak theming support for GTK3 and GTK4 applications, allowing them to use the system's theme and appearance settings.",
+    "theming": "Theming",
+    "theming_desc": "Tools to help you tune the appearance of your system and applications to your liking.",
+    "rewaita_desc": "Change the look of GNOME's shell, GTK4 and GTK3 apps without the hassle. Several color schemes to pick from, and you can even create your own!",
+    "amdgpu_desc": "Install the latest AMD Radeon graphics drivers on Ubuntu LTS and Red Hat Enterprise Linux."
   },
   "pt": {
     "subtitle": "Uma coleção amigável de ferramentas para Linux.",
@@ -1021,7 +1027,13 @@
     "accessibility_desc": "Ajuste o sistema às suas necessidades, especiais ou não.",
     "od_desc": "Uma fonte de código aberto criada para ajudar a melhorar a legibilidade para pessoas com dislexia.",
     "itb_desc": "Um método de entrada com preenchimento de palavras para acelerar a digitação e ajudar pessoas com dificuldades de ortografia.",
-    "atkinson_desc": "Uma fonte projetada para melhorar a legibilidade e a facilidade de leitura para pessoas com baixa visão."
+    "atkinson_desc": "Uma fonte projetada para melhorar a legibilidade e a facilidade de leitura para pessoas com baixa visão.",
+    "flattheme": "Ativar temas para Flatpak",
+    "flattheme_desc": "Ativa o suporte a temas para aplicativos Flatpak GTK3 e GTK4, permitindo que eles usem o tema e as configurações de aparência do sistema.",
+    "theming": "Tematização",
+    "theming_desc": "Ferramentas para ajudar a ajustar a aparência do seu sistema e aplicativos ao seu gosto.",
+    "rewaita_desc": "Mude a aparência do shell do GNOME e dos aplicativos GTK4 e GTK3 sem complicações. Há vários esquemas de cores para escolher, e você pode até criar o seu próprio!",
+    "amdgpu_desc": "Instale os drivers gráficos AMD Radeon mais recentes no Ubuntu LTS e no Red Hat Enterprise Linux."
   },
   "es": {
     "subtitle": "Una colección amigable de herramientas para Linux.",
@@ -1533,7 +1545,13 @@
     "accessibility_desc": "Adapta tu sistema a tus necesidades, sean especiales o no.",
     "od_desc": "Una fuente de código abierto creada para mejorar la legibilidad de las personas con dislexia.",
     "itb_desc": "Un método de entrada con completado de palabras que acelera la escritura y ayuda a personas con dificultades ortográficas.",
-    "atkinson_desc": "Una tipografía diseñada para mejorar la legibilidad y la facilidad de lectura de personas con baja visión."
+    "atkinson_desc": "Una tipografía diseñada para mejorar la legibilidad y la facilidad de lectura de personas con baja visión.",
+    "flattheme": "Activar temas para Flatpak",
+    "flattheme_desc": "Activa la compatibilidad con temas de Flatpak para aplicaciones GTK3 y GTK4, permitiéndoles utilizar el tema y los ajustes de apariencia del sistema.",
+    "theming": "Temas",
+    "theming_desc": "Herramientas para adaptar la apariencia de tu sistema y aplicaciones a tu gusto.",
+    "rewaita_desc": "Cambia fácilmente el aspecto de GNOME Shell y de las aplicaciones GTK4 y GTK3. Hay varios esquemas de colores para elegir, ¡e incluso puedes crear el tuyo!",
+    "amdgpu_desc": "Instala los controladores gráficos AMD Radeon más recientes en Ubuntu LTS y Red Hat Enterprise Linux."
   },
   "fr": {
     "subtitle": "Une collection d'outils pour Linux de manière conviviale.",
@@ -2045,7 +2063,13 @@
     "accessibility_desc": "Adaptez votre système à vos besoins, particuliers ou non.",
     "od_desc": "Une police open source conçue pour améliorer la lisibilité chez les personnes dyslexiques.",
     "itb_desc": "Une méthode de saisie avec complétion des mots pour accélérer la frappe et aider les personnes ayant des difficultés d'orthographe.",
-    "atkinson_desc": "Une police conçue pour améliorer la lisibilité des personnes malvoyantes."
+    "atkinson_desc": "Une police conçue pour améliorer la lisibilité des personnes malvoyantes.",
+    "flattheme": "Activer les thèmes Flatpak",
+    "flattheme_desc": "Active la prise en charge des thèmes Flatpak pour les applications GTK3 et GTK4, leur permettant d'utiliser le thème et les paramètres d'apparence du système.",
+    "theming": "Thèmes",
+    "theming_desc": "Des outils pour personnaliser l'apparence de votre système et de vos applications selon vos préférences.",
+    "rewaita_desc": "Modifiez facilement l’apparence de GNOME Shell ainsi que des applications GTK4 et GTK3. Plusieurs palettes de couleurs sont proposées, et vous pouvez même créer la vôtre !",
+    "amdgpu_desc": "Installez les derniers pilotes graphiques AMD Radeon sur Ubuntu LTS et Red Hat Enterprise Linux."
   },
   "de": {
     "subtitle": "Eine freundliche Sammlung von Tools für Linux.",
@@ -2557,7 +2581,13 @@
     "accessibility_desc": "Passen Sie Ihr System an Ihre Bedürfnisse an – ob speziell oder nicht.",
     "od_desc": "Eine quelloffene Schriftart, die die Lesbarkeit für Menschen mit Legasthenie verbessern soll.",
     "itb_desc": "Eine Eingabemethode mit Wortvervollständigung, die das Tippen beschleunigt und Menschen mit Rechtschreibschwierigkeiten unterstützt.",
-    "atkinson_desc": "Eine Schriftart, die entwickelt wurde, um Lesbarkeit und Erkennbarkeit für Menschen mit Sehbehinderung zu verbessern."
+    "atkinson_desc": "Eine Schriftart, die entwickelt wurde, um Lesbarkeit und Erkennbarkeit für Menschen mit Sehbehinderung zu verbessern.",
+    "flattheme": "Flatpak-Designintegration aktivieren",
+    "flattheme_desc": "Aktiviert die Flatpak-Designintegration für GTK3- und GTK4-Anwendungen, sodass diese das Systemdesign und dessen Darstellungseinstellungen verwenden können.",
+    "theming": "Themes",
+    "theming_desc": "Werkzeuge, mit denen Sie das Erscheinungsbild Ihres Systems und Ihrer Anwendungen nach Ihren Wünschen anpassen können.",
+    "rewaita_desc": "Ändern Sie unkompliziert das Aussehen der GNOME Shell sowie von GTK4- und GTK3-Anwendungen. Es stehen mehrere Farbschemata zur Auswahl, und Sie können sogar ein eigenes erstellen!",
+    "amdgpu_desc": "Installieren Sie die neuesten AMD-Radeon-Grafiktreiber unter Ubuntu LTS und Red Hat Enterprise Linux."
   },
   "zh": {
     "subtitle": "适用于Linux的用户友好工具集合。",
@@ -3071,7 +3101,13 @@
     "accessibility_desc": "根据您的需求调整系统，无论是否属于特殊需求。",
     "od_desc": "一种开源字体，旨在提高有阅读障碍人士的文字可读性。",
     "itb_desc": "一种带有词语补全功能的输入法，可提高打字速度，并帮助有拼写困难的人。",
-    "atkinson_desc": "一种旨在提高低视力读者文字辨识度和可读性的字体。"
+    "atkinson_desc": "一种旨在提高低视力读者文字辨识度和可读性的字体。",
+    "flattheme": "启用 Flatpak 主题",
+    "flattheme_desc": "为 GTK3 和 GTK4 应用启用 Flatpak 主题支持，使其能够使用系统主题和外观设置。",
+    "theming": "主题",
+    "theming_desc": "帮助您按照自己的喜好调整系统和应用程序外观的工具。",
+    "rewaita_desc": "轻松更改 GNOME Shell 以及 GTK4 和 GTK3 应用的外观。您可以从多种配色方案中选择，甚至还能创建自己的配色方案！",
+    "amdgpu_desc": "在 Ubuntu LTS 和 Red Hat Enterprise Linux 上安装最新的 AMD Radeon 显卡驱动程序。"
   },
   "ja": {
     "subtitle": "Linuxのためのユーザーフレンドリーなツール集。",
@@ -3583,7 +3619,13 @@
     "accessibility_desc": "特別なものかどうかを問わず、ニーズに合わせてシステムを調整します。",
     "od_desc": "ディスレクシアのある人の読みやすさを向上させるために作られたオープンソースのフォントです。",
     "itb_desc": "入力を高速化し、単語の綴りが苦手な人を支援する予測入力方式です。",
-    "atkinson_desc": "弱視の人の視認性と読みやすさを向上させるために設計された書体です。"
+    "atkinson_desc": "弱視の人の視認性と読みやすさを向上させるために設計された書体です。",
+    "flattheme": "Flatpak のテーマ対応を有効化",
+    "flattheme_desc": "GTK3 および GTK4 アプリケーションで Flatpak のテーマ対応を有効にし、システムのテーマと外観設定を使用できるようにします。",
+    "theming": "テーマ",
+    "theming_desc": "システムやアプリケーションの外観を好みに合わせて調整するためのツールです。",
+    "rewaita_desc": "GNOME Shell、GTK4、GTK3アプリの外観を手軽に変更できます。複数の配色から選べるほか、独自の配色を作成することもできます！",
+    "amdgpu_desc": "Ubuntu LTSおよびRed Hat Enterprise Linuxに最新のAMD Radeonグラフィックスドライバーをインストールします。"
   },
   "ru": {
     "subtitle": "Коллекция инструментов для Linux в удобном формате.",
@@ -4095,6 +4137,12 @@
     "accessibility_desc": "Настройте систему под свои потребности, особые или обычные.",
     "od_desc": "Шрифт с открытым исходным кодом, созданный для повышения удобочитаемости для людей с дислексией.",
     "itb_desc": "Метод ввода с дополнением слов, ускоряющий набор текста и помогающий людям, испытывающим трудности с правописанием.",
-    "atkinson_desc": "Шрифт, разработанный для улучшения читаемости и разборчивости текста для людей с ослабленным зрением."
+    "atkinson_desc": "Шрифт, разработанный для улучшения читаемости и разборчивости текста для людей с ослабленным зрением.",
+    "flattheme": "Включить темы для Flatpak",
+    "flattheme_desc": "Включает поддержку тем Flatpak для приложений GTK3 и GTK4, позволяя им использовать системную тему и настройки внешнего вида.",
+    "theming": "Темы",
+    "theming_desc": "Инструменты для настройки внешнего вида системы и приложений по вашему вкусу.",
+    "rewaita_desc": "Легко изменяйте внешний вид оболочки GNOME, а также приложений GTK4 и GTK3. На выбор доступно несколько цветовых схем, и вы даже можете создать собственную!",
+    "amdgpu_desc": "Установите новейшие графические драйверы AMD Radeon в Ubuntu LTS и Red Hat Enterprise Linux."
   }
 }
