@@ -849,6 +849,13 @@
         "scriptPath": "p3/scripts/extra/thumb.sh"
       },
       {
+        "name": "ubuntuv3",
+        "description": "ubuntuv3_desc",
+        "icon": "ubuntu.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/extra/ubuntuv3.sh"
+      },
+      {
         "name": "ufw",
         "description": "ufw_desc",
         "icon": "firewall.svg",
