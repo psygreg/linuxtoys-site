@@ -425,6 +425,13 @@
       "mode": "menu",
       "tools": [
         {
+          "name": "AMD GPU Driver",
+          "description": "Install the latest AMD Radeon graphics drivers on Ubuntu LTS and Red Hat Enterprise Linux.",
+          "icon": "amd.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/amdgpu.sh"
+        },
+        {
           "name": "Broadcom WiFi",
           "description": "Proprietary Broadcom WiFi drivers for Linux. Only use if your card is not working with the kernel-embedded open-source drivers.",
           "icon": "bcm.png",
@@ -846,6 +853,13 @@
           "icon": "handbrake.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/thumb.sh"
+        },
+        {
+          "name": "Enable x86-64v3 Packages",
+          "description": "Sets up preference for optimized packages for x86-64v3 processors on Ubuntu, which can bring small performance improvements.",
+          "icon": "ubuntu.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/ubuntuv3.sh"
         },
         {
           "name": "Configure Firewall",
@@ -1717,7 +1731,31 @@
           "scriptPath": "p3/scripts/utils/waylume.sh"
         }
       ],
-      "subcategories": {},
+      "subcategories": {
+        "theming": {
+          "name": "theming",
+          "icon": "theming.svg",
+          "description": "Tools to help you tune the appearance of your system and applications to your liking.",
+          "mode": "menu",
+          "tools": [
+            {
+              "name": "Enable Flatpak Theming",
+              "description": "Enables Flatpak theming support for GTK3 and GTK4 applications, allowing them to use the system's theme and appearance settings.",
+              "icon": "flathub.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/theming/flattheme.sh"
+            },
+            {
+              "name": "Rewaita",
+              "description": "Change the look of GNOME's shell, GTK4 and GTK3 apps without the hassle. Several color schemes to pick from, and you can even create your own!",
+              "icon": "rewaita.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/theming/rewaita.sh"
+            }
+          ],
+          "displayName": "Theming"
+        }
+      },
       "displayName": "Utilities"
     },
     "privacy": {
@@ -2290,6 +2328,13 @@
       "mode": "menu",
       "tools": [
         {
+          "name": "AMD GPU Driver",
+          "description": "Instale os drivers gráficos AMD Radeon mais recentes no Ubuntu LTS e no Red Hat Enterprise Linux.",
+          "icon": "amd.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/amdgpu.sh"
+        },
+        {
           "name": "Broadcom WiFi",
           "description": "Drivers proprietários Broadcom WiFi para Linux. Use apenas se sua placa não estiver funcionando com os drivers open-source embutidos no kernel.",
           "icon": "bcm.png",
@@ -2711,6 +2756,13 @@
           "icon": "handbrake.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/thumb.sh"
+        },
+        {
+          "name": "Ativar pacotes x86-64v3",
+          "description": "Configura o Ubuntu para dar preferência a pacotes otimizados para processadores x86-64v3, o que pode trazer pequenos ganhos de desempenho.",
+          "icon": "ubuntu.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/ubuntuv3.sh"
         },
         {
           "name": "Configurar Firewall",
@@ -3582,7 +3634,31 @@
           "scriptPath": "p3/scripts/utils/waylume.sh"
         }
       ],
-      "subcategories": {},
+      "subcategories": {
+        "theming": {
+          "name": "theming",
+          "icon": "theming.svg",
+          "description": "Ferramentas para ajudar a ajustar a aparência do seu sistema e aplicativos ao seu gosto.",
+          "mode": "menu",
+          "tools": [
+            {
+              "name": "Ativar temas para Flatpak",
+              "description": "Ativa o suporte a temas para aplicativos Flatpak GTK3 e GTK4, permitindo que eles usem o tema e as configurações de aparência do sistema.",
+              "icon": "flathub.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/theming/flattheme.sh"
+            },
+            {
+              "name": "Rewaita",
+              "description": "Mude a aparência do shell do GNOME e dos aplicativos GTK4 e GTK3 sem complicações. Há vários esquemas de cores para escolher, e você pode até criar o seu próprio!",
+              "icon": "rewaita.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/theming/rewaita.sh"
+            }
+          ],
+          "displayName": "Tematização"
+        }
+      },
       "displayName": "Utilidades"
     },
     "privacy": {
@@ -4155,6 +4231,13 @@
       "mode": "menu",
       "tools": [
         {
+          "name": "AMD GPU Driver",
+          "description": "Instala los controladores gráficos AMD Radeon más recientes en Ubuntu LTS y Red Hat Enterprise Linux.",
+          "icon": "amd.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/amdgpu.sh"
+        },
+        {
           "name": "Broadcom WiFi",
           "description": "Controladores propietarios Broadcom WiFi para Linux. Solo usar si su tarjeta no funciona con los controladores de código abierto integrados en el kernel.",
           "icon": "bcm.png",
@@ -4576,6 +4659,13 @@
           "icon": "handbrake.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/thumb.sh"
+        },
+        {
+          "name": "Habilitar paquetes x86-64v3",
+          "description": "Configura Ubuntu para dar prioridad a los paquetes optimizados para procesadores x86-64v3, lo que puede aportar pequeñas mejoras de rendimiento.",
+          "icon": "ubuntu.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/ubuntuv3.sh"
         },
         {
           "name": "Configurar Firewall",
@@ -5447,7 +5537,31 @@
           "scriptPath": "p3/scripts/utils/waylume.sh"
         }
       ],
-      "subcategories": {},
+      "subcategories": {
+        "theming": {
+          "name": "theming",
+          "icon": "theming.svg",
+          "description": "Herramientas para adaptar la apariencia de tu sistema y aplicaciones a tu gusto.",
+          "mode": "menu",
+          "tools": [
+            {
+              "name": "Activar temas para Flatpak",
+              "description": "Activa la compatibilidad con temas de Flatpak para aplicaciones GTK3 y GTK4, permitiéndoles utilizar el tema y los ajustes de apariencia del sistema.",
+              "icon": "flathub.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/theming/flattheme.sh"
+            },
+            {
+              "name": "Rewaita",
+              "description": "Cambia fácilmente el aspecto de GNOME Shell y de las aplicaciones GTK4 y GTK3. Hay varios esquemas de colores para elegir, ¡e incluso puedes crear el tuyo!",
+              "icon": "rewaita.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/theming/rewaita.sh"
+            }
+          ],
+          "displayName": "Temas"
+        }
+      },
       "displayName": "Utilidades"
     },
     "privacy": {
@@ -6020,6 +6134,13 @@
       "mode": "menu",
       "tools": [
         {
+          "name": "AMD GPU Driver",
+          "description": "Installez les derniers pilotes graphiques AMD Radeon sur Ubuntu LTS et Red Hat Enterprise Linux.",
+          "icon": "amd.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/amdgpu.sh"
+        },
+        {
           "name": "Broadcom WiFi",
           "description": "Pilotes WiFi Broadcom propriétaires pour Linux. À utiliser seulement si votre carte ne fonctionne pas avec les pilotes open source intégrés au noyau.",
           "icon": "bcm.png",
@@ -6441,6 +6562,13 @@
           "icon": "handbrake.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/thumb.sh"
+        },
+        {
+          "name": "Activer les paquets x86-64v3",
+          "description": "Configure Ubuntu pour privilégier les paquets optimisés pour les processeurs x86-64v3, ce qui peut apporter de légères améliorations de performances.",
+          "icon": "ubuntu.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/ubuntuv3.sh"
         },
         {
           "name": "Configurer le pare-feu",
@@ -7312,7 +7440,31 @@
           "scriptPath": "p3/scripts/utils/waylume.sh"
         }
       ],
-      "subcategories": {},
+      "subcategories": {
+        "theming": {
+          "name": "theming",
+          "icon": "theming.svg",
+          "description": "Des outils pour personnaliser l'apparence de votre système et de vos applications selon vos préférences.",
+          "mode": "menu",
+          "tools": [
+            {
+              "name": "Activer les thèmes Flatpak",
+              "description": "Active la prise en charge des thèmes Flatpak pour les applications GTK3 et GTK4, leur permettant d'utiliser le thème et les paramètres d'apparence du système.",
+              "icon": "flathub.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/theming/flattheme.sh"
+            },
+            {
+              "name": "Rewaita",
+              "description": "Modifiez facilement l’apparence de GNOME Shell ainsi que des applications GTK4 et GTK3. Plusieurs palettes de couleurs sont proposées, et vous pouvez même créer la vôtre !",
+              "icon": "rewaita.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/theming/rewaita.sh"
+            }
+          ],
+          "displayName": "Thèmes"
+        }
+      },
       "displayName": "Utilitaires"
     },
     "privacy": {
@@ -7885,6 +8037,13 @@
       "mode": "menu",
       "tools": [
         {
+          "name": "AMD GPU Driver",
+          "description": "Installieren Sie die neuesten AMD-Radeon-Grafiktreiber unter Ubuntu LTS und Red Hat Enterprise Linux.",
+          "icon": "amd.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/amdgpu.sh"
+        },
+        {
           "name": "Broadcom WiFi",
           "description": "Proprietäre Broadcom WiFi-Treiber für Linux. Nur verwenden, wenn Ihre Karte nicht mit den kernel-eingebetteten Open-Source-Treibern funktioniert.",
           "icon": "bcm.png",
@@ -8306,6 +8465,13 @@
           "icon": "handbrake.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/thumb.sh"
+        },
+        {
+          "name": "x86-64v3-Pakete aktivieren",
+          "description": "Richtet Ubuntu so ein, dass optimierte Pakete für x86-64v3-Prozessoren bevorzugt werden, was zu kleinen Leistungsverbesserungen führen kann.",
+          "icon": "ubuntu.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/ubuntuv3.sh"
         },
         {
           "name": "Firewall konfigurieren",
@@ -9177,7 +9343,31 @@
           "scriptPath": "p3/scripts/utils/waylume.sh"
         }
       ],
-      "subcategories": {},
+      "subcategories": {
+        "theming": {
+          "name": "theming",
+          "icon": "theming.svg",
+          "description": "Werkzeuge, mit denen Sie das Erscheinungsbild Ihres Systems und Ihrer Anwendungen nach Ihren Wünschen anpassen können.",
+          "mode": "menu",
+          "tools": [
+            {
+              "name": "Flatpak-Designintegration aktivieren",
+              "description": "Aktiviert die Flatpak-Designintegration für GTK3- und GTK4-Anwendungen, sodass diese das Systemdesign und dessen Darstellungseinstellungen verwenden können.",
+              "icon": "flathub.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/theming/flattheme.sh"
+            },
+            {
+              "name": "Rewaita",
+              "description": "Ändern Sie unkompliziert das Aussehen der GNOME Shell sowie von GTK4- und GTK3-Anwendungen. Es stehen mehrere Farbschemata zur Auswahl, und Sie können sogar ein eigenes erstellen!",
+              "icon": "rewaita.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/theming/rewaita.sh"
+            }
+          ],
+          "displayName": "Themes"
+        }
+      },
       "displayName": "Utilities"
     },
     "privacy": {
@@ -9750,6 +9940,13 @@
       "mode": "menu",
       "tools": [
         {
+          "name": "AMD GPU Driver",
+          "description": "在 Ubuntu LTS 和 Red Hat Enterprise Linux 上安装最新的 AMD Radeon 显卡驱动程序。",
+          "icon": "amd.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/amdgpu.sh"
+        },
+        {
           "name": "Broadcom WiFi",
           "description": "Linux的专有Broadcom WiFi驱动程序。仅在您的网卡不能与内核嵌入的开源驱动程序一起工作时使用。",
           "icon": "bcm.png",
@@ -10171,6 +10368,13 @@
           "icon": "handbrake.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/thumb.sh"
+        },
+        {
+          "name": "启用 x86-64v3 软件包",
+          "description": "将 Ubuntu 配置为优先使用针对 x86-64v3 处理器优化的软件包，可能带来一定的性能提升。",
+          "icon": "ubuntu.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/ubuntuv3.sh"
         },
         {
           "name": "配置防火墙",
@@ -11042,7 +11246,31 @@
           "scriptPath": "p3/scripts/utils/waylume.sh"
         }
       ],
-      "subcategories": {},
+      "subcategories": {
+        "theming": {
+          "name": "theming",
+          "icon": "theming.svg",
+          "description": "帮助您按照自己的喜好调整系统和应用程序外观的工具。",
+          "mode": "menu",
+          "tools": [
+            {
+              "name": "启用 Flatpak 主题",
+              "description": "为 GTK3 和 GTK4 应用启用 Flatpak 主题支持，使其能够使用系统主题和外观设置。",
+              "icon": "flathub.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/theming/flattheme.sh"
+            },
+            {
+              "name": "Rewaita",
+              "description": "轻松更改 GNOME Shell 以及 GTK4 和 GTK3 应用的外观。您可以从多种配色方案中选择，甚至还能创建自己的配色方案！",
+              "icon": "rewaita.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/theming/rewaita.sh"
+            }
+          ],
+          "displayName": "主题"
+        }
+      },
       "displayName": "实用工具"
     },
     "privacy": {
@@ -11615,6 +11843,13 @@
       "mode": "menu",
       "tools": [
         {
+          "name": "AMD GPU Driver",
+          "description": "Ubuntu LTSおよびRed Hat Enterprise Linuxに最新のAMD Radeonグラフィックスドライバーをインストールします。",
+          "icon": "amd.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/amdgpu.sh"
+        },
+        {
           "name": "Broadcom WiFi",
           "description": "Linux用プロプライエタリBroadcom WiFiドライバー。カードがカーネル組み込みオープンソースドライバーで動作しない場合のみ使用。",
           "icon": "bcm.png",
@@ -12036,6 +12271,13 @@
           "icon": "handbrake.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/thumb.sh"
+        },
+        {
+          "name": "x86-64v3 パッケージを有効化",
+          "description": "Ubuntuでx86-64v3プロセッサ向けに最適化されたパッケージを優先するよう設定し、わずかな性能向上が期待できます。",
+          "icon": "ubuntu.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/ubuntuv3.sh"
         },
         {
           "name": "ファイアウォールを設定",
@@ -12907,7 +13149,31 @@
           "scriptPath": "p3/scripts/utils/waylume.sh"
         }
       ],
-      "subcategories": {},
+      "subcategories": {
+        "theming": {
+          "name": "theming",
+          "icon": "theming.svg",
+          "description": "システムやアプリケーションの外観を好みに合わせて調整するためのツールです。",
+          "mode": "menu",
+          "tools": [
+            {
+              "name": "Flatpak のテーマ対応を有効化",
+              "description": "GTK3 および GTK4 アプリケーションで Flatpak のテーマ対応を有効にし、システムのテーマと外観設定を使用できるようにします。",
+              "icon": "flathub.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/theming/flattheme.sh"
+            },
+            {
+              "name": "Rewaita",
+              "description": "GNOME Shell、GTK4、GTK3アプリの外観を手軽に変更できます。複数の配色から選べるほか、独自の配色を作成することもできます！",
+              "icon": "rewaita.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/theming/rewaita.sh"
+            }
+          ],
+          "displayName": "テーマ"
+        }
+      },
       "displayName": "ユーティリティ"
     },
     "privacy": {
@@ -13480,6 +13746,13 @@
       "mode": "menu",
       "tools": [
         {
+          "name": "AMD GPU Driver",
+          "description": "Установите новейшие графические драйверы AMD Radeon в Ubuntu LTS и Red Hat Enterprise Linux.",
+          "icon": "amd.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/amdgpu.sh"
+        },
+        {
           "name": "Broadcom WiFi",
           "description": "Проприетарные драйверы Broadcom WiFi для Linux. Используйте только если ваша карта не работает с открытыми драйверами, встроенными в ядро.",
           "icon": "bcm.png",
@@ -13901,6 +14174,13 @@
           "icon": "handbrake.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/thumb.sh"
+        },
+        {
+          "name": "Включить пакеты x86-64v3",
+          "description": "Настраивает Ubuntu на использование оптимизированных пакетов для процессоров x86-64v3, что может дать небольшое повышение производительности.",
+          "icon": "ubuntu.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/extra/ubuntuv3.sh"
         },
         {
           "name": "Настроить брандмауэр",
@@ -14772,7 +15052,31 @@
           "scriptPath": "p3/scripts/utils/waylume.sh"
         }
       ],
-      "subcategories": {},
+      "subcategories": {
+        "theming": {
+          "name": "theming",
+          "icon": "theming.svg",
+          "description": "Инструменты для настройки внешнего вида системы и приложений по вашему вкусу.",
+          "mode": "menu",
+          "tools": [
+            {
+              "name": "Включить темы для Flatpak",
+              "description": "Включает поддержку тем Flatpak для приложений GTK3 и GTK4, позволяя им использовать системную тему и настройки внешнего вида.",
+              "icon": "flathub.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/theming/flattheme.sh"
+            },
+            {
+              "name": "Rewaita",
+              "description": "Легко изменяйте внешний вид оболочки GNOME, а также приложений GTK4 и GTK3. На выбор доступно несколько цветовых схем, и вы даже можете создать собственную!",
+              "icon": "rewaita.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/theming/rewaita.sh"
+            }
+          ],
+          "displayName": "Темы"
+        }
+      },
       "displayName": "Утилиты"
     },
     "privacy": {
