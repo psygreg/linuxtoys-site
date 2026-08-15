@@ -184,6 +184,7 @@
     "piper_desc": "A GTK application to configure gaming mice using libratbag. Commonly used for Logitech, Roccat, Asus and Glorious mice.",
     "glever_desc": "An utility to manage AppImages, generating desktop entries and app metadata, updating apps in-place or keeping multiple versions side-by-side.",
     "docker_desc": "The Docker Engine container service provider and basic tools for it, like docker-compose.",
+    "lazydocker_desc": "A TUI for Docker that allows developers to manage containers, images, volumes, networks and logs from an interactive interface, without memorizing long Docker commands.",
     "mise_desc": "Like asdf (or nvm or pyenv but for any language) it manages dev tools like node, python, cmake, terraform, and hundreds more. Replaces PyEnv, NVM, and the Java JDK and Maven installers from this section.",
     "nvm_desc": "A version manager for Node.js, allowing you to easily switch between different versions. Includes Node.js, NPM and Yarn. Not needed if using Mise.",
     "pyenv_desc": "A Python version management tool. Not needed if using Mise.",
@@ -705,6 +706,7 @@
     "piper_desc": "Uma aplicação GTK para configurar mouses para jogos usando libratbag. Geralmente usado para mouses Logitech, Asus, Roccat e Glorious.",
     "glever_desc": "Uma utilidade para gerenciar AppImages, gerando entradas de desktop e metadados de aplicativos, atualizando aplicativos no local ou mantendo várias versões lado a lado.",
     "docker_desc": "O provedor de serviços de container Docker Engine e ferramentas básicas para ele, como docker-compose.",
+    "lazydocker_desc": "Uma TUI para Docker que permite aos desenvolvedores gerenciar contêineres, imagens, volumes, redes e logs por uma interface interativa, sem precisar memorizar longos comandos do Docker.",
     "mise_desc": "Assim como asdf (ou nvm ou pyenv, mas para qualquer linguagem), ele gerencia ferramentas de desenvolvimento como node, python, cmake, terraform e centenas mais. Substitui PyEnv, NVM, e os instaladores Java JDK e Maven desta seção.",
     "nvm_desc": "Um gerenciador de versões para Node.js, permitindo que você alterne facilmente entre diferentes versões. Inclui Node.js, NPM e Yarn. Não é necessário se utilizar Mise.",
     "pyenv_desc": "Uma ferramenta de gerenciamento de versões para Python. Não é necessária se utilizar Mise.",
@@ -1557,7 +1559,8 @@
     "rewaita_desc": "Cambia fácilmente el aspecto de GNOME Shell y de las aplicaciones GTK4 y GTK3. Hay varios esquemas de colores para elegir, ¡e incluso puedes crear el tuyo!",
     "amdgpu_desc": "Instala los controladores gráficos AMD Radeon más recientes en Ubuntu LTS y Red Hat Enterprise Linux.",
     "ubuntuv3": "Habilitar paquetes x86-64v3",
-    "ubuntuv3_desc": "Configura Ubuntu para dar prioridad a los paquetes optimizados para procesadores x86-64v3, lo que puede aportar pequeñas mejoras de rendimiento."
+    "ubuntuv3_desc": "Configura Ubuntu para dar prioridad a los paquetes optimizados para procesadores x86-64v3, lo que puede aportar pequeñas mejoras de rendimiento.",
+    "lazydocker_desc": "Una TUI para Docker que permite a los desarrolladores gestionar contenedores, imágenes, volúmenes, redes y registros desde una interfaz interactiva, sin tener que memorizar largos comandos de Docker."
   },
   "fr": {
     "subtitle": "Une collection d'outils pour Linux de manière conviviale.",
@@ -2077,7 +2080,8 @@
     "rewaita_desc": "Modifiez facilement l’apparence de GNOME Shell ainsi que des applications GTK4 et GTK3. Plusieurs palettes de couleurs sont proposées, et vous pouvez même créer la vôtre !",
     "amdgpu_desc": "Installez les derniers pilotes graphiques AMD Radeon sur Ubuntu LTS et Red Hat Enterprise Linux.",
     "ubuntuv3": "Activer les paquets x86-64v3",
-    "ubuntuv3_desc": "Configure Ubuntu pour privilégier les paquets optimisés pour les processeurs x86-64v3, ce qui peut apporter de légères améliorations de performances."
+    "ubuntuv3_desc": "Configure Ubuntu pour privilégier les paquets optimisés pour les processeurs x86-64v3, ce qui peut apporter de légères améliorations de performances.",
+    "lazydocker_desc": "Une TUI pour Docker permettant aux développeurs de gérer les conteneurs, images, volumes, réseaux et journaux depuis une interface interactive, sans avoir à mémoriser de longues commandes Docker."
   },
   "de": {
     "subtitle": "Eine freundliche Sammlung von Tools für Linux.",
@@ -2597,7 +2601,8 @@
     "rewaita_desc": "Ändern Sie unkompliziert das Aussehen der GNOME Shell sowie von GTK4- und GTK3-Anwendungen. Es stehen mehrere Farbschemata zur Auswahl, und Sie können sogar ein eigenes erstellen!",
     "amdgpu_desc": "Installieren Sie die neuesten AMD-Radeon-Grafiktreiber unter Ubuntu LTS und Red Hat Enterprise Linux.",
     "ubuntuv3": "x86-64v3-Pakete aktivieren",
-    "ubuntuv3_desc": "Richtet Ubuntu so ein, dass optimierte Pakete für x86-64v3-Prozessoren bevorzugt werden, was zu kleinen Leistungsverbesserungen führen kann."
+    "ubuntuv3_desc": "Richtet Ubuntu so ein, dass optimierte Pakete für x86-64v3-Prozessoren bevorzugt werden, was zu kleinen Leistungsverbesserungen führen kann.",
+    "lazydocker_desc": "Eine TUI für Docker, mit der Entwickler Container, Images, Volumes, Netzwerke und Protokolle über eine interaktive Oberfläche verwalten können, ohne sich lange Docker-Befehle merken zu müssen."
   },
   "zh": {
     "subtitle": "适用于Linux的用户友好工具集合。",
@@ -3119,7 +3124,8 @@
     "rewaita_desc": "轻松更改 GNOME Shell 以及 GTK4 和 GTK3 应用的外观。您可以从多种配色方案中选择，甚至还能创建自己的配色方案！",
     "amdgpu_desc": "在 Ubuntu LTS 和 Red Hat Enterprise Linux 上安装最新的 AMD Radeon 显卡驱动程序。",
     "ubuntuv3": "启用 x86-64v3 软件包",
-    "ubuntuv3_desc": "将 Ubuntu 配置为优先使用针对 x86-64v3 处理器优化的软件包，可能带来一定的性能提升。"
+    "ubuntuv3_desc": "将 Ubuntu 配置为优先使用针对 x86-64v3 处理器优化的软件包，可能带来一定的性能提升。",
+    "lazydocker_desc": "一个用于 Docker 的 TUI，让开发者无需记忆冗长的 Docker 命令，即可通过交互式界面管理容器、镜像、卷、网络和日志。"
   },
   "ja": {
     "subtitle": "Linuxのためのユーザーフレンドリーなツール集。",
@@ -3639,7 +3645,8 @@
     "rewaita_desc": "GNOME Shell、GTK4、GTK3アプリの外観を手軽に変更できます。複数の配色から選べるほか、独自の配色を作成することもできます！",
     "amdgpu_desc": "Ubuntu LTSおよびRed Hat Enterprise Linuxに最新のAMD Radeonグラフィックスドライバーをインストールします。",
     "ubuntuv3": "x86-64v3 パッケージを有効化",
-    "ubuntuv3_desc": "Ubuntuでx86-64v3プロセッサ向けに最適化されたパッケージを優先するよう設定し、わずかな性能向上が期待できます。"
+    "ubuntuv3_desc": "Ubuntuでx86-64v3プロセッサ向けに最適化されたパッケージを優先するよう設定し、わずかな性能向上が期待できます。",
+    "lazydocker_desc": "長い Docker コマンドを覚えることなく、開発者がインタラクティブなインターフェースからコンテナ、イメージ、ボリューム、ネットワーク、ログを管理できる Docker 用 TUI です。"
   },
   "ru": {
     "subtitle": "Коллекция инструментов для Linux в удобном формате.",
@@ -4159,6 +4166,7 @@
     "rewaita_desc": "Легко изменяйте внешний вид оболочки GNOME, а также приложений GTK4 и GTK3. На выбор доступно несколько цветовых схем, и вы даже можете создать собственную!",
     "amdgpu_desc": "Установите новейшие графические драйверы AMD Radeon в Ubuntu LTS и Red Hat Enterprise Linux.",
     "ubuntuv3": "Включить пакеты x86-64v3",
-    "ubuntuv3_desc": "Настраивает Ubuntu на использование оптимизированных пакетов для процессоров x86-64v3, что может дать небольшое повышение производительности."
+    "ubuntuv3_desc": "Настраивает Ubuntu на использование оптимизированных пакетов для процессоров x86-64v3, что может дать небольшое повышение производительности.",
+    "lazydocker_desc": "TUI для Docker, позволяющий разработчикам управлять контейнерами, образами, томами, сетями и журналами через интерактивный интерфейс без необходимости запоминать длинные команды Docker."
   }
 }

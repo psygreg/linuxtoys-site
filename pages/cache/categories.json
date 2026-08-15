@@ -241,6 +241,13 @@
         "scriptPath": "p3/scripts/devs/kind.sh"
       },
       {
+        "name": "LazyDocker",
+        "description": "lazydocker_desc",
+        "icon": "docker.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/devs/lazydocker.sh"
+      },
+      {
         "name": "Virt-Manager",
         "description": "libvirt_desc",
         "icon": "virt-manager.png",
@@ -1045,13 +1052,6 @@
         "icon": "vinegar.png",
         "version": "1.0",
         "scriptPath": "p3/scripts/game/vinegar.sh"
-      },
-      {
-        "name": "WiVRn",
-        "description": "wivrn_desc",
-        "icon": "wivrn.png",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/game/wivrn.sh"
       }
     ],
     "subcategories": {}
@@ -1475,13 +1475,6 @@
         "scriptPath": "p3/scripts/utils/efx.sh"
       },
       {
-        "name": "Extension Manager",
-        "description": "extman_desc",
-        "icon": "extensions.svg",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/utils/extman.sh"
-      },
-      {
         "name": "F3 (Fight Flash Fraud)",
         "description": "f3_desc",
         "icon": "utils.svg",
@@ -1636,6 +1629,13 @@
         "scriptPath": "p3/scripts/utils/peripherals/udevpass.sh"
       },
       {
+        "name": "WiVRn",
+        "description": "wivrn_desc",
+        "icon": "wivrn.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/peripherals/wivrn.sh"
+      },
+      {
         "name": "Pika Backup",
         "description": "pika_desc",
         "icon": "pika.svg",
@@ -1685,13 +1685,6 @@
         "scriptPath": "p3/scripts/utils/s3drive.sh"
       },
       {
-        "name": "Gnome Tweaks",
-        "description": "tweaks_desc",
-        "icon": "tweaks.svg",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/utils/tweaks.sh"
-      },
-      {
         "name": "VLC",
         "description": "vlc_desc",
         "icon": "vlc.svg",
@@ -1728,6 +1721,13 @@
         "mode": "menu",
         "tools": [
           {
+            "name": "Extension Manager",
+            "description": "extman_desc",
+            "icon": "extensions.svg",
+            "version": "1.0",
+            "scriptPath": "p3/scripts/utils/theming/extman.sh"
+          },
+          {
             "name": "flattheme",
             "description": "flattheme_desc",
             "icon": "flathub.svg",
@@ -1740,6 +1740,13 @@
             "icon": "rewaita.svg",
             "version": "1.0",
             "scriptPath": "p3/scripts/utils/theming/rewaita.sh"
+          },
+          {
+            "name": "Gnome Tweaks",
+            "description": "tweaks_desc",
+            "icon": "tweaks.svg",
+            "version": "1.0",
+            "scriptPath": "p3/scripts/utils/theming/tweaks.sh"
           }
         ]
       }

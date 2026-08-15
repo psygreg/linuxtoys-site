@@ -244,6 +244,13 @@
           "scriptPath": "p3/scripts/devs/kind.sh"
         },
         {
+          "name": "LazyDocker",
+          "description": "A TUI for Docker that allows developers to manage containers, images, volumes, networks and logs from an interactive interface, without memorizing long Docker commands.",
+          "icon": "docker.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/lazydocker.sh"
+        },
+        {
           "name": "Virt-Manager",
           "description": "Install and configure virt-manager, libvirt and qemu.",
           "icon": "virt-manager.png",
@@ -1052,13 +1059,6 @@
           "icon": "vinegar.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/game/vinegar.sh"
-        },
-        {
-          "name": "WiVRn",
-          "description": "A tool for configuring and managing VR devices on Linux.",
-          "icon": "wivrn.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/wivrn.sh"
         }
       ],
       "subcategories": {},
@@ -1486,13 +1486,6 @@
           "scriptPath": "p3/scripts/utils/efx.sh"
         },
         {
-          "name": "Extension Manager",
-          "description": "Search, download and manage GNOME extensions easily.",
-          "icon": "extensions.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/utils/extman.sh"
-        },
-        {
           "name": "F3 (Fight Flash Fraud)",
           "description": "A tool to check for fake USB drives and correct them to their real capacity.",
           "icon": "utils.svg",
@@ -1647,6 +1640,13 @@
           "scriptPath": "p3/scripts/utils/peripherals/udevpass.sh"
         },
         {
+          "name": "WiVRn",
+          "description": "A tool for configuring and managing VR devices on Linux.",
+          "icon": "wivrn.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/peripherals/wivrn.sh"
+        },
+        {
           "name": "Pika Backup",
           "description": "A simple and space-efficient backup application based on BorgBackup.",
           "icon": "pika.svg",
@@ -1696,13 +1696,6 @@
           "scriptPath": "p3/scripts/utils/s3drive.sh"
         },
         {
-          "name": "Gnome Tweaks",
-          "description": "Change settings related to GTK3 apps and GNOME Shell from themes to font rendering.",
-          "icon": "tweaks.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/utils/tweaks.sh"
-        },
-        {
           "name": "VLC",
           "description": "Open source, fully-featured media player. Includes codecs for proprietary media formats for Fedora and OpenSUSE.",
           "icon": "vlc.svg",
@@ -1739,6 +1732,13 @@
           "mode": "menu",
           "tools": [
             {
+              "name": "Extension Manager",
+              "description": "Search, download and manage GNOME extensions easily.",
+              "icon": "extensions.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/theming/extman.sh"
+            },
+            {
               "name": "Enable Flatpak Theming",
               "description": "Enables Flatpak theming support for GTK3 and GTK4 applications, allowing them to use the system's theme and appearance settings.",
               "icon": "flathub.svg",
@@ -1751,6 +1751,13 @@
               "icon": "rewaita.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/utils/theming/rewaita.sh"
+            },
+            {
+              "name": "Gnome Tweaks",
+              "description": "Change settings related to GTK3 apps and GNOME Shell from themes to font rendering.",
+              "icon": "tweaks.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/theming/tweaks.sh"
             }
           ],
           "displayName": "Theming"
@@ -2145,6 +2152,13 @@
           "icon": "kind.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/kind.sh"
+        },
+        {
+          "name": "LazyDocker",
+          "description": "Uma TUI para Docker que permite aos desenvolvedores gerenciar contêineres, imagens, volumes, redes e logs por uma interface interativa, sem precisar memorizar longos comandos do Docker.",
+          "icon": "docker.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/lazydocker.sh"
         },
         {
           "name": "Virt-Manager",
@@ -2955,13 +2969,6 @@
           "icon": "vinegar.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/game/vinegar.sh"
-        },
-        {
-          "name": "WiVRn",
-          "description": "Uma ferramenta para configurar e gerenciar óculos e dispositivos VR no Linux.",
-          "icon": "wivrn.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/wivrn.sh"
         }
       ],
       "subcategories": {},
@@ -3389,13 +3396,6 @@
           "scriptPath": "p3/scripts/utils/efx.sh"
         },
         {
-          "name": "Extension Manager",
-          "description": "Pesquisar, baixar e gerenciar extensões GNOME facilmente.",
-          "icon": "extensions.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/utils/extman.sh"
-        },
-        {
           "name": "F3 (Fight Flash Fraud)",
           "description": "Uma ferramenta para verificar unidades USB falsas e corrigi-las para sua capacidade real.",
           "icon": "utils.svg",
@@ -3550,6 +3550,13 @@
           "scriptPath": "p3/scripts/utils/peripherals/udevpass.sh"
         },
         {
+          "name": "WiVRn",
+          "description": "Uma ferramenta para configurar e gerenciar óculos e dispositivos VR no Linux.",
+          "icon": "wivrn.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/peripherals/wivrn.sh"
+        },
+        {
           "name": "Pika Backup",
           "description": "Um aplicativo de backup simples e eficiente em espaço baseado em BorgBackup.",
           "icon": "pika.svg",
@@ -3599,13 +3606,6 @@
           "scriptPath": "p3/scripts/utils/s3drive.sh"
         },
         {
-          "name": "Gnome Tweaks",
-          "description": "Alterar configurações relacionadas a aplicações GTK3 e GNOME Shell, desde temas até renderização de fontes.",
-          "icon": "tweaks.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/utils/tweaks.sh"
-        },
-        {
           "name": "VLC",
           "description": "Leitor de mídia de código aberto e completo. Inclui codecs para formatos de mídia proprietários para Fedora e OpenSUSE.",
           "icon": "vlc.svg",
@@ -3642,6 +3642,13 @@
           "mode": "menu",
           "tools": [
             {
+              "name": "Extension Manager",
+              "description": "Pesquisar, baixar e gerenciar extensões GNOME facilmente.",
+              "icon": "extensions.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/theming/extman.sh"
+            },
+            {
               "name": "Ativar temas para Flatpak",
               "description": "Ativa o suporte a temas para aplicativos Flatpak GTK3 e GTK4, permitindo que eles usem o tema e as configurações de aparência do sistema.",
               "icon": "flathub.svg",
@@ -3654,6 +3661,13 @@
               "icon": "rewaita.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/utils/theming/rewaita.sh"
+            },
+            {
+              "name": "Gnome Tweaks",
+              "description": "Alterar configurações relacionadas a aplicações GTK3 e GNOME Shell, desde temas até renderização de fontes.",
+              "icon": "tweaks.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/theming/tweaks.sh"
             }
           ],
           "displayName": "Tematização"
@@ -4048,6 +4062,13 @@
           "icon": "kind.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/kind.sh"
+        },
+        {
+          "name": "LazyDocker",
+          "description": "Una TUI para Docker que permite a los desarrolladores gestionar contenedores, imágenes, volúmenes, redes y registros desde una interfaz interactiva, sin tener que memorizar largos comandos de Docker.",
+          "icon": "docker.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/lazydocker.sh"
         },
         {
           "name": "Virt-Manager",
@@ -4858,13 +4879,6 @@
           "icon": "vinegar.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/game/vinegar.sh"
-        },
-        {
-          "name": "WiVRn",
-          "description": "Una herramienta para configurar y gestionar dispositivos VR en Linux.",
-          "icon": "wivrn.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/wivrn.sh"
         }
       ],
       "subcategories": {},
@@ -5292,13 +5306,6 @@
           "scriptPath": "p3/scripts/utils/efx.sh"
         },
         {
-          "name": "Extension Manager",
-          "description": "Buscar, descargar y gestionar extensiones de GNOME fácilmente.",
-          "icon": "extensions.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/utils/extman.sh"
-        },
-        {
           "name": "F3 (Fight Flash Fraud)",
           "description": "Una herramienta para verificar unidades USB falsas y corregirlas a su capacidad real.",
           "icon": "utils.svg",
@@ -5453,6 +5460,13 @@
           "scriptPath": "p3/scripts/utils/peripherals/udevpass.sh"
         },
         {
+          "name": "WiVRn",
+          "description": "Una herramienta para configurar y gestionar dispositivos VR en Linux.",
+          "icon": "wivrn.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/peripherals/wivrn.sh"
+        },
+        {
           "name": "Pika Backup",
           "description": "Una aplicación de respaldo simple y eficiente en espacio basada en BorgBackup.",
           "icon": "pika.svg",
@@ -5502,13 +5516,6 @@
           "scriptPath": "p3/scripts/utils/s3drive.sh"
         },
         {
-          "name": "Gnome Tweaks",
-          "description": "Cambiar configuraciones relacionadas con aplicaciones GTK3 y GNOME Shell desde temas hasta renderizado de fuentes.",
-          "icon": "tweaks.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/utils/tweaks.sh"
-        },
-        {
           "name": "VLC",
           "description": "Reproductor de medios de código abierto y completo. Incluye códecs para formatos de medios propietarios para Fedora y OpenSUSE.",
           "icon": "vlc.svg",
@@ -5545,6 +5552,13 @@
           "mode": "menu",
           "tools": [
             {
+              "name": "Extension Manager",
+              "description": "Buscar, descargar y gestionar extensiones de GNOME fácilmente.",
+              "icon": "extensions.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/theming/extman.sh"
+            },
+            {
               "name": "Activar temas para Flatpak",
               "description": "Activa la compatibilidad con temas de Flatpak para aplicaciones GTK3 y GTK4, permitiéndoles utilizar el tema y los ajustes de apariencia del sistema.",
               "icon": "flathub.svg",
@@ -5557,6 +5571,13 @@
               "icon": "rewaita.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/utils/theming/rewaita.sh"
+            },
+            {
+              "name": "Gnome Tweaks",
+              "description": "Cambiar configuraciones relacionadas con aplicaciones GTK3 y GNOME Shell desde temas hasta renderizado de fuentes.",
+              "icon": "tweaks.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/theming/tweaks.sh"
             }
           ],
           "displayName": "Temas"
@@ -5951,6 +5972,13 @@
           "icon": "kind.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/kind.sh"
+        },
+        {
+          "name": "LazyDocker",
+          "description": "Une TUI pour Docker permettant aux développeurs de gérer les conteneurs, images, volumes, réseaux et journaux depuis une interface interactive, sans avoir à mémoriser de longues commandes Docker.",
+          "icon": "docker.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/lazydocker.sh"
         },
         {
           "name": "Virt-Manager",
@@ -6761,13 +6789,6 @@
           "icon": "vinegar.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/game/vinegar.sh"
-        },
-        {
-          "name": "WiVRn",
-          "description": "Un outil pour configurer et gérer les appareils VR sous Linux.",
-          "icon": "wivrn.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/wivrn.sh"
         }
       ],
       "subcategories": {},
@@ -7195,13 +7216,6 @@
           "scriptPath": "p3/scripts/utils/efx.sh"
         },
         {
-          "name": "Extension Manager",
-          "description": "Rechercher, télécharger et gérer facilement les extensions GNOME.",
-          "icon": "extensions.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/utils/extman.sh"
-        },
-        {
           "name": "F3 (Fight Flash Fraud)",
           "description": "Un outil pour vérifier les fausses clés USB et les corriger à leur vraie capacité.",
           "icon": "utils.svg",
@@ -7356,6 +7370,13 @@
           "scriptPath": "p3/scripts/utils/peripherals/udevpass.sh"
         },
         {
+          "name": "WiVRn",
+          "description": "Un outil pour configurer et gérer les appareils VR sous Linux.",
+          "icon": "wivrn.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/peripherals/wivrn.sh"
+        },
+        {
           "name": "Pika Backup",
           "description": "Une application de sauvegarde simple et économe en espace basée sur BorgBackup.",
           "icon": "pika.svg",
@@ -7405,13 +7426,6 @@
           "scriptPath": "p3/scripts/utils/s3drive.sh"
         },
         {
-          "name": "Gnome Tweaks",
-          "description": "Modifier les paramètres relatifs aux applications GTK3 et au Shell GNOME, des thèmes au rendu des polices.",
-          "icon": "tweaks.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/utils/tweaks.sh"
-        },
-        {
           "name": "VLC",
           "description": "Lecteur multimédia open source et complet. Inclut des codecs pour les formats multimédias propriétaires pour Fedora et OpenSUSE.",
           "icon": "vlc.svg",
@@ -7448,6 +7462,13 @@
           "mode": "menu",
           "tools": [
             {
+              "name": "Extension Manager",
+              "description": "Rechercher, télécharger et gérer facilement les extensions GNOME.",
+              "icon": "extensions.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/theming/extman.sh"
+            },
+            {
               "name": "Activer les thèmes Flatpak",
               "description": "Active la prise en charge des thèmes Flatpak pour les applications GTK3 et GTK4, leur permettant d'utiliser le thème et les paramètres d'apparence du système.",
               "icon": "flathub.svg",
@@ -7460,6 +7481,13 @@
               "icon": "rewaita.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/utils/theming/rewaita.sh"
+            },
+            {
+              "name": "Gnome Tweaks",
+              "description": "Modifier les paramètres relatifs aux applications GTK3 et au Shell GNOME, des thèmes au rendu des polices.",
+              "icon": "tweaks.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/theming/tweaks.sh"
             }
           ],
           "displayName": "Thèmes"
@@ -7854,6 +7882,13 @@
           "icon": "kind.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/kind.sh"
+        },
+        {
+          "name": "LazyDocker",
+          "description": "Eine TUI für Docker, mit der Entwickler Container, Images, Volumes, Netzwerke und Protokolle über eine interaktive Oberfläche verwalten können, ohne sich lange Docker-Befehle merken zu müssen.",
+          "icon": "docker.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/lazydocker.sh"
         },
         {
           "name": "Virt-Manager",
@@ -8664,13 +8699,6 @@
           "icon": "vinegar.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/game/vinegar.sh"
-        },
-        {
-          "name": "WiVRn",
-          "description": "Ein Tool zur Konfiguration und Verwaltung von VR-Geräten unter Linux.",
-          "icon": "wivrn.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/wivrn.sh"
         }
       ],
       "subcategories": {},
@@ -9098,13 +9126,6 @@
           "scriptPath": "p3/scripts/utils/efx.sh"
         },
         {
-          "name": "Extension Manager",
-          "description": "GNOME-Erweiterungen einfach suchen, herunterladen und verwalten.",
-          "icon": "extensions.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/utils/extman.sh"
-        },
-        {
           "name": "F3 (Fight Flash Fraud)",
           "description": "Ein Tool zur Überprüfung auf gefälschte USB-Laufwerke und deren Korrektur auf ihre echte Kapazität.",
           "icon": "utils.svg",
@@ -9259,6 +9280,13 @@
           "scriptPath": "p3/scripts/utils/peripherals/udevpass.sh"
         },
         {
+          "name": "WiVRn",
+          "description": "Ein Tool zur Konfiguration und Verwaltung von VR-Geräten unter Linux.",
+          "icon": "wivrn.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/peripherals/wivrn.sh"
+        },
+        {
           "name": "Pika Backup",
           "description": "Eine einfache und platzsparende Backup-Anwendung basierend auf BorgBackup.",
           "icon": "pika.svg",
@@ -9308,13 +9336,6 @@
           "scriptPath": "p3/scripts/utils/s3drive.sh"
         },
         {
-          "name": "Gnome Tweaks",
-          "description": "Einstellungen ändern, die sich auf GTK3-Apps und GNOME-Shell beziehen, von Themen bis zur Schriftwiedergabe.",
-          "icon": "tweaks.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/utils/tweaks.sh"
-        },
-        {
           "name": "VLC",
           "description": "Open-Source, vollwertiger Media-Player. Enthält Codecs für proprietäre Medienformate für Fedora und OpenSUSE.",
           "icon": "vlc.svg",
@@ -9351,6 +9372,13 @@
           "mode": "menu",
           "tools": [
             {
+              "name": "Extension Manager",
+              "description": "GNOME-Erweiterungen einfach suchen, herunterladen und verwalten.",
+              "icon": "extensions.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/theming/extman.sh"
+            },
+            {
               "name": "Flatpak-Designintegration aktivieren",
               "description": "Aktiviert die Flatpak-Designintegration für GTK3- und GTK4-Anwendungen, sodass diese das Systemdesign und dessen Darstellungseinstellungen verwenden können.",
               "icon": "flathub.svg",
@@ -9363,6 +9391,13 @@
               "icon": "rewaita.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/utils/theming/rewaita.sh"
+            },
+            {
+              "name": "Gnome Tweaks",
+              "description": "Einstellungen ändern, die sich auf GTK3-Apps und GNOME-Shell beziehen, von Themen bis zur Schriftwiedergabe.",
+              "icon": "tweaks.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/theming/tweaks.sh"
             }
           ],
           "displayName": "Themes"
@@ -9757,6 +9792,13 @@
           "icon": "kind.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/kind.sh"
+        },
+        {
+          "name": "LazyDocker",
+          "description": "一个用于 Docker 的 TUI，让开发者无需记忆冗长的 Docker 命令，即可通过交互式界面管理容器、镜像、卷、网络和日志。",
+          "icon": "docker.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/lazydocker.sh"
         },
         {
           "name": "Virt-Manager",
@@ -10567,13 +10609,6 @@
           "icon": "vinegar.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/game/vinegar.sh"
-        },
-        {
-          "name": "WiVRn",
-          "description": "在Linux上配置和管理VR设备的工具。",
-          "icon": "wivrn.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/wivrn.sh"
         }
       ],
       "subcategories": {},
@@ -11001,13 +11036,6 @@
           "scriptPath": "p3/scripts/utils/efx.sh"
         },
         {
-          "name": "Extension Manager",
-          "description": "轻松搜索、下载和管理 GNOME 扩展。",
-          "icon": "extensions.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/utils/extman.sh"
-        },
-        {
           "name": "F3 (Fight Flash Fraud)",
           "description": "检查虚假USB驱动器并将其更正为真实容量的工具。",
           "icon": "utils.svg",
@@ -11162,6 +11190,13 @@
           "scriptPath": "p3/scripts/utils/peripherals/udevpass.sh"
         },
         {
+          "name": "WiVRn",
+          "description": "在Linux上配置和管理VR设备的工具。",
+          "icon": "wivrn.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/peripherals/wivrn.sh"
+        },
+        {
           "name": "Pika Backup",
           "description": "一个基于BorgBackup的简单且节省空间的备份应用程序。",
           "icon": "pika.svg",
@@ -11211,13 +11246,6 @@
           "scriptPath": "p3/scripts/utils/s3drive.sh"
         },
         {
-          "name": "Gnome Tweaks",
-          "description": "更改与 GTK3 应用程序和 GNOME Shell 相关的设置，从主题到字体渲染。",
-          "icon": "tweaks.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/utils/tweaks.sh"
-        },
-        {
           "name": "VLC",
           "description": "开源、全功能媒体播放器。为 Fedora 和 OpenSUSE 包含专有媒体格式的编解码器。",
           "icon": "vlc.svg",
@@ -11254,6 +11282,13 @@
           "mode": "menu",
           "tools": [
             {
+              "name": "Extension Manager",
+              "description": "轻松搜索、下载和管理 GNOME 扩展。",
+              "icon": "extensions.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/theming/extman.sh"
+            },
+            {
               "name": "启用 Flatpak 主题",
               "description": "为 GTK3 和 GTK4 应用启用 Flatpak 主题支持，使其能够使用系统主题和外观设置。",
               "icon": "flathub.svg",
@@ -11266,6 +11301,13 @@
               "icon": "rewaita.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/utils/theming/rewaita.sh"
+            },
+            {
+              "name": "Gnome Tweaks",
+              "description": "更改与 GTK3 应用程序和 GNOME Shell 相关的设置，从主题到字体渲染。",
+              "icon": "tweaks.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/theming/tweaks.sh"
             }
           ],
           "displayName": "主题"
@@ -11660,6 +11702,13 @@
           "icon": "kind.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/kind.sh"
+        },
+        {
+          "name": "LazyDocker",
+          "description": "長い Docker コマンドを覚えることなく、開発者がインタラクティブなインターフェースからコンテナ、イメージ、ボリューム、ネットワーク、ログを管理できる Docker 用 TUI です。",
+          "icon": "docker.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/lazydocker.sh"
         },
         {
           "name": "Virt-Manager",
@@ -12470,13 +12519,6 @@
           "icon": "vinegar.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/game/vinegar.sh"
-        },
-        {
-          "name": "WiVRn",
-          "description": "LinuxでVRデバイスを設定・管理するツール。",
-          "icon": "wivrn.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/wivrn.sh"
         }
       ],
       "subcategories": {},
@@ -12904,13 +12946,6 @@
           "scriptPath": "p3/scripts/utils/efx.sh"
         },
         {
-          "name": "Extension Manager",
-          "description": "GNOME 拡張機能を簡単に検索、ダウンロード、管理します。",
-          "icon": "extensions.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/utils/extman.sh"
-        },
-        {
           "name": "F3 (Fight Flash Fraud)",
           "description": "偽USBドライブをチェックして実際の容量に修正するツール。",
           "icon": "utils.svg",
@@ -13065,6 +13100,13 @@
           "scriptPath": "p3/scripts/utils/peripherals/udevpass.sh"
         },
         {
+          "name": "WiVRn",
+          "description": "LinuxでVRデバイスを設定・管理するツール。",
+          "icon": "wivrn.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/peripherals/wivrn.sh"
+        },
+        {
           "name": "Pika Backup",
           "description": "BorgBackupベースのシンプルでスペース効率の良いバックアップアプリケーション。",
           "icon": "pika.svg",
@@ -13114,13 +13156,6 @@
           "scriptPath": "p3/scripts/utils/s3drive.sh"
         },
         {
-          "name": "Gnome Tweaks",
-          "description": "GTK3 アプリと GNOME Shell に関連する設定を、テーマからフォントレンダリングまで変更します。",
-          "icon": "tweaks.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/utils/tweaks.sh"
-        },
-        {
           "name": "VLC",
           "description": "オープンソースのフル機能メディアプレーヤー。FedoraとOpenSUSEの独自メディアフォーマットのコーデックを含みます。",
           "icon": "vlc.svg",
@@ -13157,6 +13192,13 @@
           "mode": "menu",
           "tools": [
             {
+              "name": "Extension Manager",
+              "description": "GNOME 拡張機能を簡単に検索、ダウンロード、管理します。",
+              "icon": "extensions.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/theming/extman.sh"
+            },
+            {
               "name": "Flatpak のテーマ対応を有効化",
               "description": "GTK3 および GTK4 アプリケーションで Flatpak のテーマ対応を有効にし、システムのテーマと外観設定を使用できるようにします。",
               "icon": "flathub.svg",
@@ -13169,6 +13211,13 @@
               "icon": "rewaita.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/utils/theming/rewaita.sh"
+            },
+            {
+              "name": "Gnome Tweaks",
+              "description": "GTK3 アプリと GNOME Shell に関連する設定を、テーマからフォントレンダリングまで変更します。",
+              "icon": "tweaks.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/theming/tweaks.sh"
             }
           ],
           "displayName": "テーマ"
@@ -13563,6 +13612,13 @@
           "icon": "kind.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/devs/kind.sh"
+        },
+        {
+          "name": "LazyDocker",
+          "description": "TUI для Docker, позволяющий разработчикам управлять контейнерами, образами, томами, сетями и журналами через интерактивный интерфейс без необходимости запоминать длинные команды Docker.",
+          "icon": "docker.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/devs/lazydocker.sh"
         },
         {
           "name": "Virt-Manager",
@@ -14373,13 +14429,6 @@
           "icon": "vinegar.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/game/vinegar.sh"
-        },
-        {
-          "name": "WiVRn",
-          "description": "Инструмент для настройки и управления VR-устройствами в Linux.",
-          "icon": "wivrn.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/wivrn.sh"
         }
       ],
       "subcategories": {},
@@ -14807,13 +14856,6 @@
           "scriptPath": "p3/scripts/utils/efx.sh"
         },
         {
-          "name": "Extension Manager",
-          "description": "Легко искать, скачивать и управлять расширениями GNOME.",
-          "icon": "extensions.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/utils/extman.sh"
-        },
-        {
           "name": "F3 (Fight Flash Fraud)",
           "description": "Инструмент для проверки поддельных USB-накопителей и исправления их до реальной ёмкости.",
           "icon": "utils.svg",
@@ -14968,6 +15010,13 @@
           "scriptPath": "p3/scripts/utils/peripherals/udevpass.sh"
         },
         {
+          "name": "WiVRn",
+          "description": "Инструмент для настройки и управления VR-устройствами в Linux.",
+          "icon": "wivrn.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/peripherals/wivrn.sh"
+        },
+        {
           "name": "Pika Backup",
           "description": "Простое и экономичное приложение для резервного копирования на основе BorgBackup.",
           "icon": "pika.svg",
@@ -15017,13 +15066,6 @@
           "scriptPath": "p3/scripts/utils/s3drive.sh"
         },
         {
-          "name": "Gnome Tweaks",
-          "description": "Изменить настройки, связанные с приложениями GTK3 и оболочкой GNOME, от тем до рендеринга шрифтов.",
-          "icon": "tweaks.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/utils/tweaks.sh"
-        },
-        {
           "name": "VLC",
           "description": "Медиаплеер с открытым исходным кодом и полным набором функций. Включает кодеки для проприетарных форматов мультимедиа для Fedora и OpenSUSE.",
           "icon": "vlc.svg",
@@ -15060,6 +15102,13 @@
           "mode": "menu",
           "tools": [
             {
+              "name": "Extension Manager",
+              "description": "Легко искать, скачивать и управлять расширениями GNOME.",
+              "icon": "extensions.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/theming/extman.sh"
+            },
+            {
               "name": "Включить темы для Flatpak",
               "description": "Включает поддержку тем Flatpak для приложений GTK3 и GTK4, позволяя им использовать системную тему и настройки внешнего вида.",
               "icon": "flathub.svg",
@@ -15072,6 +15121,13 @@
               "icon": "rewaita.svg",
               "version": "1.0",
               "scriptPath": "p3/scripts/utils/theming/rewaita.sh"
+            },
+            {
+              "name": "Gnome Tweaks",
+              "description": "Изменить настройки, связанные с приложениями GTK3 и оболочкой GNOME, от тем до рендеринга шрифтов.",
+              "icon": "tweaks.svg",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/utils/theming/tweaks.sh"
             }
           ],
           "displayName": "Темы"
