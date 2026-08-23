@@ -353,6 +353,13 @@
         "scriptPath": "p3/scripts/devs/unity.sh"
       },
       {
+        "name": "Oracle VirtualBox",
+        "description": "vbox_desc",
+        "icon": "vbox.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/devs/virtualbox.sh"
+      },
+      {
         "name": "ZeroTier",
         "description": "zerotier_desc",
         "icon": "zerotier.png",
@@ -529,6 +536,13 @@
         "description": "nv_desc",
         "icon": "nvidia.svg",
         "version": "1.0",
+        "scriptPath": "p3/scripts/drivers/nv-solus.sh"
+      },
+      {
+        "name": "Nvidia Drivers",
+        "description": "nv_desc",
+        "icon": "nvidia.svg",
+        "version": "1.0",
         "scriptPath": "p3/scripts/drivers/nv-suse.sh"
       },
       {
@@ -572,27 +586,6 @@
         "icon": "rtl.png",
         "version": "1.0",
         "scriptPath": "p3/scripts/drivers/rtl8821ce-rpm.sh"
-      },
-      {
-        "name": "Realtek WiFi RTL88x2BU",
-        "description": "External RTL88x2BU/RTL8822BU USB WiFi driver with DKMS",
-        "icon": "rtl.png",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/drivers/rtl88x2bu-arch.sh"
-      },
-      {
-        "name": "Realtek WiFi RTL88x2BU",
-        "description": "External RTL88x2BU/RTL8822BU USB WiFi driver with DKMS",
-        "icon": "rtl.png",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/drivers/rtl88x2bu-deb.sh"
-      },
-      {
-        "name": "Realtek WiFi RTL88x2BU",
-        "description": "External RTL88x2BU/RTL8822BU USB WiFi driver with DKMS",
-        "icon": "rtl.png",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/drivers/rtl88x2bu-rpm.sh"
       },
       {
         "name": "RustiCL",
