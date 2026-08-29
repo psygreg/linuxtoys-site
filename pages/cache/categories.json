@@ -441,6 +441,13 @@
         "scriptPath": "p3/scripts/drivers/amdgpu.sh"
       },
       {
+        "name": "AIC8800/AX900 WiFi",
+        "description": "ax900_desc",
+        "icon": "wifi.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/drivers/ax900.sh"
+      },
+      {
         "name": "Broadcom WiFi",
         "description": "bcm_desc",
         "icon": "bcm.png",
@@ -665,13 +672,6 @@
         "icon": "cnfh.svg",
         "version": "1.0",
         "scriptPath": "p3/scripts/extra/cnfh.sh"
-      },
-      {
-        "name": "codecfix-hw",
-        "description": "codecfix-hw_desc",
-        "icon": "codec.svg",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/extra/codecfix-hw.sh"
       },
       {
         "name": "codecfix",
@@ -949,6 +949,13 @@
         "scriptPath": "p3/scripts/game/hgl.sh"
       },
       {
+        "name": "LeShade",
+        "description": "leshade_desc",
+        "icon": "leshade.png",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/game/leshade.sh"
+      },
+      {
         "name": "Lossless Scaling",
         "description": "lsfg_desc",
         "icon": "lsfgvk.png",
@@ -1075,6 +1082,13 @@
         "icon": "blender.svg",
         "version": "1.0",
         "scriptPath": "p3/scripts/office/blender.sh"
+      },
+      {
+        "name": "Distrobox-Adv",
+        "description": "Container do Debian via distrobox com pacotes que fornecem ambiente para uso de certificado digital por advogados no Brasil. Também inclui o Distroshelf.",
+        "icon": "boxadv.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/office/boxadv.sh"
       },
       {
         "name": "Google Chrome",
@@ -1438,13 +1452,6 @@
         "icon": "bottles.svg",
         "version": "1.0",
         "scriptPath": "p3/scripts/utils/bottles.sh"
-      },
-      {
-        "name": "Distrobox-Adv",
-        "description": "Container do Debian via distrobox com pacotes que fornecem ambiente para uso de certificado digital por advogados no Brasil. Também inclui o Distroshelf.",
-        "icon": "boxadv.svg",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/utils/boxadv.sh"
       },
       {
         "name": "Cloudflare WARP",

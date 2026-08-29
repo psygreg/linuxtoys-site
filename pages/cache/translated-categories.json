@@ -446,6 +446,13 @@
           "scriptPath": "p3/scripts/drivers/amdgpu.sh"
         },
         {
+          "name": "AIC8800/AX900 WiFi",
+          "description": "Driver for the AIC8800D80 combo WiFi/Bluetooth chipset, found in several USB adapters.",
+          "icon": "wifi.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/ax900.sh"
+        },
+        {
           "name": "Broadcom WiFi",
           "description": "Proprietary Broadcom WiFi drivers for Linux. Only use if your card is not working with the kernel-embedded open-source drivers.",
           "icon": "bcm.png",
@@ -671,13 +678,6 @@
           "icon": "cnfh.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/cnfh.sh"
-        },
-        {
-          "name": "Hardware-Accelerated Codecs",
-          "description": "The necessary codecs and libraries for hardware-accelerated video playback for H264/265 on Fedora through VA-API and VDPAU.",
-          "icon": "codec.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/extra/codecfix-hw.sh"
         },
         {
           "name": "Streaming Codecs",
@@ -956,6 +956,13 @@
           "scriptPath": "p3/scripts/game/hgl.sh"
         },
         {
+          "name": "LeShade",
+          "description": "A ReShade manager for Linux, allowing you to easily install shaders for games running through WINE/Proton in their respective prefixes.",
+          "icon": "leshade.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/game/leshade.sh"
+        },
+        {
           "name": "Lossless Scaling",
           "description": "A compatibility layer for Lossless Scaling on Vulkan for Linux. Still requires Lossless Scaling for Windows.",
           "icon": "lsfgvk.png",
@@ -1083,6 +1090,13 @@
           "icon": "blender.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/blender.sh"
+        },
+        {
+          "name": "Distrobox-Adv",
+          "description": "Container do Debian via distrobox com pacotes que fornecem ambiente para uso de certificado digital por advogados no Brasil. Também inclui o Distroshelf.",
+          "icon": "boxadv.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/office/boxadv.sh"
         },
         {
           "name": "Google Chrome",
@@ -1449,13 +1463,6 @@
           "icon": "bottles.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/bottles.sh"
-        },
-        {
-          "name": "Distrobox-Adv",
-          "description": "Container do Debian via distrobox com pacotes que fornecem ambiente para uso de certificado digital por advogados no Brasil. Também inclui o Distroshelf.",
-          "icon": "boxadv.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/utils/boxadv.sh"
         },
         {
           "name": "Cloudflare WARP",
@@ -2349,6 +2356,13 @@
           "scriptPath": "p3/scripts/drivers/amdgpu.sh"
         },
         {
+          "name": "AIC8800/AX900 WiFi",
+          "description": "Driver para o chipset combinado WiFi/Bluetooth AIC8800D80, encontrado em diversos adaptadores USB.",
+          "icon": "wifi.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/ax900.sh"
+        },
+        {
           "name": "Broadcom WiFi",
           "description": "Drivers proprietários Broadcom WiFi para Linux. Use apenas se sua placa não estiver funcionando com os drivers open-source embutidos no kernel.",
           "icon": "bcm.png",
@@ -2574,13 +2588,6 @@
           "icon": "cnfh.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/cnfh.sh"
-        },
-        {
-          "name": "Codecs com Aceleração de Hardware",
-          "description": "Os codecs e bibliotecas necessários para reprodução de vídeo com aceleração de hardware para H264/265 no Fedora através de VA-API e VDPAU.",
-          "icon": "codec.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/extra/codecfix-hw.sh"
         },
         {
           "name": "Codecs de Streaming",
@@ -2859,6 +2866,13 @@
           "scriptPath": "p3/scripts/game/hgl.sh"
         },
         {
+          "name": "LeShade",
+          "description": "Um gerenciador de ReShade para Linux que permite instalar shaders facilmente para jogos executados através do WINE/Proton em seus respectivos prefixos.",
+          "icon": "leshade.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/game/leshade.sh"
+        },
+        {
           "name": "Lossless Scaling",
           "description": "Uma camada de compatibilidade para o Lossless Scaling no Vulkan para Linux. Ainda requer o Lossless Scaling para Windows.",
           "icon": "lsfgvk.png",
@@ -2986,6 +3000,13 @@
           "icon": "blender.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/blender.sh"
+        },
+        {
+          "name": "Distrobox-Adv",
+          "description": "Container do Debian via distrobox com pacotes que fornecem ambiente para uso de certificado digital por advogados no Brasil. Também inclui o Distroshelf.",
+          "icon": "boxadv.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/office/boxadv.sh"
         },
         {
           "name": "Google Chrome",
@@ -3352,13 +3373,6 @@
           "icon": "bottles.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/bottles.sh"
-        },
-        {
-          "name": "Distrobox-Adv",
-          "description": "Container do Debian via distrobox com pacotes que fornecem ambiente para uso de certificado digital por advogados no Brasil. Também inclui o Distroshelf.",
-          "icon": "boxadv.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/utils/boxadv.sh"
         },
         {
           "name": "Cloudflare WARP",
@@ -4252,6 +4266,13 @@
           "scriptPath": "p3/scripts/drivers/amdgpu.sh"
         },
         {
+          "name": "AIC8800/AX900 WiFi",
+          "description": "Controlador para el chipset combinado WiFi/Bluetooth AIC8800D80, presente en varios adaptadores USB.",
+          "icon": "wifi.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/ax900.sh"
+        },
+        {
           "name": "Broadcom WiFi",
           "description": "Controladores propietarios Broadcom WiFi para Linux. Solo usar si su tarjeta no funciona con los controladores de código abierto integrados en el kernel.",
           "icon": "bcm.png",
@@ -4477,13 +4498,6 @@
           "icon": "cnfh.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/cnfh.sh"
-        },
-        {
-          "name": "Codecs Acelerados por Hardware",
-          "description": "Los codecs y bibliotecas necesarios para la reproducción de video acelerada por hardware para H264/265 en Fedora a través de VA-API y VDPAU.",
-          "icon": "codec.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/extra/codecfix-hw.sh"
         },
         {
           "name": "Códecs de Streaming",
@@ -4762,6 +4776,13 @@
           "scriptPath": "p3/scripts/game/hgl.sh"
         },
         {
+          "name": "LeShade",
+          "description": "Un gestor de ReShade para Linux que permite instalar fácilmente shaders para juegos ejecutados mediante WINE/Proton en sus respectivos prefijos.",
+          "icon": "leshade.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/game/leshade.sh"
+        },
+        {
           "name": "Lossless Scaling",
           "description": "Una capa de compatibilidad para Lossless Scaling en Vulkan para Linux. Aún requiere Lossless Scaling para Windows.",
           "icon": "lsfgvk.png",
@@ -4889,6 +4910,13 @@
           "icon": "blender.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/blender.sh"
+        },
+        {
+          "name": "Distrobox-Adv",
+          "description": "Container do Debian via distrobox com pacotes que fornecem ambiente para uso de certificado digital por advogados no Brasil. Também inclui o Distroshelf.",
+          "icon": "boxadv.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/office/boxadv.sh"
         },
         {
           "name": "Google Chrome",
@@ -5255,13 +5283,6 @@
           "icon": "bottles.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/bottles.sh"
-        },
-        {
-          "name": "Distrobox-Adv",
-          "description": "Container do Debian via distrobox com pacotes que fornecem ambiente para uso de certificado digital por advogados no Brasil. Também inclui o Distroshelf.",
-          "icon": "boxadv.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/utils/boxadv.sh"
         },
         {
           "name": "Cloudflare WARP",
@@ -6155,6 +6176,13 @@
           "scriptPath": "p3/scripts/drivers/amdgpu.sh"
         },
         {
+          "name": "AIC8800/AX900 WiFi",
+          "description": "Pilote pour le chipset combiné WiFi/Bluetooth AIC8800D80, présent dans plusieurs adaptateurs USB.",
+          "icon": "wifi.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/ax900.sh"
+        },
+        {
           "name": "Broadcom WiFi",
           "description": "Pilotes WiFi Broadcom propriétaires pour Linux. À utiliser seulement si votre carte ne fonctionne pas avec les pilotes open source intégrés au noyau.",
           "icon": "bcm.png",
@@ -6380,13 +6408,6 @@
           "icon": "cnfh.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/cnfh.sh"
-        },
-        {
-          "name": "Codecs Accélérés par Matériel",
-          "description": "Les codecs et bibliothèques nécessaires pour la lecture vidéo accélérée par matériel pour H264/265 sur Fedora via VA-API et VDPAU.",
-          "icon": "codec.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/extra/codecfix-hw.sh"
         },
         {
           "name": "Codecs de streaming",
@@ -6665,6 +6686,13 @@
           "scriptPath": "p3/scripts/game/hgl.sh"
         },
         {
+          "name": "LeShade",
+          "description": "Un gestionnaire ReShade pour Linux permettant d'installer facilement des shaders pour les jeux exécutés via WINE/Proton dans leurs préfixes respectifs.",
+          "icon": "leshade.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/game/leshade.sh"
+        },
+        {
           "name": "Lossless Scaling",
           "description": "Une couche de compatibilité pour Lossless Scaling sur Vulkan pour Linux. Nécessite toujours Lossless Scaling pour Windows.",
           "icon": "lsfgvk.png",
@@ -6792,6 +6820,13 @@
           "icon": "blender.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/blender.sh"
+        },
+        {
+          "name": "Distrobox-Adv",
+          "description": "Container do Debian via distrobox com pacotes que fornecem ambiente para uso de certificado digital por advogados no Brasil. Também inclui o Distroshelf.",
+          "icon": "boxadv.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/office/boxadv.sh"
         },
         {
           "name": "Google Chrome",
@@ -7158,13 +7193,6 @@
           "icon": "bottles.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/bottles.sh"
-        },
-        {
-          "name": "Distrobox-Adv",
-          "description": "Container do Debian via distrobox com pacotes que fornecem ambiente para uso de certificado digital por advogados no Brasil. Também inclui o Distroshelf.",
-          "icon": "boxadv.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/utils/boxadv.sh"
         },
         {
           "name": "Cloudflare WARP",
@@ -8058,6 +8086,13 @@
           "scriptPath": "p3/scripts/drivers/amdgpu.sh"
         },
         {
+          "name": "AIC8800/AX900 WiFi",
+          "description": "Treiber für den kombinierten AIC8800D80-WiFi/Bluetooth-Chipsatz, der in verschiedenen USB-Adaptern zum Einsatz kommt.",
+          "icon": "wifi.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/ax900.sh"
+        },
+        {
           "name": "Broadcom WiFi",
           "description": "Proprietäre Broadcom WiFi-Treiber für Linux. Nur verwenden, wenn Ihre Karte nicht mit den kernel-eingebetteten Open-Source-Treibern funktioniert.",
           "icon": "bcm.png",
@@ -8283,13 +8318,6 @@
           "icon": "cnfh.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/cnfh.sh"
-        },
-        {
-          "name": "Hardware-beschleunigte Codecs",
-          "description": "Die notwendigen Codecs und Bibliotheken für hardwarebeschleunigte Videowiedergabe für H264/265 auf Fedora über VA-API und VDPAU.",
-          "icon": "codec.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/extra/codecfix-hw.sh"
         },
         {
           "name": "Streaming-Codecs",
@@ -8568,6 +8596,13 @@
           "scriptPath": "p3/scripts/game/hgl.sh"
         },
         {
+          "name": "LeShade",
+          "description": "Ein ReShade-Manager für Linux, mit dem sich Shader für Spiele, die über WINE/Proton laufen, einfach in den jeweiligen Präfixen installieren lassen.",
+          "icon": "leshade.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/game/leshade.sh"
+        },
+        {
           "name": "Lossless Scaling",
           "description": "Eine Kompatibilitätsschicht für Lossless Scaling auf Vulkan für Linux. Erfordert trotzdem Lossless Scaling für Windows.",
           "icon": "lsfgvk.png",
@@ -8695,6 +8730,13 @@
           "icon": "blender.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/blender.sh"
+        },
+        {
+          "name": "Distrobox-Adv",
+          "description": "Container do Debian via distrobox com pacotes que fornecem ambiente para uso de certificado digital por advogados no Brasil. Também inclui o Distroshelf.",
+          "icon": "boxadv.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/office/boxadv.sh"
         },
         {
           "name": "Google Chrome",
@@ -9061,13 +9103,6 @@
           "icon": "bottles.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/bottles.sh"
-        },
-        {
-          "name": "Distrobox-Adv",
-          "description": "Container do Debian via distrobox com pacotes que fornecem ambiente para uso de certificado digital por advogados no Brasil. Também inclui o Distroshelf.",
-          "icon": "boxadv.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/utils/boxadv.sh"
         },
         {
           "name": "Cloudflare WARP",
@@ -9961,6 +9996,13 @@
           "scriptPath": "p3/scripts/drivers/amdgpu.sh"
         },
         {
+          "name": "AIC8800/AX900 WiFi",
+          "description": "适用于 AIC8800D80 WiFi/蓝牙组合芯片组的驱动程序，该芯片组常见于多种 USB 适配器中。",
+          "icon": "wifi.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/ax900.sh"
+        },
+        {
           "name": "Broadcom WiFi",
           "description": "Linux的专有Broadcom WiFi驱动程序。仅在您的网卡不能与内核嵌入的开源驱动程序一起工作时使用。",
           "icon": "bcm.png",
@@ -10186,13 +10228,6 @@
           "icon": "cnfh.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/cnfh.sh"
-        },
-        {
-          "name": "硬件加速编解码器",
-          "description": "通过VA-API和VDPAU在Fedora上为H264/265提供硬件加速视频播放所需的编解码器和库。",
-          "icon": "codec.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/extra/codecfix-hw.sh"
         },
         {
           "name": "流媒体编解码器",
@@ -10471,6 +10506,13 @@
           "scriptPath": "p3/scripts/game/hgl.sh"
         },
         {
+          "name": "LeShade",
+          "description": "Linux 上的 ReShade 管理器，可让您轻松地为通过 WINE/Proton 运行的游戏将着色器安装到各自对应的 prefix 中。",
+          "icon": "leshade.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/game/leshade.sh"
+        },
+        {
           "name": "Lossless Scaling",
           "description": "Linux上Vulkan无损缩放的兼容层。仍需要Windows版的Lossless Scaling。",
           "icon": "lsfgvk.png",
@@ -10598,6 +10640,13 @@
           "icon": "blender.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/blender.sh"
+        },
+        {
+          "name": "Distrobox-Adv",
+          "description": "Container do Debian via distrobox com pacotes que fornecem ambiente para uso de certificado digital por advogados no Brasil. Também inclui o Distroshelf.",
+          "icon": "boxadv.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/office/boxadv.sh"
         },
         {
           "name": "Google Chrome",
@@ -10964,13 +11013,6 @@
           "icon": "bottles.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/bottles.sh"
-        },
-        {
-          "name": "Distrobox-Adv",
-          "description": "Container do Debian via distrobox com pacotes que fornecem ambiente para uso de certificado digital por advogados no Brasil. Também inclui o Distroshelf.",
-          "icon": "boxadv.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/utils/boxadv.sh"
         },
         {
           "name": "Cloudflare WARP",
@@ -11864,6 +11906,13 @@
           "scriptPath": "p3/scripts/drivers/amdgpu.sh"
         },
         {
+          "name": "AIC8800/AX900 WiFi",
+          "description": "さまざまな USB アダプターに搭載されている AIC8800D80 WiFi/Bluetooth コンボチップセット用ドライバーです。",
+          "icon": "wifi.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/ax900.sh"
+        },
+        {
           "name": "Broadcom WiFi",
           "description": "Linux用プロプライエタリBroadcom WiFiドライバー。カードがカーネル組み込みオープンソースドライバーで動作しない場合のみ使用。",
           "icon": "bcm.png",
@@ -12089,13 +12138,6 @@
           "icon": "cnfh.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/cnfh.sh"
-        },
-        {
-          "name": "ハードウェアアクセラレーションコーデック",
-          "description": "Fedora上でVA-APIとVDPAUを通じてH264/265のハードウェアアクセラレーションビデオ再生に必要なコーデックとライブラリ。",
-          "icon": "codec.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/extra/codecfix-hw.sh"
         },
         {
           "name": "ストリーミングコーデック",
@@ -12374,6 +12416,13 @@
           "scriptPath": "p3/scripts/game/hgl.sh"
         },
         {
+          "name": "LeShade",
+          "description": "WINE/Proton 経由で動作するゲームの各 prefix にシェーダーを簡単にインストールできる、Linux 向け ReShade マネージャーです。",
+          "icon": "leshade.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/game/leshade.sh"
+        },
+        {
           "name": "Lossless Scaling",
           "description": "Linux上でVulkan用Lossless Scalingの互換レイヤー。Windows用Lossless Scalingが依然として必要です。",
           "icon": "lsfgvk.png",
@@ -12501,6 +12550,13 @@
           "icon": "blender.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/blender.sh"
+        },
+        {
+          "name": "Distrobox-Adv",
+          "description": "Container do Debian via distrobox com pacotes que fornecem ambiente para uso de certificado digital por advogados no Brasil. Também inclui o Distroshelf.",
+          "icon": "boxadv.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/office/boxadv.sh"
         },
         {
           "name": "Google Chrome",
@@ -12867,13 +12923,6 @@
           "icon": "bottles.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/bottles.sh"
-        },
-        {
-          "name": "Distrobox-Adv",
-          "description": "Container do Debian via distrobox com pacotes que fornecem ambiente para uso de certificado digital por advogados no Brasil. Também inclui o Distroshelf.",
-          "icon": "boxadv.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/utils/boxadv.sh"
         },
         {
           "name": "Cloudflare WARP",
@@ -13767,6 +13816,13 @@
           "scriptPath": "p3/scripts/drivers/amdgpu.sh"
         },
         {
+          "name": "AIC8800/AX900 WiFi",
+          "description": "Драйвер для комбинированного чипсета WiFi/Bluetooth AIC8800D80, используемого в различных USB-адаптерах.",
+          "icon": "wifi.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/drivers/ax900.sh"
+        },
+        {
           "name": "Broadcom WiFi",
           "description": "Проприетарные драйверы Broadcom WiFi для Linux. Используйте только если ваша карта не работает с открытыми драйверами, встроенными в ядро.",
           "icon": "bcm.png",
@@ -13992,13 +14048,6 @@
           "icon": "cnfh.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/extra/cnfh.sh"
-        },
-        {
-          "name": "Аппаратно-ускоренные кодеки",
-          "description": "Необходимые кодеки и библиотеки для аппаратно-ускоренного воспроизведения видео для H264/265 на Fedora через VA-API и VDPAU.",
-          "icon": "codec.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/extra/codecfix-hw.sh"
         },
         {
           "name": "Кодеки для потокового вещания",
@@ -14277,6 +14326,13 @@
           "scriptPath": "p3/scripts/game/hgl.sh"
         },
         {
+          "name": "LeShade",
+          "description": "Менеджер ReShade для Linux, позволяющий легко устанавливать шейдеры для игр, запускаемых через WINE/Proton, в соответствующие префиксы.",
+          "icon": "leshade.png",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/game/leshade.sh"
+        },
+        {
           "name": "Lossless Scaling",
           "description": "Слой совместимости для Lossless Scaling на Vulkan для Linux. Всё ещё требует Lossless Scaling для Windows.",
           "icon": "lsfgvk.png",
@@ -14404,6 +14460,13 @@
           "icon": "blender.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/blender.sh"
+        },
+        {
+          "name": "Distrobox-Adv",
+          "description": "Container do Debian via distrobox com pacotes que fornecem ambiente para uso de certificado digital por advogados no Brasil. Também inclui o Distroshelf.",
+          "icon": "boxadv.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/office/boxadv.sh"
         },
         {
           "name": "Google Chrome",
@@ -14770,13 +14833,6 @@
           "icon": "bottles.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/bottles.sh"
-        },
-        {
-          "name": "Distrobox-Adv",
-          "description": "Container do Debian via distrobox com pacotes que fornecem ambiente para uso de certificado digital por advogados no Brasil. Também inclui o Distroshelf.",
-          "icon": "boxadv.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/utils/boxadv.sh"
         },
         {
           "name": "Cloudflare WARP",
