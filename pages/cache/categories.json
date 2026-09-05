@@ -914,13 +914,6 @@
         "scriptPath": "p3/scripts/game/gfn.sh"
       },
       {
-        "name": "Greenlight",
-        "description": "glight_desc",
-        "icon": "greenlight.png",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/game/glight.sh"
-      },
-      {
         "name": "GOverlay",
         "description": "goverlay_desc",
         "icon": "goverlay.svg",
@@ -970,67 +963,11 @@
         "scriptPath": "p3/scripts/game/lutris.sh"
       },
       {
-        "name": "Minecraft Bedrock Launcher",
-        "description": "mcbe_desc",
-        "icon": "minecraft.svg",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/game/mcbe.sh"
-      },
-      {
         "name": "MangoJuice",
         "description": "mgjuice_desc",
         "icon": "mangojuice.png",
         "version": "1.0",
         "scriptPath": "p3/scripts/game/mgjuice.sh"
-      },
-      {
-        "name": "Moonlight",
-        "description": "mlight_desc",
-        "icon": "moonlight.svg",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/game/moonlight.sh"
-      },
-      {
-        "name": "Osu!",
-        "description": "osu_desc",
-        "icon": "osu.png",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/game/osu.sh"
-      },
-      {
-        "name": "Prism Launcher",
-        "description": "prism_desc",
-        "icon": "prism.svg",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/game/prism.sh"
-      },
-      {
-        "name": "ProtonPlus",
-        "description": "pp_desc",
-        "icon": "protonplus.svg",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/game/protonplus.sh"
-      },
-      {
-        "name": "Protontricks",
-        "description": "ptricks_desc",
-        "icon": "proton.svg",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/game/ptricks.sh"
-      },
-      {
-        "name": "ProtonUp",
-        "description": "pup_desc",
-        "icon": "pupgui.png",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/game/pup.sh"
-      },
-      {
-        "name": "Sober",
-        "description": "sober_desc",
-        "icon": "sober.png",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/game/sober.sh"
       },
       {
         "name": "Steam",
@@ -1045,16 +982,33 @@
         "icon": "sunshine.png",
         "version": "1.0",
         "scriptPath": "p3/scripts/game/sunshine.sh"
-      },
-      {
-        "name": "Vinegar",
-        "description": "vinegar_desc",
-        "icon": "vinegar.png",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/game/vinegar.sh"
       }
     ],
     "subcategories": {}
+  },
+  "lists": {
+    "name": "lists",
+    "icon": "folder-open",
+    "description": "A category of scripts.",
+    "mode": "menu",
+    "tools": [],
+    "subcategories": {
+      "asusctl": {
+        "name": "asusctl",
+        "icon": "folder-open",
+        "description": "A subcategory of scripts.",
+        "mode": "menu",
+        "tools": [
+          {
+            "name": "asusctl-pre",
+            "description": "",
+            "icon": "application-x-executable",
+            "version": "1.0",
+            "scriptPath": "p3/scripts/lists/asusctl/asusctl-pre.sh"
+          }
+        ]
+      }
+    }
   },
   "office": {
     "name": "office",
@@ -1068,13 +1022,6 @@
         "icon": "anydesk.svg",
         "version": "1.0",
         "scriptPath": "p3/scripts/office/anydesk.sh"
-      },
-      {
-        "name": "Audacity",
-        "description": "audacity_desc",
-        "icon": "audacity.svg",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/office/audacity.sh"
       },
       {
         "name": "Blender",
@@ -1117,13 +1064,6 @@
         "icon": "resolve.svg",
         "version": "1.0",
         "scriptPath": "p3/scripts/office/davinci.sh"
-      },
-      {
-        "name": "Figma",
-        "description": "figma_desc",
-        "icon": "figma.svg",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/office/figma.sh"
       },
       {
         "name": "Foliate",
@@ -1215,13 +1155,6 @@
         "icon": "pjeoffice-pro.png",
         "version": "1.0",
         "scriptPath": "p3/scripts/office/pjeoffice.sh"
-      },
-      {
-        "name": "Recordly",
-        "description": "recordly_desc",
-        "icon": "recordly.png",
-        "version": "1.0",
-        "scriptPath": "p3/scripts/office/recordly.sh"
       },
       {
         "name": "Zen Browser",
@@ -1515,6 +1448,13 @@
         "icon": "device.svg",
         "version": "1.0",
         "scriptPath": "p3/scripts/utils/lact.sh"
+      },
+      {
+        "name": "Marmalade",
+        "description": "marmalade_desc",
+        "icon": "marmalade.svg",
+        "version": "1.0",
+        "scriptPath": "p3/scripts/utils/marmalade.sh"
       },
       {
         "name": "Mission Center",

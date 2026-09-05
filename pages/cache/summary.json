@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-08-29T09:44:21.266Z",
-  "categoryCount": 11,
-  "totalTools": 254,
+  "lastUpdated": "2026-09-05T07:26:34.261Z",
+  "categoryCount": 12,
+  "totalTools": 243,
   "supportedLanguages": [
     "en",
     "pt",
@@ -19,6 +19,7 @@
     "drivers",
     "extra",
     "game",
+    "lists",
     "office",
     "repos",
     "sysadm",

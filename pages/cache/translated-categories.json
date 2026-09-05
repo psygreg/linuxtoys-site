@@ -921,13 +921,6 @@
           "scriptPath": "p3/scripts/game/gfn.sh"
         },
         {
-          "name": "Greenlight",
-          "description": "A community-made client for Xbox's XCloud.",
-          "icon": "greenlight.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/glight.sh"
-        },
-        {
           "name": "GOverlay",
           "description": "A Qt-based tool to configure MangoHud, an overlay for monitoring FPS and other performance metrics. Also installs MangoHud.",
           "icon": "goverlay.svg",
@@ -977,67 +970,11 @@
           "scriptPath": "p3/scripts/game/lutris.sh"
         },
         {
-          "name": "Minecraft Bedrock Launcher",
-          "description": "A community port of Minecraft Bedrock Edition for Linux.",
-          "icon": "minecraft.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/mcbe.sh"
-        },
-        {
           "name": "MangoJuice",
           "description": "A GTK-based tool to configure MangoHud, an overlay for monitoring FPS and other performance metrics. Also installs MangoHud.",
           "icon": "mangojuice.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/game/mgjuice.sh"
-        },
-        {
-          "name": "Moonlight",
-          "description": "Open source PC client for NVIDIA GameStream and Sunshine.",
-          "icon": "moonlight.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/moonlight.sh"
-        },
-        {
-          "name": "Osu!",
-          "description": "A community-made wrapper for the rhythm game with a large community and many user-created beatmaps.",
-          "icon": "osu.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/osu.sh"
-        },
-        {
-          "name": "Prism Launcher",
-          "description": "A custom launcher for Minecraft Java Edition with support for mods and shaders.",
-          "icon": "prism.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/prism.sh"
-        },
-        {
-          "name": "ProtonPlus",
-          "description": "A GTK-based tool to easily obtain community runners for gaming on Linux.",
-          "icon": "protonplus.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/protonplus.sh"
-        },
-        {
-          "name": "Protontricks",
-          "description": "Proton configuration tool, akin to Winetricks. Useful in very specific cases.",
-          "icon": "proton.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/ptricks.sh"
-        },
-        {
-          "name": "ProtonUp",
-          "description": "A Qt-based tool to easily obtain community runners for gaming on Linux.",
-          "icon": "pupgui.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/pup.sh"
-        },
-        {
-          "name": "Sober",
-          "description": "Roblox community port for Linux, based on the Android version of the game.",
-          "icon": "sober.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/sober.sh"
         },
         {
           "name": "Steam",
@@ -1052,17 +989,36 @@
           "icon": "sunshine.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/game/sunshine.sh"
-        },
-        {
-          "name": "Vinegar",
-          "description": "A community wrapper for Roblox Studio, for Roblox game creators.",
-          "icon": "vinegar.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/vinegar.sh"
         }
       ],
       "subcategories": {},
       "displayName": "Gaming"
+    },
+    "lists": {
+      "name": "lists",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {
+        "asusctl": {
+          "name": "asusctl",
+          "icon": "folder-open",
+          "description": "A subcategory of scripts.",
+          "mode": "menu",
+          "tools": [
+            {
+              "name": "asusctl-pre",
+              "description": "",
+              "icon": "application-x-executable",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/lists/asusctl/asusctl-pre.sh"
+            }
+          ],
+          "displayName": "asusctl"
+        }
+      },
+      "displayName": "lists"
     },
     "office": {
       "name": "office",
@@ -1076,13 +1032,6 @@
           "icon": "anydesk.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/anydesk.sh"
-        },
-        {
-          "name": "Audacity",
-          "description": "A free, open source, cross-platform audio software.",
-          "icon": "audacity.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/office/audacity.sh"
         },
         {
           "name": "Blender",
@@ -1125,13 +1074,6 @@
           "icon": "resolve.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/davinci.sh"
-        },
-        {
-          "name": "Figma",
-          "description": "A web-based UI/UX design application.",
-          "icon": "figma.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/office/figma.sh"
         },
         {
           "name": "Foliate",
@@ -1223,13 +1165,6 @@
           "icon": "pjeoffice-pro.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/pjeoffice.sh"
-        },
-        {
-          "name": "Recordly",
-          "description": "Open-source screen recorder and editor for walkthroughs, demos, product videos, and more, with motion-driven presentation tools built in.",
-          "icon": "recordly.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/office/recordly.sh"
         },
         {
           "name": "Zen Browser",
@@ -1526,6 +1461,13 @@
           "icon": "device.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/lact.sh"
+        },
+        {
+          "name": "Marmalade",
+          "description": "Allows VTuber applications running on Linux, such as VBridger and VSeeFace, to use MediaPipe externally.",
+          "icon": "marmalade.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/marmalade.sh"
         },
         {
           "name": "Mission Center",
@@ -2831,13 +2773,6 @@
           "scriptPath": "p3/scripts/game/gfn.sh"
         },
         {
-          "name": "Greenlight",
-          "description": "Um cliente feito pela comunidade para Xbox XCloud.",
-          "icon": "greenlight.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/glight.sh"
-        },
-        {
           "name": "GOverlay",
           "description": "Uma ferramenta baseada em Qt para configurar o MangoHud, uma sobreposição para monitorar FPS e outras métricas de desempenho. Também instala o MangoHud.",
           "icon": "goverlay.svg",
@@ -2887,67 +2822,11 @@
           "scriptPath": "p3/scripts/game/lutris.sh"
         },
         {
-          "name": "Minecraft Bedrock Launcher",
-          "description": "Um port da comunidade do Minecraft Bedrock Edition para Linux.",
-          "icon": "minecraft.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/mcbe.sh"
-        },
-        {
           "name": "MangoJuice",
           "description": "Uma ferramenta baseada em GTK para configurar o MangoHud, uma sobreposição para monitorar FPS e outras métricas de desempenho. Também instala o MangoHud.",
           "icon": "mangojuice.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/game/mgjuice.sh"
-        },
-        {
-          "name": "Moonlight",
-          "description": "Cliente de PC de código aberto para NVIDIA GameStream e Sunshine.",
-          "icon": "moonlight.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/moonlight.sh"
-        },
-        {
-          "name": "Osu!",
-          "description": "Uma wrapper feita pela comunidade para o jogo de ritmo com uma grande comunidade e muitos beatmaps criados por usuários.",
-          "icon": "osu.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/osu.sh"
-        },
-        {
-          "name": "Prism Launcher",
-          "description": "Um lançador personalizado para Minecraft Java Edition com suporte para mods e shaders.",
-          "icon": "prism.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/prism.sh"
-        },
-        {
-          "name": "ProtonPlus",
-          "description": "Uma ferramenta baseada em GTK para obter facilmente runners da comunidade para jogos no Linux.",
-          "icon": "protonplus.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/protonplus.sh"
-        },
-        {
-          "name": "Protontricks",
-          "description": "Ferramenta de configuração do Proton, semelhante ao Winetricks. Útil em casos muito específicos.",
-          "icon": "proton.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/ptricks.sh"
-        },
-        {
-          "name": "ProtonUp",
-          "description": "Uma ferramenta baseada em Qt para obter facilmente runners da comunidade para jogos no Linux.",
-          "icon": "pupgui.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/pup.sh"
-        },
-        {
-          "name": "Sober",
-          "description": "Port da comunidade do Roblox para Linux, baseada na versão de Android do jogo.",
-          "icon": "sober.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/sober.sh"
         },
         {
           "name": "Steam",
@@ -2962,17 +2841,36 @@
           "icon": "sunshine.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/game/sunshine.sh"
-        },
-        {
-          "name": "Vinegar",
-          "description": "Uma wrapper da comunidade para o Roblox Studio, para criadores de jogos do Roblox.",
-          "icon": "vinegar.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/vinegar.sh"
         }
       ],
       "subcategories": {},
       "displayName": "Jogos"
+    },
+    "lists": {
+      "name": "lists",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {
+        "asusctl": {
+          "name": "asusctl",
+          "icon": "folder-open",
+          "description": "A subcategory of scripts.",
+          "mode": "menu",
+          "tools": [
+            {
+              "name": "asusctl-pre",
+              "description": "",
+              "icon": "application-x-executable",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/lists/asusctl/asusctl-pre.sh"
+            }
+          ],
+          "displayName": "asusctl"
+        }
+      },
+      "displayName": "lists"
     },
     "office": {
       "name": "office",
@@ -2986,13 +2884,6 @@
           "icon": "anydesk.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/anydesk.sh"
-        },
-        {
-          "name": "Audacity",
-          "description": "Um software de áudio gratuito, open source e multiplataforma.",
-          "icon": "audacity.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/office/audacity.sh"
         },
         {
           "name": "Blender",
@@ -3035,13 +2926,6 @@
           "icon": "resolve.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/davinci.sh"
-        },
-        {
-          "name": "Figma",
-          "description": "Uma aplicação de design UI/UX baseada na web.",
-          "icon": "figma.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/office/figma.sh"
         },
         {
           "name": "Foliate",
@@ -3133,13 +3017,6 @@
           "icon": "pjeoffice-pro.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/pjeoffice.sh"
-        },
-        {
-          "name": "Recordly",
-          "description": "Gravador de tela e editor de código aberto para tutoriais, demonstrações, vídeos de produtos e muito mais, com ferramentas de apresentação orientadas por movimento integradas.",
-          "icon": "recordly.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/office/recordly.sh"
         },
         {
           "name": "Zen Browser",
@@ -3436,6 +3313,13 @@
           "icon": "device.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/lact.sh"
+        },
+        {
+          "name": "Marmalade",
+          "description": "Permite que aplicativos de VTuber executados no Linux, como VBridger e VSeeFace, utilizem o MediaPipe externamente.",
+          "icon": "marmalade.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/marmalade.sh"
         },
         {
           "name": "Mission Center",
@@ -4741,13 +4625,6 @@
           "scriptPath": "p3/scripts/game/gfn.sh"
         },
         {
-          "name": "Greenlight",
-          "description": "Un cliente hecho por la comunidad para Xbox XCloud.",
-          "icon": "greenlight.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/glight.sh"
-        },
-        {
           "name": "GOverlay",
           "description": "Una herramienta basada en Qt para configurar MangoHud, una superposición para monitorear FPS y otras métricas de rendimiento. También instala MangoHud.",
           "icon": "goverlay.svg",
@@ -4797,67 +4674,11 @@
           "scriptPath": "p3/scripts/game/lutris.sh"
         },
         {
-          "name": "Minecraft Bedrock Launcher",
-          "description": "Un port comunitario de Minecraft Bedrock Edition para Linux.",
-          "icon": "minecraft.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/mcbe.sh"
-        },
-        {
           "name": "MangoJuice",
           "description": "Una herramienta basada en GTK para configurar MangoHud, una superposición para monitorear FPS y otras métricas de rendimiento. También instala MangoHud.",
           "icon": "mangojuice.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/game/mgjuice.sh"
-        },
-        {
-          "name": "Moonlight",
-          "description": "Cliente de PC de código abierto para NVIDIA GameStream y Sunshine.",
-          "icon": "moonlight.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/moonlight.sh"
-        },
-        {
-          "name": "Osu!",
-          "description": "Un wrapper hecho por la comunidad para el juego de ritmo con una gran comunidad y muchos beatmaps creados por usuarios.",
-          "icon": "osu.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/osu.sh"
-        },
-        {
-          "name": "Prism Launcher",
-          "description": "Un lanzador personalizado para Minecraft Java Edition con soporte para mods y shaders.",
-          "icon": "prism.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/prism.sh"
-        },
-        {
-          "name": "ProtonPlus",
-          "description": "Una herramienta basada en GTK para obtener fácilmente runners comunitarios para juegos en Linux.",
-          "icon": "protonplus.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/protonplus.sh"
-        },
-        {
-          "name": "Protontricks",
-          "description": "Herramienta de configuración de Proton, similar a Winetricks. Útil en casos muy específicos.",
-          "icon": "proton.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/ptricks.sh"
-        },
-        {
-          "name": "ProtonUp",
-          "description": "Una herramienta basada en Qt para obtener fácilmente runners comunitarios para juegos en Linux.",
-          "icon": "pupgui.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/pup.sh"
-        },
-        {
-          "name": "Sober",
-          "description": "Port comunitario de Roblox para Linux, basado en la versión de Android del juego.",
-          "icon": "sober.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/sober.sh"
         },
         {
           "name": "Steam",
@@ -4872,17 +4693,36 @@
           "icon": "sunshine.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/game/sunshine.sh"
-        },
-        {
-          "name": "Vinegar",
-          "description": "Un wrapper comunitario para Roblox Studio, para creadores de juegos de Roblox.",
-          "icon": "vinegar.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/vinegar.sh"
         }
       ],
       "subcategories": {},
       "displayName": "Juegos"
+    },
+    "lists": {
+      "name": "lists",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {
+        "asusctl": {
+          "name": "asusctl",
+          "icon": "folder-open",
+          "description": "A subcategory of scripts.",
+          "mode": "menu",
+          "tools": [
+            {
+              "name": "asusctl-pre",
+              "description": "",
+              "icon": "application-x-executable",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/lists/asusctl/asusctl-pre.sh"
+            }
+          ],
+          "displayName": "asusctl"
+        }
+      },
+      "displayName": "lists"
     },
     "office": {
       "name": "office",
@@ -4896,13 +4736,6 @@
           "icon": "anydesk.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/anydesk.sh"
-        },
-        {
-          "name": "Audacity",
-          "description": "Un software de audio gratuito, de código abierto y multiplataforma.",
-          "icon": "audacity.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/office/audacity.sh"
         },
         {
           "name": "Blender",
@@ -4945,13 +4778,6 @@
           "icon": "resolve.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/davinci.sh"
-        },
-        {
-          "name": "Figma",
-          "description": "Una aplicación de diseño UI/UX basada en web.",
-          "icon": "figma.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/office/figma.sh"
         },
         {
           "name": "Foliate",
@@ -5043,13 +4869,6 @@
           "icon": "pjeoffice-pro.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/pjeoffice.sh"
-        },
-        {
-          "name": "Recordly",
-          "description": "Grabador de pantalla y editor de código abierto para tutoriales, demostraciones, videos de productos y más, con herramientas de presentación impulsadas por movimiento integradas.",
-          "icon": "recordly.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/office/recordly.sh"
         },
         {
           "name": "Zen Browser",
@@ -5346,6 +5165,13 @@
           "icon": "device.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/lact.sh"
+        },
+        {
+          "name": "Marmalade",
+          "description": "Permite que aplicaciones VTuber que se ejecutan en Linux, como VBridger y VSeeFace, utilicen MediaPipe externamente.",
+          "icon": "marmalade.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/marmalade.sh"
         },
         {
           "name": "Mission Center",
@@ -6651,13 +6477,6 @@
           "scriptPath": "p3/scripts/game/gfn.sh"
         },
         {
-          "name": "Greenlight",
-          "description": "Un client créé par la communauté pour Xbox XCloud.",
-          "icon": "greenlight.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/glight.sh"
-        },
-        {
           "name": "GOverlay",
           "description": "Un outil basé sur Qt pour configurer MangoHud, un overlay pour surveiller les FPS et autres métriques de performance. Installe également MangoHud.",
           "icon": "goverlay.svg",
@@ -6707,67 +6526,11 @@
           "scriptPath": "p3/scripts/game/lutris.sh"
         },
         {
-          "name": "Minecraft Bedrock Launcher",
-          "description": "Un port communautaire de Minecraft Bedrock Edition pour Linux.",
-          "icon": "minecraft.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/mcbe.sh"
-        },
-        {
           "name": "MangoJuice",
           "description": "Un outil basé sur GTK pour configurer MangoHud, un overlay pour surveiller les FPS et autres métriques de performance. Installe également MangoHud.",
           "icon": "mangojuice.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/game/mgjuice.sh"
-        },
-        {
-          "name": "Moonlight",
-          "description": "Client PC open source pour NVIDIA GameStream et Sunshine.",
-          "icon": "moonlight.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/moonlight.sh"
-        },
-        {
-          "name": "Osu!",
-          "description": "Un wrapper communautaire pour le jeu de rythme avec une grande communauté et de nombreuses beatmaps créées par les utilisateurs.",
-          "icon": "osu.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/osu.sh"
-        },
-        {
-          "name": "Prism Launcher",
-          "description": "Un lanceur personnalisé pour Minecraft Java Edition avec prise en charge des mods et des shaders.",
-          "icon": "prism.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/prism.sh"
-        },
-        {
-          "name": "ProtonPlus",
-          "description": "Un outil basé sur GTK pour obtenir facilement des runners communautaires pour le gaming sous Linux.",
-          "icon": "protonplus.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/protonplus.sh"
-        },
-        {
-          "name": "Protontricks",
-          "description": "Outil de configuration Proton, similaire à Winetricks. Utile dans des cas très spécifiques.",
-          "icon": "proton.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/ptricks.sh"
-        },
-        {
-          "name": "ProtonUp",
-          "description": "Un outil basé sur Qt pour obtenir facilement des runners communautaires pour le gaming sous Linux.",
-          "icon": "pupgui.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/pup.sh"
-        },
-        {
-          "name": "Sober",
-          "description": "Port communautaire de Roblox pour Linux, basé sur la version Android du jeu.",
-          "icon": "sober.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/sober.sh"
         },
         {
           "name": "Steam",
@@ -6782,17 +6545,36 @@
           "icon": "sunshine.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/game/sunshine.sh"
-        },
-        {
-          "name": "Vinegar",
-          "description": "Un wrapper communautaire pour Roblox Studio, pour les créateurs de jeux Roblox.",
-          "icon": "vinegar.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/vinegar.sh"
         }
       ],
       "subcategories": {},
       "displayName": "Gaming"
+    },
+    "lists": {
+      "name": "lists",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {
+        "asusctl": {
+          "name": "asusctl",
+          "icon": "folder-open",
+          "description": "A subcategory of scripts.",
+          "mode": "menu",
+          "tools": [
+            {
+              "name": "asusctl-pre",
+              "description": "",
+              "icon": "application-x-executable",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/lists/asusctl/asusctl-pre.sh"
+            }
+          ],
+          "displayName": "asusctl"
+        }
+      },
+      "displayName": "lists"
     },
     "office": {
       "name": "office",
@@ -6806,13 +6588,6 @@
           "icon": "anydesk.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/anydesk.sh"
-        },
-        {
-          "name": "Audacity",
-          "description": "Un logiciel audio gratuit, open source et multiplateforme.",
-          "icon": "audacity.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/office/audacity.sh"
         },
         {
           "name": "Blender",
@@ -6855,13 +6630,6 @@
           "icon": "resolve.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/davinci.sh"
-        },
-        {
-          "name": "Figma",
-          "description": "Une application de design UI/UX basée sur le web.",
-          "icon": "figma.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/office/figma.sh"
         },
         {
           "name": "Foliate",
@@ -6953,13 +6721,6 @@
           "icon": "pjeoffice-pro.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/pjeoffice.sh"
-        },
-        {
-          "name": "Recordly",
-          "description": "Enregistreur d'écran et éditeur open source pour les tutoriels, démonstrations, vidéos de produits et bien plus encore, avec des outils de présentation pilotés par le mouvement intégrés.",
-          "icon": "recordly.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/office/recordly.sh"
         },
         {
           "name": "Zen Browser",
@@ -7256,6 +7017,13 @@
           "icon": "device.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/lact.sh"
+        },
+        {
+          "name": "Marmalade",
+          "description": "Permet aux applications VTuber fonctionnant sous Linux, telles que VBridger et VSeeFace, d'utiliser MediaPipe de manière externe.",
+          "icon": "marmalade.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/marmalade.sh"
         },
         {
           "name": "Mission Center",
@@ -8561,13 +8329,6 @@
           "scriptPath": "p3/scripts/game/gfn.sh"
         },
         {
-          "name": "Greenlight",
-          "description": "Ein von der Community erstellter Client für Xbox XCloud.",
-          "icon": "greenlight.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/glight.sh"
-        },
-        {
           "name": "GOverlay",
           "description": "Ein Qt-basiertes Tool zur Konfiguration von MangoHud, einem Overlay zur Überwachung von FPS und anderen Leistungsmetriken. Installiert auch MangoHud.",
           "icon": "goverlay.svg",
@@ -8617,67 +8378,11 @@
           "scriptPath": "p3/scripts/game/lutris.sh"
         },
         {
-          "name": "Minecraft Bedrock Launcher",
-          "description": "Ein Community-Port von Minecraft Bedrock Edition für Linux.",
-          "icon": "minecraft.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/mcbe.sh"
-        },
-        {
           "name": "MangoJuice",
           "description": "Ein GTK-basiertes Tool zur Konfiguration von MangoHud, einem Overlay zur Überwachung von FPS und anderen Leistungsmetriken. Installiert auch MangoHud.",
           "icon": "mangojuice.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/game/mgjuice.sh"
-        },
-        {
-          "name": "Moonlight",
-          "description": "Open-Source-PC-Client für NVIDIA GameStream und Sunshine.",
-          "icon": "moonlight.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/moonlight.sh"
-        },
-        {
-          "name": "Osu!",
-          "description": "Ein Community-gemachter Wrapper für das Rhythmus-Spiel mit einer großen Community und vielen benutzer-erstellten Beatmaps.",
-          "icon": "osu.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/osu.sh"
-        },
-        {
-          "name": "Prism Launcher",
-          "description": "Ein benutzerdefinierter Launcher für Minecraft Java Edition mit Unterstützung für Mods und Shader.",
-          "icon": "prism.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/prism.sh"
-        },
-        {
-          "name": "ProtonPlus",
-          "description": "Ein GTK-basiertes Tool zum einfachen Erhalten von Community-Runnern für Gaming unter Linux.",
-          "icon": "protonplus.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/protonplus.sh"
-        },
-        {
-          "name": "Protontricks",
-          "description": "Proton-Konfigurationstool, ähnlich Winetricks. Nützlich in sehr spezifischen Fällen.",
-          "icon": "proton.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/ptricks.sh"
-        },
-        {
-          "name": "ProtonUp",
-          "description": "Ein Qt-basiertes Tool zum einfachen Erhalten von Community-Runnern für Gaming unter Linux.",
-          "icon": "pupgui.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/pup.sh"
-        },
-        {
-          "name": "Sober",
-          "description": "Roblox Community-Port für Linux, basierend auf der Android-Version des Spiels.",
-          "icon": "sober.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/sober.sh"
         },
         {
           "name": "Steam",
@@ -8692,17 +8397,36 @@
           "icon": "sunshine.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/game/sunshine.sh"
-        },
-        {
-          "name": "Vinegar",
-          "description": "Ein Community-Wrapper für Roblox Studio, für Roblox-Spiele-Ersteller.",
-          "icon": "vinegar.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/vinegar.sh"
         }
       ],
       "subcategories": {},
       "displayName": "Gaming"
+    },
+    "lists": {
+      "name": "lists",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {
+        "asusctl": {
+          "name": "asusctl",
+          "icon": "folder-open",
+          "description": "A subcategory of scripts.",
+          "mode": "menu",
+          "tools": [
+            {
+              "name": "asusctl-pre",
+              "description": "",
+              "icon": "application-x-executable",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/lists/asusctl/asusctl-pre.sh"
+            }
+          ],
+          "displayName": "asusctl"
+        }
+      },
+      "displayName": "lists"
     },
     "office": {
       "name": "office",
@@ -8716,13 +8440,6 @@
           "icon": "anydesk.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/anydesk.sh"
-        },
-        {
-          "name": "Audacity",
-          "description": "Eine kostenlose, quelloffene, plattformübergreifende Audio-Software.",
-          "icon": "audacity.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/office/audacity.sh"
         },
         {
           "name": "Blender",
@@ -8765,13 +8482,6 @@
           "icon": "resolve.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/davinci.sh"
-        },
-        {
-          "name": "Figma",
-          "description": "Eine webbasierte UI/UX-Design-Anwendung.",
-          "icon": "figma.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/office/figma.sh"
         },
         {
           "name": "Foliate",
@@ -8863,13 +8573,6 @@
           "icon": "pjeoffice-pro.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/pjeoffice.sh"
-        },
-        {
-          "name": "Recordly",
-          "description": "Open-Source-Bildschirmrecorder und Editor für Anleitungen, Demonstrationen, Produktvideos und mehr mit integrierten bewegungsgesteuerten Präsentationswerkzeugen.",
-          "icon": "recordly.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/office/recordly.sh"
         },
         {
           "name": "Zen Browser",
@@ -9166,6 +8869,13 @@
           "icon": "device.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/lact.sh"
+        },
+        {
+          "name": "Marmalade",
+          "description": "Ermöglicht VTuber-Anwendungen unter Linux, wie VBridger und VSeeFace, MediaPipe extern zu verwenden.",
+          "icon": "marmalade.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/marmalade.sh"
         },
         {
           "name": "Mission Center",
@@ -10471,13 +10181,6 @@
           "scriptPath": "p3/scripts/game/gfn.sh"
         },
         {
-          "name": "Greenlight",
-          "description": "Xbox XCloud 的社区制作客户端。",
-          "icon": "greenlight.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/glight.sh"
-        },
-        {
           "name": "GOverlay",
           "description": "基于Qt的MangoHud配置工具，MangoHud是用于监控FPS和其他性能指标的覆盖层。同时安装MangoHud。",
           "icon": "goverlay.svg",
@@ -10527,67 +10230,11 @@
           "scriptPath": "p3/scripts/game/lutris.sh"
         },
         {
-          "name": "Minecraft Bedrock Launcher",
-          "description": "Minecraft基岩版的社区Linux移植版。",
-          "icon": "minecraft.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/mcbe.sh"
-        },
-        {
           "name": "MangoJuice",
           "description": "基于GTK的MangoHud配置工具，MangoHud是用于监控FPS和其他性能指标的覆盖层。同时安装MangoHud。",
           "icon": "mangojuice.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/game/mgjuice.sh"
-        },
-        {
-          "name": "Moonlight",
-          "description": "适用于NVIDIA GameStream和Sunshine的开源PC客户端。",
-          "icon": "moonlight.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/moonlight.sh"
-        },
-        {
-          "name": "Osu!",
-          "description": "社区制作的节奏游戏包装器，拥有庞大的社区和众多用户创建的谱面。",
-          "icon": "osu.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/osu.sh"
-        },
-        {
-          "name": "Prism Launcher",
-          "description": "一个支持模组和光影的Minecraft Java版自定义启动器。",
-          "icon": "prism.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/prism.sh"
-        },
-        {
-          "name": "ProtonPlus",
-          "description": "基于GTK的工具，用于轻松获取Linux游戏的社区运行器。",
-          "icon": "protonplus.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/protonplus.sh"
-        },
-        {
-          "name": "Protontricks",
-          "description": "Proton配置工具，类似于Winetricks。在非常特定的情况下有用。",
-          "icon": "proton.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/ptricks.sh"
-        },
-        {
-          "name": "ProtonUp",
-          "description": "基于Qt的工具，用于轻松获取Linux游戏的社区运行器。",
-          "icon": "pupgui.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/pup.sh"
-        },
-        {
-          "name": "Sober",
-          "description": "Roblox的社区Linux移植版，基于游戏的Android版本。",
-          "icon": "sober.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/sober.sh"
         },
         {
           "name": "Steam",
@@ -10602,17 +10249,36 @@
           "icon": "sunshine.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/game/sunshine.sh"
-        },
-        {
-          "name": "Vinegar",
-          "description": "Roblox Studio的社区包装器，适用于Roblox游戏创建者。",
-          "icon": "vinegar.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/vinegar.sh"
         }
       ],
       "subcategories": {},
       "displayName": "游戏"
+    },
+    "lists": {
+      "name": "lists",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {
+        "asusctl": {
+          "name": "asusctl",
+          "icon": "folder-open",
+          "description": "A subcategory of scripts.",
+          "mode": "menu",
+          "tools": [
+            {
+              "name": "asusctl-pre",
+              "description": "",
+              "icon": "application-x-executable",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/lists/asusctl/asusctl-pre.sh"
+            }
+          ],
+          "displayName": "asusctl"
+        }
+      },
+      "displayName": "lists"
     },
     "office": {
       "name": "office",
@@ -10626,13 +10292,6 @@
           "icon": "anydesk.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/anydesk.sh"
-        },
-        {
-          "name": "Audacity",
-          "description": "免费的开源跨平台音频软件。",
-          "icon": "audacity.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/office/audacity.sh"
         },
         {
           "name": "Blender",
@@ -10675,13 +10334,6 @@
           "icon": "resolve.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/davinci.sh"
-        },
-        {
-          "name": "Figma",
-          "description": "基于网络的UI/UX设计应用程序。",
-          "icon": "figma.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/office/figma.sh"
         },
         {
           "name": "Foliate",
@@ -10773,13 +10425,6 @@
           "icon": "pjeoffice-pro.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/pjeoffice.sh"
-        },
-        {
-          "name": "Recordly",
-          "description": "用于教程、演示、产品视频等的开源屏幕录像机和编辑器，具有内置的运动驱动演示工具。",
-          "icon": "recordly.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/office/recordly.sh"
         },
         {
           "name": "Zen Browser",
@@ -11076,6 +10721,13 @@
           "icon": "device.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/lact.sh"
+        },
+        {
+          "name": "Marmalade",
+          "description": "允许在 Linux 上运行的 VTuber 应用程序（如 VBridger 和 VSeeFace）从外部使用 MediaPipe。",
+          "icon": "marmalade.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/marmalade.sh"
         },
         {
           "name": "Mission Center",
@@ -12381,13 +12033,6 @@
           "scriptPath": "p3/scripts/game/gfn.sh"
         },
         {
-          "name": "Greenlight",
-          "description": "Xbox XCloud のコミュニティ製クライアント。",
-          "icon": "greenlight.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/glight.sh"
-        },
-        {
           "name": "GOverlay",
           "description": "FPSやその他のパフォーマンス指標を監視するオーバーレイMangoHudを設定するQtベースのツール。MangoHudもインストールします。",
           "icon": "goverlay.svg",
@@ -12437,67 +12082,11 @@
           "scriptPath": "p3/scripts/game/lutris.sh"
         },
         {
-          "name": "Minecraft Bedrock Launcher",
-          "description": "Minecraft Bedrock EditionのコミュニティLinuxポート。",
-          "icon": "minecraft.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/mcbe.sh"
-        },
-        {
           "name": "MangoJuice",
           "description": "FPSやその他のパフォーマンス指標を監視するオーバーレイMangoHudを設定するGTKベースのツール。MangoHudもインストールします。",
           "icon": "mangojuice.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/game/mgjuice.sh"
-        },
-        {
-          "name": "Moonlight",
-          "description": "NVIDIA GameStreamとSunshine用のオープンソースPCクライアント。",
-          "icon": "moonlight.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/moonlight.sh"
-        },
-        {
-          "name": "Osu!",
-          "description": "大きなコミュニティと多くのユーザー作成ビートマップを持つリズムゲームのコミュニティ製ラッパー。",
-          "icon": "osu.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/osu.sh"
-        },
-        {
-          "name": "Prism Launcher",
-          "description": "MODとシェーダーのサポートを備えたMinecraft Java Editionのカスタムランチャー。",
-          "icon": "prism.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/prism.sh"
-        },
-        {
-          "name": "ProtonPlus",
-          "description": "Linuxゲーミングのためのコミュニティランナーを簡単に取得するGTKベースのツール。",
-          "icon": "protonplus.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/protonplus.sh"
-        },
-        {
-          "name": "Protontricks",
-          "description": "WinetricksのようなProton設定ツール。非常に特定のケースで有用。",
-          "icon": "proton.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/ptricks.sh"
-        },
-        {
-          "name": "ProtonUp",
-          "description": "Linuxゲーミングのためのコミュニティランナーを簡単に取得するQtベースのツール。",
-          "icon": "pupgui.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/pup.sh"
-        },
-        {
-          "name": "Sober",
-          "description": "ゲームのAndroidバージョンを基にしたRobloxのコミュニティLinuxポート。",
-          "icon": "sober.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/sober.sh"
         },
         {
           "name": "Steam",
@@ -12512,17 +12101,36 @@
           "icon": "sunshine.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/game/sunshine.sh"
-        },
-        {
-          "name": "Vinegar",
-          "description": "Robloxゲームクリエイター向けのRoblox Studioのコミュニティラッパー。",
-          "icon": "vinegar.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/vinegar.sh"
         }
       ],
       "subcategories": {},
       "displayName": "ゲーム"
+    },
+    "lists": {
+      "name": "lists",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {
+        "asusctl": {
+          "name": "asusctl",
+          "icon": "folder-open",
+          "description": "A subcategory of scripts.",
+          "mode": "menu",
+          "tools": [
+            {
+              "name": "asusctl-pre",
+              "description": "",
+              "icon": "application-x-executable",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/lists/asusctl/asusctl-pre.sh"
+            }
+          ],
+          "displayName": "asusctl"
+        }
+      },
+      "displayName": "lists"
     },
     "office": {
       "name": "office",
@@ -12536,13 +12144,6 @@
           "icon": "anydesk.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/anydesk.sh"
-        },
-        {
-          "name": "Audacity",
-          "description": "無料のオープンソースクロスプラットフォームオーディオソフトウェア。",
-          "icon": "audacity.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/office/audacity.sh"
         },
         {
           "name": "Blender",
@@ -12585,13 +12186,6 @@
           "icon": "resolve.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/davinci.sh"
-        },
-        {
-          "name": "Figma",
-          "description": "ウェブベースのUI/UXデザインアプリケーション。",
-          "icon": "figma.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/office/figma.sh"
         },
         {
           "name": "Foliate",
@@ -12683,13 +12277,6 @@
           "icon": "pjeoffice-pro.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/pjeoffice.sh"
-        },
-        {
-          "name": "Recordly",
-          "description": "チュートリアル、デモ、製品ビデオなど向けのオープンソースの画面レコーダーおよびエディター、モーション駆動の組み込みプレゼンテーションツール付き。",
-          "icon": "recordly.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/office/recordly.sh"
         },
         {
           "name": "Zen Browser",
@@ -12986,6 +12573,13 @@
           "icon": "device.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/lact.sh"
+        },
+        {
+          "name": "Marmalade",
+          "description": "VBridger や VSeeFace など、Linux 上で動作する VTuber アプリケーションが MediaPipe を外部から利用できるようにします。",
+          "icon": "marmalade.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/marmalade.sh"
         },
         {
           "name": "Mission Center",
@@ -14291,13 +13885,6 @@
           "scriptPath": "p3/scripts/game/gfn.sh"
         },
         {
-          "name": "Greenlight",
-          "description": "Клиент, созданный сообществом для Xbox XCloud.",
-          "icon": "greenlight.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/glight.sh"
-        },
-        {
           "name": "GOverlay",
           "description": "Инструмент на основе Qt для настройки MangoHud, оверлея для мониторинга FPS и других метрик производительности. Также устанавливает MangoHud.",
           "icon": "goverlay.svg",
@@ -14347,67 +13934,11 @@
           "scriptPath": "p3/scripts/game/lutris.sh"
         },
         {
-          "name": "Minecraft Bedrock Launcher",
-          "description": "Сообщественный порт Minecraft Bedrock Edition для Linux.",
-          "icon": "minecraft.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/mcbe.sh"
-        },
-        {
           "name": "MangoJuice",
           "description": "Инструмент на основе GTK для настройки MangoHud, оверлея для мониторинга FPS и других метрик производительности. Также устанавливает MangoHud.",
           "icon": "mangojuice.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/game/mgjuice.sh"
-        },
-        {
-          "name": "Moonlight",
-          "description": "Клиент ПК с открытым исходным кодом для NVIDIA GameStream и Sunshine.",
-          "icon": "moonlight.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/moonlight.sh"
-        },
-        {
-          "name": "Osu!",
-          "description": "Сделанная сообществом оболочка для ритм-игры с большим сообществом и множеством пользовательских битмапов.",
-          "icon": "osu.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/osu.sh"
-        },
-        {
-          "name": "Prism Launcher",
-          "description": "Пользовательский лаунчер для Minecraft Java Edition с поддержкой модов и шейдеров.",
-          "icon": "prism.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/prism.sh"
-        },
-        {
-          "name": "ProtonPlus",
-          "description": "Инструмент на основе GTK для лёгкого получения сообщественных раннеров для игр в Linux.",
-          "icon": "protonplus.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/protonplus.sh"
-        },
-        {
-          "name": "Protontricks",
-          "description": "Инструмент конфигурации Proton, аналогичный Winetricks. Полезен в очень специфических случаях.",
-          "icon": "proton.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/ptricks.sh"
-        },
-        {
-          "name": "ProtonUp",
-          "description": "Инструмент на основе Qt для лёгкого получения сообщественных раннеров для игр в Linux.",
-          "icon": "pupgui.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/pup.sh"
-        },
-        {
-          "name": "Sober",
-          "description": "Сообщественный порт Roblox для Linux, основанный на Android-версии игры.",
-          "icon": "sober.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/sober.sh"
         },
         {
           "name": "Steam",
@@ -14422,17 +13953,36 @@
           "icon": "sunshine.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/game/sunshine.sh"
-        },
-        {
-          "name": "Vinegar",
-          "description": "Сообщественная оболочка для Roblox Studio, для создателей игр Roblox.",
-          "icon": "vinegar.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/game/vinegar.sh"
         }
       ],
       "subcategories": {},
       "displayName": "Игры"
+    },
+    "lists": {
+      "name": "lists",
+      "icon": "folder-open",
+      "description": "A category of scripts.",
+      "mode": "menu",
+      "tools": [],
+      "subcategories": {
+        "asusctl": {
+          "name": "asusctl",
+          "icon": "folder-open",
+          "description": "A subcategory of scripts.",
+          "mode": "menu",
+          "tools": [
+            {
+              "name": "asusctl-pre",
+              "description": "",
+              "icon": "application-x-executable",
+              "version": "1.0",
+              "scriptPath": "p3/scripts/lists/asusctl/asusctl-pre.sh"
+            }
+          ],
+          "displayName": "asusctl"
+        }
+      },
+      "displayName": "lists"
     },
     "office": {
       "name": "office",
@@ -14446,13 +13996,6 @@
           "icon": "anydesk.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/anydesk.sh"
-        },
-        {
-          "name": "Audacity",
-          "description": "Бесплатное программное обеспечение для работы со звуком с открытым исходным кодом и кроссплатформенное.",
-          "icon": "audacity.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/office/audacity.sh"
         },
         {
           "name": "Blender",
@@ -14495,13 +14038,6 @@
           "icon": "resolve.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/davinci.sh"
-        },
-        {
-          "name": "Figma",
-          "description": "Веб-приложение для UI/UX дизайна.",
-          "icon": "figma.svg",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/office/figma.sh"
         },
         {
           "name": "Foliate",
@@ -14593,13 +14129,6 @@
           "icon": "pjeoffice-pro.png",
           "version": "1.0",
           "scriptPath": "p3/scripts/office/pjeoffice.sh"
-        },
-        {
-          "name": "Recordly",
-          "description": "Открытый рекордер экрана и редактор для пошаговых инструкций, демонстраций, видео продуктов и многого другого, со встроенными инструментами презентации, управляемыми движением.",
-          "icon": "recordly.png",
-          "version": "1.0",
-          "scriptPath": "p3/scripts/office/recordly.sh"
         },
         {
           "name": "Zen Browser",
@@ -14896,6 +14425,13 @@
           "icon": "device.svg",
           "version": "1.0",
           "scriptPath": "p3/scripts/utils/lact.sh"
+        },
+        {
+          "name": "Marmalade",
+          "description": "Позволяет VTuber-приложениям, работающим в Linux, таким как VBridger и VSeeFace, использовать MediaPipe извне.",
+          "icon": "marmalade.svg",
+          "version": "1.0",
+          "scriptPath": "p3/scripts/utils/marmalade.sh"
         },
         {
           "name": "Mission Center",
