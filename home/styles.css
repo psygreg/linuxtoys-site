@@ -556,47 +556,72 @@ code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace; }
   font-size: .92rem;
 }
 
-.distro-grid {
+.distro-roller {
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 12px;
 }
 
 .distro-card {
-  min-height: 112px;
+  min-width: 0;
+  min-height: 96px;
   display: grid;
   place-items: center;
   align-content: center;
-  gap: 10px;
-  padding: 16px 10px;
+  gap: 9px;
+  padding: 13px 10px;
   border: 1px solid var(--border);
   border-radius: 16px;
   background: rgba(255,255,255,.025);
-  transition: transform .18s ease, border-color .18s ease, background .18s ease;
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  transition:
+    opacity .21s ease,
+    transform .21s ease,
+    border-color .18s ease,
+    background .18s ease;
 }
 
 .distro-card:hover {
-  transform: translateY(-2px);
   border-color: rgba(124,221,170,.22);
   background: rgba(124,221,170,.045);
 }
 
+.distro-card.is-changing {
+  opacity: 0;
+  transform: translateY(-8px) scale(.97);
+}
+
+.distro-card.is-entering {
+  opacity: 0;
+  transform: translateY(8px) scale(.97);
+}
+
+.distro-card-media {
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+}
+
 .distro-card img {
-  width: 48px;
-  height: 48px;
+  width: 46px;
+  height: 46px;
   object-fit: contain;
 }
 
 .distro-card span {
+  max-width: 100%;
   color: #cbd4df;
   font-size: .72rem;
   font-weight: 600;
+  line-height: 1.25;
   text-align: center;
 }
 
 .distro-placeholder-logo {
-  width: 48px;
-  height: 48px;
+  width: 46px;
+  height: 46px;
   display: grid;
   place-items: center;
   border: 1px dashed rgba(255,255,255,.2);
@@ -701,7 +726,8 @@ code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace; }
     gap: 10px;
   }
 
-  .distro-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .distro-roller { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
 }
 
 @media (max-width: 680px) {
@@ -780,10 +806,11 @@ code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace; }
     grid-column: 1 / -1;
   }
 
-  .distro-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  .distro-card { min-height: 96px; padding: 13px 8px; }
+  .distro-roller { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .distro-card { min-height: 88px; padding: 11px 8px; }
+  .distro-card-media,
   .distro-card img,
-  .distro-placeholder-logo { width: 42px; height: 42px; }
+  .distro-placeholder-logo { width: 40px; height: 40px; }
 
   .cta-section {
     grid-template-columns: 1fr;
@@ -810,7 +837,7 @@ code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace; }
   .lang-button { padding: 6px 7px; }
 
   .hero-actions .button { width: 100%; }
-  .distro-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .distro-roller { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (prefers-reduced-motion: reduce) {

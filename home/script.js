@@ -3,7 +3,7 @@ const INSTALL_COMMAND = "curl -fsSL https://linux.toys/install.sh | bash";
 const translations = {
   en: {
     pageTitle: "LinuxToys — Software made simpler on Linux",
-    pageDescription: "LinuxToys makes it easier to discover, install, and manage software across more than 30 Linux distributions.",
+    pageDescription: "LinuxToys makes it easier to discover, install, and manage software across more than 40 Linux distributions.",
     brandTagline: "Your Linux toolbox",
     navFeatures: "Documentation",
     navCompatibility: "Developer portal",
@@ -44,7 +44,7 @@ const translations = {
     manifestLabel: "my-system manifest",
     manifestLink: "Learn about manifests",
     compatEyebrow: "It's everywhere",
-    compatTitle: "One experience across 30+ Linux distributions.",
+    compatTitle: "One experience across 40+ Linux distributions.",
     compatText: "And the list is still growing: the sky is truly the limit.",
     ctaEyebrow: "Ready to try it?",
     ctaTitle: "Make your system work for you, as it should be.",
@@ -56,7 +56,7 @@ const translations = {
   },
   "pt-BR": {
     pageTitle: "LinuxToys — Sua caixa de ferramentas no Linux",
-    pageDescription: "O LinuxToys facilita descobrir, instalar e gerenciar software em mais de 30 distribuições Linux.",
+    pageDescription: "O LinuxToys facilita descobrir, instalar e gerenciar software em mais de 40 distribuições Linux.",
     brandTagline: "Sua caixa de ferramentas no Linux",
     navFeatures: "Documentação",
     navCompatibility: "Portal do desenvolvedor",
@@ -97,7 +97,7 @@ const translations = {
     manifestLabel: "manifesto meu-sistema",
     manifestLink: "Saiba mais sobre manifestos",
     compatEyebrow: "Em toda parte",
-    compatTitle: "A mesma experiência em mais de 30 distribuições Linux.",
+    compatTitle: "A mesma experiência em mais de 40 distribuições Linux.",
     compatText: "E a lista continua crescendo: o céu é realmente o limite.",
     ctaEyebrow: "Pronto para experimentar?",
     ctaTitle: "Faça o seu sistema trabalhar para você, como deve ser.",
@@ -126,15 +126,17 @@ const DISTRO_LOGOS = [
   { name: "AntiX", file: "antix.webp" },
   { name: "Arch Linux", file: "arch.webp" },
   { name: "Artix", file: "artix.webp" },
+  { name: "Aurora", file: "aurora.webp" },
   { name: "Bazzite", file: "bazzite.webp" },
-  { name: "Big Linux", file: "biglinux.webp" },
+  { name: "BigLinux", file: "biglinux.webp" },
   { name: "BlackArch", file: "blackarch.webp" },
+  { name: "Bluefin", file: "bluefin.webp" },
   { name: "CachyOS", file: "cachy.webp" },
   { name: "CentOS", file: "centos.webp" },
   { name: "Debian", file: "debian.webp" },
-  { name: "Deepin Linux", file: "deepin.webp" },
+  { name: "deepin", file: "deepin.webp" },
   { name: "Devuan", file: "devuan.webp" },
-  { name: "Elementary OS", file: "elementary.webp" },
+  { name: "elementary", file: "elementary.webp" },
   { name: "Endeavour", file: "endeavour.webp" },
   { name: "Fedora", file: "fedora.webp" },
   { name: "Garuda", file: "garuda.webp" },
@@ -143,20 +145,25 @@ const DISTRO_LOGOS = [
   { name: "Lubuntu", file: "lubuntu.webp" },
   { name: "Manjaro", file: "manjaro.webp" },
   { name: "Linux Mint", file: "mint.webp" },
+  { name: "LMDE", file: "lmde.webp" },
   { name: "MX Linux", file: "mx.webp" },
   { name: "KDE Neon", file: "neon.webp" },
   { name: "Nobara", file: "nobara.webp" },
   { name: "Omarchy", file: "omarchy.webp" },
   { name: "Oracle Linux", file: "oracle.webp" },
   { name: "Parrot", file: "parrot.webp" },
+  { name: "Peppermint", file: "peppermint.webp" },
   { name: "PikaOS", file: "pikaos.webp" },
   { name: "Pop_OS!", file: "pop.webp" },
   { name: "Red Hat Enterprise Linux", file: "redhat.webp" },
+  { name: "Rocky", file: "rocky.webp" },
   { name: "Solus", file: "solus.webp" },
   { name: "OpenSUSE", file: "suse.webp" },
   { name: "Tails", file: "tails.webp" },
+  { name: "TUXEDO", file: "tuxedo.webp" },
   { name: "Ubuntu", file: "ubuntu.webp" },
   { name: "Ultramarine", file: "ultramarine.webp" },
+  { name: "Xubuntu", file: "xubuntu.webp" },
   { name: "Zorin OS", file: "zorin.webp" },
 ];
 
@@ -227,39 +234,152 @@ function applyLanguage(lang, { persist = true } = {}) {
   }
 }
 
-function renderDistroGrid() {
-  if (!distroGrid) return;
-  distroGrid.replaceChildren();
+function shuffleDistros(items) {
+  const shuffled = [...items];
 
-  DISTRO_LOGOS.forEach(({ name, file }, index) => {
-    const card = document.createElement("div");
-    card.className = "distro-card";
+  for (let i = shuffled.length - 1; i > 0; i -= 1) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
 
-    if (file) {
-      const img = document.createElement("img");
-      img.src = `assets/distros/${file}`;
-      img.alt = `${name} logo`;
-      img.loading = "lazy";
+  return shuffled;
+}
 
-      img.addEventListener("error", () => {
-        const placeholder = document.createElement("div");
-        placeholder.className = "distro-placeholder-logo";
-        placeholder.textContent = String(index + 1).padStart(2, "0");
-        img.replaceWith(placeholder);
-      });
+function createDistroCard({ name, file }, index) {
+  const card = document.createElement("div");
+  card.className = "distro-card";
+  card.dataset.distroName = name;
 
-      card.appendChild(img);
-    } else {
+  const media = document.createElement("div");
+  media.className = "distro-card-media";
+
+  if (file) {
+    const img = document.createElement("img");
+    img.src = `assets/distros/${file}`;
+    img.alt = `${name} logo`;
+    img.loading = "lazy";
+    img.decoding = "async";
+
+    img.addEventListener("error", () => {
       const placeholder = document.createElement("div");
       placeholder.className = "distro-placeholder-logo";
       placeholder.textContent = String(index + 1).padStart(2, "0");
-      card.appendChild(placeholder);
+      img.replaceWith(placeholder);
+    });
+
+    media.appendChild(img);
+  } else {
+    const placeholder = document.createElement("div");
+    placeholder.className = "distro-placeholder-logo";
+    placeholder.textContent = String(index + 1).padStart(2, "0");
+    media.appendChild(placeholder);
+  }
+
+  const label = document.createElement("span");
+  label.textContent = name;
+
+  card.append(media, label);
+  return card;
+}
+
+let distroSwapTimer = null;
+let distroResizeTimer = null;
+let distroPaused = false;
+
+function getDistroSlotCount() {
+  if (window.innerWidth <= 430) return 6;   // 2 × 3
+  if (window.innerWidth <= 680) return 9;   // 3 × 3
+  if (window.innerWidth <= 980) return 12;  // 4 × 3
+  return 18;                                // 6 × 3
+}
+
+function getVisibleDistroNames(exceptCard = null) {
+  return new Set(
+    [...distroGrid.querySelectorAll(".distro-card")]
+      .filter((card) => card !== exceptCard)
+      .map((card) => card.dataset.distroName)
+  );
+}
+
+function chooseReplacementDistro(card) {
+  const visibleNames = getVisibleDistroNames(card);
+  const available = DISTRO_LOGOS.filter(
+    (distro) => distro.name !== card.dataset.distroName && !visibleNames.has(distro.name)
+  );
+
+  const pool = available.length
+    ? available
+    : DISTRO_LOGOS.filter((distro) => distro.name !== card.dataset.distroName);
+
+  return pool[Math.floor(Math.random() * pool.length)];
+}
+
+function replaceDistroCard(card) {
+  if (!card || card.classList.contains("is-changing")) return;
+
+  const replacement = chooseReplacementDistro(card);
+  if (!replacement) return;
+
+  card.classList.add("is-changing");
+
+  window.setTimeout(() => {
+    const index = DISTRO_LOGOS.indexOf(replacement);
+    const newCard = createDistroCard(replacement, index);
+    newCard.classList.add("is-entering");
+    card.replaceWith(newCard);
+
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => newCard.classList.remove("is-entering"));
+    });
+  }, 210);
+}
+
+function scheduleDistroSwap() {
+  window.clearTimeout(distroSwapTimer);
+
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+  // A little timing variance keeps the animation from feeling clockwork-like.
+  const delay = 1200 + Math.random() * 900;
+
+  distroSwapTimer = window.setTimeout(() => {
+    if (!distroPaused) {
+      const cards = [...distroGrid.querySelectorAll(".distro-card")];
+      const card = cards[Math.floor(Math.random() * cards.length)];
+      replaceDistroCard(card);
     }
 
-    const label = document.createElement("span");
-    label.textContent = name;
-    card.appendChild(label);
-    distroGrid.appendChild(card);
+    scheduleDistroSwap();
+  }, delay);
+}
+
+function renderDistroGrid() {
+  if (!distroGrid || !DISTRO_LOGOS.length) return;
+
+  window.clearTimeout(distroSwapTimer);
+  distroGrid.replaceChildren();
+
+  const slotCount = Math.min(getDistroSlotCount(), DISTRO_LOGOS.length);
+  const initialDistros = shuffleDistros(DISTRO_LOGOS).slice(0, slotCount);
+
+  initialDistros.forEach((distro) => {
+    distroGrid.appendChild(createDistroCard(distro, DISTRO_LOGOS.indexOf(distro)));
+  });
+
+  scheduleDistroSwap();
+}
+
+if (distroGrid) {
+  distroGrid.addEventListener("pointerenter", () => { distroPaused = true; });
+  distroGrid.addEventListener("pointerleave", () => { distroPaused = false; });
+
+  window.addEventListener("resize", () => {
+    window.clearTimeout(distroResizeTimer);
+    distroResizeTimer = window.setTimeout(() => {
+      const expected = Math.min(getDistroSlotCount(), DISTRO_LOGOS.length);
+      const current = distroGrid.querySelectorAll(".distro-card").length;
+      if (current !== expected) renderDistroGrid();
+    }, 180);
   });
 }
 
