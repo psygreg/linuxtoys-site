@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="LinuxToys documentation for installing software, managing your system, using manifests, and getting more out of Linux." />
+  <meta name="theme-color" content="#0a0c10" />
+  <title>Documentation — LinuxToys</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="assets/linuxtoys.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="home/styles.css" />
+  <link rel="stylesheet" href="docs/docs-reader.css" />
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.11.1/build/styles/github-dark.min.css"
+  >
+
+  <link rel="canonical" href="https://linux.toys/documentation.html" />
+  <link rel="alternate" hreflang="en" href="https://linux.toys/documentation.html" />
+  <link rel="alternate" hreflang="pt-BR" href="https://linux.toys/documentation.pt-BR.html" />
+  <link rel="alternate" hreflang="x-default" href="https://linux.toys/documentation.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="LinuxToys" />
+  <meta property="og:title" content="Documentation — LinuxToys" />
+  <meta property="og:description" content="LinuxToys documentation for installing software, managing your system, using manifests, and getting more out of Linux." />
+  <meta property="og:url" content="https://linux.toys/documentation.html" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="pt_BR" />
+  <meta property="og:image" content="https://linux.toys/assets/app-window.webp" />
+  <meta property="og:image:type" content="image/webp" />
+  <meta property="og:image:alt" content="LinuxToys application window" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Documentation — LinuxToys" />
+  <meta name="twitter:description" content="LinuxToys documentation for installing software, managing your system, using manifests, and getting more out of Linux." />
+  <meta name="twitter:image" content="https://linux.toys/assets/app-window.webp" />
+  <meta name="twitter:image:alt" content="LinuxToys application window" />
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "name": "Documentation — LinuxToys",
+  "headline": "Documentation — LinuxToys",
+  "description": "LinuxToys documentation for installing software, managing your system, using manifests, and getting more out of Linux.",
+  "url": "https://linux.toys/documentation.html",
+  "inLanguage": "en",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "LinuxToys",
+    "url": "https://linux.toys/"
+  }
+}
+  </script>
+
+  <script>
+    (() => {
+      const key = "linuxtoys-lang";
+      const saved = localStorage.getItem(key);
+      const langs = navigator.languages?.length ? navigator.languages : [navigator.language];
+      const prefersPt = saved === "pt-BR" || (!saved && langs.some(lang => lang?.toLowerCase().startsWith("pt")));
+      if (prefersPt) location.replace("documentation.pt-BR.html" + location.search + location.hash);
+    })();
+  </script>
+
+  <script>
+    (() => {
+      const key = "linuxtoys-lang";
+      document.addEventListener("click", (event) => {
+        const button = event.target.closest?.("[data-lang]");
+        if (!button) return;
+        const lang = button.dataset.lang;
+        if (lang !== "en" && lang !== "pt-BR") return;
+        event.preventDefault();
+        event.stopImmediatePropagation();
+        localStorage.setItem(key, lang);
+        const target = lang === "pt-BR" ? "documentation.pt-BR.html" : "documentation.html";
+        location.href = target + location.search + location.hash;
+      }, true);
+      localStorage.setItem(key, "en");
+    })();
+  </script>
+
+</head>
+<body>
+  <div class="page-shell docs-shell">
+    <header class="site-header docs-header">
+      <a class="brand" href="index.html" aria-label="LinuxToys home">
+        <img class="brand-logo" src="assets/linuxtoys.svg" alt="" aria-hidden="true">
+        <span class="brand-copy">
+          <strong>LinuxToys</strong>
+          <span data-ui-i18n="brandPortal">Documentation</span>
+        </span>
+      </a>
+
+      <div class="header-actions">
+        <a class="header-link" data-ui-i18n="backHome" href="index.html">Overview</a>
+        <a class="header-link" data-ui-i18n="navInstall" href="about.html">About</a>
+        <a class="header-link" data-ui-i18n="navCompatibility" href="https://dev.linux.toys">Developer Portal</a>
+
+        <a
+          class="github-button"
+          href="https://github.com/psygreg/linuxtoys"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinuxToys on GitHub"
+          title="GitHub"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 .7A11.5 11.5 0 0 0 8.36 23.1c.58.1.79-.25.79-.56v-2.02c-3.22.7-3.9-1.37-3.9-1.37-.52-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.74-1.55-2.57-.29-5.27-1.29-5.27-5.72 0-1.27.45-2.3 1.2-3.12-.12-.3-.52-1.48.11-3.08 0 0 .97-.31 3.17 1.19a10.98 10.98 0 0 1 5.78 0c2.2-1.5 3.17-1.19 3.17-1.19.63 1.6.23 2.78.11 3.08.75.82 1.2 1.85 1.2 3.12 0 4.45-2.71 5.42-5.29 5.71.42.36.79 1.07.79 2.16v3.04c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .7Z"/>
+          </svg>
+        </a>
+
+        <div class="language-switcher" role="group" aria-label="Language selector">
+          <button class="lang-button active" type="button" data-lang="en" aria-pressed="true">EN</button>
+          <button class="lang-button" type="button" data-lang="pt-BR" aria-pressed="false">PT-BR</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="docs-main">
+      <button
+        class="mobile-toc-toggle"
+        id="mobile-toc-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="docs-sidebar"
+      >
+        <span class="mobile-toc-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M8 6h12M8 12h12M8 18h12M4 6h.01M4 12h.01M4 18h.01"/>
+          </svg>
+        </span>
+        <span data-ui-i18n="onThisPage">On this page</span>
+        <span class="mobile-toc-current" id="mobile-toc-current"></span>
+        <svg class="mobile-toc-chevron" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="m7 9 5 5 5-5"/>
+        </svg>
+      </button>
+
+      <aside class="docs-sidebar" id="docs-sidebar" aria-label="Documentation navigation">
+        <div class="toc-panel">
+          <div class="toc-kicker" data-ui-i18n="onThisPage">On this page</div>
+          <nav class="toc" id="toc" aria-label="On this page"></nav>
+        </div>
+      </aside>
+
+      <article class="markdown-panel">
+        <div class="reading-progress" aria-hidden="true">
+          <span id="reading-progress-bar"></span>
+        </div>
+
+        <div class="docs-status" id="docs-status">
+          <div class="docs-spinner" aria-hidden="true"></div>
+          <span data-ui-i18n="loading">Loading documentation…</span>
+        </div>
+
+        <div class="markdown-body" id="markdown-content" hidden></div>
+      </article>
+    </main>
+
+    <footer class="site-footer docs-footer">
+      <div class="footer-brand">
+        <strong>LinuxToys</strong>
+        <span data-ui-i18n="footerTagline">Linux made simpler</span>
+      </div>
+
+      <div class="footer-links">
+        <a data-ui-i18n="backHome" href="index.html">Overview</a>
+        <a
+          href="https://github.com/psygreg/linuxtoys"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="footer-github"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 .7A11.5 11.5 0 0 0 8.36 23.1c.58.1.79-.25.79-.56v-2.02c-3.22.7-3.9-1.37-3.9-1.37-.52-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.74-1.55-2.57-.29-5.27-1.29-5.27-5.72 0-1.27.45-2.3 1.2-3.12-.12-.3-.52-1.48.11-3.08 0 0 .97-.31 3.17 1.19a10.98 10.98 0 0 1 5.78 0c2.2-1.5 3.17-1.19 3.17-1.19.63 1.6.23 2.78.11 3.08.75.82 1.2 1.85 1.2 3.12 0 4.45-2.71 5.42-5.29 5.71.42.36.79 1.07.79 2.16v3.04c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .7Z"/>
+          </svg>
+          <span>GitHub</span>
+        </a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked@15.0.7/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.2.4/dist/purify.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.11.1/build/highlight.min.js"></script>
+  <script src="docs/docs-reader.js"></script>
+</body>
+</html>

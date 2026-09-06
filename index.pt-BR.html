@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="LinuxToys makes it easier to discover, install, and manage software across more than 30 Linux distributions." />
+  <meta name="description" content="O LinuxToys facilita descobrir, instalar e gerenciar software em mais de 30 distribuições Linux." />
   <meta name="theme-color" content="#0a0c10" />
-  <title>LinuxToys — Software made simpler on Linux</title>
+  <title>LinuxToys — Software simplificado no Linux</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,36 +14,36 @@
   <link rel="icon" href="assets/linuxtoys.svg" type="image/svg+xml">
   <link rel="stylesheet" href="home/styles.css" />
 
-  <link rel="canonical" href="https://linux.toys/" />
+  <link rel="canonical" href="https://linux.toys/index.pt-BR.html" />
   <link rel="alternate" hreflang="en" href="https://linux.toys/" />
   <link rel="alternate" hreflang="pt-BR" href="https://linux.toys/index.pt-BR.html" />
   <link rel="alternate" hreflang="x-default" href="https://linux.toys/" />
 
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="LinuxToys" />
-  <meta property="og:title" content="LinuxToys — Software made simpler on Linux" />
-  <meta property="og:description" content="LinuxToys makes it easier to discover, install, and manage software across more than 30 Linux distributions." />
-  <meta property="og:url" content="https://linux.toys/" />
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:locale:alternate" content="pt_BR" />
-  <meta property="og:image" content="https://linux.toys/assets/app-window.webp" />
+  <meta property="og:title" content="LinuxToys — Software simplificado no Linux" />
+  <meta property="og:description" content="O LinuxToys facilita descobrir, instalar e gerenciar software em mais de 30 distribuições Linux." />
+  <meta property="og:url" content="https://linux.toys/index.pt-BR.html" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:image" content="https://linux.toys/assets/app-window-br.webp" />
   <meta property="og:image:type" content="image/webp" />
   <meta property="og:image:alt" content="LinuxToys application window" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="LinuxToys — Software made simpler on Linux" />
-  <meta name="twitter:description" content="LinuxToys makes it easier to discover, install, and manage software across more than 30 Linux distributions." />
-  <meta name="twitter:image" content="https://linux.toys/assets/app-window.webp" />
+  <meta name="twitter:title" content="LinuxToys — Software simplificado no Linux" />
+  <meta name="twitter:description" content="O LinuxToys facilita descobrir, instalar e gerenciar software em mais de 30 distribuições Linux." />
+  <meta name="twitter:image" content="https://linux.toys/assets/app-window-br.webp" />
   <meta name="twitter:image:alt" content="LinuxToys application window" />
 
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "name": "LinuxToys — Software made simpler on Linux",
-  "description": "LinuxToys makes it easier to discover, install, and manage software across more than 30 Linux distributions.",
-  "url": "https://linux.toys/",
-  "inLanguage": "en",
+  "name": "LinuxToys — Software simplificado no Linux",
+  "description": "O LinuxToys facilita descobrir, instalar e gerenciar software em mais de 30 distribuições Linux.",
+  "url": "https://linux.toys/index.pt-BR.html",
+  "inLanguage": "pt-BR",
   "isPartOf": {
     "@type": "WebSite",
     "name": "LinuxToys",
@@ -55,16 +55,6 @@
   <script>
     (() => {
       const key = "linuxtoys-lang";
-      const saved = localStorage.getItem(key);
-      const langs = navigator.languages?.length ? navigator.languages : [navigator.language];
-      const prefersPt = saved === "pt-BR" || (!saved && langs.some(lang => lang?.toLowerCase().startsWith("pt")));
-      if (prefersPt) location.replace("index.pt-BR.html" + location.search + location.hash);
-    })();
-  </script>
-
-  <script>
-    (() => {
-      const key = "linuxtoys-lang";;
       document.addEventListener("click", (event) => {
         const button = event.target.closest?.("[data-lang]");
         if (!button) return;
@@ -76,7 +66,7 @@
         const target = lang === "pt-BR" ? "index.pt-BR.html" : "index.html";
         location.href = target + location.search + location.hash;
       }, true);
-      localStorage.setItem(key, "en");
+      localStorage.setItem(key, "pt-BR");
     })();
   </script>
 
@@ -94,8 +84,8 @@
 
       <div class="header-actions">
         <nav class="header-nav" aria-label="Primary navigation">
-          <a class="header-link" href="about.html" data-i18n="navInstall">Install</a>
-          <a class="header-link" href="documentation.html" data-i18n="navFeatures">Features</a>
+          <a class="header-link" href="about.pt-BR.html" data-i18n="navInstall">Install</a>
+          <a class="header-link" href="documentation.pt-BR.html" data-i18n="navFeatures">Features</a>
           <a class="header-link" href="https://dev.linux.toys" data-i18n="navCompatibility">Compatibility</a>
         </nav>
 
@@ -209,7 +199,7 @@
               <p data-i18n="simpleText">
                 Install software and features that would normally require repositories, package-format decisions, terminal commands, or distro-specific instructions — through one consistent interface.
               </p>
-              <a href="documentation.html" class="feature-link">
+              <a href="documentation.pt-BR.html" class="feature-link">
                 <span data-i18n="simpleLink">Explore the documentation</span>
                 <span aria-hidden="true">→</span>
               </a>
@@ -335,5 +325,11 @@ flatpak.package.name</code></pre>
   </div>
 
   <script src="home/script.js"></script>
+<script>
+    window.addEventListener("load", () => {
+      const pt = document.querySelector('[data-lang="pt-BR"]');
+      if (pt && pt.getAttribute("aria-pressed") !== "true") pt.click();
+    });
+  </script>
 </body>
 </html>
