@@ -573,13 +573,7 @@ code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace; }
   border: 1px solid var(--border);
   border-radius: 16px;
   background: rgba(255,255,255,.025);
-  opacity: 1;
-  transform: translateY(0) scale(1);
-  transition:
-    opacity .21s ease,
-    transform .21s ease,
-    border-color .18s ease,
-    background .18s ease;
+  transition: border-color .18s ease, background .18s ease;
 }
 
 .distro-card:hover {
@@ -587,15 +581,6 @@ code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace; }
   background: rgba(124,221,170,.045);
 }
 
-.distro-card.is-changing {
-  opacity: 0;
-  transform: translateY(-8px) scale(.97);
-}
-
-.distro-card.is-entering {
-  opacity: 0;
-  transform: translateY(8px) scale(.97);
-}
 
 .distro-card-media {
   width: 46px;

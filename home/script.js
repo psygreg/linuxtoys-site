@@ -45,7 +45,7 @@ const translations = {
     manifestLink: "Learn about manifests",
     compatEyebrow: "It's everywhere",
     compatTitle: "One experience across 40+ Linux distributions.",
-    compatText: "And the list is still growing: the sky is truly the limit.",
+    compatText: "And the list is still growing: the sky is truly the limit. These are just a few of them.",
     ctaEyebrow: "Ready to try it?",
     ctaTitle: "Make your system work for you, as it should be.",
     ctaText: "Install LinuxToys, explore what is available for your system, and keep the same familiar toolbox if you move to another supported distribution later.",
@@ -98,7 +98,7 @@ const translations = {
     manifestLink: "Saiba mais sobre manifestos",
     compatEyebrow: "Em toda parte",
     compatTitle: "A mesma experiência em mais de 40 distribuições Linux.",
-    compatText: "E a lista continua crescendo: o céu é realmente o limite.",
+    compatText: "E a lista continua crescendo: o céu é realmente o limite. Estas são só algumas delas.",
     ctaEyebrow: "Pronto para experimentar?",
     ctaTitle: "Faça o seu sistema trabalhar para você, como deve ser.",
     ctaText: "Instale o LinuxToys, explore o que está disponível para o seu sistema e continue com a mesma caixa de ferramentas familiar se mudar para outra distribuição suportada depois.",
@@ -282,9 +282,8 @@ function createDistroCard({ name, file }, index) {
   return card;
 }
 
-let distroSwapTimer = null;
 let distroResizeTimer = null;
-let distroPaused = false;
+let randomizedDistroOrder = null;
 
 function getDistroSlotCount() {
   if (window.innerWidth <= 430) return 6;   // 2 × 3
@@ -293,92 +292,34 @@ function getDistroSlotCount() {
   return 18;                                // 6 × 3
 }
 
-function getVisibleDistroNames(exceptCard = null) {
-  return new Set(
-    [...distroGrid.querySelectorAll(".distro-card")]
-      .filter((card) => card !== exceptCard)
-      .map((card) => card.dataset.distroName)
-  );
-}
-
-function chooseReplacementDistro(card) {
-  const visibleNames = getVisibleDistroNames(card);
-  const available = DISTRO_LOGOS.filter(
-    (distro) => distro.name !== card.dataset.distroName && !visibleNames.has(distro.name)
-  );
-
-  const pool = available.length
-    ? available
-    : DISTRO_LOGOS.filter((distro) => distro.name !== card.dataset.distroName);
-
-  return pool[Math.floor(Math.random() * pool.length)];
-}
-
-function replaceDistroCard(card) {
-  if (!card || card.classList.contains("is-changing")) return;
-
-  const replacement = chooseReplacementDistro(card);
-  if (!replacement) return;
-
-  card.classList.add("is-changing");
-
-  window.setTimeout(() => {
-    const index = DISTRO_LOGOS.indexOf(replacement);
-    const newCard = createDistroCard(replacement, index);
-    newCard.classList.add("is-entering");
-    card.replaceWith(newCard);
-
-    requestAnimationFrame(() => {
-      requestAnimationFrame(() => newCard.classList.remove("is-entering"));
-    });
-  }, 210);
-}
-
-function scheduleDistroSwap() {
-  window.clearTimeout(distroSwapTimer);
-
-  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-
-  // A little timing variance keeps the animation from feeling clockwork-like.
-  const delay = 1200 + Math.random() * 900;
-
-  distroSwapTimer = window.setTimeout(() => {
-    if (!distroPaused) {
-      const cards = [...distroGrid.querySelectorAll(".distro-card")];
-      const card = cards[Math.floor(Math.random() * cards.length)];
-      replaceDistroCard(card);
-    }
-
-    scheduleDistroSwap();
-  }, delay);
-}
-
 function renderDistroGrid() {
   if (!distroGrid || !DISTRO_LOGOS.length) return;
 
-  window.clearTimeout(distroSwapTimer);
+  // Pick one random order per page load and keep it stable for the visit.
+  if (!randomizedDistroOrder) {
+    randomizedDistroOrder = shuffleDistros(DISTRO_LOGOS);
+  }
+
   distroGrid.replaceChildren();
 
-  const slotCount = Math.min(getDistroSlotCount(), DISTRO_LOGOS.length);
-  const initialDistros = shuffleDistros(DISTRO_LOGOS).slice(0, slotCount);
+  const slotCount = Math.min(getDistroSlotCount(), randomizedDistroOrder.length);
+  const visibleDistros = randomizedDistroOrder.slice(0, slotCount);
 
-  initialDistros.forEach((distro) => {
+  visibleDistros.forEach((distro) => {
     distroGrid.appendChild(createDistroCard(distro, DISTRO_LOGOS.indexOf(distro)));
   });
-
-  scheduleDistroSwap();
 }
 
 if (distroGrid) {
-  distroGrid.addEventListener("pointerenter", () => { distroPaused = true; });
-  distroGrid.addEventListener("pointerleave", () => { distroPaused = false; });
-
   window.addEventListener("resize", () => {
     window.clearTimeout(distroResizeTimer);
     distroResizeTimer = window.setTimeout(() => {
-      const expected = Math.min(getDistroSlotCount(), DISTRO_LOGOS.length);
+      const expected = Math.min(getDistroSlotCount(), randomizedDistroOrder?.length || DISTRO_LOGOS.length);
       const current = distroGrid.querySelectorAll(".distro-card").length;
-      if (current !== expected) renderDistroGrid();
+
+      if (current !== expected) {
+        renderDistroGrid();
+      }
     }, 180);
   });
 }
