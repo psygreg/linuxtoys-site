@@ -19,7 +19,8 @@ const uiTranslations = {
     copy: "Copy",
     copied: "Copied",
     footerText: "Linux software distribution made easy.",
-    footerTagline: "Your Linux toolbox"
+    footerTagline: "Your Linux toolbox",
+    footerContact: "Contact"
   },
   "pt-BR": {
     brandPortal: "Sua caixa de ferramentas no Linux",
@@ -36,7 +37,8 @@ const uiTranslations = {
     copy: "Copiar",
     copied: "Copiado",
     footerText: "Distribua seu software no Linux sem complicação.",
-    footerTagline: "Sua caixa de ferramentas no Linux"
+    footerTagline: "Sua caixa de ferramentas no Linux",
+    footerContact: "Contato"
   }
 };
 

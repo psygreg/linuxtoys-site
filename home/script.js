@@ -52,7 +52,8 @@ const translations = {
     ctaButton: "Install LinuxToys",
     footerTagline: "Your Linux toolbox",
     footerInstall: "Install",
-    footerCompatibility: "Compatibility"
+    footerCompatibility: "Compatibility",
+    footerContact: "Contact"
   },
   "pt-BR": {
     pageTitle: "LinuxToys — Sua caixa de ferramentas no Linux",
@@ -105,7 +106,8 @@ const translations = {
     ctaButton: "Instalar o LinuxToys",
     footerTagline: "Sua caixa de ferramentas no Linux",
     footerInstall: "Instalar",
-    footerCompatibility: "Compatibilidade"
+    footerCompatibility: "Compatibilidade",
+    footerContact: "Contato"
   }
 };
 
