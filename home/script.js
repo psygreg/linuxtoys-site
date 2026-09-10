@@ -160,6 +160,7 @@ const DISTRO_LOGOS = [
   { name: "Red Hat Enterprise Linux", file: "redhat.webp" },
   { name: "Rocky", file: "rocky.webp" },
   { name: "Solus", file: "solus.webp" },
+  { name: "SteamOS", file: "steamos.webp" },
   { name: "OpenSUSE", file: "suse.webp" },
   { name: "Tails", file: "tails.webp" },
   { name: "TUXEDO", file: "tuxedo.webp" },
