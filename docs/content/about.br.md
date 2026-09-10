@@ -21,3 +21,9 @@ Nesse esforço para simplificar a distribuição de software, construímos junto
     Desenvolvedor-chefe do LinuxToys
   </div>
 </div>
+
+## Premiações
+
+### DIOLINUX - Melhor Aplicativo para Linux de 2025
+
+![DIOLINUX Award](/assets/awards/diolinux2025.webp)

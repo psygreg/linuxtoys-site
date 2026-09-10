@@ -20,3 +20,9 @@ In the effort of simplifying software delivery, we've built together a platform 
     Lead Developer of LinuxToys
   </div>
 </div>
+
+## Awards
+
+### DIOLINUX - Best Linux Application of 2025
+
+![DIOLINUX Award](/assets/awards/diolinux2025.webp)
