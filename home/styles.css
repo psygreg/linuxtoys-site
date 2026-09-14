@@ -573,7 +573,24 @@ code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace; }
   border: 1px solid var(--border);
   border-radius: 16px;
   background: rgba(255,255,255,.025);
-  transition: border-color .18s ease, background .18s ease;
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  transition:
+    opacity .32s ease,
+    transform .32s ease,
+    border-color .18s ease,
+    background .18s ease;
+}
+
+.distro-card.is-leaving {
+  opacity: 0;
+  transform: translateY(-7px) scale(.96);
+  pointer-events: none;
+}
+
+.distro-card.is-entering {
+  opacity: 0;
+  transform: translateY(7px) scale(.96);
 }
 
 .distro-card:hover {

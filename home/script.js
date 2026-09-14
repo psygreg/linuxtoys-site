@@ -286,7 +286,12 @@ function createDistroCard({ name, file }, index) {
 }
 
 let distroResizeTimer = null;
-let randomizedDistroOrder = null;
+let distroRotationTimer = null;
+let visibleDistros = [];
+let recentlyRotatedDistroSlots = [];
+
+const DISTRO_ROTATION_INTERVAL = 960;
+const DISTRO_TRANSITION_DURATION = 320;
 
 function getDistroSlotCount() {
   if (window.innerWidth <= 430) return 6;   // 2 × 3
@@ -295,33 +300,107 @@ function getDistroSlotCount() {
   return 18;                                // 6 × 3
 }
 
+function getAvailableDistros(excluded = visibleDistros) {
+  const visibleNames = new Set(excluded.map(({ name }) => name));
+  return DISTRO_LOGOS.filter(({ name }) => !visibleNames.has(name));
+}
+
 function renderDistroGrid() {
   if (!distroGrid || !DISTRO_LOGOS.length) return;
 
-  // Pick one random order per page load and keep it stable for the visit.
-  if (!randomizedDistroOrder) {
-    randomizedDistroOrder = shuffleDistros(DISTRO_LOGOS);
+  const slotCount = Math.min(getDistroSlotCount(), DISTRO_LOGOS.length);
+
+  // Keep distros already on screen when resizing, then fill any new slots
+  // with random entries that are not already visible.
+  visibleDistros = visibleDistros.slice(0, slotCount);
+
+  if (visibleDistros.length < slotCount) {
+    const needed = slotCount - visibleDistros.length;
+    const additions = shuffleDistros(getAvailableDistros()).slice(0, needed);
+    visibleDistros.push(...additions);
+  }
+
+  // Initial render starts with a random selection.
+  if (!visibleDistros.length) {
+    visibleDistros = shuffleDistros(DISTRO_LOGOS).slice(0, slotCount);
   }
 
   distroGrid.replaceChildren();
-
-  const slotCount = Math.min(getDistroSlotCount(), randomizedDistroOrder.length);
-  const visibleDistros = randomizedDistroOrder.slice(0, slotCount);
 
   visibleDistros.forEach((distro) => {
     distroGrid.appendChild(createDistroCard(distro, DISTRO_LOGOS.indexOf(distro)));
   });
 }
 
+function rotateRandomDistro() {
+  if (!distroGrid || !visibleDistros.length) return;
+
+  const cards = [...distroGrid.querySelectorAll('.distro-card')];
+  if (!cards.length) return;
+
+  const available = getAvailableDistros();
+  if (!available.length) return;
+
+  // Avoid recently changed positions so the random rotation feels more
+  // evenly distributed. Keep at least one slot eligible on small layouts.
+  const slotHistoryLimit = Math.min(7, Math.max(0, cards.length - 2));
+  recentlyRotatedDistroSlots = recentlyRotatedDistroSlots
+    .filter((index) => index < cards.length)
+    .slice(-slotHistoryLimit);
+
+  const recentSlots = new Set(recentlyRotatedDistroSlots);
+  const slotChoices = cards
+    .map((_, index) => index)
+    .filter((index) => !recentSlots.has(index));
+
+  const slotIndex = slotChoices[Math.floor(Math.random() * slotChoices.length)];
+  const replacement = available[Math.floor(Math.random() * available.length)];
+  const oldCard = cards[slotIndex];
+
+  oldCard.classList.add('is-leaving');
+
+  window.setTimeout(() => {
+    // A resize can rebuild the grid while the outgoing animation is running.
+    if (!oldCard.isConnected) return;
+
+    visibleDistros[slotIndex] = replacement;
+    recentlyRotatedDistroSlots.push(slotIndex);
+    recentlyRotatedDistroSlots = recentlyRotatedDistroSlots.slice(-slotHistoryLimit);
+
+    const newCard = createDistroCard(
+      replacement,
+      DISTRO_LOGOS.indexOf(replacement)
+    );
+    newCard.classList.add('is-entering');
+    oldCard.replaceWith(newCard);
+
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => newCard.classList.remove('is-entering'));
+    });
+  }, DISTRO_TRANSITION_DURATION);
+}
+
+function startDistroRotation() {
+  if (!distroGrid || DISTRO_LOGOS.length <= getDistroSlotCount()) return;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  window.clearInterval(distroRotationTimer);
+  distroRotationTimer = window.setInterval(
+    rotateRandomDistro,
+    DISTRO_ROTATION_INTERVAL
+  );
+}
+
 if (distroGrid) {
-  window.addEventListener("resize", () => {
+  window.addEventListener('resize', () => {
     window.clearTimeout(distroResizeTimer);
     distroResizeTimer = window.setTimeout(() => {
-      const expected = Math.min(getDistroSlotCount(), randomizedDistroOrder?.length || DISTRO_LOGOS.length);
-      const current = distroGrid.querySelectorAll(".distro-card").length;
+      const expected = Math.min(getDistroSlotCount(), DISTRO_LOGOS.length);
+      const current = distroGrid.querySelectorAll('.distro-card').length;
 
       if (current !== expected) {
         renderDistroGrid();
+        startDistroRotation();
       }
     }, 180);
   });
@@ -358,4 +437,5 @@ if (appShot) {
 }
 
 renderDistroGrid();
+startDistroRotation();
 applyLanguage(getInitialLanguage(), { persist: false });
