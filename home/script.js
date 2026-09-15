@@ -2,12 +2,13 @@ const INSTALL_COMMAND = "curl -fsSL https://linux.toys/install.sh | bash";
 
 const translations = {
   en: {
-    pageTitle: "LinuxToys — Software made simpler on Linux",
+    pageTitle: "LinuxToys — Your Linux toolbox",
     pageDescription: "LinuxToys makes it easier to discover, install, and manage software across more than 40 Linux distributions.",
     brandTagline: "Your Linux toolbox",
     navFeatures: "Documentation",
     navCompatibility: "Developer portal",
     navInstall: "About",
+    navDonate: "Donate",
     heroEyebrow: "Your Linux toolbox",
     heroTitle: "Don't fight your system any longer.",
     heroLead: "LinuxToys brings useful software, system maintenance, and repeatable setup tools together in one approachable app — across dozens of Linux distributions.",
@@ -62,6 +63,7 @@ const translations = {
     navFeatures: "Documentação",
     navCompatibility: "Portal do desenvolvedor",
     navInstall: "Sobre",
+    navDonate: "Doar",
     heroEyebrow: "Sua caixa de ferramentas no Linux",
     heroTitle: "Não brigue mais com seu sistema.",
     heroLead: "O LinuxToys reúne software útil, manutenção do sistema e ferramentas para repetir sua configuração em um único aplicativo fácil de usar — em dezenas de distribuições Linux.",
