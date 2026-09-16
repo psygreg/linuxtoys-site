@@ -134,7 +134,6 @@ const DISTRO_LOGOS = [
   { name: "Bazzite", file: "bazzite.webp" },
   { name: "BigLinux", file: "biglinux.webp" },
   { name: "BlackArch", file: "blackarch.webp" },
-  { name: "Bluefin", file: "bluefin.webp" },
   { name: "CachyOS", file: "cachy.webp" },
   { name: "CentOS", file: "centos.webp" },
   { name: "Debian", file: "debian.webp" },
