@@ -134,6 +134,7 @@ const DISTRO_LOGOS = [
   { name: "Bazzite", file: "bazzite.webp" },
   { name: "BigLinux", file: "biglinux.webp" },
   { name: "BlackArch", file: "blackarch.webp" },
+  { name: "Bluefin", file: "bluefin.webp" },
   { name: "CachyOS", file: "cachy.webp" },
   { name: "CentOS", file: "centos.webp" },
   { name: "Debian", file: "debian.webp" },
@@ -170,6 +171,20 @@ const DISTRO_LOGOS = [
   { name: "Xubuntu", file: "xubuntu.webp" },
   { name: "Zorin OS", file: "zorin.webp" },
 ];
+
+const distroLogoPreloads = [];
+
+function preloadDistroLogos() {
+  DISTRO_LOGOS.forEach(({ file }) => {
+    if (!file) return;
+
+    const img = new Image();
+    img.src = `assets/distros/${file}`;
+    distroLogoPreloads.push(img);
+  });
+}
+
+preloadDistroLogos();
 
 const languageButtons = document.querySelectorAll(".lang-button");
 const translatableElements = document.querySelectorAll("[data-i18n]");
@@ -261,7 +276,7 @@ function createDistroCard({ name, file }, index) {
     const img = document.createElement("img");
     img.src = `assets/distros/${file}`;
     img.alt = `${name} logo`;
-    img.loading = "lazy";
+    img.loading = "eager";
     img.decoding = "async";
 
     img.addEventListener("error", () => {
