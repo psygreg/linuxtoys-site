@@ -272,6 +272,30 @@ Manifest mode is also available from the command line, which is useful for autom
 
 ---
 
+## Exporting a Manifest
+
+LinuxToys can create a manifest from the operations currently registered in the **Action Registry**. This is useful for recreating your LinuxToys setup on another system or keeping a list of the features you have installed.
+
+Open the **Action Registry** from the header menu and click **Export**. LinuxToys will generate a ready-to-use `linuxtoys-manifest.txt` file in your home folder.
+
+![Manifest exporting](/docs/assets/demo-manifest-export.webp)
+
+The exported manifest automatically avoids duplicate entries created when one LinuxToys feature calls another internally, as well as operations that should not be reproduced, such as system updates and removal actions.
+
+You can install everything from the exported manifest importing it as usual from the graphical interface or with:
+
+```bash
+linuxtoys install-manifest ~/linuxtoys-manifest.txt
+```
+
+You can also export a manifest directly from the command line:
+
+```bash
+linuxtoys export-manifest
+```
+
+---
+
 ## Reporting a problem
 
 Linux systems vary enormously in distribution, version, hardware, drivers, desktop environments and configuration.

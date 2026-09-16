@@ -270,6 +270,30 @@ O modo Manifesto também está disponível pela linha de comando, o que é útil
 
 ---
 
+## Exportando um Manifesto
+
+O LinuxToys pode criar um manifesto a partir das operações atualmente registradas no **Registro de Ações**. Isso é útil para recriar sua configuração do LinuxToys em outro sistema ou simplesmente manter uma lista dos recursos que você instalou.
+
+Abra o **Registro de Ações** pelo menu do cabeçalho e clique em **Exportar**. O LinuxToys irá gerar um arquivo `linuxtoys-manifest.txt` pronto para uso na sua pasta pessoal.
+
+![Exportação de manifesto](/docs/assets/demo-manifest-export-br.webp)
+
+O manifesto exportado evita automaticamente entradas duplicadas criadas quando um recurso do LinuxToys chama outro internamente, além de operações que não devem ser reproduzidas, como atualizações do sistema e ações de remoção.
+
+Você pode instalar tudo que estiver no manifesto exportado importando-o pela interface gráfica normalmente, ou com:
+
+```bash
+linuxtoys install-manifest ~/linuxtoys-manifest.txt
+```
+
+Também é possível exportar um manifesto diretamente pela linha de comando:
+
+```bash
+linuxtoys export-manifest
+```
+
+---
+
 ## Relatando um problema
 
 Sistemas Linux variam enormemente em distribuição, versão, hardware, drivers, ambientes de desktop e configurações.
