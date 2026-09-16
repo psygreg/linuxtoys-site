@@ -65,7 +65,7 @@ const translations = {
     navInstall: "Sobre",
     navDonate: "Doar",
     heroEyebrow: "Sua caixa de ferramentas no Linux",
-    heroTitle: "Faça seu sistema trabalhar pra você.",
+    heroTitle: "Faça seu sistema trabalhar para você.",
     heroLead: "O LinuxToys reúne software útil, manutenção do sistema e ferramentas para repetir sua configuração em um único aplicativo fácil de usar — em dezenas de distribuições Linux.",
     heroInstall: "Instalar o LinuxToys",
     heroExplore: "Conhecer os recursos",
