@@ -468,6 +468,24 @@ if (appShot) {
   });
 }
 
+document.querySelector('.cta-section a[href="#install"]')?.addEventListener("click", (event) => {
+  event.preventDefault();
+
+  const install = document.getElementById("install");
+  if (!install) return;
+
+  const rect = install.getBoundingClientRect();
+  const target =
+    window.scrollY +
+    rect.top -
+    (window.innerHeight - rect.height) / 2;
+
+  window.scrollTo({
+    top: Math.max(0, target),
+    behavior: "smooth",
+  });
+});
+
 renderDistroGrid();
 startDistroRotation();
 applyLanguage(getInitialLanguage(), { persist: false });

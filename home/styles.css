@@ -1655,3 +1655,49 @@ html[data-theme="light"] .cta-section .button-primary:hover {
     grid-column: 1 / -1;
   }
 }
+
+/* Keep the hero screenshot inside its grid column at every width. */
+.hero-visual,
+.app-shot-frame {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.app-shot-frame {
+  overflow: visible;
+}
+
+.app-shot {
+  display: block;
+  width: min(100%, 760px);
+  max-width: 100%;
+  height: auto;
+  margin-inline: auto;
+}
+
+/* Once the hero becomes single-column, give the screenshot a little
+   breathing room without allowing it to exceed the page shell. */
+@media (max-width: 980px) {
+  .hero-visual {
+    width: 100%;
+    max-width: 760px;
+    margin-inline: auto;
+  }
+
+  .app-shot {
+    width: 100%;
+  }
+}
+
+@media (max-width: 680px) {
+  .app-shot-frame {
+    min-height: 0;
+    padding: 0;
+  }
+
+  .app-shot {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 12px;
+  }
+}
