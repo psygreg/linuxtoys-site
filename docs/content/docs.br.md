@@ -83,6 +83,8 @@ Abaixo das capturas de tela, o LinuxToys pode exibir uma descrição mais detalh
 
 Nem todos os aplicativos fornecem a mesma quantidade de informações, portanto algumas páginas podem apresentar menos detalhes do que outras.
 
+Descrições longas que não tenham versão localizada para o seu idioma apresentarão um botão simbólico para obter uma tradução. Esta tradução é gerada pelo Google Translate, e pode não ser totalmente precisa.
+
 ### Avaliações
 
 Quando informações de avaliação estiverem disponíveis, a avaliação atual do aplicativo e o número de avaliações serão exibidos na parte superior de sua página.
