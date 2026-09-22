@@ -5,7 +5,7 @@ const DOCS_FILES = {
 
 const uiTranslations = {
   en: {
-    brandPortal: "Your Linux toolbox",
+    brandPortal: "For everything Linux.",
     backHome: "Overview",
     repoLists: "Repository lists",
     coreLibs: "Core libraries",
@@ -19,11 +19,11 @@ const uiTranslations = {
     copy: "Copy",
     copied: "Copied",
     footerText: "Linux software distribution made easy.",
-    footerTagline: "Your Linux toolbox",
+    footerTagline: "For everything Linux.",
     footerContact: "Contact"
   },
   "pt-BR": {
-    brandPortal: "Sua caixa de ferramentas no Linux",
+    brandPortal: "Pra tudo no Linux.",
     backHome: "Visão geral",
     repoLists: "Listas de repositório",
     coreLibs: "Biblioteca shell",
@@ -37,7 +37,7 @@ const uiTranslations = {
     copy: "Copiar",
     copied: "Copiado",
     footerText: "Distribua seu software no Linux sem complicação.",
-    footerTagline: "Sua caixa de ferramentas no Linux",
+    footerTagline: "Pra tudo no Linux.",
     footerContact: "Contato"
   }
 };
@@ -56,16 +56,10 @@ let currentLanguage = "en";
 let headingObserver = null;
 
 function getInitialLanguage() {
-  const savedLanguage = localStorage.getItem("linuxtoys-lang");
-  if (savedLanguage === "en" || savedLanguage === "pt-BR") return savedLanguage;
-
-  const browserLanguages = navigator.languages?.length
-    ? navigator.languages
-    : [navigator.language];
-
-  return browserLanguages.some(lang => lang?.toLowerCase().startsWith("pt"))
-    ? "pt-BR"
-    : "en";
+  // Use the language of the localized HTML page. Locale detection and page
+  // navigation happen outside the reader, so this script must not make an
+  // independent browser-locale decision.
+  return document.documentElement.lang === "pt-BR" ? "pt-BR" : "en";
 }
 
 function translateInterface(lang) {
@@ -105,6 +99,50 @@ function slugify(text, usedIds) {
   return id;
 }
 
+
+function getEffectiveTheme() {
+  const explicitTheme = document.documentElement.dataset.theme;
+  if (explicitTheme === "light" || explicitTheme === "dark") return explicitTheme;
+  return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+}
+
+function themedImageSource(src, isLight) {
+  if (!src || !/\.webp(?:[?#].*)?$/i.test(src)) return src;
+
+  const url = new URL(src, document.baseURI);
+  url.pathname = url.pathname.replace(/-light(?=\.webp$)/i, "");
+  if (isLight) url.pathname = url.pathname.replace(/\.webp$/i, "-light.webp");
+  return url.href;
+}
+
+function updateThemeImages() {
+  const isLight = getEffectiveTheme() === "light";
+
+  content.querySelectorAll("img").forEach(image => {
+    if (!image.dataset.themeBaseSrc) {
+      const original = image.getAttribute("src");
+      if (!original || !/\.webp(?:[?#].*)?$/i.test(original)) return;
+      image.dataset.themeBaseSrc = original.replace(/-light(?=\.webp(?:[?#].*)?$)/i, "");
+    }
+
+    image.src = themedImageSource(image.dataset.themeBaseSrc, isLight);
+  });
+}
+
+const themeMedia = window.matchMedia("(prefers-color-scheme: dark)");
+themeMedia.addEventListener?.("change", () => {
+  if (!document.documentElement.dataset.theme) updateThemeImages();
+});
+
+new MutationObserver(mutations => {
+  if (mutations.some(mutation => mutation.attributeName === "data-theme")) {
+    updateThemeImages();
+  }
+}).observe(document.documentElement, {
+  attributes: true,
+  attributeFilter: ["data-theme"]
+});
+
 function configureMarked() {
   marked.setOptions({
     gfm: true,
@@ -127,6 +165,7 @@ function renderMarkdown(markdown) {
   decorateLinks();
   decorateTables();
   decorateCodeBlocks();
+  updateThemeImages();
   buildTableOfContents();
 
   content.hidden = false;
@@ -302,9 +341,9 @@ function setLoadError(path) {
   status.append(title, hint, code);
 }
 
-async function loadDocumentation(lang, { preservePosition = false } = {}) {
+async function loadDocumentation(lang, { preservePosition = false, persist = true } = {}) {
   currentLanguage = lang === "pt-BR" ? "pt-BR" : "en";
-  localStorage.setItem("linuxtoys-lang", currentLanguage);
+  if (persist) localStorage.setItem("linuxtoys-lang", currentLanguage);
 
   translateInterface(currentLanguage);
   setLoading();
@@ -387,13 +426,6 @@ function updateReadingProgress() {
   progressBar.style.width = `${(travelled / maxScroll) * 100}%`;
 }
 
-languageButtons.forEach(button => {
-  button.addEventListener("click", () => {
-    const lang = button.dataset.lang;
-    if (lang !== currentLanguage) loadDocumentation(lang);
-  });
-});
-
 mobileTocToggle.addEventListener("click", () => {
   const open = sidebar.classList.toggle("open");
   mobileTocToggle.setAttribute("aria-expanded", String(open));
@@ -410,4 +442,4 @@ window.addEventListener("resize", () => {
   updateReadingProgress();
 });
 
-loadDocumentation(getInitialLanguage());
+loadDocumentation(getInitialLanguage(), { persist: false });

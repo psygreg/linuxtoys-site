@@ -2,111 +2,111 @@ const INSTALL_COMMAND = "curl -fsSL https://linux.toys/install.sh | bash";
 
 const translations = {
   en: {
-    pageTitle: "LinuxToys — Your Linux toolbox",
-    pageDescription: "LinuxToys makes it easier to discover, install, and manage software across more than 40 Linux distributions.",
-    brandTagline: "Your Linux toolbox",
+    pageTitle: "LinuxToys — For everything Linux.",
+    pageDescription: "LinuxToys brings all things software, tools and system maintenance in one solution — across dozens of Linux distributions.",
+    brandTagline: "For everything Linux.",
     navFeatures: "Documentation",
     navCompatibility: "Developer portal",
     navInstall: "About",
     navDonate: "Donate",
-    heroEyebrow: "Your Linux toolbox",
-    heroTitle: "Make your system work for you.",
-    heroLead: "LinuxToys brings useful software, system maintenance, and repeatable setup tools together in one approachable app — across dozens of Linux distributions.",
+    heroEyebrow: "For everything Linux.",
+    heroTitle: "Everything you need. Nothing in the way.",
+    heroLead: "LinuxToys brings all things software, tools and system maintenance in one solution — across dozens of Linux distributions.",
     heroInstall: "Install LinuxToys",
     heroExplore: "Explore features",
     statDistros: "Linux distributions",
-    statAppsValue: "300+",
-    statApps: "apps and features",
-    statSetupValue: "Reproducible",
-    statSetup: "system setups with manifests",
+    statAppsValue: "Thousands",
+    statApps: "of apps and features",
+    statSetupValue: "Seamless",
+    statSetup: "installations",
     simpleLink: "Explore the documentation",
     heroImageAlt: "LinuxToys application window",
     imagePlaceholderTitle: "Screenshot",
     imagePlaceholderText: "A real app screenshot",
     installEyebrow: "One-line install",
-    installTitle: "The last command you'll ever need.",
-    installText: "Paste this into a terminal to install LinuxToys; it stays the same across all supported distributions.",
+    installTitle: "The last command you will ever need.",
+    installText: "And your Linux experience will never be the same.",
     terminalLabel: "Terminal",
     copyButton: "Copy",
     copiedButton: "Copied",
     copiedStatus: "Installation command copied.",
     copyFailed: "Could not copy automatically. Select the command and copy it manually.",
     featuresEyebrow: "Why use LinuxToys",
-    featuresTitle: "Useful when Linux is easy. Even more useful when it isn't.",
-    featuresLead: "LinuxToys focuses on the parts of desktop Linux that are valuable but can otherwise take time, research, or distro-specific knowledge.",
+    featuresTitle: "LinuxToys takes care of everything for you.",
+    featuresLead: "LinuxToys takes care of everything for you.",
     simpleTitle: "Works like magic",
-    simpleText: "Install software and features that would normally require repositories, package-format decisions, terminal commands, or distro-specific instructions through one consistent interface - and don't waste any more time with installation instructions.",
+    simpleText: "Install all kinds of software and features - even the ones that would normally require repositories, package-format decisions, terminal commands, or distro-specific instructions - through one consistent interface and don't waste any more time with installation instructions.",
     discoverTitle: "Discover new software",
-    discoverText: "Browse useful applications, gaming tools, utilities, drivers, tweaks, and system features you didn't know you needed.",
+    discoverText: "Find applications, gaming tools, utilities, drivers, tweaks, and system features you’ve been looking for — and some you never knew you needed — thanks to our ever-evolving relevance algorithm.",
     updateTitle: "Maintenance for the long run",
     updateText: "Update your whole system from one place, clean leftover packages and keep your distribution secure, tidy, and current.",
     manifestTitle: "Your setup follows you",
-    manifestText: "Create a declarative manifest describing the software and features a machine should have: IT teams for standardized deployments at scale; individual users for distro-hopping or quick recovery.",
+    manifestText: "Create a declarative manifest with the software and features you need - and no need to code: it's just a click away!",
     manifestLabel: "my-system manifest",
     manifestLink: "Learn about manifests",
     compatEyebrow: "It's everywhere",
-    compatTitle: "One experience across 40+ Linux distributions.",
-    compatText: "And the list is still growing: these are just a few of them. For applicable distributions, LinuxToys is also compatible with running through the Windows Subsystem for Linux (WSL).",
+    compatTitle: "Simplifying 40+ Linux distributions.",
+    compatText: "And the list is still growing: these are just a few of them. For applicable distributions, LinuxToys is also compatible with the Windows Subsystem for Linux (WSL) and Distrobox containers.",
     ctaEyebrow: "Ready to try it?",
     ctaTitle: "Make your system work for you, as it should be.",
     ctaText: "Install LinuxToys, explore what is available for your system, and keep the same familiar toolbox if you move to another supported distribution later.",
     ctaButton: "Install LinuxToys",
-    footerTagline: "Your Linux toolbox",
+    footerTagline: "For everything Linux.",
     footerInstall: "Install",
     footerCompatibility: "Compatibility",
     footerContact: "Contact"
   },
   "pt-BR": {
-    pageTitle: "LinuxToys — Sua caixa de ferramentas no Linux",
-    pageDescription: "O LinuxToys facilita descobrir, instalar e gerenciar software em mais de 40 distribuições Linux.",
-    brandTagline: "Sua caixa de ferramentas no Linux",
+    pageTitle: "LinuxToys — Pra tudo no Linux.",
+    pageDescription: "O LinuxToys reúne todo software, ferramentas e manutenção do sistema em uma solução — para dezenas de distribuições Linux.",
+    brandTagline: "Pra tudo no Linux.",
     navFeatures: "Documentação",
     navCompatibility: "Portal do desenvolvedor",
     navInstall: "Sobre",
     navDonate: "Doar",
-    heroEyebrow: "Sua caixa de ferramentas no Linux",
-    heroTitle: "Faça seu sistema trabalhar para você.",
-    heroLead: "O LinuxToys reúne software útil, manutenção do sistema e ferramentas para repetir sua configuração em um único aplicativo fácil de usar — em dezenas de distribuições Linux.",
+    heroEyebrow: "Pra tudo no Linux.",
+    heroTitle: "Tudo que precisa. Nada no caminho.",
+    heroLead: "O LinuxToys reúne todo software, ferramentas e manutenção do sistema em uma solução — para dezenas de distribuições Linux.",
     heroInstall: "Instalar o LinuxToys",
     heroExplore: "Conhecer os recursos",
     statDistros: "distribuições Linux",
-    statAppsValue: "300+",
-    statApps: "apps e recursos",
-    statSetupValue: "Reproduzível",
-    statSetup: "configuração do sistema com manifestos",
+    statAppsValue: "Milhares",
+    statApps: "de apps e recursos",
+    statSetupValue: "Instalações",
+    statSetup: "sem complicação",
     simpleLink: "Explore a documentação",
     heroImageAlt: "Janela do aplicativo LinuxToys",
     imagePlaceholderTitle: "Imagem",
     imagePlaceholderText: "Imagem real do app",
     installEyebrow: "Instalação em uma linha",
     installTitle: "O último comando que você vai precisar.",
-    installText: "Cole este comando em um terminal para instalar o LinuxToys; é o mesmo em todas as distribuições suportadas.",
+    installText: "E sua experiência no Linux nunca mais será a mesma.",
     terminalLabel: "Terminal",
     copyButton: "Copiar",
     copiedButton: "Copiado",
     copiedStatus: "Comando de instalação copiado.",
     copyFailed: "Não foi possível copiar automaticamente. Selecione o comando e copie manualmente.",
     featuresEyebrow: "Por que usar o LinuxToys",
-    featuresTitle: "Útil quando o Linux é fácil. Ainda mais útil quando não é.",
-    featuresLead: "O LinuxToys cuida das partes valiosas do Linux desktop que normalmente exigiriam tempo, pesquisa ou conhecimento específico de cada distribuição.",
+    featuresTitle: "O LinuxToys cuida de tudo pra você.",
+    featuresLead: "O LinuxToys cuida de tudo pra você.",
     simpleTitle: "Parece mágica",
-    simpleText: "Instale programas e recursos que normalmente exigiriam repositórios, escolha de formatos de pacote, comandos no terminal ou instruções específicas da distribuição por meio de uma interface consistente - e não perca mais tempo com instruções de instalação.",
+    simpleText: "Instale todo tipo de programas e recursos - até os que normalmente exigiriam repositórios, escolha de formatos de pacote, comandos no terminal ou instruções específicas da distribuição - por meio de uma interface consistente e não perca mais tempo com instruções de instalação.",
     discoverTitle: "Descubra programas novos",
-    discoverText: "Explore aplicativos, ferramentas para jogos, utilitários, drivers, ajustes e recursos do sistema que você nem sabia que precisava.",
+    discoverText: "Encontre aplicativos, ferramentas para jogos, utilitários, drivers, ajustes e recursos do sistema que você estava procurando - e outros que nem sabia que precisava - graças ao nosso algoritmo de relevância em constante evolução.",
     updateTitle: "Manutenção pensada a longo prazo",
     updateText: "Atualize tudo no seu sistema em um só lugar, limpe pacotes que ficaram para trás e mantenha seu sistema seguro, organizado e em dia com os recursos mais recentes.",
     manifestTitle: "Sua configuração segue você",
-    manifestText: "Crie um manifesto declarativo descrevendo os programas e recursos que a máquina deve ter: Equipes de TI para implantações padronizadas em escala; usuários comuns para testar distribuições ou restaurações rápidas.",
+    manifestText: "Crie um manifesto declarativo com os programas e recursos que você precisa - e sem precisar de código: é só clicar um botão!",
     manifestLabel: "manifesto meu-sistema",
     manifestLink: "Saiba mais sobre manifestos",
     compatEyebrow: "Em toda parte",
-    compatTitle: "A mesma experiência em mais de 40 distribuições Linux.",
-    compatText: "E a lista continua crescendo: estas são só algumas delas. O LinuxToys também é compatível com as distribuições aplicáveis rodando pelo Subsistema Windows para Linux (WSL).",
+    compatTitle: "Descomplicando mais de 40 distribuições Linux.",
+    compatText: "E a lista continua crescendo: estas são só algumas delas. Para as distribuições aplicáveis, o LinuxToys também é compatível com o Subsistema do Windows para Linux (WSL) e containers Distrobox.",
     ctaEyebrow: "Pronto para experimentar?",
-    ctaTitle: "Faça o seu sistema trabalhar para você, como deve ser.",
+    ctaTitle: "Faça o seu sistema trabalhar pra você, como deve ser.",
     ctaText: "Instale o LinuxToys, explore o que está disponível para o seu sistema e continue com a mesma caixa de ferramentas familiar se mudar para outra distribuição suportada depois.",
     ctaButton: "Instalar o LinuxToys",
-    footerTagline: "Sua caixa de ferramentas no Linux",
+    footerTagline: "Pra tudo no Linux.",
     footerInstall: "Instalar",
     footerCompatibility: "Compatibilidade",
     footerContact: "Contato"
@@ -198,32 +198,52 @@ const appShot = document.querySelector(".app-shot");
 let currentLanguage = "en";
 
 function getInitialLanguage() {
-  const savedLanguage =
-    localStorage.getItem("linuxtoys-lang") ||
-    localStorage.getItem("linuxtoys-dev-lang");
+  // The localized HTML page is authoritative. Browser-locale routing is
+  // handled before this script runs, and explicit language changes navigate
+  // to the corresponding localized page. Do not re-detect locale here.
+  return document.documentElement.lang === "pt-BR" ? "pt-BR" : "en";
+}
 
-  if (savedLanguage === "en" || savedLanguage === "pt-BR") {
-    return savedLanguage;
+function getEffectiveTheme() {
+  const explicitTheme = document.documentElement.dataset.theme;
+  if (explicitTheme === "light" || explicitTheme === "dark") return explicitTheme;
+  return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+}
+
+function updateThemeScreenshots() {
+  const isLight = getEffectiveTheme() === "light";
+  const isPortuguese = document.documentElement.lang === "pt-BR";
+
+  const appShot = document.querySelector(".app-shot");
+  if (appShot) {
+    const baseName = isPortuguese ? "app-window-br" : "app-window";
+    appShot.src = `assets/${baseName}${isLight ? "-light" : ""}.webp`;
   }
 
-  const browserLanguages = navigator.languages?.length
-    ? navigator.languages
-    : [navigator.language];
-
-  return browserLanguages.some((language) =>
-    language?.toLowerCase().startsWith("pt")
-  ) ? "pt-BR" : "en";
+  const manifestShot = document.querySelector(".manifest-shot");
+  if (manifestShot) {
+    const baseNameManifest = isPortuguese ? "manifest-br" : "manifest";
+    manifestShot.src = `assets/${baseNameManifest}${isLight ? "-light" : ""}.webp`;
+  }
 }
+
+const themeMedia = window.matchMedia("(prefers-color-scheme: dark)");
+themeMedia.addEventListener?.("change", () => {
+  if (!document.documentElement.dataset.theme) updateThemeScreenshots();
+});
+
+new MutationObserver((mutations) => {
+  if (mutations.some((mutation) => mutation.attributeName === "data-theme")) {
+    updateThemeScreenshots();
+  }
+}).observe(document.documentElement, {
+  attributes: true,
+  attributeFilter: ["data-theme"],
+});
 
 function applyLanguage(lang, { persist = true } = {}) {
   currentLanguage = lang === "pt-BR" ? "pt-BR" : "en";
-  const appShot = document.querySelector(".app-shot");
-
-  if (appShot) {
-    appShot.src = lang === "pt-BR"
-      ? "assets/app-window-br.webp"
-      : "assets/app-window.webp";
-  }
+  updateThemeScreenshots();
 
   const dictionary = translations[currentLanguage];
 
@@ -438,10 +458,6 @@ async function copyInstallCommand() {
     copyStatus.textContent = dictionary.copyFailed;
   }
 }
-
-languageButtons.forEach((button) => {
-  button.addEventListener("click", () => applyLanguage(button.dataset.lang));
-});
 
 copyButton?.addEventListener("click", copyInstallCommand);
 

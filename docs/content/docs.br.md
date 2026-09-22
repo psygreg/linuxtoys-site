@@ -67,6 +67,74 @@ Durante a execução, o LinuxToys pode exibir um terminal para que você acompan
 
 ---
 
+## Páginas de aplicativos
+
+A maioria dos aplicativos encontrados através do LinuxToys possui sua própria página, com informações sobre o aplicativo e as ações disponíveis para ele.
+
+A página de um aplicativo pode incluir seu ícone, desenvolvedor, licença, fonte, avaliação, capturas de tela e uma descrição mais detalhada. Quando disponíveis, você também poderá encontrar links para o site do aplicativo e formas de apoiar seus desenvolvedores.
+
+![Exemplo de página de aplicativo](/docs/assets/app-page-br.webp)
+
+### Capturas de tela e descrições
+
+Muitos aplicativos fornecem capturas de tela mostrando sua aparência. Quando várias capturas estiverem disponíveis, você pode usar as setas ao lado da imagem para navegar entre elas.
+
+Abaixo das capturas de tela, o LinuxToys pode exibir uma descrição mais detalhada fornecida pelo aplicativo. Ela pode incluir informações sobre seus recursos, requisitos e finalidade.
+
+Nem todos os aplicativos fornecem a mesma quantidade de informações, portanto algumas páginas podem apresentar menos detalhes do que outras.
+
+### Avaliações
+
+Quando informações de avaliação estiverem disponíveis, a avaliação atual do aplicativo e o número de avaliações serão exibidos na parte superior de sua página.
+
+Depois que um aplicativo for instalado, você também poderá avaliá-lo clicando em uma das estrelas em sua página. **Recomendamos fortemente** que você avalie os aplicativos que conhece e gosta, pois isso melhora ainda mais a capacidade do LinuxToys de oferecer sugestões melhores para todos os usuários, já que essas avaliações são um dos critérios levados em consideração.
+
+Sua avaliação **não poderá** ser alterada posteriormente.
+
+### Apoiando os desenvolvedores dos aplicativos
+
+Alguns aplicativos oferecem formas de apoiar financeiramente seus desenvolvedores. Dependendo das opções disponibilizadas pelo aplicativo, o LinuxToys poderá exibir um botão de **Doar**, **Comprar** ou **Assinar**.
+
+Esses botões levam ao destino fornecido pelo aplicativo ou por seu desenvolvedor. Eles são independentes do LinuxToys e não geram qualquer tipo de compensação para o LinuxToys, a menos que o próprio desenvolvedor ou empresa escolha deliberadamente fazê-lo.
+
+### Instalando um aplicativo
+
+Para um aplicativo que ainda não está instalado, sua página apresenta um botão **Instalar**.
+
+Alguns aplicativos estão disponíveis através de mais de uma fonte. Nesses casos, o seletor de fonte ao lado do botão de instalação permite visualizar e escolher a fonte disponível antes de instalar o aplicativo. A fonte pré-selecionada é a recomendada pelo LinuxToys para o seu sistema.
+
+Selecionar **Instalar** adiciona o aplicativo à fila de instalação, em vez de iniciar imediatamente uma instalação separada.
+
+![Fila de instalação do LinuxToys](/docs/assets/queue-br.webp)
+
+A fila de instalação permite reunir vários aplicativos antes de iniciar a operação. Os itens na fila são exibidos juntos para que você possa revisar o que está prestes a ser instalado.
+
+Quando estiver pronto, inicie a fila através do botão no cabeçalho.
+
+### Aplicativos instalados
+
+Depois que um aplicativo é instalado, sua página muda para refletir seu estado atual.
+
+![Página de aplicativo instalado](/docs/assets/app-page2-br.webp)
+
+O botão **Instalar** é substituído por **Remover**. Para aplicativos AppStream, também é exibido um botão **Abrir**, permitindo iniciar o aplicativo diretamente de sua página.
+
+As demais informações da página, como capturas de tela, descrições, avaliações, links para o site e opções de apoio, continuam disponíveis.
+
+### Seus aplicativos instalados
+
+O LinuxToys também oferece uma visualização de biblioteca onde você pode navegar rapidamente pelos softwares já presentes em seu sistema.
+
+![Aplicativos instalados no LinuxToys](/docs/assets/library-br.webp)
+
+Essa visualização não se limita aos aplicativos que foram instalados através do LinuxToys. O LinuxToys verifica os softwares disponíveis no sistema atual e também pode exibir aplicativos compatíveis que foram instalados por outros métodos.
+
+Aplicativos AppStream possuem um botão **Abrir** ao lado deles. Todos os recursos também possuem um botão de remoção nessa página.
+
+Isso torna a visualização de aplicativos instalados útil como uma biblioteca dos softwares que o LinuxToys reconhece em seu sistema, independentemente de como foram originalmente instalados.
+
+---
+
 ## O Registro de Ações
 
 O LinuxToys possui um **Registro de Ações**, que mantém um histórico das alterações compatíveis realizadas através do LinuxToys.

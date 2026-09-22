@@ -4,12 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="O LinuxToys facilita descobrir, instalar e gerenciar software em mais de 40 distribuições Linux." />
-  <meta name="theme-color" content="#0a0c10" />
-  <title>LinuxToys — Sua caixa de ferramentas no Linux</title>
+  <meta name="theme-color" content="#f7f7f5" />
+  <title>LinuxToys — Pra tudo no Linux.</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&family=Roboto+Slab:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+  <script>
+    (() => {
+      const savedTheme = localStorage.getItem("linuxtoys-theme");
+      if (savedTheme === "light" || savedTheme === "dark") {
+        document.documentElement.dataset.theme = savedTheme;
+      }
+    })();
+  </script>
 
   <link rel="icon" href="assets/linuxtoys.svg" type="image/svg+xml">
   <link rel="stylesheet" href="home/styles.css" />
@@ -21,7 +31,7 @@
 
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="LinuxToys" />
-  <meta property="og:title" content="LinuxToys — Sua caixa de ferramentas no Linux" />
+  <meta property="og:title" content="LinuxToys — Pra tudo no Linux." />
   <meta property="og:description" content="O LinuxToys facilita descobrir, instalar e gerenciar software em mais de 40 distribuições Linux." />
   <meta property="og:url" content="https://linux.toys/index.pt-BR.html" />
   <meta property="og:locale" content="pt_BR" />
@@ -31,7 +41,7 @@
   <meta property="og:image:alt" content="LinuxToys application window" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="LinuxToys — Sua caixa de ferramentas no Linux" />
+  <meta name="twitter:title" content="LinuxToys — Pra tudo no Linux." />
   <meta name="twitter:description" content="O LinuxToys facilita descobrir, instalar e gerenciar software em mais de 40 distribuições Linux." />
   <meta name="twitter:image" content="https://linux.toys/assets/app-window-br.webp" />
   <meta name="twitter:image:alt" content="LinuxToys application window" />
@@ -40,7 +50,7 @@
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "name": "LinuxToys — Sua caixa de ferramentas no Linux",
+  "name": "LinuxToys — Pra tudo no Linux.",
   "description": "O LinuxToys facilita descobrir, instalar e gerenciar software em mais de 40 distribuições Linux.",
   "url": "https://linux.toys/index.pt-BR.html",
   "inLanguage": "pt-BR",
@@ -66,7 +76,6 @@
         const target = lang === "pt-BR" ? "index.pt-BR.html" : "index.html";
         location.href = target + location.search + location.hash;
       }, true);
-      localStorage.setItem(key, "pt-BR");
     })();
   </script>
 
@@ -103,10 +112,23 @@
           </svg>
         </a>
 
-        <div class="language-switcher" role="group" aria-label="Language selector">
-          <button class="lang-button active" type="button" data-lang="en" aria-pressed="true">EN</button>
-          <button class="lang-button" type="button" data-lang="pt-BR" aria-pressed="false">PT-BR</button>
-        </div>
+        <button class="theme-toggle" type="button" aria-label="Toggle color theme" title="Toggle color theme">
+          <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="3.5"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"/>
+          </svg>
+          <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20.2 15.1A8.5 8.5 0 0 1 8.9 3.8 8.5 8.5 0 1 0 20.2 15.1Z"/>
+          </svg>
+        </button>
+
+        <details class="language-switcher language-dropdown">
+            <summary class="language-current" aria-label="Language selector">PT</summary>
+            <div class="language-menu" role="menu">
+              <a class="language-option active" href="#" data-lang="pt-BR" role="menuitem" aria-current="true">PT</a>
+              <a class="language-option" href="#" data-lang="en" role="menuitem">EN</a>
+            </div>
+          </details>
       </div>
     </header>
 
@@ -128,8 +150,8 @@
               <span data-i18n="statApps">for software and system tools</span>
             </div>
             <div class="stat">
-              <strong data-i18n="statSetupValue">Repeatable</strong>
-              <span data-i18n="statSetup">system setups with manifests</span>
+              <span data-i18n="statSetupValue">Repeatable</span>
+              <strong data-i18n="statSetup">system setups with manifests</strong>
             </div>
           </div>
         </div>
@@ -140,7 +162,6 @@
             A transparent PNG/WebP also works well here.
           -->
           <div class="app-shot-frame">
-            <div class="app-shot-glow" aria-hidden="true"></div>
             <img
               class="app-shot"
               src="assets/app-window.webp"
@@ -160,14 +181,6 @@
       </section>
 
       <section class="install-strip" id="install">
-        <div class="install-copy">
-          <div class="eyebrow" data-i18n="installEyebrow">One-line install</div>
-          <h2 data-i18n="installTitle">Start with a single command.</h2>
-          <p data-i18n="installText">
-            Paste this into a terminal to install LinuxToys. The command stays the same across supported distributions.
-          </p>
-        </div>
-
         <div class="command-viewer" aria-label="LinuxToys installation command">
           <div class="command-topbar">
             <div class="terminal-dots" aria-hidden="true"><span></span><span></span><span></span></div>
@@ -179,15 +192,19 @@
           </div>
           <div class="copy-status" id="copy-status" aria-live="polite"></div>
         </div>
+
+        <div class="install-copy">
+          <h2 data-i18n="installTitle">Start with a single command.</h2>
+          <p data-i18n="installText">
+            Paste this into a terminal to install LinuxToys. The command stays the same across supported distributions.
+          </p>
+        </div>
       </section>
 
       <section class="section" id="features">
         <div class="section-heading">
           <div class="eyebrow" data-i18n="featuresEyebrow">Why use LinuxToys</div>
           <h2 data-i18n="featuresTitle">Useful when Linux is easy. Even more useful when it isn't.</h2>
-          <p data-i18n="featuresLead">
-            LinuxToys focuses on the parts of desktop Linux that are valuable but can otherwise take time, research, or distro-specific knowledge.
-          </p>
         </div>
 
         <div class="feature-grid">
@@ -246,20 +263,12 @@
                 <span aria-hidden="true">→</span>
               </a>
           </div>
-            <div class="manifest-preview" aria-label="Example LinuxToys manifest">
-              <div class="panel-topbar">
-                <span></span><span></span><span></span>
-                <div data-i18n="manifestLabel">my-system manifest</div>
-              </div>
-              <pre><code><span class="muted-code"># example structure</span>
-<span class="muted-code"># linuxtoys features</span>:
-OBS Studio
-DaVinci Resolve
-Figma
-
-<span class="muted-code"># packages and flatpaks</span>:
-packagename
-flatpak.package.name</code></pre>
+            <div class="manifest-shot-frame">
+              <img
+                class="manifest-shot"
+                src="assets/manifest-br.webp"
+                alt="LinuxToys manifest interface"
+              >
             </div>
           </article>
         </div>
@@ -268,7 +277,6 @@ flatpak.package.name</code></pre>
       <section class="section compatibility-section" id="compatibility">
         <div class="section-heading compatibility-heading">
           <div>
-            <div class="eyebrow" data-i18n="compatEyebrow">Broad compatibility</div>
             <h2 data-i18n="compatTitle">One LinuxToys experience across 30+ distributions.</h2>
           </div>
           <p data-i18n="compatText">
@@ -293,13 +301,9 @@ flatpak.package.name</code></pre>
 
       <section class="cta-section">
         <div>
-          <div class="eyebrow" data-i18n="ctaEyebrow">Ready to try it?</div>
           <h2 data-i18n="ctaTitle">Make Linux work for you, not the other way around.</h2>
-          <p data-i18n="ctaText">
-            Install LinuxToys, explore what is available for your system, and keep the same familiar toolbox if you move to another supported distribution later.
-          </p>
         </div>
-        <a class="button button-primary button-large" href="#install" data-i18n="ctaButton">Install LinuxToys</a>
+        <a class="button button-primary button-large" href="#top" data-i18n="ctaButton">Install LinuxToys</a>
       </section>
     </main>
 
@@ -329,10 +333,26 @@ flatpak.package.name</code></pre>
 
   <script src="home/script.js"></script>
 <script>
-    window.addEventListener("load", () => {
-      const pt = document.querySelector('[data-lang="pt-BR"]');
-      if (pt && pt.getAttribute("aria-pressed") !== "true") pt.click();
-    });
+    (() => {
+      const button = document.querySelector(".theme-toggle");
+      if (!button) return;
+      const media = window.matchMedia("(prefers-color-scheme: dark)");
+      const effectiveTheme = () => document.documentElement.dataset.theme || (media.matches ? "dark" : "light");
+      const syncLabel = () => {
+        const next = effectiveTheme() === "dark" ? "light" : "dark";
+        button.setAttribute("aria-label", `Switch to ${next} mode`);
+        button.setAttribute("title", `Switch to ${next} mode`);
+      };
+      button.addEventListener("click", () => {
+        const next = effectiveTheme() === "dark" ? "light" : "dark";
+        document.documentElement.dataset.theme = next;
+        localStorage.setItem("linuxtoys-theme", next);
+        syncLabel();
+      });
+      media.addEventListener?.("change", syncLabel);
+      syncLabel();
+    })();
   </script>
+
 </body>
 </html>

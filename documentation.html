@@ -4,12 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="LinuxToys documentation for installing software, managing your system, using manifests, and getting more out of Linux." />
-  <meta name="theme-color" content="#0a0c10" />
+  <meta name="theme-color" content="#f7f7f5" />
   <title>Documentation — LinuxToys</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&family=Roboto+Slab:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+  <script>
+    (() => {
+      const savedTheme = localStorage.getItem("linuxtoys-theme");
+      if (savedTheme === "light" || savedTheme === "dark") {
+        document.documentElement.dataset.theme = savedTheme;
+      }
+    })();
+  </script>
 
   <link rel="icon" href="assets/linuxtoys.svg" type="image/svg+xml">
   <link rel="stylesheet" href="home/styles.css" />
@@ -65,7 +75,10 @@
       const saved = localStorage.getItem(key);
       const langs = navigator.languages?.length ? navigator.languages : [navigator.language];
       const prefersPt = saved === "pt-BR" || (!saved && langs.some(lang => lang?.toLowerCase().startsWith("pt")));
-      if (prefersPt) location.replace("documentation.pt-BR.html" + location.search + location.hash);
+      if (prefersPt) {
+        localStorage.setItem(key, "pt-BR");
+        location.replace("documentation.pt-BR.html" + location.search + location.hash);
+      }
     })();
   </script>
 
@@ -83,7 +96,6 @@
         const target = lang === "pt-BR" ? "documentation.pt-BR.html" : "documentation.html";
         location.href = target + location.search + location.hash;
       }, true);
-      localStorage.setItem(key, "en");
     })();
   </script>
 
@@ -117,10 +129,23 @@
           </svg>
         </a>
 
-        <div class="language-switcher" role="group" aria-label="Language selector">
-          <button class="lang-button active" type="button" data-lang="en" aria-pressed="true">EN</button>
-          <button class="lang-button" type="button" data-lang="pt-BR" aria-pressed="false">PT-BR</button>
-        </div>
+        <button class="theme-toggle" type="button" aria-label="Toggle color theme" title="Toggle color theme">
+          <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="3.5"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"/>
+          </svg>
+          <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20.2 15.1A8.5 8.5 0 0 1 8.9 3.8 8.5 8.5 0 1 0 20.2 15.1Z"/>
+          </svg>
+        </button>
+
+        <details class="language-switcher language-dropdown">
+            <summary class="language-current" aria-label="Language selector">EN</summary>
+            <div class="language-menu" role="menu">
+              <a class="language-option active" href="#" data-lang="en" role="menuitem" aria-current="true">EN</a>
+              <a class="language-option" href="#" data-lang="pt-BR" role="menuitem">PT</a>
+            </div>
+          </details>
       </div>
     </header>
 
@@ -194,5 +219,27 @@
   <script src="https://cdn.jsdelivr.net/npm/dompurify@3.2.4/dist/purify.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.11.1/build/highlight.min.js"></script>
   <script src="docs/docs-reader.js"></script>
+  <script>
+    (() => {
+      const button = document.querySelector(".theme-toggle");
+      if (!button) return;
+      const media = window.matchMedia("(prefers-color-scheme: dark)");
+      const effectiveTheme = () => document.documentElement.dataset.theme || (media.matches ? "dark" : "light");
+      const syncLabel = () => {
+        const next = effectiveTheme() === "dark" ? "light" : "dark";
+        button.setAttribute("aria-label", `Switch to ${next} mode`);
+        button.setAttribute("title", `Switch to ${next} mode`);
+      };
+      button.addEventListener("click", () => {
+        const next = effectiveTheme() === "dark" ? "light" : "dark";
+        document.documentElement.dataset.theme = next;
+        localStorage.setItem("linuxtoys-theme", next);
+        syncLabel();
+      });
+      media.addEventListener?.("change", syncLabel);
+      syncLabel();
+    })();
+  </script>
+
 </body>
 </html>

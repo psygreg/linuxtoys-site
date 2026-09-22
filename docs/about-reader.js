@@ -5,7 +5,7 @@ const DOCS_FILES = {
 
 const uiTranslations = {
   en: {
-    brandPortal: "Your Linux toolbox",
+    brandPortal: "For everything Linux.",
     backHome: "Overview",
     repoLists: "Repository lists",
     coreLibs: "Core libraries",
@@ -20,11 +20,11 @@ const uiTranslations = {
     copy: "Copy",
     copied: "Copied",
     footerText: "Linux software distribution made easy.",
-    footerTagline: "Your Linux toolbox",
+    footerTagline: "For everything Linux.",
     footerContact: "Contact"
   },
   "pt-BR": {
-    brandPortal: "Sua caixa de ferramentas no Linux",
+    brandPortal: "Pra tudo no Linux.",
     backHome: "Visão geral",
     repoLists: "Listas de repositório",
     coreLibs: "Biblioteca shell",
@@ -39,7 +39,7 @@ const uiTranslations = {
     copy: "Copiar",
     copied: "Copiado",
     footerText: "Distribua seu software no Linux sem complicação.",
-    footerTagline: "Sua caixa de ferramentas no Linux",
+    footerTagline: "Pra tudo no Linux.",
     footerContact: "Contato"
   }
 };
@@ -58,16 +58,10 @@ let currentLanguage = "en";
 let headingObserver = null;
 
 function getInitialLanguage() {
-  const savedLanguage = localStorage.getItem("linuxtoys-lang");
-  if (savedLanguage === "en" || savedLanguage === "pt-BR") return savedLanguage;
-
-  const browserLanguages = navigator.languages?.length
-    ? navigator.languages
-    : [navigator.language];
-
-  return browserLanguages.some(lang => lang?.toLowerCase().startsWith("pt"))
-    ? "pt-BR"
-    : "en";
+  // Use the language of the localized HTML page. Locale detection and page
+  // navigation happen outside the reader, so this script must not make an
+  // independent browser-locale decision.
+  return document.documentElement.lang === "pt-BR" ? "pt-BR" : "en";
 }
 
 function translateInterface(lang) {
@@ -304,9 +298,9 @@ function setLoadError(path) {
   status.append(title, hint, code);
 }
 
-async function loadDocumentation(lang, { preservePosition = false } = {}) {
+async function loadDocumentation(lang, { preservePosition = false, persist = true } = {}) {
   currentLanguage = lang === "pt-BR" ? "pt-BR" : "en";
-  localStorage.setItem("linuxtoys-lang", currentLanguage);
+  if (persist) localStorage.setItem("linuxtoys-lang", currentLanguage);
 
   translateInterface(currentLanguage);
   setLoading();
@@ -389,13 +383,6 @@ function updateReadingProgress() {
   progressBar.style.width = `${(travelled / maxScroll) * 100}%`;
 }
 
-languageButtons.forEach(button => {
-  button.addEventListener("click", () => {
-    const lang = button.dataset.lang;
-    if (lang !== currentLanguage) loadDocumentation(lang);
-  });
-});
-
 mobileTocToggle.addEventListener("click", () => {
   const open = sidebar.classList.toggle("open");
   mobileTocToggle.setAttribute("aria-expanded", String(open));
@@ -412,4 +399,4 @@ window.addEventListener("resize", () => {
   updateReadingProgress();
 });
 
-loadDocumentation(getInitialLanguage());
+loadDocumentation(getInitialLanguage(), { persist: false });

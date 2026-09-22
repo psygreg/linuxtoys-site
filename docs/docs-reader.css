@@ -113,7 +113,7 @@
   width: 0;
   height: 100%;
   background: var(--accent);
-  box-shadow: 0 0 12px rgba(124,221,170,.55);
+  box-shadow: 0 0 12px rgba(181,187,181,.22);
   transition: width .08s linear;
 }
 
@@ -313,7 +313,7 @@
 
 .markdown-body pre:hover .code-copy,
 .code-copy:focus { opacity: 1; }
-.code-copy:hover { color: var(--text); border-color: rgba(124,221,170,.35); }
+.code-copy:hover { color: var(--text); border-color: rgba(181,187,181,.18); }
 
 .table-wrap {
   margin: 26px 0;
@@ -497,3 +497,188 @@
   color: var(--text);
   font-size: 1.05rem;
 }
+/* Refined reader layer */
+.docs-shell { width: min(1320px, calc(100% - 48px)); }
+.docs-main { grid-template-columns: minmax(205px,245px) minmax(0,820px); gap: 64px; padding: 72px 0 112px; }
+.docs-sidebar { top: 102px; max-height: calc(100vh - 126px); }
+.toc-kicker { color: var(--muted); font-size: .68rem; font-weight: 600; letter-spacing: .06em; }
+.toc { border-left-color: var(--border); }
+.toc-link { color: var(--muted); border-radius: 0 9px 9px 0; font-size: .77rem; }
+.toc-link:hover { color: var(--text); background: var(--surface-hover); }
+.toc-link.active { color: var(--accent-strong); background: var(--accent-soft); }
+.toc-link.active::before { background: var(--accent); }
+.markdown-panel { overflow: visible; border: 0; border-radius: 0; background: transparent; box-shadow: none; }
+.reading-progress { top: 78px; }
+.reading-progress span { background: var(--accent); box-shadow: none; }
+.markdown-body { padding: 0; color: var(--text); font-size: 1rem; line-height: 1.82; }
+.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6 { color: var(--text); }
+.markdown-body h1 { margin-bottom: 34px; font-size: clamp(2.7rem,6vw,4.5rem); line-height: 1.04; letter-spacing: -.05em; }
+.markdown-body h2 { margin-top: 76px; font-size: clamp(1.7rem,3vw,2.35rem); letter-spacing: -.035em; }
+.markdown-body h2:not(:first-child) { padding-top: 52px; border-top-color: var(--border); }
+.markdown-body h3 { margin-top: 42px; }
+.markdown-body p, .markdown-body li { color: var(--text); }
+.markdown-body a { color: var(--accent-strong); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.markdown-body blockquote { color: var(--muted); border-left-color: var(--accent); background: var(--accent-soft); border-radius: 0 14px 14px 0; }
+.markdown-body code { background: var(--code-bg); border-color: var(--border); color: var(--text); }
+.markdown-body pre { border-color: var(--border); border-radius: 18px; box-shadow: none; }
+.markdown-body table { border-color: var(--border); }
+.markdown-body th { background: var(--bg-soft); color: var(--text); }
+.markdown-body td, .markdown-body th { border-color: var(--border); }
+.markdown-body img { border: 0; border-radius: 20px; box-shadow: var(--shadow); }
+.docs-status { color: var(--muted); }
+.docs-status code { color: var(--text); background: var(--code-bg); }
+.docs-spinner { border-color: var(--border-strong); border-top-color: var(--accent); }
+
+@media (max-width: 980px) {
+  .docs-shell { width: min(100% - 28px,1180px); }
+  .docs-main { gap: 18px; padding-top: 30px; }
+  .mobile-toc-toggle { top: 84px; border-color: var(--border); color: var(--text); background: var(--header-bg); border-radius: 16px; backdrop-filter: blur(22px); -webkit-backdrop-filter: blur(22px); }
+  .docs-sidebar { top: 146px; border-color: var(--border); border-radius: 18px; background: var(--panel-strong); box-shadow: var(--shadow); }
+  .reading-progress { top: 72px; }
+  .markdown-body { padding-top: 28px; }
+}
+
+/* Theme-aware Markdown text and code */
+.markdown-body strong,
+.markdown-body b {
+  color: var(--text);
+}
+
+.markdown-body em,
+.markdown-body i {
+  color: inherit;
+}
+
+.markdown-body :not(pre) > code {
+  color: var(--text);
+  background: var(--code-bg);
+  border-color: var(--border);
+}
+
+/*
+ * highlight.js' bundled GitHub Dark stylesheet supplies hard-coded token
+ * colors. In light mode, use the corresponding GitHub-light palette here so
+ * highlighted code remains readable without changing the Markdown parser.
+ */
+:root:not([data-theme="dark"]) .markdown-body pre,
+html[data-theme="light"] .markdown-body pre {
+  background: #f6f8fa;
+}
+
+:root:not([data-theme="dark"]) .markdown-body pre code,
+:root:not([data-theme="dark"]) .markdown-body pre code.hljs,
+html[data-theme="light"] .markdown-body pre code,
+html[data-theme="light"] .markdown-body pre code.hljs {
+  color: #24292f;
+  background: #f6f8fa;
+}
+
+:root:not([data-theme="dark"]) .markdown-body .hljs-doctag,
+:root:not([data-theme="dark"]) .markdown-body .hljs-keyword,
+:root:not([data-theme="dark"]) .markdown-body .hljs-meta .hljs-keyword,
+:root:not([data-theme="dark"]) .markdown-body .hljs-template-tag,
+:root:not([data-theme="dark"]) .markdown-body .hljs-template-variable,
+:root:not([data-theme="dark"]) .markdown-body .hljs-type,
+:root:not([data-theme="dark"]) .markdown-body .hljs-variable.language_,
+html[data-theme="light"] .markdown-body .hljs-doctag,
+html[data-theme="light"] .markdown-body .hljs-keyword,
+html[data-theme="light"] .markdown-body .hljs-meta .hljs-keyword,
+html[data-theme="light"] .markdown-body .hljs-template-tag,
+html[data-theme="light"] .markdown-body .hljs-template-variable,
+html[data-theme="light"] .markdown-body .hljs-type,
+html[data-theme="light"] .markdown-body .hljs-variable.language_ { color: #cf222e; }
+
+:root:not([data-theme="dark"]) .markdown-body .hljs-title,
+:root:not([data-theme="dark"]) .markdown-body .hljs-title.class_,
+:root:not([data-theme="dark"]) .markdown-body .hljs-title.class_.inherited__,
+:root:not([data-theme="dark"]) .markdown-body .hljs-title.function_,
+html[data-theme="light"] .markdown-body .hljs-title,
+html[data-theme="light"] .markdown-body .hljs-title.class_,
+html[data-theme="light"] .markdown-body .hljs-title.class_.inherited__,
+html[data-theme="light"] .markdown-body .hljs-title.function_ { color: #8250df; }
+
+:root:not([data-theme="dark"]) .markdown-body .hljs-attr,
+:root:not([data-theme="dark"]) .markdown-body .hljs-attribute,
+:root:not([data-theme="dark"]) .markdown-body .hljs-literal,
+:root:not([data-theme="dark"]) .markdown-body .hljs-meta,
+:root:not([data-theme="dark"]) .markdown-body .hljs-number,
+:root:not([data-theme="dark"]) .markdown-body .hljs-operator,
+:root:not([data-theme="dark"]) .markdown-body .hljs-variable,
+:root:not([data-theme="dark"]) .markdown-body .hljs-selector-attr,
+:root:not([data-theme="dark"]) .markdown-body .hljs-selector-class,
+:root:not([data-theme="dark"]) .markdown-body .hljs-selector-id,
+html[data-theme="light"] .markdown-body .hljs-attr,
+html[data-theme="light"] .markdown-body .hljs-attribute,
+html[data-theme="light"] .markdown-body .hljs-literal,
+html[data-theme="light"] .markdown-body .hljs-meta,
+html[data-theme="light"] .markdown-body .hljs-number,
+html[data-theme="light"] .markdown-body .hljs-operator,
+html[data-theme="light"] .markdown-body .hljs-variable,
+html[data-theme="light"] .markdown-body .hljs-selector-attr,
+html[data-theme="light"] .markdown-body .hljs-selector-class,
+html[data-theme="light"] .markdown-body .hljs-selector-id { color: #0550ae; }
+
+:root:not([data-theme="dark"]) .markdown-body .hljs-regexp,
+:root:not([data-theme="dark"]) .markdown-body .hljs-string,
+:root:not([data-theme="dark"]) .markdown-body .hljs-meta .hljs-string,
+html[data-theme="light"] .markdown-body .hljs-regexp,
+html[data-theme="light"] .markdown-body .hljs-string,
+html[data-theme="light"] .markdown-body .hljs-meta .hljs-string { color: #0a3069; }
+
+:root:not([data-theme="dark"]) .markdown-body .hljs-built_in,
+:root:not([data-theme="dark"]) .markdown-body .hljs-symbol,
+html[data-theme="light"] .markdown-body .hljs-built_in,
+html[data-theme="light"] .markdown-body .hljs-symbol { color: #953800; }
+
+:root:not([data-theme="dark"]) .markdown-body .hljs-comment,
+:root:not([data-theme="dark"]) .markdown-body .hljs-code,
+:root:not([data-theme="dark"]) .markdown-body .hljs-formula,
+html[data-theme="light"] .markdown-body .hljs-comment,
+html[data-theme="light"] .markdown-body .hljs-code,
+html[data-theme="light"] .markdown-body .hljs-formula { color: #6e7781; }
+
+:root:not([data-theme="dark"]) .markdown-body .hljs-name,
+:root:not([data-theme="dark"]) .markdown-body .hljs-quote,
+:root:not([data-theme="dark"]) .markdown-body .hljs-selector-tag,
+:root:not([data-theme="dark"]) .markdown-body .hljs-selector-pseudo,
+html[data-theme="light"] .markdown-body .hljs-name,
+html[data-theme="light"] .markdown-body .hljs-quote,
+html[data-theme="light"] .markdown-body .hljs-selector-tag,
+html[data-theme="light"] .markdown-body .hljs-selector-pseudo { color: #116329; }
+
+:root:not([data-theme="dark"]) .markdown-body .hljs-subst,
+html[data-theme="light"] .markdown-body .hljs-subst { color: #24292f; }
+
+:root:not([data-theme="dark"]) .markdown-body .hljs-section,
+html[data-theme="light"] .markdown-body .hljs-section { color: #0550ae; font-weight: 700; }
+
+:root:not([data-theme="dark"]) .markdown-body .hljs-bullet,
+html[data-theme="light"] .markdown-body .hljs-bullet { color: #735c0f; }
+
+:root:not([data-theme="dark"]) .markdown-body .hljs-emphasis,
+html[data-theme="light"] .markdown-body .hljs-emphasis { color: #24292f; font-style: italic; }
+
+:root:not([data-theme="dark"]) .markdown-body .hljs-strong,
+html[data-theme="light"] .markdown-body .hljs-strong { color: #24292f; font-weight: 700; }
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .markdown-body pre {
+    background: #0d1117;
+  }
+}
+
+/* Match the About/Documentation header link rhythm to the homepage.
+   Those pages place their nav links directly in .header-actions, while the
+   homepage wraps them in .header-nav (which has its own wider gap). */
+@media (min-width: 1101px) {
+  .docs-header .header-link + .header-link {
+    margin-left: 15px;
+  }
+}
+
+@media (min-width: 981px) and (max-width: 1100px) {
+  .docs-header .header-link + .header-link {
+    margin-left: 9px;
+  }
+}
+

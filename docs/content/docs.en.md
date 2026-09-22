@@ -67,6 +67,74 @@ During execution, LinuxToys may display a terminal so that you can follow what i
 
 ---
 
+## Application pages
+
+Most applications discovered through LinuxToys have their own pages with information about the app and the actions available for it.
+
+An application page may include its icon, developer, license, source, rating, screenshots and a longer description. When available, you may also see links to the application's website and ways to support its developers.
+
+![Example application page](/docs/assets/app-page.webp)
+
+### Screenshots and descriptions
+
+Many applications provide screenshots showing what the software looks like. When several screenshots are available, you can use the arrows beside the image to browse through them.
+
+Below the screenshots, LinuxToys can display a longer description provided by the application. This can include information about its features, requirements and intended use.
+
+Not every application provides the same amount of information, so some pages may contain fewer details than others.
+
+### Ratings
+
+When rating information is available, the application's current rating and number of ratings are displayed near the top of its page.
+
+After an application is installed, you can also rate it yourself by clicking one of the stars on its page.  We **highly recommend** rating apps you know and enjoy, as that further enhances LinuxToys' ability to deliver better suggestions to all users, as those ratings are one of the criteria taken into consideration.
+
+Your rating **cannot** be changed later.
+
+### Supporting application developers
+
+Some applications provide ways to financially support their developers. Depending on what the application publishes, LinuxToys may display a **Donate**, **Purchase** or **Subscribe** button.
+
+These buttons take you to the destination provided by the application or its developer. They are separate from LinuxToys itself, and pay no compensations of any kind to LinuxToys, unless the developer or company themselves deliberately choose to do so.
+
+### Installing an application
+
+For an application that is not currently installed, its page provides an **Install** button.
+
+Some applications are available from more than one source. When that happens, the source selector beside the installation button lets you see and select the available source before installing the application. The default source is the one recommended by LinuxToys for your operating system.
+
+Selecting **Install** adds the application to the installation queue rather than immediately starting a separate installation.
+
+![LinuxToys installation queue](/docs/assets/queue.webp)
+
+The installation queue lets you collect applications before starting the operation. Queued items are displayed together so you can review what is about to be installed.
+
+When you are ready, start the queue from the button in the header.
+
+### Installed applications
+
+Once an application is installed, its page changes to reflect its current state.
+
+![Installed application page](/docs/assets/app-page2.webp)
+
+The **Install** button is replaced by **Remove**. For AppStream apps, an **Open** button is also displayed so you can start the application directly from its page.
+
+Other information on the page, such as screenshots, descriptions, ratings, website links and support options, remains available.
+
+### Your installed applications
+
+LinuxToys also provides a library view where you can quickly browse software already present on your system.
+
+![Installed applications in LinuxToys](/docs/assets/library.webp)
+
+This view is not limited to applications that were installed through LinuxToys. LinuxToys checks the software available on the current system and can display supported applications that were installed through other methods as well.
+
+AppStream apps have an **Open** button beside them. All features also have a removal button in this page.
+
+This makes the installed applications view useful as a library of the software LinuxToys recognizes on your system, regardless of where it originally came from.
+
+---
+
 ## The Action Registry
 
 LinuxToys includes an **Action Registry** that keeps track of supported changes performed through LinuxToys.
