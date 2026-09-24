@@ -682,3 +682,33 @@ html[data-theme="light"] .markdown-body .hljs-strong { color: #24292f; font-weig
   }
 }
 
+/* Main-site documentation: mobile layout fixes.
+ *
+ * The refined desktop .docs-main rule appears after the original mobile rule,
+ * so its two-column grid wins in the cascade on narrow screens. Reassert the
+ * single-column layout here, after the refined layer.
+ *
+ * Unlike the developer portal, these pages place navigation links directly
+ * inside .header-actions rather than inside .header-nav, so hide those links
+ * explicitly on mobile.
+ */
+@media (max-width: 980px) {
+  .docs-main {
+    grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+    min-width: 0;
+  }
+
+  .mobile-toc-toggle,
+  .docs-sidebar,
+  .markdown-panel,
+  .markdown-body {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .docs-header .header-link {
+    display: none;
+  }
+}
+
