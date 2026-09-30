@@ -148,6 +148,7 @@ const DISTRO_LOGOS = [
   { name: "Kubuntu", file: "kubuntu.webp" },
   { name: "Lubuntu", file: "lubuntu.webp" },
   { name: "Manjaro", file: "manjaro.webp" },
+  { name: "Modicia OS", file: "modicia.webp" },
   { name: "Linux Mint", file: "mint.webp" },
   { name: "LMDE", file: "lmde.webp" },
   { name: "MX Linux", file: "mx.webp" },
