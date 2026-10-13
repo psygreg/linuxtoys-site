@@ -2,6 +2,15 @@ const INSTALL_COMMAND = "curl -fsSL https://linux.toys/install.sh | bash";
 
 const translations = {
   en: {
+    repoEyebrow: "Integrated sources",
+    repoTitle: "Thousands of apps, one click away",
+    repoDescription: "Discover applications from software sources integrated with LinuxToys. Availability depends on your distribution and each app’s compatibility.",
+    repoPrevious: "Previous",
+    repoNext: "Next",
+    repoNavigation: "Carousel navigation",
+    repoSources: "Software sources",
+    repoNative: "Native Packages",
+    repoAppImage: "AppImage Community Catalog",
     pageTitle: "LinuxToys — For everything Linux.",
     pageDescription: "LinuxToys brings all things software, tools and system maintenance in one solution — across dozens of Linux distributions.",
     brandTagline: "For everything Linux.",
@@ -57,6 +66,15 @@ const translations = {
     footerContact: "Contact"
   },
   "pt-BR": {
+    repoEyebrow: "Fontes integradas",
+    repoTitle: "Milhares de aplicativos a um clique de distância",
+    repoDescription: "Descubra aplicativos das fontes de software integradas ao LinuxToys. A disponibilidade depende da sua distribuição e da compatibilidade de cada aplicativo.",
+    repoPrevious: "Anterior",
+    repoNext: "Próximo",
+    repoNavigation: "Navegação do carrossel",
+    repoSources: "Fontes de software",
+    repoNative: "Pacotes nativos",
+    repoAppImage: "Catálogo comunitário AppImage",
     pageTitle: "LinuxToys — Pra tudo no Linux.",
     pageDescription: "O LinuxToys reúne todo software, ferramentas e manutenção do sistema em uma solução — para dezenas de distribuições Linux.",
     brandTagline: "Pra tudo no Linux.",
@@ -257,6 +275,15 @@ function applyLanguage(lang, { persist = true } = {}) {
   translatableElements.forEach((element) => {
     const key = element.dataset.i18n;
     if (dictionary[key]) element.textContent = dictionary[key];
+  });
+
+  document.querySelectorAll("[data-i18n-aria-label]").forEach((element) => {
+    const value = dictionary[element.dataset.i18nAriaLabel];
+    if (value) element.setAttribute("aria-label", value);
+  });
+  document.querySelectorAll("[data-i18n-repo]").forEach((element) => {
+    const value = dictionary[element.dataset.i18nRepo];
+    if (value) element.setAttribute("aria-label", value);
   });
 
   translatableAltElements.forEach((element) => {
