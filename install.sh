@@ -78,6 +78,7 @@ ossuse() {
                 bash git curl wget zenity python3 python3-gobject gtk3
                 python3-requests python3-urllib3 python3-certifi util-linux
                 libvte-2_91-0 typelib-1_0-Vte-2.91 libappstream5 typelib-1_0-AppStream-1.0
+                AppStream gnome-icon-theme-symbolic libzypp-plugin-appdata
             )
             for pkg in "${dependencies[@]}"; do
                 sudo zypper --non-interactive install "${pkg}"
@@ -121,14 +122,14 @@ osarch() {
     fi
 }
 
-ossteamos() {
+osappimage() {
 	local _appimage_dir _appimage_file _flatpak_scope _output
 
 	[ -n "${_appimage:-}" ] || error "No AppImage was found in the latest LinuxToys release."
 	[ -n "${_appimage_name:-}" ] || error "Could not determine the LinuxToys AppImage filename."
 
 	if ! command -v flatpak >/dev/null 2>&1; then
-		error "Flatpak is required to install LinuxToys on SteamOS."
+		error "Flatpak is required to install the LinuxToys AppImage on this system."
 	fi
 
 	# Prefer the user's existing Flathub setup. If Flathub exists only system-wide,
@@ -217,6 +218,19 @@ manjaro() {
     { sudo pamac build linuxtoys-bin && info "LinuxToys installed or updated!"; } || error "Failed to download: ${_pkg_name}"
 }
 
+requires_appimage() {
+    local distro_id="${ID,,}" distro_like=" ${ID_LIKE,,} "
+    local distro_variant="${VARIANT_ID,,} ${VARIANT,,} ${NAME,,} ${PRETTY_NAME,,}"
+
+    case "$distro_id" in
+        steamos|gnomeos|kde-linux|dakota|bluefin-dakota) return 0 ;;
+        bluefin)
+            [[ "$distro_variant" == *dakota* || "$distro_like" == *" gnomeos "* ]] && return 0
+            ;;
+    esac
+    [[ "$distro_like" == *" gnomeos "* ]]
+}
+
 installer() {
 	# Try GitHub first as primary source
 	printf "\e[0;36m[INFO]\e[m Fetching latest release from GitHub...\n"
@@ -249,20 +263,27 @@ installer() {
 	_eopkg=$(echo "${_api}" | grep -Pio '"browser_download_url":\s*"\K[^"]+?\.eopkg')
 	_eopkg_name=$(basename "${_eopkg}")
 
-	ostree
-
 	if [ -r /etc/os-release ]; then
 		. /etc/os-release
 	else
 		error "Unsupported operating system (no /etc/os-release)."
 	fi
 
+    # Select the AppImage before either rpm-ostree or ID_LIKE can route an
+    # immutable host to a native package installation.
+    if requires_appimage; then
+        osappimage
+        return
+    fi
+
+    ostree
+
 	case "${ID:-}" in
 		debian|ubuntu|deepin) osdeb ;;
 		fedora|rhel|centos|rocky|almalinux) osrpm ;;
 		suse|opensuse) ossuse ;;
 		manjaro|biglinux|bigcommunity) manjaro;;
-		steamos) ossteamos ;;
+		steamos) osappimage ;;
 		arch|cachyos|artix) osarch ;;
 		solus) ossolus ;;
 	esac
@@ -274,7 +295,7 @@ installer() {
 		*suse*) ossuse ;;
 		*arch*)
 			if [ "${ID:-}" = "steamos" ]; then
-				ossteamos
+				osappimage
 			else
 				osarch
 			fi
