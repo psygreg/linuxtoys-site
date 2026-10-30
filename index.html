@@ -303,6 +303,34 @@
         </div>
       </section>
 
+      <section class="mcp-strip" id="ai-agents">
+        <div class="mcp-terminal" aria-label="MCP server connection snippet">
+          <div class="command-topbar">
+            <div class="terminal-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+            <span data-i18n="mcpTerminalLabel">Agent config</span>
+          </div>
+          <div class="mcp-terminal-body">
+<pre><code><span class="muted-code">"mcp"</span>: {
+  <span class="muted-code">"linuxtoys"</span>: {
+    <span class="muted-code">"type"</span>: <span class="key">"remote"</span>,
+    <span class="muted-code">"url"</span>: <span class="key">"http://127.0.0.1:7420/mcp"</span>,
+    <span class="muted-code">"headers"</span>: {
+      <span class="muted-code">"Authorization"</span>: <span class="key">"Bearer &lt;token&gt;"</span>
+    }
+  }
+}</code></pre>
+          </div>
+        </div>
+
+        <div class="mcp-copy">
+          <h2 data-i18n="mcpTitle">Ready for the age of AI agents.</h2>
+          <p data-i18n="mcpText">
+            LinuxToys ships with a built-in MCP server, so AI agents like Claude Code, OpenCode, and Codex can browse the catalog, install and remove software, apply updates, and read app pages — through the same guarded machinery the app uses, with every password prompt on your screen.
+          </p>
+          <a class="button button-primary" href="documentation.html#mcp-server-for-ai-agents" data-i18n="mcpButton">Read the agent documentation</a>
+        </div>
+      </section>
+
       <section class="section compatibility-section" id="compatibility">
         <div class="section-heading compatibility-heading">
           <div>

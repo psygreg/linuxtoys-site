@@ -631,6 +631,92 @@ O processamento do Manifesto agrupa internamente as solicitações validadas: pa
 
 ---
 
+## Servidor MCP para agentes de IA
+
+O LinuxToys também oferece um **servidor MCP (Model Context Protocol)** opcional para que agentes de IA — como Claude Code, OpenCode ou Codex — possam operar o LinuxToys em seu nome, do mesmo modo que você faria: explorar o catálogo, abrir as páginas dos aplicativos, instalar e remover programas, aplicar atualizações e alterar configurações.
+
+O servidor é um serviço **user** do systemd chamado `linuxtoys-mcp.service`, que vem junto com o aplicativo, mas **não vem ativado por padrão**.
+
+### Ativando o servidor
+
+Primeiro verifique se ele já está em execução:
+
+```bash
+curl -fsS http://127.0.0.1:7420/health
+```
+
+Uma resposta JSON significa que o servidor está ativo. Uma conexão recusada significa que ele não está ativado.
+
+Para ativá-lo, verifique se a unidade de serviço existe:
+
+```bash
+systemctl --user cat linuxtoys-mcp.service >/dev/null 2>&1 && echo unit-installed || echo unit-missing
+```
+
+* **unit-installed**: ative e inicie o serviço (é um serviço de usuário — não precisa de `sudo`):
+
+  ```bash
+  systemctl --user enable --now linuxtoys-mcp.service
+  systemctl --user is-active linuxtoys-mcp.service
+  ```
+
+* **unit-missing**: a unidade é instalada pelo aplicativo na primeira vez que você ativa o servidor. Abra **LinuxToys → menu (☰) → MCP Agent Server** uma vez: isso instala e ativa o serviço imediatamente, e ele também inicia sozinho a cada login (fica vinculado à sessão gráfica, o que permite que os diálogos de senha apareçam na sua tela).
+
+### Conectando um agente
+
+* **Transporte:** MCP Streamable HTTP
+* **Endpoint:** `http://127.0.0.1:7420/mcp`
+* **Autenticação:** um token gerado em `~/.config/linuxtoys/mcp-token` (legível apenas pelo seu usuário), enviado em um cabeçalho:
+
+  ```text
+  Authorization: Bearer <conteúdo de ~/.config/linuxtoys/mcp-token>
+  ```
+
+Exemplo de configuração de cliente:
+
+```jsonc
+// OpenCode (~/.config/opencode/opencode.json)
+{ "mcp": { "linuxtoys": {
+    "type": "remote",
+    "url": "http://127.0.0.1:7420/mcp",
+    "enabled": true,
+    "headers": { "Authorization": "Bearer <TOKEN>" } } } }
+```
+
+```bash
+# Claude Code
+claude mcp add --transport http linuxtoys http://127.0.0.1:7420/mcp \
+  --header "Authorization: Bearer $(cat ~/.config/linuxtoys/mcp-token)"
+```
+
+### O que os agentes podem fazer
+
+| Ferramenta | Função |
+| --- | --- |
+| `server_info` | Versão, endpoint, estado do serviço, tarefas em andamento |
+| `get_update_status` / `update_linuxtoys` | Verificar e aplicar atualizações do LinuxToys |
+| `list_categories` / `search_apps` | Explorar e pesquisar todos os catálogos (scripts, repositórios, Flathub/Snap, AppImages) |
+| `get_app_details` / `get_screenshot` | Abrir a página de um aplicativo: descrição, capturas de tela, links, estado da instalação |
+| `install_app` / `remove_app` | Enfileirar uma instalação ou remoção |
+| `fetch_package_url` / `get_package_file_details` / `install_package_file` | Inspecionar e instalar arquivos de pacote (`.deb`, `.rpm`, `.appimage` e mais) |
+| `list_app_extensions` / `install_app_extension` / `remove_app_extension` | Gerenciar extensões e complementos de apps do Flathub |
+| `get_job` / `list_jobs` | Acompanhar o estado e os logs de uma operação enfileirada |
+| `get_settings` / `set_settings` | Alterar as configurações do LinuxToys (atualizações automáticas, relatórios de erros, idioma) |
+| `translate_text` / `translate_app_description` | Usar o mesmo método de tradução do aplicativo |
+| `get_registry_entries` / `export_registry_manifest` | Consultar o Registro de Ações e exportar um manifesto portátil |
+| `open_support_link` | Abrir os links de página inicial, doação ou compra de um aplicativo |
+
+### Segurança
+
+Os agentes trabalham pela mesma infraestrutura protegida da interface gráfica:
+
+* **Todo pedido de senha aparece na sua tela** — um agente legítimo nunca vai pedir que você digite sua senha no chat.
+* As instalações são **serializadas**: uma tarefa roda por vez, e o agente deve acompanhar a tarefa em vez de enviá-la novamente.
+* As ações são **rastreadas** no Registro de Ações e podem ser revertidas como qualquer outra ação do LinuxToys.
+* O agente sempre deve informar o que vai instalar ou remover e aguardar sua confirmação antes de prosseguir.
+
+---
+
 ## O que acontece quando algo falha?
 
 O LinuxToys possui mecanismos de proteção destinados a reduzir as consequências de procedimentos que falham durante a execução.

@@ -1731,3 +1731,113 @@ html[data-theme="dark"] .repo-logo-wrap img { filter:brightness(0) invert(1); }
 .repo-dots button[aria-current="true"] { opacity:1; transform:scale(1.25); }
 @media(max-width:600px) { .repo-carousel { gap:2px; } .repo-arrow { flex:0 0 40px; width:40px; height:56px; } .repo-slide { width:150px; } .repo-slide[data-offset="-1"] { transform:translateX(calc(-50% - 125px)) scale(.75); } .repo-slide[data-offset="1"] { transform:translateX(calc(-50% + 125px)) scale(.75); } .repo-slide[data-offset="-2"],.repo-slide[data-offset="2"] { opacity:0; pointer-events:none; } }
 @media(prefers-reduced-motion:reduce) { .repo-slide { transition:none; } }
+
+/* MCP / AI agents strip: agent-config snippet on the left, copy on the right. Intentionally open rather than card-like. */
+.mcp-strip {
+  display: grid;
+  grid-template-columns: minmax(300px, .82fr) minmax(0, 1fr);
+  gap: 64px;
+  align-items: center;
+  margin: 12px 0 118px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.mcp-copy { max-width: 640px; }
+
+.mcp-copy h2 {
+  margin: 15px 0 12px;
+  font-size: clamp(1.65rem, 3vw, 2.45rem);
+  line-height: 1.08;
+  letter-spacing: -.045em;
+}
+
+.mcp-copy p {
+  margin-bottom: 22px;
+  color: var(--muted);
+  font-size: .92rem;
+  line-height: 1.75;
+}
+
+.mcp-terminal {
+  overflow: hidden;
+  border: 1px solid var(--border-strong);
+  border-radius: 16px;
+  background: #0b0f14;
+  box-shadow: 0 18px 55px rgba(0,0,0,.26);
+}
+
+.mcp-terminal-body pre {
+  margin: 0;
+  padding: 19px 18px;
+  overflow-x: auto;
+  font: 500 .78rem/1.72 "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  scrollbar-width: thin;
+}
+
+@media (max-width: 980px) {
+  .mcp-strip {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 680px) {
+  .mcp-strip {
+    margin-bottom: 88px;
+  }
+  .mcp-copy .button { width: 100%; justify-content: center; }
+}
+
+/* Same inverse-theme button treatment as the final Install LinuxToys CTA. */
+.mcp-copy .button-primary {
+  color: #f4f4f5;
+  background: #0f0f11;
+  border-color: #0f0f11;
+  box-shadow: none;
+}
+.mcp-copy .button-primary:hover {
+  color: #ffffff;
+  background: #1c1c1f;
+  border-color: #1c1c1f;
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .mcp-copy .button-primary {
+    color: #1d1d1f;
+    background: #f7f7f7;
+    border-color: #f7f7f7;
+  }
+  :root:not([data-theme="light"]) .mcp-copy .button-primary:hover {
+    color: #111113;
+    background: #e5e5e7;
+    border-color: #e5e5e7;
+  }
+}
+
+html[data-theme="dark"] .mcp-copy .button-primary {
+  color: #1d1d1f;
+  background: #f7f7f7;
+  border-color: #f7f7f7;
+}
+html[data-theme="dark"] .mcp-copy .button-primary:hover {
+  color: #111113;
+  background: #e5e5e7;
+  border-color: #e5e5e7;
+}
+
+html[data-theme="light"] .mcp-copy .button-primary {
+  color: #f4f4f5;
+  background: #0f0f11;
+  border-color: #0f0f11;
+}
+html[data-theme="light"] .mcp-copy .button-primary:hover {
+  color: #ffffff;
+  background: #1c1c1f;
+  border-color: #1c1c1f;
+}

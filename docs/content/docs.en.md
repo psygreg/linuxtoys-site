@@ -633,6 +633,92 @@ This is why a manifest can be written for readability instead of having to match
 
 ---
 
+## MCP server for AI agents
+
+LinuxToys also ships with an optional **MCP (Model Context Protocol) server** so AI agents — such as Claude Code, OpenCode, or Codex — can operate LinuxToys on your behalf, the same way you would: browse the catalog, open application pages, install and remove software, apply updates, and change settings.
+
+The server is a systemd **user** service named `linuxtoys-mcp.service` that ships with the app but is **not enabled by default**.
+
+### Enabling the server
+
+First check whether it is already running:
+
+```bash
+curl -fsS http://127.0.0.1:7420/health
+```
+
+A JSON response means the server is up. A connection refused means it is not enabled.
+
+To enable it, check whether the service unit exists:
+
+```bash
+systemctl --user cat linuxtoys-mcp.service >/dev/null 2>&1 && echo unit-installed || echo unit-missing
+```
+
+* **unit-installed**: enable and start it (a user service — no `sudo` needed):
+
+  ```bash
+  systemctl --user enable --now linuxtoys-mcp.service
+  systemctl --user is-active linuxtoys-mcp.service
+  ```
+
+* **unit-missing**: the unit is installed by the app the first time you switch the server on. Open **LinuxToys → menu (☰) → MCP Agent Server** once: that installs and enables the service immediately, and it also starts on its own at every login (it is tied to the graphical session, which is what allows password dialogs to reach your screen).
+
+### Connecting an agent
+
+* **Transport:** MCP Streamable HTTP
+* **Endpoint:** `http://127.0.0.1:7420/mcp`
+* **Authentication:** a token generated at `~/.config/linuxtoys/mcp-token` (readable only by your user), sent as a header:
+
+  ```text
+  Authorization: Bearer <contents of ~/.config/linuxtoys/mcp-token>
+  ```
+
+Example client configuration:
+
+```jsonc
+// OpenCode (~/.config/opencode/opencode.json)
+{ "mcp": { "linuxtoys": {
+    "type": "remote",
+    "url": "http://127.0.0.1:7420/mcp",
+    "enabled": true,
+    "headers": { "Authorization": "Bearer <TOKEN>" } } } }
+```
+
+```bash
+# Claude Code
+claude mcp add --transport http linuxtoys http://127.0.0.1:7420/mcp \
+  --header "Authorization: Bearer $(cat ~/.config/linuxtoys/mcp-token)"
+```
+
+### What agents can do
+
+| Tool | Purpose |
+| --- | --- |
+| `server_info` | Version, endpoint, service state, busy jobs |
+| `get_update_status` / `update_linuxtoys` | Check for and apply LinuxToys updates |
+| `list_categories` / `search_apps` | Browse and search every catalog (scripts, repos, Flathub/Snap, AppImages) |
+| `get_app_details` / `get_screenshot` | Open an application page: description, screenshots, links, install state |
+| `install_app` / `remove_app` | Queue an installation or removal |
+| `fetch_package_url` / `get_package_file_details` / `install_package_file` | Inspect and install package files (`.deb`, `.rpm`, `.appimage` and more) |
+| `list_app_extensions` / `install_app_extension` / `remove_app_extension` | Manage Flathub app extensions and add-ons |
+| `get_job` / `list_jobs` | Follow the state and logs of a queued operation |
+| `get_settings` / `set_settings` | Change LinuxToys settings (automatic updates, bug reports, language) |
+| `translate_text` / `translate_app_description` | Use the same translation method as the app |
+| `get_registry_entries` / `export_registry_manifest` | Read the Action Registry and export a portable manifest |
+| `open_support_link` | Open an application's homepage, donation, or purchase links |
+
+### Safety
+
+Agents work through the same guarded machinery as the graphical interface:
+
+* **Every password prompt appears on your screen** — a legitimate agent will never ask you to type your password into the chat.
+* Installs are **serialized**: one job runs at a time, and the agent should poll the job instead of resubmitting it.
+* Actions are **tracked** in the Action Registry and can be reverted like any other LinuxToys action.
+* The agent should always tell you what it is about to install or remove and wait for your confirmation first.
+
+---
+
 ## What happens when something fails?
 
 LinuxToys includes safeguards intended to reduce the consequences of failed procedures.
