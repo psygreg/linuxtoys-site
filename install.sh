@@ -258,10 +258,346 @@ zypper_transaction () {
 	_lt_transaction _lt_zypp_busy _lt_zypp_lock_held '' "$@"
 }
 
+# ---------------------------------------------------------------------------
+# Installed-state gate and repair.
+#
+# The handlers below drive the package manager with this release's asset,
+# but a manager asked to install the very version it already has silently
+# no-ops: apt reports "already the newest version", dnf/yum have nothing to
+# do for a same-version local install, and pamac skips the build of an
+# up-to-date package. A third-party package operation can then delete a
+# package-owned file — another vendor's "legacy files cleanup" removed the
+# LinuxToys desktop entry exactly this way (discussion #1500) — and a
+# rerun of install.sh still ended in "LinuxToys installed or updated!"
+# with the damage left in place.
+#
+# When the installed version already equals this release's tag, the gate
+# below verifies the installation with the package manager's own integrity
+# check instead: an intact installation exits as "already installed and up
+# to date", and a damaged one is reinstalled with the handler's repair
+# semantics (_lt_repair: apt --reinstall, dnf/yum reinstall, a removal
+# before the pamac build). Older installations keep the plain update path;
+# newer, foreign or undetectable installations keep the legacy behavior.
+# LINUXTOYS_REINSTALL=1 forces the clean reinstall of an intact
+# same-version installation.
+# ---------------------------------------------------------------------------
+
+# The installed Arch-family LinuxToys package as "name version" — the
+# release package 'linuxtoys' or the AUR prebuilt 'linuxtoys-bin' — or
+# rc 1 when neither is installed.
+_lt_arch_installed () {
+	local out
+	out=$(pacman -Q linuxtoys 2>/dev/null) || true
+	if [ -n "$out" ]; then
+		printf '%s\n' "$out"
+		return 0
+	fi
+	out=$(pacman -Q linuxtoys-bin 2>/dev/null) || true
+	if [ -n "$out" ]; then
+		printf '%s\n' "$out"
+		return 0
+	fi
+	return 1
+}
+
+# AppImage paths referenced by installed LinuxToys desktop entries (user
+# entries first). Gear Lever, the AppImage route's integrator, points the
+# entry's Exec at the integrated file itself.
+_lt_appimage_paths () {
+	local dir entry exec_line
+	for dir in "${HOME}/.local/share/applications" /usr/share/applications; do
+		[ -d "$dir" ] || continue
+		while IFS= read -r entry; do
+			[ -n "$entry" ] || continue
+			exec_line=$(grep -m1 -h '^Exec=' "$entry" 2>/dev/null) || true
+			[ -n "$exec_line" ] || continue
+			exec_line=${exec_line#Exec=}
+			if [[ $exec_line == \"* ]]; then
+				exec_line=${exec_line#\"}
+				exec_line=${exec_line%%\"*}
+			else
+				exec_line=${exec_line%%[[:space:]]*}
+			fi
+			[ -n "$exec_line" ] || continue
+			case "${exec_line,,}" in
+				*linuxtoys*.appimage) printf '%s\n' "$exec_line" ;;
+			esac
+		done < <(grep -ils -- 'linuxtoys' "$dir"/*.desktop 2>/dev/null)
+	done
+	return 0
+}
+
+# The release version baked into the referenced AppImage file names
+# (LinuxToys-<version>-<arch>.AppImage), or rc 1 when the entries reference
+# no single parseable version.
+_lt_appimage_version () {
+	local path base version
+	local -A seen=()
+	local -a paths versions=()
+	mapfile -t paths < <(_lt_appimage_paths)
+	[ "${#paths[@]}" -gt 0 ] || return 1
+	for path in "${paths[@]}"; do
+		base=${path##*/}
+		base=${base%.*}
+		version=${base#*-}
+		version=${version%-*}
+		[[ $version =~ ^[0-9]+(\.[0-9]+)*$ ]] || continue
+		if [ -n "${seen[$version]:-}" ]; then
+			continue
+		fi
+		seen[$version]=1
+		versions+=("$version")
+	done
+	[ "${#versions[@]}" -eq 1 ] || return 1
+	printf '%s\n' "${versions[0]}"
+	return 0
+}
+
+# Compare two versions as plain dotted numbers, right-padded with zeros.
+# Prints -1|0|1 (first versus second) and returns 0; returns 1 when either
+# side is not comparable, so the caller can fall back to the legacy path.
+# Debian epochs/revisions and Arch release numbers are not the release
+# version and are stripped first.
+_lt_version_cmp () {
+	local a b i x y
+	a=${1-} a=${a#v} a=${a##*:} a=${a%%-*} a=${a%%~*}
+	b=${2-} b=${b#v} b=${b##*:} b=${b%%-*} b=${b%%~*}
+	[[ $a =~ ^[0-9]+(\.[0-9]+)*$ ]] || return 1
+	[[ $b =~ ^[0-9]+(\.[0-9]+)*$ ]] || return 1
+	local -a A=() B=()
+	IFS=. read -r -a A <<< "$a"
+	IFS=. read -r -a B <<< "$b"
+	for ((i = 0; i < ${#A[@]} || i < ${#B[@]}; i++)); do
+		x=${A[i]:-0}
+		y=${B[i]:-0}
+		if [ "$x" -lt "$y" ]; then
+			printf '%s\n' -1
+			return 0
+		fi
+		if [ "$x" -gt "$y" ]; then
+			printf '%s\n' 1
+			return 0
+		fi
+	done
+	printf '%s\n' 0
+	return 0
+}
+
+# Installed version of the LinuxToys package for the resolved route, or
+# rc 1 when no installation this route manages can be detected (not
+# installed, installed through another route, or no parseable version).
+_lt_installed_version () {
+	local out
+	case "${_route_handler:-}" in
+	osdeb)
+		out=$(dpkg-query -W -f='${Version}\n' linuxtoys 2>/dev/null) || true
+		;;
+	osrpm|ossuse)
+		out=$(rpm -q --qf '%{VERSION}\n' linuxtoys 2>/dev/null) || true
+		;;
+	osarch)
+		out=$(_lt_arch_installed 2>/dev/null) || true
+		out=${out##* }
+		;;
+	manjaro)
+		out=$(pacman -Q linuxtoys-bin 2>/dev/null) || true
+		out=${out##* }
+		;;
+	osappimage)
+		out=$(_lt_appimage_version 2>/dev/null) || true
+		;;
+	*)
+		return 1
+		;;
+	esac
+	[ -n "$out" ] || return 1
+	printf '%s\n' "$out"
+	return 0
+}
+
+# Whether the installed LinuxToys package of the resolved route is damaged:
+# package-owned files missing or altered. Prints nothing; returns 0 when
+# damaged, 1 when intact or unverifiable. The callers run it only after
+# _lt_installed_version proved the package present.
+_lt_install_damaged () {
+	local out rc flags pkg path
+	case "${_route_handler:-}" in
+	osdeb)
+		# Every file the package owns must still exist.
+		while IFS= read -r pkg; do
+			if [ -n "$pkg" ] && [ ! -e "$pkg" ]; then
+				return 0
+			fi
+		done < <(dpkg-query -L linuxtoys 2>/dev/null)
+		# dpkg's own md5 verification for altered files; rc 1 means the
+		# verification failed, while older dpkg builds without --verify
+		# (rc 2 or a missing binary) leave the existence scan above alone.
+		rc=0
+		dpkg --verify linuxtoys >/dev/null 2>&1 || rc=$?
+		if [ "$rc" -eq 1 ]; then
+			return 0
+		fi
+		return 1
+		;;
+	osrpm|ossuse)
+		# rpm reports benign metadata drift (mtime, user, group) the same
+		# way as real damage; only presence, content, size, mode and
+		# symlink failures count. LC_ALL=C keeps the report format
+		# parseable everywhere.
+		out=$(LC_ALL=C rpm -V linuxtoys 2>/dev/null)
+		rc=$?
+		if [ "$rc" -eq 0 ]; then
+			return 1
+		fi
+		while IFS= read -r flags; do
+			if [ -z "$flags" ]; then
+				continue
+			fi
+			flags=${flags%%[[:space:]]*}
+			# rpm -V flags: size, mode, md5, device, symlink at fixed
+			# positions; "missing" (or the all-unknown mask) means the
+			# file is gone.
+			case "$flags" in
+				S*|?M*|??5*|???D*|????L*|'?????'*|missing*) return 0 ;;
+			esac
+		done <<< "$out"
+		return 1
+		;;
+	osarch)
+		out=$(_lt_arch_installed 2>/dev/null) || return 1
+		pkg=${out%% *}
+		;;
+	manjaro)
+		pkg=linuxtoys-bin
+		;;
+	osappimage)
+		mapfile -t path < <(_lt_appimage_paths)
+		if [ "${#path[@]}" -eq 0 ]; then
+			return 0
+		fi
+		for pkg in "${path[@]}"; do
+			if [ ! -f "$pkg" ] || [ ! -x "$pkg" ] || [ ! -s "$pkg" ]; then
+				return 0
+			fi
+		done
+		return 1
+		;;
+	*)
+		return 1
+		;;
+	esac
+	# pacman's -kk check reports missing files and directory permission
+	# damage; a clean run is silent and exits 0. LC_ALL=C keeps the report
+	# format parseable for the output check.
+	out=$(LC_ALL=C pacman -Qkk "$pkg" 2>&1)
+	rc=$?
+	if [ "$rc" -ne 0 ]; then
+		return 0
+	fi
+	if printf '%s\n' "$out" | grep -Eq 'missing|No such file|incorrect permission'; then
+		return 0
+	fi
+	return 1
+}
+
+# The installed-state gate for the resolved route. Sets _lt_repair when the
+# handlers must use repair/reinstall semantics, and terminates the run via
+# info() when an intact installation is already at this release's version.
+_lt_repair_gate () {
+	local installed cmp tag forced
+	_lt_repair=""
+	forced=0
+	if [ "${LINUXTOYS_REINSTALL:-0}" = "1" ]; then
+		forced=1
+	fi
+	installed=$(_lt_installed_version) || return 0
+	if [ -z "$installed" ]; then
+		return 0
+	fi
+	tag=${_tag_name-}
+	tag=${tag#v}
+	cmp=$(_lt_version_cmp "$installed" "$tag") || return 0
+	if [ "$cmp" -ne 0 ]; then
+		# Older: the plain update path below. Newer: the legacy behavior —
+		# the release asset would be a downgrade, which is the manager's
+		# call, exactly as before this gate existed.
+		return 0
+	fi
+	if [ "$forced" -eq 0 ]; then
+		if _lt_install_damaged; then
+			_lt_warn "LinuxToys ${_tag_name} is installed but damaged (missing or altered files). Reinstalling to repair it..."
+		else
+			info "LinuxToys ${_tag_name} is already installed and up to date. Nothing to do (set LINUXTOYS_REINSTALL=1 to force a clean reinstall)."
+		fi
+	else
+		_lt_note "Forcing a clean reinstall of LinuxToys ${_tag_name}..."
+	fi
+	_lt_repair=1
+	return 0
+}
+
+# Delegate ISA policy to the application; the installer never keeps its own
+# alias tables. Stage the release's own read-only validation code, gate the
+# host, and payload-verify every downloaded release artifact.
+architecture_prepare() {
+    command -v python3 >/dev/null 2>&1 || error "Python 3 is required for safe architecture validation."
+    _architecture_work=$(mktemp -d "${TMPDIR:-/tmp}/linuxtoys-preflight.XXXXXX") || error "Cannot stage preflight."
+    trap 'rm -rf -- "${_architecture_work}"' EXIT
+    local source_dir revision file
+    source_dir=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" 2>/dev/null && pwd)
+    # Only a user-owned checkout may supply local executable validation code.
+    # A downloaded installer in /tmp must not import an attacker's sibling p3/.
+    if [ -e "$source_dir/.git" ] && [ -f "$source_dir/p3/app/architecture_cli.py" ] &&
+       python3 - "$source_dir" <<'PYLOCAL'
+import os, pathlib, stat, sys
+root = pathlib.Path(sys.argv[1]).resolve()
+paths = [root, root / 'p3', root / 'p3/app', root / 'p3/app/__init__.py']
+paths += [root / 'p3/app' / name for name in (
+    'architecture.py', 'architecture_cli.py', 'architecture_files.py', 'architecture_flatpak.py')]
+for path in paths:
+    metadata = path.lstat()
+    if metadata.st_uid != os.getuid() or metadata.st_mode & 0o022 or stat.S_ISLNK(metadata.st_mode):
+        raise SystemExit(1)
+PYLOCAL
+    then
+        _architecture_cli="$source_dir/p3/app/architecture_cli.py"
+    else
+        revision=$(python3 -c 'import json,sys; from urllib.parse import quote; print(quote(json.load(sys.stdin)["tag_name"], safe=""))' <<< "$_api") || error "Release has no source tag."
+        revision=$(curl -fsSL "https://api.github.com/repos/psygreg/linuxtoys/commits/$revision" | python3 -c 'import json,re,sys; s=json.load(sys.stdin)["sha"]; assert re.fullmatch("[0-9a-f]{40}",s); print(s)') || error "Cannot resolve immutable release source."
+        mkdir -p "$_architecture_work/app" || error "Cannot stage architecture helper."
+        : > "$_architecture_work/app/__init__.py"
+        for file in architecture.py architecture_files.py architecture_flatpak.py architecture_cli.py; do
+            curl -fsSL "https://raw.githubusercontent.com/psygreg/linuxtoys/$revision/p3/app/$file" -o "$_architecture_work/app/$file" || error "Release lacks architecture validation; use a qualified release."
+        done
+        _architecture_cli="$_architecture_work/app/architecture_cli.py"
+    fi
+    python3 "$_architecture_cli" label host >/dev/null || error "Unsupported host architecture."
+    printf '%s' "$_api" > "$_architecture_work/release.json"
+}
+
+architecture_verify() {
+    python3 - "$_architecture_work/sha256sums.txt" "$1" <<'PYHASH' || error "Release checksum validation failed."
+import hashlib, pathlib, sys
+path = pathlib.Path(sys.argv[2])
+records = [line.split() for line in pathlib.Path(sys.argv[1]).read_text().splitlines()]
+expected = [row[0] for row in records if len(row) == 2 and row[1].lstrip("*") == path.name]
+if len(expected) != 1:
+    raise SystemExit("Missing or ambiguous release checksum")
+digest = hashlib.sha256()
+with path.open("rb") as source:
+    for chunk in iter(lambda: source.read(1024 * 1024), b""):
+        digest.update(chunk)
+if digest.hexdigest() != expected[0]:
+    raise SystemExit("Release checksum mismatch")
+PYHASH
+    python3 "$_architecture_cli" files "$1" || error "Incompatible or unverified release payload."
+}
+
 osdeb() {
 	if curl -fsSL "${_deb}" -o "/tmp/${_deb_name}"; then
+		architecture_verify "/tmp/${_deb_name}"
 		apt_transaction sudo apt update || true
-		if apt_transaction sudo apt install -y "/tmp/${_deb_name}"; then
+		if apt_transaction sudo apt install -y ${_lt_repair:+"--reinstall"} "/tmp/${_deb_name}"; then
 			info "LinuxToys installed or updated!"
 		else
 			error "Installation failed (apt)."
@@ -272,17 +608,23 @@ osdeb() {
 }
 
 osrpm() {
+	local _dnf_verb
 	if curl -fsSL "${_rpm}" -o "/tmp/${_rpm_name}"; then
+		architecture_verify "/tmp/${_rpm_name}"
+		_dnf_verb=install
+		if [ -n "${_lt_repair:-}" ]; then
+			_dnf_verb=reinstall
+		fi
 		if command -v dnf >/dev/null 2>&1; then
 			{ [ "$ID" = "rhel" ]; } && sudo subscription-manager repos --enable codeready-builder-for-rhel-$(rpm -E %rhel)-$(arch)-rpms && dnf_transaction sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-$(rpm -E %rhel).noarch.rpm
 			{ [[ "$ID_LIKE" = *rhel* ]] && [ "$ID" != "rhel" ]; } && sudo dnf config-manager --set-enabled crb && dnf_transaction sudo dnf install epel-release
-			if dnf_transaction sudo dnf install -y "/tmp/${_rpm_name}"; then
+			if dnf_transaction sudo dnf "$_dnf_verb" -y "/tmp/${_rpm_name}"; then
 				info "LinuxToys installed or updated!"
 			else
 				error "Installation failed (dnf)."
 			fi
 		else
-			if dnf_transaction sudo yum install -y "/tmp/${_rpm_name}"; then
+			if dnf_transaction sudo yum "$_dnf_verb" -y "/tmp/${_rpm_name}"; then
 				info "LinuxToys installed or updated!"
 			else
 				error "Installation failed (yum)."
@@ -295,6 +637,7 @@ osrpm() {
 
 ossuse() {
     if curl -fsSL "${_rpm}" -o "/tmp/${_rpm_name}"; then
+        architecture_verify "/tmp/${_rpm_name}"
         if sudo rpm -U --nodeps --replacefiles --replacepkgs "/tmp/${_rpm_name}"; then
             dependencies=(
                 bash git curl wget zenity python3 python3-gobject gtk3
@@ -324,6 +667,7 @@ osarch() {
     fi
 
     if curl -fL --retry 3 "${_pkg}" -o "/tmp/${_pkg_name}"; then
+        architecture_verify "/tmp/${_pkg_name}"
         if [ "$ID" = "cachyos" ]; then
             dependencies=(
                 bash git curl wget zenity appstream archlinux-appstream-data
@@ -403,6 +747,7 @@ osappimage() {
 	printf "\e[0;36m[INFO]\e[m Downloading LinuxToys AppImage...\n"
 	curl -fL --retry 3 "${_appimage}" -o "${_appimage_file}" ||
 		error "Failed to download: ${_appimage_name}"
+	architecture_verify "${_appimage_file}"
 	chmod +x "${_appimage_file}" || error "Failed to make the AppImage executable."
 	mkdir -p "${HOME}/AppImages" || error "Failed to create ${HOME}/AppImages."
 
@@ -447,7 +792,16 @@ osappimage() {
 }
 
 manjaro() {
-    { pacman_transaction sudo pamac build linuxtoys-bin && info "LinuxToys installed or updated!"; } || error "Failed to download: ${_pkg_name}"
+    if [ -n "${_lt_repair:-}" ]; then
+        # pamac skips the build of an up-to-date package, so a same-version
+        # repair must remove the damaged package first; the AUR build then
+        # installs a fresh copy.
+        if pacman -Qi linuxtoys-bin &>/dev/null; then
+            pacman_transaction sudo pacman -R --noconfirm linuxtoys-bin ||
+                error "Failed to remove the damaged linuxtoys-bin package."
+        fi
+    fi
+    { pacman_transaction sudo pamac build linuxtoys-bin && info "LinuxToys installed or updated!"; } || error "Failed to build linuxtoys-bin from the AUR."
 }
 
 requires_appimage() {
@@ -469,6 +823,37 @@ requires_appimage() {
     [[ "$distro_like" == *" gnomeos "* ]]
 }
 
+# Resolve the installation route for this host: which handler runs and which
+# release-asset kind that handler consumes (empty when the handler needs no
+# package asset at all — the Manjaro-family AUR build). $ID wins; $ID_LIKE is
+# only the fallback when no known ID matches, mirroring os-release semantics.
+# Immutable hosts and Solus always take the AppImage route.
+_resolve_route() {
+    if requires_appimage || [ "${ID:-}" = solus ]; then
+        _route_handler=osappimage
+        _route_kind=appimage
+        return 0
+    fi
+    case "${ID:-}" in
+        debian|ubuntu|deepin) _route_handler=osdeb; _route_kind=deb ;;
+        fedora|rhel|centos|rocky|almalinux) _route_handler=osrpm; _route_kind=rpm ;;
+        suse|opensuse) _route_handler=ossuse; _route_kind=rpm ;;
+        manjaro|biglinux|bigcommunity) _route_handler=manjaro; _route_kind="" ;;
+        steamos) _route_handler=osappimage; _route_kind=appimage ;;
+        arch|cachyos|artix) _route_handler=osarch; _route_kind=arch ;;
+        *)
+            case "${ID_LIKE:-}" in
+                *debian*|*ubuntu*) _route_handler=osdeb; _route_kind=deb ;;
+                *rhel*|*fedora*) _route_handler=osrpm; _route_kind=rpm ;;
+                *manjaro*) _route_handler=manjaro; _route_kind="" ;;
+                *suse*) _route_handler=ossuse; _route_kind=rpm ;;
+                *arch*) _route_handler=osarch; _route_kind=arch ;;
+                *) return 1 ;;
+            esac
+            ;;
+    esac
+}
+
 installer() {
 	printf "\e[0;36m[INFO]\e[m Fetching latest release from GitHub...\n"
 	_api=$(curl -fsSL "https://api.github.com/repos/psygreg/linuxtoys/releases/latest" 2>/dev/null)
@@ -484,58 +869,70 @@ installer() {
 
 	_tag_name=$(echo "${_api}" | grep -Pio '"tag_name":\s*"\K[^"]+')
 
-	_appimage=$(echo "${_api}" | grep -Pio '"browser_download_url":\s*"\K[^"]+?\.AppImage' | head -n1)
-	_appimage_name=$(basename "${_appimage}")
-
-	# The release also ships a .src.rpm, which is only meant for COPR builds
-	# and cannot be installed as a standard package; keep the binary one.
-	_rpm=$(echo "${_api}" | grep -Pio '"browser_download_url":\s*"\K[^"]+?\.rpm' | grep -v '\.src\.rpm' | head -n1)
-	_rpm_name=$(basename "${_rpm}")
-
-	_deb=$(echo "${_api}" | grep -Pio '"browser_download_url":\s*"\K[^"]+?\.deb')
-	_deb_name=$(basename "${_deb}")
-
-	_pkg=$(echo "${_api}" | grep -Pio '"browser_download_url":\s*"\K[^"]+?/linuxtoys-[^"/]+-[0-9]+-x86_64\.pkg\.tar\.zst' | head -n1)
-	_pkg_name=$(basename "${_pkg}")
-
 	if [ -r /etc/os-release ]; then
 		. /etc/os-release
 	else
 		error "Unsupported operating system (no /etc/os-release)."
 	fi
 
-    # Select the AppImage before either the ostree check or ID_LIKE can route
-    # an immutable host to a native package installation.
-    if requires_appimage; then
-        osappimage
-        return
-    fi
+	# Resolve the route, then the installed state: an installation already
+	# at this release's version is verified and repaired instead of
+	# blind-reinstalled (a same-version reinstall would silently keep any
+	# damage), and an intact one needs neither the architecture staging nor
+	# any download at all.
+	_route_handler="" _route_kind=""
+	_resolve_route || error "Unsupported operating system."
+	_lt_repair=""
+	_lt_repair_gate
 
-	case "${ID:-}" in
-		debian|ubuntu|deepin) osdeb ;;
-		fedora|rhel|centos|rocky|almalinux) osrpm ;;
-		suse|opensuse) ossuse ;;
-		manjaro|biglinux|bigcommunity) manjaro;;
-		steamos) osappimage ;;
-		arch|cachyos|artix) osarch ;;
-		solus) osappimage ;;
-	esac
+	# Stage the release's own architecture validation, verify the host, and
+	# select exactly one verified native release asset with its checksum
+	# manifest (no positional/foreign fallback).
+	architecture_prepare
+	_checksum_url=$(python3 -c 'import json,sys; a=[x["browser_download_url"] for x in json.load(sys.stdin).get("assets",[]) if x.get("name")=="sha256sums.txt"]; assert len(a)==1 and a[0].startswith("https://"); print(a[0])' <<< "$_api") || error "Release has no unique checksum manifest."
+	curl -fsSL "$_checksum_url" -o "$_architecture_work/sha256sums.txt" || error "Cannot download release checksums."
 
-	case "${ID_LIKE:-}" in
-		*debian*|*ubuntu*) osdeb ;;
-		*rhel*|*fedora*) osrpm ;;
-		*manjaro*) manjaro ;;
-		*suse*) ossuse ;;
-		*arch*)
-			if [ "${ID:-}" = "steamos" ]; then
-				osappimage
-			else
-				osarch
+	# Select only the release asset that route consumes. The staged ISA
+	# policy (architecture_prepare/verify) refuses foreign or unreviewed
+	# payloads, so a host whose architecture has no native package of its
+	# kind in the release — an aarch64 host on an x86-only release — has no
+	# candidate at all here.
+	local selected _kind_label
+	if [ -n "${_route_kind}" ]; then
+		if selected=$(python3 "$_architecture_cli" release --kind "${_route_kind}" "$_architecture_work/release.json"); then
+			case "${_route_kind}" in
+				deb) _deb="$selected"; _deb_name=$(basename "$_deb") ;;
+				rpm) _rpm="$selected"; _rpm_name=$(basename "$_rpm") ;;
+				arch) _pkg="$selected"; _pkg_name=$(basename "$_pkg") ;;
+				appimage) _appimage="$selected"; _appimage_name=$(basename "$_appimage") ;;
+			esac
+		# Availability fallback: the AppImage route itself has nothing to fall
+		# back to, but a native-package route may still find a verified native
+		# AppImage for this host. Route through Gear Lever instead of failing
+		# closed; the notice is the only thing separating this path from an
+		# immutable-host installation.
+		elif [ "${_route_kind}" != "appimage" ] &&
+			_appimage=$(python3 "$_architecture_cli" release --kind appimage "$_architecture_work/release.json"); then
+			_appimage_name=$(basename "$_appimage")
+			case "${_route_kind}" in
+				deb) _kind_label="Debian" ;;
+				rpm) _kind_label="RPM" ;;
+				arch) _kind_label="Arch Linux" ;;
+			esac
+			if [ -n "${_lt_repair:-}" ]; then
+				# An AppImage cannot restore the native installation's files;
+				# repairing through it would add a second install instead.
+				error "Cannot repair the native LinuxToys installation: this release has no ${_kind_label} package for this architecture."
 			fi
-			;;
-	esac
+			_lt_warn "No native ${_kind_label} package for this architecture was found in the latest release. Falling back to the AppImage installation."
+			osappimage
+			return
+		else
+			error "No unique verified native LinuxToys release asset."
+		fi
+	fi
 
-	error "Unsupported operating system."
+	"$_route_handler"
 }
 
 if [ -t 0 ] && [ "${LINUXTOYS_NONINTERACTIVE:-0}" != "1" ]; then
